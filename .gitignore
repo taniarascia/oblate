@@ -1,0 +1,4 @@
+# Untracked files
+wp-config.php
+.sass-cache
+grunt
