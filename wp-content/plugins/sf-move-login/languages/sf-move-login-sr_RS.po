@@ -1,0 +1,104 @@
+# LANGUAGE Serbo-Croatian translation for SF Move Login plugin for WordPress.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: sf-move-login 1.1.4\n"
+"Report-msgid -Bugs-To: Grégory Viguier <i18n@screenfeed.fr>\n"
+"POT-Creation-Date: 2013-06-01 00:04+0100\n"
+"PO-Revision-Date: 2014-12-15 22:19+0100\n"
+"Last-Translator: Borisa Djuraskovic <borisad@webhostinghub.com>\n"
+"Language-Team: sr_RS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;_n\n"
+"Language: sr_RS\n"
+"X-Generator: Poedit 1.7.1\n"
+
+# ---------------------------------------------------------------------------
+# sf-move-login.php
+msgid  "Change your login url"
+msgstr "Promenite svoj URL za prijavljivanje"
+
+msgid  "No no no, the login form is not here."
+msgstr "Ne, ne, formular za prijavljivanje nije ovde."
+
+# ---------------------------------------------------------------------------
+# inc/noop.inc.php
+msgid "The slug %s is forbidden."
+msgid_plural "The slugs %s are forbidden."
+msgstr[0] "Podloška %s je zabranjena."
+msgstr[1] "Podloška %s je zabranjena."
+msgstr[2] "Podloška %s je zabranjena."
+
+msgid "The links can't have the same slugs."
+msgstr "Linkovi ne mogu da imaju iste podloške."
+
+# ---------------------------------------------------------------------------
+# inc/admin.inc.php
+msgid  "Access"
+msgstr "Pristup"
+
+msgid  "The constant <code>SFML_ALLOW_LOGIN_ACCESS</code> is defined to <code>true</code>, the settings below won't take effect."
+msgstr "Konstanta <code>SFML_ALLOW_LOGIN_ACCESS</code> definisana je kao <code>istina</code>, podešavanja koja slede neće imati efekta."
+
+msgid  "Display an error message"
+msgstr "Prikaži poruku da je došlo do greške"
+
+msgid  "Redirect to a &laquo;Page not found&raquo; error page"
+msgstr "Preusmeri na &laquo;Stranica nije pronađena&raquo; stranica greške"
+
+msgid  "Redirect to the home page"
+msgstr "Preusmeri na početnu stranicu"
+
+msgid  "When a not connected user attempts to access the old login page."
+msgstr "Kad nepovezani korisnik pokuša da se prijavi na staru stranicu za prijavljivanje."
+
+msgid  "Administration area"
+msgstr "Oblast administracije"
+
+msgid  "Do nothing, redirect to the new login page"
+msgstr "Nemojte raditi ništa, preusmerite se na novu stranicu za prijavljivanje"
+
+msgid  "When a not connected user attempts to access the administration area."
+msgstr "Kad nepovezani korisnik pokuša da pristupi administrativnoj oblasti."
+
+msgid  "%s File"
+msgstr "%s datoteka"
+
+msgid  "If the plugin fails to add the new rewrite rules to your %1$s file on activation, add the following to your %1$s file in %2$s, replacing other %3$s rules if they exist, <strong>above</strong> the line reading %4$s:"
+msgstr "Ako plugin ne uspe da doda nova pravila pisanja za vašu %1$s datoteku o aktivaciji, dodajte sledeće  pravilo svojoj %1$s datoteci u %2$s zamenjujući druga %3$s pravila, ako postoje, <strong>iznad</strong>linije gde piše %4$s:"
+
+# ---------------------------------------------------------------------------
+# inc/plugins-list.inc.php
+msgid  "<strong>Move Login</strong> has not been activated."
+msgstr "<strong>Premesti prijavljivanje</strong>nije aktivirano."
+
+msgid  "<strong>Move Login</strong> needs access to the %1$s file. Please visit the %2$s settings page and copy/paste the given code into the %1$s file."
+msgstr "<strong>Premesti prijavljivanje</strong>zahteva pristup %1$s datoteci. Posetite %2$s stranicu podešavanja, kopirajte i nalepite dati kod u %1$s datoteku."
+
+msgid  "It seems your server configuration prevent the plugin to work properly. <strong>Move Login</strong> won't work."
+msgstr "Izgleda da konfiguracija vašeg servera sprečava plugin da radi kako treba. <strong>Premesti prijavljivanje</strong> neće da radi."
+
+msgid  "It seems the url rewrite module is not activated on your server. <strong>Move Login</strong> won't work."
+msgstr "Izgleda da modul za ponovno ispisivanje url-a nije aktiviran na vašem serveru. <strong>Premesti prijavljivanje</strong> neće da radi."
+
+msgid  "It seems your server does not use <i>Apache</i>, <i>Nginx</i>, nor <i>IIS7</i>. <strong>Move Login</strong> won't work."
+msgstr "Izgleda da vaš server ne koristi <i>Apache</i>, <i>Nginx</i> niti <i>IIS7</i>. <strong>Premesti prijavljivanje</strong> neće da radi."
+
+msgid  "It seems your server uses a <i>Nginx</i> system, that I don't know at all. So I have to let you deal with the rewrite rules by yourself. Please visit the %2$s settings page and take a look at the rewrite rules used for a %1$s file. <strong>Move Login</strong> is running but won't work correctly until you deal with the rewrite rules."
+msgstr "Izgleda da vaš server koristi <i>Nginx</i> koji uopšte ne poznajem. Moram vas pustiti da se sami izborite sa pravilima ponovnog pisanja. Posetite %2$s stranicu podešavanja i pogledajte pravila ponovnog pisanja koja se koriste za %1$s datoteku. <strong>Premesti prijavljivanje</strong> je pokrenuto, ali neće da radi kako treba dok ne rešite pravila za ponovno pisanje."
+
+msgid  "To enable the real settings page for Move Login, please install the plugin %1$s."
+msgstr "Da biste aktivirali pravu stranicu podešavanja za ‘Premesti prijavljivanje’, instalirajte plugin %1$s."
+
+msgid  "To enable the real settings page for Move Login, please activate the plugin %2$s."
+msgstr "Da biste aktivirali pravu stranicu podešavanja za ‘Premesti prijavljivanje’, aktivirajte plugin %2$s."
+
+msgid  "To enable the real settings page for Move Login, please upgrade the plugin %2$s to the version %3$s."
+msgstr "Da biste aktivirali pravu stranicu podešavanja za ‘Premesti prijavljivanje’, nadogradite plugin %2$s na verziju %3$s."
+
+msgid  "It seems the plugin Noop is installed but doesn't work properly. To enable the real settings page for Move Login, please reinstall %1$s."
+msgstr "Izgleda da je plugin Noop instaliran, ali ne radi kako treba. Da biste aktivirali pravu stranicu podešavanja za ‘Premesti prijavljivanje’, ponovo instalirajte %1$s."
