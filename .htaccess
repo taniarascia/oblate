@@ -1,3 +1,14 @@
+# BEGIN SF Move Login
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^secretdoor/?$ wp-login.php [QSA,L]
+    RewriteRule ^logout/?$ wp-login.php?action=logout [QSA,L]
+    RewriteRule ^lostpassword/?$ wp-login.php?action=lostpassword [QSA,L]
+    RewriteRule ^resetpass/?$ wp-login.php?action=resetpass [QSA,L]
+    RewriteRule ^register/?$ wp-login.php?action=register [QSA,L]
+</IfModule>
+# END SF Move Login
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
@@ -11,14 +22,4 @@ RewriteRule . /index.php [L]
 
 # END WordPress
 
-# BEGIN SF Move Login
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /
-    RewriteRule ^secretdoor/?$ wp-login.php [QSA,L]
-    RewriteRule ^logout/?$ wp-login.php?action=logout [QSA,L]
-    RewriteRule ^lostpassword/?$ wp-login.php?action=lostpassword [QSA,L]
-    RewriteRule ^resetpass/?$ wp-login.php?action=resetpass [QSA,L]
-    RewriteRule ^register/?$ wp-login.php?action=register [QSA,L]
-</IfModule>
-# END SF Move Login
+
