@@ -24,13 +24,18 @@
 
   ga('create', 'UA-42068444-1', 'auto');
   ga('send', 'pageview');
-
-</script>
-	
+	</script>
 	
 </head>
 
 <body>
 	<header>
-		<h1><a href="<?php bloginfo('wpurl');?>">TaniaRascia.com</a></h1>
+		<div class="flex">
+			<div class="box">
+				<h1><a href="<?php bloginfo('wpurl');?>">TaniaRascia.com</a></h1>
+			</div>
+			<div class="box social">
+				<a href="https://github.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/github.png" class="darken"></a>
+			</div>
+		</div>
 	</header>
