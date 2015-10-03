@@ -35,6 +35,7 @@
 				<h1><a href="<?php bloginfo('wpurl');?>">TaniaRascia.com</a></h1>
 			</div>
 			<div class="box social">
+				<a href="https://twitter.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/twitter.png" class="darken"></a>&nbsp;
 				<a href="https://github.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/github.png" class="darken"></a>
 			</div>
 		</div>
