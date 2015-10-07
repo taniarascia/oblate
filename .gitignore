@@ -2,3 +2,4 @@
 wp-config.php
 .sass-cache
 grunt
+wp-content/uploads
