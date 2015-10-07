@@ -72,6 +72,12 @@ Eventually, try the [WordPress support forum](http://wordpress.org/support/plugi
 
 == Changelog ==
 
+= 2.2.1 =
+
+* 2015/10/04
+* The URL used in the password protected posts form (slug `postpass`) is back in the rewrite rules: this URL can be discovered by inspecting the form code, so it must not use the login URL.
+* Bugfix: the URL used in the password protected posts form and those used to retrieve a password are working fine again.
+
 = 2.2 =
 
 * 2015/09/18

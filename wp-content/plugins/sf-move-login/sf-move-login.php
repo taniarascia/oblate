@@ -3,7 +3,7 @@
  * Plugin Name: SF Move Login
  * Plugin URI: http://www.screenfeed.fr/plugin-wp/move-login/
  * Description: Change your login url
- * Version: 2.2
+ * Version: 2.2.1
  * Author: Grégory Viguier
  * Author URI: http://www.screenfeed.fr/
  * License: GPLv3
@@ -25,7 +25,7 @@ if ( version_compare( $GLOBALS['wp_version'], '3.1', '<' ) ) {
 /* !CONSTANTS =================================================================================== */
 /*------------------------------------------------------------------------------------------------*/
 
-define( 'SFML_VERSION',         '2.2' );
+define( 'SFML_VERSION',         '2.2.1' );
 define( 'SFML_FILE',            __FILE__ );
 define( 'SFML_PLUGIN_BASENAME', plugin_basename( SFML_FILE ) );
 define( 'SFML_PLUGIN_DIR',      plugin_dir_path( SFML_FILE ) );

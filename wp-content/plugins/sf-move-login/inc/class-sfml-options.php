@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class SFML_Options {
 
-	const VERSION      = '1.0';
+	const VERSION      = '1.1';
 	const OPTION_NAME  = 'sfml';
 	const OPTION_GROUP = 'sfml_settings';
 	const OPTION_PAGE  = 'move-login';
@@ -40,6 +40,7 @@ class SFML_Options {
 		if ( ! isset( self::$options_default ) ) {
 			// Default slugs.
 			self::$options_default = array(
+				'slugs.postpass'     => 'postpass',
 				'slugs.logout'       => 'logout',
 				'slugs.lostpassword' => 'lostpassword',
 				'slugs.resetpass'    => 'resetpass',
@@ -140,12 +141,7 @@ class SFML_Options {
 
 		// Add and sanitize slugs
 		$default_slugs = self::get_sub_options( 'slugs', $defaults );
-		$exclude       = array(
-			'postpass'         => 'postpass',
-			'retrievepassword' => 'retrievepassword',
-			'rp'               => 'rp',
-		);
-		$exclude       = array_diff_key( $exclude, self::slugs_fields_labels() );
+		$exclude       = self::get_other_actions();
 
 		foreach ( $default_slugs as $slug_key => $default_slug ) {
 
@@ -297,6 +293,16 @@ class SFML_Options {
 		}
 
 		return self::$labels;
+	}
+
+
+	// !Return the "other" original login actions: not the ones listed in our settings.
+
+	public static function get_other_actions() {
+		return array_diff_key( array(
+			'retrievepassword' => 'retrievepassword',
+			'rp'               => 'rp',
+		), self::slugs_fields_labels() );
 	}
 
 

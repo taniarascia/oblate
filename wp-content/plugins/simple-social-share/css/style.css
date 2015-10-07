@@ -1,0 +1,81 @@
+#s-share-buttons a{
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	overflow: visible;
+}
+
+/*.twitter-share-button { min-width: 80px !important; width: auto !important;}
+.twitter-share-button body.ready{ width: auto !important; display: inline-block !important; }*/
+iframe.twitter-share-button #widget{ width: auto !important; display: inline-block !important; }
+[id^=___plusone]>iframe { width:auto !important; }
+
+#s-share-buttons iframe{
+	margin-bottom: 0;
+}
+#s-share-buttons div, #s-share-buttons span,#s-share-buttons img{
+	vertical-align: top !important;
+}
+#s-share-buttons .s-single-share{
+	display: inline-block;
+	margin-right: 4px;
+}
+/** For buttons without count **/
+#s-share-buttons.s-share-w-c a{
+	width: 32px;
+	height: 32px;
+	/*background-image: url("../social-icons/square-icons/square-icons-set.gif");*/
+	background-image: url("../images/main-icon-set.gif");
+	margin-right: 4px;
+}
+.horizontal-w-c-r-border a,
+.horizontal-w-c-r-border .pinit-btn-div {
+	border-radius: 5px;
+}
+.horizontal-w-c-circular a,
+.horizontal-w-c-circular .pinit-btn-div {
+	border-radius: 50%;
+	border-right: 2px;
+}
+.s-share-w-c a.s3-facebook{
+	background-position: 0 640px;
+}
+.s-share-w-c a.s3-twitter{
+	background-position: 0 96px;
+}
+.s-share-w-c a.s3-google-plus{
+	background-position: 0 512px;
+}
+.s-share-w-c a.s3-digg{
+	background-position: 0 704px;
+}
+.s-share-w-c a.s3-reddit{
+	background-position: 0 192px;
+}
+.s-share-w-c a.s3-linkedin{
+	background-position: 0 480px;
+}
+.s-share-w-c a.s3-stumbleupon{
+	background-position: 0 160px;
+}
+.s-share-w-c a.s3-tumblr{
+	background-position: 0 128px;
+}
+.s-share-w-c a.s3-email{
+	background-position: 0 416px;
+}
+.s-share-w-c .pinit-btn-div{
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	background-image: url("../images/main-icon-set.gif");
+	background-position: 0 256px;
+	margin-right: 2px;
+}
+.s-share-w-c .pinit-btn-div a {
+	text-indent: -9999px;
+	background: none !important;
+	display: block !important;
+	width: 100% !important;
+	height: 100% !important;
+}

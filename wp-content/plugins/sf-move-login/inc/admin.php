@@ -255,6 +255,7 @@ function sfml_upgrade() {
 	$current_mono_multi = is_multisite() ? 2 : 1;	// 1: monosite, 2: multisite.
 	$db_version         = get_site_option( 'sfml_version' );
 	$db_version         = is_string( $db_version ) ? explode( '|', $db_version ) : false;
+	// `$update_file`:
 	// "1" means we need to update the `.htaccess`/`web.config` file.
 	// "2" means "No need to update the `.htaccess`/`web.config` file": update_site_option() already did.
 	$update_file        = false;
@@ -313,9 +314,11 @@ function sfml_upgrade() {
 		$update_file = '2';
 
 	}
-	// We need to update the `.htaccess`/`web.config` file.
-	elseif ( version_compare( $db_version, '2.2' ) < 0 ) {
-		$update_file = '1';
+	// There are some changes in the stored options.
+	elseif ( version_compare( $db_version, '2.2.1' ) < 0 ) {
+		$old_options = sfml_get_options();
+		update_site_option( SFML_Options::OPTION_NAME, $old_options );
+		$update_file = '2';
 	}
 
 	// Maybe display a notice, but only if the `.htaccess`/`web.config` file needs to be updated.

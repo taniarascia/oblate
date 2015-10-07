@@ -52,6 +52,7 @@ function sfml_deny_admin_access() {
 
 function sfml_set_path( $path ) {
 	$slugs = sfml_get_slugs();
+	$other = SFML_Options::get_other_actions();
 
 	// Action
 	$parsed_path = parse_url( $path );
@@ -63,7 +64,7 @@ function sfml_set_path( $path ) {
 			$action = 'resetpass';
 		}
 
-		if ( ! isset( $slugs[ $action ] ) && false === has_filter( 'login_form_' . $action ) ) {
+		if ( ! isset( $slugs[ $action ] ) && ! isset( $other[ $action ] ) && false === has_filter( 'login_form_' . $action ) ) {
 			$action = 'login';
 		}
 	}
