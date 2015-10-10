@@ -33,7 +33,7 @@
 			<div class="inner">
 				<h1 class="front-header">Tania Rascia</h1>
 				<h2 class="front-subtitle">Front End Web Developer</h2>
-				<a class="button-line" href="/blog">Blog</a>
+				<a class="button-line" href="/blog">Blog</a> 				<a class="button-line" href="/portfolio">Portfolio</a>
 			</div>
 		</div>
 		<div class="front-social">
