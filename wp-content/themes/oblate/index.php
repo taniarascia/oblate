@@ -1,7 +1,7 @@
 <?php get_header();?>
 	<main>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<article id="post-<?php the_ID(); ?>" class="highlight center">
+			<article id="post-<?php the_ID(); ?>" class="center">
 				<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
 				<time>
 					<?php the_time('F j, Y');?>

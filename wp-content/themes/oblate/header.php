@@ -8,12 +8,14 @@
 	<meta name="description" content="Tania Rascia's Web Development Blog and Portfolio">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>TaniaRascia.com</title>
+	<title>Tania Rascia</title>
 
 	<link href="<?php bloginfo('template_directory');?>/css/style.min.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700' rel='stylesheet' type='text/css'>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<?php wp_head(); ?>
 	
 	<script>
@@ -30,13 +32,15 @@
 
 <body>
 	<header>
-		<div class="flex">
-			<div class="box">
-				<h1><a href="<?php bloginfo('wpurl');?>">TaniaRascia.com</a></h1>
-			</div>
-			<div class="box social">
-				<a href="https://twitter.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/twitter.png" class="darken"></a>&nbsp;
-				<a href="https://github.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/github.png" class="darken"></a>
+		<div class="decoration">
+			<div class="flex">
+				<div class="box">
+					<h1><a href="<?php bloginfo('wpurl');?>">Tania Rascia</a></h1>
+				</div>
+				<div class="box social">
+					<a href="https://twitter.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/twitter.png" class="darken"></a>&nbsp;
+					<a href="https://github.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/github.png" class="darken"></a>
+				</div>
 			</div>
 		</div>
 	</header>

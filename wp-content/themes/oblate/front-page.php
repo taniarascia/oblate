@@ -1,132 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="author" content="Tania Rascia">
+	<meta name="description" content="Tania Rascia's Web Development Blog and Portfolio">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Tania Rascia</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-  <style>
-    body {
-      background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1);
-      background-size: 300% 300%;
-      -webkit-animation: Background 25s ease infinite;
-      -moz-animation: Background 25s ease infinite;
-      animation: Background 25s ease infinite;
-    }
-    
-    @-webkit-keyframes Background {
-      0% {
-        background-position: 0% 50%
-      }
-      50% {
-        background-position: 100% 50%
-      }
-      100% {
-        background-position: 0% 50%
-      }
-    }
-    
-    @-moz-keyframes Background {
-      0% {
-        background-position: 0% 50%
-      }
-      50% {
-        background-position: 100% 50%
-      }
-      100% {
-        background-position: 0% 50%
-      }
-    }
-    
-    @keyframes Background {
-      0% {
-        background-position: 0% 50%
-      }
-      50% {
-        background-position: 100% 50%
-      }
-      100% {
-        background-position: 0% 50%
-      }
-    }
-    
-    .full-screen {
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: url(/wp-content/themes/oblate/images/triangles.png);
-      background-size: cover;
-      background-position: center;
-      width: 100%;
-      height: 100%;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-flex-direction: column/* works with row or column */
-      flex-direction: column;
-      -webkit-align-items: center;
-      align-items: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      text-align: center;
-    }
-    
-    .inner {}
-    
-    h1 {
-      color: #fff;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 800;
-      font-size: 4em;
-      letter-spacing: -2px;
-      text-align: center;
-      text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
-    }
-    
-    h1:after {
-      display: block;
-      color: #fff;
-      letter-spacing: 1px;
-      font-family: 'Poiret One', sans-serif;
-      content: 'Front End Web Developer';
-      font-size: .4em;
-      text-align: center;
-    }
-    
-    .button-line {
-      font-family: 'Open Sans', sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      background: transparent;
-      border: 1px solid #fff;
-      color: #fff;
-      text-align: center;
-      font-size: 1.4em;
-      padding: 20px 40px;
-      text-decoration: none;
-      transition: all .6s ease;
-    }
-    
-    .button-line:hover {
-      background: #fff;
-      color: #0cc898;
-    }
+	<title>Tania Rascia</title>
 
-  </style>
+	<link href="<?php bloginfo('template_directory');?>/css/style.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
+	
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42068444-1', 'auto');
+  ga('send', 'pageview');
+	</script>
+	
 </head>
-
+	
 <body>
-  <div class="full-screen">
-    <div class="inner">
-      <h1>Tania Rascia</h1>
-      <br>
-      <a class="button-line" href="/blog">Blog</a>
-    </div>
-  </div>
+	<div class="front-page">
+		<div class="full-screen">
+			<div class="inner">
+				<h1 class="front-header">Tania Rascia</h1>
+				<h2 class="front-subtitle">Front End Web Developer</h2>
+				<a class="button-line" href="/blog">Blog</a>
+			</div>
+		</div>
+		<div class="front-social">
+			<a href="https://twitter.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/twitter.png" class="darken"></a>&nbsp;
+			<a href="https://github.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/github.png" class="darken"></a>
+		</div>
+	</div>
 </body>
 
 </html>
