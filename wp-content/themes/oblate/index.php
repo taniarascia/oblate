@@ -1,15 +1,14 @@
 <?php get_header();?>
 	<main>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<article id="post-<?php the_ID(); ?>" class="center">
+			<article id="post-<?php the_ID(); ?>" class="center lead">
 				<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
 				<time>
 					<?php the_time('F j, Y');?>
 				</time>
 				<?php the_tags('&nbsp;☍&nbsp;<span class="tags">', ', ', '', '</span>'); ?>
-					<p>
-						<?php the_excerpt(); ?>
-					</p>
+					<?php the_excerpt(); ?>
+				<a class="button" href="<?php the_permalink();?>">Read More</a>
 			</article>
 			<?php	// End the loop.
 			endwhile;
