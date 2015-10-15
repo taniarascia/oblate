@@ -8,7 +8,7 @@
 				</time>
 				<?php the_tags('&nbsp;☍&nbsp;<span class="tags">', ', ', '', '</span>'); ?>
 					<?php the_excerpt(); ?>
-				<a class="button" href="<?php the_permalink();?>">Read More</a>
+				<a class="button" href="<?php the_permalink();?>">Read More &nbsp;➔</a>
 			</article>
 			<?php	// End the loop.
 			endwhile;
