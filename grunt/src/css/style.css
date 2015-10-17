@@ -764,7 +764,7 @@ td {
   border-radius: 4px; }
 
 code[class*="language-"],
-pre[class*="language-"] {
+pre[class*="language-"], pre code {
   color: #6e7a83;
   font-family: Menlo, 'Roboto Mono', monospace;
   direction: ltr;
