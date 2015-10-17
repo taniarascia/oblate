@@ -1,0 +1,15 @@
+.flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.box {
+	flex-basis: 49%;
+	margin-left: .5%;
+	margin-right: .5%;
+}
+@media screen and (min-width: 800px) {
+	.box {
+		flex: 1;
+	}
+}

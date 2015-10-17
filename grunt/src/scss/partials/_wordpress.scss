@@ -1,0 +1,104 @@
+/* Wordpress Specific */
+
+// Categories
+.post-categories {
+	list-style-type: none;
+	padding: 8px 15px;
+	background: $link-color;
+	margin: 10px 0 0;
+	color: #fff;
+	//border-bottom: 4px solid darken($link-color, 15%);
+	font-weight: 700;
+	display: inline-block;
+	& a,
+	a:visited,
+	a:focus,
+	a:active {
+		color: #fff;
+	}
+}
+.post-categories:hover {
+	background: $link-hover-color;
+	//border-bottom: 4px solid darken($link-hover-color, 15%);
+}
+// Remove the pagination title
+.screen-reader-text {
+	display: none;
+}
+// Bottom of the page pagination
+.pagination {
+	max-width: $content-small-width;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	text-align: center;
+}
+// Date and Time meta data below commentator's name
+.comment-meta.commentmetadata,
+.comment-notes {
+	font-size: .7em;
+}
+// Comment list
+.comment-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 40px;
+}
+// Author name
+.comment-author {
+	font-weight: 700;
+	& cite {
+		font-style: normal;
+	}
+}
+// says:
+.says {
+	display: none;
+}
+// Comments and Replies
+.comment-reply-title,
+.comments-title {
+	font-size: 1.2em;
+}
+// Comment body
+.comment-body {
+	background: #f4f4f4;
+	padding: 20px;
+	p {
+		font-size: .9em;
+	}
+	.reply {
+		font-size: .8em;
+	}
+	a,
+	a:visited,
+	a:focus {
+		color: #62676c;
+		font-weight: 700;
+		font-family: $heading-font-family;
+	}
+	a:hover {
+		color: #363b40;
+	}
+}
+.comment-respond {
+	padding: 10px 0 40px;
+}
+// Form
+.comment-form {
+	p {
+		margin: 0;
+	}
+}
+.children {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	list-style: none;
+} 
+// Overall comments area
+.comments-area {
+	padding: 10px;
+}

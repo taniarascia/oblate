@@ -1,5 +1,6 @@
 # Untracked files
 wp-config.php
 .sass-cache
-grunt
+grunt/node_modules
+grunt/.sass-cache
 wp-content/uploads

@@ -1,0 +1,61 @@
+/* Forms */
+
+// Forms Extend
+.forms {
+	padding: 12px;
+	background: transparent;
+	border: 1px solid darken($slab, 5%);
+	border-radius: $border-radius;
+	margin: auto auto 6px;
+	max-width: 100%;
+}
+// Forms Output CSS
+input {
+	&[type="email"],
+	&[type="number"],
+	&[type="search"],
+	&[type="text"],
+	&[type="tel"],
+	&[type="url"],
+	&[type="password"] {
+		@extend .forms;
+		&:focus {
+			border: 1px solid $link-hover-color;
+			background: transparent;
+			outline: 0;
+		}
+		&:hover {
+			border: 1px solid $link-color;
+		}
+	}
+}
+textarea,
+select {
+	@extend .forms;
+	&:focus {
+		border: 1px solid $link-hover-color;
+		background: transparent;
+		outline: 0;
+	}
+	&:hover {
+		border: 1px solid $link-color;
+	}
+}
+textarea {
+	min-height: 100px;
+}
+label,
+legend {
+	display: block;
+	margin: .4em 0 .2em;
+	font-weight: 600;
+	font-size: .9em;
+}
+label > .label-body {
+	display: inline-block;
+	margin-left: .5em;
+	font-weight: normal;
+}
+.scroll {
+	overflow-x: scroll;
+}

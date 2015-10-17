@@ -1,0 +1,49 @@
+/* Buttons  */
+
+// Button Extend
+.buttons {
+	color: $link-color;
+	display: inline-block;
+	padding: 8px 25px;
+	text-align: center;
+	font-size: 1em;
+	line-height: 1.6;
+	text-transform: uppercase;
+	text-decoration: none;
+	white-space: nowrap;
+	background: transparent;
+	border-radius: $border-radius;
+	border: 1px solid $link-color;
+	cursor: pointer;
+	font-weight: 700;
+	font-family: $font-family;
+	margin: 5px 0;
+	//transition: all .3s ease;
+}
+.buttons-hover {
+	border-bottom: 0;
+	color: #fff;
+	background: $link-color;
+	border: 1px solid $link-color;
+}
+// Button Output
+a.button,
+.button,
+button {
+	@extend .buttons;
+	&:hover,
+	&:focus {
+		@extend .buttons-hover;
+	}
+}
+input {
+	&[type="submit"],
+	&[type="reset"],
+	&[type="button"] {
+		@extend .buttons;
+		&:hover,
+		&:focus {
+			@extend .buttons-hover;
+		}
+	}
+}
