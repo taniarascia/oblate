@@ -63,7 +63,7 @@ pre code {
 
 /* Code blocks */
 
-pre[class*="language-"], pre code {
+pre code {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
@@ -73,7 +73,7 @@ pre[class*="language-"], pre code {
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {}
 
-/* Inline code */
+/* Inline code */ 
 
 :not(pre) > code[class*="language-"] {
 	padding: .2em;
