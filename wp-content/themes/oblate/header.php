@@ -36,7 +36,7 @@
 		<div class="decoration">
 			<div class="flex vertical">
 				<div class="box">
-					<a href="<?php bloginfo('wpurl');?>"><img src="<?php bloginfo('template_directory');?>/images/myface.png" class="logo-image"></a>
+					<a href="<?php bloginfo('wpurl');?>/blog"><img src="<?php bloginfo('template_directory');?>/images/myface.png" class="logo-image"></a>
 				</div>
 				<div class="box social">
 					<a href="https://twitter.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/twitter.png" class="darken"></a>&nbsp;
