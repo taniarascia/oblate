@@ -880,6 +880,11 @@ pre[class*="language-"] {
 .token.inserted {
   color: #f99157; }
 
+.token.delimiter {
+  background: #343434;
+  color: #efefef;
+  padding: 1px 2px; }
+
 .token.atrule,
 .token.keyword,
 .token.attr-name,
