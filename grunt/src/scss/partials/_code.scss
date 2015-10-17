@@ -55,11 +55,11 @@ code[class*="language-"] span::selection {
 code::selection,
 code::-moz-selection {
 	background: #232323;
-}
+} 
 
 /* Code blocks */
 
-pre[class*="language-"] {
+pre[class*="language-"], pre code {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
