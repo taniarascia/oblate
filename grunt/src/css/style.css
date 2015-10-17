@@ -815,6 +815,9 @@ code::selection,
 code::-moz-selection {
   background: #232323; }
 
+pre code {
+  display: block; }
+
 /* Code blocks */
 pre[class*="language-"], pre code {
   padding: 1em;
