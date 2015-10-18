@@ -833,7 +833,7 @@ pre code {
   padding-top: 1px;
   padding-bottom: 1px;
   background: #f7f7f7;
-  border: 1px solid #ececec; }
+  border: 0px solid #ececec; }
 
 :not(pre) > code {
   font-size: .9em;
