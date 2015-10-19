@@ -2,7 +2,7 @@
 function get_buttons_w_c_markup_arr(){
 	$service_markup_arr = array(
 								'facebook' => '<a href="http://www.facebook.com/sharer.php?u='.get_permalink().'" target="_blank" title="Share to Facebook" class="s3-facebook hint--top"></a>',
-								'twitter' => '<a href="http://twitter.com/intent/tweet?text='.get_the_title().'&url='.get_permalink().'" target="_blank"  title="Share to Twitter" class="s3-twitter hint--top"></a>',
+								'twitter' => '<a href="http://twitter.com/intent/tweet?text='.get_the_title().'&url='.get_permalink().'&via=taniarascia" target="_blank"  title="Share to Twitter" class="s3-twitter hint--top"></a>',
 								'googleplus' => '<a href="https://plus.google.com/share?url='.get_permalink().'" target="_blank"  title="Share to Google Plus" class="s3-google-plus hint--top"></a>',
 								'digg' => '<a href="http://www.digg.com/submit?url='.get_permalink().'" target="_blank"  title="Share to Digg" class="s3-digg hint--top"></a>',
 								'reddit' => '<a href="http://reddit.com/submit?url='.get_permalink().'&title='.get_the_title().'" target="_blank" title="Share to Reddit" class="s3-reddit hint--top"></a>',
