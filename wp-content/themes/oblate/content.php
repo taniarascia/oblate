@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" class="center lead">
+<article id="post-<?php the_ID(); ?>" class="lead">
 	<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
 	<time>
 		<?php the_time('F j, Y');?>

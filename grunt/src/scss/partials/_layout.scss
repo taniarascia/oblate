@@ -57,14 +57,14 @@ header {
 }
 @media screen and (min-width: $mobile-breakpoint) {
 	.lead {
-		padding: 40px 0 60px;
+		padding: 40px 15px 60px;
 		p {
-			font-size: 1.4em;
+			font-size: 1.2em;
 			padding: 15px 0;
 		}
 	}
 	h2 {
-		font-size: 2.7em;
+		font-size: 2em;
 	}
 	.logo-image {
 		max-width: 80px;
