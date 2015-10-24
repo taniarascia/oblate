@@ -24,12 +24,11 @@ h5 {
 	line-height: 1.2;
 }
 h1 {
-	font-size: 1.3em;
+	font-size: 2em;
 	margin: 0;
-	color: #fff;
 }
 h2 {
-	font-size: 1.8em;
+	font-size: 1.6em;
 	margin-top: 20px;
 	margin-bottom: 0;
 	font-family: $article-title;
@@ -42,12 +41,8 @@ h4 {
 	color: $sub-font-color;
 }
 header {
-	// background: $header-background;
-	background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1);
-	background-size: 300% 300%;
-	-webkit-animation: Background 25s ease infinite;
-	-moz-animation: Background 25s ease infinite;
-	animation: Background 25s ease infinite;
+	padding: 6px 10px 0;
+	border-bottom: 1px solid $slab;
 }
 .decoration {
 	background: url(../images/triangles.png);
@@ -57,9 +52,8 @@ header {
 }
 @media screen and (min-width: $mobile-breakpoint) {
 	.lead {
-		padding: 40px 15px 60px;
 		p {
-			font-size: 1.2em;
+			font-size: 1.1em;
 			padding: 15px 0;
 		}
 	}
@@ -75,11 +69,11 @@ header {
 }
 main {
 	max-width: $content-small-width;
-	margin: 10px auto;
+	margin: 0 auto;
 }
 article {
-	padding: 10px;
-	border-bottom: 1px solid $slab2;
+	padding: 40px 15px 30px;
+	border-bottom: 1px solid $slab;
 }
 a {
 	color: $link-color;
@@ -91,18 +85,6 @@ a {
 	}
 	&:hover {
 		color: $link-hover-color;
-	}
-}
-h1 {
-	& a,
-	& a:visited,
-	& a:active,
-	& a:focus {
-		color: #fff;
-		text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
-	}
-	& a:hover {
-		color: rgba(255, 255, 255, 1);
 	}
 }
 h2 {
@@ -117,7 +99,8 @@ h2 {
 	}
 }
 p,
-span {
+span,
+li {
 	& a {
 		//border-bottom: 1px solid #dedede;
 		&:hover {
@@ -209,10 +192,10 @@ dt {
 	text-align: right;
 }
 .darken {
-	transition: all .5s ease;
-	opacity: .5;
+	transition: all .2s ease;
+	opacity: .2;
 	&:hover {
-		opacity: 1;
+		opacity: .6;
 	}
 }
 img {
@@ -252,9 +235,8 @@ img {
 			background: rgba(0, 0, 0, .7);
 			padding: 20px;
 			color: #fff;
-			font-size: 1.5em;	
+			font-size: 1.5em;
 			text-align: center;
-			
 		}
 	}
 }

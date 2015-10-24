@@ -359,7 +359,7 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 body {
-  font: normal normal 400 1.1em/1.6 "Lato", sans-serif;
+  font: normal normal 400 1.2em/1.6 "Lato", sans-serif;
   color: #4f545a; }
 
 h1,
@@ -373,12 +373,11 @@ h5 {
   line-height: 1.2; }
 
 h1 {
-  font-size: 1.3em;
-  margin: 0;
-  color: #fff; }
+  font-size: 2em;
+  margin: 0; }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   margin-top: 20px;
   margin-bottom: 0;
   font-family: "Playfair Display", serif; }
@@ -391,10 +390,8 @@ h4 {
   color: #a7a9ac; }
 
 header {
-  background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1);
-  background-size: 300% 300%;
-  -webkit-animation: Background 25s ease infinite;
-  animation: Background 25s ease infinite; }
+  padding: 6px 10px 0;
+  border-bottom: 1px solid #d8d9da; }
 
 .decoration {
   background: url(../images/triangles.png);
@@ -403,11 +400,9 @@ header {
   padding: 5px 5px 0; }
 
 @media screen and (min-width: 550px) {
-  .lead {
-    padding: 40px 15px 60px; }
-    .lead p {
-      font-size: 1.2em;
-      padding: 15px 0; }
+  .lead p {
+    font-size: 1.1em;
+    padding: 15px 0; }
 
   h2 {
     font-size: 2em; }
@@ -419,11 +414,11 @@ header {
 
 main {
   max-width: 800px;
-  margin: 10px auto; }
+  margin: 0 auto; }
 
 article {
-  padding: 10px;
-  border-bottom: 1px solid #f4f4f4; }
+  padding: 40px 15px 30px;
+  border-bottom: 1px solid #d8d9da; }
 
 a {
   color: #2581DC;
@@ -433,19 +428,14 @@ a {
   a:hover {
     color: #064E93; }
 
-h1 a, h1 a:visited, h1 a:active, h1 a:focus {
-  color: #fff;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6); }
-h1 a:hover {
-  color: white; }
-
 h2 a, h2 a:visited, h2 a:active, h2 a:focus {
   color: #4f545a; }
 h2 a:hover {
   color: #2581DC !important; }
 
 p a:hover,
-span a:hover {
+span a:hover,
+li a:hover {
   border-bottom: 1px solid #aaa; }
 
 blockquote {
@@ -471,7 +461,7 @@ label {
 
 hr {
   border: 0;
-  border-top: 1px solid #f4f4f4;
+  border-top: 1px solid #dbdcdd;
   margin: 50px 0; }
 
 time {
@@ -534,10 +524,10 @@ dt {
   text-align: right; }
 
 .darken {
-  transition: all .5s ease;
-  opacity: .5; }
+  transition: all .2s ease;
+  opacity: .2; }
   .darken:hover {
-    opacity: 1; }
+    opacity: .6; }
 
 img {
   max-width: 100%; }
