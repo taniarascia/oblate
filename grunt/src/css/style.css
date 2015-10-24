@@ -359,7 +359,7 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 body {
-  font: normal normal 400 1.2em/1.6 Georgia, serif;
+  font: normal normal 400 1.2em/1.6 "Lato", sans-serif;
   color: #4f545a; }
 
 h1,
@@ -591,7 +591,7 @@ button, input[type="submit"], input[type="reset"], input[type="button"] {
   border: 1px solid #2581DC;
   cursor: pointer;
   font-weight: 700;
-  font-family: Georgia, serif;
+  font-family: "Lato", sans-serif;
   margin: 5px 0; }
 
 .buttons-hover, a.button:hover, a.button:focus,
