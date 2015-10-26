@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="author" content="Tania Rascia">
-	<meta name="description" content="Tania Rascia's Web Development Blog and Portfolio">
+	<meta name="description" content="Minimalist web design and development blog.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Tania Rascia</title>
