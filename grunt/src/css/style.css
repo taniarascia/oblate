@@ -741,7 +741,7 @@ td {
 .terminal {
   padding: 10px 6px;
   font-size: .8em;
-  font-family: Menlo, 'Roboto Mono', monospace;
+  font-family: Menlo, monospace;
   border: 1px solid #d8d9da;
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
   max-width: 100%;
@@ -751,7 +751,7 @@ code[class*="language-"],
 pre[class*="language-"],
 pre code {
   color: #6e7a83;
-  font-family: Menlo, 'Roboto Mono', monospace;
+  font-family: Menlo, monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -825,7 +825,7 @@ pre code {
   padding-top: 1px;
   padding-bottom: 1px;
   background: #f7f7f7;
-  font-family: Menlo, 'Roboto Mono', monospace;
+  font-family: Menlo, monospace;
   color: #4B5964;
   font-weight: 300; }
 

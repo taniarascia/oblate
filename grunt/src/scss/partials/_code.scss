@@ -1,7 +1,7 @@
 .terminal {
 	padding: 10px 6px;
 	font-size: .8em;
-	font-family: Menlo, 'Roboto Mono', monospace;
+	font-family: Menlo, monospace;
 	border: 1px solid #d8d9da;
 	box-shadow: 1px 3px 6px rgba(0, 0, 0, .2);
 	max-width: 100%;
@@ -11,7 +11,7 @@ code[class*="language-"],
 pre[class*="language-"],
 pre code {
 	color: #6e7a83;
-	font-family: Menlo, 'Roboto Mono', monospace;
+	font-family: Menlo, monospace;
 	direction: ltr;
 	text-align: left;
 	white-space: pre;
@@ -80,7 +80,7 @@ pre[class*="language-"] {}
 	padding-top: 1px;
 	padding-bottom: 1px;
 	background: $code-background;
-	border: 0px solid #ececec; 
+	border: 0px solid #ececec;
 }
 :not(pre) > code {
 	font-size: .9em;
@@ -88,7 +88,7 @@ pre[class*="language-"] {}
 	padding-top: 1px;
 	padding-bottom: 1px;
 	background: $code-background;
-	font-family: Menlo, 'Roboto Mono', monospace;
+	font-family: Menlo, monospace;
 	color: $code-font-color;
 	font-weight: 300;
 }
@@ -133,7 +133,7 @@ pre[class*="language-"] {}
 }
 .token.delimiter {
 	background: #FCF8E1;
-	color: #c3a500; 
+	color: #c3a500;
 	padding: 1px 2px;
 }
 .token.atrule,
