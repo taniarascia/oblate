@@ -72,7 +72,7 @@ article {
 }
 @media screen and (min-width: $mobile-breakpoint) {
 	article {
-		padding: 50px 10px;
+		padding: 50px 15px;
 	}
 }
 a {
@@ -193,6 +193,7 @@ dt {
 	margin-bottom: 10px;
 }
 .posts-links {
+	padding: 0 15px;
 	margin: 40px 0;
 	&:after {
 		content: '';

@@ -419,7 +419,7 @@ article {
 
 @media screen and (min-width: 550px) {
   article {
-    padding: 50px 10px; } }
+    padding: 50px 15px; } }
 a {
   color: #2581DC;
   text-decoration: none; }
@@ -525,6 +525,7 @@ dt {
   margin-bottom: 10px; }
 
 .posts-links {
+  padding: 0 15px;
   margin: 40px 0; }
   .posts-links:after {
     content: '';
