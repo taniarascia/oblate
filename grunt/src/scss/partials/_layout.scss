@@ -54,6 +54,9 @@ h5 {
 	h3 {
 		font-size: 1.6em;
 	}
+	.grid h2 {
+		font-size: 1.5em;
+	}
 }
 header {
 	padding: 6px 10px 0;
@@ -63,16 +66,33 @@ header {
 	max-width: 50px;
 }
 main {
-	max-width: $content-small-width;
+	max-width: $content-width;
 	margin: 0 auto;
+	.content {
+		max-width: $content-small-width;
+		margin: 0 auto;
+	}
 }
+
 article {
 	padding: 15px 10px;
-	border-bottom: 1px solid $slab;
+}
+.grid {
+	width: 100%;
+}
+@media screen and (min-width: $content-small-width) {
+	.grid {
+		width: 32.5%;
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+		margin-bottom: 15px;
+		position: relative;
+	}
 }
 @media screen and (min-width: $mobile-breakpoint) {
 	article {
-		padding: 50px 15px;
+		padding: 20px 15px;
 	}
 }
 a {

@@ -401,7 +401,10 @@ h5 {
     font-size: 2em; }
 
   h3 {
-    font-size: 1.6em; } }
+    font-size: 1.6em; }
+
+  .grid h2 {
+    font-size: 1.5em; } }
 header {
   padding: 6px 10px 0;
   border-bottom: 1px solid #dbdde0; }
@@ -410,16 +413,29 @@ header {
   max-width: 50px; }
 
 main {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto; }
+  main .content {
+    max-width: 800px;
+    margin: 0 auto; }
 
 article {
-  padding: 15px 10px;
-  border-bottom: 1px solid #dbdde0; }
+  padding: 15px 10px; }
 
+.grid {
+  width: 100%; }
+
+@media screen and (min-width: 800px) {
+  .grid {
+    width: 32.5%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-bottom: 15px;
+    position: relative; } }
 @media screen and (min-width: 550px) {
   article {
-    padding: 50px 15px; } }
+    padding: 20px 15px; } }
 a {
   color: #2581DC;
   text-decoration: none; }
@@ -661,20 +677,33 @@ td {
 /* Wordpress Specific */
 .post-categories {
   list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .post-categories li a {
+    padding: 8px 15px;
+    background: #2581DC;
+    margin: 10px 0 0;
+    color: #fff;
+    border-bottom: 0;
+    display: block;
+    font-weight: 700;
+    display: inline-block; }
+    .post-categories li a a,
+    .post-categories li a a:visited,
+    .post-categories li a a:focus,
+    .post-categories li a a:active {
+      color: #fff; }
+
+.category-block {
   padding: 8px 15px;
   background: #2581DC;
   margin: 10px 0 0;
   color: #fff;
+  border-bottom: 0;
+  display: inline-block;
   font-weight: 700;
-  display: inline-block; }
-  .post-categories a,
-  .post-categories a:visited,
-  .post-categories a:focus,
-  .post-categories a:active {
-    color: #fff; }
-
-.post-categories:hover {
-  background: #064E93; }
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif; }
 
 .screen-reader-text {
   display: none; }
@@ -736,6 +765,7 @@ td {
   list-style: none; }
 
 .comments-area {
+  border-top: 1px solid #dbdde0;
   padding: 10px; }
 
 .terminal {
