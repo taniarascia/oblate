@@ -215,6 +215,12 @@ a.article-selected {
 	&:hover {
 		color: #474b51;
 	}
+	&:hover h2 {
+		color: $link-color;
+	}
+	h2 {
+		color: $font-color;
+	}
 }
 img {
 	max-width: 100%;

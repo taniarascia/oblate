@@ -545,6 +545,10 @@ a.article-selected {
   color: #60656a; }
   a.article-selected:hover {
     color: #474b51; }
+  a.article-selected:hover h2 {
+    color: #2581DC; }
+  a.article-selected h2 {
+    color: #4f545a; }
 
 img {
   max-width: 100%; }
