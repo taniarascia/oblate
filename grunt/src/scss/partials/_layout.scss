@@ -19,61 +19,61 @@ h3,
 h4,
 h5 {
 	font-family: $heading-font-family;
-	letter-spacing: -1px;
-	font-weight: 900;
+	font-weight: 800;
 	line-height: 1.2;
+	letter-spacing: -.03em;
 }
 h1 {
 	font-size: 2em;
 	margin: 0;
 }
 h2 {
-	font-size: 1.6em;
-	margin-top: 20px;
-	margin-bottom: 0;
+	font-size: 1.5em;
+	margin: 20px 0 0;
 	font-family: $article-title;
+	letter-spacing: -.05em;
 }
 h3 {
-	font-size: 1.3em;
+	font-size: 1.4em;
 }
 h4 {
-	font-size: 1.1em;
+	font-size: 1.2em;
+	font-weight: 600;
 	color: $sub-font-color;
+}
+h5 {
+	color: $font-color;
+	font-weight: 600;
+	font-size: 1.1em;
+	margin: 20px 0 0;
+}
+@media screen and (min-width: $mobile-breakpoint) {
+	h2 {
+		font-size: 2em;
+	}
+	h3 {
+		font-size: 1.6em;
+	}
 }
 header {
 	padding: 6px 10px 0;
 	border-bottom: 1px solid $slab;
 }
-.decoration {
-	background: url(../images/triangles.png);
-	background-size: cover;
-	background-position: center;
-	padding: 5px 5px 0;
-}
-@media screen and (min-width: $mobile-breakpoint) {
-	.lead {
-		p {
-			font-size: 1.1em;
-			padding: 15px 0;
-		}
-	}
-	h2 {
-		font-size: 2em;
-	}
-	.logo-image {
-		max-width: 80px;
-	}
-}
 .logo-image {
-	max-width: 60px;
+	max-width: 50px;
 }
 main {
 	max-width: $content-small-width;
 	margin: 0 auto;
 }
 article {
-	padding: 40px 15px 30px;
+	padding: 15px 10px;
 	border-bottom: 1px solid $slab;
+}
+@media screen and (min-width: $mobile-breakpoint) {
+	article {
+		padding: 30px 10px;
+	}
 }
 a {
 	color: $link-color;
@@ -141,6 +141,7 @@ time {
 	font-family: $heading-font-family;
 	font-size: .8em;
 	text-transform: uppercase;
+	padding-bottom: 30px;
 }
 mark {
 	padding: 8px 15px;
@@ -188,6 +189,14 @@ dt {
 .center {
 	text-align: center;
 }
+.article-header {
+	margin-bottom: 10px;
+}
+@media screen and (min-width: $mobile-breakpoint) {
+	.article-header {
+		margin-bottom: 40px;
+	}
+}
 .social {
 	text-align: right;
 }
@@ -196,6 +205,15 @@ dt {
 	opacity: .2;
 	&:hover {
 		opacity: .6;
+	}
+}
+.vertical {
+	align-items: center;
+}
+a.article-selected {
+	color: #60656a;
+	&:hover {
+		color: #474b51;
 	}
 }
 img {
@@ -208,44 +226,4 @@ img {
 ::selection {
 	background: #c7254e;
 	color: #fff;
-}
-.portfolio-grid {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	li {
-		width: calc(100% / 2);
-		width: 50%;
-		float: left;
-		overflow: hidden;
-		position: relative;
-		img {
-			transition: all .3s ease;
-			width: 100%;
-			&:hover {
-				transform: scale(1.2);
-			}
-		}
-		h3 {
-			display: none;
-			transition: all .3s ease;
-			position: absolute;
-			width: 100%;
-			bottom: 0;
-			background: rgba(0, 0, 0, .7);
-			padding: 20px;
-			color: #fff;
-			font-size: 1.5em;
-			text-align: center;
-		}
-	}
-}
-@media screen and (min-width: $content-small-width) {
-	.portfolio-grid {
-		li {
-			width: calc(100% / 3);
-			width: 33.3333%;
-			float: left;
-		}
-	}
 }

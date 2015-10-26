@@ -1,7 +1,7 @@
 /* Global Styling */
 
 $border-radius: 0;
-$slab: #d8d9da;
+$slab: #dbdde0;
 $slab2: #dbdcdd;
 
 /* Mobile Breakpoints */
@@ -12,28 +12,27 @@ $content-width: 1200px;
 
 /* Content Font Styling */
 
-$font-family: 'Lato',
+$font-family: 'Noto Sans',
 sans-serif;
-$font-size: 1.2em;
+$font-size: 1.1em;
 $font-color: #4f545a;
-$sub-font-color: #a7a9ac; 
+$sub-font-color: #6e7a83;
 
 /* Heading Font Styling */
 
-$article-title: 'Playfair Display', serif;
+$article-title: 'Open Sans',
+sans-serif;
 $heading-font-family: 'Roboto',
 sans-serif;
 
 /* Link Styling */
 
 $link-color: #2581DC;
-$link-hover-color:  #064E93;
+$link-hover-color: #064E93;
 
 /* Code Styling */
 
 $code-background: #f7f7f7;
-$code-font-stack: .9em 'Roboto Mono',
-monospace;
 $code-font-color: #4B5964;
 
 /* Layout Partials */

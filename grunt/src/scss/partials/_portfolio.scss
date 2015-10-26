@@ -1,0 +1,41 @@
+
+.portfolio-grid {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	li {
+		width: calc(100% / 2);
+		width: 50%;
+		float: left;
+		overflow: hidden;
+		position: relative;
+		img {
+			transition: all .3s ease;
+			width: 100%;
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+		h3 {
+			display: none;
+			transition: all .3s ease;
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			background: rgba(0, 0, 0, .7);
+			padding: 20px;
+			color: #fff;
+			font-size: 1.5em;
+			text-align: center;
+		}
+	}
+}
+@media screen and (min-width: $content-small-width) {
+	.portfolio-grid {
+		li {
+			width: calc(100% / 3);
+			width: 33.3333%;
+			float: left;
+		}
+	}
+}
