@@ -72,7 +72,7 @@ article {
 }
 @media screen and (min-width: $mobile-breakpoint) {
 	article {
-		padding: 30px 10px;
+		padding: 50px 10px;
 	}
 }
 a {
@@ -191,6 +191,14 @@ dt {
 }
 .article-header {
 	margin-bottom: 10px;
+}
+.posts-links {
+	margin: 40px 0;
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
 }
 @media screen and (min-width: $mobile-breakpoint) {
 	.article-header {

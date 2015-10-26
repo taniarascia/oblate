@@ -5,14 +5,16 @@
 		
 			get_template_part( 'content', get_post_format() );
 		
-			endwhile;
-		
-			the_posts_pagination( array(
-				'prev_text'          => __( '← ' ),
-				'next_text'          => __( ' →'),
-				'before_page_number' => '<span>' . __( 'Page') . ' </span>',
-			) );
-		endif;
+			endwhile;?>
+			<div class="posts-links">
+				<div class="left">
+					<?php previous_posts_link();?>
+				</div>
+				<div class="right">
+					<?php next_posts_link(); ?>
+				</div>
+			</div>
+			<?php endif;
 		?>
 	</main>
 	<?php get_sidebar();?>

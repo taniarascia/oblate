@@ -419,7 +419,7 @@ article {
 
 @media screen and (min-width: 550px) {
   article {
-    padding: 30px 10px; } }
+    padding: 50px 10px; } }
 a {
   color: #2581DC;
   text-decoration: none; }
@@ -524,6 +524,13 @@ dt {
 .article-header {
   margin-bottom: 10px; }
 
+.posts-links {
+  margin: 40px 0; }
+  .posts-links:after {
+    content: '';
+    display: table;
+    clear: both; }
+
 @media screen and (min-width: 550px) {
   .article-header {
     margin-bottom: 40px; } }
@@ -564,7 +571,7 @@ img {
 /* Buttons  */
 .buttons, a.button,
 .button,
-button, input[type="submit"], input[type="reset"], input[type="button"] {
+button, .posts-links a, input[type="submit"], input[type="reset"], input[type="button"] {
   color: #2581DC;
   display: inline-block;
   padding: 8px 25px;
@@ -586,7 +593,7 @@ button, input[type="submit"], input[type="reset"], input[type="button"] {
 .button:hover,
 .button:focus,
 button:hover,
-button:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="button"]:hover, input[type="button"]:focus {
+button:focus, .posts-links a:hover, .posts-links a:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="button"]:hover, input[type="button"]:focus {
   border-bottom: 0;
   color: #fff;
   background: #2581DC;

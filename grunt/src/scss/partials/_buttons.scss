@@ -29,7 +29,7 @@
 // Button Output
 a.button,
 .button,
-button {
+button, .posts-links a {
 	@extend .buttons;
 	&:hover,
 	&:focus {
