@@ -8,8 +8,8 @@
 			endwhile;
 		
 			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous' ),
-				'next_text'          => __( 'Next'),
+				'prev_text'          => __( '← ' ),
+				'next_text'          => __( ' →'),
 				'before_page_number' => '<span>' . __( 'Page') . ' </span>',
 			) );
 		endif;

@@ -669,9 +669,7 @@ td {
 
 .pagination {
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
+  margin: 40px auto;
   text-align: center; }
 
 .comment-meta.commentmetadata,

@@ -28,11 +28,10 @@
 // Bottom of the page pagination
 .pagination {
 	max-width: $content-small-width;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 40px;
+	margin: 40px auto;
 	text-align: center;
 }
+
 // Date and Time meta data below commentator's name
 .comment-meta.commentmetadata,
 .comment-notes {
