@@ -499,7 +499,10 @@ mark {
   border: 1px solid #043c24; }
 
 dt {
-  font-weight: 700; }
+  font-weight: 700;
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em; }
 
 .bar {
   display: -webkit-flex;

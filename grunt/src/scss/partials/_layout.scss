@@ -173,6 +173,9 @@ mark {
 }
 dt {
 	font-weight: 700;
+	margin-top: 20px;
+	font-family: $heading-font-family;
+	font-size: 1.1em;
 }
 .bar {
 	display: flex;
