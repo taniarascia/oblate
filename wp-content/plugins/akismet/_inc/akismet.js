@@ -107,7 +107,7 @@ jQuery( function ( $ ) {
 	});
 
 	// Show a preview image of the hovered URL. Applies to author URLs and URLs inside the comments.
-	$( 'a[id^="author_comment_url"], tr.pingback td.column-author a:first-of-type, table.comments a.comment-link' ).mouseover( function () {
+	$( 'a[id^="author_comment_url"], tr.pingback td.column-author a:first-of-type, table.comments td.comment p a' ).mouseover( function () {
 		clearTimeout( mshotRemovalTimer );
 
 		if ( $( '.akismet-mshot' ).length > 0 ) {

@@ -41,7 +41,6 @@ class Akismet_Admin {
 
 		add_filter( 'plugin_action_links', array( 'Akismet_Admin', 'plugin_action_links' ), 10, 2 );
 		add_filter( 'comment_row_actions', array( 'Akismet_Admin', 'comment_row_action' ), 10, 2 );
-		add_filter( 'comment_text', array( 'Akismet_Admin', 'text_add_link_class' ) );
 		
 		add_filter( 'plugin_action_links_'.plugin_basename( plugin_dir_path( __FILE__ ) . 'akismet.php'), array( 'Akismet_Admin', 'admin_plugin_settings_link' ) );
 		
@@ -590,18 +589,6 @@ class Akismet_Admin {
 		}
 
 		return $links;
-	}
-
-	public static function text_add_link_callback( $m ) {
-		// bare link?
-		if ( $m[4] == $m[2] )
-			return '<a '.$m[1].' href="'.$m[2].'" '.$m[3].' class="comment-link">'.$m[4].'</a>';
-		else
-			return '<span title="'.$m[2].'" class="comment-link"><a '.$m[1].' href="'.$m[2].'" '.$m[3].' class="comment-link">'.$m[4].'</a></span>';
-	}
-
-	public static function text_add_link_class( $comment_text ) {
-		return preg_replace_callback( '#<a ([^>]*)href="([^"]+)"([^>]*)>(.*?)</a>#i', array( 'Akismet_Admin', 'text_add_link_callback' ), $comment_text );
 	}
 
 	// Total spam in queue
