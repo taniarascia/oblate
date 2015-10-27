@@ -5,6 +5,6 @@
 			<?php the_time('F j, Y');?>
 		</time>
 		<?php the_tags('&nbsp;☍&nbsp;<span class="tags">', ', ', '', '</span>'); ?>
-	</div>
-	<?php the_excerpt(); ?>
+	</div> 
+	 <?php the_excerpt(); ?>
 </article>
