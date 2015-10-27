@@ -33,6 +33,9 @@ h2 {
 	font-family: $article-title;
 	letter-spacing: -.05em;
 }
+h2.single-article {
+	font-size: 2.2em;
+}
 h3 {
 	font-size: 1.4em;
 }
@@ -49,45 +52,29 @@ h5 {
 }
 @media screen and (min-width: $mobile-breakpoint) {
 	h2 {
-		font-size: 2em;
+		font-size: 1.7em;
 	}
 	h3 {
 		font-size: 1.6em;
-	}
-	.grid h2 {
-		font-size: 1.5em;
 	}
 }
 header {
 	padding: 6px 10px 0;
 	border-bottom: 1px solid $slab;
+	margin-bottom: 20px;
 }
 .logo-image {
 	max-width: 50px;
 }
 main {
-	max-width: $content-width;
+	max-width: $content-small-width;
 	margin: 0 auto;
-	.content {
-		max-width: $content-small-width;
-		margin: 0 auto;
-	}
 }
-
 article {
 	padding: 15px 10px;
-}
-.grid {
-	width: 100%;
-}
-@media screen and (min-width: $content-small-width) {
-	.grid {
-		width: 32.5%;
-		display: inline-block;
-		vertical-align: top;
-		text-align: left;
-		margin-bottom: 15px;
-		position: relative;
+	border-bottom: 1px solid $slab;
+	&:last-of-type {
+		border-bottom: 0;
 	}
 }
 @media screen and (min-width: $mobile-breakpoint) {
@@ -113,9 +100,10 @@ h2 {
 	& a:active,
 	& a:focus {
 		color: $font-color;
+		transition: all .3s ease;
 	}
 	& a:hover {
-		color: $link-color !important;
+		color: $accent !important;
 	}
 }
 p,
@@ -159,9 +147,11 @@ hr {
 time {
 	color: #767a7e;
 	font-family: $heading-font-family;
-	font-size: .8em;
+	font-size: .9em;
 	text-transform: uppercase;
 	padding-bottom: 30px;
+	font-weight: 600;
+	padding-left: 10px;
 }
 mark {
 	padding: 8px 15px;
@@ -238,18 +228,6 @@ dt {
 }
 .vertical {
 	align-items: center;
-}
-a.article-selected {
-	color: #60656a;
-	&:hover {
-		color: #474b51;
-	}
-	&:hover h2 {
-		color: $link-color;
-	}
-	h2 {
-		color: $font-color;
-	}
 }
 img {
 	max-width: 100%;

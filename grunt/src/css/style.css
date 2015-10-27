@@ -382,6 +382,9 @@ h2 {
   font-family: "Open Sans", sans-serif;
   letter-spacing: -.05em; }
 
+h2.single-article {
+  font-size: 2.2em; }
+
 h3 {
   font-size: 1.4em; }
 
@@ -398,41 +401,28 @@ h5 {
 
 @media screen and (min-width: 550px) {
   h2 {
-    font-size: 2em; }
+    font-size: 1.7em; }
 
   h3 {
-    font-size: 1.6em; }
-
-  .grid h2 {
-    font-size: 1.5em; } }
+    font-size: 1.6em; } }
 header {
   padding: 6px 10px 0;
-  border-bottom: 1px solid #dbdde0; }
+  border-bottom: 1px solid #dbdde0;
+  margin-bottom: 20px; }
 
 .logo-image {
   max-width: 50px; }
 
 main {
-  max-width: 1100px;
+  max-width: 800px;
   margin: 0 auto; }
-  main .content {
-    max-width: 800px;
-    margin: 0 auto; }
 
 article {
-  padding: 15px 10px; }
+  padding: 15px 10px;
+  border-bottom: 1px solid #dbdde0; }
+  article:last-of-type {
+    border-bottom: 0; }
 
-.grid {
-  width: 100%; }
-
-@media screen and (min-width: 800px) {
-  .grid {
-    width: 32.5%;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    margin-bottom: 15px;
-    position: relative; } }
 @media screen and (min-width: 550px) {
   article {
     padding: 20px 15px; } }
@@ -445,9 +435,10 @@ a {
     color: #064E93; }
 
 h2 a, h2 a:visited, h2 a:active, h2 a:focus {
-  color: #4f545a; }
+  color: #4f545a;
+  transition: all .3s ease; }
 h2 a:hover {
-  color: #2581DC !important; }
+  color: #c7254e !important; }
 
 p a:hover,
 span a:hover,
@@ -483,9 +474,11 @@ hr {
 time {
   color: #767a7e;
   font-family: "Roboto", sans-serif;
-  font-size: .8em;
+  font-size: .9em;
   text-transform: uppercase;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  font-weight: 600;
+  padding-left: 10px; }
 
 mark {
   padding: 8px 15px;
@@ -564,15 +557,6 @@ dt {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-
-a.article-selected {
-  color: #60656a; }
-  a.article-selected:hover {
-    color: #474b51; }
-  a.article-selected:hover h2 {
-    color: #2581DC; }
-  a.article-selected h2 {
-    color: #4f545a; }
 
 img {
   max-width: 100%; }
@@ -773,7 +757,7 @@ td {
   font-size: .8em;
   font-family: Menlo, monospace;
   border: 1px solid #d8d9da;
-  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
   max-width: 100%;
   border-radius: 4px; }
 
@@ -839,7 +823,8 @@ pre code {
   margin: .5em 0;
   overflow: auto;
   border: 0px solid #dddddd;
-  background-color: #f7f7f7; }
+  background-color: #f7f7f7;
+  font-size: .8em; }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {

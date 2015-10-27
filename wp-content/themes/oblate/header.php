@@ -42,3 +42,7 @@
 				</div>
 			</div>
 	</header>
+<div class="center">
+	<a class="button" href="<?php bloginfo('wpurl');?>/category/tutorials">Tutorials</a>
+	<a class="button" href="<?php bloginfo('wpurl');?>/category/snippets">Snippets</a>
+</div>

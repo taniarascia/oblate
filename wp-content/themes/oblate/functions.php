@@ -32,6 +32,10 @@ function custom_excerpt_length( $length ) {
 	return 30;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+// Support search form
+add_theme_support( 'html5', array( 'search-form' ) );
+
 // Escape HTML
 function escapeHTML($arr) {
 	
@@ -56,14 +60,10 @@ function escapeHTML($arr) {
 
 	if (! empty($output)) {
 		return  $arr[1] . $output . $arr[3];
-	}
-	else
-	{
+	}	else 	{
 		return  $arr[1] . $arr[2] . $arr[3];
-	}
-	
+	}	
 }
-
 
 function filterCode($data) {
 
@@ -74,9 +74,6 @@ function filterCode($data) {
 	return $modifiedData;
 }
 
-
 add_filter( 'content_save_pre', 'filterCode', 9 );
 add_filter( 'excerpt_save_pre', 'filterCode', 9 );
-
-
 ?>

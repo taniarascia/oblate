@@ -3,7 +3,6 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-<div class="content">
 	<div id="comments" class="comments-area">
 
 		<?php if ( have_comments() ) : ?>
@@ -37,5 +36,4 @@ if ( post_password_required() ) {
 						<?php comment_form(); ?>
 
 	</div>
-</div>
 	<!-- .comments-area -->

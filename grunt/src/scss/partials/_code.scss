@@ -3,7 +3,7 @@
 	font-size: .8em;
 	font-family: Menlo, monospace;
 	border: 1px solid #d8d9da;
-	box-shadow: 1px 3px 6px rgba(0, 0, 0, .2);
+	box-shadow: 1px 3px 8px rgba(0, 0, 0, .2);
 	max-width: 100%;
 	border-radius: 4px
 }
@@ -69,6 +69,7 @@ pre code {
 	overflow: auto;
 	border: 0px solid #dddddd;
 	background-color: $code-background;
+	font-size: .8em;
 }
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {}
