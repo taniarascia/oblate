@@ -558,6 +558,10 @@ dt {
       -ms-flex-align: center;
           align-items: center; }
 
+.twitter-button {
+  max-width: 80px;
+  border: 1px solid #dbdde0; }
+
 img {
   max-width: 100%; }
 

@@ -229,6 +229,10 @@ dt {
 .vertical {
 	align-items: center;
 }
+.twitter-button {
+	max-width: 80px; 
+	border: 1px solid $slab;
+}
 img {
 	max-width: 100%;
 }
