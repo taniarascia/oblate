@@ -473,7 +473,7 @@ hr {
 
 time {
   color: #767a7e;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: .9em;
   text-transform: uppercase;
   padding-bottom: 30px;
@@ -587,7 +587,7 @@ button, .posts-links a, input[type="submit"], input[type="reset"], input[type="b
   border: 1px solid #2581DC;
   cursor: pointer;
   font-weight: 700;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 5px 0; }
 
 .buttons-hover, a.button:hover, a.button:focus,
