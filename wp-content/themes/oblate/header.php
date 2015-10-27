@@ -11,6 +11,8 @@
 	<title>Tania Rascia</title>
 
 	<link href="<?php bloginfo('template_directory');?>/css/style.min.css" rel="stylesheet">
+	<link href="<?php bloginfo('template_directory');?>/css/none.css" rel="stylesheet" id="new-moon">
+	
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -35,7 +37,7 @@
 	<header>
 			<div class="flex vertical">
 				<div class="box">
-					<a href="<?php bloginfo('wpurl');?>"><img src="<?php bloginfo('template_directory');?>/images/myface.png" class="logo-image"></a>
+					<a href="<?php bloginfo('wpurl');?>"><img src="<?php bloginfo('template_directory');?>/images/tr.png" class="logo-image"></a>
 				</div>
 				<div class="box social">
 					<a href="https://twitter.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/twitter-dark.png" class="darken"></a>&nbsp;
