@@ -11,9 +11,7 @@
 	<title>Tania Rascia</title>
 
 	<link href="<?php bloginfo('template_directory');?>/css/style.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" title="blue" href="<?php bloginfo('template_directory');?>/css/style.min.css">
-	<link rel="alternate stylesheet" type="text/css" title="pink" href="<?php bloginfo('template_directory');?>/css/newmoon.css	">
-	
+	<link href="<?php bloginfo('template_directory');?>/css/none.css" rel="stylesheet" id="new-moon" title="alternate">
 	
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
@@ -55,3 +53,8 @@
 </div>
 	<div class="break"></div>
 	<?php } ?>
+	
+	<form>
+<input type="submit" onclick="switch_style('blue');return false;" name="theme" value="Blue Theme" id="blue">
+<input type="submit" onclick="switch_style('pink');return false;" name="theme" value="Pink Theme" id="pink">
+</form>
