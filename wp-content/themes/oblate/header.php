@@ -53,8 +53,3 @@
 </div>
 	<div class="break"></div>
 	<?php } ?>
-	
-	<form>
-<input type="submit" onclick="switch_style('blue');return false;" name="theme" value="Blue Theme" id="blue">
-<input type="submit" onclick="switch_style('pink');return false;" name="theme" value="Pink Theme" id="pink">
-</form>
