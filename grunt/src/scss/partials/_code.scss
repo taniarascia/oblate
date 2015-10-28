@@ -67,7 +67,7 @@ pre code {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
-	border: 0px solid #dddddd;
+	border: 0px solid $code-background;
 	background-color: $code-background;
 	font-size: .8em;
 }
@@ -100,7 +100,7 @@ pre[class*="language-"] {}
 .token.comment,
 .token.prolog,
 .token.cdata {
-	color: #ababab; //font-style: italic;
+	color: #a9a9a9; //font-style: italic;
 }
 .token.namespace {
 	opacity: .7;

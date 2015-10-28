@@ -40,15 +40,16 @@
 					<a href="<?php bloginfo('wpurl');?>"><img src="<?php bloginfo('template_directory');?>/images/tr.png" class="logo-image"></a>
 				</div>
 				<div class="box social">
-					<a href="https://twitter.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/twitter-dark.png" class="darken"></a>&nbsp;
-					<a href="https://github.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/github-dark.png" class="darken"></a>
+					<a href="https://twitter.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/twitter.png" class="darken"></a>&nbsp;
+					<a href="https://github.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/github-dark.png" class="darken"></a>&nbsp;
+					<a href="<?php bloginfo('wpurl');?>/feed"><img src="<?php bloginfo('template_directory');?>/images/rss.png" class="darken"></a>
 				</div>
 			</div>
 	</header>
 	
 	<?php if (is_front_page()) { ?>
 <div class="center">
-	<a class="button" href="<?php bloginfo('wpurl');?>/category/tutorials">Tutorials</a>
-	<a class="button" href="<?php bloginfo('wpurl');?>/category/snippets">Snippets</a>
+	<a class="button" href="<?php bloginfo('wpurl');?>/category/tutorials">Tutorials</a><a class="button no-left-border" href="<?php bloginfo('wpurl');?>/category/snippets">Snippets</a>
 </div>
+	<div class="break"></div>
 	<?php } ?>

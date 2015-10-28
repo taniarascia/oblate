@@ -438,18 +438,18 @@ h2 a, h2 a:visited, h2 a:active, h2 a:focus {
   color: #4f545a;
   transition: all .3s ease; }
 h2 a:hover {
-  color: #c7254e !important; }
+  color: #111 !important; }
 
 p a:hover,
 span a:hover,
 li a:hover {
-  border-bottom: 1px solid #aaa; }
+  border-bottom: 1px solid #a9a9a9; }
 
 blockquote {
   margin: 20px 0;
   color: #4f545a;
   padding: 2px 0 0 25px;
-  border-left: 12px solid #f4f4f4;
+  border-left: 12px solid #f7f7f7;
   font-family: "Roboto", sans-serif; }
   blockquote p {
     margin: 0;
@@ -468,7 +468,7 @@ label {
 
 hr {
   border: 0;
-  border-top: 1px solid #dbdcdd;
+  border-top: 1px solid #dbdde0;
   margin: 50px 0; }
 
 time {
@@ -552,9 +552,9 @@ dt {
 
 .darken {
   transition: all .2s ease;
-  opacity: .2; }
+  opacity: .5; }
   .darken:hover {
-    opacity: .6; }
+    opacity: .9; }
 
 .vertical {
   -webkit-align-items: center;
@@ -563,6 +563,12 @@ dt {
 
 .twitter-button {
   max-width: 80px; }
+
+.no-left-border {
+  border-left: 0 !important; }
+
+.break {
+  padding-bottom: 20px; }
 
 img {
   max-width: 100%; }
@@ -828,7 +834,7 @@ pre code {
   padding: 1em;
   margin: .5em 0;
   overflow: auto;
-  border: 0px solid #dddddd;
+  border: 0px solid #f7f7f7;
   background-color: #f7f7f7;
   font-size: .8em; }
 
@@ -857,7 +863,7 @@ pre code {
 .token.comment,
 .token.prolog,
 .token.cdata {
-  color: #ababab; }
+  color: #a9a9a9; }
 
 .token.namespace {
   opacity: .7; }

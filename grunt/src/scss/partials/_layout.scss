@@ -55,7 +55,7 @@ h5 {
 		font-size: 1.7em;
 	}
 	h3 {
-		font-size: 1.6em; 
+		font-size: 1.6em;
 	}
 }
 header {
@@ -103,7 +103,7 @@ h2 {
 		transition: all .3s ease;
 	}
 	& a:hover {
-		color: $accent !important;
+		color: #111 !important;
 	}
 }
 p,
@@ -112,7 +112,7 @@ li {
 	& a {
 		//border-bottom: 1px solid #dedede;
 		&:hover {
-			border-bottom: 1px solid #aaa;
+			border-bottom: 1px solid #a9a9a9;
 		}
 	}
 }
@@ -120,7 +120,7 @@ blockquote {
 	margin: 20px 0;
 	color: #4f545a;
 	padding: 2px 0 0 25px;
-	border-left: 12px solid #f4f4f4;
+	border-left: 12px solid $code-background;
 	font-family: $heading-font-family;
 	& p {
 		margin: 0;
@@ -141,7 +141,7 @@ label {
 }
 hr {
 	border: 0;
-	border-top: 1px solid $slab2;
+	border-top: 1px solid $slab;
 	margin: 50px 0;
 }
 time {
@@ -224,16 +224,22 @@ dt {
 }
 .darken {
 	transition: all .2s ease;
-	opacity: .2;
+	opacity: .5;
 	&:hover {
-		opacity: .6;
+		opacity: .9;
 	}
 }
 .vertical {
 	align-items: center;
 }
 .twitter-button {
-	max-width: 80px;   
+	max-width: 80px;
+}
+.no-left-border {
+	border-left: 0 !important;
+}
+.break {
+	padding-bottom: 20px;
 }
 img {
 	max-width: 100%;
