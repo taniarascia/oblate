@@ -406,9 +406,8 @@ h5 {
   h3 {
     font-size: 1.6em; } }
 header {
-  padding: 6px 10px 0;
-  border-bottom: 1px solid #dbdde0;
-  margin-bottom: 20px; }
+  padding: 5px 5px 0;
+  border-bottom: 1px solid #dbdde0; }
 
 .logo-image {
   max-width: 50px; }
@@ -589,14 +588,14 @@ button, .posts-links a, input[type="submit"], input[type="reset"], input[type="b
   display: inline-block;
   padding: 8px 25px;
   text-align: center;
-  font-size: 1em;
+  font-size: .9em;
   line-height: 1.6;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
   background: transparent;
   border-radius: 0;
-  border: 1px solid #2581DC;
+  border: 1px solid #cdd0d4;
   cursor: pointer;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;

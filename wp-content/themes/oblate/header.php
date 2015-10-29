@@ -33,7 +33,7 @@
 	
 </head>
 
-<body onload="set_style_from_cookie()">
+<body>
 	<header>
 			<div class="flex vertical">
 				<div class="box">
@@ -46,10 +46,3 @@
 				</div>
 			</div>
 	</header>
-	
-	<?php if (is_front_page()) { ?>
-<div class="center">
-	<a class="button" href="<?php bloginfo('wpurl');?>/category/tutorials">Tutorials</a><a class="button no-left-border" href="<?php bloginfo('wpurl');?>/category/snippets">Snippets</a>
-</div>
-	<div class="break"></div>
-	<?php } ?>

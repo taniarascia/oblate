@@ -6,18 +6,19 @@
 	display: inline-block;
 	padding: 8px 25px;
 	text-align: center;
-	font-size: 1em;
+	font-size: .9em;
 	line-height: 1.6;
 	text-transform: uppercase;
 	text-decoration: none;
 	white-space: nowrap;
 	background: transparent;
 	border-radius: $border-radius;
-	border: 1px solid $link-color;
+	border: 1px solid darken($slab, 5%);
 	cursor: pointer;
 	font-weight: 700;
 	font-family: $button;
 	margin: 5px 0;
+	
 	//transition: all .3s ease;
 }
 .buttons-hover {
