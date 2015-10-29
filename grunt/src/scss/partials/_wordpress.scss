@@ -114,3 +114,18 @@
 	border-top: 1px solid $slab;
 	padding: 10px;
 }
+// Tags
+span.tags a {
+	font-size: .9em;
+	padding: 1px .2em;
+	background: darken($code-background, 2%);
+	color: #4B5964;
+	font-weight: 300;
+	font-family: Menlo, monospace;
+	border-bottom: 0;
+	&:hover {
+		background: darken($code-background, 5%);
+		color: darken( $code-font-color, 5%);
+		border-bottom: 0;
+	}
+}

@@ -763,6 +763,19 @@ td {
   border-top: 1px solid #dbdde0;
   padding: 10px; }
 
+span.tags a {
+  font-size: .9em;
+  padding: 1px .2em;
+  background: #f2f2f2;
+  color: #4B5964;
+  font-weight: 300;
+  font-family: Menlo, monospace;
+  border-bottom: 0; }
+  span.tags a:hover {
+    background: #eaeaea;
+    color: #404c55;
+    border-bottom: 0; }
+
 .terminal {
   padding: 10px 6px;
   font-size: .8em;
@@ -775,7 +788,7 @@ td {
 code[class*="language-"],
 pre[class*="language-"],
 pre code {
-  color: #6e7a83;
+  color: #4B5964;
   font-family: Menlo, monospace;
   direction: ltr;
   text-align: left;
@@ -842,7 +855,7 @@ pre code {
   padding: .2em;
   padding-top: 1px;
   padding-bottom: 1px;
-  background: #f7f7f7;
+  background: #f2f2f2;
   border: 0px solid #ececec; }
 
 :not(pre) > code {
@@ -850,7 +863,7 @@ pre code {
   padding: .2em;
   padding-top: 1px;
   padding-bottom: 1px;
-  background: #f7f7f7;
+  background: #f2f2f2;
   font-family: Menlo, monospace;
   color: #4B5964;
   font-weight: 300; }
@@ -862,7 +875,7 @@ pre code {
 .token.comment,
 .token.prolog,
 .token.cdata {
-  color: #a9a9a9; }
+  color: #898989; }
 
 .token.namespace {
   opacity: .7; }
