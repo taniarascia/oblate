@@ -410,7 +410,9 @@ header {
   background: #ffffff; }
 
 .logo-image {
-  max-width: 50px; }
+  max-width: 50px;
+  margin: 0;
+  box-shadow: none; }
 
 main {
   max-width: 800px;
@@ -561,7 +563,9 @@ dt {
 
 .darken {
   transition: all .2s ease;
-  opacity: .5; }
+  opacity: .5;
+  margin: 0;
+  box-shadow: none; }
   .darken:hover {
     opacity: .9; }
 

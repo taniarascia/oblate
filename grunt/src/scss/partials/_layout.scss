@@ -65,6 +65,8 @@ header {
 }
 .logo-image {
   max-width: 50px;
+  margin: 0;
+  box-shadow: none;
 }
 main {
   max-width: $content-small-width;
@@ -239,6 +241,8 @@ dt {
 .darken {
   transition: all .2s ease;
   opacity: .5;
+  margin: 0;
+  box-shadow: none;
   &:hover {
     opacity: .9;
   }
