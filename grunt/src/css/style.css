@@ -408,7 +408,7 @@ header {
   padding: 5px 5px 0;
   border-bottom: 1px solid #dbdde0;
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
 
 .logo-image {
   max-width: 50px; }
@@ -420,15 +420,15 @@ main {
 article {
   padding: 15px 10px; }
 
-.single-article h2 {
-  font-size: 2.2em; }
-
+@media screen and (min-width: 550px) {
+  article.single-article h2 {
+    font-size: 2.2em; } }
 .article-excerpt {
   border: 1px solid #dbdde0;
   background: #ffffff;
   margin: 35px 10px;
   border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
   .article-excerpt:hover {
     background: #fbfbfb; }
 

@@ -1,6 +1,6 @@
 <article id="post-<?php the_ID(); ?>" class="single-article">
 	<div class="article-header center">
-		<h2 class="single-article"><?php the_title();?></h2>
+		<h2><?php the_title();?></h2>
 		<time>
 			<?php the_time('F j, Y');?>
 		</time>
