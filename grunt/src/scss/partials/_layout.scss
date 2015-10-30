@@ -32,7 +32,7 @@ h1 {
 }
 h2 {
   font-size: 1.5em;
-  margin: 20px 0 0;
+  margin: 10px 0 0;
   font-family: $article-title;
   letter-spacing: -.05em;
 }
@@ -62,7 +62,7 @@ header {
   padding: 5px 5px 0;
   border-bottom: 1px solid $slab;
   background: #ffffff;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, .3);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, .27);
 }
 .logo-image {
   max-width: 50px;
@@ -86,9 +86,10 @@ article {
   background: #ffffff;
   margin: 35px 10px;
   border-radius: 4px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, .3);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, .27);
   &:hover {
     background: #fbfbfb;
+    border: darken($slab, 10%);
   }
 }
 @media screen and (min-width: $mobile-breakpoint) {

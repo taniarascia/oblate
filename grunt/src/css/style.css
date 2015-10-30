@@ -380,7 +380,7 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  margin: 20px 0 0;
+  margin: 10px 0 0;
   font-family: "Open Sans", sans-serif;
   letter-spacing: -.05em; }
 
@@ -408,7 +408,7 @@ header {
   padding: 5px 5px 0;
   border-bottom: 1px solid #dbdde0;
   background: #ffffff;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.27); }
 
 .logo-image {
   max-width: 50px; }
@@ -428,9 +428,10 @@ article {
   background: #ffffff;
   margin: 35px 10px;
   border-radius: 4px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.27); }
   .article-excerpt:hover {
-    background: #fbfbfb; }
+    background: #fbfbfb;
+    border: #c0c3c8; }
 
 @media screen and (min-width: 550px) {
   article {
