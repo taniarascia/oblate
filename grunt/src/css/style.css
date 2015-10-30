@@ -430,7 +430,6 @@ article {
   border-radius: 4px;
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.27); }
   .article-excerpt:hover {
-    background: #fbfbfb;
     border: 1px solid #b2b6bd; }
 
 @media screen and (min-width: 550px) {
