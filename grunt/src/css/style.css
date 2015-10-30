@@ -605,8 +605,8 @@ button, .posts-links a, input[type="submit"], input[type="reset"], input[type="b
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background: transparent;
-  border-radius: 4px;
+  background: #ffffff;
+  border-radius: 0;
   border: 1px solid #cdd0d4;
   cursor: pointer;
   font-weight: 700;
@@ -629,7 +629,7 @@ select {
   padding: 12px;
   background: transparent;
   border: 1px solid #cdd0d4;
-  border-radius: 4px;
+  border-radius: 0;
   margin: auto auto 6px;
   max-width: 100%; }
 
