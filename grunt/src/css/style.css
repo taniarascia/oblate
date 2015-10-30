@@ -606,7 +606,7 @@ button, .posts-links a, input[type="submit"], input[type="reset"], input[type="b
   white-space: nowrap;
   background: #2581DC;
   border-radius: 0;
-  border: #2581DC;
+  border: 0px solid #2581DC;
   cursor: pointer;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
@@ -620,7 +620,7 @@ button:focus, .posts-links a:hover, .posts-links a:focus, input[type="submit"]:h
   border-bottom: 0;
   color: #fff;
   background: #064E93;
-  border: 1px solid #064E93; }
+  border: 0px solid #064E93; }
 
 /* Forms */
 .forms, input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea,
