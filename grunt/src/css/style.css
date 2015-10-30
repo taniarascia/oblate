@@ -360,7 +360,8 @@ html {
 
 body {
   font: normal normal 400 1.1em/1.6 "Noto Sans", sans-serif;
-  color: #4f545a; }
+  color: #4f545a;
+  background: #f7f7f7; }
 
 h1,
 h2,
@@ -424,7 +425,8 @@ article {
   border: 1px solid #dbdde0;
   background: #ffffff;
   margin: 30px 0;
-  border-radius: 4px; }
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); }
 
 @media screen and (min-width: 550px) {
   article {

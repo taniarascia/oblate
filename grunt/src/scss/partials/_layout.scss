@@ -12,6 +12,7 @@ body {
   // font: italic small-caps normal 13px/150% Arial, Helvetica, sans-serif;
   font: normal normal 400 #{$font-size}/#{1.6} $font-family;
   color: $font-color;
+  background: $code-background;
 }
 h1,
 h2,
@@ -80,6 +81,7 @@ article {
   background: #ffffff;
   margin: 30px 0;
   border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,.3);
 }
 @media screen and (min-width: $mobile-breakpoint) {
   article {
