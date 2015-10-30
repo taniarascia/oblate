@@ -360,8 +360,9 @@ html {
 
 body {
   font: normal normal 400 1.1em/1.6 "Noto Sans", sans-serif;
-  color: #4f545a;
-  background: #f7f7f7; }
+  color: #4f545a; }
+  body.background {
+    background: #f7f7f7; }
 
 h1,
 h2,
