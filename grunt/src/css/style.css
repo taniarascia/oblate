@@ -426,9 +426,9 @@ article {
   border: 1px solid #ffffff;
   background: #ffffff;
   margin: 35px 10px;
-  transition: all .3s ease; }
+  transition: all .1s ease; }
   .article-excerpt:hover {
-    border: 1px solid #b2b6bd;
+    border: 1px solid #dbdde0;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.27); }
 
 @media screen and (min-width: 550px) {
