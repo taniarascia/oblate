@@ -407,8 +407,7 @@ h5 {
 header {
   padding: 5px 5px 0;
   border-bottom: 1px solid #dbdde0;
-  background: #ffffff;
-  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.27); }
+  background: #ffffff; }
 
 .logo-image {
   max-width: 50px; }
@@ -426,10 +425,11 @@ article {
 .article-excerpt {
   border: 1px solid #ffffff;
   background: #ffffff;
-  margin: 35px 10px; }
+  margin: 35px 10px;
+  transition: all .3s ease; }
   .article-excerpt:hover {
     border: 1px solid #b2b6bd;
-    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.27); }
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.27); }
 
 @media screen and (min-width: 550px) {
   article {
