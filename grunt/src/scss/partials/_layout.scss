@@ -14,7 +14,7 @@ body {
   color: $font-color;
   &.background {
     background: $code-background;
-  } 
+  }
 }
 h1,
 h2,
@@ -62,6 +62,7 @@ header {
   padding: 5px 5px 0;
   border-bottom: 1px solid $slab;
   background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, .3);
 }
 .logo-image {
   max-width: 50px;
@@ -81,9 +82,12 @@ article {
 .article-excerpt {
   border: 1px solid $slab;
   background: #ffffff;
-  margin: 30px 0;
+  margin: 35px 10px;
   border-radius: 4px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, .3);
+  &:hover {
+    background: #fbfbfb;
+  }
 }
 @media screen and (min-width: $mobile-breakpoint) {
   article {
