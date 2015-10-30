@@ -595,7 +595,7 @@ img {
 .buttons, a.button,
 .button,
 button, .posts-links a, input[type="submit"], input[type="reset"], input[type="button"] {
-  color: #2581DC;
+  color: #ffffff;
   display: inline-block;
   padding: 8px 25px;
   text-align: center;
@@ -604,9 +604,9 @@ button, .posts-links a, input[type="submit"], input[type="reset"], input[type="b
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background: #ffffff;
+  background: #2581DC;
   border-radius: 0;
-  border: 1px solid #cdd0d4;
+  border: #2581DC;
   cursor: pointer;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
@@ -619,8 +619,8 @@ button:hover,
 button:focus, .posts-links a:hover, .posts-links a:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="button"]:hover, input[type="button"]:focus {
   border-bottom: 0;
   color: #fff;
-  background: #2581DC;
-  border: 1px solid #2581DC; }
+  background: #064E93;
+  border: 1px solid #064E93; }
 
 /* Forms */
 .forms, input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea,
