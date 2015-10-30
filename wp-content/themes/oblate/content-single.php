@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>">
+<article id="post-<?php the_ID(); ?>" class="single-article">
 	<div class="article-header center">
 		<h2 class="single-article"><?php the_title();?></h2>
 		<time>

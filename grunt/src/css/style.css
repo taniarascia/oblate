@@ -382,9 +382,6 @@ h2 {
   font-family: "Open Sans", sans-serif;
   letter-spacing: -.05em; }
 
-h2.single-article {
-  font-size: 2.2em; }
-
 h3 {
   font-size: 1.4em; }
 
@@ -407,7 +404,8 @@ h5 {
     font-size: 1.6em; } }
 header {
   padding: 5px 5px 0;
-  border-bottom: 1px solid #dbdde0; }
+  border-bottom: 1px solid #dbdde0;
+  background: #ffffff; }
 
 .logo-image {
   max-width: 50px; }
@@ -417,14 +415,21 @@ main {
   margin: 0 auto; }
 
 article {
-  padding: 15px 10px;
-  border-bottom: 1px solid #dbdde0; }
-  article:last-of-type {
-    border-bottom: 0; }
+  padding: 15px 10px; }
+
+.single-article h2 {
+  font-size: 2.2em; }
+
+.article-excerpt {
+  border: 1px solid #dbdde0;
+  background: #ffffff;
+  margin: 30px 0;
+  border-radius: 4px; }
 
 @media screen and (min-width: 550px) {
   article {
-    padding: 20px 15px; } }
+    padding: 20px 15px;
+    background: #ffffff; } }
 a {
   color: #2581DC;
   text-decoration: none; }
