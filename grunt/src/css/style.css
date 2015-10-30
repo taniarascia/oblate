@@ -431,7 +431,7 @@ article {
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.27); }
   .article-excerpt:hover {
     background: #fbfbfb;
-    border: #c0c3c8; }
+    border: 1px solid #b2b6bd; }
 
 @media screen and (min-width: 550px) {
   article {
@@ -606,7 +606,7 @@ button, .posts-links a, input[type="submit"], input[type="reset"], input[type="b
   text-decoration: none;
   white-space: nowrap;
   background: transparent;
-  border-radius: 0;
+  border-radius: 4px;
   border: 1px solid #cdd0d4;
   cursor: pointer;
   font-weight: 700;
@@ -629,7 +629,7 @@ select {
   padding: 12px;
   background: transparent;
   border: 1px solid #cdd0d4;
-  border-radius: 0;
+  border-radius: 4px;
   margin: auto auto 6px;
   max-width: 100%; }
 
