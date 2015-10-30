@@ -424,13 +424,12 @@ article {
   article.single-article h2 {
     font-size: 2.2em; } }
 .article-excerpt {
-  border: 1px solid #dbdde0;
+  border: 1px solid #ffffff;
   background: #ffffff;
-  margin: 35px 10px;
-  border-radius: 4px;
-  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.27); }
+  margin: 35px 10px; }
   .article-excerpt:hover {
-    border: 1px solid #b2b6bd; }
+    border: 1px solid #b2b6bd;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.27); }
 
 @media screen and (min-width: 550px) {
   article {
