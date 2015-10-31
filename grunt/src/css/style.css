@@ -750,15 +750,16 @@ td {
 
 .comment-reply-title,
 .comments-title {
-  font-size: 1.2em; }
+  font-size: 1.3em;
+  font-family: "Open Sans", sans-serif; }
 
 .comment-body {
-  background: #f4f4f4;
+  background: #f7f7f7;
   padding: 20px; }
   .comment-body p {
     font-size: .9em; }
   .comment-body .reply {
-    font-size: .8em; }
+    font-size: .9em; }
   .comment-body a,
   .comment-body a:visited,
   .comment-body a:focus {

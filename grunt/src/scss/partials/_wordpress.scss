@@ -73,17 +73,18 @@
 // Comments and Replies
 .comment-reply-title,
 .comments-title {
-	font-size: 1.2em;
+	font-size: 1.3em;
+	font-family: $article-title;
 }
 // Comment body
 .comment-body {
-	background: #f4f4f4;
+	background: $code-background;
 	padding: 20px;
 	p {
 		font-size: .9em;
 	}
 	.reply {
-		font-size: .8em;
+		font-size: .9em;
 	}
 	a,
 	a:visited,
