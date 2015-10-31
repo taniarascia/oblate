@@ -14,7 +14,7 @@ if( !$paged && $c == 1) :?>
 		</time>
 		<?php the_tags('&nbsp;☍&nbsp;<span class="tags">', ', ', '', '</span>'); ?>
 	</div> 
-	 <?php the_excerpt(); ?>
+	 <?php the_content(); ?>
 </article>
 
 <?php else :?>
