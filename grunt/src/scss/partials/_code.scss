@@ -71,6 +71,7 @@ pre code {
 	border: 0px solid $code-background;
 	background-color: $code-background;
 	font-size: .8em;
+	-webkit-font-smoothing: subpixel-antialiased;
 }
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {}
@@ -83,6 +84,7 @@ pre[class*="language-"] {}
 	padding-bottom: 1px;
 	background: darken($code-background, 2%);
 	border: 0px solid #ececec;
+	-webkit-font-smoothing: subpixel-antialiased;
 }
 :not(pre) > code {
 	font-size: .9em;
@@ -93,6 +95,7 @@ pre[class*="language-"] {}
 	font-family: Menlo, monospace;
 	color: $code-font-color;
 	font-weight: 300;
+	-webkit-font-smoothing: subpixel-antialiased;
 }
 .token.doctype {
 	background: #000;

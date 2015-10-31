@@ -124,6 +124,7 @@ span.tags a {
 	font-weight: 300;
 	font-family: Menlo, monospace;
 	border-bottom: 0;
+	-webkit-font-smoothing: subpixel-antialiased;
 	&:hover {
 		background: darken($code-background, 5%);
 		color: darken( $code-font-color, 5%);

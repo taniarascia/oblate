@@ -790,7 +790,8 @@ span.tags a {
   color: #4B5964;
   font-weight: 300;
   font-family: Menlo, monospace;
-  border-bottom: 0; }
+  border-bottom: 0;
+  -webkit-font-smoothing: subpixel-antialiased; }
   span.tags a:hover {
     background: #eaeaea;
     color: #404c55;
@@ -875,7 +876,8 @@ pre code {
   overflow: auto;
   border: 0px solid #f7f7f7;
   background-color: #f7f7f7;
-  font-size: .8em; }
+  font-size: .8em;
+  -webkit-font-smoothing: subpixel-antialiased; }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
@@ -883,7 +885,8 @@ pre code {
   padding-top: 1px;
   padding-bottom: 1px;
   background: #f2f2f2;
-  border: 0px solid #ececec; }
+  border: 0px solid #ececec;
+  -webkit-font-smoothing: subpixel-antialiased; }
 
 :not(pre) > code {
   font-size: .9em;
@@ -893,7 +896,8 @@ pre code {
   background: #f2f2f2;
   font-family: Menlo, monospace;
   color: #4B5964;
-  font-weight: 300; }
+  font-weight: 300;
+  -webkit-font-smoothing: subpixel-antialiased; }
 
 .token.doctype {
   background: #000;
