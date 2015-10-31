@@ -7,5 +7,5 @@
 		<?php the_tags('&nbsp;☍&nbsp;<span class="tags">', ', ', '', '</span>'); ?>
 	</div>
 	<?php the_content(); ?>
-		<a href="http://twitter.com/intent/tweet?text=<?php echo the_title()?>&url=<?php the_permalink();?>&via=taniarascia" target="_blank" title="Share to Twitter"><img src="<?php bloginfo('template_directory');?>/images/tweetbutton.png" class="twitter-button"></a>
+		<a href="http://twitter.com/intent/tweet?text=<?php echo the_title()?>&url=<?php the_permalink();?>&via=taniarascia" target="_blank" title="Share to Twitter"><img src="<?php bloginfo('template_directory');?>/images/tweetbutton.png" class="twitter-button no"></a>
 </article>

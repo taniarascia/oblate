@@ -63,6 +63,7 @@
 	font-weight: 700;
 	& cite {
 		font-style: normal;
+		font-size: 1.3em;
 	}
 }
 // says:
@@ -89,7 +90,6 @@
 	a:focus {
 		color: #62676c;
 		font-weight: 700;
-		font-family: $heading-font-family;
 	}
 	a:hover {
 		color: #363b40;
@@ -128,4 +128,15 @@ span.tags a {
 		color: darken( $code-font-color, 5%);
 		border-bottom: 0;
 	}
+}
+// Reply
+.comment-reply-link {
+	@extend .buttons;
+	color: #ffffff !important;
+	&:hover {
+		@extend .buttons-hover;
+	}
+}
+.avatar {
+	display: none;
 }

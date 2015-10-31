@@ -425,13 +425,13 @@ article {
   article.single-article h2 {
     font-size: 2.2em; } }
 .article-excerpt {
-  border: 1px solid #ffffff;
   background: #ffffff;
-  margin: 35px 10px;
-  transition: all .1s ease; }
+  margin: 35px 10px; }
   .article-excerpt:hover {
-    border: 1px solid #dbdde0;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.27); }
+  .article-excerpt.first {
+    border-left: 12px solid #FFF9E0;
+    background: #fffdf8; }
 
 @media screen and (min-width: 550px) {
   article {
@@ -587,6 +587,9 @@ img {
   max-width: 100%;
   margin: 30px 0;
   box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.27); }
+  img.no {
+    box-shadow: none;
+    margin: 0; }
 
 ::-moz-selection {
   background: #c7254e;
@@ -599,7 +602,7 @@ img {
 /* Buttons  */
 .buttons, a.button,
 .button,
-button, .posts-links a, input[type="submit"], input[type="reset"], input[type="button"] {
+button, .posts-links a, input[type="submit"], input[type="reset"], input[type="button"], .comment-reply-link {
   color: #ffffff;
   display: inline-block;
   padding: 8px 25px;
@@ -621,7 +624,7 @@ button, .posts-links a, input[type="submit"], input[type="reset"], input[type="b
 .button:hover,
 .button:focus,
 button:hover,
-button:focus, .posts-links a:hover, .posts-links a:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="button"]:hover, input[type="button"]:focus {
+button:focus, .posts-links a:hover, .posts-links a:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="button"]:hover, input[type="button"]:focus, .comment-reply-link:hover {
   border-bottom: 0;
   color: #fff;
   background: #064E93;
@@ -739,7 +742,8 @@ td {
 .comment-author {
   font-weight: 700; }
   .comment-author cite {
-    font-style: normal; }
+    font-style: normal;
+    font-size: 1.3em; }
 
 .says {
   display: none; }
@@ -759,8 +763,7 @@ td {
   .comment-body a:visited,
   .comment-body a:focus {
     color: #62676c;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif; }
+    font-weight: 700; }
   .comment-body a:hover {
     color: #363b40; }
 
@@ -792,14 +795,21 @@ span.tags a {
     color: #404c55;
     border-bottom: 0; }
 
+.comment-reply-link {
+  color: #ffffff !important; }
+
+.avatar {
+  display: none; }
+
 .terminal {
   padding: 10px 6px;
   font-size: .8em;
   font-family: Menlo, monospace;
   border: 1px solid #d8d9da;
-  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   max-width: 100%;
-  border-radius: 4px; }
+  border-radius: 4px;
+  margin: 30px 0; }
 
 code[class*="language-"],
 pre[class*="language-"],
