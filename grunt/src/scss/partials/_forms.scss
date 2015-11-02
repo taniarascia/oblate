@@ -3,11 +3,12 @@
 // Forms Extend
 .forms {
 	padding: 12px;
-	background: transparent;
-	border: 1px solid darken($slab, 5%);
+	background: $slab;
+	border: 1px solid $slab;
 	border-radius: $border-radius;
 	margin: auto auto 6px;
 	max-width: 100%;
+  font-family: $heading-font-family;
 }
 // Forms Output CSS
 input {
@@ -20,8 +21,8 @@ input {
 	&[type="password"] {
 		@extend .forms;
 		&:focus {
-			border: 1px solid $link-hover-color;
-			background: transparent;
+			border: 1px solid darken($slab, 5%);
+			background: #fff;
 			outline: 0;
 		}
 		&:hover {
@@ -33,16 +34,18 @@ textarea,
 select {
 	@extend .forms;
 	&:focus {
-		border: 1px solid $link-hover-color;
-		background: transparent;
+		border: 1px solid darken($slab, 5%);
+		background: #fff;
 		outline: 0;
 	}
 	&:hover {
-		border: 1px solid $link-color;
+		border: 1px solid darken($slab, 5%);
+    background: darken($slab, 5%);
 	}
 }
 textarea {
 	min-height: 100px;
+  width: 100%;
 }
 label,
 legend {

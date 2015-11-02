@@ -359,7 +359,7 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 body {
-  font: normal normal 400 1.2em/1.6 "Noto Serif", sans-serif;
+  font: normal normal 400 1.1em/1.6 "Noto Serif", sans-serif;
   color: #4f545a; }
 
 h1,
@@ -424,6 +424,7 @@ article {
   article.single-article h2 {
     font-size: 2.2em; } }
 .article-excerpt {
+  color: #83878b;
   background: #ffffff;
   margin: 0; }
 
@@ -629,30 +630,33 @@ button:focus, .posts-links a:hover, .posts-links a:focus, input[type="submit"]:h
 .forms, input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea,
 select {
   padding: 12px;
-  background: transparent;
-  border: 1px solid #cdd0d4;
+  background: #dbdde0;
+  border: 1px solid #dbdde0;
   border-radius: 0;
   margin: auto auto 6px;
-  max-width: 100%; }
+  max-width: 100%;
+  font-family: "Open Sans", sans-serif; }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
-  border: 1px solid #064E93;
-  background: transparent;
+  border: 1px solid #cdd0d4;
+  background: #fff;
   outline: 0; }
 input[type="email"]:hover, input[type="number"]:hover, input[type="search"]:hover, input[type="text"]:hover, input[type="tel"]:hover, input[type="url"]:hover, input[type="password"]:hover {
   border: 1px solid #2581DC; }
 
 textarea:focus,
 select:focus {
-  border: 1px solid #064E93;
-  background: transparent;
+  border: 1px solid #cdd0d4;
+  background: #fff;
   outline: 0; }
 textarea:hover,
 select:hover {
-  border: 1px solid #2581DC; }
+  border: 1px solid #cdd0d4;
+  background: #cdd0d4; }
 
 textarea {
-  min-height: 100px; }
+  min-height: 100px;
+  width: 100%; }
 
 label,
 legend {
