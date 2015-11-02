@@ -9,6 +9,7 @@
 	margin: auto auto 6px;
 	max-width: 100%;
   font-family: $heading-font-family;
+  transition: ease .2s all; 
 }
 // Forms Output CSS
 input {
@@ -21,13 +22,13 @@ input {
 	&[type="password"] {
 		@extend .forms;
 		&:focus {
-			border: 1px solid $slab;
+			border: 1px solid darken($code-background, 15%);
 			background: #fff;
 			outline: 0;
 		}
 		&:hover {
 			border: 1px solid darken($code-background, 10%);
-    background: darken($code-background, 10%);
+    //background: darken($code-background, 10%);
 		}
 	}
 }
@@ -35,13 +36,13 @@ textarea,
 select {
 	@extend .forms;
 	&:focus {
-		border: 1px solid $slab;
+		border: 1px solid darken($code-background, 15%);
 		background: transparent;
 		outline: 0;
 	}
 	&:hover {
-		border: 1px solid darken($code-background, 5%);
-    background: darken($code-background, 5%);
+		border: 1px solid darken($code-background, 10%);
+    //background: darken($code-background, 5%);
 	}
 }
 textarea {
