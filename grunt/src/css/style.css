@@ -377,13 +377,14 @@ h1 {
   margin: 0; }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   margin: 10px 0 0;
   font-family: "Open Sans", sans-serif;
   letter-spacing: -.05em; }
 
 h3 {
-  font-size: 1.4em; }
+  font-size: 1.3em;
+  letter-spacing: -.05em; }
 
 h4 {
   font-size: 1.2em;
@@ -419,14 +420,18 @@ main {
 article {
   padding: 15px 10px;
   border-bottom: 1px solid #dbdde0; }
+  article:last-of-type {
+    border-bottom: 0; }
 
 @media screen and (min-width: 550px) {
   article.single-article h2 {
     font-size: 2.2em; } }
 .article-excerpt {
-  color: #83878b;
+  color: #676d75;
   background: #ffffff;
   margin: 0; }
+  .article-excerpt:hover {
+    color: #4f545a; }
 
 @media screen and (min-width: 550px) {
   article {
@@ -642,8 +647,8 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focu
   background: #fff;
   outline: 0; }
 input[type="email"]:hover, input[type="number"]:hover, input[type="search"]:hover, input[type="text"]:hover, input[type="tel"]:hover, input[type="url"]:hover, input[type="password"]:hover {
-  border: 1px solid #f7f7f7;
-  background: #f7f7f7; }
+  border: 1px solid #dedede;
+  background: #dedede; }
 
 textarea:focus,
 select:focus {
@@ -652,8 +657,8 @@ select:focus {
   outline: 0; }
 textarea:hover,
 select:hover {
-  border: 1px solid #f7f7f7;
-  background: #f7f7f7; }
+  border: 1px solid #dedede;
+  background: #dedede; }
 
 textarea {
   min-height: 100px;
