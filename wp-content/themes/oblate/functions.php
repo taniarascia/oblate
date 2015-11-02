@@ -36,6 +36,13 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 // Support search form
 add_theme_support( 'html5', array( 'search-form' ) );
 
+// Change more link
+add_filter( 'the_content_more_link', 'modify_read_more_link' );
+function modify_read_more_link() {
+return '<a class="button" href="' . get_permalink() . '">Read More</a>';
+}
+
+
 // Escape HTML
 function escapeHTML($arr) {
 	
