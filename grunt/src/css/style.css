@@ -359,17 +359,15 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 body {
-  font: normal normal 400 1.1em/1.6 "Noto Sans", sans-serif;
+  font: normal normal 400 1.2em/1.6 "Noto Serif", sans-serif;
   color: #4f545a; }
-  body.background {
-    background: #f7f7f7; }
 
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: -.03em; }
@@ -430,8 +428,7 @@ article {
   .article-excerpt:hover {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1); }
   .article-excerpt.first {
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
-    border-left: 12px solid #FFF9E0;
+    border-top: 12px solid #FFF9E0;
     background: #fffdf8; }
     .article-excerpt.first:hover {
       border-left: 12px solid #FFEC7E;
@@ -465,7 +462,7 @@ blockquote {
   color: #4f545a;
   padding: 2px 0 0 25px;
   border-left: 12px solid #f7f7f7;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
   blockquote p {
     margin: 0;
     font-weight: 700; }
@@ -479,7 +476,7 @@ cite,
 mark,
 strong,
 label {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 hr {
   border: 0;
@@ -516,7 +513,7 @@ mark {
 dt {
   font-weight: 700;
   margin-top: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.1em; }
 
 .bar {
@@ -719,7 +716,7 @@ td {
   display: inline-block;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 .screen-reader-text {
   display: none; }

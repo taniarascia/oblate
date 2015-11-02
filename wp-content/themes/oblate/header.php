@@ -13,9 +13,8 @@
 	<link href="<?php bloginfo('template_directory');?>/css/style.min.css" rel="stylesheet">
 	<link href="<?php bloginfo('template_directory');?>/css/none.css" rel="stylesheet" id="new-moon" title="alternate">
 	
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -32,11 +31,7 @@
 	</script>
 	
 </head>
-<?php if(is_front_page()) {?>
-<body class="background">
-<?php } else { ?>
 <body> 
-<?php } ?>
 	<header>
 			<div class="flex vertical">
 				<div class="box">

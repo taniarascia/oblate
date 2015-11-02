@@ -12,9 +12,6 @@ body {
 	// font: italic small-caps normal 13px/150% Arial, Helvetica, sans-serif;
 	font: normal normal 400 #{$font-size}/#{1.6} $font-family;
 	color: $font-color;
-	&.background {
-		background: $code-background;
-	}
 }
 h1,
 h2,
@@ -89,8 +86,7 @@ article {
 		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1)
 	}
 	&.first {
-		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
-		border-left: 12px solid #FFF9E0;
+		border-top: 12px solid #FFF9E0;
 		background: #fffdf8;
 		&:hover {
 			border-left: 12px solid #FFEC7E;
