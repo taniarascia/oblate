@@ -432,6 +432,8 @@ article {
   margin: 0; }
   .article-excerpt:hover {
     color: #4f545a; }
+  .article-excerpt.first time {
+    border-left: 6px solid #FFEC88; }
 
 @media screen and (min-width: 550px) {
   article {
@@ -487,7 +489,7 @@ time {
   font-family: "Montserrat", sans-serif;
   font-size: .9em;
   text-transform: uppercase;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   font-weight: 600;
   padding-left: 10px; }
 
@@ -648,7 +650,8 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focu
   background: #fff;
   outline: 0; }
 input[type="email"]:hover, input[type="number"]:hover, input[type="search"]:hover, input[type="text"]:hover, input[type="tel"]:hover, input[type="url"]:hover, input[type="password"]:hover {
-  border: 1px solid #dedede; }
+  border: 1px solid #eaeaea;
+  background: #eaeaea; }
 
 textarea:focus,
 select:focus {
@@ -657,7 +660,8 @@ select:focus {
   outline: 0; }
 textarea:hover,
 select:hover {
-  border: 1px solid #dedede; }
+  border: 1px solid #eaeaea;
+  background: #eaeaea; }
 
 textarea {
   min-height: 100px;
