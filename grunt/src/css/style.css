@@ -630,7 +630,7 @@ button:focus, .posts-links a:hover, .posts-links a:focus, input[type="submit"]:h
 .forms, input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea,
 select {
   padding: 12px;
-  background: #dbdde0;
+  background: #f7f7f7;
   border: 1px solid #dbdde0;
   border-radius: 0;
   margin: auto auto 6px;
@@ -638,21 +638,22 @@ select {
   font-family: "Open Sans", sans-serif; }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
-  border: 1px solid #cdd0d4;
+  border: 1px solid #dbdde0;
   background: #fff;
   outline: 0; }
 input[type="email"]:hover, input[type="number"]:hover, input[type="search"]:hover, input[type="text"]:hover, input[type="tel"]:hover, input[type="url"]:hover, input[type="password"]:hover {
-  border: 1px solid #2581DC; }
+  border: 1px solid #dbdde0;
+  background: #dbdde0; }
 
 textarea:focus,
 select:focus {
-  border: 1px solid #cdd0d4;
-  background: #fff;
+  border: 1px solid #dbdde0;
+  background: transparent;
   outline: 0; }
 textarea:hover,
 select:hover {
-  border: 1px solid #cdd0d4;
-  background: #cdd0d4; }
+  border: 1px solid #dbdde0;
+  background: #dbdde0; }
 
 textarea {
   min-height: 100px;

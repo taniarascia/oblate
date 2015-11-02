@@ -3,7 +3,7 @@
 // Forms Extend
 .forms {
 	padding: 12px;
-	background: $slab;
+	background: $code-background;
 	border: 1px solid $slab;
 	border-radius: $border-radius;
 	margin: auto auto 6px;
@@ -21,12 +21,13 @@ input {
 	&[type="password"] {
 		@extend .forms;
 		&:focus {
-			border: 1px solid darken($slab, 5%);
+			border: 1px solid $slab;
 			background: #fff;
 			outline: 0;
 		}
 		&:hover {
-			border: 1px solid $link-color;
+			border: 1px solid $slab;
+      background:  $slab;
 		}
 	}
 }
@@ -34,13 +35,13 @@ textarea,
 select {
 	@extend .forms;
 	&:focus {
-		border: 1px solid darken($slab, 5%);
-		background: #fff;
+		border: 1px solid $slab;
+		background: transparent;
 		outline: 0;
 	}
 	&:hover {
-		border: 1px solid darken($slab, 5%);
-    background: darken($slab, 5%);
+		border: 1px solid $slab;
+    background:  $slab;
 	}
 }
 textarea {
