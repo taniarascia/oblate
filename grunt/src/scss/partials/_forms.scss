@@ -4,7 +4,7 @@
 .forms {
 	padding: 12px;
 	background: $code-background;
-	border: 1px solid $slab;
+	border: 1px solid $code-background;
 	border-radius: $border-radius;
 	margin: auto auto 6px;
 	max-width: 100%;
@@ -26,8 +26,8 @@ input {
 			outline: 0;
 		}
 		&:hover {
-			border: 1px solid $slab;
-      background:  $slab;
+			border: 1px solid $code-background;
+    background: $code-background;
 		}
 	}
 }
@@ -40,8 +40,8 @@ select {
 		outline: 0;
 	}
 	&:hover {
-		border: 1px solid $slab;
-    background:  $slab;
+		border: 1px solid $code-background;
+    background: $code-background;
 	}
 }
 textarea {
