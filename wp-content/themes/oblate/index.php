@@ -4,7 +4,7 @@
 <?php $post = $posts[0]; $c=0;?>
 <?php while (have_posts()) : the_post();
  $c++;
-if( !$paged && $c == 1) :?>
+if( !$paged && $c == 1 && is_front_page()) :?>
 
 <article id="post-<?php the_ID(); ?>" class="article-excerpt first">
 	<div class="article-header">
