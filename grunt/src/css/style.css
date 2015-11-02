@@ -417,7 +417,8 @@ main {
   margin: 10px auto; }
 
 article {
-  padding: 15px 10px; }
+  padding: 15px 10px;
+  border-bottom: 1px solid #dbdde0; }
 
 @media screen and (min-width: 550px) {
   article.single-article h2 {
@@ -425,14 +426,11 @@ article {
 .article-excerpt {
   background: #ffffff;
   margin: 35px 10px; }
-  .article-excerpt:hover {
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1); }
   .article-excerpt.first {
     border-top: 12px solid #FFF9E0;
     background: #fffdf8; }
     .article-excerpt.first:hover {
-      border-left: 12px solid #FFEC7E;
-      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2); }
+      border-top: 12px solid #FFEC7E; }
 
 @media screen and (min-width: 550px) {
   article {

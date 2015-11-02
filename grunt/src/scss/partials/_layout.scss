@@ -71,6 +71,7 @@ main {
 }
 article {
 	padding: 15px 10px;
+  border-bottom: 1px solid $slab;
 }
 @media screen and (min-width: $mobile-breakpoint) {
 	article.single-article {
@@ -83,14 +84,13 @@ article {
 	background: #ffffff;
 	margin: 35px 10px;
 	&:hover {
-		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1)
+		//box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1)
 	}
 	&.first {
 		border-top: 12px solid #FFF9E0;
 		background: #fffdf8;
 		&:hover {
-			border-left: 12px solid #FFEC7E;
-			box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+			border-top: 12px solid #FFEC7E;
 		}
 	}
 }
