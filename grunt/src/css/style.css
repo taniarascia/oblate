@@ -370,7 +370,7 @@ h5 {
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   line-height: 1.2;
-  letter-spacing: -.03em; }
+  letter-spacing: -.05em; }
 
 h1 {
   font-size: 2em;
@@ -576,6 +576,9 @@ dt {
 
 .break {
   padding-bottom: 20px; }
+
+.right-text {
+  text-align: right; }
 
 img {
   max-width: 100%;
