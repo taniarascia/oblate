@@ -40,8 +40,8 @@ select {
 		outline: 0;
 	}
 	&:hover {
-		border: 1px solid darken($code-background, 10%);
-    background: darken($code-background, 10%);
+		border: 1px solid darken($code-background, 5%);
+    background: darken($code-background, 5%);
 	}
 }
 textarea {

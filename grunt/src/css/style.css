@@ -359,7 +359,7 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 body {
-  font: normal normal 400 1.1em/1.6 "Noto Serif", sans-serif;
+  font: normal normal 400 1.2em/1.6 "Noto Serif", sans-serif;
   color: #4f545a; }
 
 h1,
@@ -657,8 +657,8 @@ select:focus {
   outline: 0; }
 textarea:hover,
 select:hover {
-  border: 1px solid #dedede;
-  background: #dedede; }
+  border: 1px solid #eaeaea;
+  background: #eaeaea; }
 
 textarea {
   min-height: 100px;
