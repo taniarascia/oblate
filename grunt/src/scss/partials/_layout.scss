@@ -82,21 +82,21 @@ article {
 }
 .article-excerpt {
 	background: #ffffff;
-	margin: 35px 10px;
+	margin: 0;
 	&:hover {
 		//box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1)
 	}
 	&.first {
-		border-top: 12px solid #FFF9E0;
-		background: #fffdf8;
+		//border-top: 12px solid #FFF9E0;
+		//background: #fffdf8;
 		&:hover {
-			border-top: 12px solid #FFEC7E;
+		//	border-top: 12px solid #FFEC7E;
 		}
 	}
 }
 @media screen and (min-width: $mobile-breakpoint) {
 	article {
-		padding: 20px 15px;
+		padding: 30px 15px;
 		background: #ffffff;
 	}
 }

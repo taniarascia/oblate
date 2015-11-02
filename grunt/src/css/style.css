@@ -425,16 +425,11 @@ article {
     font-size: 2.2em; } }
 .article-excerpt {
   background: #ffffff;
-  margin: 35px 10px; }
-  .article-excerpt.first {
-    border-top: 12px solid #FFF9E0;
-    background: #fffdf8; }
-    .article-excerpt.first:hover {
-      border-top: 12px solid #FFEC7E; }
+  margin: 0; }
 
 @media screen and (min-width: 550px) {
   article {
-    padding: 20px 15px;
+    padding: 30px 15px;
     background: #ffffff; } }
 a {
   color: #2581DC;
