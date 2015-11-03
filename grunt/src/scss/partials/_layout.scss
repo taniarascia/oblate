@@ -73,9 +73,9 @@ main {
 article {
 	padding: 15px 10px;
 	border-bottom: 1px solid $slab;
-	&:last-of-type {
-		//border-bottom: 0;
-	}
+}
+a article:last-of-type {
+	border-bottom: 0;
 }
 @media screen and (min-width: $mobile-breakpoint) {
 	article.single-article {
