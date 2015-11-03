@@ -12,7 +12,6 @@ if( !$paged && $c == 1 && is_front_page()) :?>
 		<time>
 			<?php the_time('F j, Y');?>
 		</time>
-		<?php the_tags('&nbsp;☍&nbsp;<span class="tags">', ', ', '', '</span>'); ?>
 	</div> 
 	 <?php the_content(); ?>
 </article>
