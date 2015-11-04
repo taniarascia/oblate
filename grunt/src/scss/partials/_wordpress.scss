@@ -61,7 +61,7 @@
 // Author name
 .comment-author {
   & cite.fn {
-    font-weight: 900;
+    font-weight: 900 !important;
     font-style: normal;
     font-size: 1.5em;
     font-family: $article-title !important;
