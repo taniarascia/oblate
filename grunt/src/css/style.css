@@ -831,6 +831,8 @@ td {
     font-weight: 900; }
   .comment-body a:hover {
     color: #363b40; }
+  .comment-body pre code {
+    background: #fff; }
 
 .comment-respond {
   padding: 10px 0 40px; }
