@@ -413,7 +413,8 @@ header {
   margin: 0;
   box-shadow: none; }
 
-main {
+main,
+.container {
   max-width: 800px;
   margin: 10px auto; }
 
@@ -452,7 +453,7 @@ h2 a, h2 a:visited, h2 a:active, h2 a:focus {
   color: #4f545a;
   transition: all .3s ease; }
 h2 a:hover {
-  color: #111 !important; }
+  color: #4f545a; }
 
 p a:hover,
 span a:hover,
@@ -473,6 +474,11 @@ blockquote {
     margin-top: 25px;
     font-size: .9em;
     text-align: right; }
+
+.alert {
+  background: #f7f7f7;
+  padding: 20px;
+  margin: 20px 0; }
 
 cite,
 mark,
@@ -560,6 +566,17 @@ dt {
 @media screen and (min-width: 550px) {
   .article-header {
     margin-bottom: 30px; } }
+footer {
+  padding: 20px;
+  text-align: center;
+  font-size: .8em; }
+  footer h2 a {
+    color: #676d75; }
+    footer h2 a:visited, footer h2 a:active, footer h2 a:focus {
+      color: #676d75; }
+  footer h2 a:hover {
+    color: #4f545a; }
+
 .social {
   text-align: right; }
 
@@ -592,6 +609,15 @@ dt {
   font-size: 1px; }
   .social-bar .fb-share-button {
     margin-left: 10px; }
+
+.block {
+  display: block;
+  text-align: center; }
+
+.block-i {
+  vertical-align: middle;
+  display: inline-block;
+  float: left; }
 
 img {
   max-width: 100%;
@@ -685,7 +711,7 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focu
   outline: 0; }
 input[type="email"]:hover, input[type="number"]:hover, input[type="search"]:hover, input[type="text"]:hover, input[type="tel"]:hover, input[type="url"]:hover, input[type="password"]:hover {
   border: 1px solid #eaeaea;
-  background: #eaeaea; }
+  background: #f2f2f2; }
 
 textarea:focus,
 select:focus {
@@ -695,7 +721,7 @@ select:focus {
 textarea:hover,
 select:hover {
   border: 1px solid #eaeaea;
-  background: #eaeaea; }
+  background: #f2f2f2; }
 
 textarea {
   min-height: 100px;
@@ -817,6 +843,8 @@ td {
   margin: 0; }
 
 .children {
+  margin-left: 0;
+  padding-left: 15px;
   margin-top: 15px;
   margin-bottom: 15px;
   list-style: none; }

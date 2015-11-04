@@ -66,7 +66,8 @@ header {
 	margin: 0;
 	box-shadow: none;
 }
-main {
+main,
+.container {
 	max-width: $content-small-width;
 	margin: 10px auto;
 }
@@ -74,7 +75,6 @@ article {
 	padding: 15px 10px;
 	border-bottom: 1px solid $slab;
 }
-
 @media screen and (min-width: $mobile-breakpoint) {
 	article.single-article {
 		h2 {
@@ -127,7 +127,7 @@ h2 {
 		transition: all .3s ease;
 	}
 	& a:hover {
-		color: #111 !important;
+		color: $font-color;
 	}
 }
 p,
@@ -156,6 +156,11 @@ blockquote {
 		font-size: .9em;
 		text-align: right;
 	}
+}
+.alert {
+	background: $code-background;
+	padding: 20px;
+	margin: 20px 0;
 }
 cite,
 mark,
@@ -242,6 +247,23 @@ dt {
 		margin-bottom: 30px;
 	}
 }
+footer {
+	padding: 20px;
+	text-align: center;
+	font-size: .8em;
+	h2 a {
+		color: lighten($font-color, 10%);
+		&:visited,
+		&:active,
+		&:focus {
+			color: lighten($font-color, 10%);
+		}
+	}
+	h2 a:hover {
+		color: $font-color;
+	}
+}
+
 .social {
 	text-align: right;
 }
@@ -274,6 +296,15 @@ dt {
 	.fb-share-button {
 		margin-left: 10px;
 	}
+}
+.block {
+	display: block;
+	text-align: center;
+}
+.block-i {
+	vertical-align: middle;
+	display: inline-block;
+	float: left;
 }
 img {
 	max-width: 100%;
