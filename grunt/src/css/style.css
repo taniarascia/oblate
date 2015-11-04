@@ -802,7 +802,13 @@ td {
   margin-bottom: 40px; }
 
 .comment-author cite.fn {
-  font-weight: 900 !important;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.5em;
+  font-family: "Open Sans", sans-serif !important;
+  letter-spacing: -0.05em; }
+.comment-author a {
+  font-weight: 900;
   font-style: normal;
   font-size: 1.5em;
   font-family: "Open Sans", sans-serif !important;
