@@ -426,16 +426,18 @@ article {
   article.single-article h2 {
     font-size: 2.2em; } }
 .article-excerpt {
-  color: #4f545a;
+  color: #737a83;
   background: #ffffff;
   margin: 0; }
   .article-excerpt:hover {
     color: #4f545a; }
-  .article-excerpt.first .article-header {
-    border-left: 12px solid #FFEC88;
-    padding-left: 20px; }
-    .article-excerpt.first .article-header:hover {
-      border-left: 12px solid #ffe455; }
+  .article-excerpt.first {
+    color: #4f545a; }
+    .article-excerpt.first .article-header {
+      border-left: 12px solid #FFEC88;
+      padding-left: 20px; }
+      .article-excerpt.first .article-header:hover {
+        border-left: 12px solid #ffe455; }
 
 @media screen and (min-width: 550px) {
   article {
