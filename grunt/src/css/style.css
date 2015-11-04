@@ -807,12 +807,6 @@ td {
   font-size: 1.5em;
   font-family: "Open Sans", sans-serif !important;
   letter-spacing: -0.05em; }
-.comment-author a {
-  font-weight: 900;
-  font-style: normal;
-  font-size: 1.5em;
-  font-family: "Open Sans", sans-serif !important;
-  letter-spacing: -0.05em; }
 
 .says {
   display: none; }
@@ -834,7 +828,7 @@ td {
   .comment-body a:visited,
   .comment-body a:focus {
     color: #62676c;
-    font-weight: 700; }
+    font-weight: 900; }
   .comment-body a:hover {
     color: #363b40; }
 
