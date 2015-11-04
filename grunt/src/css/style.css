@@ -801,12 +801,12 @@ td {
   padding-bottom: 20px;
   margin-bottom: 40px; }
 
-.comment-author {
-  font-weight: 900; }
-  .comment-author cite {
-    font-style: normal;
-    font-size: 1.5em;
-    font-family: "Open Sans", sans-serif !important; }
+.comment-author cite, .comment-author cite:a, .comment-author cite:a:visited, .comment-author cite:a:active {
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.5em;
+  font-family: "Open Sans", sans-serif !important;
+  letter-spacing: -0.05em; }
 
 .says {
   display: none; }
@@ -818,10 +818,9 @@ td {
 
 .comment-body {
   background: #eaeaea;
-  padding: 20px;
-  font-size: .9em; }
-  .comment-body p {
-    font-size: .9em; }
+  padding: 10px;
+  font-size: .9em;
+  font-family: "Open Sans", sans-serif; }
   .comment-body .reply {
     text-align: right;
     font-size: .9em; }

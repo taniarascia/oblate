@@ -2,148 +2,150 @@
 
 // Categories
 .post-categories {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	& li a {
-		padding: 8px 15px;
-		background: $link-color;
-		margin: 10px 0 0;
-		color: #fff;
-		border-bottom: 0;
-		display: block;
-		//border-bottom: 4px solid darken($link-color, 15%);
-		font-weight: 700;
-		display: inline-block;
-		& a,
-		a:visited,
-		a:focus,
-		a:active {
-			color: #fff;
-		}
-	}
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  & li a {
+    padding: 8px 15px;
+    background: $link-color;
+    margin: 10px 0 0;
+    color: #fff;
+    border-bottom: 0;
+    display: block;
+    //border-bottom: 4px solid darken($link-color, 15%);
+    font-weight: 700;
+    display: inline-block;
+    & a,
+    a:visited,
+    a:focus,
+    a:active {
+      color: #fff;
+    }
+  }
 }
 .category-block {
-	padding: 8px 15px;
-	background: $link-color;
-	margin: 10px 0 0;
-	color: #fff;
-	border-bottom: 0;
-	display: inline-block;
-	font-weight: 700;
-	text-transform: uppercase;
-	font-family: $heading-font-family;
+  padding: 8px 15px;
+  background: $link-color;
+  margin: 10px 0 0;
+  color: #fff;
+  border-bottom: 0;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: $heading-font-family;
 }
 // Remove the pagination title
 .screen-reader-text {
-	display: none;
+  display: none;
 }
 // Bottom of the page pagination
 .pagination {
-	max-width: $content-small-width;
-	margin: 40px auto;
-	text-align: center;
+  max-width: $content-small-width;
+  margin: 40px auto;
+  text-align: center;
 }
 // Date and Time meta data below commentator's name
 .comment-meta.commentmetadata,
 .comment-notes {
-	font-size: .7em;
+  font-size: .7em;
 }
 // Comment list
 .comment-list {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin-bottom: 40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
 }
 // Author name
 .comment-author {
-	font-weight: 900;
-	& cite {
-		font-style: normal;
-		font-size: 1.5em;
+  & cite,
+  & cite:a,
+  & cite:a:visited,
+  & cite:a:active {
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.5em;
     font-family: $article-title !important;
-	}
+    letter-spacing: -0.05em;
+  }
 }
 // says:
 .says {
-	display: none;
+  display: none;
 }
 // Comments and Replies
 .comment-reply-title,
 .comments-title {
-	font-size: 1.3em;
-	font-family: $article-title;
+  font-size: 1.3em;
+  font-family: $article-title;
 }
 // Comment body
 .comment-body {
-	background: darken($code-background, 5%);
-	padding: 20px;
+  background: darken($code-background, 5%);
+  padding: 10px;
   font-size: .9em;
-	p {
-		font-size: .9em;
-	}
-	.reply {
+  font-family: $article-title;
+  .reply {
     text-align: right;
-		font-size: .9em;
-	}
-	a,
-	a:visited,
-	a:focus {
-		color: #62676c;
-		font-weight: 700;
-	}
-	a:hover {
-		color: #363b40;
-	}
+    font-size: .9em;
+  }
+  a,
+  a:visited,
+  a:focus {
+    color: #62676c;
+    font-weight: 700;
+  }
+  a:hover {
+    color: #363b40;
+  }
 }
 .comment-respond {
-	padding: 10px 0 40px;
+  padding: 10px 0 40px;
 }
 // Form
 .comment-form {
-	p {
-		margin: 0;
-	}
+  p {
+    margin: 0;
+  }
 }
 .children {
   margin-left: 0;
-	padding-left: 15px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	list-style: none;
+  padding-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  list-style: none;
 }
 // Overall comments area
 .comments-area {
-	border-top: 1px solid $slab;
-	padding: 10px;
+  border-top: 1px solid $slab;
+  padding: 10px;
 }
 // Tags
 span.tags a {
-	font-size: .9em;
-	padding: 1px .2em;
-	background: darken($code-background, 2%);
-	color: #4B5964;
-	font-weight: 300;
-	font-family: Menlo, monospace;
-	border-bottom: 0;
-	-webkit-font-smoothing: subpixel-antialiased;
-	&:hover {
-		background: darken($code-background, 5%);
-		color: darken( $code-font-color, 5%);
-		border-bottom: 0;
-	}
+  font-size: .9em;
+  padding: 1px .2em;
+  background: darken($code-background, 2%);
+  color: #4B5964;
+  font-weight: 300;
+  font-family: Menlo, monospace;
+  border-bottom: 0;
+  -webkit-font-smoothing: subpixel-antialiased;
+  &:hover {
+    background: darken($code-background, 5%);
+    color: darken( $code-font-color, 5%);
+    border-bottom: 0;
+  }
 }
 // Reply
 .comment-reply-link {
-	@extend .buttons;
-	color: #ffffff !important;
-	&:hover {
-		@extend .buttons-hover;
-	}
+  @extend .buttons;
+  color: #ffffff !important;
+  &:hover {
+    @extend .buttons-hover;
+  }
 }
 .avatar {
-	display: none;
+  display: none;
 }
