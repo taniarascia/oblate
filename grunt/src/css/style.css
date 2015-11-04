@@ -801,7 +801,7 @@ td {
   padding-bottom: 20px;
   margin-bottom: 40px; }
 
-.comment-author cite, .comment-author cite:a, .comment-author cite:a:visited, .comment-author cite:a:active {
+.comment-author cite.fn {
   font-weight: 900;
   font-style: normal;
   font-size: 1.5em;
@@ -817,8 +817,8 @@ td {
   font-family: "Open Sans", sans-serif; }
 
 .comment-body {
-  background: #eaeaea;
-  padding: 10px;
+  background: #f7f7f7;
+  padding: 15px;
   font-size: .9em;
   font-family: "Open Sans", sans-serif; }
   .comment-body .reply {

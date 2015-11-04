@@ -60,10 +60,7 @@
 }
 // Author name
 .comment-author {
-  & cite,
-  & cite:a,
-  & cite:a:visited,
-  & cite:a:active {
+  & cite.fn {
     font-weight: 900;
     font-style: normal;
     font-size: 1.5em;
@@ -83,8 +80,8 @@
 }
 // Comment body
 .comment-body {
-  background: darken($code-background, 5%);
-  padding: 10px;
+  background: $code-background;
+  padding: 15px;
   font-size: .9em;
   font-family: $article-title;
   .reply {
