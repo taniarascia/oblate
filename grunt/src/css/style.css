@@ -426,7 +426,7 @@ article {
   article.single-article h2 {
     font-size: 2.2em; } }
 .article-excerpt {
-  color: #676d75;
+  color: #737a83;
   background: #ffffff;
   margin: 0; }
   .article-excerpt:hover {
@@ -571,9 +571,9 @@ footer {
   text-align: center;
   font-size: .8em; }
   footer h2 a {
-    color: #676d75; }
+    color: #737a83; }
     footer h2 a:visited, footer h2 a:active, footer h2 a:focus {
-      color: #676d75; }
+      color: #737a83; }
   footer h2 a:hover {
     color: #4f545a; }
 
