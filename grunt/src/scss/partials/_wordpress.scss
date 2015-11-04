@@ -60,10 +60,11 @@
 }
 // Author name
 .comment-author {
-	font-weight: 700;
+	font-weight: 900;
 	& cite {
 		font-style: normal;
-		font-size: 1.3em;
+		font-size: 1.5em;
+    font-family: $article-title !important;
 	}
 }
 // says:
@@ -78,12 +79,14 @@
 }
 // Comment body
 .comment-body {
-	background: $code-background;
+	background: darken($code-background, 5%);
 	padding: 20px;
+  font-size: .9em;
 	p {
 		font-size: .9em;
 	}
 	.reply {
+    text-align: right;
 		font-size: .9em;
 	}
 	a,

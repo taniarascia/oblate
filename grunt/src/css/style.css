@@ -625,14 +625,6 @@ img {
   img.no {
     margin: 0; }
 
-::-moz-selection {
-  background: #c7254e;
-  color: #fff; }
-
-::selection {
-  background: #c7254e;
-  color: #fff; }
-
 /* Buttons  */
 .buttons, a.button,
 .button,
@@ -808,10 +800,11 @@ td {
   margin-bottom: 40px; }
 
 .comment-author {
-  font-weight: 700; }
+  font-weight: 900; }
   .comment-author cite {
     font-style: normal;
-    font-size: 1.3em; }
+    font-size: 1.5em;
+    font-family: "Open Sans", sans-serif !important; }
 
 .says {
   display: none; }
@@ -822,11 +815,13 @@ td {
   font-family: "Open Sans", sans-serif; }
 
 .comment-body {
-  background: #f7f7f7;
-  padding: 20px; }
+  background: #eaeaea;
+  padding: 20px;
+  font-size: .9em; }
   .comment-body p {
     font-size: .9em; }
   .comment-body .reply {
+    text-align: right;
     font-size: .9em; }
   .comment-body a,
   .comment-body a:visited,
