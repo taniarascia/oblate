@@ -469,7 +469,7 @@ blockquote {
   margin: 20px 0;
   color: #4f545a;
   padding: 2px 0 0 25px;
-  border-left: 12px solid #f7f7f7;
+  border-left: 12px solid #f3f3f3;
   font-family: "Open Sans", sans-serif; }
   blockquote p {
     margin: 0;
@@ -481,7 +481,7 @@ blockquote {
     text-align: right; }
 
 .alert {
-  background: #f7f7f7;
+  background: #f3f3f3;
   padding: 20px;
   margin: 20px 0; }
 
@@ -680,7 +680,7 @@ a.button-dark {
 a.button-light {
   display: inline-block;
   padding: 3px 6px;
-  background: #f7f7f7;
+  background: #f3f3f3;
   color: #795da3;
   font-family: 'Menlo', monospace;
   font-weight: 300;
@@ -688,14 +688,14 @@ a.button-light {
   -webkit-font-smoothing: subpixel-antialiased; }
   a.button-light:hover, a.button-light:focus {
     color: #795da3;
-    background: #eaeaea; }
+    background: #e6e6e6; }
 
 /* Forms */
 .forms, input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea,
 select {
   padding: 12px;
-  background: #f7f7f7;
-  border: 1px solid #f7f7f7;
+  background: #f3f3f3;
+  border: 1px solid #f3f3f3;
   border-radius: 0;
   margin: auto auto 6px;
   max-width: 100%;
@@ -703,22 +703,22 @@ select {
   transition: ease .2s all; }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
-  border: 1px solid #d1d1d1;
+  border: 1px solid #cdcdcd;
   background: #fff;
   outline: 0; }
 input[type="email"]:hover, input[type="number"]:hover, input[type="search"]:hover, input[type="text"]:hover, input[type="tel"]:hover, input[type="url"]:hover, input[type="password"]:hover {
-  border: 1px solid #eaeaea;
-  background: #f2f2f2; }
+  border: 1px solid #e6e6e6;
+  background: #eeeeee; }
 
 textarea:focus,
 select:focus {
-  border: 1px solid #d1d1d1;
+  border: 1px solid #cdcdcd;
   background: transparent;
   outline: 0; }
 textarea:hover,
 select:hover {
-  border: 1px solid #eaeaea;
-  background: #f2f2f2; }
+  border: 1px solid #e6e6e6;
+  background: #eeeeee; }
 
 textarea {
   min-height: 100px;
@@ -820,7 +820,7 @@ td {
   font-family: "Open Sans", sans-serif; }
 
 .comment-body {
-  background: #f7f7f7;
+  background: #f3f3f3;
   padding: 15px;
   font-size: .9em;
   font-family: "Open Sans", sans-serif; }
@@ -857,14 +857,14 @@ td {
 span.tags a {
   font-size: .9em;
   padding: 1px .2em;
-  background: #f2f2f2;
+  background: #eeeeee;
   color: #4B5964;
   font-weight: 300;
   font-family: Menlo, monospace;
   border-bottom: 0;
   -webkit-font-smoothing: subpixel-antialiased; }
   span.tags a:hover {
-    background: #eaeaea;
+    background: #e6e6e6;
     color: #404c55;
     border-bottom: 0; }
 
@@ -945,8 +945,8 @@ pre code {
   padding: 1em;
   margin: .5em 0;
   overflow: auto;
-  border: 0px solid #f7f7f7;
-  background-color: #f7f7f7;
+  border: 0px solid #f3f3f3;
+  background-color: #f3f3f3;
   font-size: .8em;
   -webkit-font-smoothing: subpixel-antialiased; }
 
@@ -955,7 +955,7 @@ pre code {
   padding: .2em;
   padding-top: 1px;
   padding-bottom: 1px;
-  background: #f2f2f2;
+  background: #eeeeee;
   border: 0px solid #ececec;
   -webkit-font-smoothing: subpixel-antialiased; }
 
@@ -964,7 +964,7 @@ pre code {
   padding: .2em;
   padding-top: 1px;
   padding-bottom: 1px;
-  background: #f2f2f2;
+  background: #eeeeee;
   font-family: Menlo, monospace;
   color: #4B5964;
   font-weight: 300;
