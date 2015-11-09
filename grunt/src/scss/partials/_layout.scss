@@ -306,4 +306,20 @@ img {
 		margin: 0;
 	}
 }
-
+.left {
+	float: none;
+}
+.right {
+	float: none;
+}
+.clear {
+	clear: both;
+}
+@media screen and (min-width: $content-small-width) {
+	.left {
+		float: left;
+	}
+	.right {
+		float: right;
+	}
+}
