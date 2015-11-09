@@ -74,6 +74,9 @@ main,
 	max-width: $content-small-width;
 	margin: 10px auto;
 }
+.large-container {
+	max-width: $content-width;
+}
 article {
 	padding: 15px 10px;
 	border-bottom: 1px solid $slab;
@@ -214,22 +217,8 @@ dt {
 	justify-content: space-between;
 	align-items: center;
 }
-.left {
-	float: none;
-}
-.right {
-	float: none;
-}
-.clear {
-	clear: both;
-}
-@media screen and (min-width: $content-small-width) {
-	.left {
-		float: left;
-	}
-	.right {
-		float: right;
-	}
+.pad {
+	padding: 15px;
 }
 .center {
 	text-align: center;
