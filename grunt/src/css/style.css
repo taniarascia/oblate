@@ -908,38 +908,6 @@ pre code {
   hyphens: none;
   -webkit-font-smoothing: subpixel-antialiased; }
 
-pre[class*="language-"]::-moz-selection,
-pre[class*="language-"]::-moz-selection,
-code[class*="language-"]::-moz-selection,
-code[class*="language-"]::-moz-selection {
-  background: #a71d5d; }
-
-pre[class*="language-"]::selection,
-pre[class*="language-"]::selection,
-code[class*="language-"]::selection,
-code[class*="language-"]::selection {
-  background: #a71d5d; }
-
-pre[class*="language-"] span::-moz-selection,
-pre[class*="language-"] span::-moz-selection,
-code[class*="language-"] span::-moz-selection,
-code[class*="language-"] span::-moz-selection {
-  background: #a71d5d; }
-
-pre[class*="language-"] span::selection,
-pre[class*="language-"] span::selection,
-code[class*="language-"] span::selection,
-code[class*="language-"] span::selection {
-  background: #a71d5d; }
-
-code::-moz-selection,
-code::-moz-selection {
-  background: #a71d5d; }
-
-code::selection,
-code::-moz-selection {
-  background: #a71d5d; }
-
 pre code {
   display: block; }
 
