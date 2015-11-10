@@ -5,7 +5,7 @@
 			<?php the_time('F j, Y');?>
 		</time>
 		<?php the_tags('&nbsp;☍&nbsp;<span class="tags">', ', ', '', '</span>'); ?>
-			<?php if (get_post_thumbnail_id()) {?><img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>"><?php } ?>
+			<?php if (get_post_thumbnail_id()) {?><img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" style="margin-top:30px;"><?php } ?>
 	</div>
 	<?php the_content(); ?>
 		<div class="alert">
