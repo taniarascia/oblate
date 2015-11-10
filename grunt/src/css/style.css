@@ -912,33 +912,33 @@ pre[class*="language-"]::-moz-selection,
 pre[class*="language-"]::-moz-selection,
 code[class*="language-"]::-moz-selection,
 code[class*="language-"]::-moz-selection {
-  background: #232323; }
+  background: rgba(0, 0, 0, 0.5); }
 
 pre[class*="language-"]::selection,
 pre[class*="language-"]::selection,
 code[class*="language-"]::selection,
 code[class*="language-"]::selection {
-  background: #232323; }
+  background: rgba(0, 0, 0, 0.5); }
 
 pre[class*="language-"] span::-moz-selection,
 pre[class*="language-"] span::-moz-selection,
 code[class*="language-"] span::-moz-selection,
 code[class*="language-"] span::-moz-selection {
-  background: #232323; }
+  background: rgba(0, 0, 0, 0.5); }
 
 pre[class*="language-"] span::selection,
 pre[class*="language-"] span::selection,
 code[class*="language-"] span::selection,
 code[class*="language-"] span::selection {
-  background: #232323; }
+  background: rgba(0, 0, 0, 0.5); }
 
 code::-moz-selection,
 code::-moz-selection {
-  background: #232323; }
+  background: rgba(0, 0, 0, 0.5); }
 
 code::selection,
 code::-moz-selection {
-  background: #232323; }
+  background: rgba(0, 0, 0, 0.5); }
 
 pre code {
   display: block; }
@@ -1000,7 +1000,7 @@ pre code {
   color: #183691; }
 
 .token.property {
-  color: #4B5964; }
+  color: #795da3; }
 
 .token.entity,
 .token.url,
