@@ -826,7 +826,8 @@ td {
   background: #f3f3f3;
   padding: 15px;
   font-size: .9em;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 15px; }
   .comment-body .reply {
     text-align: right;
     font-size: .9em; }
