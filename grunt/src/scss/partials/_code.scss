@@ -87,14 +87,14 @@ pre[class*="language-"] {}
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 :not(pre) > code {
-	font-size: 1em;
+	font-size: .9em;
 	padding: .2em;
 	padding-top: 1px;
 	padding-bottom: 1px;
 	background: darken($code-background, 2%);
 	font-family: 'Roboto Mono', Menlo, monospace;
 	color: $code-font-color;
-	font-weight: 300;
+	font-weight: 400;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 .token.doctype {
