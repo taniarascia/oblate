@@ -500,7 +500,7 @@ hr {
   margin: 50px 0; }
 
 time {
-  color: #767a7e;
+  color: #75818E;
   font-family: "Montserrat", sans-serif;
   font-size: .9em;
   text-transform: uppercase;
@@ -571,7 +571,7 @@ footer {
     footer h2 a:visited, footer h2 a:active, footer h2 a:focus {
       color: #737a83; }
   footer h2 a:hover {
-    color: #4f545a; }
+    color: #576778; }
 
 .social {
   text-align: right; }
@@ -654,7 +654,8 @@ button,
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
   margin: 5px 0;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all .3s ease; }
 
 .buttons-hover, a.button:hover, a.button:focus,
 .button:hover,
