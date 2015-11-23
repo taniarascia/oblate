@@ -2,7 +2,7 @@
 
 // Button Extend
 .buttons {
-	color: #ffffff;
+	color: #536172;
 	display: inline-block;
 	padding: 8px 25px;
 	text-align: center;
@@ -11,20 +11,21 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	white-space: nowrap;
-	background: $link-color;
-	border-radius: $border-radius;
-	border: 0px solid $link-color;
+	background: transparent;
+	border-radius: 4px;
+	border: 1px solid #C6C9CC;
 	cursor: pointer;
-	font-weight: 700;
+	font-weight: 300;
 	font-family: $button;
 	margin: 5px 0;
+  box-shadow: 0px 1px 1px rgba(0,0,0,.1);
 	//transition: all .3s ease;
 }
 .buttons-hover {
 	border-bottom: 0;
-	color: #fff;
-	background: $link-hover-color;
-	border: 0px solid $link-hover-color;
+	color: #536172;
+	background: transparent;
+	border: 1px solid #576778;
 }
 // Button Output
 a.button,
@@ -68,7 +69,7 @@ a.button-light {
 	&:focus {
 		@extend .buttons-hover;
 		color: #795da3;
-		background: darken($code-background, 5%);
+		//background: darken($code-background, 5%);
 	}
 }
 input {

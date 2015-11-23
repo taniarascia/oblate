@@ -638,7 +638,7 @@ img {
 .button,
 button,
 .posts-links a, input[type="submit"], input[type="reset"], input[type="button"], .comment-reply-link {
-  color: #ffffff;
+  color: #536172;
   display: inline-block;
   padding: 8px 25px;
   text-align: center;
@@ -647,13 +647,14 @@ button,
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background: #2581DC;
-  border-radius: 0;
-  border: 0px solid #2581DC;
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid #C6C9CC;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 300;
   font-family: "Montserrat", sans-serif;
-  margin: 5px 0; }
+  margin: 5px 0;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1); }
 
 .buttons-hover, a.button:hover, a.button:focus,
 .button:hover,
@@ -663,9 +664,9 @@ button:focus,
 .posts-links a:hover,
 .posts-links a:focus, a.button-dark:hover, a.button-dark:focus, a.button-light:hover, a.button-light:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="button"]:hover, input[type="button"]:focus, .comment-reply-link:hover {
   border-bottom: 0;
-  color: #fff;
-  background: #064E93;
-  border: 0px solid #064E93; }
+  color: #536172;
+  background: transparent;
+  border: 1px solid #576778; }
 
 a.button-dark {
   display: inline-block;
@@ -690,8 +691,7 @@ a.button-light {
   font-size: .8em;
   -webkit-font-smoothing: subpixel-antialiased; }
   a.button-light:hover, a.button-light:focus {
-    color: #795da3;
-    background: #e6e6e6; }
+    color: #795da3; }
 
 /* Forms */
 .forms, input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea,
