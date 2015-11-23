@@ -3,9 +3,9 @@
 // Forms Extend
 .forms {
 	padding: 12px;
-	background: $code-background;
-	border: 1px solid $code-background;
-	border-radius: $border-radius;
+	//background: $code-background;
+	border-radius: 4px;
+	border: 1px solid #C6C9CC;
 	margin: auto auto 6px;
 	max-width: 100%;
   font-family: $heading-font-family;
@@ -22,12 +22,12 @@ input {
 	&[type="password"] {
 		@extend .forms;
 		&:focus {
-			border: 1px solid darken($code-background, 15%);
+			border: 1px solid #576778;
 			background: #fff;
 			outline: 0;
 		}
 		&:hover {
-			border: 1px solid darken($code-background, 5%);
+			border: 1px solid darken(#C6C9CC, 5%);
       //background: darken($code-background, 2%);
 		}
 	}
@@ -36,12 +36,12 @@ textarea,
 select {
 	@extend .forms;
 	&:focus {
-		border: 1px solid darken($code-background, 15%);
+		border: 1px solid #576778;
 		background: transparent;
 		outline: 0;
 	}
 	&:hover {
-		border: 1px solid darken($code-background, 5%);
+			border: 1px solid darken(#C6C9CC, 5%);
     //background: darken($code-background, 2%);
 	}
 }

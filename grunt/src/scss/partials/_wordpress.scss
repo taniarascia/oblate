@@ -80,11 +80,12 @@
 }
 // Comment body
 .comment-body {
-  background: $code-background;
+  //background: $code-background;
   padding: 15px;
   font-size: .9em;
   font-family: $article-title;
 	margin-bottom: 15px; 
+  border-bottom: 1px solid #eee;
   .reply {
     text-align: right;
     font-size: .9em;
@@ -142,7 +143,7 @@ span.tags a {
 // Reply
 .comment-reply-link {
   @extend .buttons;
-  color: #ffffff !important;
+  font-weight: 300 !important;
   &:hover {
     @extend .buttons-hover;
   }
