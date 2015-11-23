@@ -28,7 +28,7 @@ input {
 		}
 		&:hover {
 			border: 1px solid darken($code-background, 5%);
-      background: darken($code-background, 2%);
+      //background: darken($code-background, 2%);
 		}
 	}
 }
@@ -42,7 +42,7 @@ select {
 	}
 	&:hover {
 		border: 1px solid darken($code-background, 5%);
-    background: darken($code-background, 2%);
+    //background: darken($code-background, 2%);
 	}
 }
 textarea {

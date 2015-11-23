@@ -644,7 +644,6 @@ button,
   text-align: center;
   font-size: .9em;
   line-height: 1.6;
-  text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
   background: transparent;
@@ -711,8 +710,7 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focu
   background: #fff;
   outline: 0; }
 input[type="email"]:hover, input[type="number"]:hover, input[type="search"]:hover, input[type="text"]:hover, input[type="tel"]:hover, input[type="url"]:hover, input[type="password"]:hover {
-  border: 1px solid #e6e6e6;
-  background: #eeeeee; }
+  border: 1px solid #e6e6e6; }
 
 textarea:focus,
 select:focus {
@@ -721,8 +719,7 @@ select:focus {
   outline: 0; }
 textarea:hover,
 select:hover {
-  border: 1px solid #e6e6e6;
-  background: #eeeeee; }
+  border: 1px solid #e6e6e6; }
 
 textarea {
   min-height: 100px;
