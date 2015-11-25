@@ -18,8 +18,5 @@ I like simple, clean, minimalist blogs. I don't like sidebars, ads, widgets, plu
 * Theme files are all located in **wp-content/themes/oblate**
 * Source files are located in **grunt** folder
 * Running `grunt` command applies a Sass watch to source files and compiles to theme files
-* 
-
-### Thanks for stopping by!
 
 
