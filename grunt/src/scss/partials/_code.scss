@@ -117,7 +117,7 @@ $string: #2f9c0a;
 	color: $string;
 }
 .token.punctuation {
-	color: #232323;
+	color: #454545;
 }
 .token.operator {
 	color: RGBA(83, 34, 132, 1);
@@ -148,12 +148,17 @@ $string: #2f9c0a;
 	color: navy;
 }
 .token.keyword,
-.token.attr-name,
 .language-autohotkey .token.selector {
 	color: #a71d5d;
 }
+.token.attr-name {
+	color: #795da3;
+}
 .token.function {
 	color: #1990b8;
+}
+.token.class-name {
+	color: #795da3;
 }
 .token.deleted,
 .language-autohotkey .token.tag {
@@ -175,5 +180,5 @@ $string: #2f9c0a;
 	font-style: italic;
 }
 .language-html .token.punctuation {
-	color: #232323;
+	color: #454545;
 }

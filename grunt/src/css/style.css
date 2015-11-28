@@ -835,8 +835,6 @@ td {
     font-weight: 900; }
   .comment-body a:hover {
     color: #363b40; }
-  .comment-body pre code {
-    background: #fff; }
 
 .comment-respond {
   padding: 10px 0 40px; }
@@ -956,7 +954,7 @@ pre code {
   color: #2f9c0a; }
 
 .token.punctuation {
-  color: #232323; }
+  color: #454545; }
 
 .token.operator {
   color: RGBA(83, 34, 132, 1);
@@ -987,12 +985,17 @@ pre code {
   color: navy; }
 
 .token.keyword,
-.token.attr-name,
 .language-autohotkey .token.selector {
   color: #a71d5d; }
 
+.token.attr-name {
+  color: #795da3; }
+
 .token.function {
   color: #1990b8; }
+
+.token.class-name {
+  color: #795da3; }
 
 .token.deleted,
 .language-autohotkey .token.tag {
@@ -1009,7 +1012,7 @@ pre code {
   font-style: italic; }
 
 .language-html .token.punctuation {
-  color: #232323; }
+  color: #454545; }
 
 .flex {
   display: -webkit-flex;
