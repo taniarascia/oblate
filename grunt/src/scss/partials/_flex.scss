@@ -1,48 +1,22 @@
-.flex {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-.box {
-	flex-basis: 49%;
-	margin-left: .5%;
-	margin-right: .5%;
-}
-@media screen and (min-width: 800px) {
-	.box {
-		flex: 1;
-	}
-}
-
 /* Grid */
 
-.column {
+.flex {
   flex-basis: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .row {
+@media screen and (min-width: 800px) {
+  .flex {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
   }
-  .column {
+  .box {
     flex: 1;
+  }
+  ._75 { 
+    flex: 7.5;
   }
   ._25 {
     flex: 2.5;
   }
-  ._5 {
-    flex: 5;
-  }
-	._6 {
-		flex: 6.6;
-	}
-	._3 {
-		flex: 3.3;
-	}
-	._75 {
-		flex: 7.5;
-	}
 }
- 
