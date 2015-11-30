@@ -1015,34 +1015,31 @@ pre code {
   color: #454545; }
 
 /* Grid */
+/*.flex {
+  flex-basis: 100%;
+}*/
 .flex {
-  -webkit-flex-basis: 100%;
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%; }
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
 
-@media screen and (min-width: 800px) {
-  .flex {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap; }
+.box {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
 
-  .box {
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1; }
+._75 {
+  -webkit-flex: 7.5;
+      -ms-flex: 7.5;
+          flex: 7.5; }
 
-  ._75 {
-    -webkit-flex: 7.5;
-        -ms-flex: 7.5;
-            flex: 7.5; }
-
-  ._25 {
-    -webkit-flex: 2.5;
-        -ms-flex: 2.5;
-            flex: 2.5; } }
+._25 {
+  -webkit-flex: 2.5;
+      -ms-flex: 2.5;
+          flex: 2.5; }
