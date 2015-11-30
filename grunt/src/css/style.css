@@ -1078,4 +1078,9 @@ pre code {
   ._3 {
     -webkit-flex: 3.3;
         -ms-flex: 3.3;
-            flex: 3.3; } }
+            flex: 3.3; }
+
+  ._75 {
+    -webkit-flex: 7.5;
+        -ms-flex: 7.5;
+            flex: 7.5; } }
