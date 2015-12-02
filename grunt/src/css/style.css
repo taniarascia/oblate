@@ -459,10 +459,10 @@ a {
     color: #064E93; }
 
 h2 a, h2 a:visited, h2 a:active, h2 a:focus {
-  color: #3f4348;
+  color: #2f3236;
   transition: all .3s ease; }
 h2 a:hover {
-  color: #3f4348; }
+  color: #2f3236; }
 
 p a:hover,
 span a:hover,

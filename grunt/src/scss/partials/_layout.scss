@@ -131,11 +131,11 @@ h2 {
   & a:visited,
   & a:active,
   & a:focus {
-    color: $font-color;
+    color: $heading-color;
     transition: all .3s ease;
   }
   & a:hover {
-    color: $font-color;
+    color: $heading-color;
   }
 }
 p,
