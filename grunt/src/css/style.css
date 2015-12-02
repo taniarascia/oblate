@@ -360,7 +360,7 @@ html {
 
 body {
   font: normal normal 400 1.1em/1.5 "Noto Serif", sans-serif;
-  color: #4f545a; }
+  color: #3f4348; }
 
 p {
   margin: 1em 0 1.3em 0; }
@@ -371,6 +371,7 @@ h3,
 h4,
 h5 {
   font-family: "Open Sans", sans-serif;
+  color: #2f3236;
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: -.05em; }
@@ -395,7 +396,7 @@ h4 {
   color: #6e7a83; }
 
 h5 {
-  color: #4f545a;
+  color: #3f4348;
   font-weight: 600;
   font-size: 1.1em;
   margin: 20px 0 0; }
@@ -408,7 +409,7 @@ h5 {
     font-size: 1.6em; } }
 header {
   padding: 5px 5px 0;
-  border-bottom: 1px solid #dbdde0;
+  border-bottom: 1px solid #C6C9CC;
   background: #ffffff; }
 
 .logo-image {
@@ -432,13 +433,13 @@ article {
   article.single-article h2 {
     font-size: 2.2em; } }
 .article-excerpt {
-  color: #737a83;
+  color: #3f4348;
   background: #ffffff;
   margin: 0; }
   .article-excerpt:hover {
-    color: #4f545a; }
+    color: #3f4348; }
   .article-excerpt.first {
-    color: #4f545a; }
+    color: #3f4348; }
     .article-excerpt.first .article-header {
       border-left: 12px solid #FFEC88;
       padding-left: 20px; }
@@ -458,10 +459,10 @@ a {
     color: #064E93; }
 
 h2 a, h2 a:visited, h2 a:active, h2 a:focus {
-  color: #4f545a;
+  color: #3f4348;
   transition: all .3s ease; }
 h2 a:hover {
-  color: #4f545a; }
+  color: #3f4348; }
 
 p a:hover,
 span a:hover,
@@ -484,9 +485,18 @@ blockquote {
     text-align: right; }
 
 .alert {
-  background: #f3f3f3;
+  color: #536172;
+  border: 1px solid #C6C9CC;
+  border-radius: 4px;
   padding: 20px;
-  margin: 20px 0; }
+  font-family: "Open Sans", sans-serif;
+  margin: 20px 0;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1); }
+  .alert a, .alert a:visited {
+    color: #536172; }
+  .alert:hover {
+    border: 1px solid #576778;
+    color: #2f3236; }
 
 cite,
 mark,
@@ -501,11 +511,10 @@ hr {
 
 time {
   color: #75818E;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: .9em;
-  text-transform: uppercase;
   margin-bottom: 30px;
-  font-weight: 600; }
+  font-weight: 400; }
 
 mark {
   padding: 8px 15px;
@@ -567,9 +576,9 @@ footer {
   text-align: center;
   font-size: .8em; }
   footer h2 a {
-    color: #737a83; }
+    color: #636971; }
     footer h2 a:visited, footer h2 a:active, footer h2 a:focus {
-      color: #737a83; }
+      color: #636971; }
   footer h2 a:hover {
     color: #576778; }
 
@@ -650,8 +659,8 @@ button,
   border-radius: 4px;
   border: 1px solid #C6C9CC;
   cursor: pointer;
-  font-weight: 300;
-  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
   margin: 5px 0;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
   transition: all .3s ease; }
@@ -781,7 +790,6 @@ td {
   border-bottom: 0;
   display: inline-block;
   font-weight: 700;
-  text-transform: uppercase;
   font-family: "Open Sans", sans-serif; }
 
 .screen-reader-text {
@@ -831,7 +839,7 @@ td {
   .comment-body a,
   .comment-body a:visited,
   .comment-body a:focus {
-    color: #62676c;
+    color: #2f3236;
     font-weight: 900; }
   .comment-body a:hover {
     color: #363b40; }
@@ -868,7 +876,7 @@ span.tags a {
     border-bottom: 0; }
 
 .comment-reply-link {
-  font-weight: 300 !important; }
+  font-weight: 600 !important; }
 
 .avatar {
   display: none; }

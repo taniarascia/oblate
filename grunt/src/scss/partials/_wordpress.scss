@@ -31,7 +31,6 @@
   border-bottom: 0;
   display: inline-block;
   font-weight: 700;
-  text-transform: uppercase;
   font-family: $heading-font-family;
 }
 // Remove the pagination title
@@ -93,7 +92,7 @@
   a,
   a:visited,
   a:focus {
-    color: #62676c;
+    color: $heading-color;
     font-weight: 900;
   }
   a:hover {
@@ -140,7 +139,7 @@ span.tags a {
 // Reply
 .comment-reply-link {
   @extend .buttons;
-  font-weight: 300 !important;
+  font-weight: 600 !important;
   &:hover {
     @extend .buttons-hover;
   }

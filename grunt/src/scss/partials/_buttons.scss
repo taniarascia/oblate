@@ -13,9 +13,9 @@
 	white-space: nowrap;
 	background: transparent;
 	border-radius: 4px;
-	border: 1px solid #C6C9CC;
+	border: 1px solid $border;
 	cursor: pointer;
-	font-weight: 300;
+	font-weight: 600;
 	font-family: $button;
 	margin: 5px 0;
   box-shadow: 0px 1px 1px rgba(0,0,0,.1);
