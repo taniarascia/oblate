@@ -166,20 +166,19 @@ blockquote {
   }
 }
 .alert {
-  color: #536172;
+  color:  $heading-color;
   border: 0px solid $border;
   border-radius: 0px;
   background: $code-background;
   padding: 20px;
   font-family: $heading-font-family;
   margin: 20px 0;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
   a, a:visited {
     color: #536172;
   } 
   &:hover {
-    border: 1px solid $border-hover;
     color: $heading-color;
+    background: darken($code-background, 5%);
   }
 }
 cite,
