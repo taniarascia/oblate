@@ -486,8 +486,9 @@ blockquote {
 
 .alert {
   color: #536172;
-  border: 1px solid #C6C9CC;
-  border-radius: 4px;
+  border: 0px solid #C6C9CC;
+  border-radius: 0px;
+  background: #f3f3f3;
   padding: 20px;
   font-family: "Open Sans", sans-serif;
   margin: 20px 0;
@@ -510,11 +511,13 @@ hr {
   margin: 50px 0; }
 
 time {
-  color: #75818E;
+  color: #6e7a83;
   font-family: "Open Sans", sans-serif;
-  font-size: .9em;
+  font-size: .8em;
   margin-bottom: 30px;
-  font-weight: 400; }
+  font-weight: 400;
+  padding-left: 5px;
+  display: block; }
 
 mark {
   padding: 8px 15px;
