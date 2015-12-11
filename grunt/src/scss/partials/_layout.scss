@@ -166,19 +166,22 @@ blockquote {
   }
 }
 .alert {
+  transition: all .3s ease;
   color:  $heading-color;
-  border: 0px solid $border;
-  border-radius: 0px;
+  border: 1px solid $border;
+  border-radius: 4px;
   background: $code-background;
   padding: 20px;
   font-family: $heading-font-family;
   margin: 20px 0;
   a, a:visited {
     color: #536172;
+    font-weight: 600;
   } 
   &:hover {
-    color: $heading-color;
-    background: darken($code-background, 5%);
+    color: #576778;
+    border: 1px solid #576778;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
   }
 }
 cite,
@@ -199,7 +202,6 @@ time {
   margin-bottom: 30px;
   font-weight: 400;
   padding-left: 5px;
-  display: block;
 }
 mark {
   padding: 8px 15px;

@@ -485,18 +485,21 @@ blockquote {
     text-align: right; }
 
 .alert {
+  transition: all .3s ease;
   color: #2f3236;
-  border: 0px solid #C6C9CC;
-  border-radius: 0px;
+  border: 1px solid #C6C9CC;
+  border-radius: 4px;
   background: #f3f3f3;
   padding: 20px;
   font-family: "Open Sans", sans-serif;
   margin: 20px 0; }
   .alert a, .alert a:visited {
-    color: #536172; }
+    color: #536172;
+    font-weight: 600; }
   .alert:hover {
-    color: #2f3236;
-    background: #e6e6e6; }
+    color: #576778;
+    border: 1px solid #576778;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1); }
 
 cite,
 mark,
@@ -515,8 +518,7 @@ time {
   font-size: .8em;
   margin-bottom: 30px;
   font-weight: 400;
-  padding-left: 5px;
-  display: block; }
+  padding-left: 5px; }
 
 mark {
   padding: 8px 15px;
