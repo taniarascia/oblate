@@ -635,7 +635,8 @@ img {
 .right {
   float: none;
   padding: 5px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
 
 .clear {
   clear: both; }
