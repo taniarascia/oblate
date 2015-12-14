@@ -325,6 +325,8 @@ img {
 }
 .mobile-only {
   max-width: 50px;
+  float: left;
+  padding-right: 5px;
 }
 .desktop-only {
   display: none;
