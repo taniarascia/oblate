@@ -652,6 +652,11 @@ img {
 
   .desktop-only {
     display: block; } }
+.article-image {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 15px; }
+
 /* Buttons  */
 .buttons, a.button,
 .button,

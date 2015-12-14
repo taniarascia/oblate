@@ -85,7 +85,6 @@ article {
 	padding: 15px 10px;
 	border-bottom: 1px solid $slab;
 }
-
 @media screen and (min-width: $mobile-breakpoint) {
 	article.single-article {
 		h2 {
@@ -157,7 +156,7 @@ blockquote {
 		text-align: right;
 	}
 	.info {
-		background: lighten($link-color,20%);
+		background: lighten($link-color, 20%);
 		border-left: 12px solid $link-color;
 	}
 }
@@ -335,4 +334,9 @@ img {
 	.desktop-only {
 		display: block;
 	}
+}
+.article-image {
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 15px;
 }
