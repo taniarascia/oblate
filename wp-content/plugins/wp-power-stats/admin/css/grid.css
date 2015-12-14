@@ -1,0 +1,80 @@
+/* Table of Contents
+==================================================
+    #Base Grid
+    #Mobile
+    #Clearing */
+
+
+/* #Base Grid
+================================================== */
+
+    .container { position: relative; width: 100%; margin: 0 auto; padding: 0; }
+    .container .column,
+    .container .columns { float: left; display: inline; }
+    .row { margin-bottom: 20px; }
+    
+    .double-height { height: 322px; }
+    .triple-height { height: 491px !important; }
+    
+    .one-third > .cell { padding-right: 8px; }
+    .two-thirds > .cell { padding-left: 8px; }
+    .half .cell { padding-right: 8px; }
+    .half.last .cell { padding-right: 0; padding-left: 8px; }
+
+    .container .half.column { width: 50%; }
+    .container .one-third.column { width: 38%; }
+    .container .two-thirds.column { width: 62%; }
+
+
+/*  #Mobile
+================================================== */
+
+
+    @media only screen and (max-width: 799px) {
+    
+        .container { width: 100%; }
+        .container .column { margin: 0; }
+        
+        .one-third .cell { padding-right: 0; }
+        .two-thirds .cell { padding-left: 0; }
+
+        .container .one-third.column,
+        .container .two-thirds.column  { width: 100%; margin-bottom: 0;}
+
+    }
+
+
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }

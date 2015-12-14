@@ -1,0 +1,224 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wp-power-stats\n"
+"POT-Creation-Date: 2014-02-06 11:09-0300\n"
+"PO-Revision-Date: 2015-08-06 14:37+0200\n"
+"Last-Translator: Oscar Ciutat <contact@oscarciutat.com>\n"
+"Language-Team: \n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../widget.php:14
+msgid "WP Power Stats"
+msgstr "WP Power Stats"
+
+#: ../widget.php:15
+msgid "WP Power Stats Widget"
+msgstr "Giny WP Power Stats"
+
+#: ../widget.php:65 ../views/dashboard.php:28
+msgid "Today"
+msgstr "Avui"
+
+#: ../widget.php:71 ../views/dashboard.php:34
+msgid "This Week"
+msgstr "Aquesta setmana"
+
+#: ../widget.php:77 ../views/dashboard.php:40
+msgid "This Month"
+msgstr "Aquest mes"
+
+#: ../widget.php:103 ../wp-power-stats.php:261 ../wp-power-stats.php:262
+msgid "Statistics"
+msgstr "Estadístiques"
+
+#: ../widget.php:107
+msgid "Title:"
+msgstr "Títol:"
+
+#: ../widget.php:112
+msgid "Show Icons"
+msgstr "Mostrar icones"
+
+#: ../admin.php:75 ../admin.php:86
+msgid "Unknown"
+msgstr "Desconegut"
+
+#: ../wp-power-stats.php:182
+msgid "Ignore hits from"
+msgstr "Ignorar visites des de"
+
+#: ../wp-power-stats.php:196
+msgid "Administrators"
+msgstr "Administradors"
+
+#: ../wp-power-stats.php:197
+msgid "Bots"
+msgstr "Robots"
+
+#: ../wp-power-stats.php:233 ../views/dashboard.php:3
+msgid "Overview"
+msgstr "Vista general"
+
+#: ../wp-power-stats.php:234
+msgid "The regions on your Statistics screen are:"
+msgstr "Les regions a la teva pantalla d'estadístiques són:"
+
+#: ../wp-power-stats.php:235 ../views/dashboard.php:13
+msgid "Summary"
+msgstr "Resum"
+
+#: ../wp-power-stats.php:235
+msgid ""
+"Shows the number of visitors and page views during different time periods: "
+"today, this week, this month."
+msgstr ""
+"Mostra el número de visitants i pàgines vistes durant diferents períodes de "
+"temps: avui, aquesta setmana, aquest mes."
+
+#: ../wp-power-stats.php:236 ../views/dashboard.php:51
+msgid "Devices"
+msgstr "Dispositius"
+
+#: ../wp-power-stats.php:236
+msgid "Shows the top 3 devices your visitors are using."
+msgstr "Mostra els 3 dispositius principals utilitzats pels teus visitants."
+
+#: ../wp-power-stats.php:237 ../views/dashboard.php:87
+msgid "Visitors & Page Views"
+msgstr "Visitants i pàgines vistes"
+
+#: ../wp-power-stats.php:237
+msgid ""
+"Shows a graph of visitors and page views during the last 11 days. You can "
+"view the precise numbers when you hover the graph with your mouse."
+msgstr ""
+"Mostra un gràfic de visitants i pàgines vistes durant els darrers 11 dies. "
+"Pots veure els números amb precisió passant el ratolí sobre els gràfics."
+
+#: ../wp-power-stats.php:238 ../views/dashboard.php:170
+msgid "Traffic Source"
+msgstr "Origen del trànsit"
+
+#: ../wp-power-stats.php:238
+msgid "Displays the traffic source to your web site."
+msgstr "Mostra l'origen del trànsit al teu lloc web."
+
+#: ../wp-power-stats.php:239 ../views/dashboard.php:195
+msgid "Browsers"
+msgstr "Navegadors"
+
+#: ../wp-power-stats.php:239
+msgid "Displays the top 3 most used web browser of your visitors."
+msgstr "Mostra els 3 navegadors principals utilitzats pels teus visitants."
+
+#: ../wp-power-stats.php:240 ../views/dashboard.php:214
+msgid "Operating Systems"
+msgstr "Sistemes operatius"
+
+#: ../wp-power-stats.php:240
+msgid "Displays the top 3 most used operating system of your visitors."
+msgstr ""
+"Mostra els 3 sistemes operatius principals utilitzats pels teus visitants."
+
+#: ../wp-power-stats.php:241 ../views/dashboard.php:243
+msgid "Visitor Map"
+msgstr "Mapa de visites"
+
+#: ../wp-power-stats.php:241
+msgid ""
+"Shows the geoprahical map of your visitors. Hover over a country, to see the "
+"exact visitor number to your site from that country."
+msgstr ""
+"Mostra la ubicació geogràfica dels teus visitants. Passa el ratolí sobre un "
+"país per veure el número exacte de visitants d'aquest país al teu lloc web."
+
+#: ../wp-power-stats.php:242 ../views/dashboard.php:295
+msgid "Top Posts"
+msgstr "Les entrades principals"
+
+#: ../wp-power-stats.php:242
+msgid "Shows the most viewed posts of your wordpress site."
+msgstr "Mostra les entrades més vistes del teu lloc web."
+
+#: ../wp-power-stats.php:243 ../views/dashboard.php:321
+msgid "Top Links"
+msgstr "Els enllaços principals"
+
+#: ../wp-power-stats.php:243
+msgid "Shows the most common referer to your site."
+msgstr "Mostra els referents més usuals al teu lloc web."
+
+#: ../wp-power-stats.php:244 ../views/dashboard.php:342
+msgid "Top Search Terms"
+msgstr "Els termes de cerca principals"
+
+#: ../wp-power-stats.php:244
+msgid "Shows the most used keywords used to find your website."
+msgstr "Mostra els termes de cerca més utilitzats per trobar el teu lloc web."
+
+#: ../settings.php:3
+msgid "You do not have sufficient permissions to manage options for this site."
+msgstr ""
+"No tens permisos suficients per gestionar les opcions d'aquest lloc web."
+
+#: ../settings.php:5
+msgid "Statistics Settings"
+msgstr "Configuració d'estadístiques"
+
+#: ../views/dashboard.php:21 ../views/dashboard.php:109
+msgid "Visitors"
+msgstr "Visitants"
+
+#: ../views/dashboard.php:22
+msgid "Pageviews"
+msgstr "Pàgines vistes"
+
+#: ../views/dashboard.php:58 ../views/dashboard.php:68
+msgid "Desktop"
+msgstr "Escriptori"
+
+#: ../views/dashboard.php:59 ../views/dashboard.php:69
+msgid "Tablet"
+msgstr "Tableta"
+
+#: ../views/dashboard.php:60 ../views/dashboard.php:70
+msgid "Mobile"
+msgstr "Mòbil"
+
+#: ../views/dashboard.php:109
+msgid "Year"
+msgstr "Any"
+
+#: ../views/dashboard.php:109
+msgid "Page Views"
+msgstr "Págines vistes"
+
+#: ../views/dashboard.php:175 ../views/dashboard.php:185
+msgid "Search Engine"
+msgstr "Motor de cerca"
+
+#: ../views/dashboard.php:176
+msgid "Link"
+msgstr "Enllaç"
+
+#: ../views/dashboard.php:177 ../views/dashboard.php:187
+msgid "Direct"
+msgstr "Directe"
+
+#: ../views/dashboard.php:186
+msgid "Links"
+msgstr "Enllaços"
+
+#, fuzzy
+#~ msgid "Overviewa"
+#~ msgstr "Обзор"

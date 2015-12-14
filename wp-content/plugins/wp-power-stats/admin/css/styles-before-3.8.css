@@ -1,0 +1,13 @@
+.toplevel_page_wp-power-stats-view-1 > div.wp-menu-image {
+	background-image: url('../images/icon.png');
+	background-position: 7px -27px;
+    background-repeat: no-repeat;
+}
+
+.toplevel_page_wp-power-stats-view-1:hover > div.wp-menu-image, .toplevel_page_wp-power-stats-view-1 .wp-menu-open > div.wp-menu-image {
+	background-position: 7px 5px;
+}
+
+.wp-log-page-icon {
+	background-image: url('../images/icon32.png');
+}

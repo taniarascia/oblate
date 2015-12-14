@@ -1,0 +1,227 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wp-power-stats\n"
+"POT-Creation-Date: 2014-01-12 21:28+0200\n"
+"PO-Revision-Date: 2015-05-19 14:14+0100\n"
+"Last-Translator: NetPanther <NetPanther@gmx.net>\n"
+"Language-Team: Artifex404 <info@websivu.com>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../admin.php:75 ../admin.php:86
+msgid "Unknown"
+msgstr "Unbekannt"
+
+#: ../settings.php:3
+msgid "You do not have sufficient permissions to manage options for this site."
+msgstr ""
+"Sie haben nicht die nötigen Berechtigungen, um die Einstellungen dieser "
+"Seite zu ändern."
+
+#: ../settings.php:5
+msgid "Statistics Settings"
+msgstr "Statistiken konfigurieren"
+
+#: ../widget.php:14
+msgid "WP Power Stats"
+msgstr "WP Power Stats"
+
+#: ../widget.php:15
+msgid "WP Power Stats Widget"
+msgstr "WP Power Stats Widget"
+
+#: ../widget.php:65 ../views/dashboard.php:28
+msgid "Today"
+msgstr "Heute"
+
+#: ../widget.php:71 ../views/dashboard.php:34
+msgid "This Week"
+msgstr "Diese Woche"
+
+#: ../widget.php:77 ../views/dashboard.php:40
+msgid "This Month"
+msgstr "Diesen Monat"
+
+#: ../widget.php:103 ../wp-power-stats.php:261 ../wp-power-stats.php:262
+msgid "Statistics"
+msgstr "Statistiken"
+
+#: ../widget.php:107
+msgid "Title:"
+msgstr "Titel:"
+
+#: ../widget.php:112
+msgid "Show Icons"
+msgstr "Icons anzeigen"
+
+#: ../wp-power-stats.php:182
+msgid "Ignore hits from"
+msgstr "Aufrufe ignorieren von"
+
+#: ../wp-power-stats.php:196
+msgid "Administrators"
+msgstr "Administratoren"
+
+#: ../wp-power-stats.php:197
+msgid "Bots"
+msgstr "Bots"
+
+#: ../wp-power-stats.php:233 ../views/dashboard.php:3
+msgid "Overview"
+msgstr "Übersicht"
+
+#: ../wp-power-stats.php:234
+msgid "The regions on your Statistics screen are:"
+msgstr "Die Bereiche der Statistikansicht sind:"
+
+#: ../wp-power-stats.php:235 ../views/dashboard.php:13
+msgid "Summary"
+msgstr "Zusammenfassung"
+
+#: ../wp-power-stats.php:235
+msgid ""
+"Shows the number of visitors and page views during different time periods: "
+"today, this week, this month."
+msgstr ""
+"Zeigt die Anzahl der Besucher und Seitenaufrufe in verschiedenen "
+"Zeitabschnitten: Heute, diese Woche, diesen Monat."
+
+#: ../wp-power-stats.php:236 ../views/dashboard.php:51
+msgid "Devices"
+msgstr "Geräte"
+
+#: ../wp-power-stats.php:236
+msgid "Shows the top 3 devices your visitors are using."
+msgstr "Zeigt die Top 3 der Geräte, die Besucher verwenden."
+
+#: ../wp-power-stats.php:237 ../views/dashboard.php:87
+msgid "Visitors & Page Views"
+msgstr "Besucher & Seitenaufrufe"
+
+#: ../wp-power-stats.php:237
+msgid ""
+"Shows a graph of visitors and page views during the last 11 days. You can "
+"view the precise numbers when you hover the graph with your mouse."
+msgstr ""
+"Zeigt ein Diagramm mit den Besuchern und Seitenaufrufen der letzten 11 Tage. "
+"Wenn die Maus über den Graph bewegt wird, erscheinen genauere Angaben."
+
+#: ../wp-power-stats.php:238 ../views/dashboard.php:170
+msgid "Traffic Source"
+msgstr "Datenverkehr"
+
+#: ../wp-power-stats.php:238
+msgid "Displays the traffic source to your web site."
+msgstr "Zeigt den Ursprung des eintreffenden Datenverkehrs an."
+
+#: ../wp-power-stats.php:239 ../views/dashboard.php:195
+msgid "Browsers"
+msgstr "Browser"
+
+#: ../wp-power-stats.php:239
+msgid "Displays the top 3 most used web browser of your visitors."
+msgstr "Zeigt die Top 3 Browser, die Besucher verwenden."
+
+#: ../wp-power-stats.php:240 ../views/dashboard.php:214
+msgid "Operating Systems"
+msgstr "Betriebssysteme"
+
+#: ../wp-power-stats.php:240
+msgid "Displays the top 3 most used operating system of your visitors."
+msgstr "Zeigt die Top 3 Betriebssysteme, die Besucher verwenden."
+
+#: ../wp-power-stats.php:241 ../views/dashboard.php:243
+msgid "Visitor Map"
+msgstr "Besucherkarte"
+
+#: ../wp-power-stats.php:241
+msgid ""
+"Shows the geoprahical map of your visitors. Hover over a country, to see the "
+"exact visitor number to your site from that country."
+msgstr ""
+"Zeigt eine geografische Karte zur Herkunft der Besucher. Wenn die Maus über "
+"ein Land bewegt wird, erscheinen genauere Angaben."
+
+#: ../wp-power-stats.php:242 ../views/dashboard.php:295
+msgid "Top Posts"
+msgstr "Beliebte Artikel"
+
+#: ../wp-power-stats.php:242
+msgid "Shows the most viewed posts of your wordpress site."
+msgstr "Zeigt die beliebtesten Artikel der Seite an."
+
+#: ../wp-power-stats.php:243 ../views/dashboard.php:321
+msgid "Top Links"
+msgstr "Beliebte Links"
+
+#: ../wp-power-stats.php:243
+msgid "Shows the most common referer to your site."
+msgstr ""
+"Zeigt die beliebtesten Links an, durch die Besucher auf diese Seite kommen."
+
+#: ../wp-power-stats.php:244 ../views/dashboard.php:342
+msgid "Top Search Terms"
+msgstr "Beliebte Suchbegriffe"
+
+#: ../wp-power-stats.php:244
+msgid "Shows the most used keywords used to find your website."
+msgstr ""
+"Zeigt die beliebtesten Suchbegriffe an, durch die Besucher auf diese Seite "
+"kommen."
+
+#: ../views/dashboard.php:21 ../views/dashboard.php:109
+msgid "Visitors"
+msgstr "Besucher"
+
+#: ../views/dashboard.php:22
+msgid "Pageviews"
+msgstr "Aufrufe"
+
+#: ../views/dashboard.php:58 ../views/dashboard.php:68
+msgid "Desktop"
+msgstr "Computer"
+
+#: ../views/dashboard.php:59 ../views/dashboard.php:69
+msgid "Tablet"
+msgstr "Tablet"
+
+#: ../views/dashboard.php:60 ../views/dashboard.php:70
+msgid "Mobile"
+msgstr "Mobil"
+
+#: ../views/dashboard.php:109
+msgid "Year"
+msgstr "Jahr"
+
+#: ../views/dashboard.php:109
+msgid "Page Views"
+msgstr "Seitenaufrufe"
+
+#: ../views/dashboard.php:175 ../views/dashboard.php:185
+msgid "Search Engine"
+msgstr "Suchmaschine"
+
+#: ../views/dashboard.php:176
+msgid "Link"
+msgstr "Link"
+
+#: ../views/dashboard.php:177 ../views/dashboard.php:187
+msgid "Direct"
+msgstr "Direkt"
+
+#: ../views/dashboard.php:186
+msgid "Links"
+msgstr "Links"
+
+#, fuzzy
+#~ msgid "Overviewa"
+#~ msgstr "Обзор"

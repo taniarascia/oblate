@@ -3,7 +3,7 @@
 Contributors: GregLone, SecuPress, juliobox
 Tags: login, logout, url, security
 Requires at least: 3.1
-Tested up to: 4.3.1
+Tested up to: 4.4
 Stable tag: trunk
 License: GPLv3
 License URI: http://www.screenfeed.fr/gpl-v3.txt
@@ -71,6 +71,11 @@ Eventually, try the [WordPress support forum](http://wordpress.org/support/plugi
 
 
 == Changelog ==
+
+= 2.2.2 =
+
+* 2015/11/22
+* Login over https on a non https site should finally work (๑˃̵ᴗ˂̵)و
 
 = 2.2.1 =
 

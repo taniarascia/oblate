@@ -1,0 +1,222 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wp-power-stats\n"
+"POT-Creation-Date: 2014-01-12 21:28+0200\n"
+"PO-Revision-Date: 2014-01-12 21:54+0200\n"
+"Last-Translator: Igor Buyanov <info@websivu.com>\n"
+"Language-Team: Artifex404 <info@websivu.com>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../admin.php:75 ../admin.php:86
+msgid "Unknown"
+msgstr "Tuntematon"
+
+#: ../settings.php:3
+msgid "You do not have sufficient permissions to manage options for this site."
+msgstr "Sinulla ei ole tarpeeksi valtuuksia näkemään tämän sivun."
+
+#: ../settings.php:5
+msgid "Statistics Settings"
+msgstr "Tilaston asetukset"
+
+#: ../widget.php:14
+msgid "WP Power Stats"
+msgstr "WP Power Stats"
+
+#: ../widget.php:15
+msgid "WP Power Stats Widget"
+msgstr "WP Power Stats Widget"
+
+#: ../widget.php:65 ../views/dashboard.php:28
+msgid "Today"
+msgstr "Tänään"
+
+#: ../widget.php:71 ../views/dashboard.php:34
+msgid "This Week"
+msgstr "Tämä viikko"
+
+#: ../widget.php:77 ../views/dashboard.php:40
+msgid "This Month"
+msgstr "Tämä kuukausi"
+
+#: ../widget.php:103 ../wp-power-stats.php:261 ../wp-power-stats.php:262
+msgid "Statistics"
+msgstr "Tilastot"
+
+#: ../widget.php:107
+msgid "Title:"
+msgstr "Otsikko:"
+
+#: ../widget.php:112
+msgid "Show Icons"
+msgstr "Näytä kuvakkeet"
+
+#: ../wp-power-stats.php:182
+msgid "Ignore hits from"
+msgstr "Älä laske käynnit"
+
+#: ../wp-power-stats.php:196
+msgid "Administrators"
+msgstr "Ylläpitäjä"
+
+#: ../wp-power-stats.php:197
+msgid "Bots"
+msgstr "Robotit"
+
+#: ../wp-power-stats.php:233 ../views/dashboard.php:3
+msgid "Overview"
+msgstr "Yhteenveto"
+
+#: ../wp-power-stats.php:234
+msgid "The regions on your Statistics screen are:"
+msgstr "Tilastojen osiot ovat:"
+
+#: ../wp-power-stats.php:235 ../views/dashboard.php:13
+msgid "Summary"
+msgstr "Yhteenveto"
+
+#: ../wp-power-stats.php:235
+msgid ""
+"Shows the number of visitors and page views during different time periods: "
+"today, this week, this month."
+msgstr ""
+"Näyttää kävijöiden ja sivulatauksien tilastot täsä päivästä, tästä viikosta "
+"ja tästä kuukaudesta."
+
+#: ../wp-power-stats.php:236 ../views/dashboard.php:51
+msgid "Devices"
+msgstr "Laitteet"
+
+#: ../wp-power-stats.php:236
+msgid "Shows the top 3 devices your visitors are using."
+msgstr "Näyttää 3 käytetyintä kävijöiden laitetta."
+
+#: ../wp-power-stats.php:237 ../views/dashboard.php:87
+msgid "Visitors & Page Views"
+msgstr "Kävijät ja sivulataukset"
+
+#: ../wp-power-stats.php:237
+msgid ""
+"Shows a graph of visitors and page views during the last 11 days. You can "
+"view the precise numbers when you hover the graph with your mouse."
+msgstr ""
+"Näyttää tilaston, josta näkee viimeisen 11 päivän kävijöiden määrän ja "
+"sivulatauksien määrän. Vie hiiren pisteen päälle niin näet tarkat luvut."
+
+#: ../wp-power-stats.php:238 ../views/dashboard.php:170
+msgid "Traffic Source"
+msgstr "Kävijöiden lähde"
+
+#: ../wp-power-stats.php:238
+msgid "Displays the traffic source to your web site."
+msgstr "Näyttää sivuston kävijöiden lähdettä."
+
+#: ../wp-power-stats.php:239 ../views/dashboard.php:195
+msgid "Browsers"
+msgstr "Selaimet"
+
+#: ../wp-power-stats.php:239
+msgid "Displays the top 3 most used web browser of your visitors."
+msgstr "Näyttää kävijöiden kolme käytetyintä selainta."
+
+#: ../wp-power-stats.php:240 ../views/dashboard.php:214
+msgid "Operating Systems"
+msgstr "Käyttöjärjestelmät"
+
+#: ../wp-power-stats.php:240
+msgid "Displays the top 3 most used operating system of your visitors."
+msgstr "Näyttää kävijöiden kolme käytetyintä käyttöjärjestelmää."
+
+#: ../wp-power-stats.php:241 ../views/dashboard.php:243
+msgid "Visitor Map"
+msgstr "Kävijöiden kartta"
+
+#: ../wp-power-stats.php:241
+msgid ""
+"Shows the geoprahical map of your visitors. Hover over a country, to see the "
+"exact visitor number to your site from that country."
+msgstr ""
+"Näyttää kartalla kävijöiden maat. Vie hiiren maan päälle niin näet tarkan "
+"luvun."
+
+#: ../wp-power-stats.php:242 ../views/dashboard.php:295
+msgid "Top Posts"
+msgstr "Suosituimat artikkelit"
+
+#: ../wp-power-stats.php:242
+msgid "Shows the most viewed posts of your wordpress site."
+msgstr "Näyttää katsotuimat artikkelit tästä wordpress sivustosta."
+
+#: ../wp-power-stats.php:243 ../views/dashboard.php:321
+msgid "Top Links"
+msgstr "Käytetyimät linkkit"
+
+#: ../wp-power-stats.php:243
+msgid "Shows the most common referer to your site."
+msgstr "Näyttää käytetyimät sivustot joista tultiin sivustolle."
+
+#: ../wp-power-stats.php:244 ../views/dashboard.php:342
+msgid "Top Search Terms"
+msgstr "Käytetyimät hakusanat"
+
+#: ../wp-power-stats.php:244
+msgid "Shows the most used keywords used to find your website."
+msgstr "Näyttää käytetyimät hakusanat joilla päädyttiin sivustolle."
+
+#: ../views/dashboard.php:21 ../views/dashboard.php:109
+msgid "Visitors"
+msgstr "Kävijät"
+
+#: ../views/dashboard.php:22
+msgid "Pageviews"
+msgstr "Sivulataukset"
+
+#: ../views/dashboard.php:58 ../views/dashboard.php:68
+msgid "Desktop"
+msgstr "Tietokone"
+
+#: ../views/dashboard.php:59 ../views/dashboard.php:69
+msgid "Tablet"
+msgstr "Tabletti"
+
+#: ../views/dashboard.php:60 ../views/dashboard.php:70
+msgid "Mobile"
+msgstr "Mobiili"
+
+#: ../views/dashboard.php:109
+msgid "Year"
+msgstr "Vuosi"
+
+#: ../views/dashboard.php:109
+msgid "Page Views"
+msgstr "Sivulataukset"
+
+#: ../views/dashboard.php:175 ../views/dashboard.php:185
+msgid "Search Engine"
+msgstr "Hakukone"
+
+#: ../views/dashboard.php:176
+msgid "Link"
+msgstr "Linkki"
+
+#: ../views/dashboard.php:177 ../views/dashboard.php:187
+msgid "Direct"
+msgstr "Suora"
+
+#: ../views/dashboard.php:186
+msgid "Links"
+msgstr "Linkit"
+
+#, fuzzy
+#~ msgid "Overviewa"
+#~ msgstr "Обзор"

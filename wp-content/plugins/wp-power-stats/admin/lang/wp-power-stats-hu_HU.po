@@ -1,0 +1,227 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wp-power-stats-1.1\n"
+"POT-Creation-Date: 2014-01-07 01:08+0200\n"
+"PO-Revision-Date: 2014-01-09 09:46+0100\n"
+"Last-Translator: \n"
+"Language-Team: Halas <halas1@freemail.hu>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../admin.php:75 ../admin.php:86
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#: ../settings.php:3
+msgid "You do not have sufficient permissions to manage options for this site."
+msgstr "Önnek nincs jogosultsága a beállítások megváltoztatásához."
+
+#: ../settings.php:5
+msgid "Statistics Settings"
+msgstr "Beállítások"
+
+#: ../widget.php:14
+msgid "WP Power Stats"
+msgstr "Statisztikák"
+
+#: ../widget.php:15
+msgid "WP Power Stats Widget"
+msgstr "Statisztikák"
+
+#: ../widget.php:65 ../views/dashboard.php:28
+msgid "Today"
+msgstr "Ma"
+
+#: ../widget.php:71 ../views/dashboard.php:34
+msgid "This Week"
+msgstr "A héten"
+
+#: ../widget.php:77 ../views/dashboard.php:40
+msgid "This Month"
+msgstr "A hónapban"
+
+#: ../widget.php:103 ../wp-power-stats.php:254 ../wp-power-stats.php:255
+msgid "Statistics"
+msgstr "Statisztikák"
+
+#: ../widget.php:107
+msgid "Title:"
+msgstr "Cím:"
+
+#: ../widget.php:112
+msgid "Show Icons"
+msgstr "Ikonok mutatása"
+
+#: ../wp-power-stats.php:182
+msgid "Ignore hits from"
+msgstr "Ne vegye figyelembe:"
+
+#: ../wp-power-stats.php:196
+msgid "Administrators"
+msgstr "Adminisztrátor"
+
+#: ../wp-power-stats.php:197
+msgid "Bots"
+msgstr "Robotok"
+
+#: ../wp-power-stats.php:226 ../views/dashboard.php:3
+msgid "Overview"
+msgstr "Statisztikák"
+
+#: ../wp-power-stats.php:227
+msgid "The regions on your Statistics screen are:"
+msgstr "A Statisztikák képernyő áttekintése:"
+
+#: ../wp-power-stats.php:228 ../views/dashboard.php:13
+msgid "Summary"
+msgstr "Összefoglalás"
+
+#: ../wp-power-stats.php:228
+msgid ""
+"Shows the number of visitors and page views during different time periods: "
+"today, this week, this month."
+msgstr ""
+"Az oldal látogatóinak számát és az általuk megtekintett oldalak számát "
+"mutatja napi, heti és havi bontásban."
+
+#: ../wp-power-stats.php:229 ../views/dashboard.php:51
+msgid "Devices"
+msgstr "Eszközök"
+
+#: ../wp-power-stats.php:229
+msgid "Shows the top 3 devices your visitors are using."
+msgstr "Az oldal látogatói által használt eszközök típusait mutatja."
+
+#: ../wp-power-stats.php:230 ../views/dashboard.php:87
+msgid "Visitors & Page Views"
+msgstr "Látogatók és oldalmegtekintések"
+
+#: ../wp-power-stats.php:230
+msgid ""
+"Shows a graph of visitors and page views during the last 11 days. You can "
+"view the precise numbers when you hover the graph with your mouse."
+msgstr ""
+"Az oldal látogatóinak számát és az általuk megtekintett oldalak számát "
+"ábrázolja grafikonon. A grafikon az elmúlt 11 nap adatait tartalmazza. "
+"Megtekintheti a napi szintű pontos adatokat, ha az egér mutatót a grafikon "
+"fölé mozgatja."
+
+#: ../wp-power-stats.php:231 ../views/dashboard.php:170
+msgid "Traffic Source"
+msgstr "Forgalom forrásai"
+
+#: ../wp-power-stats.php:231
+msgid "Displays the traffic source to your web site."
+msgstr "Azt mutatja meg, hogy honnan érkeztek a látogatók az oldalára. "
+
+#: ../wp-power-stats.php:232 ../views/dashboard.php:195
+msgid "Browsers"
+msgstr "Böngészők"
+
+#: ../wp-power-stats.php:232
+msgid "Displays the top 3 most used web browser of your visitors."
+msgstr ""
+"Az oldal látogatói által használt 3 legnépszerűbb böngészőről ad "
+"tájékoztatást."
+
+#: ../wp-power-stats.php:233 ../views/dashboard.php:214
+msgid "Operating Systems"
+msgstr "Operációs rendszerek"
+
+#: ../wp-power-stats.php:233
+msgid "Displays the top 3 most used operating system of your visitors."
+msgstr ""
+"Az oldal látogatói által használt 3 legnépszerűbb operációs rendszerről ad "
+"tájékoztatást."
+
+#: ../wp-power-stats.php:234 ../views/dashboard.php:243
+msgid "Visitor Map"
+msgstr "Látogatói térkép"
+
+#: ../wp-power-stats.php:234
+msgid ""
+"Shows the geoprahical map of your visitors. Hover over a country, to see the "
+"exact visitor number to your site from that country."
+msgstr ""
+"Az oldal látogatóinak országonkénti eloszlását ábrázolja térképen. Adott "
+"országból érkező látogatók számáról pontos adatokat kaphat, ha az "
+"egérmutatót az adott ország fölé mozgatja."
+
+#: ../wp-power-stats.php:235 ../views/dashboard.php:295
+msgid "Top Posts"
+msgstr "Legnépszerűbb bejegyzések"
+
+#: ../wp-power-stats.php:235
+msgid "Shows the most viewed posts of your wordpress site."
+msgstr "A legnézettebb bejegyzéseket mutatja meg."
+
+#: ../wp-power-stats.php:236 ../views/dashboard.php:321
+msgid "Top Links"
+msgstr "Legnépszerűbb hivatkozások"
+
+#: ../wp-power-stats.php:236
+msgid "Shows the most common referer to your site."
+msgstr "Megmutatja a leggyakoribb hivatkozásokat az oldalára."
+
+#: ../wp-power-stats.php:237 ../views/dashboard.php:342
+msgid "Top Search Terms"
+msgstr "Legnépszerűbb keresési kifejezések"
+
+#: ../wp-power-stats.php:237
+msgid "Shows the most used keywords used to find your website."
+msgstr ""
+"Megmutatja a leggyakoribb kereső kifejezéseket, amikkel az oldalára találtak."
+
+#: ../views/dashboard.php:21 ../views/dashboard.php:109
+msgid "Visitors"
+msgstr "Látogatók"
+
+#: ../views/dashboard.php:22
+msgid "Pageviews"
+msgstr "Oldalmegtekintések"
+
+#: ../views/dashboard.php:58 ../views/dashboard.php:68
+msgid "Desktop"
+msgstr "Pc"
+
+#: ../views/dashboard.php:59 ../views/dashboard.php:69
+msgid "Tablet"
+msgstr "Táblagép"
+
+#: ../views/dashboard.php:60 ../views/dashboard.php:70
+msgid "Mobile"
+msgstr "Mobil"
+
+#: ../views/dashboard.php:109
+msgid "Year"
+msgstr "Év"
+
+#: ../views/dashboard.php:109
+msgid "Page Views"
+msgstr "Oldalmegtekintések"
+
+#: ../views/dashboard.php:175 ../views/dashboard.php:185
+msgid "Search Engine"
+msgstr "Keresők"
+
+#: ../views/dashboard.php:176
+msgid "Link"
+msgstr "Hivatkozás"
+
+#: ../views/dashboard.php:177 ../views/dashboard.php:187
+msgid "Direct"
+msgstr "Direkt"
+
+#: ../views/dashboard.php:186
+msgid "Links"
+msgstr "Hivatkozások"

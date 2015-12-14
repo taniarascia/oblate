@@ -136,9 +136,11 @@ function sf_get_current_url( $mode = 'base' ) {
 		case 'raw' :
 			return $url;
 		case 'uri' :
-			$url = reset( ( explode( '?', $url ) ) );
-			$url = reset( ( explode( '&', $url ) ) );
-			return trim( str_replace( home_url(), '', $url ), '/' );
+			$home_url = set_url_scheme( home_url() );
+			$url      = reset( ( explode( '?', $url ) ) );
+			$url      = reset( ( explode( '&', $url ) ) );
+			$url      = str_replace( $home_url, '', $url );
+			return trim( $url, '/' );
 		default :
 			$url = reset( ( explode( '?', $url ) ) );
 			return reset( ( explode( '&', $url ) ) );

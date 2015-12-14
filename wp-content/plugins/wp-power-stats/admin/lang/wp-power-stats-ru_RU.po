@@ -1,0 +1,225 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wp-power-stats\n"
+"POT-Creation-Date: 2014-01-07 01:08+0200\n"
+"PO-Revision-Date: 2014-01-07 01:12+0200\n"
+"Last-Translator: Igor Buyanov <info@websivu.com>\n"
+"Language-Team: Artifex404 <info@websivu.com>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../admin.php:75 ../admin.php:86
+msgid "Unknown"
+msgstr "Неизвестно"
+
+#: ../settings.php:3
+msgid "You do not have sufficient permissions to manage options for this site."
+msgstr "У вас нет достаточно привилегий просматривать эту страницу."
+
+#: ../settings.php:5
+msgid "Statistics Settings"
+msgstr "Настройки статистики"
+
+#: ../widget.php:14
+msgid "WP Power Stats"
+msgstr "WP Power Stats"
+
+#: ../widget.php:15
+msgid "WP Power Stats Widget"
+msgstr "WP Power Stats Виджет"
+
+#: ../widget.php:65 ../views/dashboard.php:28
+msgid "Today"
+msgstr "Сегодня"
+
+#: ../widget.php:71 ../views/dashboard.php:34
+msgid "This Week"
+msgstr "Неделя"
+
+#: ../widget.php:77 ../views/dashboard.php:40
+msgid "This Month"
+msgstr "Месяц"
+
+#: ../widget.php:103 ../wp-power-stats.php:254 ../wp-power-stats.php:255
+msgid "Statistics"
+msgstr "Статистика"
+
+#: ../widget.php:107
+msgid "Title:"
+msgstr "Заголовок:"
+
+#: ../widget.php:112
+msgid "Show Icons"
+msgstr "Показывать иконки"
+
+#: ../wp-power-stats.php:182
+msgid "Ignore hits from"
+msgstr "Не учитывать посещений"
+
+#: ../wp-power-stats.php:196
+msgid "Administrators"
+msgstr "Администраторов"
+
+#: ../wp-power-stats.php:197
+msgid "Bots"
+msgstr "Роботов"
+
+#: ../wp-power-stats.php:226 ../views/dashboard.php:3
+msgid "Overview"
+msgstr "Обзор"
+
+#: ../wp-power-stats.php:227
+msgid "The regions on your Statistics screen are:"
+msgstr "Плагин показывает информацию следующими разделами:"
+
+#: ../wp-power-stats.php:228 ../views/dashboard.php:13
+msgid "Summary"
+msgstr "Посещение"
+
+#: ../wp-power-stats.php:228
+msgid ""
+"Shows the number of visitors and page views during different time periods: "
+"today, this week, this month."
+msgstr ""
+"Показывает количество посещений и показов страниц за разные периоды времени: "
+"сегодня, за текущую неделю и за текущий месяц."
+
+#: ../wp-power-stats.php:229 ../views/dashboard.php:51
+msgid "Devices"
+msgstr "Приборы"
+
+#: ../wp-power-stats.php:229
+msgid "Shows the top 3 devices your visitors are using."
+msgstr "Показывает статистику используемых приборов ваших посетителей."
+
+#: ../wp-power-stats.php:230 ../views/dashboard.php:87
+msgid "Visitors & Page Views"
+msgstr "Посетители и показы"
+
+#: ../wp-power-stats.php:230
+msgid ""
+"Shows a graph of visitors and page views during the last 11 days. You can "
+"view the precise numbers when you hover the graph with your mouse."
+msgstr ""
+"Показывает график количества ваших посетителей и показов страниц за "
+"последние 11 дней. Подведите мышку на график, и вы увидете число посетителей "
+"и показов страниц."
+
+#: ../wp-power-stats.php:231 ../views/dashboard.php:170
+msgid "Traffic Source"
+msgstr "Источники посетителей"
+
+#: ../wp-power-stats.php:231
+msgid "Displays the traffic source to your web site."
+msgstr "Показывает источник ваших посетителей."
+
+#: ../wp-power-stats.php:232 ../views/dashboard.php:195
+msgid "Browsers"
+msgstr "Браузеры"
+
+#: ../wp-power-stats.php:232
+msgid "Displays the top 3 most used web browser of your visitors."
+msgstr "Показывает 3 самых распространенных браузера Ваших посетителей."
+
+#: ../wp-power-stats.php:233 ../views/dashboard.php:214
+msgid "Operating Systems"
+msgstr "Операционные системы"
+
+#: ../wp-power-stats.php:233
+msgid "Displays the top 3 most used operating system of your visitors."
+msgstr ""
+"Показывает 3 самых распространенных операционных систем Ваших посетителей."
+
+#: ../wp-power-stats.php:234 ../views/dashboard.php:243
+msgid "Visitor Map"
+msgstr "Карта посетителей"
+
+#: ../wp-power-stats.php:234
+msgid ""
+"Shows the geoprahical map of your visitors. Hover over a country, to see the "
+"exact visitor number to your site from that country."
+msgstr ""
+"Показывает на карте Ваших посетителей по странам. Подведите мышку на карту, "
+"и Вы увидите точное количество посетителей из етой страны."
+
+#: ../wp-power-stats.php:235 ../views/dashboard.php:295
+msgid "Top Posts"
+msgstr "Записи"
+
+#: ../wp-power-stats.php:235
+msgid "Shows the most viewed posts of your wordpress site."
+msgstr "Показывает самые просматриваемые записи Вашего сайта."
+
+#: ../wp-power-stats.php:236 ../views/dashboard.php:321
+msgid "Top Links"
+msgstr "Ссылки"
+
+#: ../wp-power-stats.php:236
+msgid "Shows the most common referer to your site."
+msgstr "Показывает самые популярные ссылки на Ваш сайт."
+
+#: ../wp-power-stats.php:237 ../views/dashboard.php:342
+msgid "Top Search Terms"
+msgstr "Поисковые слова"
+
+#: ../wp-power-stats.php:237
+msgid "Shows the most used keywords used to find your website."
+msgstr "Показывает самые используемые ключевые слова."
+
+#: ../views/dashboard.php:21 ../views/dashboard.php:109
+msgid "Visitors"
+msgstr "Посетителей"
+
+#: ../views/dashboard.php:22
+msgid "Pageviews"
+msgstr "Показов"
+
+#: ../views/dashboard.php:58 ../views/dashboard.php:68
+msgid "Desktop"
+msgstr "Компьютер"
+
+#: ../views/dashboard.php:59 ../views/dashboard.php:69
+msgid "Tablet"
+msgstr "Планшет"
+
+#: ../views/dashboard.php:60 ../views/dashboard.php:70
+msgid "Mobile"
+msgstr "Телефон"
+
+#: ../views/dashboard.php:109
+msgid "Year"
+msgstr "Год"
+
+#: ../views/dashboard.php:109
+msgid "Page Views"
+msgstr "Показов"
+
+#: ../views/dashboard.php:175 ../views/dashboard.php:185
+msgid "Search Engine"
+msgstr "Поисковики"
+
+#: ../views/dashboard.php:176
+msgid "Link"
+msgstr "Ссылка"
+
+#: ../views/dashboard.php:177 ../views/dashboard.php:187
+msgid "Direct"
+msgstr "Прямой доступ"
+
+#: ../views/dashboard.php:186
+msgid "Links"
+msgstr "Ссылки"
+
+#, fuzzy
+#~ msgid "Overviewa"
+#~ msgstr "Обзор"
