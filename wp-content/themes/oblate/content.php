@@ -5,7 +5,9 @@
     <div class="box three-fourths"> <?php } ?>		
 	<div class="article-header">
 		<h2><?php the_title();?></h2>
-				<time datetime="<?php the_time('Y-m-d');?>">
+    <time datetime="<?php the_time('Y-m-d');?>">
+			<?php the_time('F j, Y');?>
+		</time>
 	</div>
 <?php the_excerpt(); ?>
 <?php if(get_post_thumbnail_id()) {?>
