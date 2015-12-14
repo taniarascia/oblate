@@ -9,7 +9,7 @@
 <?php if(get_post_thumbnail_id()) {?>
 	<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' );
 	 $url = $thumb['0']; ?></div><div class="box one-fourth thumb">
-	 <img src="<?php echo $url; ?>" class="desktop-only">
+	 <img src="<?php echo $url; ?>" class="rescale">
 	</div></div><?php } ?>
 </article>
 </a>

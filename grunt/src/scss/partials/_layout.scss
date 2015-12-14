@@ -312,27 +312,24 @@ footer {
 img {
 	max-width: 100%;
 }
-.left {
-	float: none;
-}
-.right {
-	float: none;
-}
-.clear {
-	clear: both;
-}
-.desktop-only {
-	display: none;
-}
-@media screen and (min-width: $content-small-width) {
 	.left {
 		float: left;
 	}
 	.right {
 		float: right;
 	}
-	.desktop-only {
-		display: block;
+	.left, .right {
+		padding: 5px;
+	}
+.clear {
+	clear: both;
+}
+.rescale {
+	max-width: 50px;
+}
+@media screen and (min-width: $content-small-width) {
+	.rescale {
+		max-width: 100%;
 	}
 }
 .article-image {
