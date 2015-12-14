@@ -35,10 +35,10 @@
 <body>
 	<header>
 		<div class="flex vertical">
-			<div class="box _25">
+			<div class="box one-fourth">
 				<a href="<?php bloginfo('wpurl');?>"><img src="<?php bloginfo('template_directory');?>/images/tr.png" class="logo-image"></a>
 			</div>
-			<div class="box _75 social">
+			<div class="box three-fourths social">
 				<a href="https://taniarascia.github.io/new-moon"><img src="<?php bloginfo('template_directory');?>/images/newmoon.png" class="darken"></a>&nbsp;
 				<a href="https://twitter.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/twitter.png" class="darken"></a>&nbsp;
 				<a href="https://github.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/github-dark.png" class="darken"></a>&nbsp;

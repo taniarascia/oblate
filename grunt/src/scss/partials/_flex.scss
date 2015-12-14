@@ -8,10 +8,10 @@
 .box {
 	flex: 1;
 }
-._75 {
+.three-fourths {
 	flex: 7.5;
 }
-._25 {
+.one-fourth {
 	flex: 2.5;
 }
 .flex-responsive {
@@ -23,4 +23,12 @@
 		flex-direction: row;
 		flex-wrap: nowrap;
 	}
+}
+
+// Image Thumbnail
+
+.thumb {
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }

@@ -1057,12 +1057,12 @@ pre code {
       -ms-flex: 1;
           flex: 1; }
 
-._75 {
+.three-fourths {
   -webkit-flex: 7.5;
       -ms-flex: 7.5;
           flex: 7.5; }
 
-._25 {
+.one-fourth {
   -webkit-flex: 2.5;
       -ms-flex: 2.5;
           flex: 2.5; }
@@ -1083,3 +1083,13 @@ pre code {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap; } }
+.thumb {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
