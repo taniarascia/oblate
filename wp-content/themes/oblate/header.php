@@ -36,13 +36,13 @@
 	<header>
 		<div class="flex vertical">
 			<div class="box one-fourth">
-				<a href="<?php bloginfo('wpurl');?>"><img src="<?php bloginfo('template_directory');?>/images/tr.png" class="logo-image"></a>
+				<a href="<?php bloginfo('wpurl');?>"><img src="<?php bloginfo('template_directory');?>/images/tr.png" class="logo-image" alt="Tania Rascia"></a>
 			</div>
 			<div class="box three-fourths social">
-				<a href="https://taniarascia.github.io/new-moon"><img src="<?php bloginfo('template_directory');?>/images/newmoon.png" class="darken"></a>&nbsp;
-				<a href="https://twitter.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/twitter.png" class="darken"></a>&nbsp;
-				<a href="https://github.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/github-dark.png" class="darken"></a>&nbsp;
-				<a href="<?php bloginfo('wpurl');?>/feed"><img src="<?php bloginfo('template_directory');?>/images/rss.png" class="darken"></a>
+				<a href="https://taniarascia.github.io/new-moon"><img src="<?php bloginfo('template_directory');?>/images/newmoon.png" class="darken" alt="New Moon Syntax Theme"></a>&nbsp;
+				<a href="https://twitter.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/twitter.png" class="darken" alt="Twitter"></a>&nbsp;
+				<a href="https://github.com/taniarascia"><img src="<?php bloginfo('template_directory');?>/images/github-dark.png" class="darken" alt="GitHub"></a>&nbsp;
+				<a href="<?php bloginfo('wpurl');?>/feed"><img src="<?php bloginfo('template_directory');?>/images/rss.png" class="darken" alt="RSS Feed"></a>
 			</div>
 		</div>
 	</header>
