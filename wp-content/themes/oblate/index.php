@@ -9,9 +9,9 @@ if( !$paged && $c == 1 && is_front_page()) :?>
 <article id="post-<?php the_ID(); ?>" class="article-excerpt first">
 	<div class="article-header">
 		<?php  $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' );
-	 $url = $thumb['0']; if (get_post_thumbnail_id()) {?><img src="<?php echo $url;?>" class="article-image"><?php } ?>
+	 $url = $thumb['0']; if (get_post_thumbnail_id()) {?><img src="<?php echo $url;?>" class="article-image" alt="<?php the_title();?>"><?php } ?>
 		<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
-		<time>
+		<time datetime="<?php the_time('Y-m-d');?>">
 			<?php the_time('F j, Y');?>
 		</time>
 	</div> 
