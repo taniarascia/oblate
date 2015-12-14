@@ -637,17 +637,28 @@ img {
 .right {
   float: right; }
 
-.left, .right {
+.left,
+.right {
   padding: 5px; }
 
 .clear {
   clear: both; }
 
-.rescale {
+.mobile-only {
   max-width: 50px; }
 
+.desktop-only {
+  display: none; }
+
 @media screen and (min-width: 800px) {
-  .rescale {
+  .left, .right {
+    float: none;
+    margin: 0 auto; }
+
+  .mobile-only {
+    display: none; }
+
+  .desktop-only {
     max-width: 100%; } }
 .article-image {
   display: block;
