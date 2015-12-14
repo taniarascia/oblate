@@ -5,20 +5,12 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="author" content="Tania Rascia">
-	<meta name="description" content="Minimalist web design and development blog.">
+	<meta name="description" content="<?php if(!is_front_page()) { ?><?php wp_title();?> - Tutorials by <?php bloginfo('name');?><?php } else { ?><?php bloginfo('description'); }?> ">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Tania Rascia</title>
+	<title><?php if(!is_front_page()) { ?><?php wp_title();?> - Tutorials by <?php bloginfo('name');?><?php } else { ?>Web Development and Design Tutorials by <?php bloginfo('name');?><?php } ?></title>
 
-	<link href="<?php bloginfo('template_directory');?>/css/style.min.css" rel="stylesheet">
-	<link href="<?php bloginfo('template_directory');?>/css/none.css" rel="stylesheet" id="new-moon" title="alternate">
-
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300,500,700' rel='stylesheet' type='text/css'>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<?php wp_head(); ?>
+		<?php wp_head(); ?>
 
 		<script>
 			(function(i, s, o, g, r, a, m) {

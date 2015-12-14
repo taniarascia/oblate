@@ -36,12 +36,66 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 // Support search form
 add_theme_support( 'html5', array( 'search-form' ) );
 
-// Change more link
+// Change 'more' link
 add_filter( 'the_content_more_link', 'modify_read_more_link' );
 function modify_read_more_link() {
 return '<p class="right-text"><a class="button" href="' . get_permalink() . '">Read More</a></p>';
 }
 
+
+// Add Stylesheets
+function oblate_scripts() {
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.min.css' );
+	wp_enqueue_script( 'prism', get_template_directory_uri() . '/js/prism.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.min.js', array(), '1.0.0', true );
+}
+
+add_action( 'wp_enqueue_scripts', 'oblate_scripts' );
+
+// Google Fonts
+    function load_fonts() {
+            wp_register_style('OpenSans', '//fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+			      wp_register_style('NotoSerif', '//fonts.googleapis.com/css?family=Noto+Serif:400,700');
+			      wp_register_style('RobotoMono', '//fonts.googleapis.com/css?family=Roboto+Mono:400,300,500,700');
+            wp_enqueue_style( 'OpenSans');
+						wp_enqueue_style( 'NotoSerif');
+						wp_enqueue_style( 'RobotoMono');
+        }
+    
+    add_action('wp_print_styles', 'load_fonts');
+
+// Disable Emoji Crap
+
+function disable_wp_emojicons() {
+
+  // all actions related to emojis
+  remove_action( 'admin_print_styles', 'print_emoji_styles' );
+  remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+  remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+  remove_action( 'wp_print_styles', 'print_emoji_styles' );
+  remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
+  remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+  remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
+
+  // filter to remove TinyMCE emojis
+  add_filter( 'tiny_mce_plugins', 'disable_emojicons_tinymce' );
+}
+add_action( 'init', 'disable_wp_emojicons' );
+
+function disable_emojicons_tinymce( $plugins ) {
+  if ( is_array( $plugins ) ) {
+    return array_diff( $plugins, array( 'wpemoji' ) );
+  } else {
+    return array();
+  }
+}
+
+
+// Disable XML RPC
+add_filter('xmlrpc_enabled', '__return_false');
+
+remove_action( 'wp_head', 'rsd_link' );
+remove_action( 'wp_head', 'wlwmanifest_link' );
 
 // Escape HTML
 function escapeHTML($arr) {

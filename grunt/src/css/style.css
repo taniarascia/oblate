@@ -2,7 +2,7 @@
 * Master Sass File
 * by Tania!
 */
-/* Modules */
+/* Base */
 /* Global Styling */
 /* Mobile Breakpoints */
 /* Content Font Styling */
@@ -884,6 +884,9 @@ span.tags a {
 
 .avatar {
   display: none; }
+
+.logged-in-as {
+  font-family: "Open Sans", sans-serif; }
 
 .terminal {
   padding: 10px 6px;

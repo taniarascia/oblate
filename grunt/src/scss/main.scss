@@ -4,18 +4,17 @@
 */
 
 
-/* Modules */
+/* Base */
 
 @import 'modules/base'; // Library of variables and mixins
 
 /* Partials */
 
-@import 'partials/normalize'; // Normalize.css
-@import 'partials/layout'; // Main styling
-@import 'partials/buttons'; // Buttons
-@import 'partials/forms'; // Forms
-@import 'partials/tables'; // Tables
-@import 'partials/wordpress'; // Wordpress-specific
-@import 'partials/code'; // Code styling
-@import 'partials/flex'; // Tiny flex grid
-// @import 'partials/nav'; // Nav
+@import 'partials/normalize';
+@import 'partials/layout'; 
+@import 'partials/buttons'; 
+@import 'partials/forms';
+@import 'partials/tables'; 
+@import 'partials/wordpress';
+@import 'partials/code';
+@import 'partials/flex';
