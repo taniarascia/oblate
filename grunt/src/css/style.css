@@ -386,6 +386,9 @@ h2 {
   font-family: "Open Sans", sans-serif;
   letter-spacing: -.05em; }
 
+a:hover h2 {
+  color: #000; }
+
 h3 {
   font-size: 1.3em;
   letter-spacing: -.05em; }
@@ -434,17 +437,11 @@ article {
     font-size: 2.2em; } }
 .article-excerpt {
   color: #6e7a83;
-  background: #ffffff;
   margin: 0; }
   .article-excerpt:hover {
     color: #3f4348; }
   .article-excerpt.first {
     color: #3f4348; }
-    .article-excerpt.first .article-header {
-      border-left: 12px solid #FFEC88;
-      padding-left: 20px; }
-      .article-excerpt.first .article-header:hover {
-        border-left: 12px solid #ffe455; }
 
 @media screen and (min-width: 550px) {
   article {
@@ -458,11 +455,10 @@ a {
   a:hover {
     color: #064E93; }
 
-h2 a, h2 a:visited, h2 a:active, h2 a:focus {
-  color: #2f3236;
-  transition: all .3s ease; }
-h2 a:hover {
+h2 a, h2 a:visited {
   color: #2f3236; }
+h2 a:hover {
+  color: #000; }
 
 p a:hover,
 span a:hover,
@@ -483,6 +479,9 @@ blockquote {
     margin-top: 25px;
     font-size: .9em;
     text-align: right; }
+  blockquote .info {
+    background: #7db4ea;
+    border-left: 12px solid #2581DC; }
 
 .alert {
   transition: all .3s ease;
@@ -493,7 +492,8 @@ blockquote {
   padding: 20px;
   font-family: "Open Sans", sans-serif;
   margin: 20px 0; }
-  .alert a, .alert a:visited {
+  .alert a,
+  .alert a:visited {
     color: #536172;
     font-weight: 600; }
   .alert:hover {
@@ -640,12 +640,18 @@ img {
 .clear {
   clear: both; }
 
+.desktop-only {
+  display: none; }
+
 @media screen and (min-width: 800px) {
   .left {
     float: left; }
 
   .right {
-    float: right; } }
+    float: right; }
+
+  .desktop-only {
+    display: block; } }
 /* Buttons  */
 .buttons, a.button,
 .button,
@@ -886,7 +892,12 @@ span.tags a {
   display: none; }
 
 .logged-in-as {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  font-size: .9em;
+  padding-bottom: 10px; }
+
+.comment-notes {
+  padding-bottom: 10px; }
 
 .terminal {
   padding: 10px 6px;
@@ -1030,9 +1041,6 @@ pre code {
   color: #454545; }
 
 /* Grid */
-/*.flex {
-  flex-basis: 100%;
-}*/
 .flex {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1058,3 +1066,20 @@ pre code {
   -webkit-flex: 2.5;
       -ms-flex: 2.5;
           flex: 2.5; }
+
+.flex-responsive {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%; }
+
+@media screen and (min-width: 800px) {
+  .flex-responsive {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; } }

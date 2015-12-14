@@ -1,22 +1,26 @@
 /* Grid */
 
-/*.flex {
-  flex-basis: 100%;
-}*/
-
-//@media screen and (min-width: 800px) {
-  .flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  .box {
-    flex: 1;
-  }
-  ._75 { 
-    flex: 7.5;
-  }
-  ._25 {
-    flex: 2.5;
-  }
-//} 
+.flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+.box {
+	flex: 1;
+}
+._75 {
+	flex: 7.5;
+}
+._25 {
+	flex: 2.5;
+}
+.flex-responsive {
+	flex-basis: 100%;
+}
+@media screen and (min-width: 800px) {
+	.flex-responsive {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+}
