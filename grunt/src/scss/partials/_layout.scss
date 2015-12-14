@@ -312,15 +312,12 @@ footer {
 img {
   max-width: 100%;
 }
-.left {
-  float: left;
-}
-.right {
-  float: right;
-}
+
 .left,
 .right {
+  float: none;
   padding: 5px;
+  margin: 0 auto;
 }
 .clear {
   clear: both;
@@ -332,14 +329,17 @@ img {
   display: none;
 }
 @media screen and (min-width: $content-small-width) {
-  .left, .right {
-    float: none;
-    margin: 0 auto;
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
   }
   .mobile-only {
     display: none;
   }
   .desktop-only {
+    display: block;
     max-width: 100%;
   }
 }
