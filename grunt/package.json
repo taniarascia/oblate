@@ -12,10 +12,10 @@
     "grunt": "~0.4.4",
     "grunt-contrib-cssmin": "latest",
     "grunt-contrib-jshint": "latest",
-    "grunt-contrib-sass": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",
     "grunt-postcss": "^0.6.0",
+    "grunt-sass": "^1.1.0",
     "jshint-stylish": "latest"
   }
 }
