@@ -479,9 +479,13 @@ blockquote {
     margin-top: 25px;
     font-size: .9em;
     text-align: right; }
-  blockquote .info {
-    background: #7db4ea;
-    border-left: 12px solid #2581DC; }
+  blockquote.info {
+    background: white;
+    border: 1px solid #7db4ea;
+    color: #222;
+    padding: 15px; }
+    blockquote.info p {
+      font-weight: 400; }
 
 .alert {
   transition: all .3s ease;
@@ -917,7 +921,7 @@ span.tags a {
 .terminal {
   padding: 10px 6px;
   font-size: .8em;
-  font-family: 'Roboto Mono', Menlo, monospace;
+  font-family: Menlo, 'Roboto Mono', monospace;
   border: 1px solid #d8d9da;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   max-width: 100%;
@@ -928,7 +932,7 @@ code[class*="language-"],
 pre[class*="language-"],
 pre code {
   color: #4f545a;
-  font-family: 'Roboto Mono', Menlo, monospace;
+  font-family: Menlo, 'Roboto Mono', monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -973,10 +977,13 @@ pre code {
   padding-top: 1px;
   padding-bottom: 1px;
   background: #eeeeee;
-  font-family: 'Roboto Mono', Menlo, monospace;
+  font-family: Menlo, 'Roboto Mono', monospace;
   color: #4f545a;
   font-weight: 400;
   -webkit-font-smoothing: subpixel-antialiased; }
+
+code[class*=language-css], code[class*=language-scss], code[class*=language-less], code[class*=language-sass] {
+  color: #795da3; }
 
 .token.doctype {
   background: #000;
@@ -1005,7 +1012,7 @@ pre code {
   color: #183691; }
 
 .token.property {
-  color: #121212; }
+  color: #4f545a; }
 
 .token.entity,
 .token.url,

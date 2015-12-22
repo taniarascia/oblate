@@ -1,7 +1,7 @@
 .terminal {
 	padding: 10px 6px;
 	font-size: .8em;
-	font-family: 'Roboto Mono', Menlo, monospace;
+	font-family: Menlo, 'Roboto Mono', monospace;
 	border: 1px solid #d8d9da;
 	box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
 	max-width: 100%;
@@ -12,7 +12,7 @@ code[class*="language-"],
 pre[class*="language-"],
 pre code {
 	color: $code-font-color;
-	font-family: 'Roboto Mono', Menlo, monospace;
+	font-family: Menlo, 'Roboto Mono', monospace;
 	direction: ltr;
 	text-align: left;
 	white-space: pre;
@@ -65,13 +65,17 @@ pre[class*="language-"] {}
 	padding-top: 1px;
 	padding-bottom: 1px;
 	background: darken($code-background, 2%);
-	font-family: 'Roboto Mono', Menlo, monospace;
+	font-family: Menlo, 'Roboto Mono', monospace;
 	color: $code-font-color;
 	font-weight: 400;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
 $string: #2f9c0a;
+
+code[class*=language-css], code[class*=language-scss], code[class*=language-less], code[class*=language-sass] {
+  color: #795da3;
+}
 
 .token.doctype {
 	background: #000;
@@ -100,7 +104,7 @@ $string: #2f9c0a;
 	color: #183691;
 }
 .token.property {
-	color: #121212;     
+	color: #4f545a;     
 }
 .token.entity,
 .token.url,
