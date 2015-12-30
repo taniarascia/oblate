@@ -359,7 +359,7 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 body {
-  font: normal normal 400 1.1em/1.5 "Noto Serif", sans-serif;
+  font: normal normal 400 1.2em/1.5 "Noto Serif", sans-serif;
   color: #3f4348; }
 
 p {
@@ -406,7 +406,7 @@ h5 {
 
 @media screen and (min-width: 550px) {
   h2 {
-    font-size: 1.7em; }
+    font-size: 2em; }
 
   h3 {
     font-size: 1.6em; } }
@@ -423,7 +423,7 @@ header {
 main,
 .container {
   max-width: 800px;
-  margin: 10px auto; }
+  margin: 20px auto; }
 
 .large-container {
   max-width: 1100px; }
@@ -434,7 +434,7 @@ article {
 
 @media screen and (min-width: 550px) {
   article.single-article h2 {
-    font-size: 2.2em; } }
+    font-size: 2.4em; } }
 .article-excerpt {
   color: #6e7a83;
   margin: 0; }
@@ -521,7 +521,8 @@ time {
   font-family: "Open Sans", sans-serif;
   font-size: .8em;
   margin-bottom: 30px;
-  font-weight: 400;
+  font-weight: 600;
+  text-transform: uppercase;
   padding-left: 5px; }
 
 mark {
