@@ -329,14 +329,12 @@ img {
 .clear {
   clear: both;
 }
-.mobile-only {
+.image-float {
   max-width: 50px;
   float: left;
   padding-right: 5px;
 }
-.desktop-only {
-  display: none;
-}
+
 @media screen and (min-width: $content-small-width) {
   .left {
     float: left;
@@ -344,12 +342,9 @@ img {
   .right {
     float: right;
   }
-  .mobile-only {
-    display: none;
-  }
-  .desktop-only {
-    display: block;
-    max-width: 100%;
+  .image-float {
+    max-width: 120px;
+    padding-right: 20px;
   }
 }
 .article-image {

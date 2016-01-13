@@ -9,14 +9,7 @@
 		</time>
 	</div>
 <?php if(get_post_thumbnail_id()) {?>
-  <div class="flex-responsive">
-    <div class="box three-fourths"><img src="<?php echo $url; ?>" class="mobile-only"> <?php } ?>		
+<img src="<?php echo $url; ?>" class="image-float" alt="<?php the_title(); ?>"> <?php } ?>		
 <?php the_excerpt(); ?>
-<?php if(get_post_thumbnail_id()) {?>
-	 </div>
-    <div class="box one-fourth thumb">
-	 <img src="<?php echo $url; ?>" class="desktop-only" alt="<?php the_title();?>">
-	  </div>
-	</div><?php } ?>
 </article>
 </a>
