@@ -659,7 +659,7 @@ img {
     float: right; }
 
   .image-float {
-    max-width: 120px;
+    max-width: 100px;
     padding-right: 20px; } }
 .article-image {
   display: block;
