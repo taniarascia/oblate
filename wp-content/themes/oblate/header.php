@@ -8,7 +8,7 @@
 	<meta name="description" content="<?php if(!is_front_page()) { ?><?php wp_title();?> - Tutorials by <?php bloginfo('name');?><?php } else { ?><?php bloginfo('description'); }?> ">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title><?php if(!is_front_page()) { ?><?php wp_title();?> - Tutorials by <?php bloginfo('name');?><?php } else { ?>Web Development and Design Tutorials by <?php bloginfo('name');?><?php } ?></title>
+	<title><?php wp_title( '|', true, 'right' ); ?></title>
 
 		<?php wp_head(); ?>
 

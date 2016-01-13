@@ -90,6 +90,27 @@ function disable_emojicons_tinymce( $plugins ) {
   }
 }
 
+// WordPress Titles
+function wordpress_title( $title, $sep ) {
+	global $paged, $page;
+	if ( is_feed() ) {
+		return $title;
+	} 
+	// Add the site name.
+	$title .= get_bloginfo( 'name' );
+	// Add the site description for the home/front page.
+	$site_description = get_bloginfo( 'description', 'display' );
+	if ( $site_description && ( is_home() || is_front_page() ) ) {
+		$title = "$title $sep $site_description";
+	}
+	// Add a page number if necessary.
+	if ( $paged >= 2 || $page >= 2 ) {
+		$title = sprintf( __( 'Page %s', 'title' ), max( $paged, $page ) ) . " $sep $title";
+	} 
+	return $title;
+} 
+add_filter( 'wp_title', 'wordpress_title', 10, 2 );
+
 
 // Disable XML RPC
 add_filter('xmlrpc_enabled', '__return_false');
