@@ -156,8 +156,9 @@ blockquote {
     text-align: right;
   }
   &.info {
-    background: lighten($link-color, 50%);
+    background: lighten($link-color, 35%);
     border: 1px solid lighten($link-color, 20%);
+		border-radius: 4px;
     color: #222;
     padding: 15px;
     p {
