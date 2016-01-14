@@ -480,13 +480,16 @@ blockquote {
     font-size: .9em;
     text-align: right; }
   blockquote.info {
-    background: #bfdaf5;
+    background: #d5e7f8;
     border: 1px solid #7db4ea;
     border-radius: 4px;
     color: #222;
     padding: 15px; }
     blockquote.info p {
-      font-weight: 400; }
+      font-weight: 400;
+      margin-bottom: 1em; }
+      blockquote.info p:last-of-type {
+        margin-bottom: 0; }
 
 .alert {
   transition: all .3s ease;
