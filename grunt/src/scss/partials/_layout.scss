@@ -266,7 +266,7 @@ footer {
   padding: 20px;
   text-align: center;
   font-size: .8em;
-  h2 a {
+  h1 a {
     color: lighten($font-color, 15%);
     &:visited,
     &:active,
@@ -274,7 +274,7 @@ footer {
       color: lighten($font-color, 15%);
     }
   }
-  h2 a:hover {
+  h1 a:hover {
     color: #576778;
   }
 }

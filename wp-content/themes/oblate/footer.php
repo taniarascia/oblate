@@ -1,9 +1,9 @@
 <footer>
-	<div class="container">
-		<h2><a href="<?php bloginfo('wpurl');?>/me">♥ Tania.</a></h2>
-	</div>
+  <div class="container">
+    <h1><a href="<?php bloginfo('wpurl');?>/me">♥ Tania Rascia</a></h1>
+  </div>
 </footer>
 <?php wp_footer(); ?>
-	</body>
+  </body>
 
-	</html>
+  </html>

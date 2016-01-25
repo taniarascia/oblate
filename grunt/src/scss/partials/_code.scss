@@ -28,7 +28,7 @@ pre code {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
-	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-font-smoothing: antialiased;
 }
 
 pre code {
@@ -44,7 +44,7 @@ pre code {
 	border: 0px solid $code-background;
 	background-color: $code-background;
 	font-size: .8em;
-	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-font-smoothing: antialiased;
 }
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {}
@@ -57,7 +57,7 @@ pre[class*="language-"] {}
 	padding-bottom: 1px;
 	background: darken($code-background, 2%);
 	border: 0px solid #ececec;
-	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-font-smoothing: antialiased;
 }
 :not(pre) > code {
 	font-size: .9em;
@@ -66,12 +66,12 @@ pre[class*="language-"] {}
 	padding-bottom: 1px;
 	background: darken($code-background, 2%);
 	font-family: Menlo, 'Roboto Mono', monospace;
-	color: $code-font-color;
+	color: #222;
 	font-weight: 400;
-	-webkit-font-smoothing: subpixel-antialiased;
+	// -webkit-font-smoothing: subpixel-antialiased;
 }
 
-$string: #2f9c0a;
+$string: #009E56;
 
 code[class*=language-css], code[class*=language-scss], code[class*=language-less], code[class*=language-sass] {
   color: #795da3;
@@ -132,7 +132,7 @@ code[class*=language-css], code[class*=language-scss], code[class*=language-less
 	color: #795da3;
 }
 .token.function {
-	color: #1990b8;
+	color: #0070C2;
 }
 .token.class-name {
 	color: #795da3;
@@ -143,10 +143,10 @@ code[class*=language-css], code[class*=language-scss], code[class*=language-less
 }
 .token.tag,
 .language-autohotkey .token.keyword {
-	color: #1990b8;
+	color: #0070C2;
 }
 .token.selector {
-	color: #1990b8; 
+	color: #0070C2; 
 }
 .token.italic {
 	font-style: italic;
