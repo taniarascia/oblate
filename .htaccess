@@ -22,6 +22,12 @@ RewriteRule . /index.php [L]
 
 # END WordPress
 
+<IfModule mod_deflate.c>
+    <filesMatch "\.(js|css|html|php)$">
+        SetOutputFilter DEFLATE
+    </filesMatch>
+</IfModule>
+
 # BEGIN Expire headers
 <IfModule mod_expires.c>
 ExpiresActive On
@@ -57,26 +63,4 @@ Header set Cache-Control "private, must-revalidate"
 </IfModule>
 # END Cache-Control Headers
 
-<IfModule mod_deflate.c>
-# Insert filters
-AddOutputFilterByType DEFLATE text/plain
-AddOutputFilterByType DEFLATE text/html
-AddOutputFilterByType DEFLATE text/xml
-AddOutputFilterByType DEFLATE text/css
-AddOutputFilterByType DEFLATE application/xml
-AddOutputFilterByType DEFLATE application/xhtml+xml
-AddOutputFilterByType DEFLATE application/rss+xml
-AddOutputFilterByType DEFLATE application/javascript
-AddOutputFilterByType DEFLATE application/x-javascript
-AddOutputFilterByType DEFLATE application/x-httpd-php
-AddOutputFilterByType DEFLATE application/x-httpd-fastphp
-AddOutputFilterByType DEFLATE image/svg+xml
 
-# Drop problematic browsers
-BrowserMatch ^Mozilla/4 gzip-only-text/html
-BrowserMatch ^Mozilla/4\.0[678] no-gzip
-BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
-
-# Make sure proxies don't deliver the wrong content
-Header append Vary User-Agent env=!dont-vary
-</IfModule>
