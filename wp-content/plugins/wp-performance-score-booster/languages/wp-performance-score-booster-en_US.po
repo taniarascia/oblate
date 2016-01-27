@@ -1,0 +1,99 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Performance Score Booster v1.2.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-12-25 13:04:10+0000\n"
+"Last-Translator: username <me@dipakgajjar.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: wp-performance-score-booster.php:176
+#: wp-performance-score-booster.php:257
+#@ wp-performance-score-booster
+msgid "WP Performance Score Booster Settings"
+msgstr ""
+
+#: wp-performance-score-booster.php:180
+#@ default
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: wp-performance-score-booster.php:211
+#@ wp-performance-score-booster
+msgid "Settings Saved."
+msgstr ""
+
+#: wp-performance-score-booster.php:218
+#@ wp-performance-score-booster
+msgid "Remove query strings from static content"
+msgstr ""
+
+#: wp-performance-score-booster.php:222
+#: wp-performance-score-booster.php:225
+#@ wp-performance-score-booster
+msgid "Enable GZIP compression (compress text, html, javascript, css, xml and so on)"
+msgstr ""
+
+#: wp-performance-score-booster.php:225
+#@ wp-performance-score-booster
+msgid "Your web server does not support GZIP compression. Contact your hosting provider to enable it."
+msgstr ""
+
+#: wp-performance-score-booster.php:229
+#@ wp-performance-score-booster
+msgid "Set expire caching (Leverage Browser Caching)"
+msgstr ""
+
+#: wp-performance-score-booster.php:231
+#@ wp-performance-score-booster
+msgid "Save Changes"
+msgstr ""
+
+#: wp-performance-score-booster.php:237
+#@ wp-performance-score-booster
+msgid "Support this plugin and donate"
+msgstr ""
+
+#: wp-performance-score-booster.php:238
+#@ wp-performance-score-booster
+msgid "Rate this plugin on WordPress.org"
+msgstr ""
+
+#: wp-performance-score-booster.php:239
+#@ wp-performance-score-booster
+msgid "Get support on on WordPress.org"
+msgstr ""
+
+#: wp-performance-score-booster.php:240
+#@ wp-performance-score-booster
+msgid "Contribute development on GitHub"
+msgstr ""
+
+#: wp-performance-score-booster.php:241
+#@ wp-performance-score-booster
+msgid "Get my other plugins"
+msgstr ""
+
+#: wp-performance-score-booster.php:244
+#@ wp-performance-score-booster
+msgid "Version:"
+msgstr ""
+
+#: wp-performance-score-booster.php:257
+#@ wp-performance-score-booster
+msgid "WP Performance Score Booster"
+msgstr ""
+

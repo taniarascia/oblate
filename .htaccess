@@ -64,3 +64,51 @@ Header set Cache-Control "private, must-revalidate"
 # END Cache-Control Headers
 
 
+
+# BEGIN WP Performance Score Booster Settings
+
+## BEGIN Enable GZIP Compression ##
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/x-httpd-php
+AddOutputFilterByType DEFLATE application/x-httpd-fastphp
+AddOutputFilterByType DEFLATE image/svg+xml
+SetOutputFilter DEFLATE
+</IfModule>
+## END Enable GZIP Compression ##
+
+
+## BEGIN Vary: Accept-Encoding Header ##
+<IfModule mod_headers.c>
+<FilesMatch "\.(js|css|xml|gz)$">
+Header append Vary: Accept-Encoding
+</FilesMatch>
+</IfModule>
+## END Vary: Accept-Encoding Header ##
+
+
+## BEGIN Expires Caching (Leverage Browser Caching) ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 2 week"
+ExpiresByType image/jpeg "access 2 week"
+ExpiresByType image/gif "access 2 week"
+ExpiresByType image/png "access 2 week"
+ExpiresByType text/css "access 2 week"
+ExpiresByType application/pdf "access 2 week"
+ExpiresByType text/x-javascript "access 2 week"
+ExpiresByType application/x-shockwave-flash "access 2 week"
+ExpiresByType image/x-icon "access 2 week"
+ExpiresDefault "access 2 week"
+</IfModule>
+## END Expires Caching (Leverage Browser Caching) ##
+
+# END WP Performance Score Booster Settings

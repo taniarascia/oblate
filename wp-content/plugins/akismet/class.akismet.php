@@ -29,6 +29,14 @@ class Akismet {
 		add_action( 'akismet_scheduled_delete', array( 'Akismet', 'delete_old_comments_meta' ) );
 		add_action( 'akismet_schedule_cron_recheck', array( 'Akismet', 'cron_recheck' ) );
 
+		/**
+		 * To disable the Akismet comment nonce, add a filter for the 'akismet_comment_nonce' tag
+		 * and return any string value that is not 'true' or '' (empty string).
+		 *
+		 * Don't return boolean false, because that implies that the 'akismet_comment_nonce' option
+		 * has not been set and that Akismet should just choose the default behavior for that
+		 * situation.
+		 */
 		$akismet_comment_nonce_option = apply_filters( 'akismet_comment_nonce', get_option( 'akismet_comment_nonce' ) );
 
 		if ( $akismet_comment_nonce_option == 'true' || $akismet_comment_nonce_option == '' )
@@ -45,12 +53,6 @@ class Akismet {
 
 		// Run this early in the pingback call, before doing a remote fetch of the source uri
 		add_action( 'xmlrpc_call', array( 'Akismet', 'pre_check_pingback' ) );
-
-		if ( '3.0.5' == $GLOBALS['wp_version'] ) {
-			remove_filter( 'comment_text', 'wp_kses_data' );
-			if ( is_admin() )
-				add_filter( 'comment_text', 'wp_kses_post' );
-		}
 	}
 
 	public static function get_api_key() {
@@ -95,6 +97,7 @@ class Akismet {
 		if ( !empty( $comment['user_ID'] ) )
 			$comment['user_role'] = Akismet::get_user_roles( $comment['user_ID'] );
 
+		/** See filter documentation in init_hooks(). */
 		$akismet_nonce_option = apply_filters( 'akismet_comment_nonce', get_option( 'akismet_comment_nonce' ) );
 		$comment['akismet_comment_nonce'] = 'inactive';
 		if ( $akismet_nonce_option == 'true' || $akismet_nonce_option == '' ) {
