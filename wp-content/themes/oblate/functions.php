@@ -47,7 +47,7 @@ return '<p class="right-text"><a class="button" href="' . get_permalink() . '">R
 function oblate_scripts() {
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.min.css' );
 	wp_enqueue_script( 'prism', get_template_directory_uri() . '/js/prism.js', array(), '1.0.0', true );
-	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.min.js', array(), '1.0.0', true );
+	//wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.min.js', array(), '1.0.0', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'oblate_scripts' );
@@ -91,25 +91,7 @@ function disable_emojicons_tinymce( $plugins ) {
 }
 
 // WordPress Titles
-function wordpress_title( $title, $sep ) {
-	global $paged, $page;
-	if ( is_feed() ) {
-		return $title;
-	} 
-	// Add the site name.
-	$title .= get_bloginfo( 'name' );
-	// Add the site description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) ) {
-		$title = "$title $sep $site_description";
-	}
-	// Add a page number if necessary.
-	if ( $paged >= 2 || $page >= 2 ) {
-		$title = sprintf( __( 'Page %s', 'title' ), max( $paged, $page ) ) . " $sep $title";
-	} 
-	return $title;
-} 
-add_filter( 'wp_title', 'wordpress_title', 10, 2 );
+add_theme_support( 'title-tag' );
 
 
 // Disable XML RPC
