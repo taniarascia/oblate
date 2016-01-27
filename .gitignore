@@ -4,3 +4,5 @@ wp-config.php
 grunt/node_modules
 grunt/.sass-cache
 wp-content/uploads
+wp-content/plugins
+.htaccess
