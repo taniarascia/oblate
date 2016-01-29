@@ -439,7 +439,8 @@ article {
   color: #6e7a83;
   margin: 0; }
   .article-excerpt:hover {
-    color: #3f4348; }
+    color: #3f4348;
+    background: rgba(0, 5, 15, 0.05); }
   .article-excerpt.first {
     color: #3f4348; }
 
