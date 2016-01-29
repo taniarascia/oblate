@@ -6,7 +6,7 @@
  $c++;
 if( !$paged && $c == 1 && is_front_page()) :?>
 
-<article id="post-<?php the_ID(); ?>" class="article-excerpt first">
+<article id="post-<?php the_ID(); ?>" class="first">
 	<div class="article-header">
 		<?php  $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' );
 	 $url = $thumb['0']; if (get_post_thumbnail_id()) {?><img src="<?php echo $url;?>" class="article-image" alt="<?php the_title();?>"><?php } ?>

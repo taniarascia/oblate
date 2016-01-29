@@ -66,7 +66,7 @@ pre[class*="language-"] {}
 	padding-bottom: 1px;
 	background: darken($code-background, 2%);
 	font-family: Menlo, 'Roboto Mono', monospace;
-	color: #222;
+	color: $code-font-color;
 	font-weight: 400;
 	// -webkit-font-smoothing: subpixel-antialiased;
 }

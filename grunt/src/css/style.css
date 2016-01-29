@@ -440,8 +440,8 @@ article {
   margin: 0; }
   .article-excerpt:hover {
     color: #3f4348;
-    background: rgba(0, 5, 15, 0.05); }
-  .article-excerpt.first {
+    background: rgba(0, 5, 15, 0.04); }
+  .article-excerpt .first {
     color: #3f4348; }
 
 @media screen and (min-width: 550px) {
@@ -470,7 +470,7 @@ blockquote {
   margin: 20px 0;
   color: #4f545a;
   padding: 2px 0 0 25px;
-  border-left: 12px solid #f3f3f3;
+  border-left: 12px solid #f7f7f7;
   font-family: "Open Sans", sans-serif; }
   blockquote p {
     margin: 0;
@@ -481,8 +481,8 @@ blockquote {
     font-size: .9em;
     text-align: right; }
   blockquote.info {
-    background: #d5e7f8;
-    border: 1px solid #7db4ea;
+    background: #FFF4CA;
+    border: 1px solid #FFE168;
     border-radius: 4px;
     color: #222;
     padding: 15px; }
@@ -497,7 +497,7 @@ blockquote {
   color: #2f3236;
   border: 1px solid #C6C9CC;
   border-radius: 4px;
-  background: #f3f3f3;
+  background: #f7f7f7;
   padding: 20px;
   font-family: "Open Sans", sans-serif;
   margin: 20px 0; }
@@ -671,6 +671,12 @@ img {
   margin: 0 auto;
   padding-bottom: 15px; }
 
+::-moz-selection {
+  background: rgba(0, 0, 0, 0.1); }
+
+::selection {
+  background: rgba(0, 0, 0, 0.1); }
+
 /* Buttons  */
 .buttons, a.button,
 .button,
@@ -722,7 +728,7 @@ a.button-dark {
 a.button-light {
   display: inline-block;
   padding: 3px 6px;
-  background: #f3f3f3;
+  background: #f7f7f7;
   color: #795da3;
   font-family: 'Menlo', monospace;
   font-weight: 300;
@@ -893,14 +899,14 @@ td {
 span.tags a {
   font-size: .9em;
   padding: 1px .2em;
-  background: #eeeeee;
+  background: #f2f2f2;
   color: #4B5964;
   font-weight: 300;
   font-family: Menlo, monospace;
   border-bottom: 0;
   -webkit-font-smoothing: subpixel-antialiased; }
   span.tags a:hover {
-    background: #e6e6e6;
+    background: #eaeaea;
     color: #43474c;
     border-bottom: 0; }
 
@@ -957,8 +963,8 @@ pre code {
   padding: 1em;
   margin: .5em 0;
   overflow: auto;
-  border: 0px solid #f3f3f3;
-  background-color: #f3f3f3;
+  border: 0px solid #f7f7f7;
+  background-color: #f7f7f7;
   font-size: .8em;
   -webkit-font-smoothing: antialiased; }
 
@@ -967,7 +973,7 @@ pre code {
   padding: .2em;
   padding-top: 1px;
   padding-bottom: 1px;
-  background: #eeeeee;
+  background: #f2f2f2;
   border: 0px solid #ececec;
   -webkit-font-smoothing: antialiased; }
 
@@ -976,9 +982,9 @@ pre code {
   padding: .2em;
   padding-top: 1px;
   padding-bottom: 1px;
-  background: #eeeeee;
+  background: #f2f2f2;
   font-family: Menlo, 'Roboto Mono', monospace;
-  color: #222;
+  color: #4f545a;
   font-weight: 400; }
 
 code[class*=language-css], code[class*=language-scss], code[class*=language-less], code[class*=language-sass] {
