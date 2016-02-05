@@ -47,7 +47,7 @@ return '<p class="right-text"><a class="button" href="' . get_permalink() . '">R
 function oblate_scripts() {
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.min.css' );
 	wp_enqueue_script( 'prism', get_template_directory_uri() . '/js/prism.js', array(), '1.0.0', true );
-	//wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.min.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.min.js', array(), '1.0.0', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'oblate_scripts' );
@@ -140,4 +140,7 @@ function filterCode($data) {
 
 add_filter( 'content_save_pre', 'filterCode', 9 );
 add_filter( 'excerpt_save_pre', 'filterCode', 9 );
+
+// Disable W3TC footer comment for all users
+add_filter( 'w3tc_can_print_comment', function( $w3tc_setting ) { return false; }, 10, 1 );
 ?>
