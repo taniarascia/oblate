@@ -721,7 +721,8 @@ button:focus,
   border-bottom: 0;
   color: #536172;
   background: transparent;
-  border: 1px solid #576778; }
+  border: 1px solid #576778;
+  text-decoration: none; }
 
 /* Forms */
 .forms, input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea,
@@ -863,7 +864,8 @@ td {
     color: #2f3236;
     font-weight: 900; }
   .comment-body a:hover {
-    color: #363b40; }
+    color: #363b40;
+    text-decoration: none; }
 
 .comment-respond {
   padding: 10px 0 40px; }
