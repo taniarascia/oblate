@@ -359,7 +359,7 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 body {
-  font: normal normal 400 1.1em/1.5 "Noto Serif", sans-serif;
+  font: normal normal 400 1.1em/1.5 "Source Sans Pro", sans-serif;
   color: #3f4348; }
 
 p {
@@ -370,7 +370,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   color: #2f3236;
   font-weight: 800;
   line-height: 1.2;
@@ -383,7 +383,7 @@ h1 {
 h2 {
   font-size: 1.4em;
   margin: 10px 0 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   letter-spacing: -.05em; }
 
 a:hover h2 {
@@ -396,7 +396,7 @@ h3 {
 h4 {
   font-size: 1.2em;
   font-weight: 600;
-  color: #6e7a83; }
+  color: #576778; }
 
 h5 {
   color: #3f4348;
@@ -422,7 +422,7 @@ header {
 
 main,
 .container {
-  max-width: 800px;
+  max-width: 850px;
   margin: 20px auto; }
 
 .large-container {
@@ -436,7 +436,7 @@ article {
   article.single-article h2 {
     font-size: 2.4em; } }
 .article-excerpt {
-  color: #6e7a83;
+  color: #576778;
   margin: 0; }
   .article-excerpt:hover {
     color: #3f4348;
@@ -471,7 +471,7 @@ blockquote {
   color: #4f545a;
   padding: 2px 0 0 25px;
   border-left: 12px solid #f7f7f7;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Source Sans Pro", sans-serif; }
   blockquote p {
     margin: 0;
     font-weight: 700; }
@@ -499,7 +499,7 @@ blockquote {
   border-radius: 4px;
   background: #f7f7f7;
   padding: 20px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   margin: 20px 0; }
   .alert a,
   .alert a:visited {
@@ -514,7 +514,7 @@ cite,
 mark,
 strong,
 label {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Source Sans Pro", sans-serif; }
 
 hr {
   border: 0;
@@ -522,8 +522,8 @@ hr {
   margin: 50px 0; }
 
 time {
-  color: #6e7a83;
-  font-family: "Open Sans", sans-serif;
+  color: #576778;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: .8em;
   margin-bottom: 30px;
   font-weight: 600;
@@ -551,7 +551,7 @@ mark {
 dt {
   font-weight: 700;
   margin-top: 20px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.1em; }
 
 .bar {
@@ -656,7 +656,7 @@ img {
   float: left;
   padding-right: 5px; }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
   .left {
     float: left; }
 
@@ -695,7 +695,7 @@ button,
   border: 1px solid #C6C9CC;
   cursor: pointer;
   font-weight: 600;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   margin: 5px 0;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
   transition: all .3s ease; }
@@ -706,36 +706,11 @@ button,
 button:hover,
 button:focus,
 .posts-links a:hover,
-.posts-links a:focus, a.button-dark:hover, a.button-dark:focus, a.button-light:hover, a.button-light:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="button"]:hover, input[type="button"]:focus, .comment-reply-link:hover {
+.posts-links a:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="button"]:hover, input[type="button"]:focus, .comment-reply-link:hover {
   border-bottom: 0;
   color: #536172;
   background: transparent;
   border: 1px solid #576778; }
-
-a.button-dark {
-  display: inline-block;
-  padding: 3px 6px;
-  background: #343434;
-  color: #fede88;
-  font-family: 'Menlo', monospace;
-  font-weight: 300;
-  font-size: .8em;
-  -webkit-font-smoothing: subpixel-antialiased; }
-  a.button-dark:hover, a.button-dark:focus {
-    background: #232323;
-    color: #fede88; }
-
-a.button-light {
-  display: inline-block;
-  padding: 3px 6px;
-  background: #f7f7f7;
-  color: #795da3;
-  font-family: 'Menlo', monospace;
-  font-weight: 300;
-  font-size: .8em;
-  -webkit-font-smoothing: subpixel-antialiased; }
-  a.button-light:hover, a.button-light:focus {
-    color: #795da3; }
 
 /* Forms */
 .forms, input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea,
@@ -745,7 +720,7 @@ select {
   border: 1px solid #C6C9CC;
   margin: auto auto 6px;
   max-width: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   transition: ease .2s all; }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
@@ -825,13 +800,13 @@ td {
   border-bottom: 0;
   display: inline-block;
   font-weight: 700;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Source Sans Pro", sans-serif; }
 
 .screen-reader-text {
   display: none; }
 
 .pagination {
-  max-width: 800px;
+  max-width: 850px;
   margin: 40px auto;
   text-align: center; }
 
@@ -851,7 +826,7 @@ td {
   font-weight: 900;
   font-style: normal;
   font-size: 1.5em;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Source Sans Pro", sans-serif !important;
   letter-spacing: -0.05em; }
 
 .says {
@@ -860,12 +835,12 @@ td {
 .comment-reply-title,
 .comments-title {
   font-size: 1.3em;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Source Sans Pro", sans-serif; }
 
 .comment-body {
   padding: 15px;
   font-size: .9em;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   margin-bottom: 15px;
   border-bottom: 1px solid #eee; }
   .comment-body .reply {
@@ -917,7 +892,7 @@ span.tags a {
   display: none; }
 
 .logged-in-as {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: .9em;
   padding-bottom: 10px; }
 
@@ -1027,7 +1002,7 @@ code[class*=language-css], code[class*=language-scss], code[class*=language-less
 .token.constant,
 .token.regex,
 .token.inserted {
-  color: #a71d5d; }
+  color: #A43767; }
 
 .token.delimiter {
   background: #dedede;
@@ -1039,7 +1014,7 @@ code[class*=language-css], code[class*=language-scss], code[class*=language-less
 
 .token.keyword,
 .language-autohotkey .token.selector {
-  color: #a71d5d; }
+  color: #A43767; }
 
 .token.attr-name {
   color: #795da3; }

@@ -2,7 +2,7 @@
 
 // Button Extend
 .buttons {
-	color: #536172;
+	color: $button-border;
 	display: inline-block;
 	padding: 8px 25px;
 	text-align: center;
@@ -22,9 +22,9 @@
 }
 .buttons-hover {
 	border-bottom: 0;
-	color: #536172;
+	color: $button-border;
 	background: transparent;
-	border: 1px solid #576778;
+	border: 1px solid $border-hover;
 }
 // Button Output
 a.button,
@@ -35,39 +35,6 @@ button,
 	&:hover,
 	&:focus {
 		@extend .buttons-hover;
-	}
-}
-// Button Output
-a.button-dark {
-	display: inline-block;
-	padding: 3px 6px;
-	background: #343434;
-	color: #fede88;
-	font-family: 'Menlo', monospace;
-	font-weight: 300;
-	font-size: .8em;
-	-webkit-font-smoothing: subpixel-antialiased;
-	&:hover,
-	&:focus {
-		@extend .buttons-hover;
-		background: #232323;
-		color: #fede88;
-	}
-}
-// Button Output
-a.button-light {
-	display: inline-block;
-	padding: 3px 6px;
-	background: $code-background;
-	color: #795da3;
-	font-family: 'Menlo', monospace;
-	font-weight: 300;
-	font-size: .8em;
-	-webkit-font-smoothing: subpixel-antialiased;
-	&:hover,
-	&:focus {
-		@extend .buttons-hover;
-		color: #795da3;
 	}
 }
 input {

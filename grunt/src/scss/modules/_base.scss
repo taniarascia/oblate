@@ -2,32 +2,28 @@
 
 $border-radius: 0px;
 $slab: #dbdde0;
-$slab2: #dbdcdd;
 
 /* Mobile Breakpoints */
 
 $mobile-breakpoint: 550px;
-$content-small-width: 800px;
+$content-small-width: 850px;
 $content-width: 1100px;
 
 /* Content Font Styling */
 
-$font-family: 'Noto Serif',
+$font-family: 'Source Sans Pro',
 sans-serif;
 $font-size: 1.1em;
 $font-color: #3f4348; 
-$sub-font-color: #6e7a83;
+$sub-font-color: #576778;
 $accent: #c7254e;
 
 /* Heading Font Styling */
 
-$article-title: 'Open Sans',
-sans-serif;
-$heading-font-family: 'Open Sans',
-sans-serif;
+$article-title: 'Source Sans Pro', sans-serif;
+$heading-font-family: 'Source Sans Pro', sans-serif;
 $heading-color: #2f3236;
-$button: 'Open Sans', 
-sans-serif;
+$button: 'Source Sans Pro',  sans-serif;
 
 /* Link Styling */
 
@@ -44,4 +40,5 @@ $code-font-color: #4f545a;
 $header: 50px;
 $alert: #FFEC88;
 $border: #C6C9CC;
+$button-border: #536172;
 $border-hover: #576778;
