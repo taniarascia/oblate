@@ -119,6 +119,7 @@ a {
   }
   &:hover {
     color: $link-hover-color;
+    text-decoration: underline;
   }
 }
 h2 {
@@ -130,16 +131,7 @@ h2 {
     color: #000;
   }
 }
-p,
-span,
-li {
-  & a {
-    //border-bottom: 1px solid #dedede;
-    &:hover {
-      border-bottom: 1px solid #a9a9a9;
-    }
-  }
-}
+
 blockquote {
   margin: 20px 0;
   color: #4f545a;
@@ -160,7 +152,21 @@ blockquote {
     background: #FFF4CA;
     border: 1px solid #FFE168;
     border-radius: 4px;
-    color: #222;
+    color: #755D00;
+    padding: 15px;
+    p {
+      font-weight: 400;
+      margin-bottom: 1em;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &.note {
+    background: $code-background;
+    border: 1px solid $border;
+    border-radius: 4px;
+    color: $heading-color;
     padding: 15px;
     p {
       font-weight: 400;

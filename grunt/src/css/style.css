@@ -449,22 +449,18 @@ article {
     padding: 30px 15px;
     background: #ffffff; } }
 a {
-  color: #2581DC;
+  color: #0072c0;
   text-decoration: none; }
   a:visited, a:active, a:focus {
-    color: #2581DC; }
+    color: #0072c0; }
   a:hover {
-    color: #064E93; }
+    color: #0e9dff;
+    text-decoration: underline; }
 
 h2 a, h2 a:visited {
   color: #2f3236; }
 h2 a:hover {
   color: #000; }
-
-p a:hover,
-span a:hover,
-li a:hover {
-  border-bottom: 1px solid #a9a9a9; }
 
 blockquote {
   margin: 20px 0;
@@ -484,12 +480,23 @@ blockquote {
     background: #FFF4CA;
     border: 1px solid #FFE168;
     border-radius: 4px;
-    color: #222;
+    color: #755D00;
     padding: 15px; }
     blockquote.info p {
       font-weight: 400;
       margin-bottom: 1em; }
       blockquote.info p:last-of-type {
+        margin-bottom: 0; }
+  blockquote.note {
+    background: #f7f7f7;
+    border: 1px solid #C6C9CC;
+    border-radius: 4px;
+    color: #2f3236;
+    padding: 15px; }
+    blockquote.note p {
+      font-weight: 400;
+      margin-bottom: 1em; }
+      blockquote.note p:last-of-type {
         margin-bottom: 0; }
 
 .alert {
@@ -532,10 +539,10 @@ time {
 
 mark {
   padding: 8px 15px;
-  background: #2581DC;
+  background: #0072c0;
   margin: 10px 0 0;
   color: #fff;
-  border: 1px solid #154e86;
+  border: 1px solid #00355a;
   font-weight: 700;
   display: inline-block; }
 
@@ -779,7 +786,7 @@ td {
   padding: 0; }
   .post-categories li a {
     padding: 8px 15px;
-    background: #2581DC;
+    background: #0072c0;
     margin: 10px 0 0;
     color: #fff;
     border-bottom: 0;
@@ -794,7 +801,7 @@ td {
 
 .category-block {
   padding: 8px 15px;
-  background: #2581DC;
+  background: #0072c0;
   margin: 10px 0 0;
   color: #fff;
   border-bottom: 0;
