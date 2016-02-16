@@ -119,7 +119,6 @@ a {
   }
   &:hover {
     color: $link-hover-color;
-    text-decoration: underline;
   }
 }
 h2 {
@@ -131,7 +130,15 @@ h2 {
     color: #000;
   }
 }
-
+p,
+span,
+li { 
+  & a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
 blockquote {
   margin: 20px 0;
   color: #4f545a;

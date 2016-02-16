@@ -454,13 +454,17 @@ a {
   a:visited, a:active, a:focus {
     color: #0072c0; }
   a:hover {
-    color: #0e9dff;
-    text-decoration: underline; }
+    color: #0e9dff; }
 
 h2 a, h2 a:visited {
   color: #2f3236; }
 h2 a:hover {
   color: #000; }
+
+p a:hover,
+span a:hover,
+li a:hover {
+  text-decoration: underline; }
 
 blockquote {
   margin: 20px 0;
