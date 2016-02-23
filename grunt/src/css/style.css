@@ -359,7 +359,7 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 body {
-  font: normal normal 400 1.25em/1.4 "Source Sans Pro", sans-serif;
+  font: normal normal 400 1.2em/1.4 "Source Sans Pro", sans-serif;
   color: #3f4348; }
 
 p {
@@ -421,7 +421,7 @@ header {
 
 main,
 .container {
-  max-width: 850px;
+  max-width: 800px;
   margin: 20px auto; }
 
 .large-container {
@@ -666,7 +666,7 @@ img {
   float: left;
   padding-right: 5px; }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 800px) {
   .left {
     float: left; }
 
@@ -817,7 +817,7 @@ td {
   display: none; }
 
 .pagination {
-  max-width: 850px;
+  max-width: 800px;
   margin: 40px auto;
   text-align: center; }
 
