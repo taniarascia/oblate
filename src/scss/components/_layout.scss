@@ -123,18 +123,21 @@ header {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding-left: 1em;
-  padding-right: 1em;
 }
 
 .large-container {
   max-width: $content-width;
 }
 
+article {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 @media screen and (min-width: $mobile-breakpoint) {
-  .container {
-  padding-left: 2em;
-  padding-right: 2em;
+  article {
+    padding-left: 2em;
+    padding-right: 2em;
   }
   article.single-article {
     h2 {
@@ -144,6 +147,8 @@ header {
 }
 
 .article-excerpt {
+  padding-top: 1em;
+  padding-bottom: 1em;
   color: $sub-font-color;
   &:hover {
     color: $font-color;
@@ -156,8 +161,8 @@ header {
 
 @media screen and (min-width: $mobile-breakpoint) {
   .article-excerpt {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
 }
 
@@ -345,7 +350,6 @@ dt {
 }
 
 .article-header-single {
-  margin-top: 1em;
   margin-bottom: 1em;
 }
 
@@ -354,7 +358,6 @@ dt {
     margin-bottom: 30px;
   }
   .article-header-single {
-    margin-top: 2em;
     margin-bottom: 3em;
   }
 }
