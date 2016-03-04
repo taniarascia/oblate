@@ -23,7 +23,6 @@
     }
   }
 }
-
 .category-block {
   padding: 8px 15px;
   background: $link-color;
@@ -34,25 +33,21 @@
   font-weight: 700;
   font-family: $heading-font-family;
 }
-
 // Remove the pagination title
 .screen-reader-text {
   display: none;
 }
-
 // Bottom of the page pagination
 .pagination {
   max-width: $content-small-width;
   margin: 40px auto;
   text-align: center;
 }
-
 // Date and Time meta data below commentator's name
 .comment-meta.commentmetadata,
 .comment-notes {
   font-size: .7em;
 }
-
 // Comment list
 .comment-list {
   list-style-type: none;
@@ -62,7 +57,6 @@
   padding-bottom: 20px;
   margin-bottom: 40px;
 }
-
 // Author name
 .comment-author {
   & cite.fn {
@@ -73,26 +67,23 @@
     letter-spacing: -0.05em;
   }
 }
-
 // says:
 .says {
   display: none;
 }
-
 // Comments and Replies
 .comment-reply-title,
 .comments-title {
   font-size: 1.3em;
   font-family: $article-title;
 }
-
 // Comment body
 .comment-body {
   //background: $code-background;
   padding: 15px;
   font-size: .9em;
   font-family: $article-title;
-  margin-bottom: 15px;
+	margin-bottom: 15px; 
   border-bottom: 1px solid #eee;
   .reply {
     text-align: right;
@@ -109,18 +100,15 @@
     text-decoration: none;
   }
 }
-
 .comment-respond {
   padding: 10px 0 40px;
 }
-
 // Form
 .comment-form {
   p {
     margin: 0;
   }
 }
-
 .children {
   margin-left: 0;
   padding-left: 15px;
@@ -128,12 +116,11 @@
   margin-bottom: 15px;
   list-style: none;
 }
-
 // Overall comments area
 .comments-area {
-  margin-top: 3em;
+  margin-top: 1em;
+  border-top: 1px solid $slab;
 }
-
 // Tags
 span.tags a {
   font-size: .9em;
@@ -151,7 +138,6 @@ span.tags a {
     text-decoration: none;
   }
 }
-
 // Reply
 .comment-reply-link {
   @extend .buttons;
@@ -160,17 +146,14 @@ span.tags a {
     @extend .buttons-hover;
   }
 }
-
 .avatar {
   display: none;
 }
-
 .logged-in-as {
-  font-family: $heading-font-family;
-  font-size: .9em;
-  padding-bottom: 10px;
+	font-family: $heading-font-family;
+	font-size: .9em;
+	padding-bottom: 10px;
 }
-
 .comment-notes {
-  padding-bottom: 10px;
+	padding-bottom: 10px;
 }
