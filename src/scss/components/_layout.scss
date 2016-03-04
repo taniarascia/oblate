@@ -90,7 +90,7 @@ header {
 	box-shadow: none;
 }
 .container {
-	width: 100%;
+	max-width: 1400px;
 	margin: 0 auto;
 	padding: 1em;
 }
@@ -124,9 +124,9 @@ article {
 	}
 }
 @media screen and (min-width: $mobile-breakpoint) {
-	.article-excerpt {
-		padding-left: 1em;
-		padding-right: 1em;
+	.article-excerpt, .first {
+		padding-left: .5em;
+		padding-right: .5em;
 	}
 }
 a {
