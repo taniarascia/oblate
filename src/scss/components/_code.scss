@@ -36,13 +36,6 @@ pre code {
   display: block;
 }
 
-@media screen and (min-width: 960px) {
-  pre code {
-    padding-left: calc(50% - 400px);
-  }
-}
-
-
 /* Code blocks */
 
 pre code {
@@ -53,6 +46,13 @@ pre code {
   background-color: $code-background;
   font-size: .8em;
 }
+
+@media screen and (min-width: 960px) {
+  pre code {
+    padding-left: calc(50% - 400px);
+  }
+}
+
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {}
