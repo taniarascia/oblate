@@ -134,6 +134,7 @@ span.tags a {
     background: darken($code-background, 5%);
     color: darken( $code-font-color, 5%);
     border-bottom: 0;
+    text-decoration: none;
   }
 }
 // Reply
