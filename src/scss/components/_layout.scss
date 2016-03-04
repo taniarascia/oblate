@@ -16,7 +16,7 @@ body {
 @media screen and (min-width: $mobile-breakpoint) {
 	body {
 		// font: italic small-caps normal 13px/150% Arial, Helvetica, sans-serif;
-		font: normal normal 400 #{$font-size-desktop}/#{1.4} $font-family;
+		font: normal normal 400 #{$font-size-desktop}/#{1.5} $font-family;
 		color: $font-color;
 	}
 }
@@ -90,7 +90,7 @@ header {
 	box-shadow: none;
 }
 .container {
-	max-width: $content-width;
+	width: 100%;
 	margin: 0 auto;
 	padding: 1em;
 }
@@ -103,7 +103,7 @@ article {
 }
 @media screen and (min-width: $mobile-breakpoint) {
 	.container {
-		padding: 1em 2.5em;
+		padding: 1em 2em;
 	}
 	article {
 	}
@@ -304,11 +304,11 @@ footer {
 	text-align: center;
 	font-size: .8em;
 	h1 a {
-		color: lighten($font-color, 15%);
+		color: lighten(#576778, 5%);
 		&:visited,
 		&:active,
 		&:focus {
-			color: lighten($font-color, 15%);
+			color: lighten(#576778, 5%);
 		}
 	}
 	h1 a:hover {
