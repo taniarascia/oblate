@@ -47,7 +47,7 @@ h1 {
 }
 h2 {
 	font-size: 1.4em;
-	margin: 10px 0 0;
+	margin-top: 1.5em;
 	font-family: $article-title;
 	letter-spacing: -.05em;
 }
@@ -67,7 +67,8 @@ h5 {
 	color: $font-color;
 	font-weight: 600;
 	font-size: 1.1em;
-	margin: 20px 0 0;
+	margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 @media screen and (min-width: $mobile-breakpoint) {
 	h2 {
