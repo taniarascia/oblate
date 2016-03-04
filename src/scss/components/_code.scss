@@ -64,7 +64,7 @@ fdfd:not(pre) > code[class*="language-"] {
   padding: .2em;
   padding-top: 1px;
   padding-bottom: 1px;
-  background: darken($code-background, 2%);
+  background: $code-background;
   border: 0px solid #ececec;
   -webkit-font-smoothing: antialiased;
 }
@@ -74,14 +74,14 @@ fdfd:not(pre) > code[class*="language-"] {
   padding: .2em;
   padding-top: 1px;
   padding-bottom: 1px;
-  background: darken($code-background, 2%);
+  background: $code-background;
   font-family: Menlo, 'Roboto Mono', monospace;
   color: $code-font-color;
   font-weight: 400;
   // -webkit-font-smoothing: subpixel-antialiased;
 }
 
-$string: #36966A;
+$string: #7BA643;
 code[class*=language-css],
 code[class*=language-scss],
 code[class*=language-less],
@@ -114,16 +114,16 @@ code[class*=language-sass] {
 }
 
 .token.operator {
-  color: RGBA(83, 34, 132, 1);
+  color: #303030;
   /* no highlight */
 }
 
 .token.variable {
-  color: #183691;
+  color: #ac4142;
 }
 
 .token.property {
-  color: #4f545a;
+  color: #303030;
 }
 
 .token.entity,
@@ -134,22 +134,22 @@ code[class*=language-sass] {
 .token.constant,
 .token.regex,
 .token.inserted {
-  color: #A85479;
+  color: #d28445;
 }
 
-.token.delimiter {
-  background: #dedede;
-  color: #333;
+.token.delimiter { 
+  background: #E0E0E0;
+  color: #303030;
   padding: 1px 2px;
 }
 
 .token.atrule {
-  color: #183691;
+  color: #ac4142;
 }
 
 .token.keyword,
 .language-autohotkey .token.selector {
-  color: #A85479;
+  color: #d28445;
 }
 
 .token.attr-name {
@@ -157,7 +157,7 @@ code[class*=language-sass] {
 }
 
 .token.function {
-  color: #287BB6;
+  color: #488BA8;
 }
 
 .token.class-name {
@@ -166,16 +166,16 @@ code[class*=language-sass] {
 
 .token.deleted,
 .language-autohotkey .token.tag {
-  color: #f2777a;
+  color: #ac4142;
 }
 
 .token.tag,
 .language-autohotkey .token.keyword {
-  color: #287BB6;
+  color: #488BA8;
 }
 
 .token.selector {
-  color: #287BB6;
+  color: #488BA8;
 }
 
 .token.italic {
@@ -183,5 +183,5 @@ code[class*=language-sass] {
 }
 
 .language-html .token.punctuation {
-  color: #454545;
+  color: #303030;
 }
