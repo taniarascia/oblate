@@ -112,7 +112,6 @@ h5 {
 header {
   padding: 5px 5px 0;
   background: #ffffff;
-  margin-bottom: 3em;
 }
 
 .logo-image {
@@ -124,23 +123,19 @@ header {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .large-container {
   max-width: $content-width;
 }
 
-article {
-  padding: 1.5em 0;
-  border-bottom: 1px solid $slab;
-}
-
 @media screen and (min-width: $mobile-breakpoint) {
   .container {
-    padding: 1em 2em;
+  padding-left: 2em;
+  padding-right: 2em;
   }
-  article {}
   article.single-article {
     h2 {
       font-size: 2.4em;
