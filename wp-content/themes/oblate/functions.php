@@ -7,20 +7,6 @@
 // Add support for featured images 
 add_theme_support( 'post-thumbnails' );
 
-// Add support for widgets
-function oblate_widgets_init() {
-	register_sidebar( array(
-		'name'          => __( 'Widget Area', 'oblate' ),
-		'id'            => 'sidebar-1',
-		'description'   => __( 'Add widgets here to appear in your sidebar.', 'oblate' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-}
-add_action( 'widgets_init', 'oblate_widgets_init' );
-
 // Change more excerpt
 function new_excerpt_more( $more ) {
 	return '...';
@@ -45,9 +31,9 @@ return '<p class="right-text"><a class="button" href="' . get_permalink() . '">R
 
 // Add Stylesheets
 function oblate_scripts() {
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.min.css' );
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css' );
 	wp_enqueue_script( 'prism', get_template_directory_uri() . '/js/prism.js', array(), '1.0.0', true );
-	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.min.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'oblate_scripts' );
@@ -97,6 +83,46 @@ add_filter('xmlrpc_enabled', '__return_false');
 
 remove_action( 'wp_head', 'rsd_link' );
 remove_action( 'wp_head', 'wlwmanifest_link' );
+
+// OG Tags
+
+function meta_og() {
+    global $post;
+ 
+    if(is_single()) {
+        if(has_post_thumbnail($post->ID)) {
+            $img_src = wp_get_attachment_image_src(get_post_thumbnail_id( $post->ID ), 'thumbnail');
+        } else {
+            $img_src = get_stylesheet_directory_uri() . '/images/taniasmall.jpg';
+        }
+				$excerpt = strip_tags($post->post_content);
+				$excerpt_more = '';
+				if (strlen($excerpt) > 155) {
+					$excerpt = substr($excerpt,0,155);
+					$excerpt_more = ' ...';
+				}
+				$excerpt = str_replace('"', '', $excerpt);
+				$excerpt = str_replace("'", '', $excerpt);
+				$excerptwords = preg_split('/[\n\r\t ]+/', $excerpt, -1, PREG_SPLIT_NO_EMPTY);
+				array_pop($excerptwords);
+				$excerpt = implode(' ', $excerptwords) . $excerpt_more;
+        ?>
+ 		<meta name="author" content="Tania Rascia">
+    <meta name="description" content="<?php echo $excerpt; ?>"/>
+    <meta property="og:title" content="<?php echo the_title(); ?>"/>
+    <meta property="og:description" content="<?php echo $excerpt; ?>"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="<?php echo the_permalink(); ?>"/>
+    <meta property="og:site_name" content="<?php echo get_bloginfo(); ?>"/>
+    <meta property="og:image" content="<?php echo $img_src[0]; ?>"/>
+ 
+<?php
+    } else {
+        return;
+    }
+}
+add_action('wp_head', 'meta_og', 5);
+
 
 // Escape HTML
 function escapeHTML($arr) {

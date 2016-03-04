@@ -1,5 +1,5 @@
 <?php get_header();?>
-	<main>
+	<main class="container">
 <?php if (have_posts()) : ?>
 <?php $post = $posts[0]; $c=0;?>
 <?php while (have_posts()) : the_post();

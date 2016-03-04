@@ -1,0 +1,29 @@
+{
+  "name": "oblate",
+  "version": "1.2.0",
+  "description": "Tania Rascia's Web Development Guides and Tutorials",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taniarascia/oblate.git"
+  },
+  "keywords": [
+    "webdev"
+  ],
+  "author": "Tania Rascia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taniarascia/oblate/issues"
+  },
+  "homepage": "https://www.taniarascia.com"
+}

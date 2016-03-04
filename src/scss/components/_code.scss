@@ -38,19 +38,18 @@ pre code {
 /* Code blocks */
 
 pre code {
-	padding: 1em;
+	padding: 1.5em;
 	margin: .5em 0;
 	overflow: auto;
 	border: 0px solid $code-background;
 	background-color: $code-background;
 	font-size: .8em;
-	-webkit-font-smoothing: antialiased;
 }
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {}
 
 /* Inline code */
-
+fdfd
 :not(pre) > code[class*="language-"] {
 	padding: .2em;
 	padding-top: 1px;

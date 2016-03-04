@@ -1,5 +1,5 @@
 <?php get_header();?>
-	<main>
+	<main class="container">
 
 		<?php global $post; 
 $args = 'posts_per_page=99'; 

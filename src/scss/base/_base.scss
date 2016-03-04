@@ -6,14 +6,15 @@ $slab: #dbdde0;
 /* Mobile Breakpoints */
 
 $mobile-breakpoint: 550px;
-$content-small-width: 800px;
+$content-small-width: 850px;
 $content-width: 1100px;
 
 /* Content Font Styling */
 
 $font-family: 'Source Sans Pro',
 sans-serif;
-$font-size: 1.20em;
+$font-size: 1.2rem;
+$font-size-desktop: 1.25rem;
 $font-color: #3f4348; 
 $sub-font-color: #576778;
 $accent: #c7254e;
