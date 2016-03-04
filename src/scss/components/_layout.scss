@@ -21,7 +21,7 @@ body {
 	}
 }
 
-p, h1, h2, h3, h4, h5, div, ul, li, ol, blockquote, .alert, .info, .terminal, .article-excerpt {
+p, h1, h2, h3, h4, h5, div, ul, li, ol, blockquote, .alert, .info, .terminal, .article-excerpt, .first {
   margin-left: auto;
   margin-right: auto;
   max-width: $content-small-width;
@@ -113,7 +113,6 @@ article {
 }
 .article-excerpt { 
 	color: $sub-font-color;
-	margin: 0;
 	&:hover {
 		color: $font-color;
 		background: rgba(0, 5, 15, .04);
