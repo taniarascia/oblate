@@ -21,7 +21,7 @@ body {
 	}
 }
 
-p, h1, h2, h3, h4, h5, div, ul, li, ol, blockquote, .alert, .info, .terminal, .article-excerpt, .first {
+p, h1, h2, h3, h4, h5, div, ul, li, ol, blockquote, .alert, .info, .terminal, .article-excerpt, .first, .post-links {
   margin-left: auto;
   margin-right: auto;
   max-width: $content-small-width;
@@ -81,6 +81,7 @@ h5 {
 header {
 	padding: 5px 5px 0;
 	background: #ffffff;
+  margin-bottom: 3em;
 }
 .logo-image {
 	max-width: 50px;
