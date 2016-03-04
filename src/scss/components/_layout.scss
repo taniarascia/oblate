@@ -122,11 +122,9 @@ header {
 }
 
 .container {
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1em;
-  padding-right: 1em;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 .large-container {
@@ -134,14 +132,15 @@ header {
 }
 
 article {
+  padding: 1.5em 0;
   border-bottom: 1px solid $slab;
 }
 
 @media screen and (min-width: $mobile-breakpoint) {
   .container {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding: 1em 2em;
   }
+  article {}
   article.single-article {
     h2 {
       font-size: 2.4em;
@@ -161,10 +160,9 @@ article {
 }
 
 @media screen and (min-width: $mobile-breakpoint) {
-  .article-excerpt,
-  .first {
-    padding-left: .5em;
-    padding-right: .5em;
+  .article-excerpt {
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
 
@@ -337,8 +335,7 @@ dt {
 }
 
 .article-header {
-  margin-bottom: 1.5em;
-  margin-top: 1.5em;
+  margin-bottom: 10px;
 }
 
 .posts-links {
@@ -352,8 +349,16 @@ dt {
   }
 }
 
+.article-header-single {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 @media screen and (min-width: $mobile-breakpoint) {
   .article-header {
+    margin-bottom: 30px;
+  }
+  .article-header-single {
     margin-top: 2em;
     margin-bottom: 3em;
   }
