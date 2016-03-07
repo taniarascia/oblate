@@ -90,13 +90,13 @@
 .comment-body {
   //background: $code-background;
   padding: 15px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: $article-title;
   margin-bottom: 15px;
   border-bottom: 1px solid #eee;
   .reply {
     text-align: right;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   a,
   a:visited,
@@ -131,7 +131,7 @@
 
 // Overall comments area
 .comments-area {
-  margin-top: 1rem;
+  margin-top: 1.1rem;
   border-top: 1px solid $slab;
 }
 
@@ -143,7 +143,7 @@
 
 // Tags
 span.tags a {
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 1px .2rem;
   background: darken($code-background, 2%);
   color: #4B5964;
@@ -174,7 +174,7 @@ span.tags a {
 
 .logged-in-as {
   font-family: $heading-font-family;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding-bottom: 10px;
 }
 
