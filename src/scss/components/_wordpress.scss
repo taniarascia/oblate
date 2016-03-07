@@ -50,7 +50,7 @@
 // Date and Time meta data below commentator's name
 .comment-meta.commentmetadata,
 .comment-notes {
-  font-size: .7em;
+  font-size: .7rem;
 }
 
 // Comment list
@@ -68,9 +68,9 @@
   & cite.fn {
     font-weight: 900;
     font-style: normal;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-family: $article-title !important;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.05rem;
   }
 }
 
@@ -82,7 +82,7 @@
 // Comments and Replies
 .comment-reply-title,
 .comments-title {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-family: $article-title;
 }
 
@@ -90,13 +90,13 @@
 .comment-body {
   //background: $code-background;
   padding: 15px;
-  font-size: .9em;
+  font-size: .9rem;
   font-family: $article-title;
   margin-bottom: 15px;
   border-bottom: 1px solid #eee;
   .reply {
     text-align: right;
-    font-size: .9em;
+    font-size: .9rem;
   }
   a,
   a:visited,
@@ -131,20 +131,20 @@
 
 // Overall comments area
 .comments-area {
-  margin-top: 1em;
+  margin-top: 1rem;
   border-top: 1px solid $slab;
 }
 
 @media screen and (min-width: 960px) {
   .comments-area pre code {
-    padding: 1em;
+    padding: 1rem;
   }
 }
 
 // Tags
 span.tags a {
-  font-size: .9em;
-  padding: 1px .2em;
+  font-size: .9rem;
+  padding: 1px .2rem;
   background: darken($code-background, 2%);
   color: #4B5964;
   font-weight: 300;
@@ -174,7 +174,7 @@ span.tags a {
 
 .logged-in-as {
   font-family: $heading-font-family;
-  font-size: .9em;
+  font-size: .9rem;
   padding-bottom: 10px;
 }
 

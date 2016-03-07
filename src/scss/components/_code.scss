@@ -1,11 +1,12 @@
 .terminal {
-  padding: 1em 1.5em;
+  padding: 1rem 1.5rem;
   font-family: Menlo, 'Roboto Mono', monospace;
   border: 1px solid #d8d9da;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
   border-radius: 4px;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: .85rem;
 }
 
 code[class*="language-"],
@@ -18,7 +19,7 @@ pre code {
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
-  font-size: .85em;
+  font-size: .85rem;
   line-height: 1.3;
   font-weight: 400;
   -moz-tab-size: 2;
@@ -31,15 +32,13 @@ pre code {
   -webkit-font-smoothing: antialiased;
 }
 
-pre code {
-  display: block;
-}
 
 /* Code blocks */
 
 pre code {
-  padding: 1.5em;
-  margin: .5em 0;
+  display: block;
+  padding: 1.5rem;
+  margin: .5rem 0;
   overflow: auto;
   border: 0px solid $code-background;
   background-color: $code-background;
@@ -52,14 +51,10 @@ pre code {
 }
 
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {}
-
-
 /* Inline code */
 
 fdfd:not(pre) > code[class*="language-"] {
-  padding: .2em;
+  padding: .2rem;
   padding-top: 1px;
   padding-bottom: 1px;
   background: $code-background;
@@ -68,8 +63,8 @@ fdfd:not(pre) > code[class*="language-"] {
 }
 
 :not(pre) > code {
-  font-size: .85em;
-  padding: .01em .2em;
+  font-size: 1rem;
+  padding: .01rem .2rem;
   background: $code-background;
   font-family: Menlo, 'Roboto Mono', monospace;
   color: $code-font-color;
@@ -78,7 +73,6 @@ fdfd:not(pre) > code[class*="language-"] {
 }
 
 $string: #7BA643;
-
 code[class*=language-css],
 code[class*=language-scss],
 code[class*=language-less],
@@ -134,7 +128,7 @@ code[class*=language-sass] {
   color: #d28445;
 }
 
-.token.delimiter { 
+.token.delimiter {
   background: #e7e7e7;
   color: #303030;
   padding: 1px 2px;

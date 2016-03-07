@@ -49,8 +49,8 @@ pre .terminal {
 }
 
 p {
-  margin-top: 1.3em;
-  margin-bottom: 1.3em;
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
 }
 
 h1,
@@ -62,19 +62,19 @@ h5 {
   color: $heading-color;
   font-weight: 800;
   line-height: 1.2;
-  letter-spacing: -.05em;
+  letter-spacing: -.05rem;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: 1.8rem;
   margin-top: 15px;
   margin-bottom: 0;
   font-family: $article-title;
-  letter-spacing: -.05em;
+  letter-spacing: -.05rem;
 }
 
 a:hover h2 {
@@ -82,12 +82,12 @@ a:hover h2 {
 }
 
 h3 {
-  font-size: 1.3em;
-  letter-spacing: -.05em;
+  font-size: 1.5rem;
+  letter-spacing: -.05rem;
 }
 
 h4 {
-  font-size: 1.2em;
+  font-size: 1.4rem;
   font-weight: 600;
   color: $sub-font-color;
 }
@@ -95,24 +95,24 @@ h4 {
 h5 {
   color: $font-color;
   font-weight: 600;
-  font-size: 1.1em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (min-width: $mobile-breakpoint) {
   h2 {
-    font-size: 1.8em;
+    font-size: 2.5rem;
   }
   h3 {
-    font-size: 1.6em;
+    font-size: 2rem;
   }
 }
 
 header {
   padding: 5px 5px 0;
   background: #ffffff;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .logo-image {
@@ -133,18 +133,18 @@ header {
 }
 
 article {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media screen and (min-width: $mobile-breakpoint) {
   article {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   article.single-article {
     h2 {
-      font-size: 2.4em;
+      font-size: 2.4rem;
     }
   }
 }
@@ -154,8 +154,8 @@ article {
 }
 
 .article-excerpt {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid $border;
   color: $sub-font-color;
   &:hover {
@@ -163,7 +163,7 @@ article {
     background: rgba(0, 5, 15, .04);
   }
   .article-header-single {
-    margin-bottom: .5em;
+    margin-bottom: .5rem;
   }
   .first {
     color: $font-color;
@@ -172,8 +172,8 @@ article {
 
 @media screen and (min-width: $mobile-breakpoint) {
   .article-excerpt {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -212,8 +212,8 @@ dl {
 }
 
 blockquote {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   color: #4f545a;
   padding: 2px 0 0 25px;
   border-left: 12px solid $code-background;
@@ -225,7 +225,7 @@ blockquote {
   & cite {
     display: block;
     margin-top: 25px;
-    font-size: .9em;
+    font-size: .9rem;
     text-align: right;
   }
   &.info {
@@ -236,7 +236,7 @@ blockquote {
     padding: 15px;
     p {
       font-weight: 400;
-      margin-bottom: 1em;
+      margin-bottom: 1rem;
       &:last-of-type {
         margin-bottom: 0;
       }
@@ -250,7 +250,7 @@ blockquote {
     padding: 15px;
     p {
       font-weight: 400;
-      margin-bottom: 1em;
+      margin-bottom: 1rem;
       &:last-of-type {
         margin-bottom: 0;
       }
@@ -266,8 +266,8 @@ blockquote {
   background: $code-background;
   padding: 20px;
   font-family: $heading-font-family;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   a,
   a:visited {
     color: #536172;
@@ -296,7 +296,7 @@ hr {
 time {
   color: $sub-font-color;
   font-family: $button;
-  font-size: .8em;
+  font-size: .8rem;
   margin-bottom: 30px;
   font-weight: 600;
   text-transform: uppercase;
@@ -328,13 +328,13 @@ dt {
   font-weight: 700;
   margin-top: 20px;
   font-family: $heading-font-family;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 .bar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-itrems: center;
 }
 
 .pad {
@@ -351,8 +351,8 @@ dt {
 
 .posts-links {
   padding: 0 15px;
-  margin-top: 3em;
-  margin-bottom: 3em;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   &:after {
     content: '';
     display: table;
@@ -361,7 +361,7 @@ dt {
 }
 
 .article-header-single {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: $mobile-breakpoint) {
@@ -369,14 +369,14 @@ dt {
     margin-bottom: 30px;
   }
   .article-header-single {
-    margin-bottom: 3em;
+    margin-bottom: 3rem;
   }
 }
 
 footer {
   padding: 20px;
   text-align: center;
-  font-size: .8em;
+  font-size: .8rem;
   h1 a {
     color: lighten(#576778, 5%);
     &:visited,
@@ -405,7 +405,7 @@ footer {
 }
 
 .vertical {
-  align-items: center;
+  align-itrems: center;
 }
 
 .twitter-button {
