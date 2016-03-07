@@ -297,10 +297,11 @@ time {
   color: $sub-font-color;
   font-family: $button;
   font-size: 1rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: 600;
   text-transform: uppercase;
   padding-left: 5px;
+  display: inline-block;
 }
 
 mark {
