@@ -62,7 +62,7 @@ h5 {
   color: $heading-color;
   font-weight: 800;
   line-height: 1.2;
-  letter-spacing: -.05rem;
+  letter-spacing: -.1rem;
 }
 
 h1 {
@@ -74,7 +74,7 @@ h2 {
   margin-top: 15px;
   margin-bottom: 0;
   font-family: $article-title;
-  letter-spacing: -.05rem;
+  letter-spacing: -.1rem;
 }
 
 a:hover h2 {
@@ -83,7 +83,7 @@ a:hover h2 {
 
 h3 {
   font-size: 1.5rem;
-  letter-spacing: -.05rem;
+  letter-spacing: -.1rem;
 }
 
 h4 {
@@ -296,7 +296,7 @@ hr {
 time {
   color: $sub-font-color;
   font-family: $button;
-  font-size: .8rem;
+  font-size: 1rem;
   margin-bottom: 30px;
   font-weight: 600;
   text-transform: uppercase;
