@@ -29,12 +29,6 @@ pre code {
   -ms-hyphens: none;
   hyphens: none;
   font-size: .9rem;
-    display: block;
-  padding: 1.5rem;
-  margin: .5rem 0;
-  overflow: auto;
-  border: 0px solid $code-background;
-  background-color: $code-background;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -42,7 +36,13 @@ pre code {
 /* Code blocks */
 
 pre code {
-
+  display: block;
+  font-size: .75rem;
+  padding: 1.5rem;
+  margin: .5rem 0;
+  overflow: auto;
+  border: 0px solid $code-background;
+  background-color: $code-background;
 }
 
 @media screen and (min-width: 960px) {
