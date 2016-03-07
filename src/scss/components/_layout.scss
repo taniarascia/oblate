@@ -168,12 +168,18 @@ article {
   .first {
     color: $font-color;
   }
+  h2 {
+    font-size: 1.6rem;
+  }
 }
 
 @media screen and (min-width: $mobile-breakpoint) {
   .article-excerpt {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    h2 {
+      font-size: 2rem;
+    }
   }
 }
 
