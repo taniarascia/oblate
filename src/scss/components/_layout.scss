@@ -131,13 +131,15 @@ header {
   margin-right: auto;
 }
 
-article, .comments-area {
+article,
+.comments-area {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 @media screen and (min-width: $mobile-breakpoint) {
-  article, .comments-area {
+  article,
+  .comments-area {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -239,6 +241,7 @@ blockquote {
     border-radius: 4px;
     color: #755D00;
     padding: 15px;
+    border-left: 12px solid #FFE168;
     p {
       font-weight: 400;
       margin-bottom: 1rem;
@@ -253,6 +256,22 @@ blockquote {
     border-radius: 4px;
     color: $heading-color;
     padding: 15px;
+    border-left: 12px solid $border;
+    p {
+      font-weight: 400;
+      margin-bottom: 1rem;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &.details {
+    background: #edf5fa;
+    border: 1px solid #448cbd;
+    border-radius: 4px;
+    color: #2d5d7e;
+    padding: 15px;
+    border-left: 12px solid #448cbd;
     p {
       font-weight: 400;
       margin-bottom: 1rem;
