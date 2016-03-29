@@ -7,3 +7,4 @@ wp-content/plugins
 .htaccess
 src/scss/.sass-cache
 /projects
+/music
