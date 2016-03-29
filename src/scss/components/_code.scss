@@ -143,7 +143,10 @@ code[class*=language-sass] {
   color: #ac4142;
 }
 
-.token.keyword,
+.token.keyword {
+  color: #795da3;
+  font-weight: 500; 
+}
 .language-autohotkey .token.selector {
   color: #d28445;
 }
