@@ -74,7 +74,9 @@ pre code {
   font-family: Menlo, 'Roboto Mono', monospace;
   color: $code-font-color;
   font-weight: 400;
- -webkit-font-smoothing: subpixel-antialiased;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 $string: #63a35c;
@@ -119,7 +121,7 @@ code[class*=language-sass] {
 }
 
 .token.property {
-  color: #303030;
+  color: #303030; 
 }
 
 .token.entity,
@@ -145,8 +147,9 @@ code[class*=language-sass] {
 
 .token.keyword {
   color: #795da3;
-  font-weight: 500; 
+  font-weight: 500;
 }
+
 .language-autohotkey .token.selector {
   color: #d28445;
 }
