@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><link rel="stylesheet" type="text/css" href="http://www.taniarascia.com/wp-content/cache/minify/000000/M9DPT8pJLEnVTy4u1i8uqcxJ1cvNzAMA.css" media="all" />
+
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="author" content="Tania Rascia">
+	<meta name="description" content=" &raquo; Getting Started with Git - Tutorials by Tania Rascia ">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<title>Getting Started with Git &#8211; Tania Rascia</title>
+<link rel="alternate" type="application/rss+xml" title="Tania Rascia &raquo; Getting Started with Git Comments Feed" href="http://www.taniarascia.com/getting-started-with-git/feed/" />
+
+<link rel='stylesheet' id='OpenSans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C600%2C700%2C800&#038;ver=4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='NotoSerif-css'  href='//fonts.googleapis.com/css?family=Noto+Serif%3A400%2C700&#038;ver=4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='RobotoMono-css'  href='//fonts.googleapis.com/css?family=Roboto+Mono%3A400%2C300%2C500%2C700&#038;ver=4.4.1' type='text/css' media='all' />
+<link rel='https://api.w.org/' href='http://www.taniarascia.com/wp-json/' />
+<link rel='next' title='Basic HTML5 Skeleton File' href='http://www.taniarascia.com/basic-html5-file/' />
+<meta name="generator" content="WordPress 4.4.1" />
+<link rel="canonical" href="http://www.taniarascia.com/getting-started-with-git/" />
+<link rel='shortlink' href='http://www.taniarascia.com/?p=6' />
+<link rel="alternate" type="application/json+oembed" href="http://www.taniarascia.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.taniarascia.com%2Fgetting-started-with-git%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.taniarascia.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.taniarascia.com%2Fgetting-started-with-git%2F&#038;format=xml" />
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-42068444-1', 'auto');
+			ga('send', 'pageview');
+
+		</script>
+
+</head>
+
+<body>
+	<header>
+		<div class="flex vertical">
+			<div class="box one-fourth">
+				<a href="http://www.taniarascia.com"><img src="http://www.taniarascia.com/wp-content/themes/oblate/images/tr.png" class="logo-image" alt="Tania Rascia"></a>
+			</div>
+			<div class="box three-fourths social">
+				<a href="https://taniarascia.github.io/new-moon"><img src="http://www.taniarascia.com/wp-content/themes/oblate/images/newmoon.png" class="darken" alt="New Moon Syntax Theme"></a>&nbsp;
+				<a href="https://twitter.com/taniarascia"><img src="http://www.taniarascia.com/wp-content/themes/oblate/images/twitter.png" class="darken" alt="Twitter"></a>&nbsp;
+				<a href="https://github.com/taniarascia"><img src="http://www.taniarascia.com/wp-content/themes/oblate/images/github-dark.png" class="darken" alt="GitHub"></a>&nbsp;
+				<a href="http://www.taniarascia.com/feed"><img src="http://www.taniarascia.com/wp-content/themes/oblate/images/rss.png" class="darken" alt="RSS Feed"></a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<article id="post-6" class="single-article">
+	<div class="article-header center">
+				<img src="http://www.taniarascia.com/wp-content/uploads/git-150x150.png" class="article-image" alt="Getting Started with Git">		<h2>Getting Started with Git</h2>
+		<time datetime="2015-09-24">
+			September 24, 2015		</time>
+		&nbsp;☍&nbsp;<span class="tags"><a href="http://www.taniarascia.com/tag/git/" rel="tag">git</a>	</div>
+	<p>Git is a difficult subject to tackle for self-taught web developers who didn&#8217;t learn to code with a team. If you&#8217;ve always worked alone and want an explanation of how to get started with Git, this tutorial is for you.</p>
+<h4>Prerequisites</h4>
+<ul>
+<li>Ability to create and upload a website.</li>
+</ul>
+<h4>Goals</h4>
+<ul>
+<li>Learn what Git is and how it can be useful.</li>
+<li>Create a local project and launch it to a live server with Git using the command line.</li>
+</ul>
+<h3>What is Git?</h3>
+<p><a href="https://en.wikipedia.org/wiki/Git_(software)">Git</a> is a version control system (VCS) for code. It is used to keep track of revisions and allow a developer or dev team to work together on a project through branches. </p>
+<blockquote><p><em>Git is not GitHub.</em> Git is the system, and GitHub is a repository hosting service (the most popular of many).</p></blockquote>
+<h3>Git vs. FTP</h3>
+<p>You may be used to the <a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol">FTP</a> (File Transfer Protocol) process of file upload.</p>
+<p><strong>FTP</strong><br />
+<mark class="green">Local Environment</mark> &#8651; <mark class="yellow">FTP Program</mark> &#8651; <mark>Live Server</mark></p>
+<p><code>file:///Users/you/project</code> &#8651; <code>Transmit/WinFTP</code> &#8651; <code>http://domain.com</code></p>
+<p>The way we will use Git today is very similar.</p>
+<p><strong>Git</strong><br />
+<mark class="green">Local Environment</mark> &#8651; <mark class="yellow">Git Repository</mark> &#8651; <mark>Live Server</mark></p>
+<p><code>file:///Users/you/project</code> &#8651; <code>GitHub.com</code> &#8651; <code>http://domain.com</code></p>
+<p>Of course, the arrows can go in any direction for both methods &#8211; upload (push) and download (pull).</p>
+<blockquote><p>Tower, SourceTree, Github for Mac/Windows &#8211; these are all GUIs, or Graphical User Interfaces. A GUI is a program that utilizes graphics to create a user-friendly experience, such as Windows to MS-DOS. These programs are useful to learn, especially in a team environment, but in this article, we&#8217;re going to do everything through the command line. Don&#8217;t worry, it&#8217;ll be great.</p></blockquote>
+<h3>Step 1: Installation</h3>
+<h4>Mac</h4>
+<p>Open the Terminal program. Type <code>git --version</code> and press enter. If a version number is returned, Git is already installed. If something along the lines of <code>-bash: git: command not found</code> pops up, install <a href="https://developer.apple.com/xcode/">Xcode</a> from the App Store. </p>
+<p>In XCode, install Command Line Tools: <code> &gt; Preferences &gt; Downloads &gt; Command Line Tools</code>. You can now use Git through Terminal. </p>
+<blockquote><p>Although it&#8217;s not necessary for the rest of this article, now would be a good time to install <a href="http://brew.sh/">Homebrew</a> &#8211; a tool for simplifying the installation and management of dev tools.
+</p></blockquote>
+<h4>Windows</h4>
+<p>Download <a href="https://git-scm.com/download/win">Git for Windows</a>. You will be using the Git Bash program. It will utilize all the same commands as Terminal.</p>
+<h3>Step 2: Create an Online Git Repository</h3>
+<p><a href="http://www.github.com">GitHub</a> is the most popular location to host repositories, so go ahead and make an account there if you haven&#8217;t.</p>
+<p>I&#8217;ll assume your username is <strong>you</strong>. This would make your new GitHub account <code>github.com/you</code>.</p>
+<p>Once you&#8217;ve made your account, create a repository by clicking <strong>Add New Repo</strong>. Do not initialize with a README.md or .gitignore at this point. We can call the repository <strong>project</strong>. Your repository has been created at <code>github.com/you/project</code>. It should be completely empty.</p>
+<h3>Step 3: Create a Local Project</h3>
+<p>If you&#8217;re not at all familiar with the command prompt, please read the first chapter or two of the <a href="http://learnpythonthehardway.org/book/appendixa.html">command line crash course</a>. </p>
+<p>Here are the most important commands, and all you need to know to get started.</p>
+<h4>Basic command line reference</h4>
+<ul>
+<li><code>pwd</code> <strong>Print Working Directory</strong> – shows the exact directory you&#8217;re working in.</li>
+<li><code>ls</code> <strong>List Directories</strong> – lists all the files and folders in your current directory.</li>
+<li><code>cd</code> <strong>Change Directory</strong> – change to another directory.</li>
+<li><code>mkdir</code> <strong>Make Directory</strong> &#8211; create a new directory.</li>
+</ul>
+<blockquote><p>
+Remember, Terminal (Mac) and Git Bash (Windows) are both command line shells. Any Git related Shell commands can be done the same through both.
+</p></blockquote>
+<p>When you open Terminal, you will start off in your main directory. I will assume your computer has the same username as your GitHub account.</p>
+<p><strong>1. Confirm your location.</strong><br />
+<code>pwd</code></p>
+<div class="terminal">/Users/you</div>
+<p><strong>2. Create a new folder called project-local.</strong><br />
+<code>mkdir project-local</code></p>
+<p><strong>3. List your directories.</strong><br />
+<code>ls</code></p>
+<p>You should see <strong>project-local</strong> in the list of directories. Of course, you could have created the directory through Finder or Explorer, but it&#8217;s a useful command to know.</p>
+<p><strong>4. Move into the newly created directory.</strong><br />
+<code>cd project-local</code></p>
+<p>Now you&#8217;re in the folder where your local project and Git repository will live. From here, we will begin using git commands. There is a <a href="http://gitref.org/">massive amount</a> of commands for Git, but we only need a few to get started.</p>
+<h4>Basic Git command reference</h4>
+<ul>
+<li><code>git config</code> &#8211; Configure Git</li>
+<li><code>git init</code> &#8211; Initialize Git repository</li>
+<li><code>git status</code> &#8211; Check the status of a Git repository</li>
+<li><code>git add</code> &#8211; Track files</li>
+<li><code>git commit</code> &#8211; Commit tracked files</li>
+<li><code>git push</code> &#8211; Upload files</li>
+<li><code>git pull</code> &#8211; Download files</li>
+</ul>
+<p>All of the future commands we do today will only apply to your local Git environment. However, there is one important global step to take before doing anything else &#8211; configure your Git account.</p>
+<p><strong>5. Configure your global Git account.</strong><br />
+<code>git config --global user.name "Firstname Lastname"</code><br />
+<code>git config --global user.email username@email.com</code></code></p>
+<p>Make sure you&#8217;re still in the <strong>project-local</strong> folder, then move on.</p>
+<p><strong>6. Initialize Git repository.</strong><br />
+<code>git init</code></p>
+<div class="terminal">Initialized empty Git repository in /Users/you/project-local/.git/</div>
+<p>Great! Now you have an empty Git repo on your local computer. </p>
+<p><strong>7. Hook up local directory with the repo we made at github.com.</strong><br />
+<code>git remote add origin https://github.com/you/project</code></p>
+<p>Terminal won&#8217;t respond, but it was successful. Go ahead and add a file to the <strong>project-local</strong> directory. You can add as many files as you want, but I will assume you added two files &#8211; <strong>index.html</strong> and <strong>style.css</strong>.</p>
+<p><strong>8. Check the status of your local repository.</strong><br />
+<code>git status</code></p>
+<div class="terminal">On branch master<br />
+Initial commit</p>
+<p>Untracked files:<br />
+(use &#8220;git add &#8230;&#8221; to include in what will be committed)</p>
+<p>&nbsp;&nbsp;<span style="color:red;">index.html<br />
+&nbsp;&nbsp;style.css</span></p>
+<p>nothing added to commit but untracked files present (use &#8220;git add&#8221; to track)</p></div>
+<p>Okay, so now it knows that there are two files in the directory, but they&#8217;re not a part of the Git repo. At this point we have to <strong>track</strong> the files with the <code>add</code> command.</p>
+<p><strong>9. Add ALL the files to the repo.</strong> (case sensitive command!)<br />
+<code>git add -A</code></p>
+<p>Let&#8217;s check the status again with <code>git status</code>.</p>
+<div class="terminal">On branch master<br />
+Initial commit</p>
+<p>Changes to be committed:<br />
+(use &#8220;git rm &#8211;cached &#8230;&#8221; to unstage)</p>
+<p>&nbsp;&nbsp;<span style="color:green;">new file: index.html<br />
+&nbsp;&nbsp;new file: style.css</span></div>
+<p>So, what did that do? The files are green now instead of red. Are we ready? Not quite yet. </p>
+<p><strong>10. Commit tracked files to the master branch</strong><br />
+<code>git commit -a -m "Initial Commit"</code></p>
+<div class="terminal">[master (root-commit)] Initial<br />
+ 2 files changed, 34 insertions(+)</p>
+<p>&nbsp;&nbsp;create mode index.html<br />
+&nbsp;&nbsp;create mode style.css</p></div>
+<p>With this command, I commit all the files (-a), include a message (-m), listed here (&#8220;Initial Commit&#8221;). Everything in this line is mandatory. </p>
+<blockquote><p>
+Do not forget to add a comment when you commit your files. Strategic commenting in Git is as important as commenting code. If you accidentally forget to add a comment and end up in a strange screen where you can no longer enter any commands, press ESC and type <code>:q!</code> followed by ENTER.
+</p></blockquote>
+<p><strong>11. Push the files to the Git repo at github.com.</strong><br />
+<code>git push origin master</code></p>
+<p>Terminal will prompt you to enter your GitHub username and password. When you type in your password, it might not show that you&#8217;ve typed anything, but it&#8217;s being entered.</p>
+<p>Now refresh your GitHub page. Success! All your files are now hosted at Github.com!</p>
+<blockquote><p>
+Just as a GUI like Tower is not necessary for Git to function, neither is an online repository host like GitHub.com! Try creating a Git connection between two local directories.
+</p></blockquote>
+<h3>Step 4: Push to a Live Server</h3>
+<p>I will now assume that you have a host somewhere to upload your files to. GeoCities, maybe?</p>
+<p>When you upload to a server via FTP, you&#8217;ll have some settings like this:</p>
+<p><strong>Host:</strong> ftp.domain.com<br />
+<strong>Username:</strong> you<br />
+<strong>Password:</strong> hunter2</p>
+<p>You enter those credentials into the FTP GUI, and you&#8217;re in. <a href="https://en.wikipedia.org/wiki/Secure_Shell">SSH</a> (Secure Shell) is very much the same &#8211; in the command prompt, you&#8217;ll use the ssh command to enter the host. Your host should show you your SSH settings by your FTP settings.</p>
+<p>You can do everything through the same Terminal window, but for the sake of clarity let&#8217;s open a new Terminal window (Command + N).</p>
+<p><strong>1. SSH into your host.</strong><br />
+<code>ssh username@ssh.domain.com</code></p>
+<p>You will be prompted to enter your password. </p>
+<p>Now you&#8217;re in!</p>
+<blockquote><p>
+Remember that when you SSH into your host, you are now connected to that host! Your local environment no longer exists in that Terminal. To escape SSH and return to the local Terminal, type <code>exit</code> followed by enter.
+</p></blockquote>
+<p>It would be smart to have an FTP program open so you can see the file structure of the host and the changes you&#8217;re making. Every host is different. Find the wwwroot or public folder and <code>cd</code> into the proper location in your remote Terminal window. </p>
+<p>Now make a new folder somewhere in your host&#8217;s directory. You can call it whatever you want &#8211; it can match the name of the GitHub repo or not. In this case, we will call it <strong>project-remote</strong> and assume it&#8217;s a folder in the root directory.</p>
+<p>Once you&#8217;re in, you will follow many of the same steps as before, except this time we will be <strong>pulling</strong> (downloading) from GitHub.com, instead of <strong>pushing</strong> (uploading) from local to Github.com.</p>
+<p>I&#8217;m ignoring branches for now, since we&#8217;re only working with one branch &#8211; the <strong>master</strong> branch.</p>
+<p><strong>2. List your Git settings.</strong><br />
+<code>git --list</code></p>
+<p>You should configure your e-mail and username as you did on your home computer.</p>
+<p><strong>3. Print your working directory to make sure you&#8217;re in the right location.</strong><br />
+<code>pwd</code> </p>
+<p>Use <code>cd</code> and <code>mkdir</code> to navigate to the location you want your new Git repo to live. Then&#8230;</p>
+<p><strong>4. Initialize Git repo.</strong><br />
+<code>git init</code></p>
+<p><strong>5. Add remote Git repo to origin master (branch).</strong><br />
+<code>git remote add origin https://github.com/you/project.git</code></p>
+<p><strong>6. Pull (download) from origin master (branch).</strong><br />
+<code>git pull origin master</code></p>
+<p>Now, when you go to http://domain.com/project-remote, all the files are there, and the site is live!</p>
+<p>I wanted to write the article I wish I had in front of me when I tried to teach myself everything at once &#8211; Git, command line, SSH &#8211; and ran into pitfalls.</p>
+		<div class="alert">
+			<a href="http://twitter.com/intent/tweet?text=Getting Started with Git&url=http://www.taniarascia.com/getting-started-with-git/&via=taniarascia" target="_blank" title="Share to Twitter" class="block"><img src="http://www.taniarascia.com/wp-content/themes/oblate/images/twitter.png" class="block-i" alt="Share this article"> Share this article!</a>
+		</div>
+</article>
+	<div id="comments" class="comments-area">
+
+					<h3 class="comments-title">
+			8 comments on &ldquo;Getting Started with Git&rdquo;		</h3>
+			<ul class="comment-list">
+						<li class="comment even thread-even depth-1 parent" id="comment-2">
+				<div id="div-comment-2" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn">Daniel</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.taniarascia.com/getting-started-with-git/#comment-2">
+			October 1, 2015 at 6:05 pm</a>		</div>
+
+		<p>Thanks for creating this!</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://www.taniarascia.com/getting-started-with-git/?replytocom=2#respond' onclick='return addComment.moveForm( "div-comment-2", "2", "respond", "6" )' aria-label='Reply to Daniel'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-hi-tania bypostauthor odd alt depth-2" id="comment-5">
+				<div id="div-comment-5" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://www.taniarascia.com' rel='external nofollow' class='url'>Tania</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.taniarascia.com/getting-started-with-git/#comment-5">
+			October 2, 2015 at 9:27 am</a>		</div>
+
+		<p>You&#8217;re welcome!</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://www.taniarascia.com/getting-started-with-git/?replytocom=5#respond' onclick='return addComment.moveForm( "div-comment-5", "5", "respond", "6" )' aria-label='Reply to Tania'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 parent" id="comment-3">
+				<div id="div-comment-3" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn">dylan</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.taniarascia.com/getting-started-with-git/#comment-3">
+			October 1, 2015 at 7:11 pm</a>		</div>
+
+		<p>Yes, thank you this was very, very helpful.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://www.taniarascia.com/getting-started-with-git/?replytocom=3#respond' onclick='return addComment.moveForm( "div-comment-3", "3", "respond", "6" )' aria-label='Reply to dylan'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-hi-tania bypostauthor odd alt depth-2" id="comment-4">
+				<div id="div-comment-4" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://www.taniarascia.com' rel='external nofollow' class='url'>Tania</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.taniarascia.com/getting-started-with-git/#comment-4">
+			October 2, 2015 at 9:27 am</a>		</div>
+
+		<p>You&#8217;re welcome! I&#8217;m thrilled that you found it useful! <img src="http://www.taniarascia.com/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://www.taniarascia.com/getting-started-with-git/?replytocom=4#respond' onclick='return addComment.moveForm( "div-comment-4", "4", "respond", "6" )' aria-label='Reply to Tania'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 parent" id="comment-137">
+				<div id="div-comment-137" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn">nick3499</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.taniarascia.com/getting-started-with-git/#comment-137">
+			December 1, 2015 at 3:00 am</a>		</div>
+
+		<p>Appreciating how you get right into instruction without initial introductory fluff or a history lesson.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://www.taniarascia.com/getting-started-with-git/?replytocom=137#respond' onclick='return addComment.moveForm( "div-comment-137", "137", "respond", "6" )' aria-label='Reply to nick3499'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-hi-tania bypostauthor odd alt depth-2" id="comment-140">
+				<div id="div-comment-140" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://www.taniarascia.com' rel='external nofollow' class='url'>Tania</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.taniarascia.com/getting-started-with-git/#comment-140">
+			December 1, 2015 at 2:23 pm</a>		</div>
+
+		<p>Thank you! I try to give the right amount of explanation to get started without being long-winded.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://www.taniarascia.com/getting-started-with-git/?replytocom=140#respond' onclick='return addComment.moveForm( "div-comment-140", "140", "respond", "6" )' aria-label='Reply to Tania'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 parent" id="comment-199">
+				<div id="div-comment-199" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn">Denis</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.taniarascia.com/getting-started-with-git/#comment-199">
+			December 10, 2015 at 5:41 pm</a>		</div>
+
+		<p>Finaly I have know with function the Github command!</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://www.taniarascia.com/getting-started-with-git/?replytocom=199#respond' onclick='return addComment.moveForm( "div-comment-199", "199", "respond", "6" )' aria-label='Reply to Denis'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-hi-tania bypostauthor odd alt depth-2" id="comment-204">
+				<div id="div-comment-204" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://www.taniarascia.com' rel='external nofollow' class='url'>Tania</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.taniarascia.com/getting-started-with-git/#comment-204">
+			December 13, 2015 at 9:11 pm</a>		</div>
+
+		<p>I&#8217;m glad you found it useful!</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://www.taniarascia.com/getting-started-with-git/?replytocom=204#respond' onclick='return addComment.moveForm( "div-comment-204", "204", "respond", "6" )' aria-label='Reply to Tania'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ul>
+			<!-- .comment-list -->
+
+			
+				
+										<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/getting-started-with-git/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="http://www.taniarascia.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+					<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name</label> <input id="author" name="author" type="text" value="" size="30" /></p>
+<p class="comment-form-email"><label for="email">Email</label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='6' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="d4aa395fc8" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="216"/></p>				</form>
+					</div><!-- #respond -->
+		
+	</div>
+	<!-- .comments-area -->
+
+				</main>
+	<aside>
+</aside>		<footer>
+  <div class="container">
+    <h1><a href="http://www.taniarascia.com/me">♥ Tania Rascia</a></h1>
+  </div>
+</footer>
+<script type="text/javascript" src="http://www.taniarascia.com/wp-content/cache/minify/000000/M9RPzM4szk0t0Y_PzEvWT8svygUA.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var PowerStatsParams = {"ajaxurl":"http:\/\/www.taniarascia.com\/wp-admin\/admin-ajax.php","ci":"YTo0OntzOjEyOiJjb250ZW50X3R5cGUiO3M6NDoicG9zdCI7czo4OiJjYXRlZ29yeSI7czo1OiIyLDYsNCI7czoxMDoiY29udGVudF9pZCI7aTo2O3M6NjoiYXV0aG9yIjtzOjg6ImhpLXRhbmlhIjt9.bb089e47c17805de83523165cac7c8f4"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.taniarascia.com/wp-content/cache/minify/000000/M9QvL9AtyC9PLdItLkksKUbj6hjo5yflJJak6mcV6xcUZRbn6piAlKTmJqWm6OVm5gEA.js"></script>
+</body>
+
+  </html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using disk
+Page Caching using disk: enhanced
+
+ Served from: www.taniarascia.com @ 2016-01-26 22:25:02 by W3 Total Cache -->

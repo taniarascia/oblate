@@ -1,0 +1,54 @@
+<!DOCTYPE html><html
+lang="en"><head><link
+rel="stylesheet" type="text/css" href="https://www.taniarascia.com/wp-content/cache/minify/000000/M9DPT8pJLEnVTy4u1i8uqcxJ1cvNzAMA.css" media="all" /><meta
+charset="utf-8"><meta
+http-equiv="x-ua-compatible" content="ie=edge"><meta
+name="author" content="Tania Rascia"><meta
+name="description" content=" &raquo; responsive - Tutorials by Tania Rascia "><meta
+name="viewport" content="width=device-width, initial-scale=1"><title>responsive &#8211; Tania Rascia</title><link
+rel="alternate" type="application/rss+xml" title="Tania Rascia &raquo; responsive Tag Feed" href="https://www.taniarascia.com/tag/responsive/feed/" /><link
+rel='stylesheet' id='OpenSans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C600%2C700%2C800&#038;ver=4.4.1' type='text/css' media='all' /><link
+rel='stylesheet' id='NotoSerif-css'  href='//fonts.googleapis.com/css?family=Noto+Serif%3A400%2C700&#038;ver=4.4.1' type='text/css' media='all' /><link
+rel='stylesheet' id='RobotoMono-css'  href='//fonts.googleapis.com/css?family=Roboto+Mono%3A400%2C300%2C500%2C700&#038;ver=4.4.1' type='text/css' media='all' /><link
+rel='https://api.w.org/' href='https://www.taniarascia.com/wp-json/' /><meta
+name="generator" content="WordPress 4.4.1" /><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-42068444-1','auto');ga('send','pageview');</script></head><body> <header><div
+class="flex vertical"><div
+class="box one-fourth"> <a
+href="https://www.taniarascia.com"><img
+src="https://www.taniarascia.com/wp-content/themes/oblate/images/tr.png" class="logo-image" alt="Tania Rascia"></a></div><div
+class="box three-fourths social"> <a
+href="https://taniarascia.github.io/new-moon"><img
+src="https://www.taniarascia.com/wp-content/themes/oblate/images/newmoon.png" class="darken" alt="New Moon Syntax Theme"></a>&nbsp; <a
+href="https://twitter.com/taniarascia"><img
+src="https://www.taniarascia.com/wp-content/themes/oblate/images/twitter.png" class="darken" alt="Twitter"></a>&nbsp; <a
+href="https://github.com/taniarascia"><img
+src="https://www.taniarascia.com/wp-content/themes/oblate/images/github-dark.png" class="darken" alt="GitHub"></a>&nbsp; <a
+href="https://www.taniarascia.com/feed"><img
+src="https://www.taniarascia.com/wp-content/themes/oblate/images/rss.png" class="darken" alt="RSS Feed"></a></div></div> </header> <main> <a
+href="https://www.taniarascia.com/full-screen-navigation-overlay/"> <article
+id="post-1131" class="article-excerpt"><div
+class="article-header"><h2>Full Screen Navigation Overlay</h2> <time
+datetime="2015-11-21"> November 21, 2015 </time></div><p>One current trend in navigation styles that you may have seen is the full screen navigation overlay. With this type of navigation, toggling the navigation&#8230;</p> </article> </a> <a
+href="https://www.taniarascia.com/what-is-bootstrap-and-how-do-i-use-it/"> <article
+id="post-992" class="article-excerpt"><div
+class="article-header"><h2>What is Bootstrap and How Do I Use It?</h2> <time
+datetime="2015-11-09"> November 9, 2015 </time></div> <img
+src="https://www.taniarascia.com/wp-content/uploads/bs.png" class="image-float" alt="What is Bootstrap and How Do I Use It?"><p>If you have any sort of interest in web development, you&#8217;ve likely heard of Bootstrap. According to the official website, Bootstrap is the most popular&#8230;</p> </article> </a> <a
+href="https://www.taniarascia.com/off-canvas-navigation/"> <article
+id="post-833" class="article-excerpt"><div
+class="article-header"><h2>Off Canvas Navigation</h2> <time
+datetime="2015-11-02"> November 2, 2015 </time></div><p>One of the more minimalist approaches to responsive navigation is the off canvas navigation method. This method utilizes the ubiquitous three-line hamburger menu, which prompts&#8230;</p> </article> </a> <a
+href="https://www.taniarascia.com/you-dont-need-a-framework/"> <article
+id="post-769" class="article-excerpt"><div
+class="article-header"><h2>You Don&#8217;t Need a Framework: Understanding the Fundamentals of Responsive Design</h2> <time
+datetime="2015-10-31"> October 31, 2015 </time></div> <img
+src="https://www.taniarascia.com/wp-content/uploads/responsive-design-150x150.png" class="image-float" alt="You Don&#8217;t Need a Framework: Understanding the Fundamentals of Responsive Design"><p>Responsive web design is an approach to creating websites in which the layout adapts to fit the device&#8217;s screen &#8211; whether it&#8217;s a phone, tablet,&#8230;</p> </article> </a> <a
+href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/"> <article
+id="post-187" class="article-excerpt"><div
+class="article-header"><h2>Responsive Dropdown Navigation Bar</h2> <time
+datetime="2015-10-02"> October 2, 2015 </time></div><p>Bootstrap and Foundation have fantastic navbars that you can use if you choose to base your layout on their framework. For my own projects, I&#8230;</p> </article> </a><div
+class="posts-links"><div
+class="left"></div><div
+class="right"></div></div> </main> <aside> </aside> <footer><div
+class="container"><h1><a
+href="https://www.taniarascia.com/me">♥ Tania Rascia</a></h1></div> </footer><script type='text/javascript'>var PowerStatsParams={"ajaxurl":"https:\/\/www.taniarascia.com\/wp-admin\/admin-ajax.php","ci":"YToyOntzOjEyOiJjb250ZW50X3R5cGUiO3M6MzoidGFnIjtzOjg6ImNhdGVnb3J5IjtzOjE6IjgiO30=.9d07fa2a367f55640b383d8c9dce10cd"};</script><script type="text/javascript" src="https://www.taniarascia.com/wp-content/cache/minify/000000/M9QvL9AtyC9PLdItLkksKUbj6hjo5yflJJak6mcV6xcUZRbnoogUJxdlFpTo5Wbm6ZiAdKbmJqWmgLgA.js"></script></body></html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html><html
+lang="en"><head><link
+rel="stylesheet" type="text/css" href="https://www.taniarascia.com/wp-content/cache/minify/000000/M9DPT8pJLEnVTy4u1i8uqcxJ1cvNzAMA.css" media="all" /><meta
+charset="utf-8"><meta
+http-equiv="x-ua-compatible" content="ie=edge"><meta
+name="author" content="Tania Rascia"><meta
+name="description" content=" &raquo; Responsive Dropdown Navigation Bar - Tutorials by Tania Rascia "><meta
+name="viewport" content="width=device-width, initial-scale=1"><title>Responsive Dropdown Navigation Bar &#8211; Tania Rascia</title><link
+rel="alternate" type="application/rss+xml" title="Tania Rascia &raquo; Responsive Dropdown Navigation Bar Comments Feed" href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/feed/" /><link
+rel='stylesheet' id='OpenSans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C600%2C700%2C800&#038;ver=4.4.1' type='text/css' media='all' /><link
+rel='stylesheet' id='NotoSerif-css'  href='//fonts.googleapis.com/css?family=Noto+Serif%3A400%2C700&#038;ver=4.4.1' type='text/css' media='all' /><link
+rel='stylesheet' id='RobotoMono-css'  href='//fonts.googleapis.com/css?family=Roboto+Mono%3A400%2C300%2C500%2C700&#038;ver=4.4.1' type='text/css' media='all' /><link
+rel='https://api.w.org/' href='https://www.taniarascia.com/wp-json/' /><link
+rel='prev' title='Basic HTML5 Skeleton File' href='https://www.taniarascia.com/basic-html5-file/' /><link
+rel='next' title='Easiest Flex Grid Ever' href='https://www.taniarascia.com/easiest-flex-grid-ever/' /><meta
+name="generator" content="WordPress 4.4.1" /><link
+rel="canonical" href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/" /><link
+rel='shortlink' href='https://www.taniarascia.com/?p=187' /><link
+rel="alternate" type="application/json+oembed" href="https://www.taniarascia.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.taniarascia.com%2Fresponsive-dropdown-navigation-bar%2F" /><link
+rel="alternate" type="text/xml+oembed" href="https://www.taniarascia.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.taniarascia.com%2Fresponsive-dropdown-navigation-bar%2F&#038;format=xml" /><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-42068444-1','auto');ga('send','pageview');</script></head><body> <header><div
+class="flex vertical"><div
+class="box one-fourth"> <a
+href="https://www.taniarascia.com"><img
+src="https://www.taniarascia.com/wp-content/themes/oblate/images/tr.png" class="logo-image" alt="Tania Rascia"></a></div><div
+class="box three-fourths social"> <a
+href="https://taniarascia.github.io/new-moon"><img
+src="https://www.taniarascia.com/wp-content/themes/oblate/images/newmoon.png" class="darken" alt="New Moon Syntax Theme"></a>&nbsp; <a
+href="https://twitter.com/taniarascia"><img
+src="https://www.taniarascia.com/wp-content/themes/oblate/images/twitter.png" class="darken" alt="Twitter"></a>&nbsp; <a
+href="https://github.com/taniarascia"><img
+src="https://www.taniarascia.com/wp-content/themes/oblate/images/github-dark.png" class="darken" alt="GitHub"></a>&nbsp; <a
+href="https://www.taniarascia.com/feed"><img
+src="https://www.taniarascia.com/wp-content/themes/oblate/images/rss.png" class="darken" alt="RSS Feed"></a></div></div> </header> <main> <article
+id="post-187" class="single-article"><div
+class="article-header center"><h2>Responsive Dropdown Navigation Bar</h2> <time
+datetime="2015-10-02"> October 2, 2015 </time> &nbsp;☍&nbsp;<span
+class="tags"><a
+href="https://www.taniarascia.com/tag/jquery/" rel="tag">jQuery</a>, <a
+href="https://www.taniarascia.com/tag/responsive/" rel="tag">responsive</a></div><p><a
+href="http://getbootstrap.com">Bootstrap</a> and <a
+href="http://foundation.zurb.com">Foundation</a> have fantastic navbars that you can use if you choose to base your layout on their framework. For my own projects, I chose to make a customizable responsive dropdown navbar with an animated hamburger menu. The navigation is built on <a
+href="http://sass-lang.com">Sass</a>, adaptable, and requires very little jQuery. It was inspired by <a
+href="http://toddmotto.com/flaunt-js-for-stylish-responsive-navigations-with-nested-click-to-reveal/">Flaunt.js</a> by <a
+href="http://toddmotto.com/">Todd Motto</a>.</p><p>There&#8217;s a lot that goes into building a navbar like this, so I&#8217;ll go over the specifics. Frameworks are great, but I think it&#8217;s a great idea for every developer to create their own navigation at some point to understand how it works.</p><h3>The Demo</h3><p
+data-height="268" data-theme-id="0" data-slug-hash="dYvvYv" data-default-tab="result" data-user="taniarascia" class='codepen'>See the Pen <a
+href='http://codepen.io/taniarascia/pen/dYvvYv/'>Responsive Dropdown Navigation Bar</a> by Tania (<a
+href='http://codepen.io/taniarascia'>@taniarascia</a>) on <a
+href='http://codepen.io'>CodePen</a>.</p><p><script async src="//assets.codepen.io/assets/embed/ei.js"></script></p><p>I would suggest opening a new pen on <a
+href="http://codepen.io">Codepen</a> and doing this tutorial step by step to see how it works.</p><h3>The HTML</h3><p>Let&#8217;s start with the menu itself. It&#8217;s a regular list, wrapped in a semantic <code>nav</code> tag.</p><pre><code class="language-html">&lt;nav&gt;
+  &lt;div class="nav-mobile"&gt;
+    &lt;a id="nav-toggle" href="#!"&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;ul class="nav-list"&gt;
+    &lt;li&gt;
+      &lt;a href="#!"&gt;Home&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="#!"&gt;About&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="#!"&gt;Services&lt;/a&gt;
+      &lt;ul class="nav-dropdown"&gt;
+        &lt;li&gt;
+          &lt;a href="#!"&gt;Web Design&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href="#!"&gt;Web Development&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href="#!"&gt;Graphic Design&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="#!"&gt;Pricing&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="#!"&gt;Contact&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre><p>A list with no styling applied. Everything in the <code>nav-mobile</code> class will not appear until we begin working on the small device view. Setting the links to <code>#!</code> will ensure that no action takes place on click.</p><p><img
+src="https://www.taniarascia.com/wp-content/uploads/Screen-Shot-2015-10-02-at-3.44.02-PM.png"></p><h3>The SCSS</h2><p>I like to use Sass, or more specifically, <a
+href="http://thesassway.com/editorial/sass-vs-scss-which-syntax-is-better">SCSS.</a> There&#8217;s a lot of nesting going on in these navbars, and we can prevent repetition in the code with Sass. Additionally, variables will drastically improve the ease of color and size customization.</p><p>First, I&#8217;m going to set a few variables.</p><pre><code class="language-scss">$content-width: 1000px;
+$breakpoint: 800px;
+$nav-height: 70px;
+$nav-background: #262626;
+$nav-font-color: #ffffff;
+$link-hover-color: #2581DC;</code></pre><p><code>$content-width</code> will be the max width of the content within the navigation bar. <code>$breakpoint</code> determines at which width the media query breakpoint will take effect. Obviously named variables are created for size and colors.</p><p><strong>The Sass Skeleton</strong></p><pre><code class="language-scss">nav {
+  ul {
+    li {
+      a {
+        &amp;:hover {
+        }
+        &amp;:not(:only-child):after {
+        } 
+      } // Dropdown list
+      ul li {
+        a {
+        }
+      }
+    }
+  }
+}</code></pre><p>Now we begin filling it in. We&#8217;ll float the entire nav to the right, remove the bullet points on the list and any pre-determined browser padding.</p><pre><code class="language-scss">nav {
+  float: right;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}</code></pre><p><img
+src="https://www.taniarascia.com/wp-content/uploads/Screen-Shot-2015-10-02-at-5.16.24-PM.png"></p><p>Now we float the list items to the left and style the <code>a</code> tag. The <code>li</code> will be set to <code>position: relative</code>, which doesn&#8217;t do anything yet, but will be explained a few steps down.</p><pre><code class="language-scss">li {
+  float: left;
+  position: relative;
+  a {
+    display: block;
+    padding: 0 20px;
+    line-height: $nav-height;
+    background: $nav-background;
+    color: $nav-font-color;
+    text-decoration: none;
+  }
+}</code></pre><p><img
+src="https://www.taniarascia.com/wp-content/uploads/Screen-Shot-2015-10-02-at-5.26.56-PM.png"></p><p>I&#8217;ve set the nested <code>a</code> tag to <code>display:block</code> with some padding, and gave it our previously determined colors. This is a dark navbar, but you can just as easily revert the colors for a light navbar.</p><pre><code class="language-scss">a {  
+  &amp;:hover {
+    background: $link-hover-color;
+    color: $nav-font-color;
+  }
+  &amp;:not(:only-child):after {
+  padding-left: 4px;
+  content: ' &#9662;';
+}</code></pre><p>The hover is simple &#8211; I&#8217;m just changing the background color of the entire <code>a</code> tag. Next, we have some pretty interesting CSS3.</p><p><code>&amp;:not(:only-child):after</code></p><p>The full path of this code is <code>nav ul li a:not(:only-child):after</code>. This means that the code will apply to any <code>a</code> tag in our <code>nav</code> list that is NOT an only child, aka any dropdown. The <code>:after</code> means it comes after the output of the tag. I&#8217;ve decided that to specify any nav item as a dropdown, it will be followed by a unicode arrow &#8211; &#9662; (#9662).</p><p><img
+src="https://www.taniarascia.com/wp-content/uploads/Screen-Shot-2015-10-05-at-9.46.01-AM.png"></p><pre><code class="language-scss">} // Dropdown list
+ul li {
+  min-width: 190px;
+  a {
+    padding: 15px;
+    line-height: 20px;
+  }</code></pre><p>A small bit of styling is applied to the nested <code>ul</code>s. I&#8217;ve given the <code>li</code> a minimum width, so that the dropdown width won&#8217;t vary based on content. I&#8217;ve changed the padding and line-height of the dropdown <code>a</code>, because the styling cascades down from the parent.</p><p><img
+src="https://www.taniarascia.com/wp-content/uploads/Screen-Shot-2015-10-05-at-2.18.09-PM.png"></p><h4>Positioning</h4><p>Absolute and relative positioning remove items from the normal flow of the document. <a
+href="http://learnlayout.com/position.html">Learn CSS Layout</a> has a very good, simple explanation of how positioning works. The important part to remember for this dropdown nav is that an <code>position:absolute</code> element will be placed relative to a <code>position: relative</code> element. You can think of the absolute element being nested within the relative element.</p><p>We already set the <code>li</code> to <code>position: relative</code> earlier. Now we&#8217;re going to add a new, absolutely positioned class. <code>z-index: 1</code> guarantees that the dropdown will display on top of any content. And I added a box shadow, as is standard for dropdowns.</p><pre><code class="language-css">.nav-dropdown {
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}</code></pre><p><img
+src="https://www.taniarascia.com/wp-content/uploads/Screen-Shot-2015-10-05-at-2.30.49-PM.png"></p><p>Add <code>display: none;</code> so that we can toggle it later with JavaScript.</p><p><img
+src="https://www.taniarascia.com/wp-content/uploads/Screen-Shot-2015-10-05-at-2.31.03-PM.png"></p><h3>The jQuery</h3><p>We&#8217;ll begin adding jQuery.</p><pre><code class="language-js">(function($) { // Begin jQuery
+
+})(jQuery);</code></pre><p>And tell the function to run on DOM ready.</p><pre><code class="language-js">(function($) {
+  $(function() { // DOM Ready
+
+  // Insert all scripts here
+
+  });
+})(jQuery);</code></pre><p>Activating the dropdown is extremely simple. I devised this specific method, and haven&#8217;t seen it used on any other dropdown nav, and seems to work quite well. I&#8217;m going to target any <code>a</code> in the menu that has children, and toggle the <code>.nav-dropdown</code> class.</p><pre><code class="language-js">$('nav ul li &gt; a:not(:only-child)').click(function(e) {
+  $(this).siblings('.nav-dropdown').toggle();
+});</code></pre><ol><li>When the CSS path <code>nav ul li &gt; a:not(:only-child)</code> is clicked on&#8230;</li><li>Toggle (change the <code>display</code> property of) that specific <code>nav-dropdown</code> class.</li></ol><p><code>$(this)</code> specifies that it only targets only what was clicked on, and not <em>every</em> instance of that CSS path.</p><p>But what&#8217;s that <code>(e)</code> for? If you happen to have two dropdowns in the nav, and click on both of them, they both open. We want to prevent that behavior, and force only one dropdown to be open at a time. Inside of that same function, add:</p><pre><code class="language-js">$('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+</code></pre><p>This hides all of the dropdowns, and <code>stopPropagation();</code> prevents that action from taking place. We attach it to <code>e</code> and place that <code>e</code> in the function.</p><p>There&#8217;s one more thing: I want the dropdown to hide if I click away from it at any point. We&#8217;ll hide it by setting a click function to the entire <code>html</code> tag.</p><pre><code class="language-js">$('html').click(function() {
+      $('.nav-dropdown').hide();
+    });</code></pre><p>Here&#8217;s the entire jQuery so far.</p><pre><code class="language-js">(function($) {
+  $(function() {
+    $('nav ul li &gt; a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+  });
+})(jQuery);</code></pre><h3>Mobile</h3><p>Now we have a fully functional dropdown nav. The next step is to turn it into a &#8220;hamburger&#8221; menu on mobile collapse. We&#8217;re going to create a square in the top right of the screen where the hamburger will live.</p><pre><code class="language-scss">.nav-mobile {
+  //display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $nav-background;
+  height: $nav-height;
+  width: $nav-height;
+}</code></pre><blockquote><p><code>display:none</code> is commented out so we can work on it right now. Later I will refer back to this.</p></blockquote><p>Create a media query based on the mobile breakpoint.</p><pre><code class="language-scss">@media only screen and (max-width: $breakpoint) {
+
+// Insert all mobile styles here
+
+}</code></pre><p>For now, hide the <code>ul</code> and we&#8217;ll work on the hamburger.</p><pre><code class="language-scss">nav {
+  ul {
+    display: none;
+  }
+}</code></pre><p>Elijah Manor created a great <a
+href="http://codepen.io/elijahmanor/pen/Igpoe">CSS animated hamburger icon</a>, and we&#8217;re going to use that method. You can read his <a
+href="http://elijahmanor.com/css-animated-hamburger-icon/">tutorial</a> to learn more about how this works. For my part, I condensed it for Sass.</p><p>The concept behind how it works is that a <code>span</code> class in the <code>#nav-toggle</code> id has a <code>:before</code> and an <code>:after</code>. The span is displayed as a thin, wide block level element that looks like a line. The before and after raise and lower the line, creating three lines.</p><p>Finally, the jQuery comes in and adds an <code>.active</code> class to the span, which rotates the <code>:before</code> and <code>:after</code>, creating an X.</p><pre><code class="language-scss">#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  span,
+  span:before,
+  span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: $nav-font-color;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+  }
+  span:before {
+    top: -10px;
+  }
+  span:after {
+    bottom: -10px;
+  }
+  &amp;.active span {
+    background-color: transparent;
+    &amp;:before,
+    &amp;:after {
+      top: 0;
+    }
+    &amp;:before {
+      transform: rotate(45deg);
+    }
+    &amp;:after {
+      transform: rotate(-45deg);
+    }
+  }
+}</code></pre><p>Toggle the <code>.active</code> span.</p><pre><code class="language-js">$('#nav-toggle').click(function() {
+  $('nav ul').toggle();
+});</code></pre><p>Now you have a hamburger icon that animates on click action, but doesn&#8217;t do anything yet.</p><p><img
+src="https://www.taniarascia.com/wp-content/uploads/Screen-Shot-2015-10-05-at-4.42.18-PM.png"><br
+/> <img
+src="https://www.taniarascia.com/wp-content/uploads/Screen-Shot-2015-10-05-at-4.39.06-PM.png"></p><p>The final addition to our jQuery code will toggle the <code>nav ul</code> on click.</p><pre><code class="language-js">$('#nav-toggle').click(function() {
+  $('nav ul').toggle();
+});</code></pre><p><img
+src="https://www.taniarascia.com/wp-content/uploads/Screen-Shot-2015-10-06-at-11.54.07-AM.png"></p><p>Perfect! The hamburger toggles the menu. Our jQuery functionality is complete.</p><h4>Fixing the disappearing navbar bug</h4><p>I&#8217;ve seen many navbars that have a bug that causes the menu to disappear on desktop if you already toggled the view on mobile. This is an issue that is mostly noticed by developers, as your average user probably isn&#8217;t constantly resizing screens and toggling menus. However, this is a very simple problem to fix. If you&#8217;ll notice in the original HTML, I&#8217;ve set the ul class to <code>nav-list</code>, but haven&#8217;t referenced it yet. With this simple code, I&#8217;m going to ensure that the menu is <em>always</em> displayed on large screen sizes.</p><pre><code class="language-scss">@media screen and (min-width: $breakpoint) {
+  .nav-list {
+    display: block !important;
+  }
+}</code></pre><blockquote><p>Now is the time to uncomment <code>display: none;</code> from the <code>.nav-mobile</code> class. We want it to be invisible until mobile collapse.</p></blockquote><p>Now go back to your <code>@media only screen and (max-width: $breakpoint)</code> query. Place this at the top.</p><pre><code class="language-scss">.nav-mobile {
+  display: block;
+}</code></pre><p>We have to apply some styles to the mobile menu. First, set the <code>nav</code> to take up 100% of the viewport. Remove the left float from the list. We&#8217;ll set some padding and height to the <code>a</code> tag, and extra left padding to the nested <code>ul</code>s.</p><pre><code class="language-scss">nav {
+  width: 100%;
+  padding: $nav-height 0 15px;
+  ul {
+    display: none;
+    li {
+      float: none;
+      a {
+        padding: 15px;
+        line-height: 20px;
+      }
+      ul li a {
+        padding-left: 30px;
+      }
+    }
+  }
+}</code></pre><p>Set <code>.nav-dropdown</code> to static, otherwise it will overflow onto the other list items.</p><pre><code class="language-scss">.nav-dropdown {
+  position: static;
+  }</code></pre><p><img
+src="https://www.taniarascia.com/wp-content/uploads/Screen-Shot-2015-10-06-at-11.53.04-AM.png"></p><p>There you have it &#8211; a completely responsive navigation menu. It does everything that it needs to do, but it&#8217;s just floating there. A lot of tutorials just stop at this point, and I used to be confused as to how to incorporate that menu into the navbar. Fortunately, this is the easiest part.</p><h3>The Navigation Bar</h3><p>Go back to your HTML from the beginning of the tutorial. Wrap the entire <code>nav</code> in this code.</p><pre><code class="language-html">&lt;section class="navigation"&gt;
+  &lt;div class="nav-container"&gt;
+    &lt;div class="brand"&gt;
+      &lt;a href="#!"&gt;Logo&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;!-- &lt;nav&gt;&lt;/nav&gt; --&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre><p>There are three layers to this code:</p><p><code>.navigation</code> &#8211; the outer wrapper for the navbar. Specifies the height and color, and will stretch the full width of the viewport.</p><pre><code class="language-scss">.navigation {
+  height: $nav-height;
+  background: $nav-background;
+}</code></pre><p><code>.nav-container</code> &#8211; the inner wrapper for the navbar. Defines how far the actual content should stretch.</p><pre><code class="language-scss">.nav-container {
+  max-width: $content-width;
+  margin: 0 auto;
+}</code></pre><p><code>.brand</code> &#8211; within <code>.navigation</code> and <code>.nav-container</code>, there are two colums &#8211; <code>.brand</code> on the left side, and <code>nav</code> on the right. The first thing I did with the nav list was float it to the right. Most of this is just styling; the important part is the absolute positioning and left float.</p><pre><code class="language-scss">.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: $nav-height;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  a,
+  a:visited {
+    color: $nav-font-color;
+    text-decoration: none;
+  }
+}</code></pre><p><img
+src="https://www.taniarascia.com/wp-content/uploads/Screen-Shot-2015-10-06-at-10.37.29-AM.png"><br
+/> <img
+src="https://www.taniarascia.com/wp-content/uploads/Screen-Shot-2015-10-06-at-10.37.39-AM.png"></p><p>And that&#8217;s the end of this tutorial! If you didn&#8217;t want to read through any of that, here&#8217;s the complete, fully functional three aspects &#8211; HTML, SCSS and JS. If you don&#8217;t use Sass and just want the CSS, you can very easily <a
+href="http://sassmeister.com/">convert it to CSS</a>.</p><p><a
+href="https://gist.github.com/taniarascia/56893ff29f64038dca91" class="button" target="_blank">View Source</a> <a
+href="http://codepen.io/taniarascia/pen/dYvvYv" class="button" target="_blank">View Demo</a></p><div
+class="alert"> <a
+href="http://twitter.com/intent/tweet?text=Responsive Dropdown Navigation Bar&url=https://www.taniarascia.com/responsive-dropdown-navigation-bar/&via=taniarascia" target="_blank" title="Share to Twitter" class="block"><img
+src="https://www.taniarascia.com/wp-content/themes/oblate/images/twitter.png" class="block-i" alt="Share this article"> Share this article!</a></div> </article><div
+id="comments" class="comments-area"><h3 class="comments-title"> 12 comments on &ldquo;Responsive Dropdown Navigation Bar&rdquo;</h3><ul
+class="comment-list"><li
+class="comment even thread-even depth-1 parent" id="comment-23"><div
+id="div-comment-23" class="comment-body"><div
+class="comment-author vcard"> <cite
+class="fn">Nilson Gaspar</cite> <span
+class="says">says:</span></div><div
+class="comment-meta commentmetadata"><a
+href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/#comment-23"> October 28, 2015 at 6:34 am</a></div><p>This is very helpful Tania, as whole the material in your page, mainly because the way you explain, is clear to any level of knowledge, but even more for beginners, like myself. I wonder if you would consider make a tutorial to do a hamburger menu slide navbar, like the one from the Jekyll theme Poole. I am currently trying to code one myself, with not much success, but i will build it (instead of using Poole&#8217;s i&#8217;d rather learn how to build one for future projects).</p><p>PS: i&#8217;m the guy that loves you, from reddit ?</p><div
+class="reply"><a
+rel='nofollow' class='comment-reply-link' href='https://www.taniarascia.com/responsive-dropdown-navigation-bar/?replytocom=23#respond' onclick='return addComment.moveForm( "div-comment-23", "23", "respond", "187" )' aria-label='Reply to Nilson Gaspar'>Reply</a></div></div><ul
+class="children"><li
+class="comment byuser comment-author-hi-tania bypostauthor odd alt depth-2 parent" id="comment-40"><div
+id="div-comment-40" class="comment-body"><div
+class="comment-author vcard"> <cite
+class="fn"><a
+href='http://www.taniarascia.com' rel='external nofollow' class='url'>Tania</a></cite> <span
+class="says">says:</span></div><div
+class="comment-meta commentmetadata"><a
+href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/#comment-40"> October 30, 2015 at 9:37 pm</a></div><p>Hello! Thank you for the nice comment. <img
+src="https://www.taniarascia.com/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /> I started this blog as a way to remember the things I learned, as I learned them, so the explanations were made to be as clear and precise and possible, regardless of experience level. I&#8217;m assuming you&#8217;re talking about <a
+href="http://lanyon.getpoole.com/" rel="nofollow">this theme</a> from Poole. I can definitely make a tutorial about that.</p><div
+class="reply"><a
+rel='nofollow' class='comment-reply-link' href='https://www.taniarascia.com/responsive-dropdown-navigation-bar/?replytocom=40#respond' onclick='return addComment.moveForm( "div-comment-40", "40", "respond", "187" )' aria-label='Reply to Tania'>Reply</a></div></div><ul
+class="children"><li
+class="comment even depth-3 parent" id="comment-41"><div
+id="div-comment-41" class="comment-body"><div
+class="comment-author vcard"> <cite
+class="fn">Nilson Gaspar</cite> <span
+class="says">says:</span></div><div
+class="comment-meta commentmetadata"><a
+href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/#comment-41"> October 31, 2015 at 11:59 am</a></div><p>Yes, that&#8217;s exactly the one. It is exactly how i want to be the end result, but i&#8217;m struggling to get it to work at the moment. I intend to build it by myself, with SASS, because i got addicted and i&#8217;m not ashamed of it 😀</p><div
+class="reply"><a
+rel='nofollow' class='comment-reply-link' href='https://www.taniarascia.com/responsive-dropdown-navigation-bar/?replytocom=41#respond' onclick='return addComment.moveForm( "div-comment-41", "41", "respond", "187" )' aria-label='Reply to Nilson Gaspar'>Reply</a></div></div><ul
+class="children"><li
+class="comment byuser comment-author-hi-tania bypostauthor odd alt depth-4 parent" id="comment-44"><div
+id="div-comment-44" class="comment-body"><div
+class="comment-author vcard"> <cite
+class="fn"><a
+href='http://www.taniarascia.com' rel='external nofollow' class='url'>Tania</a></cite> <span
+class="says">says:</span></div><div
+class="comment-meta commentmetadata"><a
+href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/#comment-44"> November 2, 2015 at 1:47 am</a></div><p><a
+href="http://www.taniarascia.com/off-canvas-navigation/" rel="nofollow">Here&#8217;s the tutorial!</a></p><div
+class="reply"><a
+rel='nofollow' class='comment-reply-link' href='https://www.taniarascia.com/responsive-dropdown-navigation-bar/?replytocom=44#respond' onclick='return addComment.moveForm( "div-comment-44", "44", "respond", "187" )' aria-label='Reply to Tania'>Reply</a></div></div><ul
+class="children"><li
+class="comment even depth-5 parent" id="comment-46"><div
+id="div-comment-46" class="comment-body"><div
+class="comment-author vcard"> <cite
+class="fn">Nilson Gaspar</cite> <span
+class="says">says:</span></div><div
+class="comment-meta commentmetadata"><a
+href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/#comment-46"> November 2, 2015 at 6:47 am</a></div><p>I will check and learn from it immediately, thanks for this Tania, cheers!</p><div
+class="reply"><a
+rel='nofollow' class='comment-reply-link' href='https://www.taniarascia.com/responsive-dropdown-navigation-bar/?replytocom=46#respond' onclick='return addComment.moveForm( "div-comment-46", "46", "respond", "187" )' aria-label='Reply to Nilson Gaspar'>Reply</a></div></div><ul
+class="children"><li
+class="comment byuser comment-author-hi-tania bypostauthor odd alt depth-6" id="comment-51"><div
+id="div-comment-51" class="comment-body"><div
+class="comment-author vcard"> <cite
+class="fn"><a
+href='http://www.taniarascia.com' rel='external nofollow' class='url'>Tania</a></cite> <span
+class="says">says:</span></div><div
+class="comment-meta commentmetadata"><a
+href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/#comment-51"> November 2, 2015 at 7:09 pm</a></div><p>Nilson,</p><p>I updated the Off Canvas Navigation post with an improved, simplified version.</p><div
+class="reply"><a
+rel='nofollow' class='comment-reply-link' href='https://www.taniarascia.com/responsive-dropdown-navigation-bar/?replytocom=51#respond' onclick='return addComment.moveForm( "div-comment-51", "51", "respond", "187" )' aria-label='Reply to Tania'>Reply</a></div></div></li></ul></li></ul></li></ul></li></ul></li></ul></li><li
+class="comment even thread-odd thread-alt depth-1 parent" id="comment-49"><div
+id="div-comment-49" class="comment-body"><div
+class="comment-author vcard"> <cite
+class="fn">Mark</cite> <span
+class="says">says:</span></div><div
+class="comment-meta commentmetadata"><a
+href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/#comment-49"> November 2, 2015 at 6:45 pm</a></div><p>I&#8217;ve been trying to replicate your example and follow along since it was first posted in early October and read it on Reddit.</p><p>However, I am having a bit of trouble and I don&#8217;t know if it has to do with the jQuery. Another, is that I cannot get the     content: &#8216; ?&#8217;;  to appear next to &#8220;Services&#8221; in the nav bar. It will not drop down or toggle when clicked upon.</p><p>I&#8217;ve installed Ruby 2.2.3, SASS, linked to Bootstrap CDN website in the header, and made sure my .js file is in the correct file location and linked in the HTML header.</p><p>Am I missing proper jQuery installation?</p><div
+class="reply"><a
+rel='nofollow' class='comment-reply-link' href='https://www.taniarascia.com/responsive-dropdown-navigation-bar/?replytocom=49#respond' onclick='return addComment.moveForm( "div-comment-49", "49", "respond", "187" )' aria-label='Reply to Mark'>Reply</a></div></div><ul
+class="children"><li
+class="comment byuser comment-author-hi-tania bypostauthor odd alt depth-2 parent" id="comment-50"><div
+id="div-comment-50" class="comment-body"><div
+class="comment-author vcard"> <cite
+class="fn"><a
+href='http://www.taniarascia.com' rel='external nofollow' class='url'>Tania</a></cite> <span
+class="says">says:</span></div><div
+class="comment-meta commentmetadata"><a
+href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/#comment-50"> November 2, 2015 at 7:54 pm</a></div><p>Hi Mark, I&#8217;d love to help figure out what the problem is. Is there any chance you can make a <a
+href="http://codepen.io" rel="nofollow">pen</a> or send me your code so I can see what&#8217;s going on?</p><p>Also, I noticed that you said &#8220;my js file is in the header&#8221;. It&#8217;s important that your JavaScript file go in the <em>footer</em>, below jQuery.</p><p>So, in the footer you should have one <code>script src</code> pointed at jQuery, and your custom JavaScript below it.</p><p>Additionally, this navigation does not require Bootstrap to function.</p><div
+class="reply"><a
+rel='nofollow' class='comment-reply-link' href='https://www.taniarascia.com/responsive-dropdown-navigation-bar/?replytocom=50#respond' onclick='return addComment.moveForm( "div-comment-50", "50", "respond", "187" )' aria-label='Reply to Tania'>Reply</a></div></div><ul
+class="children"><li
+class="comment even depth-3 parent" id="comment-52"><div
+id="div-comment-52" class="comment-body"><div
+class="comment-author vcard"> <cite
+class="fn">Mark</cite> <span
+class="says">says:</span></div><div
+class="comment-meta commentmetadata"><a
+href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/#comment-52"> November 3, 2015 at 7:07 pm</a></div><p>Sorry for the delay, I posted late and had to end the night to get up for work.</p><p>Here is the CodePen link with the code I was using.:</p><p><a
+href="http://codepen.io/anon/pen/epjXEe" rel="nofollow">http://codepen.io/anon/pen/epjXEe</a></p><p>Pretty much the same code in your tutorial (I strayed from copy/paste and tried to hand write as much as possible). I&#8217;m sorta guessing it has to do with proper jQuery linking.</p><p>The problem is, I cannot get that triangle to render next to services and activate the drop down menu using jQuery. I moved the script tags down into the footer as you suggested, but I&#8217;m still getting the same result that the Pen is rendering.</p><p>P.S. If I do not link to Bootstrap, the X and Menu option does not sit right. I commented out the body jQuery and the Bootstrap link.</p><div
+class="reply"><a
+rel='nofollow' class='comment-reply-link' href='https://www.taniarascia.com/responsive-dropdown-navigation-bar/?replytocom=52#respond' onclick='return addComment.moveForm( "div-comment-52", "52", "respond", "187" )' aria-label='Reply to Mark'>Reply</a></div></div><ul
+class="children"><li
+class="comment byuser comment-author-hi-tania bypostauthor odd alt depth-4 parent" id="comment-53"><div
+id="div-comment-53" class="comment-body"><div
+class="comment-author vcard"> <cite
+class="fn"><a
+href='http://www.taniarascia.com' rel='external nofollow' class='url'>Tania</a></cite> <span
+class="says">says:</span></div><div
+class="comment-meta commentmetadata"><a
+href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/#comment-53"> November 3, 2015 at 7:54 pm</a></div><p>Hi Mark,</p><p>The reason there&#8217;s a space at the top of the screen is because of browser consistency. If you add &#8220;Normalize.css&#8221; to your pen, it will take care of this issue, and prevent headache on further projects. Additionally, you can simply type</p><pre><code class="language-css">body {
+  margin: 0;
+}</code></pre><p>in your CSS to take care of that issue.  (I would always recommend using Normalize, though!)</p><p>First of all, you have your nav-toggle showing on desktop, which shouldn&#8217;t be the case, since the menu is already there.  So I added a display: none to mobile view.</p><pre><code class="language-css">.nav-mobile {
+  display: none;
+}</code></pre><p>You want to change all your links from&#8221;#&#8221; to &#8220;#!&#8221; to prevent them from doing any action on click. Going to &#8220;#&#8221; will reload the page at the top of the screen, wile &#8220;#!&#8221; will do nothing.</p><p>You already know that jQuery is loading properly, because the navigation is toggling on click, and the mobile menu appears when you click the hamburger.</p><p>The reason your dropdowns aren&#8217;t working is this: My code is <code>ul li a:not(:only-child):after</code>. This means &#8220;any list that has more lists&#8221; should have the arrow.</p><p>Here is your code:</p><pre><code class="language-html">&lt;li&gt;&lt;a href=&quot;#!&quot; rel=&quot;nofollow&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+  &lt;ul class=&quot;nav-dropdown&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot; rel=&quot;nofollow&quot;&gt;Web Design&lt;/a&gt;&lt;/li&gt;</code></pre><p>Here is the correct code:</p><pre><code class="language-html">&lt;li&gt;&lt;a href=&quot;#!&quot; rel=&quot;nofollow&quot;&gt;Services&lt;/a&gt;
+  &lt;ul class=&quot;nav-dropdown&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot; rel=&quot;nofollow&quot;&gt;Web Design&lt;/a&gt;</code></pre><p>Can you spot the difference? You <em>ended</em> your list and started a new one for &#8220;Web design&#8221; and so on. This needs to be a new list <em>nested</em> inside of your existing list.</p><p>Additionally, I would look into the way I&#8217;m nesting my SCSS. You&#8217;re simply writing vanilla (regular) CSS, like this:</p><pre><code class="language-css">nav {}
+nav ul {}
+nav ul li {}</code></pre><p>For Sass, you should be writing it like this:</p><pre><code class="language-scss">nav {
+  ul {
+    li {}
+  }
+}</code></pre><p>Finally, on a Codepen, you can choose &#8220;jQuery&#8221; in the options on the JavaScript panel and load it from there.</p><p>I hope that helps. <a
+href="http://codepen.io/taniarascia/pen/qOyvKg" rel="nofollow">Here is an updated version of your pen.</a></p><div
+class="reply"><a
+rel='nofollow' class='comment-reply-link' href='https://www.taniarascia.com/responsive-dropdown-navigation-bar/?replytocom=53#respond' onclick='return addComment.moveForm( "div-comment-53", "53", "respond", "187" )' aria-label='Reply to Tania'>Reply</a></div></div><ul
+class="children"><li
+class="comment even depth-5 parent" id="comment-54"><div
+id="div-comment-54" class="comment-body"><div
+class="comment-author vcard"> <cite
+class="fn">Mark</cite> <span
+class="says">says:</span></div><div
+class="comment-meta commentmetadata"><a
+href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/#comment-54"> November 3, 2015 at 9:35 pm</a></div><p>Oh! Thank you, Tania.</p><p>I added body {margin: 0;} and made sure to fix the nav lists and it worked.</p><div
+class="reply"><a
+rel='nofollow' class='comment-reply-link' href='https://www.taniarascia.com/responsive-dropdown-navigation-bar/?replytocom=54#respond' onclick='return addComment.moveForm( "div-comment-54", "54", "respond", "187" )' aria-label='Reply to Mark'>Reply</a></div></div><ul
+class="children"><li
+class="comment byuser comment-author-hi-tania bypostauthor odd alt depth-6" id="comment-55"><div
+id="div-comment-55" class="comment-body"><div
+class="comment-author vcard"> <cite
+class="fn"><a
+href='http://www.taniarascia.com' rel='external nofollow' class='url'>Tania</a></cite> <span
+class="says">says:</span></div><div
+class="comment-meta commentmetadata"><a
+href="https://www.taniarascia.com/responsive-dropdown-navigation-bar/#comment-55"> November 3, 2015 at 10:12 pm</a></div><p>You&#8217;re welcome! Let me know if you have any additional questions or requests.</p><div
+class="reply"><a
+rel='nofollow' class='comment-reply-link' href='https://www.taniarascia.com/responsive-dropdown-navigation-bar/?replytocom=55#respond' onclick='return addComment.moveForm( "div-comment-55", "55", "respond", "187" )' aria-label='Reply to Tania'>Reply</a></div></div></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul><div
+id="respond" class="comment-respond"><h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a
+rel="nofollow" id="cancel-comment-reply-link" href="/responsive-dropdown-navigation-bar/#respond" style="display:none;">Cancel reply</a></small></h3><form
+action="https://www.taniarascia.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p
+class="comment-notes"><span
+id="email-notes">Your email address will not be published.</span></p><p
+class="comment-form-comment"><label
+for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p
+class="comment-form-author"><label
+for="author">Name</label> <input
+id="author" name="author" type="text" value="" size="30" /></p><p
+class="comment-form-email"><label
+for="email">Email</label> <input
+id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" /></p><p
+class="comment-form-url"><label
+for="url">Website</label> <input
+id="url" name="url" type="text" value="" size="30" /></p><p
+class="form-submit"><input
+name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input
+type='hidden' name='comment_post_ID' value='187' id='comment_post_ID' /> <input
+type='hidden' name='comment_parent' id='comment_parent' value='0' /></p><p
+style="display: none;"><input
+type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="2af1cfa7e1" /></p><p
+style="display: none;"><input
+type="hidden" id="ak_js" name="ak_js" value="123"/></p></form></div></div></main> <aside> </aside> <footer><div
+class="container"><h1><a
+href="https://www.taniarascia.com/me">♥ Tania Rascia</a></h1></div> </footer><script type="text/javascript" src="https://www.taniarascia.com/wp-content/cache/minify/000000/M9RPzM4szk0t0Y_PzEvWT8svygUA.js"></script><script type='text/javascript'>var PowerStatsParams={"ajaxurl":"https:\/\/www.taniarascia.com\/wp-admin\/admin-ajax.php","ci":"YTo0OntzOjEyOiJjb250ZW50X3R5cGUiO3M6NDoicG9zdCI7czo4OiJjYXRlZ29yeSI7czo3OiIyLDYsOSw4IjtzOjEwOiJjb250ZW50X2lkIjtpOjE4NztzOjY6ImF1dGhvciI7czo4OiJoaS10YW5pYSI7fQ==.5b0dc0bfea1ffa9cfcb191f63f8d2e5e"};</script><script type="text/javascript" src="https://www.taniarascia.com/wp-content/cache/minify/000000/M9QvL9AtyC9PLdItLkksKUbj6hjo5yflJJak6mcV6xcUZRbnoogUJxdlFpTo5Wbm6ZiAdKbmJqWmgLgA.js"></script></body></html>

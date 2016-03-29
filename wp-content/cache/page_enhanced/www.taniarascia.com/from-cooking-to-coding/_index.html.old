@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><link rel="stylesheet" type="text/css" href="http://www.taniarascia.com/wp-content/cache/minify/000000/M9DPT8pJLEnVTy4u1i8uqcxJ1cvNzAMA.css" media="all" />
+
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="author" content="Tania Rascia">
+	<meta name="description" content=" &raquo; From Cooking to Coding - Tutorials by Tania Rascia ">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<title>From Cooking to Coding &#8211; Tania Rascia</title>
+<link rel="alternate" type="application/rss+xml" title="Tania Rascia &raquo; From Cooking to Coding Comments Feed" href="http://www.taniarascia.com/from-cooking-to-coding/feed/" />
+
+<link rel='stylesheet' id='OpenSans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C600%2C700%2C800&#038;ver=4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='NotoSerif-css'  href='//fonts.googleapis.com/css?family=Noto+Serif%3A400%2C700&#038;ver=4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='RobotoMono-css'  href='//fonts.googleapis.com/css?family=Roboto+Mono%3A400%2C300%2C500%2C700&#038;ver=4.4.1' type='text/css' media='all' />
+<link rel='https://api.w.org/' href='http://www.taniarascia.com/wp-json/' />
+<link rel='prev' title='Off Canvas Navigation' href='http://www.taniarascia.com/off-canvas-navigation/' />
+<link rel='next' title='What is Bootstrap and How Do I Use It?' href='http://www.taniarascia.com/what-is-bootstrap-and-how-do-i-use-it/' />
+<meta name="generator" content="WordPress 4.4.1" />
+<link rel="canonical" href="http://www.taniarascia.com/from-cooking-to-coding/" />
+<link rel='shortlink' href='http://www.taniarascia.com/?p=926' />
+<link rel="alternate" type="application/json+oembed" href="http://www.taniarascia.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.taniarascia.com%2Ffrom-cooking-to-coding%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.taniarascia.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.taniarascia.com%2Ffrom-cooking-to-coding%2F&#038;format=xml" />
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-42068444-1', 'auto');
+			ga('send', 'pageview');
+
+		</script>
+
+</head>
+
+<body>
+	<header>
+		<div class="flex vertical">
+			<div class="box one-fourth">
+				<a href="http://www.taniarascia.com"><img src="http://www.taniarascia.com/wp-content/themes/oblate/images/tr.png" class="logo-image" alt="Tania Rascia"></a>
+			</div>
+			<div class="box three-fourths social">
+				<a href="https://taniarascia.github.io/new-moon"><img src="http://www.taniarascia.com/wp-content/themes/oblate/images/newmoon.png" class="darken" alt="New Moon Syntax Theme"></a>&nbsp;
+				<a href="https://twitter.com/taniarascia"><img src="http://www.taniarascia.com/wp-content/themes/oblate/images/twitter.png" class="darken" alt="Twitter"></a>&nbsp;
+				<a href="https://github.com/taniarascia"><img src="http://www.taniarascia.com/wp-content/themes/oblate/images/github-dark.png" class="darken" alt="GitHub"></a>&nbsp;
+				<a href="http://www.taniarascia.com/feed"><img src="http://www.taniarascia.com/wp-content/themes/oblate/images/rss.png" class="darken" alt="RSS Feed"></a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<article id="post-926" class="single-article">
+	<div class="article-header center">
+						<h2>From Cooking to Coding</h2>
+		<time datetime="2015-11-06">
+			November 6, 2015		</time>
+		&nbsp;☍&nbsp;<span class="tags"><a href="http://www.taniarascia.com/tag/life/" rel="tag">life</a>	</div>
+	<p>It&#8217;s difficult to think of two careers more contrasting than chef and web developer. I would venture to put myself into a fairly unique category of people who have done both. Factor in my gender, with females making up an average of <a href="https://www.washingtonpost.com/news/morning-mix/wp/2014/05/29/most-google-employees-are-white-men-where-are-allthewomen/">39% of web developers</a> and <a href="http://www.npr.org/sections/thesalt/2015/10/02/443228792/taking-the-heat-is-foodie-culture-making-room-for-female-chefs">20% of chefs</a>, and that makes me rather unique indeed.</p>
+<p>Just how big are the differences between these two career paths? Looking at some studies of overall job satisfaction, the answer is&#8230;pretty big.</p>
+<p><strong>The 100 Best Jobs of 2015</strong><br />
+<a href="http://money.usnews.com/careers/best-jobs/web-developer">#11 &#8211; Web Developer</a></p>
+<p><strong>The 200 Worst Jobs of 2015</strong><br />
+<a href="http://www.careercast.com/slide/worst-jobs-2015-no-197-cook">#3 &#8211; Cook</a></p>
+<p>So, I basically went from having one of the absolute lowest rated jobs of all time to having one of the highest. If you&#8217;re wondering how much of an impact this change had on my life, know that it was massive.</p>
+<p>I don&#8217;t have to read any of those articles to know what makes working in a kitchen awful, and what makes designing and developing websites so great. I&#8217;ve lived it. And I&#8217;d like to share some of my experiences with you.</p>
+<p><span id="more-926"></span></p>
+<h3>A Little Backstory</h3>
+<p>In 1998, my older brother Nick had discovered the internet. He was always learning new things and honing new talents at that time &#8211; drawing, writing, music &#8211; and he loved to share what he learned with me. I will never forget him drawing a diagram explaining the meaning of <code>a href</code> and <code>img src</code> as I watched in uncomprehending fascination. </p>
+<p>Nick never viewed a page source again, but I was already hooked. Designing websites became one of my main hobbies and means of self-expression, along with art and music. </p>
+<p>Over the next decade, I witnessed first hand the evolution of design and code: the birth of CSS; layouts of frames to tables to floats; fixed and fluid width arguments.</p>
+<p>Throughout my adolescence, I never read a tutorial or book about web design. I simply wasn&#8217;t interested in &#8220;being a great developer&#8221; or really understanding how the code works. I just wanted to make something, and make it look a certain way, so I played around with it until it did. </p>
+<p>I never thought about college, and I never considered the web as a possible career field. Rather, I took every art class that was available and spent most of my time drawing. Art school seemed like the logical choice for me, so no one was more surprised than myself when I ended up going to culinary school.</p>
+<p>For the next 8 years, web design was forgotten. Life was all knives and flames, scars and stress. I had always been determined and unafraid of hard work &#8211; mandatory traits in the restaurant industry &#8211; and I quickly excelled from cook to chef-manager by 22. </p>
+<p>As the years wore on, the novelty of my new career faded, the urge to prove myself became pointless, and it became increasingly hard to understand or justify the choices I had made. At some point, I realized 8 years of culinary experience on my resume could only lead to 8 more years of culinary experience.</p>
+<p>I knew cooking wasn&#8217;t my passion, or even a job I wanted to tolerate anymore. I wanted to find out <a href="http://www.amazon.com/What-Color-Your-Parachute-2015/dp/1607745550">what color my parachute</a> was. I set off on a journey of self-discovery. I quit my job and went solo camping. </p>
+<p>I read a host of autobiographies, filled out tests and diagrams, and wrote journals. It always came back to the same main point.</p>
+<h4>What fascinates you so deeply that life, the world and time all cease to exist?</h4>
+<p>What can you work on for hours and feel like minutes have passed? What has endless possibilities for learning and improvement? What pulls you in and makes you forget everything else?</p>
+<p>For me, it was and has always been making websites.</p>
+<p>You might think that figuring that out was the easy part, and the journey from inexperienced chef with no portfolio to web developer was the hard part, but it was very much the opposite. Self-actualization is not easy; taking the time to be honest with yourself and reflect, learn, and improve is a process. Deciding to leave your stable job for the unknown is terrifying. As they say, nothing worth doing is easy.</p>
+<blockquote><p>&#8220;Nothing in the world is worth having or worth doing unless it means effort, pain, difficulty.&#8221;<br />
+<cite>Theodore Roosevelt</cite></p></blockquote>
+<h3>My Life as a Chef</h3>
+<p>As a chef, you will work long, and you will work hard. If I was lucky, I worked 60 hours a week. Some weeks it was 70 or 80. </p>
+<p>You will never see daylight again. Managers are expected to work both of the busy shifts &#8211; lunch and dinner. That means being in early enough to be ready in the morning, and being there late enough to ensure the night went smoothly. </p>
+<p>Chances are, a good majority of your friends and family have weekends off &#8211; you don&#8217;t, and you never will. If you can get one weekend off in a year, consider yourself lucky. You won&#8217;t be going to any of those family parties, concerts, festivals, events. Even on your rare day off, you can expect to be called in for an emergency.</p>
+<p>Fortunately you&#8217;re salaried, so when it&#8217;s slow you can send everyone home and work by yourself. Holidays are slow, but always open. Have fun spending Christmas Day deep cleaning the oven to stave off boredom.</p>
+<p>You don&#8217;t want to be one of those asshole chefs from TV &#8211; and you don&#8217;t want to be like all the unpleasant managers you&#8217;ve worked for over the years. Unfortunately, kitchen jobs are among the lowest paid there are, and you don&#8217;t have the power to change that. It doesn&#8217;t matter how nice you are, or how many free meals you give. Most of your employees will happily walk off in the middle of a shift if it means a fifty cent raise somewhere else. Others will simply never show up the day after they get hired. I probably hired 16 dishwashers in a single year once.</p>
+<p>Fortunately, if someone doesn&#8217;t show up, you know how to do their job. After flipping burgers during the lunch rush, running around to call all your purveyors place orders for the rest of the week while hoping you didn&#8217;t forget anything, jumping on the line to sauté for dinner while simultaneously doing prep because the prep guy didn&#8217;t show up, you have all the dishes to look forward to washing after eleven already stressful hours.</p>
+<p>Dating? Forget about it. <em>Maybe you want to meet up at 10pm on Thursday, I get out early on Thursdays!</em></p>
+<p>You might try to make connections and formulate friendships with people at work &#8211; but a majority of them spend their free time getting drunk, high, or doing drugs. That held no interest to me.  </p>
+<p>You will work your ass off. You will get burned and maimed. You will bleed and be scarred. Your superiors will yell at you for costs being too high. Your employees will threaten to quit if they don&#8217;t get a raise. You&#8217;ll miss out on Easter, Thanksgiving, Christmas. You will dread going to work in the morning, knowing that you don&#8217;t have enough employees to make it through the day, but you always end up making it in the end. You will be stressed out, tired and weary. And in the end, your reward will be nothing.</p>
+<h3>Resolution</h3>
+<p>Leaving the restaurant industry was the greatest thing I&#8217;ve ever done. Perhaps not every kitchen experience will be quite as bad mine. But for me, no kitchen experience can ever be as good as what I have now. Personal life and work life blur together. There is balance in my life &#8211; I can make time for friends and family and hobbies. I look forward to every new day, what I might learn, and how I can share it with others via this world wide wonderment. </p>
+<p>There are two very important things that can be gleaned from my life so far. First, do not make light of enormous decisions. I foolishly put no thought into my career, and paid for it in sweat and tears. Second, you don&#8217;t need anyone else to tell you what to do, or what you love, or how to achieve it. The internet is an amazing thing; you have the entirety of humanity&#8217;s knowledge at your fingertips at all times.</p>
+<h4>Whatever it is, you can do it. Believe in yourself, because you can. </h4>
+		<div class="alert">
+			<a href="http://twitter.com/intent/tweet?text=From Cooking to Coding&url=http://www.taniarascia.com/from-cooking-to-coding/&via=taniarascia" target="_blank" title="Share to Twitter" class="block"><img src="http://www.taniarascia.com/wp-content/themes/oblate/images/twitter.png" class="block-i" alt="Share this article"> Share this article!</a>
+		</div>
+</article>
+	<div id="comments" class="comments-area">
+
+					<h3 class="comments-title">
+			3 comments on &ldquo;From Cooking to Coding&rdquo;		</h3>
+			<ul class="comment-list">
+						<li class="comment even thread-even depth-1" id="comment-59">
+				<div id="div-comment-59" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn">Nilson Gaspar</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.taniarascia.com/from-cooking-to-coding/#comment-59">
+			November 10, 2015 at 7:45 am</a>		</div>
+
+		<p>This is one of those articles that feel very personal, with lots of feelz all over it. It is inspiring and motivational, and i can only speak for myself, i &#8220;drink knowledge&#8221; from your blog every single day, and i&#8217;ve improved alot, keep them coming, cheers.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://www.taniarascia.com/from-cooking-to-coding/?replytocom=59#respond' onclick='return addComment.moveForm( "div-comment-59", "59", "respond", "926" )' aria-label='Reply to Nilson Gaspar'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-90">
+				<div id="div-comment-90" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://www.michaelcandid.com' rel='external nofollow' class='url'>Papa Rascia</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://www.taniarascia.com/from-cooking-to-coding/#comment-90">
+			November 19, 2015 at 2:13 am</a>		</div>
+
+		<p>Your are an amazing daughter!</p>
+<p>I love you!!!!!</p>
+<p>Papa</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://www.taniarascia.com/from-cooking-to-coding/?replytocom=90#respond' onclick='return addComment.moveForm( "div-comment-90", "90", "respond", "926" )' aria-label='Reply to Papa Rascia'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li id="comment-383" class="pingback even thread-even depth-1">
+			<div class="comment-body">
+				Pingback: <a href='https://cooktocode.wordpress.com/2016/01/26/from-cooking-to-coding-a-journey-blog/' rel='external nofollow' class='url'>From Cooking to Coding &#8211; A Journey Blog | cooktocode</a> 			</div>
+</li><!-- #comment-## -->
+			</ul>
+			<!-- .comment-list -->
+
+			
+				
+										<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/from-cooking-to-coding/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="http://www.taniarascia.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+					<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name</label> <input id="author" name="author" type="text" value="" size="30" /></p>
+<p class="comment-form-email"><label for="email">Email</label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='926' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="22eb32b8bd" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="178"/></p>				</form>
+					</div><!-- #respond -->
+		
+	</div>
+	<!-- .comments-area -->
+
+				</main>
+	<aside>
+</aside>		<footer>
+  <div class="container">
+    <h1><a href="http://www.taniarascia.com/me">♥ Tania Rascia</a></h1>
+  </div>
+</footer>
+<script type="text/javascript" src="http://www.taniarascia.com/wp-content/cache/minify/000000/M9RPzM4szk0t0Y_PzEvWT8svygUA.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var PowerStatsParams = {"ajaxurl":"http:\/\/www.taniarascia.com\/wp-admin\/admin-ajax.php","ci":"YTo0OntzOjEyOiJjb250ZW50X3R5cGUiO3M6NDoicG9zdCI7czo4OiJjYXRlZ29yeSI7czo1OiIyMiwyMyI7czoxMDoiY29udGVudF9pZCI7aTo5MjY7czo2OiJhdXRob3IiO3M6ODoiaGktdGFuaWEiO30=.9c3360fdb9a1e2bbb0b1c1e70a5a3097"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.taniarascia.com/wp-content/cache/minify/000000/M9QvL9AtyC9PLdItLkksKUbj6hjo5yflJJak6mcV6xcUZRbn6piAlKTmJqWm6OVm5gEA.js"></script>
+</body>
+
+  </html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using disk
+Page Caching using disk: enhanced
+
+ Served from: www.taniarascia.com @ 2016-01-26 23:11:52 by W3 Total Cache -->
