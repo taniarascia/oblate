@@ -169,7 +169,10 @@ span.tags a {
 }
 
 .avatar {
-  display: none;
+  float: left;
+  margin-right: 1rem;
+  margin-top: .5rem;
+  border-radius: 50%;
 }
 
 .logged-in-as {

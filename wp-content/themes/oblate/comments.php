@@ -16,7 +16,7 @@ if ( post_password_required() ) {
 				<?php
 				wp_list_comments( array(
 					'short_ping'  => true,
-					'avatar_size' => 20,
+					'avatar_size' => 50,
 				) );
 			?>
 			</ul>
