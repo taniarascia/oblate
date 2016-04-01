@@ -8,7 +8,8 @@
 	border: 1px solid $border;
 	margin: auto auto 6px;
 	max-width: 100%;
-  font-family: $heading-font-family;
+  font-family: Menlo, 'Roboto Mono', monospace;
+  font-size: .85rem;
   transition: ease .2s all; 
 }
 // Forms Output CSS
