@@ -531,20 +531,22 @@ img {
 			background-position: 0% 43%
 		}
 	}
+	
 	.shell {
+		padding-top: 1rem;
 		margin-top: 2rem;
 		border-radius: 4px;
 		border: 1px solid RGBA(51, 54, 57, .9);
 		box-shadow: 0px 5px 50px rgba(0, 0, 0, .5);
 		background: RGBA(60, 63, 65, .9);
-		max-width: 850px;
+		max-width: 1000px;
 		margin-left: auto;
 		margin-right: auto;
 		time {
 			font-family: Menlo, 'Roboto Mono', monospace;
 			color: #94C7B5;
-			text-transform: lowercase;
 			padding-left: 1rem;
+			text-transform: none;
 		}
 	}
 	footer h1 a {
@@ -563,6 +565,8 @@ img {
 	padding-bottom: .5rem;
 	color: $sub-font-color;
 	font-family: Menlo, 'Roboto Mono', monospace;
+	line-height: 1;
+	max-width: 1000px;
 	&:hover {
 		background: rgba(0, 5, 15, .1);
 	}
@@ -592,10 +596,12 @@ img {
 
 @media screen and (min-width: $content-width) {
 	.ascii {
-		display: block;
+		display: inline-block;
 		color: #c4c5c6;
+		font-family: Menlo, 'Roboto Mono', monospace;
 		-webkit-font-smoothing: subpixel-antialiased;
 		line-height: 1;
+		font-size: .95rem;
 		overflow: hidden; 
 	}
 }
@@ -613,6 +619,9 @@ img {
 	}
 }
 
+.text-center {
+	text-align: center;
+}
 ::selection {
 	background: rgba(0, 0, 0, .1);
 }
