@@ -1,37 +1,30 @@
-<?php get_header();?>
+<?php get_header(); ?>
 	<main class="container">
-<?php if (have_posts()) : ?>
-<?php $post = $posts[0]; $c=0;?>
-<?php while (have_posts()) : the_post();
- $c++;
-if( !$paged && $c == 1 && is_front_page()) :?>
-
-<article id="post-<?php the_ID(); ?>" class="first">
-	<div class="article-header center">
-		<?php  $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' );
-	 $url = $thumb['0']; if (get_post_thumbnail_id()) {?><img src="<?php echo $url;?>" class="article-image" alt="<?php the_title();?>"><?php } ?>
-		<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
-		<time datetime="<?php the_time('Y-m-d');?>">
-			<?php the_time('F j, Y');?>
-		</time>
-	</div> 
-	 <?php the_content(); ?>
-</article>
-
-<?php else :?>
-			<?php get_template_part( 'content', get_post_format() );
-		 endif;
-			endwhile;?>
-			<div class="posts-links">
+	<section class="shell">
+	<pre class="ascii">	
+	 _              _                          _                            
+	| |            (_)                        (_)                           
+	| |_ __ _ _ __  _  __ _ _ __ __ _ ___  ___ _  __ _   ___ ___  _ __ ___  
+	| __/ _` | '_ \| |/ _` | '__/ _` / __|/ __| |/ _` | / __/ _ \| '_ ` _ \ 
+	| || (_| | | | | | (_| | | | (_| \__ \ (__| | (_| || (_| (_) | | | | | |
+	 \__\__,_|_| |_|_|\__,_|_|  \__,_|___/\___|_|\__,_(_)___\___/|_| |_| |_|
+ </pre>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+		
+		get_template_part( 'content', get_post_format() );
+		
+			endwhile; ?>
+			
+			<!--<div class="posts-links">
 				<div class="left">
-					<?php previous_posts_link();?>
+					<?php previous_posts_link(); ?>
 				</div>
 				<div class="right">
 					<?php next_posts_link(); ?>
 				</div>
 			</div>
-			<?php endif;
-		?>
+<?php endif; ?> -->
+		</section>
 	</main>
-	<?php get_sidebar();?>
-		<?php get_footer();?>
+	<?php get_sidebar(); ?>
+		<?php get_footer(); ?>
