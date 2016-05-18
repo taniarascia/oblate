@@ -40,7 +40,8 @@
 
 </head>
 
-<?php if ( is_front_page() ) { ?><body class="front-page"><?php } else { ?><body><?php } ?>
+
+	<body>
 	<header>
 		<div class="flex vertical">
 			<div class="box one-fourth">

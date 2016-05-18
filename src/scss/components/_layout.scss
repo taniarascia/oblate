@@ -293,7 +293,6 @@ time {
 	font-size: 1rem;
 	margin-bottom: 20px;
 	font-weight: 600;
-	text-transform: uppercase;
 	padding-left: 5px;
 	display: inline-block;
 }
@@ -564,11 +563,10 @@ img {
 	padding-top: .5rem;
 	padding-bottom: .5rem;
 	color: $sub-font-color;
-	font-family: Menlo, 'Roboto Mono', monospace;
 	line-height: 1;
 	max-width: 1000px;
 	&:hover {
-		background: rgba(0, 5, 15, .1);
+		background: rgba(0, 5, 15, .05);
 	}
 	.article-header-single {
 		margin-bottom: .5rem;
@@ -577,16 +575,8 @@ img {
 		color: $font-color;
 	}
 	h2 {
-		letter-spacing: normal;
-		display: inline;
-		font-size: 1rem;
-		font-family: Menlo, 'Roboto Mono', monospace;
+		font-size: 1.8rem;
 		line-height: 1.1;
-		color: #ffeead;
-		&:hover {
-			background: #eeeeee;
-			color: $font-color;
-		}
 	}
 }
 
@@ -611,7 +601,7 @@ img {
 		padding-top: 1rem;
 		padding-bottom: 1rem;
 		h2 {
-			font-size: 1rem;
+			font-size: 1.5rem;
 		}
 	}
 	.no-image {
