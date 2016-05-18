@@ -602,6 +602,11 @@ img {
 		h2 {
 			font-size: 1.5rem;
 		}
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
 	}
 	.no-image {
 		margin-left: 115px;
