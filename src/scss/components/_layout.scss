@@ -480,9 +480,9 @@ img {
 }
 
 .front-page {
-	background: linear-gradient(to top right, #005c97, #F15335);
+	background: linear-gradient(to bottom left, #283048, #005c97, #7474BF, #F3A183, #EC6F66);
 	background-size: 300% 300%;
-	background-position: fixed;
+	background-attachment: fixed;
 	-webkit-animation: Gradient 58s ease infinite;
 	-moz-animation: Gradient 58s ease infinite;
 	-o-animation: Gradient 58s ease infinite;
@@ -554,8 +554,7 @@ img {
 	}
 	header {
 		border-radius: 4px;
-		background: rgba(200, 200, 200, .5);
-		border-bottom: 1px solid rgba(200, 200, 200, .55);
+		background: rgba(0,0,0,.3);
 	}
 }
 
@@ -595,6 +594,7 @@ img {
 	.ascii {
 		display: block;
 		color: #c4c5c6;
+		-webkit-font-smoothing: subpixel-antialiased;
 	}
 }
 
