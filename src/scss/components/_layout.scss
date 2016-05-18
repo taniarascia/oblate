@@ -595,6 +595,8 @@ img {
 		display: block;
 		color: #c4c5c6;
 		-webkit-font-smoothing: subpixel-antialiased;
+		line-height: 1;
+		overflow: auto;
 	}
 }
 
