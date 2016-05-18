@@ -602,6 +602,8 @@ img {
 		h2 {
 			font-size: 1.5rem;
 		}
+	}
+	.article-header-single {
 		&::after {
 			content: '';
 			display: block;
