@@ -1,25 +1,23 @@
-<?php get_header();?>
-	<main class="large-container">
-		<?php
-		// Start the loop.
-		while ( have_posts() ) : the_post();?>
+<?php get_header(); ?>
 
-			<article id="post-<?php the_ID(); ?>">
-				<h2><?php the_title();?></h2>
-				<div class="flex-responsive">
-					<div class="box pad">
-						<p>
-							<?php the_content(); ?>
-						</p>
-					</div>
-					<?php if(get_post_thumbnail_id()) {?><div class="box pad">
-						<img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>">
-					</div><?php } ?>
-				</div>
-			</article>
+<main class="main-content">
+	
+	<section class="single">
 
-			<?php // End the loop.
-		endwhile;
+		<div class="small-container">
+
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+
+			get_template_part( 'content-page', get_post_format() );
+		
+			endwhile;
+		endif;
 		?>
-	</main>
-	<?php get_footer();?> 
+
+		</div>
+	
+	</section>
+
+</main>
+
+<?php get_footer(); ?>

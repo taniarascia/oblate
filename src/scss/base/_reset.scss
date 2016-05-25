@@ -1,0 +1,14 @@
+/* Reset
+  =============== */
+
+// Reset box sizing to border box
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+// Remove figure margin
+figure {
+	margin: 0;
+}

@@ -40,10 +40,14 @@ add_action( 'wp_enqueue_scripts', 'oblate_scripts' );
 
 // Google Fonts
     function load_fonts() {
-			      wp_register_style('SourceSansPro', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900');
-			      wp_register_style('RobotoMono', '//fonts.googleapis.com/css?family=Roboto+Mono:400,300,500,700');
-						wp_enqueue_style( 'SourceSansPro');
+			      wp_register_style('Muli', '//fonts.googleapis.com/css?family=Muli:400');
+			      wp_register_style('Poppins', '//fonts.googleapis.com/css?family=Poppins:400,600');
+			      wp_register_style('RobotoMono', '//fonts.googleapis.com/css?family=Roboto+Mono:400,500');
+			      wp_register_style('FontAwesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
+						wp_enqueue_style( 'Muli');
+						wp_enqueue_style( 'Poppins');
 						wp_enqueue_style( 'RobotoMono');
+						wp_enqueue_style( 'FontAwesome');
         }
     
     add_action('wp_print_styles', 'load_fonts');
@@ -77,7 +81,6 @@ function disable_emojicons_tinymce( $plugins ) {
 // WordPress Titles
 add_theme_support( 'title-tag' );
 
-
 // Disable XML RPC
 add_filter('xmlrpc_enabled', '__return_false');
 
@@ -107,14 +110,14 @@ function meta_og() {
 				array_pop($excerptwords);
 				$excerpt = implode(' ', $excerptwords) . $excerpt_more;
         ?>
- 		<meta name="author" content="Tania Rascia">
-    <meta name="description" content="<?php echo $excerpt; ?>"/>
-    <meta property="og:title" content="<?php echo the_title(); ?>"/>
-    <meta property="og:description" content="<?php echo $excerpt; ?>"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:url" content="<?php echo the_permalink(); ?>"/>
-    <meta property="og:site_name" content="<?php echo get_bloginfo(); ?>"/>
-    <meta property="og:image" content="<?php echo $img_src[0]; ?>"/>
+				<meta name="author" content="Tania Rascia">
+				<meta name="description" content="<?php echo $excerpt; ?>"/>
+				<meta property="og:title" content="<?php echo the_title(); ?>"/>
+				<meta property="og:description" content="<?php echo $excerpt; ?>"/>
+				<meta property="og:type" content="article"/>
+				<meta property="og:url" content="<?php echo the_permalink(); ?>"/>
+				<meta property="og:site_name" content="<?php echo get_bloginfo(); ?>"/>
+				<meta property="og:image" content="<?php echo $img_src[0]; ?>"/>
  
 <?php
     } else {

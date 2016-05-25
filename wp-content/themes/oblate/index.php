@@ -1,25 +1,28 @@
 <?php get_header(); ?>
-	<main class="container">
-	<section class="shell">
-	<div class="text-center">
 
-		</div>
+<main class="main-content">
+
+	<div class="small-container">
+	
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 		
-		get_template_part( 'content', get_post_format() );
-		
-			endwhile; ?>
+get_template_part( 'content', get_post_format() );
+
+endwhile; ?>
 			
 			<div class="posts-links">
-				<div class="left">
+				<div class="pagination-left">
 					<?php previous_posts_link(); ?>
 				</div>
-				<div class="right">
+				<div class="pagination-right">
 					<?php next_posts_link(); ?>
 				</div>
 			</div>
+			
 <?php endif; ?> 
-		</section>
-	</main>
-	<?php get_sidebar(); ?>
-		<?php get_footer(); ?>
+
+	</div>
+
+</main>
+
+<?php get_footer(); ?>

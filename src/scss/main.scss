@@ -1,18 +1,17 @@
-/*! taniarascia.com
-*/
+/*! taniarascia.com */
 
 
-/* Base */ 
+/* Base */
 
-@import 'base/base'; // Library of variables and mixins
+@import 'base/variables';
+@import 'base/mixins'; 
+@import 'base/normalize'; 
+@import 'base/fonts'; 
+@import 'base/reset'; 
 
 /* Partials */
 
-@import 'components/normalize';
-@import 'components/layout'; 
-@import 'components/buttons'; 
+@import 'components/buttons';
 @import 'components/forms';
-@import 'components/tables'; 
-@import 'components/wordpress';
-@import 'components/code';
-@import 'components/flex'; 
+@import 'components/layout';
+@import 'components/code'; 

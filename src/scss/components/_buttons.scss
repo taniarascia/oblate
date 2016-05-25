@@ -2,29 +2,29 @@
 
 // Button Extend  
 .buttons {
-	color: $button-border;
+	color: white;
 	display: inline-block; 
-	padding: 8px 25px;
+	padding: 10px 25px 8px 25px;
 	text-align: center;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	line-height: 1.6;
 	text-decoration: none;
 	white-space: nowrap;
-	background: transparent;
-	border-radius: 4px;
-	border: 1px solid $border;
+	background: $three;
+	border-radius: 30px;
+	border: 1px solid $three;
 	cursor: pointer;
 	font-weight: 600;
-	font-family: $button;
 	margin: 5px 0;
   box-shadow: 0px 1px 1px rgba(0,0,0,.1);
-	transition: all .3s ease;  
+	text-transform: uppercase;
+	font-family: 'Poppins', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 .buttons-hover {
 	border-bottom: 0;
-	color: $button-border;
+	color: $three;
 	background: transparent;
-	border: 1px solid $border-hover;
+	border: 1px solid $three;
   text-decoration: none;
 }
 // Button Output
