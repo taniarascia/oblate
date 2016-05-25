@@ -14,7 +14,7 @@ pre .terminal {
 code[class*="language-"],
 pre[class*="language-"],
 pre code {
-	color: $font-color;
+	color: #c4c5c6;
 	font-family: $code;
 	direction: ltr;
 	text-align: left;
@@ -43,8 +43,8 @@ pre code {
 	padding: 1rem;
 	margin: 1.5rem 0;
 	overflow: auto;
-	border: 0px solid #efefef;
-	background-color: #efefef;
+	border: 0px solid #353535;
+	background-color: #353535;
 }
 
 /* Inline code */
@@ -67,12 +67,12 @@ pre code {
 	color: $font-color;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
-$string: darken($four, 5%);
+$string: #99CC99;
 code[class*=language-css],
 code[class*=language-scss],
 code[class*=language-less],
 code[class*=language-sass] {
-	color: $six;
+	color: #CC99CC;
 }
 .token.doctype {
 	background: #000000;
@@ -81,7 +81,7 @@ code[class*=language-sass] {
 .token.comment,
 .token.prolog,
 .token.cdata {
-	color: #787878;
+	color: #8a8b8d;
 }
 .token.namespace {
 	opacity: .7;
@@ -91,17 +91,17 @@ code[class*=language-sass] {
 	color: $string;
 }
 .token.punctuation {
-	color: #454545;
+	color: #dedede;
 }
 .token.operator {
-	color: #303030;
+	color: #cdcdcd;
 	/* no highlight */
 }
 .token.variable {
-	color: darken($three, 5%);
+	color: #f2777a;
 }
 .token.property {
-	color: #303030;
+	color: #cdcdcd;
 }
 .token.entity,
 .token.url,
@@ -111,28 +111,27 @@ code[class*=language-sass] {
 .token.constant,
 .token.regex,
 .token.inserted {
-	color: darken($two, 10%);
+	color: #F99157;
 }
 .token.delimiter {
-	background: #e7e7e7;
-	color: #303030;
+	background: #000;
+	color: #fff;
 	padding: 1px 2px;
 }
 .token.atrule {
-	color: $three;
+	color: #CC99CC;
 }
 .token.keyword {
-	color: $six;
-	font-weight: 600;
+	color: #ffeead;
 }
 .language-autohotkey .token.selector {
 	color: $two;
 }
 .token.attr-name {
-	color: $six;
+	color: #e3c485;
 }
 .token.function {
-	color: #222;
+	color: #6699CC;
 }
 .token.class-name {
 	color: $six;
@@ -141,16 +140,22 @@ code[class*=language-sass] {
 .language-autohotkey .token.tag {
 	color: darken($three, 5%);
 }
-.token.tag,
+.token.tag {
+	color: #6699CC;
+}
 .language-autohotkey .token.keyword {
-	color: darken($five, 10%);
+	color: #ffeead;
 }
 .token.selector {
-	color: darken($five, 10%);
+	color: #e3c485;
 }
 .token.italic {
 	font-style: italic;
 }
 .language-html .token.punctuation {
-	color: #303030;
+	color: #69c;
+}
+
+mark {
+	background: #ffeead;
 }
