@@ -14,7 +14,7 @@ pre .terminal {
 code[class*="language-"],
 pre[class*="language-"],
 pre code {
-	color: #c4c5c6;
+	color: #D5D5D5;
 	font-family: $code;
 	direction: ltr;
 	text-align: left;
@@ -43,8 +43,8 @@ pre code {
 	padding: 1rem;
 	margin: 1.5rem 0;
 	overflow: auto;
-	border: 0px solid #353535;
-	background-color: #353535;
+	border: 0px solid #3B3B3B;
+	background-color: #3B3B3B;
 }
 
 /* Inline code */
@@ -67,7 +67,7 @@ pre code {
 	color: $font-color;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
-$string: #99CC99;
+$string: #A8D3A9;
 code[class*=language-css],
 code[class*=language-scss],
 code[class*=language-less],
@@ -81,7 +81,7 @@ code[class*=language-sass] {
 .token.comment,
 .token.prolog,
 .token.cdata {
-	color: #8a8b8d;
+	color: #A9A9A9;
 }
 .token.namespace {
 	opacity: .7;
@@ -91,17 +91,17 @@ code[class*=language-sass] {
 	color: $string;
 }
 .token.punctuation {
-	color: #dedede;
+	color: #D5D5D5;
 }
 .token.operator {
-	color: #cdcdcd;
+	color: #D5D5D5;
 	/* no highlight */
 }
 .token.variable {
-	color: #f2777a;
+	color: #F78D8C;
 }
 .token.property {
-	color: #cdcdcd;
+	color: #D5D5D5;
 }
 .token.entity,
 .token.url,
@@ -111,7 +111,7 @@ code[class*=language-sass] {
 .token.constant,
 .token.regex,
 .token.inserted {
-	color: #F99157;
+	color: #FCA369;
 }
 .token.delimiter {
 	background: #000;
@@ -119,7 +119,7 @@ code[class*=language-sass] {
 	padding: 1px 2px;
 }
 .token.atrule {
-	color: #CC99CC;
+	color: #D6ACD6;
 }
 .token.keyword {
 	color: #ffeead;
@@ -128,32 +128,32 @@ code[class*=language-sass] {
 	color: $two;
 }
 .token.attr-name {
-	color: #e3c485;
+	color: #FFD479;
 }
 .token.function {
-	color: #6699CC;
+	color: #76D4D6;
 }
 .token.class-name {
-	color: #CC99CC; 
+	color: #D6ACD6; 
 }
 .token.deleted,
 .language-autohotkey .token.tag {
 	color: darken($three, 5%);
 }
 .token.tag {
-	color: #6699CC;
+	color: #78AAD6;
 }
 .language-autohotkey .token.keyword {
 	color: #ffeead;
 }
 .token.selector {
-	color: #e3c485;
+	color: #FFD479;
 }
 .token.italic {
 	font-style: italic;
 }
 .language-html .token.punctuation {
-	color: #69c;
+	color: #78AAD6;
 }
 
 mark {
