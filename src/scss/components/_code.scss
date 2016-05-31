@@ -191,3 +191,7 @@ code[class*=language-sass] {
 mark {
 	background: #ffeead;
 }
+
+::selection {
+	background: rgba(120,120,120,.4);
+}

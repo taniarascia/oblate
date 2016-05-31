@@ -3,13 +3,14 @@
 // Forms Extend
 .forms {
 	padding: 12px;
-	border-radius: 4px;
+	border-radius: 0;
 	border: 1px solid $border;
 	margin: auto auto 6px;
 	max-width: 100%;
   font-family: $code;
   font-size: .85rem;
   transition: ease .2s all; 
+	background: #efefef;
 }
 // Forms Output CSS
 input {

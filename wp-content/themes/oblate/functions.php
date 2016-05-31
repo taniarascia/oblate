@@ -28,7 +28,6 @@ function modify_read_more_link() {
 return '<p class="right-text"><a class="button" href="' . get_permalink() . '">Read More</a></p>';
 }
 
-
 // Add Stylesheets
 function oblate_scripts() {
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css' );

@@ -31,9 +31,18 @@ if ( post_password_required() ) {
 					<p class="no-comments">
 						<?php _e( 'Comments are closed.' ); ?>
 					</p>
-					<?php endif; ?>
+					<?php endif; 
 
-						<?php comment_form(); ?>
+					$args = array('comment_notes_after' => '<p style="font-size: .9rem;margin-bottom:1rem;"><a href="https://en.support.wordpress.com/markdown-quick-reference/">Markdown</a> is enabled in comments. If you would like to post code in your comments, please indent your code by four spaces or wrap in three back ticks. HTML/PHP code must be <a href="http://www.freeformatter.com/html-escape.html">escaped</a>. </p>
+					<p style="font-size:.9rem;"><strong>Example:</p></strong>
+<pre>```
+class Voila {
+public:
+  // Voila
+  static const string VOILA = "Voila";
+}
+```
+</pre>'); comment_form( $args ); ?>
 
 	</div>
 	<!-- .comments-area -->
