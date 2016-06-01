@@ -1,6 +1,6 @@
 <aside class="sidebar">
 
-	<h2 class="six">Getting Started Tutorials</h2>
+	<h2 class="four">Getting Started Tutorials</h2>
 
 	<a href="<?php site_url(); ?>/developing-a-wordpress-theme-from-scratch/"><img src="<?php site_url(); ?>/wp-content/uploads/wp-2-150x150.png" class="thumb">WordPress</a>
 	<a href="<?php site_url(); ?>/what-is-bootstrap-and-how-do-i-use-it/"><img src="<?php site_url(); ?>/wp-content/uploads/bs-150x150.png" class="thumb">Bootstrap</a>
@@ -12,13 +12,12 @@
 	<a href="<?php site_url(); ?>/local-environment/"><img src="<?php site_url(); ?>/wp-content/uploads/apache-1-150x150.png" class="thumb">Apache</a>
 	<a href="<?php site_url(); ?>/getting-started-with-aws-setting-up-a-virtual-server/"><img src="<?php site_url(); ?>/wp-content/uploads/aws-1-150x150.png" class="thumb">AWS</a>
 	
-	<h2 class="four">Personal Blogging Standards</h2>
+	<h2 class="six">Personal Blogging Standards</h2>
 	
 	<ul>
 		<li>No ads</li>
 		<li>No sponsored posts</li>
 		<li>No fluff</li>
-		<li>No bullshit</li>
 		<li>Define prerequisites</li>
 		<li>Define goals</li>
 		<li>Complete tutorials</li>

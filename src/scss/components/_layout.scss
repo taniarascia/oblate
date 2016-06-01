@@ -14,6 +14,7 @@ html {
 body {
 	color: $font-color;
 	background: $background;
+	position: relative;
 }
 
 a {
@@ -82,7 +83,8 @@ code {
 
 @include small-breakpoint {
 	.main-content {
-		margin: 115px 0 60px
+		margin: 60px 0;
+		padding-top: 30px;
 	}
 }
 
@@ -123,6 +125,7 @@ code {
 	width: 100%;
 	border-bottom: 1px solid $border;
 	background: white;
+	z-index: 2;
 	&:after {
 		content: '';
 		display: block;
@@ -650,21 +653,21 @@ a.social-icon {
 
 .sidebar {
 	display: none;
-	position: fixed;
+	position: absolute;
 	left: 0;
 	top: 0;
-	margin-top: 60px;
 	background: #343434;
 	height: 100%;
 	width: 250px;
 	padding: 1rem 0;
 	color: #cdcdcd;
 	font-size: .9rem;
+	float: left;
 	h2 {
-		margin: 2rem 0 1rem;
-		font-size: 1rem;
+		margin: 2rem .5rem 1rem;
+		font-size: .8rem;
 		color: $border;
-		text-indent: 1rem;
+		text-transform: uppercase;
 		&.one {
 			border-bottom: 2px solid $one;
 		}
