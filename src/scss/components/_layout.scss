@@ -656,46 +656,52 @@ a.social-icon {
 	position: absolute;
 	left: 0;
 	top: 0;
-	background: #343434;
-	height: 100%;
+	background: #efefef;
 	width: 250px;
-	padding: 1rem 0;
-	color: #cdcdcd;
+	padding: 0;
+	color: $font-color;
 	font-size: .9rem;
 	float: left;
 	h2 {
-		margin: 2rem .5rem 1rem;
+		margin-top: 2rem;
 		font-size: .8rem;
 		color: $border;
 		text-transform: uppercase;
+		color: white;
+		vertical-align: baseline;
+		padding: .75rem .5rem;
+		border-top-right-radius: 40px;
+		border-bottom-right-radius: 40px;
 		&.one {
-			border-bottom: 2px solid $one;
+			background: $one;
 		}
 		&.two {
-			border-bottom: 2px solid $two;
+			background: $two;
 		}
 		&.three {
-			border-bottom: 2px solid $three;
+			background: $three;
 		}
 		&.four {
-			border-bottom: 2px solid $four;
+			background: $four;
 		}
 		&.five {
-			border-bottom: 2px solid $five;
+			background: $five;
 		}
 		&.six {
-			border-bottom: 2px solid $six;
+			background: $six;
 		}
 	}
 	a {
 		display: block;
 		text-decoration: none;
-		color: white;
+		color: $font-color;
+		background: white;
 		font-weight: 600;
 		font-size: 1rem;
 		padding: .25rem 1rem;
+		margin-bottom: 3px;
 		&:hover {
-			background: lighten(#343434, 10%);
+			color: $five;
 		}
 	}
 	.thumb {
