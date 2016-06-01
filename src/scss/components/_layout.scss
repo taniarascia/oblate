@@ -225,6 +225,9 @@ code {
 			&.five,
 			&.six {
 				border-bottom: 1px solid $border;
+				&:hover {
+					color: $font-color;
+				}
 			}
 			&.one:hover {
 				border-bottom: 2px solid $one;
@@ -654,8 +657,11 @@ a.social-icon {
 	background: #343434;
 	height: 100%;
 	width: 250px;
-	padding: 2rem 0;
+	padding: 1rem 0;
+	color: #cdcdcd;
+	font-size: .9rem;
 	h2 {
+		margin: 2rem 0 1rem;
 		font-size: 1rem;
 		color: $border;
 		text-indent: 1rem;
@@ -712,5 +718,21 @@ a.social-icon {
 	}
 	.flex-column {
 		width: 50%;
+	}
+}
+
+a.twitter-link.button {
+	background: #049AE5;
+	border: 1px solid #049AE5;
+	text-transform: none;
+	&:hover,
+	&:focus,
+	&:active {
+		color: white;
+		background: darken(#049AE5, 10%);
+		border: 1px solid darken(#049AE5, 10%);
+	}
+	i {
+		vertical-align: middle;
 	}
 }

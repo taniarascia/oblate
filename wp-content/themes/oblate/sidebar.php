@@ -11,5 +11,17 @@
 	<a href="<?php site_url(); ?>/getting-started-with-grunt-and-sass/"><img src="<?php site_url(); ?>/wp-content/uploads/grunt-150x150.png" class="thumb">Grunt</a>
 	<a href="<?php site_url(); ?>/local-environment/"><img src="<?php site_url(); ?>/wp-content/uploads/apache-1-150x150.png" class="thumb">Apache</a>
 	<a href="<?php site_url(); ?>/getting-started-with-aws-setting-up-a-virtual-server/"><img src="<?php site_url(); ?>/wp-content/uploads/aws-1-150x150.png" class="thumb">AWS</a>
+	
+	<h2 class="four">Personal Blogging Standards</h2>
+	
+	<ul>
+		<li>No ads</li>
+		<li>No sponsored posts</li>
+		<li>No fluff</li>
+		<li>No bullshit</li>
+		<li>Define prerequisites</li>
+		<li>Define goals</li>
+		<li>Complete tutorials</li>
+	</ul>
 
 </aside>
