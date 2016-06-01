@@ -38,23 +38,22 @@ function oblate_scripts() {
 add_action( 'wp_enqueue_scripts', 'oblate_scripts' );
 
 // Google Fonts
-    function load_fonts() {
-			      wp_register_style('Muli', '//fonts.googleapis.com/css?family=Muli:400');
-			      wp_register_style('Poppins', '//fonts.googleapis.com/css?family=Poppins:400,600');
-			      wp_register_style('RobotoMono', '//fonts.googleapis.com/css?family=Roboto+Mono:400,500');
-			      wp_register_style('FontAwesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
-						wp_enqueue_style( 'Muli');
-						wp_enqueue_style( 'Poppins');
-						wp_enqueue_style( 'RobotoMono');
-						wp_enqueue_style( 'FontAwesome');
-        }
+function load_fonts() {
+	wp_register_style('Muli', '//fonts.googleapis.com/css?family=Muli:400');
+	wp_register_style('Poppins', '//fonts.googleapis.com/css?family=Poppins:400,600');
+	wp_register_style('RobotoMono', '//fonts.googleapis.com/css?family=Roboto+Mono:400,500');
+	wp_register_style('FontAwesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
+	wp_enqueue_style( 'Muli');
+	wp_enqueue_style( 'Poppins');
+	wp_enqueue_style( 'RobotoMono');
+	wp_enqueue_style( 'FontAwesome');
+}
     
-    add_action('wp_print_styles', 'load_fonts');
+add_action('wp_print_styles', 'load_fonts');
 
 // Disable Emoji Crap
 
 function disable_wp_emojicons() {
-
   // all actions related to emojis
   remove_action( 'admin_print_styles', 'print_emoji_styles' );
   remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
@@ -169,4 +168,3 @@ add_filter( 'excerpt_save_pre', 'filterCode', 9 );
 
 // Disable W3TC footer comment for all users
 add_filter( 'w3tc_can_print_comment', function( $w3tc_setting ) { return false; }, 10, 1 );
-?>

@@ -1,5 +1,5 @@
 /* Layout
-  =============== */
+=============== */
 
 
 /* Scaffolding */
@@ -73,6 +73,9 @@ code {
 	font-size: .9rem;
 }
 
+
+/* Containers */
+
 .main-content {
 	margin: 30px 0 35px;
 }
@@ -80,6 +83,15 @@ code {
 @include small-breakpoint {
 	.main-content {
 		margin: 115px 0 60px
+	}
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1350px) {
+	.front-page {
+		margin-left: 250px;
+		.small-container {
+			margin-left: 0;
+		}
 	}
 }
 
@@ -119,21 +131,37 @@ code {
 	a {
 		&.one {
 			border-bottom: 2px solid $one;
+			&:hover {}
 		}
 		&.two {
 			border-bottom: 2px solid $two;
+			&:hover {
+				color: $two;
+			}
 		}
 		&.three {
 			border-bottom: 2px solid $three;
+			&:hover {
+				color: $three;
+			}
 		}
 		&.four {
 			border-bottom: 2px solid $four;
+			&:hover {
+				color: $four;
+			}
 		}
 		&.five {
 			border-bottom: 2px solid $five;
+			&:hover {
+				color: $five
+			}
 		}
 		&.six {
 			border-bottom: 2px solid $six;
+			&:hover {
+				color: $six;
+			}
 		}
 		float: left;
 		width: 50%;
@@ -612,4 +640,77 @@ a.social-icon {
 
 .float-right {
 	float: right;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	margin-top: 60px;
+	background: #343434;
+	height: 100%;
+	width: 250px;
+	padding: 2rem 0;
+	h2 {
+		font-size: 1rem;
+		color: $border;
+		text-indent: 1rem;
+		&.one {
+			border-bottom: 2px solid $one;
+		}
+		&.two {
+			border-bottom: 2px solid $two;
+		}
+		&.three {
+			border-bottom: 2px solid $three;
+		}
+		&.four {
+			border-bottom: 2px solid $four;
+		}
+		&.five {
+			border-bottom: 2px solid $five;
+		}
+		&.six {
+			border-bottom: 2px solid $six;
+		}
+	}
+	a {
+		display: block;
+		text-decoration: none;
+		color: white;
+		font-weight: 600;
+		font-size: 1rem;
+		padding: .25rem 1rem;
+		&:hover {
+			background: lighten(#343434, 10%);
+		}
+	}
+	.thumb {
+		background: white;
+		box-sizing: content-box;
+		width: 30px;
+		height: 30px;
+		vertical-align: middle;
+		padding: 5px;
+		margin-right: 1rem;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.sidebar {
+		display: block;
+	}
+	/* Flex Grid */
+	.flex-row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.flex-column {
+		width: 50%;
+	}
 }
