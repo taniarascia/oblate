@@ -254,7 +254,7 @@ code {
 				border-bottom: 2px solid $four;
 			}
 			&.five:hover {
-				border-bottom: 2px solid $five;
+				border-bottom: 2px solid $five; 
 			}
 			&.six:hover {
 				border-bottom: 2px solid $six;
@@ -286,7 +286,7 @@ a.article-link {
 		&:hover,
 		&:focus,
 		&:active {
-			border-top: 1px solid $border;
+			border-top: 1px solid transparent;
 		}
 	}
 }
