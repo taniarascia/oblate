@@ -38,10 +38,11 @@ h4,
 h5 {
 	font-family: $header;
 	line-height: 1.2;
+	font-weight: 400;
 }
 
 h1 {
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 1.4rem;
 	margin-bottom: .25rem;
 	letter-spacing: -0.05rem;
@@ -62,6 +63,7 @@ h4 {
 
 h5 {
 	font-size: 1.2rem;
+	color: lighten($font-color, 25%);
 }
 
 @include small-breakpoint {
@@ -69,10 +71,16 @@ h5 {
 		font-size: 1.8rem;
 	}
 	h2 {
-		font-size: 1.7rem;
+		font-size: 2rem;
 	}
 	h3 {
+		font-size: 1.8rem;
+	}
+	h4 {
 		font-size: 1.6rem;
+	}
+	h5 {
+		font-size: 1.2rem;
 	}
 }
 
@@ -297,7 +305,7 @@ a .article-excerpt {
 	&:hover,
 	&:active,
 	&:focus {
-		background: #fbfbfa;
+		background: $light-background;
 	}
 }
 
@@ -344,12 +352,11 @@ a .all {
 	&:hover,
 	&:active,
 	&:focus {
-		background: white;
-		border-left: 1px solid $border;
-		border-right: 1px solid $border;
+		background: $light-background;
 	}
 	h1 {
 		margin-top: 0;
+		font-size: 1.6rem;
 	}
 }
 
@@ -380,6 +387,9 @@ a .all {
 @include small-breakpoint {
 	.single {
 		padding: 2rem;
+		h1 {
+			font-size: 2.5rem;
+		}
 	}
 }
 
@@ -518,7 +528,30 @@ a.social-icon {
 // Date and Time meta data below commentator's name
 .comment-meta.commentmetadata,
 .comment-notes {
-	font-size: .9rem;
+	font-size: .85rem;
+}
+
+#comments {
+	a {}
+}
+
+// Author name
+.comment-author {
+	cite.fn,
+	a {
+		font-style: normal;
+		font-size: 1.1rem;
+		font-weight: 600;
+		color: $font-color;
+		font-weight: 600;
+		font-family: $font-family;
+	}
+}
+
+.comment-meta {
+	a {
+		color: $font-color;
+	}
 }
 
 // Comment list
@@ -529,16 +562,6 @@ a.social-icon {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin-bottom: 40px;
-}
-
-// Author name
-.comment-author {
-	& cite.fn {
-		font-style: normal;
-		font-size: 1.2rem;
-		font-family: $header;
-		letter-spacing: -0.1rem;
-	}
 }
 
 // says:
@@ -598,7 +621,9 @@ a.social-icon {
 	font-size: .9rem;
 	border: 1px solid $six;
 	padding: 5px 15px 3px 15px;
-	&:hover {
+	&:hover,
+	&:focus,
+	&:active {
 		@extend .buttons-hover;
 		border: 1px solid $six;
 		color: $six;
@@ -676,7 +701,7 @@ a.social-icon {
 	float: left;
 	h2 {
 		margin-top: 2rem;
-		font-size: .8rem;
+		font-size: .9rem;
 		color: $border;
 		text-transform: uppercase;
 		color: white;
@@ -684,6 +709,8 @@ a.social-icon {
 		padding: .75rem .5rem;
 		border-top-right-radius: 40px;
 		border-bottom-right-radius: 40px;
+		font-family: $button-font;
+		font-weight: 600;
 		&.one {
 			background: $one;
 		}
@@ -750,6 +777,7 @@ a.twitter-link.button {
 	background: #049AE5;
 	border: 1px solid #049AE5;
 	text-transform: none;
+	margin: 2rem 0;
 	&:hover,
 	&:focus,
 	&:active {
