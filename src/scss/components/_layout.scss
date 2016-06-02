@@ -48,7 +48,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.3rem; 
+	font-size: 1.3rem;
 }
 
 h3 {
@@ -217,14 +217,12 @@ code {
 		.left {
 			position: absolute;
 			left: 0;
-			a {
-			}
+			a {}
 		}
 		.right {
 			position: absolute;
 			right: 0;
-			a {
-			}
+			a {}
 		}
 		a {
 			color: $font-color;
@@ -254,7 +252,7 @@ code {
 				border-bottom: 2px solid $four;
 			}
 			&.five:hover {
-				border-bottom: 2px solid $five; 
+				border-bottom: 2px solid $five;
 			}
 			&.six:hover {
 				border-bottom: 2px solid $six;
@@ -281,7 +279,8 @@ a.article-link {
 	&:active {
 		text-decoration: none;
 	}
-	&:first-of-type {
+	&:first-of-type,
+	&:last-of-type {
 		border-top: 1px solid transparent;
 		&:hover,
 		&:focus,
