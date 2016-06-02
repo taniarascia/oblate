@@ -10,7 +10,7 @@ html {
 	font-size: $font-size;
 }
 
-// Body base
+// Body base 
 body {
 	color: $font-color;
 	position: relative;
@@ -662,7 +662,7 @@ a.social-icon {
 	position: absolute;
 	left: 0;
 	top: 0;
-	background: #efefef;
+	background: white;
 	width: 200px;
 	padding: 0;
 	color: $font-color;
@@ -702,7 +702,7 @@ a.social-icon {
 		text-decoration: none;
 		color: $font-color;
 		font-weight: 600;
-		font-size: 1.1rem;
+		font-size: 1rem;
 		padding: 0 1rem;
 		margin-bottom: 3px;
 		&:hover {
