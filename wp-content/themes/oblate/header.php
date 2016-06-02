@@ -24,6 +24,7 @@
 			ga('create', 'UA-42068444-1', 'auto');
 			ga('send', 'pageview');
 		</script>
+		
 </head>
 
 <body>
@@ -31,8 +32,8 @@
 	<nav class="navigation">
 		<div class="left">
 			<a href="<?php echo site_url(); ?>" class="one"><img src="<?php bloginfo('template_directory'); ?>/images/tr.png" class="face" alt="Tania Rascia"></a>
-			<a href="<?php echo site_url(); ?>" class="two">Latest</a>
-			<a href="<?php echo site_url(); ?>/all" class="three">All</a>
+			<a href="<?php echo site_url(); ?>" class="two">Blog</a>
+			<a href="<?php echo site_url(); ?>/all" class="three">Archive</a>
 		</div>
 
 		<div class="right">

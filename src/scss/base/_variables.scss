@@ -17,7 +17,9 @@ $font-color: #404040;
 $font-size: 1rem;
 $line-height: 1.5;
 $font-family: 'Montserrat Light', Helvetica Neue, Helvetica, Arial, sans-serif;
-$header: 'Muli', Helvetica Neue, Helvetica, Arial, sans-serif;
+$header: 'Montserrat Light', Helvetica Neue, Helvetica, Arial, sans-serif;
+$nav: 'Montserrat Light', Helvetica Neue, Helvetica, Arial, sans-serif;
+$button-font: 'Poppins', Helvetica Neue, Helvetica, Arial, sans-serif;
 
 /* Borders */
 
@@ -36,3 +38,7 @@ $six: #795da3;
 /* Code */
 
 $code: Menlo, 'Roboto Mono', Courier New, monospace;
+
+/* Navigation */
+
+$nav-height: 80px;

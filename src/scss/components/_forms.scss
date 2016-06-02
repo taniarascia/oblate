@@ -4,13 +4,14 @@
 .forms {
 	padding: 12px;
 	border-radius: 0;
-	border: 1px solid $border;
+	border: 1px solid #efefef;
 	margin: auto auto 6px;
 	max-width: 100%;
   font-family: $code;
   font-size: .85rem;
   transition: ease .2s all; 
 	background: #efefef;
+	border-radius: 4px;
 }
 // Forms Output CSS
 input {
@@ -28,7 +29,7 @@ input {
 			outline: 0;
 		}
 		&:hover {
-			border: 1px solid darken(#C6C9CC, 5%);
+			border: 1px solid $border;
 		}
 	}
 }

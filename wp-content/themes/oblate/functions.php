@@ -39,11 +39,9 @@ add_action( 'wp_enqueue_scripts', 'oblate_scripts' );
 
 // Google Fonts
 function load_fonts() {
-	wp_register_style('Muli', '//fonts.googleapis.com/css?family=Muli:400');
 	wp_register_style('Poppins', '//fonts.googleapis.com/css?family=Poppins:400,600');
 	wp_register_style('RobotoMono', '//fonts.googleapis.com/css?family=Roboto+Mono:400,500');
 	wp_register_style('FontAwesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
-	wp_enqueue_style( 'Muli');
 	wp_enqueue_style( 'Poppins');
 	wp_enqueue_style( 'RobotoMono');
 	wp_enqueue_style( 'FontAwesome');

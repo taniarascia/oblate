@@ -13,8 +13,11 @@ html {
 // Body base
 body {
 	color: $font-color;
-	background: $background;
 	position: relative;
+}
+
+body .front-page {
+	background: $background;
 }
 
 a {
@@ -63,7 +66,7 @@ h5 {
 
 @include small-breakpoint {
 	h1 {
-		font-size: 1.6rem;
+		font-size: 1.8rem;
 	}
 	h2 {
 		font-size: 1.3rem;
@@ -78,19 +81,25 @@ code {
 /* Containers */
 
 .main-content {
-	margin: 30px 0 35px;
+	margin: 0;
 }
 
 @include small-breakpoint {
 	.main-content {
-		margin: 60px 0;
+		margin: $nav-height 0 0;
 		padding-top: 30px;
+	}
+}
+
+.front-page {
+	p {
+		color: lighten($font-color, 10%);
 	}
 }
 
 @media screen and (min-width: 1100px) and (max-width: 1350px) {
 	.front-page {
-		margin-left: 250px;
+		margin-left: 200px;
 		.small-container {
 			margin-left: 0;
 		}
@@ -169,12 +178,11 @@ code {
 		float: left;
 		width: 50%;
 		display: block;
-		height: 60px;
-		line-height: 60px;
-		font-size: .9rem;
-		text-transform: uppercase;
-		font-family: 'Poppins';
-		font-weight: 400;
+		height: $nav-height;
+		line-height: $nav-height;
+		font-size: .95rem;
+		font-family: $nav;
+		font-weight: 600;
 		padding-left: 20px;
 		padding-right: 20px;
 		color: $font-color;
@@ -185,7 +193,7 @@ code {
 		display: block;
 		height: 50px;
 		width: 50px;
-		padding: 5px;
+		padding: 15px;
 		box-sizing: content-box;
 		&::before,
 		&::after {
@@ -200,21 +208,19 @@ code {
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 60px;
+		height: $nav-height;
 		background: white;
 		border-bottom: 1px solid $border;
 		.left {
 			position: absolute;
 			left: 0;
 			a {
-				border-right: 1px solid $border;
 			}
 		}
 		.right {
 			position: absolute;
 			right: 0;
 			a {
-				border-left: 1px solid $border;
 			}
 		}
 		a {
@@ -261,7 +267,7 @@ time {
 	color: #a1a1a1;
 	text-transform: uppercase;
 	display: block;
-	font-family: 'Poppins';
+	font-family: $nav;
 	font-size: .9rem;
 }
 
@@ -285,14 +291,11 @@ a.article-link {
 a .article-excerpt {
 	color: $font-color;
 	border-bottom: 1px solid $border;
-	border-left: 1px solid transparent;
-	border-right: 1px solid transparent;
+	border-radius: 4px;
 	&:hover,
 	&:active,
 	&:focus {
 		background: white;
-		border-left: 1px solid $border;
-		border-right: 1px solid $border;
 	}
 }
 
@@ -313,7 +316,7 @@ a .article-excerpt {
 
 @include small-breakpoint {
 	.article-excerpt {
-		padding: 2rem;
+		padding: 3rem 2rem;
 	}
 }
 
@@ -368,7 +371,6 @@ a .all {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 30px;
-	border: 1px solid $border;
 	background: white;
 	padding: .5rem;
 }
@@ -456,10 +458,9 @@ blockquote {
 /* Footer */
 
 .footer {
-	padding: 3rem 0;
+	padding: 30px 0;
 	text-align: center;
-	background: #232323;
-	color: $background;
+	background: #fff;
 	.fa {
 		margin: .25rem;
 	}
@@ -481,11 +482,17 @@ blockquote {
 }
 
 a.social-icon {
-	color: $background;
+	color: darken($background, 10%);
 }
 
 .responsive-image {
 	max-width: 100%;
+}
+
+@include small-breakpoint {
+	.footer {
+		padding: 60px 0;
+	}
 }
 
 
@@ -660,10 +667,10 @@ a.social-icon {
 	left: 0;
 	top: 0;
 	background: #efefef;
-	width: 250px;
+	width: 200px;
 	padding: 0;
 	color: $font-color;
-	font-size: .9rem;
+	font-size: .95rem;
 	float: left;
 	h2 {
 		margin-top: 2rem;
@@ -698,10 +705,9 @@ a.social-icon {
 		display: block;
 		text-decoration: none;
 		color: $font-color;
-		background: white;
 		font-weight: 600;
-		font-size: 1rem;
-		padding: .25rem 1rem;
+		font-size: 1.1rem;
+		padding: 0 1rem;
 		margin-bottom: 3px;
 		&:hover {
 			color: $five;
@@ -715,6 +721,11 @@ a.social-icon {
 		vertical-align: middle;
 		padding: 5px;
 		margin-right: 1rem;
+	}
+	ul {
+		margin: 0;
+		padding: 0 1rem;
+		list-style: none;
 	}
 }
 
