@@ -47,8 +47,12 @@ h1 {
 	letter-spacing: -0.05rem;
 }
 
+h2 {
+	font-size: 1.3rem; 
+}
+
 h3 {
-	font-size: 1.8rem;
+	font-size: 1.2rem;
 }
 
 h4 {
@@ -65,7 +69,10 @@ h5 {
 		font-size: 1.8rem;
 	}
 	h2 {
-		font-size: 1.3rem;
+		font-size: 1.7rem;
+	}
+	h3 {
+		font-size: 1.6rem;
 	}
 }
 
@@ -291,7 +298,7 @@ a .article-excerpt {
 	&:hover,
 	&:active,
 	&:focus {
-		background: white;
+		background: #fbfbfa;
 	}
 }
 
