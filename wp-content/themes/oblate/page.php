@@ -1,23 +1,21 @@
 <?php get_header(); ?>
 
-<main class="main-content">
-	
-	<section class="single">
+	<main class="main-content">
 
-		<div class="small-container">
+		<section class="single">
 
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+			<div class="small-container">
 
-			get_template_part( 'content-page', get_post_format() );
-		
-			endwhile;
-		endif;
-		?>
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 
-		</div>
-	
-	</section>
+						get_template_part( 'content-page', get_post_format() );
 
-</main>
+						endwhile; endif; ?>
+
+			</div>
+
+		</section>
+
+	</main>
 
 <?php get_footer(); ?>

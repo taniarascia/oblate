@@ -38,8 +38,26 @@ $six: #795da3;
 
 /* Code */
 
-$code: Menlo, 'Roboto Mono', Courier New, monospace;
+$code: Menlo,
+'Roboto Mono',
+Courier New,
+monospace;
 
 /* Navigation */
 
 $nav-height: 80px;
+
+/* Variables */
+
+$string: #A8D3A9;
+$variable: #F78D8C;
+$property: #D5D5D5;
+$number: #FCA369;
+$operator: #cda869;
+$punctuation: #D5D5D5;
+$comment: #A9A9A9;
+$function: #76D4D6;
+$keyword: #ffeead;
+$attribute: #FFD479;
+$class: #D6ACD6;
+$tag: #78AAD6;

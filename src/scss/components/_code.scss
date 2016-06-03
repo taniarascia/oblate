@@ -1,3 +1,6 @@
+/* Code
+  =============== */
+
 .terminal {
 	padding: 1rem 1.5rem;
 	font-family: $code;
@@ -25,12 +28,7 @@ pre code {
 	word-break: normal;
 	line-height: 1.6;
 	font-weight: 400;
-	-moz-tab-size: 2;
-	-o-tab-size: 2;
 	tab-size: 2;
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
 	hyphens: none;
 	font-size: .9rem;
 	border-radius: 4px;
@@ -81,13 +79,14 @@ pre code {
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
-$string: #A8D3A9;
 code[class*=language-css],
 code[class*=language-scss],
 code[class*=language-less],
 code[class*=language-sass] {
 	color: #CC99CC;
 }
+
+/* Syntax Highlighting */
 
 .token.doctype {
 	background: #000000;
@@ -97,7 +96,7 @@ code[class*=language-sass] {
 .token.comment,
 .token.prolog,
 .token.cdata {
-	color: #A9A9A9;
+	color: $comment;
 }
 
 .token.namespace {
@@ -110,20 +109,19 @@ code[class*=language-sass] {
 }
 
 .token.punctuation {
-	color: #D5D5D5;
+	color: $punctuation;
 }
 
 .token.operator {
-	color: #D5D5D5;
-	/* no highlight */
+	color: $operator;
 }
 
 .token.variable {
-	color: #F78D8C;
+	color: $variable;
 }
 
 .token.property {
-	color: #D5D5D5;
+	color: $property;
 }
 
 .token.entity,
@@ -134,7 +132,7 @@ code[class*=language-sass] {
 .token.constant,
 .token.regex,
 .token.inserted {
-	color: #FCA369;
+	color: $number;
 }
 
 .token.delimiter {
@@ -144,11 +142,11 @@ code[class*=language-sass] {
 }
 
 .token.atrule {
-	color: #D6ACD6;
+	color: $function;
 }
 
 .token.keyword {
-	color: #ffeead;
+	color: $keyword;
 }
 
 .language-autohotkey .token.selector {
@@ -156,15 +154,15 @@ code[class*=language-sass] {
 }
 
 .token.attr-name {
-	color: #FFD479;
+	color: $attribute;
 }
 
 .token.function {
-	color: #76D4D6;
+	color: $function;
 }
 
 .token.class-name {
-	color: #D6ACD6;
+	color: $class;
 }
 
 .token.deleted,
@@ -173,25 +171,17 @@ code[class*=language-sass] {
 }
 
 .token.tag {
-	color: #78AAD6;
+	color: $tag;
 }
 
 .language-autohotkey .token.keyword {
-	color: #ffeead;
+	color: $keyword;
 }
 
 .token.selector {
-	color: #FFD479;
+	color: $attribute;
 }
 
 .token.italic {
 	font-style: italic;
-}
-
-mark {
-	background: #ffeead;
-}
-
-::selection {
-	background: rgba(120,120,120,.4);
 }

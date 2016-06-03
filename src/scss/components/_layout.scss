@@ -4,6 +4,11 @@
 
 /* Scaffolding */
 
+::selection {
+	background: rgba(120, 120, 120, .4);
+}
+
+// HTML base
 html {
 	-webkit-font-smoothing: antialiased;
 	font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
@@ -16,6 +21,7 @@ body {
 	position: relative;
 }
 
+// Links
 a {
 	color: $five;
 	text-decoration: none;
@@ -31,6 +37,7 @@ img {
 	max-width: 100%;
 }
 
+// Headings
 h1,
 h2,
 h3,
@@ -88,11 +95,15 @@ code {
 	font-size: .9rem;
 }
 
+mark {
+	background: $keyword;
+}
+
 
 /* Containers */
 
 .main-content {
-	margin: 0;
+	margin: 30px 0 0;
 }
 
 @include small-breakpoint {
@@ -104,16 +115,7 @@ code {
 
 .front-page {
 	p {
-		color: lighten($font-color, 10%);
-	}
-}
-
-@media screen and (min-width: 1100px) and (max-width: 1350px) {
-	.front-page {
-		margin-left: 200px;
-		.small-container {
-			margin-left: 0;
-		}
+		color: lighten($font-color, 12%);
 	}
 }
 
@@ -187,7 +189,7 @@ code {
 			}
 		}
 		float: left;
-		width: 50%;
+		width: calc(100% / 3);
 		display: block;
 		height: $nav-height;
 		line-height: $nav-height;
@@ -225,12 +227,10 @@ code {
 		.left {
 			position: absolute;
 			left: 0;
-			a {}
 		}
 		.right {
 			position: absolute;
 			right: 0;
-			a {}
 		}
 		a {
 			color: $font-color;
@@ -314,29 +314,26 @@ a .article-excerpt {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-	padding: .5rem;
+	padding: 1rem .5rem;
 	img {
 		display: block;
-		padding: 1rem;
-		width: 150px;
-		height: 150px;
-		max-width: 150px;
+		padding: .5rem;
+		width: 75px;
+		height: 75px;
+		max-width: 75px;
 	}
 }
 
 @include small-breakpoint {
 	.article-excerpt {
 		padding: 3rem 2rem;
-	}
-}
-
-.article-image {
-	display: none;
-}
-
-@include small-breakpoint {
-	.article-image {
-		display: block;
+		img {
+			display: block;
+			padding: 1rem;
+			width: 150px;
+			height: 150px;
+			max-width: 150px;
+		}
 	}
 }
 
@@ -356,7 +353,7 @@ a .all {
 	}
 	h1 {
 		margin-top: 0;
-		font-size: 1.6rem;
+		font-size: 1.5rem;
 	}
 }
 
@@ -466,6 +463,23 @@ blockquote {
 	}
 }
 
+a.twitter-link.button {
+	background: #049AE5;
+	border: 1px solid #049AE5;
+	text-transform: none;
+	margin: 2rem 0;
+	&:hover,
+	&:focus,
+	&:active {
+		color: white;
+		background: darken(#049AE5, 10%);
+		border: 1px solid darken(#049AE5, 10%);
+	}
+	i {
+		vertical-align: middle;
+	}
+}
+
 
 /* Footer */
 
@@ -510,9 +524,6 @@ a.social-icon {
 
 /* WordPress */
 
-
-/* Wordpress Specific */
-
 // Remove the pagination title
 .screen-reader-text {
 	display: none;
@@ -529,10 +540,6 @@ a.social-icon {
 .comment-meta.commentmetadata,
 .comment-notes {
 	font-size: .85rem;
-}
-
-#comments {
-	a {}
 }
 
 // Author name
@@ -646,10 +653,6 @@ a.social-icon {
 	padding-bottom: 10px;
 }
 
-#wpadminbar {
-	max-width: 100%
-}
-
 .posts-links {
 	padding: 0 1rem;
 	margin-top: 3rem;
@@ -758,11 +761,10 @@ a.social-icon {
 	}
 }
 
+
+/* Flex grid */
+
 @media screen and (min-width: 1100px) {
-	.sidebar {
-		display: block;
-	}
-	/* Flex Grid */
 	.flex-row {
 		display: flex;
 		flex-direction: row;
@@ -770,22 +772,5 @@ a.social-icon {
 	}
 	.flex-column {
 		width: 50%;
-	}
-}
-
-a.twitter-link.button {
-	background: #049AE5;
-	border: 1px solid #049AE5;
-	text-transform: none;
-	margin: 2rem 0;
-	&:hover,
-	&:focus,
-	&:active {
-		color: white;
-		background: darken(#049AE5, 10%);
-		border: 1px solid darken(#049AE5, 10%);
-	}
-	i {
-		vertical-align: middle;
 	}
 }

@@ -1,9 +1,10 @@
-/* Buttons  */
+/* Buttons
+  =============== */
 
 // Button Extend  
 .buttons {
 	color: white;
-	display: inline-block; 
+	display: inline-block;
 	padding: 10px 25px 8px 25px;
 	text-align: center;
 	font-size: 1rem;
@@ -16,16 +17,18 @@
 	cursor: pointer;
 	font-weight: 600;
 	margin: 5px 0;
-  box-shadow: 0px 1px 1px rgba(0,0,0,.1);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
 	font-family: $button-font;
 }
+
 .buttons-hover {
 	border-bottom: 0;
 	color: $three;
 	background: transparent;
 	border: 1px solid $three;
-  text-decoration: none;
+	text-decoration: none;
 }
+
 // Button Output
 a.button,
 .button,
@@ -33,17 +36,20 @@ button,
 .posts-links a {
 	@extend .buttons;
 	&:hover,
-	&:focus {
+	&:focus,
+	&:active {
 		@extend .buttons-hover;
 	}
 }
+
 input {
 	&[type="submit"],
 	&[type="reset"],
 	&[type="button"] {
 		@extend .buttons;
 		&:hover,
-		&:focus {
+		&:focus,
+		&:active {
 			@extend .buttons-hover;
 		}
 	}

@@ -1,8 +1,6 @@
 <?php
-
 /**
-* Functions
-*/
+* Functions */
 
 // Add support for featured images 
 add_theme_support( 'post-thumbnails' );
@@ -23,10 +21,11 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 add_theme_support( 'html5', array( 'search-form' ) );
 
 // Change 'more' link
-add_filter( 'the_content_more_link', 'modify_read_more_link' );
+
 function modify_read_more_link() {
-return '<p class="right-text"><a class="button" href="' . get_permalink() . '">Read More</a></p>';
+	return '<p class="right-text"><a class="button" href="' . get_permalink() . '">Read More</a></p>';
 }
+add_filter( 'the_content_more_link', 'modify_read_more_link' );
 
 // Add Stylesheets
 function oblate_scripts() {
@@ -34,7 +33,6 @@ function oblate_scripts() {
 	wp_enqueue_script( 'prism', get_template_directory_uri() . '/js/prism.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
 }
-
 add_action( 'wp_enqueue_scripts', 'oblate_scripts' );
 
 // Google Fonts
@@ -48,11 +46,9 @@ function load_fonts() {
 	wp_enqueue_style( 'RobotoMono');
 	wp_enqueue_style( 'FontAwesome');
 }
-    
 add_action('wp_print_styles', 'load_fonts');
 
 // Disable Emoji Crap
-
 function disable_wp_emojicons() {
   // all actions related to emojis
   remove_action( 'admin_print_styles', 'print_emoji_styles' );
@@ -63,8 +59,8 @@ function disable_wp_emojicons() {
   remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
   remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
 
-  // filter to remove TinyMCE emojis
-  add_filter( 'tiny_mce_plugins', 'disable_emojicons_tinymce' );
+// filter to remove TinyMCE emojis
+add_filter( 'tiny_mce_plugins', 'disable_emojicons_tinymce' );
 }
 add_action( 'init', 'disable_wp_emojicons' );
 
@@ -86,48 +82,44 @@ remove_action( 'wp_head', 'rsd_link' );
 remove_action( 'wp_head', 'wlwmanifest_link' );
 
 // OG Tags
-
 function meta_og() {
-    global $post;
- 
-    if(is_single()) {
-        if(has_post_thumbnail($post->ID)) {
-            $img_src = wp_get_attachment_image_src(get_post_thumbnail_id( $post->ID ), 'thumbnail');
-        } else {
-            $img_src = get_stylesheet_directory_uri() . '/images/taniasmall.jpg';
-        }
-				$excerpt = strip_tags($post->post_content);
-				$excerpt_more = '';
-				if (strlen($excerpt) > 155) {
-					$excerpt = substr($excerpt,0,155);
-					$excerpt_more = ' ...';
-				}
-				$excerpt = str_replace('"', '', $excerpt);
-				$excerpt = str_replace("'", '', $excerpt);
-				$excerptwords = preg_split('/[\n\r\t ]+/', $excerpt, -1, PREG_SPLIT_NO_EMPTY);
-				array_pop($excerptwords);
-				$excerpt = implode(' ', $excerptwords) . $excerpt_more;
-        ?>
-				<meta name="author" content="Tania Rascia">
-				<meta name="description" content="<?php echo $excerpt; ?>"/>
-				<meta property="og:title" content="<?php echo the_title(); ?>"/>
-				<meta property="og:description" content="<?php echo $excerpt; ?>"/>
-				<meta property="og:type" content="article"/>
-				<meta property="og:url" content="<?php echo the_permalink(); ?>"/>
-				<meta property="og:site_name" content="<?php echo get_bloginfo(); ?>"/>
-				<meta property="og:image" content="<?php echo $img_src[0]; ?>"/>
- 
+	global $post;
+
+	if(is_single()) {
+		if(has_post_thumbnail($post->ID)) {
+				$img_src = wp_get_attachment_image_src(get_post_thumbnail_id( $post->ID ), 'thumbnail');
+		} else {
+				$img_src = get_stylesheet_directory_uri() . '/images/taniasmall.jpg';
+		}
+		$excerpt = strip_tags($post->post_content);
+		$excerpt_more = '';
+		if (strlen($excerpt) > 155) {
+			$excerpt = substr($excerpt,0,155);
+			$excerpt_more = ' ...';
+		}
+		$excerpt = str_replace('"', '', $excerpt);
+		$excerpt = str_replace("'", '', $excerpt);
+		$excerptwords = preg_split('/[\n\r\t ]+/', $excerpt, -1, PREG_SPLIT_NO_EMPTY);
+		array_pop($excerptwords);
+		$excerpt = implode(' ', $excerptwords) . $excerpt_more;
+		?>
+		<meta name="author" content="Tania Rascia">
+		<meta name="description" content="<?php echo $excerpt; ?>">
+		<meta property="og:title" content="<?php echo the_title(); ?>">
+		<meta property="og:description" content="<?php echo $excerpt; ?>">
+		<meta property="og:type" content="article"/>
+		<meta property="og:url" content="<?php echo the_permalink(); ?>">
+		<meta property="og:site_name" content="<?php echo get_bloginfo(); ?>">
+		<meta property="og:image" content="<?php echo $img_src[0]; ?>">
 <?php
-    } else {
-        return;
-    }
+	} else {
+			return;
+	}
 }
 add_action('wp_head', 'meta_og', 5);
 
-
 // Escape HTML
 function escapeHTML($arr) {
-	
 	// last params (double_encode) was added in 5.2.3
 	if (version_compare(PHP_VERSION, '5.2.3') >= 0) {
 	
@@ -135,14 +127,12 @@ function escapeHTML($arr) {
 	}
 	else {
 		$specialChars = array(
-            '&' => '&amp;',
-            '<' => '&lt;',
-            '>' => '&gt;'
+			'&' => '&amp;',
+			'<' => '&lt;',
+			'>' => '&gt;'
 		);
-		
 		// decode already converted data
 		$data = htmlspecialchars_decode($arr[2]);
-
 		// escapse all data inside <pre>
 		$output = strtr($data, $specialChars);
 	}
@@ -155,7 +145,6 @@ function escapeHTML($arr) {
 }
 
 function filterCode($data) {
-
 	//$modifiedData = preg_replace_callback('@(<pre.*>)(.*)(<\/pre>)@isU', 'escapeHTML', $data);
 	$modifiedData = preg_replace_callback('@(<code.*>)(.*)(<\/code>)@isU', 'escapeHTML', $data);
 	$modifiedData = preg_replace_callback('@(<tt.*>)(.*)(<\/tt>)@isU', 'escapeHTML', $modifiedData);
