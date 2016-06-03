@@ -7,8 +7,8 @@ $url = $thumb['0'];
 		<article id="post-<?php the_ID(); ?>" class="article-excerpt">
 
 			<div class="article-header">
-				<time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('F j, Y'); ?></time>
 				<h1><?php the_title(); ?></h1>
+					<time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('F j, Y'); ?></time>
 					<?php the_excerpt(); ?>
 			</div>
 

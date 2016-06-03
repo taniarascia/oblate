@@ -32,7 +32,7 @@
 	<nav class="navigation">
 		<div class="left">
 			<a href="<?php echo site_url(); ?>" class="one"><img src="<?php bloginfo('template_directory'); ?>/images/tr.png" class="face" alt="Tania Rascia"></a>
-			<a href="<?php echo site_url(); ?>" class="two">Blog</a>
+			<a href="<?php echo site_url(); ?>" class="two">Articles</a>
 			<a href="<?php echo site_url(); ?>/all" class="three">Archive</a>
 		</div>
 
