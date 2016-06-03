@@ -330,7 +330,7 @@ a .article-excerpt {
 
 @include small-breakpoint {
 	.article-excerpt {
-		padding: 3rem 2rem;
+		padding: 2.5rem 2rem;
 		img {
 			display: block;
 			padding: 1rem;
@@ -578,7 +578,6 @@ a.social-icon {
 	line-height: 1.45;
 }
 
-
 // Date and Time meta data below commentator's name
 .comment-meta.commentmetadata,
 .comment-notes {
@@ -801,6 +800,52 @@ a.social-icon {
 		margin: 0;
 		padding: 0 1rem;
 		list-style: none;
+	}
+}
+
+
+/* Search form */
+
+.search-form {
+	display: none;
+}
+
+.search-page {
+	h1, time {
+		text-align: center;
+	}
+}
+
+@include large-breakpoint {
+	.search-form {
+		display: block;
+		top: 0;
+		position: relative;
+		text-align: center;
+		label {
+			display: inline-block;
+			position: relative;
+			z-index: 3;
+		}
+		input[type=search] {
+			margin: 10px 0;
+			font-size: 1.1rem;
+			height: 45px;
+			font-family: $font-family;
+			font-weight: 400;
+			padding-right: 35px;
+			z-index: 3;
+		}
+		.search-submit {
+			display: none;
+		}
+		.fa-search {
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 1.2rem;
+		}
 	}
 }
 
