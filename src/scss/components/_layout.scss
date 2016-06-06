@@ -350,7 +350,7 @@ a .article-excerpt {
 	align-items: center;
 	justify-content: space-between;
 	padding: 1rem .5rem;
-	text-align: left;
+	text-align: center;
 	img {
 		display: block;
 		padding: .5rem;
@@ -811,7 +811,8 @@ a.social-icon {
 }
 
 .search-page {
-	h1, time {
+	h1,
+	time {
 		text-align: center;
 	}
 }
@@ -820,7 +821,9 @@ a.social-icon {
 	.search-form {
 		display: block;
 		top: 0;
-		position: relative;
+		z-index: 4;
+		left: 50%;
+		transform: translateX(-50%);
 		text-align: center;
 		label {
 			display: inline-block;
