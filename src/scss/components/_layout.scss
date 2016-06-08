@@ -502,6 +502,7 @@ blockquote {
 }
 
 a.twitter-link.button {
+	color: white;
 	background: #049AE5;
 	border: 1px solid #049AE5;
 	text-transform: none;
@@ -666,6 +667,7 @@ a.social-icon {
 // Reply
 .comment-reply-link {
 	@extend .buttons;
+	color: white;
 	background: $six;
 	font-size: .9rem;
 	border: 1px solid $six;
@@ -730,11 +732,12 @@ a.social-icon {
 	float: right;
 }
 
-.bypostauthor .comment-author.vcard .fn {
+
+/* Author Background Highlighting For Threaded Comments */
+.bypostauthor > div .fn {
   background: #ffeeaa;
 	padding: 2px 5px;
 }
-
 
 /* Sidebar */
 

@@ -63,8 +63,8 @@ pre code {
 	padding: .2rem;
 	padding-top: 1px;
 	padding-bottom: 1px;
-	background: #efefef;
-	border: 0px solid #efefef;
+	background: #343434;
+	border: 0px solid #343434;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -159,6 +159,10 @@ code[class*=language-sass] {
 
 .token.function {
 	color: $function;
+}
+
+.language-php .token.function {
+	color: white;
 }
 
 .token.class-name {
