@@ -2,65 +2,71 @@
 
 // Forms Extend
 .forms {
-	padding: 12px;
-	border-radius: 0;
-	border: 1px solid #efefef;
-	margin: auto auto 6px;
-	max-width: 100%;
+  padding: 12px;
+  border-radius: 0;
+  border: 1px solid #efefef;
+  margin: auto auto 6px;
+  max-width: 100%;
   font-family: $code;
   font-size: .85rem;
-  transition: ease .2s all; 
-	background: #efefef;
-	border-radius: 4px;
+  transition: ease .2s all;
+  background: #efefef;
+  border-radius: 4px;
 }
+
 // Forms Output CSS
 input {
-	&[type="email"],
-	&[type="number"],
-	&[type="search"],
-	&[type="text"],
-	&[type="tel"],
-	&[type="url"],
-	&[type="password"] {
-		@extend .forms;
-		&:focus {
-			border: 1px solid $border;
-			background: #fff;
-			outline: 0;
-		}
-		&:hover {
-			border: 1px solid $border;
-		}
-	}
+  &[type="email"],
+  &[type="number"],
+  &[type="search"],
+  &[type="text"],
+  &[type="tel"],
+  &[type="url"],
+  &[type="password"] {
+    @extend .forms;
+    &:focus {
+      border: 1px solid $border;
+      background: #fff;
+      outline: 0;
+    }
+    &:hover {
+      border: 1px solid $border;
+    }
+  }
 }
+
 textarea,
 select {
-	@extend .forms;
-	&:focus {
-		border: 1px solid $border;
-		background: transparent;
-		outline: 0;
-	}
-	&:hover {
-			border: 1px solid darken($border, 5%);
-	}
+  @extend .forms;
+  &:focus {
+    border: 1px solid $border;
+    background: transparent;
+    outline: 0;
+  }
+  &:hover {
+    border: 1px solid darken($border, 5%);
+  }
 }
+
 textarea {
-	min-height: 100px;
+  min-height: 100px;
   width: 100%;
 }
+
 label,
 legend {
-	display: block;
-	margin: .4rem 0 .2rem;
-	font-weight: 600;
-	font-size: .9rem;
+  display: block;
+  margin: .4rem 0 .2rem;
+  font-weight: 600;
+  font-size: .9rem;
 }
+
 label > .label-body {
-	display: inline-block;
-	margin-left: .5rem;
-	font-weight: normal;
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal;
 }
+
 .scroll {
-	overflow-x: scroll;
+  overflow-x: scroll;
 }

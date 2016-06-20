@@ -3,30 +3,30 @@
 
 // Button Extend  
 .buttons {
-	color: #787878;
-	display: inline-block;
-	padding: 10px 25px 8px 25px;
-	text-align: center;
-	font-size: 1rem;
-	line-height: 1.6;
-	text-decoration: none;
-	white-space: nowrap;
-	background: transparent;
-	border-radius: 30px;
-	border: 1px solid $background;
-	cursor: pointer;
-	font-weight: 600;
-	margin: 5px 0;
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
-	font-family: $button-font;
+  color: #787878;
+  display: inline-block;
+  padding: 10px 25px 8px 25px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-decoration: none;
+  white-space: nowrap;
+  background: transparent;
+  border-radius: 30px;
+  border: 1px solid $background;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 5px 0;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
+  font-family: $button-font;
 }
 
 .buttons-hover {
-	border-bottom: 0;
-	color: #787878;
-	background: $background;
-	border: 1px solid $background;
-	text-decoration: none;
+  border-bottom: 0;
+  color: #787878;
+  background: $background;
+  border: 1px solid $background;
+  text-decoration: none;
 }
 
 // Button Output
@@ -34,23 +34,23 @@ a.button,
 .button,
 button,
 .posts-links a {
-	@extend .buttons;
-	&:hover,
-	&:focus,
-	&:active {
-		@extend .buttons-hover;
-	}
+  @extend .buttons;
+  &:hover,
+  &:focus,
+  &:active {
+    @extend .buttons-hover;
+  }
 }
 
 input {
-	&[type="submit"],
-	&[type="reset"],
-	&[type="button"] {
-		@extend .buttons;
-		&:hover,
-		&:focus,
-		&:active {
-			@extend .buttons-hover;
-		}
-	}
+  &[type="submit"],
+  &[type="reset"],
+  &[type="button"] {
+    @extend .buttons;
+    &:hover,
+    &:focus,
+    &:active {
+      @extend .buttons-hover;
+    }
+  }
 }

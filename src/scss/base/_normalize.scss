@@ -1,10 +1,10 @@
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 
+
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-
 
 
 /**
@@ -15,8 +15,10 @@ body {
   margin: 0;
 }
 
+
 /* HTML5 display definitions
    ========================================================================== */
+
 
 /**
  * Add the correct display in IE 9-.
@@ -26,18 +28,26 @@ body {
 
 article,
 aside,
-details, /* 1 */
+details,
+
+/* 1 */
+
 figcaption,
 figure,
 footer,
 header,
-main, /* 2 */
+main,
+
+/* 2 */
+
 menu,
 nav,
 section,
-summary { /* 1 */
+summary {
+  /* 1 */
   display: block;
 }
+
 
 /**
  * Add the correct display in IE 9-.
@@ -50,13 +60,16 @@ video {
   display: inline-block;
 }
 
+
 /**
  * Add the correct display in iOS 4-7.
  */
 
+
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
+
 
 /**
  * Add the correct display in IE 10-.
@@ -64,9 +77,9 @@ video {
  */
 
 
-
 /* Links
    ========================================================================== */
+
 
 /**
  * 1. Remove the gray background on active links in IE 10.
@@ -74,8 +87,10 @@ video {
  */
 
 a {
-  -webkit-text-decoration-skip: objects; /* 2 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
 }
+
 
 /**
  * Remove the outline on focused links when they are also active or hovered
@@ -87,13 +102,16 @@ a:hover {
   outline-width: 0;
 }
 
+
 /* Text-level semantics
    ========================================================================== */
+
 
 /**
  * 1. Remove the bottom border in Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
+
 
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
@@ -120,6 +138,7 @@ h1 {
   margin: 0.67em 0;
 }
 
+
 /**
  * Add the correct background and color in IE 9-.
  */
@@ -128,6 +147,7 @@ h1 {
 /**
  * Add the correct font size in all browsers.
  */
+
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
@@ -150,8 +170,10 @@ sup {
   top: -0.5em;
 }
 
+
 /* Embedded content
    ========================================================================== */
+
 
 /**
  * Remove the border on images inside links in IE 10-.
@@ -161,6 +183,7 @@ img {
   border-style: none;
 }
 
+
 /**
  * Hide the overflow in IE.
  */
@@ -168,6 +191,7 @@ img {
 
 /* Grouping content
    ========================================================================== */
+
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -189,6 +213,7 @@ img {
 /* Forms
    ========================================================================== */
 
+
 /**
  * 1. Change font properties to `inherit` in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
@@ -198,14 +223,16 @@ button,
 input,
 select,
 textarea {
-  font: inherit; /* 1 */
-  margin: 0; /* 2 */
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
 }
+
 
 /**
  * Restore the font weight unset by the previous rule.
  */
-
 
 
 /**
@@ -214,9 +241,11 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
+
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
@@ -224,9 +253,11 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
+
 
 /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
@@ -235,11 +266,16 @@ select { /* 1 */
  */
 
 button,
-html [type="button"], /* 1 */
+html [type="button"],
+
+/* 1 */
+
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button; /* 2 */
+  -webkit-appearance: button;
+  /* 2 */
 }
+
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -253,6 +289,7 @@ button::-moz-focus-inner,
   padding: 0;
 }
 
+
 /**
  * Restore the focus styles unset by the previous rule.
  */
@@ -263,6 +300,7 @@ button:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
+
 
 /**
  * Change the border, margin, and padding in all browsers (opinionated).
@@ -285,6 +323,7 @@ textarea {
   overflow: auto;
 }
 
+
 /**
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
@@ -292,8 +331,10 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
-  padding: 0; /* 2 */
+  padding: 0;
+  /* 2 */
 }
+
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
@@ -304,15 +345,19 @@ textarea {
   height: auto;
 }
 
+
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
 
 [type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
+
 
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
@@ -323,6 +368,7 @@ textarea {
   -webkit-appearance: none;
 }
 
+
 /**
  * Correct the text style of placeholders in Chrome, Edge, and Safari.
  */
@@ -332,12 +378,15 @@ textarea {
   opacity: 0.54;
 }
 
+
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
