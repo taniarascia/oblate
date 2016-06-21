@@ -52,7 +52,7 @@
 
     <section class="content small-container">
       <h2 class="large-heading">Latest Articles</h2>
-      <div class="latest-articles">
+      <div class="latest-articles text-center">
         <?php 
 $args = array(
 'posts_per_page' => 2,
