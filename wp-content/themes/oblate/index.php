@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="main-content <?php if ( is_front_page() ) { ?>front-page<?php } ?>">
+<main class="main-content text-center">
 
 	<div class="small-container">
 	
