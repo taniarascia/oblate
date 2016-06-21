@@ -45,14 +45,15 @@ h4,
 h5 {
   font-family: $header;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: -0.07rem;
 }
 
 h1 {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1.4rem;
   margin-bottom: .25rem;
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.07rem;
 }
 
 h2 {
@@ -220,6 +221,11 @@ mark {
 }
 
 @include small-breakpoint {
+  .nav-container {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .navigation {
     position: fixed;
     top: 0;
@@ -237,8 +243,9 @@ mark {
       right: 0;
     }
     a {
+      text-align: center;
       color: $font-color;
-      width: auto;
+      width: calc(100% / 5);
       border-bottom: 1px solid $border;
       &.one,
       &.two,
@@ -737,8 +744,8 @@ a.social-icon {
 /* Author Background Highlighting For Threaded Comments */
 
 .bypostauthor > div .fn {
-  background: #ffeeaa;
-  padding: 2px 5px;
+  border-bottom-color: #ffeeaa;
+  box-shadow: inset 0 -5px 0 #ffeeaa;
 }
 
 
@@ -877,4 +884,70 @@ a.social-icon {
   .flex-column {
     width: 50%;
   }
+}
+
+
+/* Front Page */
+
+.home-content {
+  margin-top: 80px;
+}
+
+.banner {
+  max-height: 600px;
+  height: calc(75vh - 100px);
+  background: $background;
+}
+
+.tutorials-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tutorials-cell {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  img {
+    display: block;
+    margin: auto;
+  }
+}
+
+@include small-breakpoint {
+  .tutorials-cell {
+    width: 50%;
+  }
+}
+
+@include large-breakpoint {
+  .tutorials-cell {
+    width: 33%;
+  }
+}
+
+#sass-tutorial {
+  background: #CD659A;
+}
+
+#gulp-tutorial {
+  background: #EB4C4C;
+}
+
+#bootstrap-tutorial {
+  background: #563980;
+}
+
+#wordpress-tutorial {
+  background: #14749C;
+}
+
+#git-tutorial {
+  background: #F04F32;
+}
+
+#jekyll-tutorial {
+  background: #dedede;
 }
