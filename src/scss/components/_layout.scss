@@ -899,9 +899,16 @@ a.social-icon {
   background: $background;
 }
 
-.tutorials h2 {
-  font-size: 4rem;
-  margin-bottom: 0;
+.large-heading {
+  font-size: 2rem;
+  margin: 0;
+}
+
+@include small-breakpoint {
+  .large-heading {
+    font-size: 4rem;
+    margin: 0;
+  }
 }
 
 .tutorials-grid {
@@ -957,7 +964,7 @@ a.social-icon {
 
 @include large-breakpoint {
   .tutorials-cell {
-    width: 33%;
+    width: calc(100% / 3);
   }
 }
 
@@ -983,6 +990,26 @@ a.social-icon {
 
 #jekyll-tutorial {
   background: #dedede;
+}
+
+.javascript {
+  position: relative;
+  height: 300px;
+  background: #EFDA4E;
+  transition: all .2s ease;
+  &:hover {
+    opacity: .9;
+  }
+  &:hover img {
+    transform: translate3d(-15px, -15px, 0) scale(.9);
+  }
+  img {
+    transition: all .2s ease;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-height: 300px;
+  }
 }
 
 .content {

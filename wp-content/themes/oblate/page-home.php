@@ -7,7 +7,7 @@
 
     <section class="tutorials">
       <div class="content small-container">
-        <h2>Tutorials</h2>
+        <h2 class="large-heading">Tutorials</h2>
         <p>The missing instruction manuals for popular web services.</p>
       </div>
 
@@ -39,6 +39,16 @@
       </div>
     </section>
 
+    <section class="content small-container">
+      <h2 class="large-heading">JavaScript</h2>
+      <p>Day by Day.</p>
+    </section>
+
+    <a href="<?php echo site_url(); ?>/javascript-day-one">
+      <section class="javascript">
+        <img src="<?php echo site_url(); ?>/wp-content/uploads/js-300x300.png">
+      </section>
+    </a>
 
   </main>
 
