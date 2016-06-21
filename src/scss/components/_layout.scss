@@ -895,8 +895,13 @@ a.social-icon {
 
 .banner {
   max-height: 600px;
-  height: calc(75vh - 100px);
+  height: calc(50vh - 100px);
   background: $background;
+}
+
+.tutorials h2 {
+  font-size: 4rem;
+  margin-bottom: 0;
 }
 
 .tutorials-grid {
@@ -910,9 +915,37 @@ a.social-icon {
   display: flex;
   width: 100%;
   height: 350px;
+  position: relative;
+  overflow: hidden;
+  transition: all .2s ease;
+  &:hover {
+    opacity: .9;
+  }
+  &:hover img {
+    transform: translate3d(15px, -15px, 0) scale(.9);
+  }
+  &:hover h3 {
+    transform: translate3d(0, 0, 0);
+  }
   img {
+    transition: all .2s ease;
     display: block;
     margin: auto;
+  }
+  h3 {
+    transition: all .2s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    color: white;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    height: 70px;
+    font-family: $font-family;
+    transform: translate3d(0, 70px, 0);
   }
 }
 
@@ -950,4 +983,10 @@ a.social-icon {
 
 #jekyll-tutorial {
   background: #dedede;
+}
+
+.content {
+  background: white;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
