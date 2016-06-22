@@ -114,16 +114,6 @@ mark {
   }
 }
 
-.front-page {
-  h1,
-  time {
-    text-align: center;
-  }
-  p {
-    color: lighten($font-color, 12%);
-  }
-}
-
 .small-container {
   max-width: $tablet;
   margin-left: auto;
@@ -206,6 +196,7 @@ mark {
     color: $font-color;
     text-decoration: none;
     background: white;
+    text-align: center;
   }
   .face {
     display: block;
@@ -245,7 +236,7 @@ mark {
     a {
       text-align: center;
       color: $font-color;
-      width: calc(100% / 5);
+      width: calc(100% / 6);
       border-bottom: 1px solid $border;
       &.one,
       &.two,
@@ -325,7 +316,7 @@ a .article-excerpt {
   flex-direction: column-reverse;
   align-items: center;
   justify-content: space-around;
-  padding: 1rem .5rem;
+  padding: 1rem 0;
   img {
     display: block;
     padding: .5rem;
@@ -889,8 +880,10 @@ a.social-icon {
 
 /* Front Page */
 
-.home-content {
-  margin-top: 80px;
+@include small-breakpoint {
+  .home-content {
+    margin-top: 80px;
+  }
 }
 
 .banner {
@@ -921,7 +914,7 @@ a.social-icon {
 .tutorials-cell {
   display: flex;
   width: 100%;
-  height: 350px;
+  height: 250px;
   position: relative;
   overflow: hidden;
   transition: all .2s ease;
@@ -938,6 +931,7 @@ a.social-icon {
     transition: all .2s ease;
     display: block;
     margin: auto;
+    max-width: 100%;
   }
   h3 {
     transition: all .2s ease;
@@ -959,6 +953,7 @@ a.social-icon {
 @include small-breakpoint {
   .tutorials-cell {
     width: 50%;
+    height: 300px;
   }
 }
 
@@ -985,7 +980,7 @@ a.social-icon {
 }
 
 #git-tutorial {
-  background: #F04F32;
+  background: #EF4F32;
 }
 
 #jekyll-tutorial {
@@ -994,7 +989,7 @@ a.social-icon {
 
 .javascript {
   position: relative;
-  height: 300px;
+  height: 250px;
   background: #EFDA4E;
   transition: all .2s ease;
   &:hover {
@@ -1008,16 +1003,45 @@ a.social-icon {
     position: absolute;
     bottom: 0;
     right: 0;
-    max-height: 300px;
+    max-height: 240px;
+  }
+}
+
+@include small-breakpoint {
+  .javascript {
+    height: 300px;
   }
 }
 
 .content {
   background: white;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@include small-breakpoint {
+  .content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .latest-articles {
+  display: flex;
+  flex-direction: row;
   padding: 30px 0;
+  a.article-link {
+    flex: 5;
+    background: $light-background;
+    transition: all .2s ease;
+    ~ a.article-link {
+      margin-left: 1rem;
+    }
+    &:hover {
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    }
+  }
+  a .article-excerpt {
+    border: 0;
+  }
 }
