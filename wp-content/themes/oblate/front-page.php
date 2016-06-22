@@ -53,7 +53,7 @@
       </section>
     </a>
 
-    <section class="content small-container">
+    <section class="content small-container no-padding-bottom">
       <h2 class="large-heading">Latest Articles</h2>
       <p>No ads. No sponsored posts. No fluff. Let's just learn and create.</p>
       <a class="button" href="<?php echo site_url(); ?>/blog">View Blog</a>
