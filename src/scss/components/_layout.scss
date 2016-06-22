@@ -914,7 +914,7 @@ a.social-icon {
 .tutorials-cell {
   display: flex;
   width: 100%;
-  height: 250px;
+  height: 200px;
   position: relative;
   overflow: hidden;
   transition: all .2s ease;
@@ -987,9 +987,21 @@ a.social-icon {
   background: #dedede;
 }
 
+#aws-tutorial {
+  background: #F7AE41;
+}
+
+#apache-tutorial {
+  background: white;
+}
+
+#grunt-tutorial {
+  background: #E48632;
+}
+
 .javascript {
   position: relative;
-  height: 250px;
+  height: 200px;
   background: #EFDA4E;
   transition: all .2s ease;
   &:hover {
@@ -1003,7 +1015,7 @@ a.social-icon {
     position: absolute;
     bottom: 0;
     right: 0;
-    max-height: 240px;
+    max-height: 185px;
   }
 }
 
@@ -1045,12 +1057,12 @@ a.social-icon {
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
       }
     }
-    a .article-excerpt { 
+    a .article-excerpt {
       border: 0;
     }
   }
 }
 
 .no-padding-bottom {
-  padding-bottom: 0 !important;  
+  padding-bottom: 0 !important;
 }
