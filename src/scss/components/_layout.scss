@@ -291,23 +291,23 @@ a.article-link {
   }
   &:first-of-type,
   &:last-of-type {
-    border-top: 1px solid transparent;
+    //border-top: 1px solid transparent;
     &:hover,
     &:focus,
     &:active {
-      border-top: 1px solid transparent;
+      //border-top: 1px solid transparent;
     }
   }
 }
 
 a .article-excerpt {
   color: $font-color;
-  border-bottom: 1px solid $border;
-  border-radius: 4px;
+  transition: all .2s ease;
   &:hover,
   &:active,
   &:focus {
     background: $light-background;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -919,7 +919,7 @@ a.social-icon {
   overflow: hidden;
   transition: all .2s ease;
   &:hover {
-    opacity: .9;
+    //opacity: .9;
   }
   &:hover img {
     transform: translate3d(15px, -15px, 0) scale(.9);
@@ -1004,8 +1004,9 @@ a.social-icon {
   height: 200px;
   background: #EFDA4E;
   transition: all .2s ease;
+  color: #31332F;
   &:hover {
-    opacity: .9;
+    //opacity: .9;
   }
   &:hover img {
     transform: translate3d(-15px, -15px, 0) scale(.9);
@@ -1016,6 +1017,19 @@ a.social-icon {
     bottom: 0;
     right: 0;
     max-height: 185px;
+  }
+  &.content {
+    background: #EFDA4E;
+  }
+  a.button {
+    background: white;
+    color: #32322F;
+    border: 1px solid transparent;
+    &:hover, &:focus, &:active {
+      background: #32322F;
+      color: white;
+      border: 1px solid #32322F;
+    }
   }
 }
 
@@ -1040,14 +1054,20 @@ a.social-icon {
 
 .latest-articles {
   padding: 30px 0;
+  a .article-excerpt {
+    &:hover {
+      border: 0;
+      box-shadow: none;
+    }
+  }
 }
 
-@include small-breakpoint {
+@include large-breakpoint {
   .latest-articles {
     display: flex;
     flex-direction: row;
     a.article-link {
-      flex: 5;
+      flex: 1;
       background: $light-background;
       transition: all .2s ease;
       ~ a.article-link {
@@ -1065,4 +1085,9 @@ a.social-icon {
 
 .no-padding-bottom {
   padding-bottom: 0 !important;
+}
+
+.code-editor {
+  background: white;
+  height: 300px;
 }
