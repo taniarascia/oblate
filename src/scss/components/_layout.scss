@@ -5,7 +5,7 @@
 /* Scaffolding */
 
 ::selection {
-  background: rgba(120, 120, 120, .4);
+  background: rgba(120, 120, 120, .35);
 }
 
 // HTML base
@@ -50,18 +50,16 @@ h5 {
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-bottom: .25rem;
-  letter-spacing: -0.07rem;
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 h4 {
@@ -114,24 +112,42 @@ mark {
   }
 }
 
-.small-container {
-  max-width: $tablet;
+.small-container,
+.large-container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.small-container {
+  max-width: $tablet;
 }
 
 .large-container {
   max-width: $desktop;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
-.text-center {
+@include small-breakpoint {
+  .small-container,
+  .large-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.content {
+  background: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
+}
+
+@include small-breakpoint {
+  .content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 
@@ -199,7 +215,7 @@ mark {
     text-align: center;
   }
   .face {
-    display: block;
+    display: inline-block;
     height: 50px;
     width: 50px;
     padding: 15px;
@@ -272,7 +288,7 @@ mark {
 }
 
 
-/* Content */
+/* Articles */
 
 time {
   color: #a1a1a1;
@@ -316,7 +332,7 @@ a .article-excerpt {
   flex-direction: column-reverse;
   align-items: center;
   justify-content: space-around;
-  padding: 1rem 0;
+  padding: 1rem .5rem;
   img {
     display: block;
     padding: .5rem;
@@ -626,7 +642,7 @@ a.social-icon {
 
 // Comment body
 .comment-body {
-  padding: 1rem 0;
+  padding: 1rem .5rem;
   font-size: .95rem;
   font-family: $font-family;
   margin-bottom: 15px;
@@ -904,6 +920,40 @@ a.social-icon {
   }
 }
 
+.latest-articles {
+  padding: 40px 0 0;
+  a.article-link {
+    background: $light-background;
+    transition: all .2s ease;
+    margin-bottom: 1rem;
+    &:hover {
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    }
+  }
+  a .article-excerpt {
+    &:hover {
+      border: 0;
+      box-shadow: none;
+    }
+  }
+}
+
+@include large-breakpoint {
+  .latest-articles {
+    display: flex;
+    flex-direction: row;
+    a.article-link {
+      flex: 1;
+      ~ a.article-link {
+        margin-left: 1rem;
+      }
+    }
+    a .article-excerpt {
+      border: 0;
+    }
+  }
+}
+
 .tutorials-grid {
   display: flex;
   flex-direction: row;
@@ -1012,6 +1062,7 @@ a.social-icon {
     transform: translate3d(-15px, -15px, 0) scale(.9);
   }
   img {
+    display: none;
     transition: all .2s ease;
     position: absolute;
     bottom: 0;
@@ -1025,7 +1076,9 @@ a.social-icon {
     background: white;
     color: #32322F;
     border: 1px solid transparent;
-    &:hover, &:focus, &:active {
+    &:hover,
+    &:focus,
+    &:active {
       background: #32322F;
       color: white;
       border: 1px solid #32322F;
@@ -1036,58 +1089,24 @@ a.social-icon {
 @include small-breakpoint {
   .javascript {
     height: 300px;
-  }
-}
-
-.content {
-  background: white;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-@include small-breakpoint {
-  .content {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-.latest-articles {
-  padding: 30px 0;
-  a .article-excerpt {
-    &:hover {
-      border: 0;
-      box-shadow: none;
+    img {
+      display: block
     }
   }
-}
-
-@include large-breakpoint {
-  .latest-articles {
-    display: flex;
-    flex-direction: row;
-    a.article-link {
-      flex: 1;
-      background: $light-background;
-      transition: all .2s ease;
-      ~ a.article-link {
-        margin-left: 1rem;
-      }
-      &:hover {
-        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
-      }
-    }
-    a .article-excerpt {
-      border: 0;
-    }
-  }
-}
-
-.no-padding-bottom {
-  padding-bottom: 0 !important;
 }
 
 .code-editor {
   background: white;
   height: 300px;
+}
+
+
+/* Helpers */
+
+.text-center {
+  text-align: center;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0 !important;
 }
