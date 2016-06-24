@@ -72,7 +72,7 @@ pre code {
 :not(pre) > code {
   font-size: 1rem;
   padding: .01rem .2rem;
-  background: #efefef;
+  background: rgba(0,0,0,.1);
   font-family: $code;
   font-weight: 400;
   border-radius: 4px;
