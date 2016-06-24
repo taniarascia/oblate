@@ -7,17 +7,20 @@
 ::selection {
   background: rgba(120, 120, 120, .35);
 }
+
 // HTML base
 html {
   -webkit-font-smoothing: antialiased;
   font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
   font-size: $font-size;
 }
+
 // Body base 
 body {
   color: $font-color;
   position: relative;
 }
+
 // Links
 a {
   color: $five;
@@ -29,9 +32,11 @@ a {
     text-decoration: underline;
   }
 }
+
 img {
   max-width: 100%;
 }
+
 // Headings
 h1,
 h2,
@@ -44,24 +49,30 @@ h5 {
   letter-spacing: -0.07rem;
   margin-bottom: .5em;
 }
+
 h1 {
   font-size: 1.4rem;
   margin-bottom: .25rem;
 }
+
 h2 {
   font-size: 1.5rem;
 }
+
 h3 {
   font-size: 1.4rem;
 }
+
 h4 {
   font-size: 1.3rem;
   color: lighten($font-color, 15%);
 }
+
 h5 {
   font-size: 1.2rem;
   color: lighten($font-color, 25%);
 }
+
 @include small-breakpoint {
   h1 {
     font-size: 1.8rem;
@@ -79,24 +90,29 @@ h5 {
     font-size: 1.2rem;
   }
 }
+
 code {
   font-size: .9rem;
 }
+
 mark {
   background: $keyword;
 }
+
 
 /* Containers */
 
 .main-content {
   margin: 30px 0 0;
 }
+
 @include small-breakpoint {
   .main-content {
     margin: $nav-height 0 0;
     padding-top: 30px;
   }
 }
+
 .small-container,
 .large-container {
   margin-left: auto;
@@ -104,12 +120,15 @@ mark {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
 .small-container {
   max-width: $tablet;
 }
+
 .large-container {
   max-width: $tablet;
 }
+
 @include small-breakpoint {
   .small-container,
   .large-container {
@@ -117,23 +136,27 @@ mark {
     padding-right: 1rem;
   }
 }
+
 @include large-breakpoint {
   .large-container {
     max-width: $desktop;
   }
 }
+
 .content {
   background: white;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
+
 @include small-breakpoint {
   .content {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
+
 
 /* Navigation */
 
@@ -210,6 +233,7 @@ mark {
     }
   }
 }
+
 @include small-breakpoint {
   .nav-container {
     max-width: 850px;
@@ -277,6 +301,7 @@ mark {
   }
 }
 
+
 /* Articles */
 
 time {
@@ -286,6 +311,7 @@ time {
   font-family: $nav;
   font-size: .9rem;
 }
+
 a.article-link {
   display: block;
   &:hover,
@@ -303,6 +329,7 @@ a.article-link {
     }
   }
 }
+
 a .article-excerpt {
   color: $font-color;
   transition: all .2s ease;
@@ -313,6 +340,7 @@ a .article-excerpt {
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
   }
 }
+
 .article-excerpt {
   display: flex;
   flex-direction: column-reverse;
@@ -328,6 +356,7 @@ a .article-excerpt {
     max-width: 75px;
   }
 }
+
 @include small-breakpoint {
   .article-excerpt {
     padding: 2.5rem 2rem;
@@ -341,6 +370,7 @@ a .article-excerpt {
     }
   }
 }
+
 
 /* All */
 
@@ -359,6 +389,7 @@ a .article-excerpt {
     max-width: 75px;
   }
 }
+
 a .all {
   color: $font-color;
   border-bottom: 1px solid $border;
@@ -376,6 +407,7 @@ a .all {
     font-size: 1.5rem;
   }
 }
+
 @include small-breakpoint {
   a .all {
     h1 {
@@ -398,11 +430,13 @@ a .all {
     }
   }
 }
+
 .small-thumb {
   width: 50px;
   height: 50px;
   max-width: 50px;
 }
+
 
 /* Single */
 
@@ -412,6 +446,7 @@ a .all {
   margin-right: auto;
   background: white;
 }
+
 @include small-breakpoint {
   .single {
     padding: 0 2rem;
@@ -420,13 +455,16 @@ a .all {
     }
   }
 }
+
 .single-article-image {
   text-align: center;
 }
+
 .single-article-header {
   text-align: center;
   margin-bottom: 3rem;
 }
+
 blockquote {
   margin-left: 0;
   margin-right: 0;
@@ -490,12 +528,13 @@ blockquote {
     }
   }
 }
+
 a.twitter-link.button {
   color: white;
   background: #049AE5;
   border: 1px solid #049AE5;
   text-transform: none;
-  margin: 2rem 0;
+  margin: .5rem 0;
   &:hover,
   &:focus,
   &:active {
@@ -507,6 +546,13 @@ a.twitter-link.button {
     vertical-align: middle;
   }
 }
+
+@include small-breakpoint {
+  a.twitter-link.button {
+    margin: 2rem 0;
+  }
+}
+
 
 /* Footer */
 
@@ -533,17 +579,21 @@ a.twitter-link.button {
     color: #F8981C;
   }
 }
+
 a.social-icon {
   color: darken($background, 10%);
 }
+
 .responsive-image {
   max-width: 100%;
 }
+
 @include small-breakpoint {
   .footer {
     padding: 30px 0;
   }
 }
+
 
 /* WordPress */
 
@@ -551,20 +601,24 @@ a.social-icon {
 .screen-reader-text {
   display: none;
 }
+
 // Bottom of the page pagination
 .pagination {
   max-width: $mobile;
   margin: 40px auto;
   text-align: center;
 }
+
 #comments {
   line-height: 1.45;
 }
+
 // Date and Time meta data below commentator's name
 .comment-meta.commentmetadata,
 .comment-notes {
   font-size: .85rem;
 }
+
 // Author name
 .comment-author {
   cite.fn,
@@ -577,27 +631,32 @@ a.social-icon {
     font-family: $font-family;
   }
 }
+
 .comment-meta {
   a {
     color: $font-color;
   }
 }
+
 // Comment list
 .comment-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 // says:
 .says {
   display: none;
 }
+
 // Comments and Replies
 .comment-reply-title,
 .comments-title {
   font-size: 1.4rem;
   font-family: $header;
 }
+
 // Comment body
 .comment-body {
   padding: .5rem 0;
@@ -610,17 +669,20 @@ a.social-icon {
     font-size: 1rem;
   }
 }
+
 @include small-breakpoint {
   .comment-body {
     padding: 1rem .5rem;
   }
 }
+
 // Form
 .comment-form {
   p {
     margin: 0;
   }
 }
+
 .children {
   margin-left: 0;
   padding-left: 15px;
@@ -628,11 +690,13 @@ a.social-icon {
   margin-bottom: 15px;
   list-style: none;
 }
+
 // Overall comments area
 .comments-area {
   margin-top: 1.1rem;
   border-top: 1px solid $border;
 }
+
 // Reply
 .comment-reply-link {
   @extend .buttons;
@@ -650,19 +714,23 @@ a.social-icon {
     background: white;
   }
 }
+
 .avatar {
   float: left;
   margin-right: 1rem;
   border-radius: 50%;
 }
+
 .logged-in-as {
   font-family: $header;
   font-size: 1rem;
   padding-bottom: 10px;
 }
+
 .comment-notes {
   padding-bottom: 10px;
 }
+
 .posts-links {
   padding: 0 1rem;
   &:after {
@@ -671,11 +739,13 @@ a.social-icon {
     clear: both;
   }
 }
+
 @include small-breakpoint {
   .posts-links {
     padding-top: 20px;
   }
 }
+
 .pagination-left,
 .pagination-right {
   float: none;
@@ -683,6 +753,7 @@ a.social-icon {
   margin: 0 auto;
   text-align: center;
 }
+
 @include small-breakpoint {
   .pagination-left {
     float: left;
@@ -691,9 +762,11 @@ a.social-icon {
     float: right;
   }
 }
+
 .float-right {
   float: right;
 }
+
 
 /* Author Background Highlighting For Threaded Comments */
 
@@ -701,6 +774,7 @@ a.social-icon {
   border-bottom-color: #ffeeaa;
   box-shadow: inset 0 -5px 0 #ffeeaa;
 }
+
 
 /* Flex grid */
 
@@ -715,6 +789,7 @@ a.social-icon {
   }
 }
 
+
 /* Front Page */
 
 @include small-breakpoint {
@@ -722,6 +797,7 @@ a.social-icon {
     margin-top: 80px;
   }
 }
+
 .banner {
   padding: 50px 0;
   background: white;
@@ -758,6 +834,7 @@ a.social-icon {
     color: #EB4D5C;
   }
 }
+
 @include small-breakpoint {
   .banner {
     padding: 100px 0;
@@ -766,16 +843,19 @@ a.social-icon {
     }
   }
 }
+
 .large-heading {
   font-size: 2rem;
   margin: 0;
 }
+
 @include small-breakpoint {
   .large-heading {
     font-size: 3rem;
     margin: 0;
   }
 }
+
 .latest-articles {
   a.article-link {
     background: $light-background;
@@ -793,10 +873,11 @@ a.social-icon {
     }
   }
 }
+
 @include small-breakpoint {
-  .latest-articles {
-  }
+  .latest-articles {}
 }
+
 @include large-breakpoint {
   .latest-articles {
     display: flex;
@@ -812,12 +893,14 @@ a.social-icon {
     }
   }
 }
+
 .tutorials-grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
 }
+
 .tutorials-cell {
   display: flex;
   width: 100%;
@@ -857,6 +940,7 @@ a.social-icon {
     transform: translate3d(0, 70px, 0);
   }
 }
+
 @include small-breakpoint {
   .tutorials-cell {
     width: 50%;
@@ -866,39 +950,50 @@ a.social-icon {
     }
   }
 }
+
 @include large-breakpoint {
   .tutorials-cell {
     width: calc(100% / 3);
     height: 300px;
   }
 }
+
 #sass-tutorial {
   background: #CD659A;
 }
+
 #gulp-tutorial {
   background: #EB4C4C;
 }
+
 #bootstrap-tutorial {
   background: #563980;
 }
+
 #wordpress-tutorial {
   background: #14749C;
 }
+
 #git-tutorial {
   background: #EF4F32;
 }
+
 #jekyll-tutorial {
   background: #dedede;
 }
+
 #aws-tutorial {
   background: #F7AE41;
 }
+
 #apache-tutorial {
   background: white;
 }
+
 #grunt-tutorial {
   background: #E48632;
 }
+
 .javascript {
   position: relative;
   background: #EFDA4E;
@@ -934,6 +1029,7 @@ a.social-icon {
     }
   }
 }
+
 @include small-breakpoint {
   .javascript {
     height: 300px;
@@ -942,10 +1038,12 @@ a.social-icon {
     }
   }
 }
+
 .code-editor {
   background: white;
   height: 300px;
 }
+
 .colors {
   display: flex;
   flex-direction: row;
@@ -975,14 +1073,17 @@ a.social-icon {
   }
 }
 
+
 /* Helpers */
 
 .text-center {
   text-align: center;
 }
+
 .no-padding-bottom {
   padding-bottom: 0 !important;
 }
+
 
 /* Tables */
 
