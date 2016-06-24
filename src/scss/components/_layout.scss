@@ -534,7 +534,7 @@ a.twitter-link.button {
   background: #049AE5;
   border: 1px solid #049AE5;
   text-transform: none;
-  margin: .5rem 0;
+  margin: .25rem 0;
   &:hover,
   &:focus,
   &:active {
@@ -549,7 +549,7 @@ a.twitter-link.button {
 
 @include small-breakpoint {
   a.twitter-link.button {
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
 }
 
