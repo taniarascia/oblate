@@ -725,6 +725,11 @@ a.social-icon {
   padding: 50px 0;
   background: white;
   text-align: center;
+  .opener {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .fa {
     margin: .25rem;
   }
