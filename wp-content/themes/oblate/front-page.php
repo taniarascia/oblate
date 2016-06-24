@@ -2,15 +2,18 @@
 
   <main class="home-content">
 
-    <!-- <section class="banner text-center">
-    </section>-->
-
-    <section class="content no-padding-bottom">
+    <section class="banner">
       <div class="small-container">
-        <h2 class="large-heading">Articles</h2>
-        <p>No ads. No sponsored posts. No fluff. Let's just learn and create.</p>
-        <a class="button" href="<?php echo site_url(); ?>/blog">View Blog</a>
+        <h1>I'm Tania Rascia</h1>
+        <h2>A Front End Web Developer</h2>
+        <p>I design and develop websites in Chicago.<br>I also write high quality guides and tutorials. <br>No ads. No sponsored posts. No fluff. Let's just learn and create.</p>
+        <a href="https://twitter.com/taniarascia" class="social-icon"><i class="fa fa-twitter fa-3x"></i></a>
+        <a href="https://github.com/taniarascia" class="social-icon"><i class="fa fa-github fa-3x"></i></a>
+        <a href="http://codepen.com/taniarascia" class="social-icon"><i class="fa fa-codepen fa-3x"></i></a>
       </div>
+    </section>
+
+    <section>
       <div class="large-container">
         <div class="latest-articles text-center">
           <?php 

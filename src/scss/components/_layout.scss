@@ -107,13 +107,18 @@ mark {
   max-width: $tablet;
 }
 .large-container {
-  max-width: $desktop;
+  max-width: $tablet;
 }
 @include small-breakpoint {
   .small-container,
   .large-container {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+@include large-breakpoint {
+  .large-container {
+    max-width: $desktop;
   }
 }
 .content {
@@ -313,6 +318,7 @@ a .article-excerpt {
   align-items: center;
   justify-content: space-around;
   padding: .5rem;
+  border-bottom: 1px solid $border;
   img {
     display: block;
     padding: .5rem;
@@ -324,6 +330,7 @@ a .article-excerpt {
 @include small-breakpoint {
   .article-excerpt {
     padding: 2.5rem 2rem;
+    border-botom: 0;
     img {
       display: block;
       padding: 1rem;
@@ -657,11 +664,15 @@ a.social-icon {
 }
 .posts-links {
   padding: 0 1rem;
-  margin-top: 3rem;
   &:after {
     content: '';
     display: table;
     clear: both;
+  }
+}
+@include small-breakpoint {
+  .posts-links {
+    padding-top: 20px;
   }
 }
 .pagination-left,
@@ -711,9 +722,43 @@ a.social-icon {
   }
 }
 .banner {
-  max-height: 600px;
-  height: calc(50vh - 100px);
-  background: $background;
+  padding: 50px 0;
+  background: white;
+  text-align: center;
+  .fa {
+    margin: .25rem;
+  }
+  .fa-twitter:hover {
+    color: #00aced;
+  }
+  .fa-codepen:hover {
+    color: #47CF73;
+  }
+  .fa-stack-overflow:hover {
+    color: #F48024;
+  }
+  .fa-github:hover {
+    color: #B992E3;
+  }
+  .fa-rss:hover {
+    color: #F8981C;
+  }
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  h2 {
+    margin: 0;
+    color: #EB4D5C;
+  }
+}
+@include small-breakpoint {
+  .banner {
+    padding: 100px 0;
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
 }
 .large-heading {
   font-size: 2rem;
@@ -721,12 +766,11 @@ a.social-icon {
 }
 @include small-breakpoint {
   .large-heading {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0;
   }
 }
 .latest-articles {
-  padding: 20px 0 0;
   a.article-link {
     background: $light-background;
     transition: all .2s ease;
@@ -736,15 +780,19 @@ a.social-icon {
     }
   }
   a .article-excerpt {
+    border: 0;
     &:hover {
       border: 0;
       box-shadow: none;
     }
   }
 }
+@include small-breakpoint {
+  .latest-articles {
+  }
+}
 @include large-breakpoint {
   .latest-articles {
-    padding: 60px 0 0;
     display: flex;
     flex-direction: row;
     a.article-link {
@@ -891,6 +939,34 @@ a.social-icon {
 .code-editor {
   background: white;
   height: 300px;
+}
+.colors {
+  display: flex;
+  flex-direction: row;
+  height: 10px;
+  div {
+    flex: 1;
+    height: 10px;
+    width: calc(100% / 6);
+  }
+  .one {
+    background: $one;
+  }
+  .two {
+    background: $two;
+  }
+  .three {
+    background: $three;
+  }
+  .four {
+    background: $four;
+  }
+  .five {
+    background: $five;
+  }
+  .six {
+    background: $six;
+  }
 }
 
 /* Helpers */
