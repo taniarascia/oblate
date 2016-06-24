@@ -39,11 +39,3 @@
       <a href="<?php echo site_url(); ?>/contact" class="six">Contact</a>
     </div>
   </nav>
-
-  <!--<form role="search" method="get" class="search-form" action="<?php //echo site_url(); ?>">
-    <label>
-      <i class="fa fa-search" aria-hidden="true"></i>
-      <input type="search" class="search-field" placeholder="Search" value="" name="s">
-    </label>
-    <input type="submit" class="search-submit" value="Search" />
-  </form>-->

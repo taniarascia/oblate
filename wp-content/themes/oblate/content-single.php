@@ -8,7 +8,7 @@ $url = $thumb['0'];
 			<?php } ?>
 	</div>
 
-	<article id="post-<?php the_ID(); ?>" class="single-article">
+	<article id="post-<?php the_ID(); ?>">
 
 		<div class="single-article-header">
 			<h1><?php the_title(); ?></h1>

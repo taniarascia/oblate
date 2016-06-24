@@ -1,14 +1,18 @@
 <?php get_header();?>
 
-	<main class="main-content">
+  <main class="main-content">
 
-		<article class="text-center content-section">
+    <section class="single">
 
-			<h2>404</h2>
-			<p>Page not found</p>
+      <div class="small-container text-center">
 
-		</article>
+        <h1>404</h1>
+        <p>Page not found</p>
 
-	</main>
+      </div>
 
-<?php get_footer();?>
+    </section>
+
+  </main>
+
+  <?php get_footer();?>
