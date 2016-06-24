@@ -4,8 +4,8 @@
 
     <section class="banner">
       <div class="small-container">
-        <h1>I'm Tania Rascia</h1>
-        <h2>A Front End Web Developer</h2>
+        <h1>Tania Rascia</h1>
+        <h2>Front End Web Developer</h2>
         <p>I design and develop websites in Chicago.<br>I also write high quality guides and tutorials. <br>No ads. No sponsored posts. No fluff. Let's just learn and create.</p>
         <a href="https://twitter.com/taniarascia" class="social-icon"><i class="fa fa-twitter fa-3x"></i></a>
         <a href="https://github.com/taniarascia" class="social-icon"><i class="fa fa-github fa-3x"></i></a>
