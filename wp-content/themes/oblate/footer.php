@@ -1,5 +1,4 @@
 <footer class="footer">
-  <p>By Tania Rascia</p>
   <a href="<?php echo site_url(); ?>/feed" class="social-icon"><i class="fa fa-rss fa-3x"></i></a>
   <a href="https://twitter.com/taniarascia" class="social-icon"><i class="fa fa-twitter fa-3x"></i></a>
   <a href="https://github.com/taniarascia" class="social-icon"><i class="fa fa-github fa-3x"></i></a>
