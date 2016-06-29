@@ -2,8 +2,6 @@
 
   <main class="main-content">
 
-    <section class="single">
-
       <div class="small-container">
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
@@ -23,7 +21,6 @@
       
       if ( $portfolio->have_posts() ) : ?>
 
-        <div class="large-container content">
 
           <div class="portfolio">
 
@@ -33,19 +30,15 @@
         $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' ); // Custom thumbnail size ?>
 
               <div class="portfolio-item">
-                <a href="<?php echo get_the_excerpt(); ?>"><img src="<?php echo $image[0]; ?>" class="responsive-image" alt="<?php the_title(); ?>"></a>
+                <a href="<?php echo get_the_excerpt(); ?>"><img src="<?php echo $thumb[0]; ?>" class="responsive-image" alt="<?php the_title(); ?>"></a>
               </div>
 
               <?php endwhile; ?>
 
           </div>
 
-        </div>
-
         <?php endif; wp_reset_postdata(); ?>
 
-
-    </section>
 
   </main>
 
