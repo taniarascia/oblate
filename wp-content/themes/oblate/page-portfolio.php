@@ -22,7 +22,7 @@
       if ( $portfolio->have_posts() ) : ?>
 
 
-          <div class="portfolio">
+          <div class="portfolio text-center">
 
             <?php 
         while ( $portfolio->have_posts() ) : $portfolio->the_post();
@@ -30,7 +30,7 @@
         $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' ); // Custom thumbnail size ?>
 
               <div class="portfolio-item">
-                <a href="<?php echo get_the_excerpt(); ?>"><img src="<?php echo $thumb[0]; ?>" class="responsive-image" alt="<?php the_title(); ?>"></a>
+                <a href="<?php echo get_the_excerpt(); ?>"><img src="<?php echo $image[0]; ?>" class="responsive-image" alt="<?php the_title(); ?>"></a>
               </div>
 
               <?php endwhile; ?>
