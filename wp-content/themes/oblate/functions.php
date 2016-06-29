@@ -11,6 +11,12 @@ function new_excerpt_more( $more ) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+// Add Categories for Attachments
+function add_categories_for_attachments() {
+    register_taxonomy_for_object_type( 'category', 'attachment' );
+}
+add_action( 'init' , 'add_categories_for_attachments' );
+
 // Custom excerpt length
 function custom_excerpt_length( $length ) {
 	return 30;

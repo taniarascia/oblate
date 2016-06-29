@@ -1132,3 +1132,21 @@ caption {
     width: 100%;
   }
 }
+
+/* Portfolio Page */
+
+@include small-breakpoint {
+  .portfolio {}
+}
+
+@include large-breakpoint {
+  .portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .portfolio-item {
+      padding: .5rem;
+      width: calc(100% / 2);
+    }
+  }
+}
