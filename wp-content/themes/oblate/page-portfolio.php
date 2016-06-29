@@ -33,8 +33,7 @@
         $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' ); // Custom thumbnail size ?>
 
               <div class="portfolio-item">
-                <a href="<?php echo get_the_excerpt(); ?>"><img src="<?php echo $image[0]; ?>" class="responsive-image" alt=""></a>
-                <h3 class="text-center"><?php the_title(); ?></h3>
+                <a href="<?php echo get_the_excerpt(); ?>"><img src="<?php echo $image[0]; ?>" class="responsive-image" alt="<?php the_title(); ?>"></a>
               </div>
 
               <?php endwhile; ?>
