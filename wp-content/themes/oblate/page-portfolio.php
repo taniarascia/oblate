@@ -2,7 +2,7 @@
 
   <main class="main-content portfolio-page">
 
-      <div class="small-container">
+      <div class="small-container content">
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 
@@ -21,7 +21,9 @@
       
           if ( $portfolio->have_posts() ) : ?>
 
-          <div class="portfolio text-center">
+          <div class="large-container">
+          
+            <div class="portfolio text-center">
 
             <?php 
         while ( $portfolio->have_posts() ) : $portfolio->the_post();
@@ -34,6 +36,8 @@
 
               <?php endwhile; ?>
 
+            </div>
+          
           </div>
 
         <?php endif; wp_reset_postdata(); ?>
