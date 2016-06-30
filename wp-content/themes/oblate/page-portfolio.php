@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-  <main class="main-content">
+  <main class="main-content portfolio-page">
 
       <div class="small-container">
 
@@ -17,10 +17,9 @@
           'order' => 'asc',
           'posts_per_page' => '30',
            );
-        $portfolio = new WP_Query( $args );
+          $portfolio = new WP_Query( $args );
       
-      if ( $portfolio->have_posts() ) : ?>
-
+          if ( $portfolio->have_posts() ) : ?>
 
           <div class="portfolio text-center">
 

@@ -1133,7 +1133,10 @@ caption {
   }
 }
 
-/* Portfolio Page */
+
+.portfolio-page {
+  background: $background;
+}
 
 @include small-breakpoint {
   .portfolio {}
