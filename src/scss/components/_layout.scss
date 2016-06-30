@@ -1133,15 +1133,22 @@ caption {
   }
 }
 
-
 .portfolio-page {
   background: $background;
 }
 
-@include small-breakpoint {
-  .portfolio {
-    padding-bottom: 20px;
+.portfolio {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .portfolio-item {
+    padding: .5rem;
   }
+}
+
+.portfolio-title {
+  font-size: 1.4rem;
+  text-align: left;
 }
 
 @include large-breakpoint {
@@ -1149,10 +1156,17 @@ caption {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 30px;
     padding-bottom: 60px;
     .portfolio-item {
-      padding: .5rem;
+      padding: 1rem;
       width: calc(100% / 2);
+      img {
+        transition: all .2s ease;
+      }
+      img:hover {
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .15);
+      }
     }
   }
 }
