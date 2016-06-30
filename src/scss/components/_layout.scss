@@ -1139,7 +1139,9 @@ caption {
 }
 
 @include small-breakpoint {
-  .portfolio {}
+  .portfolio {
+    padding-bottom: 20px;
+  }
 }
 
 @include large-breakpoint {
@@ -1147,6 +1149,7 @@ caption {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 60px;
     .portfolio-item {
       padding: .5rem;
       width: calc(100% / 2);

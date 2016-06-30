@@ -2,7 +2,7 @@
 
   <main class="main-content portfolio-page">
 
-      <div class="small-container content">
+      <div class="small-container">
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 

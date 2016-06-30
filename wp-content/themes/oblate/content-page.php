@@ -12,7 +12,7 @@ $url = $thumb['0'];
 <article id="post-<?php the_ID(); ?>">
 
 	<div class="single-article-header">
-		<h1><?php the_title(); ?></h1>
+		<h1 class="large-heading"><?php the_title(); ?></h1>
 	</div>
 
 	<?php the_content(); ?>
