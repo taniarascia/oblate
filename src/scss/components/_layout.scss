@@ -1143,6 +1143,7 @@ caption {
   padding-bottom: 20px;
   .portfolio-item {
     padding: .5rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -1160,6 +1161,7 @@ caption {
     padding-bottom: 60px;
     .portfolio-item {
       padding: 1rem;
+      padding-bottom: 2rem;
       width: calc(100% / 2);
       img {
         transition: all .2s ease;
