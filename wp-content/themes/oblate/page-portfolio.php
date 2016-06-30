@@ -31,7 +31,7 @@
 
             <div class="portfolio-item">
               <a href="<?php echo get_the_excerpt(); ?>"><img src="<?php echo $image[0]; ?>" class="responsive-image" alt="<?php the_title(); ?>"></a>
-              <a class="button" href="<?php echo get_the_excerpt(); ?>"><?php the_title(); ?></a>
+              <a class="button" href="<?php echo get_the_excerpt(); ?>" target="_blank"><?php the_title(); ?></a>
             </div>
 
             <?php endwhile; ?>
