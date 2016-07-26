@@ -36,6 +36,6 @@
       <a href="<?php echo site_url(); ?>/me" class="three">About</a>
       <a href="<?php echo site_url(); ?>/portfolio" class="four">Portfolio</a>
       <a href="<?php echo site_url(); ?>/projects" class="five">Projects</a>
-      <a href="<?php echo site_url(); ?>/contact" target="_blank" class="six">Contact</a>
+      <a href="<?php echo site_url(); ?>/contact" class="six">Contact</a>
     </div>
   </nav>
