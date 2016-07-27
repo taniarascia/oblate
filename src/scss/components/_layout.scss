@@ -438,9 +438,6 @@
   @include small-breakpoint {
     .single {
       padding: 0 2rem;
-      h1 {
-        font-size: 2.5rem;
-      }
     }
   }
   
@@ -829,7 +826,7 @@
   
   @include small-breakpoint {
     .large-heading {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin: 0;
     }
   }
