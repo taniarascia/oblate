@@ -70,3 +70,12 @@ label > .label-body {
 .scroll {
   overflow-x: scroll;
 }
+
+div.wpcf7-mail-sent-ok {
+  border: 1px solid #54c381;
+  border-left: 12px solid #54c381;
+  border-radius: 4px;
+  padding: 15px;
+  background: #edf9f2;
+  color: #214e33;
+}
