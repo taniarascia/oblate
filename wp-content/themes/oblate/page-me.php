@@ -9,9 +9,7 @@ $img = $image['0'];
 		<main class="main-content">
 
 			<?php if ( get_post_thumbnail_id() ) { ?>
-				<div class="single-article-image">
-					<img src="<?php echo $img; ?>" alt="<?php the_title(); ?>">
-				</div>
+				<div class="about-me" style="background:url(<?php echo $img; ?>) no-repeat center center / cover;"></div>
 				<?php } ?>
 
 					<div class="small-container">
