@@ -450,9 +450,15 @@
   
   .single-article-header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
+		margin-top: 1.5rem;
   }
   
+@include small-breakpoint {
+	.single-article-header {
+		margin-bottom: 3rem;
+	}
+}
   blockquote {
     margin-left: 0;
     margin-right: 0;
@@ -1108,28 +1114,16 @@
   }
   
   .main-content.portfolio-page {
-    padding-top: 30px;
     background: $background;
   }
   
   .portfolio {
-    padding-top: 30px;
-    padding-bottom: 30px;
     .portfolio-item {
       padding: .5rem;
       padding-bottom: 1rem;
     }
   }
-  
-  @include small-breakpoint {
-    .main-content.portfolio-page {
-      padding-top: 60px;
-    }
-    .portfolio {
-      padding-top: 40px;
-      padding-bottom: 60px;
-    }
-  }
+ 
   
   @include large-breakpoint {
     .portfolio {
