@@ -1,6 +1,6 @@
 <article id="post-<?php the_ID(); ?>">
 
-	<div class="single-article-header">
+	<div class="article-header">
 		<h1 class="large-heading"><?php the_title(); ?></h1>
 	</div>
 

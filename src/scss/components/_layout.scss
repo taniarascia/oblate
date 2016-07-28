@@ -444,16 +444,28 @@
   }
   
   .single-article-image {
+		padding-top: 3rem;
   	text-align: center;
   }
   
   .single-article-header {
   	text-align: center;
-  	padding: 1.5rem 0;
+  	padding: 0 0 1.5rem 0;
   }
   
   @include small-breakpoint {
   	.single-article-header {
+  		padding: 0 0 3rem 0;
+  	}
+  }
+
+  .article-header {
+  	text-align: center;
+  	padding: 1.5rem 0;
+  }
+  
+  @include small-breakpoint {
+  	.article-header {
   		padding: 3rem 0;
   	}
   }
