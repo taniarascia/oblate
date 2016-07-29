@@ -80,7 +80,7 @@ div.wpcf7-mail-sent-ok {
 	color: #214e33;
 }
 
-div.wpcf7-validation-error {
+div.wpcf7-validation-errors {
 	border: 1px solid #FFE168;
 	border-left: 12px solid #FFE168;
 	border-radius: 4px;
@@ -103,7 +103,10 @@ span.wpcf7-not-valid-tip {
 	max-width: 650px;
 	margin-left: auto;
 	margin-right: auto;
-	input[type=text] {
+	input[type=text], input[type=email] {
 		width: 100% !important;
+	}
+	p {
+		margin: 0;
 	}
 }
