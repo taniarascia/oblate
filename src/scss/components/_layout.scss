@@ -19,16 +19,6 @@
   	position: relative;
   }
   
-  p,
-  ol,
-  ul,
-  li,
-  dt,
-  dd,
-  label {
-  	font-size: 1.25rem;
-  }
-  
   // Links
   a {
   	color: $five;
@@ -82,6 +72,23 @@
   	color: lighten($font-color, 25%);
   }
   
+  p,
+  ol,
+  ul,
+  li,
+  dt,
+  dd,
+  label {
+  	font-size: 1.15rem;
+  }
+  
+  p,
+  ol,
+  ul,
+  blockquote {
+  	margin: 1.5rem 0;
+  }
+  
   @include small-breakpoint {
   	h1 {
   		font-size: 1.8rem;
@@ -97,6 +104,21 @@
   	}
   	h5 {
   		font-size: 1.2rem;
+  	}
+  	p,
+  	ol,
+  	ul,
+  	li,
+  	dt,
+  	dd,
+  	label {
+  		font-size: 1.25rem;
+  	}
+  	p,
+  	ol,
+  	ul,
+  	blockquote {
+  		margin: 2rem 0;
   	}
   }
   
@@ -712,16 +734,16 @@
   .comment-reply-link {
   	@extend .buttons;
   	color: white;
-  	background: $six;
+  	background: $five;
   	font-size: .9rem;
-  	border: 1px solid $six;
+  	border: 1px solid $five;
   	padding: 5px 15px 3px 15px;
   	&:hover,
   	&:focus,
   	&:active {
   		@extend .buttons-hover;
-  		border: 1px solid $six;
-  		color: $six;
+  		border: 1px solid $five;
+  		color: $five;
   		background: white;
   	}
   }
