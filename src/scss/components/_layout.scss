@@ -19,6 +19,15 @@
   	position: relative;
   }
   
+  p,
+  ol,
+  ul,
+  li,
+  dt,
+  dd {
+  	font-size: 1.25rem;
+  }
+  
   // Links
   a {
   	color: $five;
@@ -444,7 +453,7 @@
   }
   
   .single-article-image {
-		padding-top: 3rem;
+  	padding-top: 3rem;
   	text-align: center;
   }
   
@@ -458,7 +467,7 @@
   		padding: 0 0 3rem 0;
   	}
   }
-
+  
   .article-header {
   	text-align: center;
   	padding: 1.5rem 0;
@@ -1153,7 +1162,7 @@
   		}
   	}
   }
-
-.about-me {
-	height: 60vh;
-}
+  
+  .about-me {
+  	height: 60vh;
+  }
