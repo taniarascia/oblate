@@ -214,6 +214,9 @@
   		text-decoration: none;
   		background: white;
   		text-align: center;
+			&:hover {
+				color: #111;
+			}
   		&.one {
   			border-bottom: 2px solid $one;
   			&:hover {}
@@ -295,6 +298,9 @@
   			border-bottom: 1px solid $border;
   			height: $nav-height;
   			line-height: $nav-height;
+				&:hover {
+					color: #111;
+				}
   			&.one,
   			&.two,
   			&.three,
