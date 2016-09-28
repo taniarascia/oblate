@@ -31,11 +31,11 @@
 
   <nav class="navigation">
     <div class="nav-container">
-      <a href="<?php echo site_url(); ?>" class="one"><img src="<?php bloginfo('template_directory'); ?>/images/tr.png" class="face" alt="Tania Rascia"></a>
-      <a href="<?php echo site_url(); ?>/blog" class="two">Articles</a>
-      <a href="<?php echo site_url(); ?>/me" class="three">About</a>
-      <a href="<?php echo site_url(); ?>/portfolio" class="four">Portfolio</a>
-      <a href="<?php echo site_url(); ?>/projects" class="five">Projects</a>
-      <a href="<?php echo site_url(); ?>/contact" class="six">Contact</a>
+      <a href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/tr.png" class="face" alt="Tania Rascia"></a>
+      <a href="<?php echo site_url(); ?>/blog">Articles</a>
+      <a href="<?php echo site_url(); ?>/me">About</a>
+      <a href="<?php echo site_url(); ?>/portfolio">Portfolio</a>
+      <a href="<?php echo site_url(); ?>/projects">Projects</a>
+      <a href="<?php echo site_url(); ?>/contact">Contact</a>
     </div>
   </nav>
