@@ -36,13 +36,12 @@ if ( post_password_required() ) {
 		
 		<?php endif; 
 
-$args = array('comment_notes_after' => '<p style="font-size: .9rem;margin-bottom:1rem;"><a href="https://en.support.wordpress.com/markdown-quick-reference/">Markdown</a> is enabled in comments. If you would like to post code in your comments, please indent your code by four spaces. HTML/PHP code must be <a href="http://www.freeformatter.com/html-escape.html">escaped</a>. Failure to do so will make me sad. </p>
+$args = array('comment_notes_after' => '<p style="font-size: .9rem;margin-bottom:1rem;"><a href="https://en.support.wordpress.com/markdown-quick-reference/">Markdown</a> is enabled in comments. If you would like to post code in your comments, please wrap it in a <code>&lt;pre&gt;&lt;code&gt;</code>. HTML/PHP code must be <a href="http://www.freeformatter.com/html-escape.html">escaped</a>. Failure to do so will make me sad. </p>
 <p style="font-size:.9rem;"><strong>Example:</p></strong>
-<pre>    def print_hi(name)
-      puts "Hi, #{name}"
-    end
-    print_hi("Tom")
-
+<pre>&lt;pre&gt;&lt;code&gt;def print_hi(name)
+	puts "Hi, #{name}"
+end
+print_hi("Tania")&lt;/pre&gt;&lt;/code&gt;
 </pre>'); comment_form( $args ); ?>
 
 	</div>
