@@ -205,7 +205,7 @@
   		display: block;
   		height: 50px;
   		line-height: 50px;
-  		font-size: 1.1rem;
+  		font-size: 1rem;
   		font-family: $nav;
   		font-weight: 500;
   		padding-left: 20px;
@@ -214,42 +214,8 @@
   		text-decoration: none;
   		background: white;
   		text-align: center;
-			&:hover {
-				color: #111;
-			}
-  		&.one {
-  			border-bottom: 2px solid $one;
-  			&:hover {}
-  		}
-  		&.two {
-  			border-bottom: 2px solid $two;
-  			&:hover {
-  				color: $two;
-  			}
-  		}
-  		&.three {
-  			border-bottom: 2px solid $three;
-  			&:hover {
-  				color: $three;
-  			}
-  		}
-  		&.four {
-  			border-bottom: 2px solid $four;
-  			&:hover {
-  				color: $four;
-  			}
-  		}
-  		&.five {
-  			border-bottom: 2px solid $five;
-  			&:hover {
-  				color: $five
-  			}
-  		}
-  		&.six {
-  			border-bottom: 2px solid $six;
-  			&:hover {
-  				color: $six;
-  			}
+  		&:hover {
+  			color: #111;
   		}
   	}
   	.face {
@@ -298,37 +264,8 @@
   			border-bottom: 1px solid $border;
   			height: $nav-height;
   			line-height: $nav-height;
-				&:hover {
-					color: #111;
-				}
-  			&.one,
-  			&.two,
-  			&.three,
-  			&.four,
-  			&.five,
-  			&.six {
-  				border-bottom: 1px solid $border;
-  				&:hover {
-  					color: #111;
-  				}
-  			}
-  			&.one:hover {
-  				border-bottom: 2px solid $one;
-  			}
-  			&.two:hover {
-  				border-bottom: 2px solid $two;
-  			}
-  			&.three:hover {
-  				border-bottom: 2px solid $three;
-  			}
-  			&.four:hover {
-  				border-bottom: 2px solid $four;
-  			}
-  			&.five:hover {
-  				border-bottom: 2px solid $five;
-  			}
-  			&.six:hover {
-  				border-bottom: 2px solid $six;
+  			&:hover {
+  				color: #111;
   			}
   		}
   	}
@@ -652,9 +589,9 @@
   
   #comments {
   	line-height: 1.45;
-		p {
-			font-size: 1rem; 
-		}
+  	p {
+  		font-size: 1rem;
+  	}
   }
   
   // Date and Time meta data below commentator's name
@@ -832,7 +769,7 @@
   
   @include small-breakpoint {
   	.home-content {
-  		margin-top: 80px;
+  		margin-top: 60px;
   	}
   }
   
