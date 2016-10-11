@@ -41,7 +41,7 @@ $args = array('comment_notes_after' => '<p style="font-size: .9rem;margin-bottom
 <pre>&lt;pre&gt;&lt;code&gt;def print_hi(name)
   puts "Hi, #{name}"
 end
-print_hi("Tania")&lt;/pre&gt;&lt;/code&gt;
+print_hi("Tania")&lt;/code&gt;&lt;/pre&gt;
 </pre>'); comment_form( $args ); ?>
 
 	</div>
