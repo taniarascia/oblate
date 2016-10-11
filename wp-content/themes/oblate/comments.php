@@ -22,7 +22,14 @@ if ( post_password_required() ) {
 			) );
 		?>
 		</ul>
-		<?php paginate_comments_links(); ?> 
+		<div class="posts-links">
+			<div class="pagination-left">
+				<?php previous_comments_link(); ?>
+			</div>
+			<div class="pagination-right">
+				<?php next_comments_link(); ?>
+			</div>
+		</div>
 
 		<?php endif; // have_comments() ?>
 
