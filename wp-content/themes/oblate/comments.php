@@ -22,6 +22,7 @@ if ( post_password_required() ) {
 			) );
 		?>
 		</ul>
+		<?php paginate_comments_links(); ?> 
 
 		<?php endif; // have_comments() ?>
 
