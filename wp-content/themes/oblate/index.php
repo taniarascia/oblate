@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="main-content text-center">
+<main class="main-content padding-top text-center">
 
 	<div class="small-container">
 	
