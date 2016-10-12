@@ -466,6 +466,7 @@ blockquote {
 	color: #4f545a;
 	padding: 2px 0 0 25px;
 	border-left: 12px solid $background;
+	font-family: $header;
 	& p {
 		margin: 0;
 		font-weight: 700;
