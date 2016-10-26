@@ -28,7 +28,7 @@ a {
 	&:hover,
 	&:focus,
 	&:active {
-		color: $four;
+		color: darken($five, 15%);
 		text-decoration: underline;
 	}
 }
@@ -455,6 +455,17 @@ a .all {
 @include small-breakpoint {
 	.article-header {
 		padding: 3rem 0;
+	}
+}
+
+.page-header {
+	text-align: center;
+	padding: 1.5rem 0 0;
+}
+
+@include small-breakpoint {
+	.page-header {
+		padding: 3rem 0 0;
 	}
 }
 

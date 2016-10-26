@@ -59,6 +59,7 @@ legend {
 	margin: .4rem 0 .2rem;
 	font-weight: 600;
 	font-size: .9rem;
+  font-family: $header;
 }
 
 label > .label-body {
@@ -109,4 +110,9 @@ span.wpcf7-not-valid-tip {
 	p {
 		margin: 0;
 	}
+}
+
+.comment-form {
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid $border;
 }
