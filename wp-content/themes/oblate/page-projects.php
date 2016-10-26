@@ -22,7 +22,7 @@
 		</section>
 
 		<section id="music">
-			<div class="large-container">
+			<div class="small-container">
 				<div class="music-container">
 					<h1>Music</h1>
 					<p>Really weird musical side project.</p>
