@@ -10,7 +10,7 @@
 
 						endwhile; endif; ?>
 
-        <div class="text-center">
+        <div class="text-center margin-top">
           <p>No cute bullshit about buying me pizza or coffee. If pressing that button is something you want to do, then by all means, do.</p>
 
           <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
