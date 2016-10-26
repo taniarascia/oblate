@@ -21,8 +21,6 @@
       
           if ( $portfolio->have_posts() ) : ?>
 
-      <div class="large-container">
-
         <div class="portfolio">
 
           <?php while ( $portfolio->have_posts() ) : $portfolio->the_post();
@@ -37,8 +35,6 @@
             <?php endwhile; ?>
 
         </div>
-
-      </div>
 
       <?php endif; wp_reset_postdata(); ?>
 
