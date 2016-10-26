@@ -11,7 +11,7 @@
 						endwhile; endif; ?>
 
         <div class="text-center margin-top">
-          <p>No cute bullshit about buying me pizza or coffee. If pressing that button is something you want to do, then by all means, do.</p>
+          <p>No cute bullshit about buying me pizza or coffee. If you've found my website useful and would like to press that button, I appreciate it!</p>
 
           <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
             <input type="hidden" name="cmd" value="_s-xclick" />
