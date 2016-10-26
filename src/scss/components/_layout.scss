@@ -460,12 +460,12 @@ a .all {
 
 .page-header {
 	text-align: center;
-	padding: 1.5rem 0 0;
+	padding: 1.5rem 0 .5rem;
 }
 
 @include small-breakpoint {
 	.page-header {
-		padding: 3rem 0 0;
+		padding: 3rem 0 1.5rem;
 	}
 }
 
