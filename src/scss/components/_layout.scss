@@ -54,6 +54,7 @@ h5 {
 h1 {
 	font-size: 1.4rem;
 	margin-bottom: 0;
+	line-height: 1.1;
 }
 
 h2 {
@@ -122,7 +123,7 @@ blockquote {
 	ol,
 	ul,
 	blockquote {
-		margin: .5rem 0 2.5rem;
+		margin: .5rem 0 2rem;
 	}
 }
 
@@ -601,6 +602,26 @@ a.social-icon {
 
 
 /* WordPress */
+
+.tags-container {
+	padding-top: 1rem;
+}
+
+.tags a {
+	display: inline-block;
+	font-family: $code;
+	padding: .5rem 1rem;
+	margin: 2px;
+	background: #efefef;
+	color: #CB2D52;
+	border-radius: 4px;
+	font-size: .9rem;
+	text-decoration: none;
+	font-weight: 600;
+	&:hover, &:focus, &:active {
+		background: darken(#efefef, 5%);
+	}
+}
 
 // Remove the pagination title
 .screen-reader-text {

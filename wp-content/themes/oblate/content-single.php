@@ -15,6 +15,7 @@ $url = $thumb['0'];
 			<time datetime="<?php the_time('Y-m-d'); ?>">
 				<?php the_time('F j, Y'); ?>
 			</time>
+				<?php the_tags('<div class="tags-container"><span class="tags">' ,'</span><span class="tags">','</span></div>'); ?>
 		</div>
 
 	<?php the_content(); ?>
