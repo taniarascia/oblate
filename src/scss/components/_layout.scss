@@ -47,13 +47,13 @@ h5 {
 	line-height: 1.2;
 	font-weight: 700;
 	letter-spacing: -0.02rem;
-	margin-bottom: .25rem;
+	margin-bottom: 0;
 	color: #111;
 }
 
 h1 {
 	font-size: 1.4rem;
-	margin-bottom: .25rem;
+	margin-bottom: 0;
 }
 
 h2 {
@@ -105,7 +105,7 @@ blockquote {
 		font-size: 1.6rem;
 	}
 	h5 {
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 	}
 	p,
 	ol,
@@ -122,7 +122,7 @@ blockquote {
 	ol,
 	ul,
 	blockquote {
-		margin: 1rem 0 2rem;
+		margin: .5rem 0 2.5rem;
 	}
 }
 
@@ -1052,47 +1052,6 @@ a.social-icon {
 	height: 300px;
 }
 
-.colors {
-	display: flex;
-	flex-direction: row;
-	height: 10px;
-	div {
-		flex: 1;
-		height: 10px;
-		width: calc(100% / 6);
-	}
-	.one {
-		background: $one;
-	}
-	.two {
-		background: $two;
-	}
-	.three {
-		background: $three;
-	}
-	.four {
-		background: $four;
-	}
-	.five {
-		background: $five;
-	}
-	.six {
-		background: $six;
-	}
-}
-
-
-/* Helpers */
-
-.text-center {
-	text-align: center;
-}
-
-.no-padding-bottom {
-	padding-bottom: 0 !important;
-}
-
-
 /* Tables */
 
 // Table expands to full width of containing element
@@ -1170,15 +1129,6 @@ caption {
 		}
 	}
 }
-
-.about-me {
-	height: 60vh;
-}
-
-.margin-top {
-	padding-top: 15px;
-}
-
 
 /* Projects */
 
@@ -1336,8 +1286,27 @@ caption {
 	}
 }
 
+
+/* Helpers */
+
+.text-center {
+	text-align: center;
+}
+
+.no-padding-bottom {
+	padding-bottom: 0 !important;
+}
+
 .vertical-center {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.about-me {
+	height: 60vh;
+}
+
+.margin-top {
+	padding-top: 15px;
 }
