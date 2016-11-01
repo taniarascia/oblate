@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I'm Tania, and I'm dedicated to simplifying web development through effective and concise tutorials. Let's learn and create.">
   
   <?php if ( is_page('projects') ) { ?>
   	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
