@@ -17,7 +17,7 @@ html {
 
 // Body base 
 body {
-	color: $font-color;
+	color: $font-color;  
 	position: relative;
 }
 
@@ -642,10 +642,13 @@ a.social-icon {
 	}
 }
 
+
+
 // Date and Time meta data below commentator's name
 .comment-meta.commentmetadata,
 .comment-notes {
 	font-size: .85rem;
+	margin-bottom: 1rem;
 }
 
 // Author name
@@ -684,6 +687,7 @@ a.social-icon {
 .comments-title {
 	font-size: 1.4rem;
 	font-family: $header;
+	margin-bottom: 2rem;
 }
 
 // Comment body
@@ -761,7 +765,7 @@ a.social-icon {
 }
 
 .posts-links {
-	padding: 0 1rem;
+	padding: 0;
 	&:after {
 		content: '';
 		display: table;
