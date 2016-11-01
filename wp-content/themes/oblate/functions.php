@@ -35,6 +35,8 @@ add_filter( 'the_content_more_link', 'modify_read_more_link' );
 
 // Add Stylesheets
 function oblate_scripts() {
+	wp_dequeue_style('screen');
+	wp_deregister_style('screen');
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css' );
 	wp_enqueue_script( 'prism', get_template_directory_uri() . '/js/prism.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
