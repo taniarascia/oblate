@@ -13,6 +13,7 @@
 
   <?php wp_head(); ?>
 
+   <?php if (!isset($_SERVER['HTTP_USER_AGENT']) || stripos($_SERVER['HTTP_USER_AGENT'], 'Speed Insights') === false): ?>
     <script>
       (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -29,7 +30,7 @@
       ga('create', 'UA-42068444-1', 'auto');
       ga('send', 'pageview');
     </script>
-    
+    <?php endif; ?>
 </head>
 
 <body>
