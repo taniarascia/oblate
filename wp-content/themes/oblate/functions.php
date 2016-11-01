@@ -207,6 +207,5 @@ function starter_scripts() {
     wp_enqueue_script( 'jquery' );
 
     wp_enqueue_style( 'starter-style', get_stylesheet_uri() );
-    wp_enqueue_script( 'includes', get_template_directory_uri() . '/js/min/includes.min.js', '', '', true );
 }
 add_action( 'wp_enqueue_scripts', 'starter_scripts' );
