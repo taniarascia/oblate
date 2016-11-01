@@ -27,14 +27,23 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 add_theme_support( 'html5', array( 'search-form' ) );
 
 // Change 'more' link
-
 function modify_read_more_link() {
 	return '<p class="right-text"><a class="button" href="' . get_permalink() . '">Read More</a></p>';
 }
 add_filter( 'the_content_more_link', 'modify_read_more_link' );
 
+// jQuery to the bottom
+function starter_scripts() {
+    wp_deregister_script( 'jquery' );
+    wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
+    wp_enqueue_script( 'jquery' );
+    wp_enqueue_style( 'starter-style', get_stylesheet_uri() );
+}
+add_action( 'wp_enqueue_scripts', 'starter_scripts' );
+
 // Add Stylesheets
 function oblate_scripts() {
+	wp_dequeue_style( 'starter-style' );
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css' );
 	wp_enqueue_script( 'prism', get_template_directory_uri() . '/js/prism.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
@@ -43,13 +52,9 @@ add_action( 'wp_enqueue_scripts', 'oblate_scripts' );
 
 // Google Fonts
 function load_fonts() {
-	wp_register_style('PT Serif', '//fonts.googleapis.com/css?family=PT+Serif:400,700');
-	wp_register_style('Heebo', '//fonts.googleapis.com/css?family=Heebo:400,500,700');
-	wp_register_style('RobotoMono', '//fonts.googleapis.com/css?family=Roboto+Mono:400,500');
+	wp_register_style('All', '//fonts.googleapis.com/css?family=PT+Serif:400,700|Heebo:400,500,700|Roboto+Mono:400,500');
 	wp_register_style('FontAwesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
-	wp_enqueue_style( 'PT Serif');
-	wp_enqueue_style( 'Heebo');
-	wp_enqueue_style( 'RobotoMono');
+	wp_enqueue_style( 'All');
 	wp_enqueue_style( 'FontAwesome');
 }
 add_action('wp_print_styles', 'load_fonts');
@@ -115,8 +120,8 @@ function meta_og() {
 		<meta property="og:description" content="<?php echo $excerpt; ?>">
 		<meta property="og:type" content="article"/>
 		<meta property="og:url" content="<?php echo the_permalink(); ?>">
-		<meta property="og:site_name" content="<?php echo get_bloginfo(); ?>">
-		<meta property="og:image" content="<?php echo $img_src[0]; ?>">
+		<meta property="og:site_name" content="Web development tutorials by Tania Rascia">
+		<meta property="og:image" content="<?php echo $img_src; ?>">
 <?php
 	} else {
 			return;
@@ -200,12 +205,3 @@ function create_post_portfolio()
     ));
 }
 add_action('init', 'create_post_portfolio'); // Add our Portfolio Item Type
-
-function starter_scripts() {
-    wp_deregister_script( 'jquery' );
-    wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
-    wp_enqueue_script( 'jquery' );
-
-    wp_enqueue_style( 'starter-style', get_stylesheet_uri() );
-}
-add_action( 'wp_enqueue_scripts', 'starter_scripts' );
