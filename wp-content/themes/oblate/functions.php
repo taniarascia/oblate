@@ -114,14 +114,14 @@ function meta_og() {
 		array_pop($excerptwords);
 		$excerpt = implode(' ', $excerptwords) . $excerpt_more;
 		?>
-		<meta name="author" content="Tania Rascia">
-		<meta name="description" content="<?php echo $excerpt; ?>">
-		<meta property="og:title" content="<?php echo the_title(); ?>">
-		<meta property="og:description" content="<?php echo $excerpt; ?>">
-		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="<?php echo the_permalink(); ?>">
-		<meta property="og:site_name" content="Web development tutorials by Tania Rascia">
-		<meta property="og:image" content="<?php echo $img_src; ?>">
+<meta name="author" content="Tania Rascia">
+<meta name="description" content="<?php echo $excerpt; ?>">
+<meta property="og:title" content="<?php echo the_title(); ?>">
+<meta property="og:description" content="<?php echo $excerpt; ?>">
+<meta property="og:type" content="article">
+<meta property="og:url" content="<?php echo the_permalink(); ?>">
+<meta property="og:site_name" content="Web development tutorials by Tania Rascia">
+<meta property="og:image" content="<?php echo $img_src[0]; ?>">
 <?php
 	} else {
 			return;
