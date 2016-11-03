@@ -17,7 +17,7 @@ html {
 
 // Body base 
 body {
-	color: $font-color;  
+	color: $font-color;
 	position: relative;
 }
 
@@ -286,6 +286,7 @@ time {
 	display: block;
 	font-family: $nav;
 	font-size: .9rem;
+	font-weight: 600;
 }
 
 a.article-link {
@@ -471,14 +472,25 @@ a .all {
 }
 
 blockquote {
-	margin-left: 0;
-	margin-right: 0;
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
+	margin: 1.5 0;
 	color: #4f545a;
 	padding: 2px 0 0 25px;
 	border-left: 12px solid $background;
 	font-family: $header;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		margin: 0 0 1rem;
+	}
+	pre {
+		font-family: $code;
+		font-size: 1rem;
+		background: rgba(0, 0, 0, .1);
+		color: #333;
+		padding: 1rem;
+	}
 	& p {
 		margin: 0;
 		font-weight: 700;
@@ -541,6 +553,7 @@ a.twitter-link.button {
 	border: 1px solid #049AE5;
 	text-transform: none;
 	margin: .25rem 0;
+	display: block;
 	&:hover,
 	&:focus,
 	&:active {
@@ -618,7 +631,9 @@ a.social-icon {
 	font-size: .9rem;
 	text-decoration: none;
 	font-weight: 600;
-	&:hover, &:focus, &:active {
+	&:hover,
+	&:focus,
+	&:active {
 		background: darken(#efefef, 5%);
 	}
 }
@@ -641,8 +656,6 @@ a.social-icon {
 		font-size: 1rem;
 	}
 }
-
-
 
 // Date and Time meta data below commentator's name
 .comment-meta.commentmetadata,
@@ -674,7 +687,7 @@ a.social-icon {
 .comment-list {
 	list-style-type: none;
 	margin: 0;
-	padding: 0; 
+	padding: 0;
 }
 
 // says:
@@ -1077,6 +1090,7 @@ a.social-icon {
 	height: 300px;
 }
 
+
 /* Tables */
 
 // Table expands to full width of containing element
@@ -1154,6 +1168,7 @@ caption {
 		}
 	}
 }
+
 
 /* Projects */
 
@@ -1263,7 +1278,9 @@ caption {
 		background: linear-gradient(to top right, RGBA(235, 64, 164, 1), RGBA(253, 198, 108, 1));
 		color: white;
 		border: 0;
-		&:hover, &:focus, &:active {
+		&:hover,
+		&:focus,
+		&:active {
 			background: white;
 			color: RGBA(235, 64, 164, 1);
 		}
