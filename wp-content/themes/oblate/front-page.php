@@ -1,17 +1,21 @@
 <?php get_header(); ?>
 
 	<main class="home-content">
+		
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 		<section class="banner">
 			<div class="small-container">
 				<h1>Tania Rascia</h1>
 				<h2>Front End Web Developer</h2>
-				<p class="opener">I design and develop websites in Chicago. I also write high quality guides and tutorials. No ads. No sponsored posts. No fluff. Let's just learn and create.</p>
+				<div class="opener"><?php the_content(); ?></div>
 				<a href="https://twitter.com/taniarascia" class="social-icon" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
 				<a href="https://github.com/taniarascia" class="social-icon" target="_blank"><i class="fa fa-github fa-3x"></i></a>
 				<a href="http://codepen.com/taniarascia" class="social-icon" target="_blank"><i class="fa fa-codepen fa-3x"></i></a>
 			</div>
 		</section>
+		
+		<?php endwhile; endif; ?>
 
 		<section>
 			<div class="large-container">
