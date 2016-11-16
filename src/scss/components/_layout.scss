@@ -11,6 +11,7 @@
 // HTML base
 html {
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
 	font-size: $font-size;
 }
@@ -18,7 +19,7 @@ html {
 // Body base 
 body {
 	color: $font-color;
-	position: relative; 
+	position: relative;
 }
 
 // Links
@@ -114,7 +115,7 @@ blockquote {
 	li,
 	dt,
 	dd {
-		font-size: 1.19rem;
+		font-size: 1.2rem;
 	}
 	label {
 		font-size: 1.1rem;
@@ -484,7 +485,7 @@ blockquote {
 	h5 {
 		margin: 0 0 1rem;
 	}
-	pre { 
+	pre {
 		font-family: $code;
 		font-size: 1rem;
 		background: rgba(0, 0, 0, .1);
@@ -500,6 +501,21 @@ blockquote {
 		margin-top: 25px;
 		font-size: .9rem;
 		text-align: right;
+	}
+	&.alert {
+		background: #FFECEC;
+		border: 1px solid #C6585D;
+		border-radius: 4px;
+		color: #8a3d41;
+		padding: 15px;
+		border-left: 12px solid #C6585D;
+		p {
+			font-weight: 400;
+			margin-bottom: 1rem;
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
 	}
 	&.info {
 		background: #FFF4CA;
@@ -542,7 +558,7 @@ blockquote {
 			margin-bottom: 1rem;
 			&:last-of-type {
 				margin-bottom: 0;
-			} 
+			}
 		}
 	}
 }
@@ -625,16 +641,16 @@ a.social-icon {
 	font-family: $code;
 	padding: .5rem 1rem;
 	margin: 2px;
-	background: #efefef;
-	color: #CB2D52;
+	background: rgba(0, 0, 0, .05);
+	color: #bf616a;
 	border-radius: 4px;
-	font-size: .9rem;
+	font-size: 1rem;
 	text-decoration: none;
-	font-weight: 600;
+	-webkit-font-smoothing: subpixel-antialiased;
 	&:hover,
 	&:focus,
 	&:active {
-		background: darken(#efefef, 5%);
+		background: darken(rgba(0, 0, 0, .05), 5%);
 	}
 }
 
