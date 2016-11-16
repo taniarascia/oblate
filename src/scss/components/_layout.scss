@@ -650,7 +650,7 @@ a.social-icon {
 	&:hover,
 	&:focus,
 	&:active {
-		background: darken(rgba(0, 0, 0, .05), 5%);
+		background: rgba(0,0,0,.1);
 	}
 }
 

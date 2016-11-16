@@ -20,7 +20,7 @@ pre .terminal {
 code[class*="language-"],
 pre[class*="language-"],
 pre code {
-	color: #bf616a;
+	color: #D5D5D5;
 	font-family: $code;
 	direction: ltr;
 	text-align: left;
@@ -92,10 +92,10 @@ kbd {
 	font-size: 1rem;
 	padding: .01rem .2rem;
 	background: rgba(0, 0, 0, .1);
-	font-family: $code;
+	font-family: $code; 
 	font-weight: 400;
 	border-radius: 4px;
-	color: $font-color;
+	color: #bf616a;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
