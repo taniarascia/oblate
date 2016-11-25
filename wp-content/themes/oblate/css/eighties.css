@@ -5,30 +5,32 @@ h1,
 h2,
 h3,
 h4,
-h5 {
-	font-family: 'Press Start 2P', monospace;
+h5,
+label {
+	font-family: 'Press Start 2P', monospace !important;
 	color: #FCB42A !important;
 }
 
 time {
-	font-family: 'Press Start 2P', monospace;
-	color: white;
+	font-family: 'Press Start 2P', monospace !important;
+	color: #2467DB;
 }
 
 .single h1 {
-	font-size: 40px !important;
+	font-size: 24px !important;
+	margin-bottom: 15px;
 }
 
 h1 {
-	font-size: 32px !important;
+	font-size: 24px !important;
 }
 
 h2 {
-	font-size: 32px !important;
+	font-size: 16px !important;
 }
 
 h3 {
-	font-size: 24px !important;
+	font-size: 16px !important;
 }
 
 h4 {
@@ -38,8 +40,22 @@ h4 {
 body {
 	font-family: Courier New, monospace;
 	font-weight: 600;
-	background: #010101 !important;
+	background: #121212 !important;
 	color: #fff !important;
+}
+
+.main-content.portfolio-page {
+	background: #121212 !important;
+}
+
+.comment-author a,
+.comment-author cite.fn,
+p,
+ul,
+ol {
+	font-size: 16px !important;
+	color: white !important;
+	font-family: Courier New, monospace !important;
 }
 
 code,
@@ -49,56 +65,145 @@ code[class*=language-],
 pre[class*=language-],
 pre code {
 	font-family: Courier New, monospace !important;
-	font-weight: 600 !important;
-	-webkit-font-smoothing: antialiased;
+	font-weight: 400 !important;
+	-webkit-font-smoothing: subpixel-antialiased;
+	border-radius: 0 !important;
 }
 
 code[class*=language-],
 pre[class*=language-],
 pre code {
 	background: #191919;
-	font-size: 1rem;
+	font-size: 16px !important;
+	font-weight: 400 !important;
+	border-radius: 0 !important;
+}
+
+blockquote {
+	font-family: 'Press Start 2P', monospace !important;
+	border-radius: 0 !important;
+	background: #121212 !important;
+	color: white !important;
+	font-size: 16px !important;
+}
+
+blockquote p {
+	font-family: 'Press Start 2P', monospace !important;
+	font-size: 16px !important;
+}
+
+h1 {
+	margin-bottom: 15px !important;
 }
 
 .single,
 .navigation,
 .navigation a,
-.footer {
-	background: #010101 !important;
+.footer,
+.banner,
+.content {
+	background: #121212 !important;
 }
 
 .navigation a {
-	border-bottom: 2px solid #708EFC !important;
 	font-family: 'Press Start 2P', monospace !important;
-	color: white;
+	font-size: 14px !important;
+	color: white !important;
+}
+
+.latest-articles a.article-link {
+	color: #fff;
+	background: #121212 !important;
+	border: 1px solid #2467DB;
+}
+
+.article-excerpt {
+	border-bottom: 1px solid #2467DB !important;
+}
+
+.latest-articles a.article-link:hover,
+a.article-link:hover,
+a .article-excerpt:hover {
+	background: #121212 !important;
 }
 
 .navigation a:hover,
 :not(pre)>code {
 	color: #FF2155 !important;
+	border-radius: 0 !important;
+	border-bottom: 1px solid #2467DB !important;
 }
 
-.navigation {
-	border-bottom: 2px solid #708EFC;
+.comment-meta a {
+	color: #FF2155 !important;
+	font-family: Courier New, monospace !important;
 }
+
+.comment-reply-link {
+	background: #2467DB !important;
+	border: 1px solid #2467DB !important;
+}
+
+.comment-reply-link:hover {
+	background: transparent !important;
+	border: 1px solid #2467DB !important;
+	color: #2467DB !important;
+}
+
+
+/* .navigation {
+	border-bottom: 2px solid #2467DB;
+} */
 
 @media (min-width: 600px) {
 	.nav-container {
-		max-width: 1000px;
+		max-width: 1000px !important;
 	}
 	.navigation a {
 		width: auto;
 	}
 }
 
+.button,
+.buttons,
+.comment-reply-link,
+.posts-links a,
+a.button,
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+	font-family: Courier New, monospace !important;
+}
+
 a {
-	color: #708EFC;
+	color: #2467DB;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #00FF00;
+	color: #FF2155 !important;
+}
+
+.tags a {
+	color: #FF2155 !important;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+	background: transparent !important;
+	color: white !important;
+	font-family: Courier New, monospace !important;
+	border: 1px solid #2467DB !important;
+	border-radius: 0 !important;
 }
 
 :not(pre)>code {
@@ -196,7 +301,7 @@ a .article-excerpt {
 }
 
 .token.tag {
-	color: #708EFC
+	color: #2467DB
 }
 
 .language-autohotkey .token.keyword {
