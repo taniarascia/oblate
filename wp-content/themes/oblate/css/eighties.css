@@ -118,7 +118,7 @@ h1 {
 }
 
 .article-excerpt {
-	border-bottom: 1px solid #2467DB !important;
+	border-bottom: 0 !important;
 }
 
 .latest-articles a.article-link:hover,
