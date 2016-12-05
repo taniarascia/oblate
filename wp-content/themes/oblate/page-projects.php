@@ -13,7 +13,7 @@
 
 		<section id="new-moon">
 			<div class="large-container">
-				<img src="https://www.taniarascia.com/wp-content/uploads/newmoon.png" class="responsive-image">
+				<img src="<?php echo site_url(); ?>/wp-content/uploads/newmoon.png" class="responsive-image">
 				<h1>New Moon</h1>
 				<p>Beautiful syntax highlighting for Atom, Brackets, &amp; Sublime.</p>
 				<a class="button" target="_blank" href="http://taniarascia.github.io/new-moon/">View Project</a>
@@ -22,37 +22,42 @@
 		</section>
 
 		<section id="music">
-			<div class="small-container">
-				<div class="music-container">
-					<h1>Music</h1>
-					<p>Really weird musical side project.</p>
-					<a class="button" target="_blank" href="https://www.taniarascia.com/music/">View Project</a>
-				</div>
+			<div class="music-container">
+				<h1>Ivory &amp; Ivory</h1>
+				<p>Really weird musical side project.</p>
+				<a class="button" target="_blank" href="https://www.taniarascia.com/music/">View Project</a>
 			</div>
 		</section>
 
 		<section id="more">
 			<div class="large-container">
 				<h1>More Projects</h1>
-				<div class="flex-row">
-					<div class="flex-column">
-						<div class="repo">
-							<h3><a href="https://github.com/taniarascia/wp-functions" target="_blank">Useful WordPress Functions</a></h3>
-							<p>Useful functions to enhance and clean up a WordPress theme.</p>
-						</div>
-					</div>
-					<div class="flex-column">
-						<div class="repo">
-							<h3><a href="https://taniarascia.github.io/html5-test/" target="_blank">HTML5 Test Page</a></h3>
-							<p>Common HTML5 elements for CSS testing purposes, with comparisons for popular frameworks.</p>
-						</div>
-					</div>
-					<div class="flex-column">
-						<div class="repo">
-							<h3><a href="https://github.com/taniarascia/fledge" target="_blank">Fledge</a></h3>
-							<p>Clean, minimalist theme for phpBB.</p>
-						</div>
-					</div>
+				<div class="more-projects">
+					<a href="https://github.com/taniarascia/wp-functions" class="article-link" target="_blank">
+						<article class="article-excerpt">
+							<div>
+								<h2>Useful WordPress Functions</h2>
+								<p>A compilation of function snippets for WordPress developers who create their own themes.</p>
+							</div>
+						</article>
+					</a>
+					<a href="https://taniarascia.github.io/html5-test/" class="article-link" target="_blank">
+						<article class="article-excerpt">
+							<div>
+								<h2>HTML5 Test Page</h2>
+								<p>A test page showcasing common HTML5 elements for CSS testing purposes, with comparisons of popular frameworks</p>
+							</div>
+						</article>
+					</a>
+					<a href="https://github.com/taniarascia/fledge" class="article-link" target="_blank">
+						<article class="article-excerpt">
+							<div>
+								<h2>Fledge</h2>
+								<p>A clean, responsive, minimalist theme for phpBB.</p>
+							</div>
+						</article>
+					</a>
+					
 				</div>
 			</div>
 		</section>

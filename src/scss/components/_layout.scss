@@ -297,15 +297,6 @@ a.article-link {
 	&:active {
 		text-decoration: none;
 	}
-	&:first-of-type,
-	&:last-of-type {
-		//border-top: 1px solid transparent;
-		&:hover,
-		&:focus,
-		&:active {
-			//border-top: 1px solid transparent;
-		}
-	}
 }
 
 a .article-excerpt {
@@ -365,47 +356,6 @@ a .article-excerpt {
 		width: 75px;
 		height: 75px;
 		max-width: 75px;
-	}
-}
-
-a .all {
-	color: $font-color;
-	border-bottom: 1px solid $border;
-	border-left: 1px solid transparent;
-	border-right: 1px solid transparent;
-	padding: 1rem;
-	&:hover,
-	&:active,
-	&:focus {
-		background: $light-background;
-	}
-	h1 {
-		margin-top: 0;
-		text-align: center;
-		font-size: 1.5rem;
-	}
-}
-
-@include small-breakpoint {
-	a .all {
-		h1 {
-			text-align: left;
-		}
-	}
-	.all {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		padding: 2rem;
-		text-align: left;
-		align-items: stretch;
-		img {
-			display: block;
-			padding: .5rem;
-			width: 75px;
-			height: 75px;
-			max-width: 75px;
-		}
 	}
 }
 
@@ -650,7 +600,7 @@ a.social-icon {
 	&:hover,
 	&:focus,
 	&:active {
-		background: rgba(0,0,0,.1);
+		background: rgba(0, 0, 0, .1);
 	}
 }
 
@@ -918,7 +868,8 @@ a.social-icon {
 	}
 }
 
-.latest-articles {
+.latest-articles,
+.more-projects {
 	a.article-link {
 		background: $light-background;
 		transition: all .2s ease;
@@ -936,12 +887,9 @@ a.social-icon {
 	}
 }
 
-@include small-breakpoint {
-	.latest-articles {}
-}
-
 @include large-breakpoint {
-	.latest-articles {
+	.latest-articles,
+	.more-projects {
 		display: flex;
 		flex-direction: row;
 		a.article-link {
@@ -1287,8 +1235,10 @@ caption {
 	}
 	.music-container {
 		background: #222326;
-		padding: 20px;
+		padding: 1rem 1rem 2rem;
 		color: rgba(255, 255, 255, .9) !important;
+		max-width: 500px;
+		margin: 0 auto;
 	}
 	a.button {
 		background: linear-gradient(to top right, RGBA(235, 64, 164, 1), RGBA(253, 198, 108, 1));
@@ -1310,12 +1260,19 @@ caption {
 		margin-bottom: 1rem;
 	}
 	.repo {
-		border: 1px solid $border;
+		display: block;
 		padding: 1rem;
 		margin: 1rem;
-		&:hover {
-			border: 1px solid darken($border, 10%);
-			box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
+		background: $light-background;
+		transition: all .2s ease;
+		height: 100%;
+		&:hover,
+		&:active,
+		&:focus {
+			box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+		}
+		a {
+			color: #111;
 		}
 	}
 }
