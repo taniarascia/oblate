@@ -183,7 +183,7 @@ mark {
 	background: white;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	text-align: center;
+	text-align: left;
 }
 
 @include small-breakpoint {
@@ -814,9 +814,13 @@ a.social-icon {
 .banner {
 	padding: 1rem 0;
 	background: white;
-	text-align: center;
+	text-align: left;
 	h1 {
 		font-size: 2.5rem;
+		margin-bottom: .5rem;
+	}
+	.the-content {
+		padding-top: 1rem;
 	}
 }
 
@@ -825,10 +829,8 @@ a.social-icon {
 		padding: 2rem 0;
 		h1 {
 			font-size: 3rem;
-			margin-bottom: .5rem;
 		}
 		.opener {
-			padding-top: 1rem;
 			margin: 0 auto;
 			max-width: 650px;
 		}
@@ -1264,7 +1266,7 @@ caption {
 #more {
 	text-align: center;
 	padding: 40px 0;
-	h1 { 
+	h1 {
 		margin-bottom: 1rem;
 	}
 	.repo {

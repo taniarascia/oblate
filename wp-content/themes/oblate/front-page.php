@@ -6,17 +6,26 @@
 
 			<section class="banner">
 				<div class="small-container">
-					<h1>Tania Rascia</h1>
-					<a class="github-button" href="https://github.com/taniarascia" data-count-href="/taniarascia/followers" data-count-api="/users/taniarascia#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @taniarascia on GitHub">taniarascia</a>
-
-					<a class="twitter-follow-button" href="https://twitter.com/taniarascia" data-show-screen-name="false">Follow @taniarascia</a>
 					<div class="opener">
-						<?php the_content(); ?>
+						<h1>Tania Rascia</h1>
+						<a class="github-button" href="https://github.com/taniarascia" data-count-href="/taniarascia/followers" data-count-api="/users/taniarascia#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @taniarascia on GitHub">taniarascia</a>
+						<a class="twitter-follow-button" href="https://twitter.com/taniarascia" data-show-screen-name="false">Follow @taniarascia</a>
+						<div class="the-content">
+							<?php the_content(); ?>
+						</div>
 					</div>
 				</div>
 			</section>
 
 			<?php endwhile; endif; ?>
+
+				<section class="content">
+					<div class="small-container">
+						<h2 class="large-heading">Latest Articles</h2>
+						<p>My newest thoughts, guides, and resources.</p>
+						<a class="button" href="<?php echo site_url(); ?>/blog">View All</a>
+					</div>
+				</section>
 
 				<section>
 					<div class="large-container">
@@ -29,7 +38,7 @@ $frontPage = new WP_Query( $args ); if ($frontPage->have_posts()) : while ($fron
 $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID), 'thumbnail' );
 $url = $thumb['0']; ?>
 
-								<a href="<?php the_permalink(); ?>" class="article-link">
+				<a href="<?php the_permalink(); ?>" class="article-link">
           <article id="post-<?php the_ID(); ?>" class="article-excerpt">
             <div>
               <h1><?php the_title(); ?></h1>
