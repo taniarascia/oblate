@@ -21,9 +21,11 @@
 
 				<section class="content">
 					<div class="small-container">
-						<h2 class="large-heading">Latest Articles</h2>
-						<p>My newest thoughts, guides, and resources.</p>
-						<a class="button" href="<?php echo site_url(); ?>/blog">View All</a>
+						<div class="opener">
+							<h2 class="large-heading">Latest Articles</h2>
+							<p>My newest thoughts, guides, and resources.</p>
+							<a class="button" href="<?php echo site_url(); ?>/blog">View All</a>
+						</div>
 					</div>
 				</section>
 
@@ -38,7 +40,7 @@ $frontPage = new WP_Query( $args ); if ($frontPage->have_posts()) : while ($fron
 $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID), 'thumbnail' );
 $url = $thumb['0']; ?>
 
-				<a href="<?php the_permalink(); ?>" class="article-link">
+								<a href="<?php the_permalink(); ?>" class="article-link">
           <article id="post-<?php the_ID(); ?>" class="article-excerpt">
             <div>
               <h1><?php the_title(); ?></h1>
@@ -57,9 +59,11 @@ $url = $thumb['0']; ?>
 
 				<section class="content">
 					<div class="small-container">
-						<h2 class="large-heading">Tutorials</h2>
-						<p>The missing instruction manuals for popular web services.</p>
-						<a class="button" href="<?php echo site_url(); ?>/blog">View All</a>
+						<div class="opener">
+							<h2 class="large-heading">Tutorials</h2>
+							<p>The missing instruction manuals for popular web services.</p>
+							<a class="button" href="<?php echo site_url(); ?>/blog">View All</a>
+						</div>
 					</div>
 				</section>
 
