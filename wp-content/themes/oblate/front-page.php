@@ -7,10 +7,12 @@
 			<section class="banner">
 				<div class="small-container">
 					<h1>Tania Rascia</h1>
-					<?php the_content(); ?>
-					<a class="github-button" href="https://github.com/taniarascia" data-count-href="/taniarascia/followers" data-count-api="/users/taniarascia#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @taniarascia on GitHub">taniarascia</a> 
+					<a class="github-button" href="https://github.com/taniarascia" data-count-href="/taniarascia/followers" data-count-api="/users/taniarascia#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @taniarascia on GitHub">taniarascia</a>
 
 					<a class="twitter-follow-button" href="https://twitter.com/taniarascia" data-show-screen-name="false">Follow @taniarascia</a>
+					<div class="opener">
+						<?php the_content(); ?>
+					</div>
 				</div>
 			</section>
 

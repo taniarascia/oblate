@@ -49,13 +49,12 @@ h5 {
 	font-weight: 700;
 	letter-spacing: -0.02rem;
 	margin-bottom: 0;
-	color: #111;
+	color: $heading-color;
 }
 
 h1 {
 	font-size: 1.4rem;
 	margin-bottom: 0;
-	line-height: 1.1;
 }
 
 h2 {
@@ -150,7 +149,8 @@ mark {
 }
 
 .small-container,
-.large-container {
+.large-container,
+.container {
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 1rem;
@@ -282,6 +282,7 @@ mark {
 /* Articles */
 
 time {
+	margin-top: .25rem;
 	color: #a1a1a1;
 	text-transform: uppercase;
 	display: block;
@@ -497,10 +498,10 @@ blockquote {
 		}
 	}
 	&.details {
-		background: #EEF3FA;
+		background: #f7f9fd;
 		border: 1px solid #4075D0;
 		border-radius: 4px;
-		color: #315082;
+		color: #335da6;
 		padding: 15px;
 		border-left: 12px solid #4075D0;
 		p {
@@ -811,47 +812,25 @@ a.social-icon {
 }
 
 .banner {
-	padding: 50px 0;
+	padding: 1rem 0;
 	background: white;
 	text-align: center;
-	.opener {
-		max-width: 450px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.fa {
-		margin: .25rem;
-	}
-	.fa-twitter:hover {
-		color: #00aced;
-	}
-	.fa-codepen:hover {
-		color: #47CF73;
-	}
-	.fa-stack-overflow:hover {
-		color: #F48024;
-	}
-	.fa-github:hover {
-		color: #B992E3;
-	}
-	.fa-rss:hover {
-		color: #F8981C;
-	}
 	h1 {
-		margin: 0;
 		font-size: 2.5rem;
-	}
-	h2 {
-		margin: 0;
-		color: $five;
 	}
 }
 
 @include small-breakpoint {
 	.banner {
-		padding: 100px 0;
+		padding: 2rem 0;
 		h1 {
-			font-size: 3.5rem;
+			font-size: 3rem;
+			margin-bottom: .5rem;
+		}
+		.opener {
+			padding-top: 1rem;
+			margin: 0 auto;
+			max-width: 650px;
 		}
 	}
 }
