@@ -14,7 +14,7 @@
 							<?php the_content(); ?>
 						</div>
 					</div>
-				</div>
+				</div> 
 			</section>
 
 			<?php endwhile; endif; ?>
