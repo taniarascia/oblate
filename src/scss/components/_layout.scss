@@ -1232,6 +1232,38 @@ caption {
 	}
 }
 
+#jsref {
+	background-image: linear-gradient(to top right, #3D4258, #6670A0, #9688B4);
+	background-attachment: fixed;
+	padding: 40px 0;
+	text-align: center;
+	font-family: 'Roboto', sans-serif !important;
+	.js-container {
+		background: #F4F6F7;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 1rem 1rem 1.5rem;
+	}
+	img {
+		margin: -30px 0;
+	}
+	h1 {
+		color: #e06c75;
+		font-size: 2.5rem;
+		font-weight: 600;
+		margin-bottom: 0;
+		letter-spacing: -0.1rem;
+		font-family: 'Roboto', sans-serif !important;
+	}
+	p {
+		padding: 1rem 0;
+		font-size: 1.6rem;
+		margin: 0;
+		font-family: 'Roboto', sans-serif !important;
+		font-weight: 300;
+	}
+}
+
 #more {
 	text-align: center;
 	padding: 40px 0;
