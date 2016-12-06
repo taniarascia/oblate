@@ -57,7 +57,7 @@ function load_fonts() {
 	wp_enqueue_style( 'All');
 	wp_enqueue_style( 'FontAwesome');
 }
-add_action('wp_print_styles', 'load_fonts');
+add_action('wp_print_styles', 'load_fonts'); 
 
 // Disable Emoji Crap
 function disable_wp_emojicons() {
