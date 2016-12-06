@@ -34,7 +34,7 @@
 				<h1>JS Reference</h1>
 				<p>A JavaScript reference guide.</p>
 				<a class="github-button" href="https://taniarascia.github.io/js/" data-style="mega" aria-label="Star taniarascia/js on GitHub">View Project</a>
-				<a class="github-button" href="https://github.com/taniarascia/js" data-style="mega" data-count-href="/taniarascia/js/stargazers" data-count-api="/repos/taniarascia/js#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star taniarascia/js on GitHub">Github Repo</a>
+				<a class="github-button" href="https://github.com/taniarascia/js" data-icon="octicon-star" data-style="mega" data-count-href="/taniarascia/js/stargazers" data-count-api="/repos/taniarascia/js#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star taniarascia/js on GitHub">Star</a>
 			</div>
 		</section>
 
