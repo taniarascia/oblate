@@ -1,14 +1,21 @@
 /* Code
   =============== */
 
+code {
+	font-size: .9rem;
+}
+
+mark {
+	background: $keyword;
+}
+
 .terminal {
 	padding: 1rem 1.5rem;
 	font-family: $code;
 	border: 1px solid #d8d9da;
 	box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
 	border-radius: 4px;
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
+	margin: 0 0 2rem 0;
 	font-size: .9rem;
 }
 
@@ -43,7 +50,7 @@ pre code {
 	display: block;
 	font-size: .75rem;
 	padding: 1rem;
-	margin: 1.5rem 0;
+	margin: 0 0 2rem 0;
 	overflow: auto;
 	border: 0px solid #3B3B3B;
 	background-color: #3B3B3B;
@@ -65,7 +72,7 @@ kbd {
 	background-color: #f7f7f7;
 	border: 1px solid #ccc;
 	border-radius: 3px;
-	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px white inset;
 	color: #333;
 	display: inline-block;
 	font-family: Helvetica, Arial, sans-serif;
@@ -73,7 +80,7 @@ kbd {
 	line-height: 1.4;
 	margin: 0 .1em;
 	padding: .1em .6em;
-	text-shadow: 0 1px 0 #fff;
+	text-shadow: 0 1px 0 white;
 }
 
 
@@ -92,12 +99,12 @@ kbd {
 	font-size: 1rem;
 	padding: .01rem .2rem;
 	background: rgba(0, 0, 0, .05);
-	font-family: $code; 
+	font-family: $code;
 	font-weight: 400;
 	border-radius: 0;
 	color: #bf616a;
 	-webkit-font-smoothing: subpixel-antialiased;
-} 
+}
 
 code[class*=language-css],
 code[class*=language-scss],
@@ -157,8 +164,8 @@ code[class*=language-sass] {
 }
 
 .token.delimiter {
-	background: #000;
-	color: #fff;
+	background: black;
+	color: white;
 	padding: 1px 2px;
 }
 
@@ -171,7 +178,7 @@ code[class*=language-sass] {
 }
 
 .language-autohotkey .token.selector {
-	color: $two;
+	color: $selector;
 }
 
 .token.attr-name {
@@ -192,7 +199,7 @@ code[class*=language-sass] {
 
 .token.deleted,
 .language-autohotkey .token.tag {
-	color: darken($three, 5%);
+	color: darken($deleted, 5%);
 }
 
 .token.tag {

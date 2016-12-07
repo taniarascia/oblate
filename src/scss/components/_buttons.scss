@@ -4,28 +4,27 @@
 // Button Extend  
 .buttons {
   display: inline-block;
-  padding: 10px 25px 8px 25px;
+  padding: 10px 25px 8px;
   text-align: center;
   font-size: 1.1rem;
   line-height: 1.6;
   text-decoration: none;
   white-space: nowrap;
-  background: $five;
+  background: $link-color;
   border-radius: 30px;
-  border: 1px solid $five;
+  border: 1px solid $link-color;
   cursor: pointer;
   font-weight: 600;
   margin: 5px 0;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
-  font-family: $button-font;
+  font-family: $button-family;
   color: white;
 }
 
 .buttons-hover {
-  border-bottom: 0;
-  color: $five;
-  background: transparent;
-  border: 1px solid $five;
+  color: $link-color;
+  background: white;
+  border: 1px solid $link-color;
   text-decoration: none;
 }
 

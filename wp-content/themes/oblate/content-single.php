@@ -1,6 +1,6 @@
 <?php 
 $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID), 'thumbnail' );
-$url = $thumb['0']; 
+$url = $thumb[0]; 
 ?>
 
 	<div class="single-article-image">
@@ -20,5 +20,4 @@ $url = $thumb['0'];
 
 	<?php the_content(); ?>
 
-		<a href="http://twitter.com/intent/tweet?text=<?php echo the_title()?>&url=<?php the_permalink();?>&via=taniarascia" target="_blank" title="Share to Twitter" class="twitter-link button"><i class="fa fa-twitter fa-2x"></i> Share this article!</a>
 	</article>

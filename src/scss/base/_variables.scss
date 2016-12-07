@@ -15,27 +15,21 @@ $font-variant: normal;
 $font-weight: normal;
 $font-color: #3C3C3C;
 $font-size: 1rem;
-$line-height: 1.5;
-$heading-color: #111;
 $font-family: 'PT Serif', Helvetica Neue, Helvetica, Arial, sans-serif;
-$header: 'Heebo', Helvetica Neue, sans-serif;
-$nav: 'Heebo', Helvetica Neue, Helvetica, Arial, sans-serif;
-$button-font: 'Heebo', Helvetica Neue, Helvetica, Arial, sans-serif;
+
+$line-height: 1.5;
+$link-color: #2467DB;
+
+$heading-color: #111;
+$heading-family: 'Heebo', Helvetica Neue, Helvetica, Arial, sans-serif;
+$nav-family: 'Heebo', Helvetica Neue, Helvetica, Arial, sans-serif;
+$button-family: 'Heebo', Helvetica Neue, Helvetica, Arial, sans-serif;
 
 /* Borders */
 
 $border: #e2e2e2;
 $background: #efefef;
 $light-background: #f2f2f2;
-
-/* Colors */
-
-$one: #EB4D5C;
-$two: #F7931E;
-$three: #F6BF26;
-$four: #00CF92;
-$five: #2467DB;
-$six: #795da3;
 
 /* Code */
 
@@ -59,3 +53,6 @@ $keyword: #ffeead;
 $attribute: #FFD479;
 $class: #D6ACD6;
 $tag: #78AAD6;
+$selector: #F7931E;
+$deleted: #F6BF26;
+$error: #EB4D5C;

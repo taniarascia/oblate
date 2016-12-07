@@ -1,6 +1,6 @@
 <?php
 /**
-* Functions */
+ * Functions */
 
 // Add support for featured images 
 add_theme_support( 'post-thumbnails' );
@@ -44,7 +44,7 @@ add_action( 'wp_enqueue_scripts', 'starter_scripts' );
 // Add Stylesheets
 function oblate_scripts() {
 	wp_dequeue_style( 'starter-style' );
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css?v2.0.0' );
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css?v2.0.1' );
 	wp_enqueue_script( 'prism', get_template_directory_uri() . '/js/prism.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
 }
@@ -172,17 +172,6 @@ function create_post_portfolio() {
 		array(
 		'labels' => array(
 			'name' => __('Portfolio Item', 'oblate'), // Rename these to suit
-			'singular_name' => __('Portfolio Item', 'oblate'),
-			'add_new' => __('Add New', 'oblate'),
-			'add_new_item' => __('Add New Portfolio Item', 'oblate'),
-			'edit' => __('Edit', 'oblate'),
-			'edit_item' => __('Edit Portfolio Item', 'oblate'),
-			'new_item' => __('New Portfolio Item', 'oblate'),
-			'view' => __('View Portfolio Item', 'oblate'),
-			'view_item' => __('View Portfolio Item', 'oblate'),
-			'search_items' => __('Search Portfolio Item', 'oblate'),
-			'not_found' => __('No Portfolio Items found', 'oblate'),
-			'not_found_in_trash' => __('No Portfolio Items found in Trash', 'oblate')
 		),
 		'public' => true,
 		'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
@@ -201,5 +190,3 @@ function create_post_portfolio() {
 	));
 }
 add_action('init', 'create_post_portfolio'); // Add our Portfolio Item Type
-
-
