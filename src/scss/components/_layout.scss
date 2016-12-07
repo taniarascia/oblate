@@ -42,15 +42,16 @@ h3,
 h4,
 h5 {
 	font-family: $heading-family;
-	line-height: 1.2;
+	line-height: 1.1;
 	font-weight: 700;
-	letter-spacing: -0.02rem;
+	letter-spacing: -0.03rem;
 	margin: 0 0 1rem;
 	color: $heading-color;
 }
 
 h1 {
 	font-size: 1.4rem;
+	margin: 0;
 }
 
 h2 {
@@ -59,24 +60,32 @@ h2 {
 
 h3 {
 	font-size: 1.4rem;
+	font-weight: 300;
 }
 
 h4 {
 	font-size: 1.3rem;
+	font-weight: 600;
 	color: lighten($font-color, 15%);
 }
 
 h5 {
-	font-size: 1.3rem;
+	font-size: 1.2rem;
+	font-weight: 300;
 	color: lighten($font-color, 25%);
 }
 
 p,
 ol,
 ul,
+dl,
 blockquote,
 table {
 	margin: 0 0 2rem;
+}
+
+li {
+	margin: 0 0 .25rem;
 }
 
 @include small-breakpoint {
@@ -87,14 +96,23 @@ table {
 		font-size: 1.8rem;
 	}
 	h2 {
-		font-size: 2rem;
+		font-size: 2.2rem;
 	}
 	h3 {
-		font-size: 1.8rem;
+		font-size: 2rem;
 	}
 	h4 {
-		font-size: 1.6rem;
+		font-size: 1.7rem;
 	}
+}
+
+// Definition list
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-bottom: .5rem;
 }
 
 
@@ -474,9 +492,10 @@ table {
 time {
 	color: #a1a1a1;
 	display: block;
-	font-family: $nav-family;
-	font-size: .9rem;
-	font-weight: 600;
+	font-family: $font-family;
+	font-size: 1.4rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
 }
 
 a.article-link {
@@ -517,7 +536,7 @@ a .article-excerpt {
 
 @include small-breakpoint {
 	.article-excerpt {
-		padding: 2.5rem 2rem;
+		padding: 2rem;
 		border-botom: 0;
 		img {
 			display: block;
@@ -604,10 +623,10 @@ blockquote {
 		background: rgba(0, 0, 0, .1);
 		color: #232323;
 		padding: 1rem;
+		font-weight: 700;
 	}
 	p {
 		margin: 0;
-		font-weight: 700;
 		&:last-of-type {
 			margin-bottom: 0;
 		}
@@ -623,6 +642,7 @@ blockquote {
 	&.info,
 	&.note,
 	&.details {
+		font-weight: 400;
 		border-radius: 0;
 		padding: 1rem;
 	}
@@ -650,6 +670,7 @@ blockquote {
 		border-left: 12px solid #4075D0;
 	}
 }
+
 
 /* Footer */
 
@@ -929,6 +950,10 @@ td {
 
 td {
 	border-bottom: 1px solid $border;
+}
+
+tbody tr:nth-child(odd) td {
+	background: #F9F9F9;
 }
 
 caption {

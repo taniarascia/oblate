@@ -17,6 +17,7 @@
           'order' => 'asc',
           'posts_per_page' => '30',
            );
+		
           $portfolio = new WP_Query( $args );
       
           if ( $portfolio->have_posts() ) : ?>

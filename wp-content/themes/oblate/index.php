@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
 <main class="main-content margin-top text-center">
-
 	<div class="small-container">
 	
 	<?php get_search_form(); ?>
@@ -24,7 +23,6 @@ endwhile; ?>
 	<?php endif; ?> 
 
 	</div>
-
 </main>
 
 <?php get_footer(); ?>

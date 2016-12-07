@@ -58,7 +58,7 @@ pre code {
 
 @include large-breakpoint {
 	pre code {
-		padding: 2rem;
+		padding: 1.5rem;
 		margin: 2rem -15%;
 		border-left: 20px solid #232323;
 	}
@@ -97,7 +97,7 @@ kbd {
 
 :not(pre) > code {
 	font-size: 1rem;
-	padding: .01rem .2rem;
+	padding: .1rem .4rem;
 	background: rgba(0, 0, 0, .05);
 	font-family: $code;
 	font-weight: 400;
