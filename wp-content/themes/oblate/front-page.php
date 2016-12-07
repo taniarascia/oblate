@@ -34,11 +34,14 @@
 						<div class="latest-articles text-center">
 							<?php 
 $args = array(
-'posts_per_page' => 3,
+	'posts_per_page' => 3,
 );  
-$frontPage = new WP_Query( $args ); if ($frontPage->have_posts()) : while ($frontPage->have_posts()) : $frontPage->the_post();
-$thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID), 'thumbnail' );
-$url = $thumb['0']; ?>
+							
+$frontPage = 
+	new WP_Query( $args ); 
+		if ( $frontPage->have_posts() ) : while ( $frontPage->have_posts() ) : $frontPage->the_post();
+				$thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thumbnail' );
+				$url = $thumb[0]; ?>
 
 								<a href="<?php the_permalink(); ?>" class="article-link">
           <article id="post-<?php the_ID(); ?>" class="article-excerpt">
@@ -52,7 +55,7 @@ $url = $thumb['0']; ?>
             </div>
           </article>
         </a>
-								<?php endwhile; endif; ?>
+								<?php endwhile; endif; wp_reset_postdata(); ?>
 						</div>
 					</div>
 				</section>
