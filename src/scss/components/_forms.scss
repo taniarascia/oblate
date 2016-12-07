@@ -11,7 +11,6 @@
 	font-size: .9rem;
 	transition: ease .2s all;
 	background: #efefef;
-	border-radius: 4px;
 }
 
 // Forms Output CSS
@@ -75,7 +74,7 @@ label > .label-body {
 div.wpcf7-mail-sent-ok {
 	border: 1px solid #54c381;
 	border-left: 12px solid #54c381;
-	border-radius: 4px;
+	border-radius: 0;
 	padding: 15px;
 	background: #edf9f2;
 	color: #214e33;
@@ -84,7 +83,7 @@ div.wpcf7-mail-sent-ok {
 div.wpcf7-validation-errors {
 	border: 1px solid #FFE168;
 	border-left: 12px solid #FFE168;
-	border-radius: 4px;
+	border-radius: 0;
 	padding: 15px;
 	background: #FFF4CA;
 	color: #755D00;

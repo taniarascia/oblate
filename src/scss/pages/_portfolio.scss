@@ -1,0 +1,32 @@
+/* Projects
+=============== */
+
+.main-content.portfolio-page {
+	background: $background;
+}
+
+.portfolio {
+	.portfolio-item {
+		padding: .5rem;
+		padding-bottom: 1rem;
+	}
+}
+
+@include large-breakpoint {
+	.portfolio {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		.portfolio-item {
+			padding: 1rem;
+			padding-bottom: 2rem;
+			width: calc(100% / 2);
+			img {
+				transition: all .2s ease;
+			}
+			img:hover {
+				box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .15);
+			}
+		}
+	}
+}

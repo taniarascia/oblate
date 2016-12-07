@@ -1,8 +1,10 @@
 <?php get_header(); ?>
 
-<main class="main-content margin-top text-center"> 
+<main class="main-content margin-top text-center">
 
 	<div class="small-container">
+	
+	<?php get_search_form(); ?>
 	
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 		

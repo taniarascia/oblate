@@ -32,7 +32,7 @@ pre code {
 	tab-size: 2;
 	hyphens: none;
 	font-size: .9rem;
-	border-radius: 4px;
+	border-radius: 0;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -94,7 +94,7 @@ kbd {
 	background: rgba(0, 0, 0, .05);
 	font-family: $code; 
 	font-weight: 400;
-	border-radius: 4px;
+	border-radius: 0;
 	color: #bf616a;
 	-webkit-font-smoothing: subpixel-antialiased;
 } 

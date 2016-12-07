@@ -33,8 +33,8 @@
 			<div class="js-container">
 				<h1>JS Reference</h1>
 				<p>A JavaScript reference guide.</p>
-				<a class="github-button" href="https://taniarascia.github.io/js/" data-style="mega" aria-label="Star taniarascia/js on GitHub">View Project</a>
-				<a class="github-button" href="https://github.com/taniarascia/js" data-icon="octicon-star" data-style="mega" data-count-href="/taniarascia/js/stargazers" data-count-api="/repos/taniarascia/js#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star taniarascia/js on GitHub">Star</a>
+				<a class="gh-button" href="https://taniarascia.github.io/js"><i class="fa fa-github" aria-hidden="true"></i> View Project</a>
+				<a class="gh-button" href="https://taniarascia.github.io/js"><i class="fa fa-star" aria-hidden="true"></i> GitHub Repo</a>
 			</div>
 		</section>
 
@@ -70,6 +70,7 @@
 				</div>
 			</div>
 		</section>
+		
 	</main>
 
 	<?php get_footer(); ?>
