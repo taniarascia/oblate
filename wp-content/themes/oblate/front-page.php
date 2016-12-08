@@ -5,27 +5,23 @@
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 			<section class="banner">
-				<div class="small-container">
-					<div class="opener">
-						<h1>Tania Rascia</h1>
-						<a class="github-button" href="https://github.com/taniarascia" data-count-href="/taniarascia/followers" data-count-api="/users/taniarascia#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @taniarascia on GitHub">taniarascia</a>
-						<a class="twitter-follow-button" href="https://twitter.com/taniarascia" data-show-screen-name="false">Follow @taniarascia</a>
-						<div class="the-content">
-							<?php the_content(); ?>
-						</div>
+				<div class="small-container text-center">
+					<h1>Tania Rascia</h1>
+					<a class="github-button" href="https://github.com/taniarascia" data-count-href="/taniarascia/followers" data-count-api="/users/taniarascia#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @taniarascia on GitHub">taniarascia</a>
+					<a class="twitter-follow-button" href="https://twitter.com/taniarascia" data-show-screen-name="false">Follow @taniarascia</a>
+					<div class="the-content">
+						<?php the_content(); ?>
 					</div>
-				</div> 
+				</div>
 			</section>
 
 			<?php endwhile; endif; ?>
 
 				<section class="content">
-					<div class="small-container">
-						<div class="opener">
-							<h2 class="large-heading">Latest Articles</h2>
-							<p>My newest thoughts, guides, and resources.</p>
-							<a class="button" href="<?php echo site_url(); ?>/blog">View All</a>
-						</div>
+					<div class="small-container text-center">
+						<h2 class="large-heading">Latest Articles</h2>
+						<p>My newest thoughts, guides, and resources.</p>
+						<a class="button" href="<?php echo site_url(); ?>/blog">View All</a>
 					</div>
 				</section>
 
@@ -40,7 +36,7 @@
 							$frontPage = new WP_Query( $args ); 
 								if ( $frontPage->have_posts() ) : while ( $frontPage->have_posts() ) : $frontPage->the_post(); ?>
 
-						<a href="<?php the_permalink(); ?>" class="article-link">
+								<a href="<?php the_permalink(); ?>" class="article-link">
 							<article id="post-<?php the_ID(); ?>" class="article-excerpt">
 								<div>
 									<h1><?php the_title(); ?></h1>
@@ -52,19 +48,17 @@
 								</div>
 							</article>
 						</a>
-						<?php endwhile; endif; wp_reset_postdata(); ?>
-								</div>
-							</div>
-						</section>
+								<?php endwhile; endif; wp_reset_postdata(); ?>
+						</div>
+					</div>
+				</section>
 
 				<section class="content">
-					<div class="small-container">
-						<div class="opener">
+					<div class="small-container text-center">
 							<h2 class="large-heading">Tutorials</h2>
 							<p>The missing instruction manuals for popular web services.</p>
 							<a class="button" href="<?php echo site_url(); ?>/blog">View All</a>
 						</div>
-					</div>
 				</section>
 
 				<section class="tutorials">
@@ -109,7 +103,7 @@
 				</section>
 
 				<section class="javascript content">
-					<div class="small-container">
+					<div class="small-container text-center">
 						<h2 class="large-heading">JavaScript</h2>
 						<p>Introductory lessons on JavaScript - Day by Day.</p>
 						<a class="button" href="<?php echo site_url(); ?>/javascript-day-one">Start Here</a>
@@ -119,4 +113,4 @@
 
 	</main>
 
-<?php get_footer(); ?>
+	<?php get_footer(); ?>
