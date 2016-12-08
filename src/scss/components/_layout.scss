@@ -44,7 +44,7 @@ h5 {
 	font-family: $heading-family;
 	line-height: 1.1;
 	font-weight: 700;
-	letter-spacing: -0.03rem;
+	letter-spacing: -0.04rem;
 	margin: 0 0 1rem;
 	color: $heading-color;
 }
@@ -60,12 +60,10 @@ h2 {
 
 h3 {
 	font-size: 1.4rem;
-	font-weight: 300;
 }
 
 h4 {
 	font-size: 1.3rem;
-	font-weight: 600;
 	color: lighten($font-color, 15%);
 }
 
@@ -84,9 +82,6 @@ table {
 	margin: 0 0 2rem;
 }
 
-li {
-	margin: 0 0 .25rem;
-}
 
 @include small-breakpoint {
 	body {
@@ -268,7 +263,7 @@ dd {
 }
 
 .banner {
-	padding: 1rem 0;
+	padding: 2rem 0 1rem;
 	background: white;
 	text-align: left;
 	h1 {
@@ -282,7 +277,7 @@ dd {
 
 @include small-breakpoint {
 	.banner {
-		padding: 2rem 0;
+		padding: 4rem 0 2rem;
 		h1 {
 			font-size: 3rem;
 		}
@@ -295,13 +290,11 @@ dd {
 
 .large-heading {
 	font-size: 2rem;
-	margin: 0;
 }
 
 @include small-breakpoint {
 	.large-heading {
 		font-size: 2.5rem;
-		margin: 0;
 	}
 }
 
@@ -493,9 +486,15 @@ time {
 	color: #a1a1a1;
 	display: block;
 	font-family: $font-family;
-	font-size: 1.4rem;
+	font-size: 1.1rem;
 	font-weight: 700;
 	margin-bottom: 1rem;
+}
+
+@include small-breakpoint {
+	time {
+		font-size: 1.3rem;
+	}
 }
 
 a.article-link {
@@ -562,7 +561,7 @@ a .article-excerpt {
 	.single {
 		padding: 0 2rem;
 		h1 {
-			font-size: 3rem;
+			font-size: 2.6rem;
 		}
 	}
 }
@@ -610,6 +609,7 @@ blockquote {
 	padding-left: 1rem;
 	border-left: 12px solid $background;
 	font-family: $heading-family;
+	font-weight: 600;
 	h1,
 	h2,
 	h3,
@@ -890,6 +890,10 @@ a.social-icon {
 @include small-breakpoint {
 	.posts-links {
 		padding-top: 1rem;
+	}
+	#comments .posts-links {
+		margin-bottom: 1rem;
+		padding-top: 0;
 	}
 }
 

@@ -11,6 +11,7 @@
 
 endwhile; ?>
 			
+		
 		<div class="posts-links">
 			<div class="pagination-left">
 				<?php previous_posts_link(); ?>

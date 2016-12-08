@@ -1,38 +1,66 @@
 <?php
 /**
- * Functions */
+ * Functions for taniarascia.com
+ */
 
-// Add support for featured images 
+/** 
+ * Add support for titles
+ */
+
+add_theme_support( 'title-tag' );
+
+/** 
+ * Add support for featured images 
+ */
+
 add_theme_support( 'post-thumbnails' );
 
-// Change more excerpt
+/**
+ * Change more excerpt
+ */
+
 function new_excerpt_more( $more ) {
 	return '...';
 }
-add_filter('excerpt_more', 'new_excerpt_more');
+add_filter( 'excerpt_more', 'new_excerpt_more' );
 
-// Add Categories for Attachments
+/** 
+ * Add Categories for attachments
+ */
+
 function add_categories_for_attachments() {
     register_taxonomy_for_object_type( 'category', 'attachment' );
 }
 add_action( 'init' , 'add_categories_for_attachments' );
 
-// Custom excerpt length
+/** 
+ * Custom excerpt length
+ */
+
 function custom_excerpt_length( $length ) {
 	return 30;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
-// Support search form
+/** 
+ * Support search form
+ */
+
 add_theme_support( 'html5', array( 'search-form' ) );
 
-// Change 'more' link
+/** 
+ * Change 'more' link
+ */
+
 function modify_read_more_link() {
 	return '<p class="right-text"><a class="button" href="' . get_permalink() . '">Read More</a></p>';
 }
 add_filter( 'the_content_more_link', 'modify_read_more_link' );
 
-// jQuery to the bottom
+/** 
+ * jQuery to the bottom
+ */
+
 function starter_scripts() {
     wp_deregister_script( 'jquery' );
     wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
@@ -41,7 +69,10 @@ function starter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'starter_scripts' );
 
-// Add Stylesheets
+/** 
+ *  Add stylesheets
+ */
+
 function oblate_scripts() {
 	wp_dequeue_style( 'starter-style' );
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css' );
@@ -50,16 +81,22 @@ function oblate_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'oblate_scripts' );
 
-// Google Fonts
+/** 
+ * Google Fonts
+ */
+
 function load_fonts() {
-	wp_register_style('All', '//fonts.googleapis.com/css?family=PT+Serif:400,700|Heebo:400,500,700|Roboto+Mono:400,500');
+	wp_register_style( 'All', '//fonts.googleapis.com/css?family=PT+Serif:400,700|Heebo:400,500,700|Roboto+Mono:400,500' );
 	wp_register_style('FontAwesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
 	wp_enqueue_style( 'All');
 	wp_enqueue_style( 'FontAwesome');
 }
 add_action('wp_print_styles', 'load_fonts'); 
 
-// Disable Emoji Crap
+/** 
+ * Disable emojis
+ */
+
 function disable_wp_emojicons() {
   // all actions related to emojis
   remove_action( 'admin_print_styles', 'print_emoji_styles' );
@@ -82,9 +119,6 @@ function disable_emojicons_tinymce( $plugins ) {
     return array();
   }
 }
-
-// WordPress Titles
-add_theme_support( 'title-tag' );
 
 // Disable XML RPC
 add_filter('xmlrpc_enabled', '__return_false');
@@ -126,7 +160,10 @@ function meta_og() {
 }
 add_action('wp_head', 'meta_og', 5);
 
-// Escape HTML
+/** 
+ * Escape HTML
+ */
+
 function escapeHTML($arr) {
 	// last params (double_encode) was added in 5.2.3
 	if (version_compare(PHP_VERSION, '5.2.3') >= 0) {
@@ -166,7 +203,10 @@ add_filter( 'excerpt_save_pre', 'filterCode', 9 );
 // Disable W3TC footer comment for all users
 add_filter( 'w3tc_can_print_comment', function( $w3tc_setting ) { return false; }, 10, 1 );
 
-// Create 1 Custom Post type for a Demo, called HTML5-Blank
+/** 
+ * Portfolio type
+ */
+
 function create_post_portfolio() {
 	register_post_type('portfolio-items', // Register Custom Post Type
 		array(

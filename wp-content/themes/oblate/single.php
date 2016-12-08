@@ -15,7 +15,6 @@
 					endif;?>
 
           <?php	endwhile; endif; ?>
-
       </div>
     </section>
   </main>
