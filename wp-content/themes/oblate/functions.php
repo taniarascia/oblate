@@ -29,7 +29,7 @@ add_filter( 'excerpt_more', 'new_excerpt_more' );
  */
 
 function add_categories_for_attachments() {
-    register_taxonomy_for_object_type( 'category', 'attachment' );
+	register_taxonomy_for_object_type( 'category', 'attachment' );
 }
 add_action( 'init' , 'add_categories_for_attachments' );
 
@@ -62,10 +62,10 @@ add_filter( 'the_content_more_link', 'modify_read_more_link' );
  */
 
 function starter_scripts() {
-    wp_deregister_script( 'jquery' );
-    wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
-    wp_enqueue_script( 'jquery' );
-    wp_enqueue_style( 'starter-style', get_stylesheet_uri() );
+	wp_deregister_script( 'jquery' );
+	wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
+	wp_enqueue_script( 'jquery' );
+	wp_enqueue_style( 'starter-style', get_stylesheet_uri() );
 }
 add_action( 'wp_enqueue_scripts', 'starter_scripts' );
 
@@ -98,14 +98,14 @@ add_action('wp_print_styles', 'load_fonts');
  */
 
 function disable_wp_emojicons() {
-  // all actions related to emojis
-  remove_action( 'admin_print_styles', 'print_emoji_styles' );
-  remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-  remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
-  remove_action( 'wp_print_styles', 'print_emoji_styles' );
-  remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
-  remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
-  remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
+	// all actions related to emojis
+	remove_action( 'admin_print_styles', 'print_emoji_styles' );
+	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+	remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+	remove_action( 'wp_print_styles', 'print_emoji_styles' );
+	remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
+	remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+	remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
 
 // filter to remove TinyMCE emojis
 add_filter( 'tiny_mce_plugins', 'disable_emojicons_tinymce' );
