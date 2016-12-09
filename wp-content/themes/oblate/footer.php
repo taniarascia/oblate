@@ -6,6 +6,9 @@
   <a href="http://stackoverflow.com/users/4541434/tania-rascia" class="social-icon"><i class="fa fa-stack-overflow fa-3x"></i></a>
 </footer>
 
+<?php wp_footer(); ?>
+ 
+ <?php if ( is_front_page() ) { ?>
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
@@ -25,8 +28,7 @@
 
   return t;
 }(document, "script", "twitter-wjs"));</script>
-
-<?php wp_footer(); ?>
+<?php } ?>
   </body>
 
   </html>
