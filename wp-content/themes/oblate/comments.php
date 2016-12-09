@@ -9,7 +9,7 @@ if ( post_password_required() ) {
 
 			<h3 class="comments-title">
 		<?php
-		printf( _nx( 'Responses', '%1$s responses', get_comments_number(), ''),
+		printf( _nx( 'Responses', '%1$s Responses', get_comments_number(), ''),
 			number_format_i18n( get_comments_number() ), get_the_title() );
 		?>
 		</h3>
