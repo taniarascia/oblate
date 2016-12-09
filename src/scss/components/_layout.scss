@@ -65,7 +65,7 @@ h3 {
 
 h4 {
 	font-size: 1.3rem;
-	color: lighten($font-color, 15%);
+	color: lighten($font-color, 20%);
 }
 
 h5 {
@@ -610,7 +610,7 @@ a .article-excerpt {
 
 blockquote {
 	color: #4f545a;
-	padding-left: 1rem;
+	padding-left: 2rem;
 	border-left: 12px solid $background;
 	font-family: $heading-family;
 	font-weight: 600;
