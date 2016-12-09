@@ -13,7 +13,7 @@ $img = $image['0'];
 				<?php } ?>
 
 					<div class="small-container">
-
+						<section class="single">
 						<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>">
@@ -27,7 +27,7 @@ $img = $image['0'];
 							</article>
 
 							<?php endwhile; endif; ?>
-
+						</section>
 					</div>
 
 		</main>

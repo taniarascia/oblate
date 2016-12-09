@@ -45,7 +45,7 @@ h5 {
 	line-height: 1.1;
 	font-weight: 500;
 	letter-spacing: -0.05rem;
-	margin: 0 0 1rem;
+	margin: 0 0 .75rem;
 	color: $heading-color;
 }
 
@@ -125,7 +125,7 @@ dd {
 	.main-content {
 		margin: $nav-height 0 0;
 	}
-}
+} 
 
 .small-container,
 .large-container {
@@ -599,7 +599,7 @@ a .article-excerpt {
 
 .page-header {
 	text-align: center;
-	padding: 1.5rem 0 .5rem;
+	padding: 1.5rem 0;
 }
 
 @include small-breakpoint {
