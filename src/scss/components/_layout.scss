@@ -50,6 +50,7 @@ h5 {
 }
 
 h1 {
+	font-weight: 900;
 	font-size: 1.4rem;
 	margin: 0;
 }
@@ -60,6 +61,7 @@ h2 {
 
 h3 {
 	font-size: 1.4rem;
+	font-weight: 700;
 	color: lighten($font-color, 10%);
 }
 
@@ -283,6 +285,7 @@ dd {
 	.banner {
 		padding: 4rem 0 2rem;
 		h1 {
+			font-weight: 900;
 			font-size: 3rem;
 		}
 	}
@@ -559,6 +562,9 @@ a .article-excerpt {
 	margin-left: auto;
 	margin-right: auto;
 	background: white;
+	h1 {
+		font-weight: 900;
+	}
 }
 
 @include small-breakpoint {

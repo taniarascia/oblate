@@ -86,7 +86,7 @@ add_action( 'wp_enqueue_scripts', 'oblate_scripts' );
  */
 
 function load_fonts() {
-	wp_register_style( 'All', '//fonts.googleapis.com/css?family=PT+Serif:400,700|Heebo:400,500,700|Roboto+Mono:400,500' );
+	wp_register_style( 'All', '//fonts.googleapis.com/css?family=PT+Serif:400,700|Heebo:400,500,700,900|Roboto+Mono:400,500' );
 	wp_register_style('FontAwesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
 	wp_enqueue_style( 'All');
 	wp_enqueue_style( 'FontAwesome');
