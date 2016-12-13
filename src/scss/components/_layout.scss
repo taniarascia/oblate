@@ -52,6 +52,7 @@ h5 {
 }
 
 h1 {
+	font-size: 1.8rem;
 	font-weight: 800;
 	margin: 0;
 }
@@ -509,6 +510,7 @@ a .article-excerpt {
 	justify-content: space-around;
 	padding: .5rem;
 	border-bottom: 1px solid $border;
+	text-align: center;
 	img {
 		display: block;
 		padding: .5rem;
@@ -522,6 +524,8 @@ a .article-excerpt {
 	.article-excerpt {
 		padding: 2rem;
 		border-botom: 0;
+		flex-direction: row;
+		text-align: left;
 		img {
 			display: block;
 			padding: 1rem;
@@ -536,7 +540,6 @@ a .article-excerpt {
 
 .blog-index {
 	padding-top: 1rem;
-	text-align: center;
 }
 
 
