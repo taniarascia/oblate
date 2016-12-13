@@ -1,15 +1,9 @@
 <?php get_header(); ?>
 
-	<?php 
-$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID), 'full' );
-$thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID), 'thumbnail' );
-$img = $image['0']; 
-?>
-
 		<main class="main-content">
 
 			<?php if ( get_post_thumbnail_id() ) { ?>
-				<div class="about-me" style="background:url(<?php echo $img; ?>) no-repeat right center / cover;"></div>
+				<div class="about-me" style="background:url(<?php echo the_post_thumbnail_url(); ?>) no-repeat right center / cover;"></div>
 				<?php } ?>
 
 					<div class="small-container">

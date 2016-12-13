@@ -50,12 +50,13 @@ h5 {
 }
 
 h1 {
-	font-weight: 900;
+	font-weight: 800;
 	font-size: 1.4rem;
 	margin: 0;
 }
 
 h2 {
+	font-weight: 700;
 	font-size: 1.5rem;
 }
 
@@ -285,7 +286,7 @@ dd {
 	.banner {
 		padding: 4rem 0 2rem;
 		h1 {
-			font-weight: 900;
+			font-weight: 800;
 			font-size: 3rem;
 		}
 	}
@@ -563,7 +564,7 @@ a .article-excerpt {
 	margin-right: auto;
 	background: white;
 	h1 {
-		font-weight: 900;
+		font-weight: 800;
 	}
 }
 
@@ -616,7 +617,7 @@ a .article-excerpt {
 
 blockquote {
 	color: #4f545a;
-	padding-left: 2rem;
+	padding-left: 1.5rem;
 	border-left: 12px solid $background;
 	font-family: $heading-family;
 	font-weight: 600;
@@ -636,6 +637,7 @@ blockquote {
 		font-weight: 500;
 	}
 	p {
+		font-size: 1.3rem;
 		margin: 0;
 		&:last-of-type {
 			margin-bottom: 0;
