@@ -1009,19 +1009,3 @@ caption {
 ::selection {
 	background: rgba(254, 241, 69, .7);
 }
-
-pre[class*="language-"]::-moz-selection,
-pre[class*="language-"]::-moz-selection,
-code[class*="language-"]::-moz-selection,
-code[class*="language-"]::-moz-selection {
-	text-shadow: none;
-	background: rgba(255, 255, 255, .2) !important;
-}
-
-pre[class*="language-"]::selection,
-pre[class*="language-"]::selection,
-code[class*="language-"]::selection,
-code[class*="language-"]::selection {
-	text-shadow: none;
-	background: rgba(255, 255, 255, .2) !important;
-}

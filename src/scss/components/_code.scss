@@ -34,7 +34,7 @@ pre code {
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
-	line-height: 1.4;
+	line-height: 1.5;
 	font-weight: 400;
 	tab-size: 2;
 	hyphens: none;
@@ -87,7 +87,7 @@ kbd {
 /* Inline code */
 
 :not(pre) > code[class*="language-"] {
-	padding: .2rem .5rem;
+	padding: .2rem .4rem;
 	background: #343434;
 	border: 0px solid #343434;
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -95,7 +95,7 @@ kbd {
 
 :not(pre) > code {
 	font-size: 1rem;
-	padding: .2rem .5rem;
+	padding: .2rem .4rem;
 	background: rgba(0, 0, 0, .05);
 	font-family: $code;
 	font-weight: 400;
@@ -214,4 +214,28 @@ code[class*=language-sass] {
 
 .token.italic {
 	font-style: italic;
+} 
+
+pre::-moz-selection, pre ::-moz-selection,
+code::-moz-selection, code ::-moz-selection {
+	text-shadow: none;
+	background: RGBA(200, 200, 200, .4) !important;
+}
+
+pre::selection, pre ::selection,
+code::selection, code ::selection {
+	text-shadow: none;
+	background: RGBA(200, 200, 200, .4) !important;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: RGBA(200, 200, 200, .4) !important;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: RGBA(200, 200, 200, .4) !important;
 }
