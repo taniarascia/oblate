@@ -1,13 +1,15 @@
 # Untracked files
+
+.htaccess
 wp-config.php
-.sass-cache
-node_modules
 wp-content/uploads
 wp-content/plugins
-.htaccess
+/wp-content/cache
+.sass-cache
+node_modules
 src/scss/.sass-cache
 /projects
 /music
 BingSiteAuth.xml
 google1f541020b637f0c5.html
-/wp-content/cache
+robots.txt
