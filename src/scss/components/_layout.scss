@@ -523,7 +523,7 @@ a .article-excerpt {
 @include small-breakpoint {
 	.article-excerpt {
 		padding: 2rem;
-		border-botom: 0;
+		border-bottom: 0;
 		flex-direction: row;
 		text-align: left;
 		img {
@@ -535,6 +535,13 @@ a .article-excerpt {
 		}
 	}
 }
+
+@include small-breakpoint {
+	.latest-articles .article-excerpt {
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+} 
 
 /* Blog index */
 
