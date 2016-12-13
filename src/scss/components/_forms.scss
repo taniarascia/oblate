@@ -25,7 +25,8 @@ input {
 	&[type="url"],
 	&[type="password"] {
 		@extend .forms;
-		&:focus {
+		&:focus,
+		&:active {
 			border: 1px solid $border;
 			background: white;
 			outline: 0;
@@ -50,7 +51,8 @@ input[type="search"] {
 textarea,
 select {
 	@extend .forms;
-	&:focus {
+	&:focus,
+	&:active {
 		border: 1px solid $border;
 		background: transparent;
 		outline: 0;

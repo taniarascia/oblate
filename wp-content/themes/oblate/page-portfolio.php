@@ -1,44 +1,36 @@
 <?php get_header(); ?>
 
-  <main class="main-content portfolio-page">
+<div class="small-container">
 
-    <div class="small-container">
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 
-      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+		get_template_part( 'content-page', get_post_format() );
 
-						get_template_part( 'content-page', get_post_format() );
+	endwhile; endif; ?>
 
-						endwhile; endif; ?>
+</div>
 
-    </div>
+<?php $args = array(
+				'post_type' => 'portfolio-items',
+				'order' => 'asc',
+				'posts_per_page' => '30',
+			 );
 
-    <?php $args = array(
-          'post_type' => 'portfolio-items',
-          'order' => 'asc',
-          'posts_per_page' => '30',
-           );
-		
-          $portfolio = new WP_Query( $args );
-      
-          if ( $portfolio->have_posts() ) : ?>
+			$portfolio = new WP_Query( $args );
 
-        <div class="portfolio">
+			if ( $portfolio->have_posts() ) : ?>
 
-          <?php while ( $portfolio->have_posts() ) : $portfolio->the_post();
-                $image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); // Full sized image
-                $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' ); // Custom thumbnail size ?>
+		<div class="portfolio">
 
-            <div class="portfolio-item">
-							<h2><?php the_title(); ?></h2>
-              <a href="<?php echo get_the_excerpt(); ?>" target="_blank"><img src="<?php echo $image[0]; ?>" class="responsive-image" alt="<?php the_title(); ?>"></a>
-            </div>
+			<?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?>
+				<div class="portfolio-item">
+					<h2><?php the_title(); ?></h2>
+					<a href="<?php echo get_the_excerpt(); ?>" target="_blank"><img src="<?php echo the_post_thumbnail_url( 'large' ); ?>" class="responsive-image" alt="<?php the_title(); ?>"></a>
+				</div>
+			<?php endwhile; ?>
 
-            <?php endwhile; ?>
+		</div>
 
-        </div>
+	<?php endif; wp_reset_postdata(); ?>
 
-      <?php endif; wp_reset_postdata(); ?>
-
-  </main>
-
-  <?php get_footer(); ?>
+<?php get_footer(); ?>

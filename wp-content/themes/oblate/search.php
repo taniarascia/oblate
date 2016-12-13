@@ -1,17 +1,18 @@
 <?php get_header(); ?>
 
-	<main class="main-content margin-top text-center">
+<section class="blog-index">
+	<div class="small-container">
 
-			<div class="small-container">
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+			get_template_part( 'content', get_post_format() );
 
-						get_template_part( 'content', get_post_format() );
+		endwhile; else: ?>
 
-						endwhile; else: ?><h3 class="text-center">Sorry, no results were found!</h3><?php endif; ?>
+			<h3 class="text-center">Sorry, no results were found!</h3>
+			<?php endif; ?>
 
-			</div>
-			
-	</main>
-
+	</div>
+</section>
+	
 <?php get_footer(); ?>

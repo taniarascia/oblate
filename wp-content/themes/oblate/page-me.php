@@ -1,29 +1,25 @@
 <?php get_header(); ?>
 
-		<main class="main-content">
+<?php if ( get_post_thumbnail_id() ) { ?>
+	<div class="about-me" style="background:url(<?php echo the_post_thumbnail_url(); ?>) no-repeat right center / cover;"></div>
+<?php } ?>
 
-			<?php if ( get_post_thumbnail_id() ) { ?>
-				<div class="about-me" style="background:url(<?php echo the_post_thumbnail_url(); ?>) no-repeat right center / cover;"></div>
-				<?php } ?>
+	<div class="small-container">
+		<section class="single">
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-					<div class="small-container">
-						<section class="single">
-						<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<article id="post-<?php the_ID(); ?>">
 
-							<article id="post-<?php the_ID(); ?>">
+				<div class="page-header">
+					<h1 class="large-heading"><?php the_title(); ?></h1>
+				</div>
 
-								<div class="page-header">
-									<h1 class="large-heading"><?php the_title(); ?></h1>
-								</div>
+				<?php the_content(); ?>
 
-								<?php the_content(); ?>
+			</article>
 
-							</article>
+			<?php endwhile; endif; ?>
+		</section>
+	</div>
 
-							<?php endwhile; endif; ?>
-						</section>
-					</div>
-
-		</main>
-
-		<?php get_footer(); ?>
+<?php get_footer(); ?>

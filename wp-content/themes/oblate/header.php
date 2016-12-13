@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <?php if ( !is_single() ) { ?><meta name="description" content="I'm Tania, and I'm dedicated to simplifying web development through effective and concise tutorials. Let's learn and create."><?php } ?>
   
   <?php if ( is_page('projects') ) { ?>
   	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-  	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+  	<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
   <?php } ?>
 
   <?php wp_head(); ?>
@@ -46,3 +47,5 @@
       <a href="<?php echo site_url(); ?>/contact">Contact</a>
     </div>
   </nav>
+
+	<main class="main-content">

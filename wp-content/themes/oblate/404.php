@@ -1,25 +1,18 @@
 <?php get_header();?>
 
-  <main class="main-content">
+<section class="page">
+	<div class="small-container">
 
-    <section class="single">
+		<article id="post-<?php the_ID(); ?>">
 
-      <div class="small-container text-center">
+			<div class="page-header">
+				<h1 class="large-heading">404</h1>
+			</div>
+			<p class="text-center">Page not found.</p>
 
-        <article id="post-<?php the_ID(); ?>">
+		</article>
 
-          <div class="page-header">
-            <h1 class="large-heading">404</h1>
-          </div>
+	</div>
+</section>
 
-          <p>Page not found.</p>
-
-        </article>
-
-      </div>
-
-    </section>
-
-  </main>
-
-  <?php get_footer();?>
+<?php get_footer();?>

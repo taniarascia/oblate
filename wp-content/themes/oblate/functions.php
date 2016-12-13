@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Functions for taniarascia.com
  */
