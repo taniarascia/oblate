@@ -36,38 +36,4 @@
 	</div>
 </section>
 
-<section id="more">
-	<div class="large-container">
-
-		<h1>More Projects</h1>
-		<div class="more-projects">
-			<a href="https://github.com/taniarascia/wp-functions" class="article-link" target="_blank">
-				<article class="article-excerpt">
-					<div>
-						<h2>Useful WordPress Functions</h2>
-						<p>A compilation of function snippets for WordPress developers who create their own themes.</p>
-					</div>
-				</article>
-			</a>
-			<a href="https://taniarascia.github.io/html5-test/" class="article-link" target="_blank">
-				<article class="article-excerpt">
-					<div>
-						<h2>HTML5 Test Page</h2>
-						<p>A test page showcasing common HTML5 elements for CSS testing purposes, with comparisons of popular frameworks</p>
-					</div>
-				</article>
-			</a>
-			<a href="https://github.com/taniarascia/fledge" class="article-link" target="_blank">
-				<article class="article-excerpt">
-					<div>
-						<h2>Fledge</h2>
-						<p>A clean, responsive, minimalist theme for phpBB.</p>
-					</div>
-				</article>
-			</a>
-		</div>
-
-	</div>
-</section>
-
 <?php get_footer(); ?>

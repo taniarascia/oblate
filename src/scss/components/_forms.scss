@@ -42,12 +42,6 @@ input[type="search"] {
 	margin-right: .5rem;
 }
 
-@include small-breakpoint {
-	input[type="search"] {
-		min-width: 400px;
-	}
-}
-
 textarea,
 select {
 	@extend .forms;
