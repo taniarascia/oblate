@@ -18,7 +18,7 @@
 		<?php endwhile; endif; ?>
 
 			<section class="content">
-				<div class="small-container text-center">
+				<div class="small-container">
 					<h2 class="large-heading">Tutorials</h2>
 					<p>The missing instruction manuals for popular web services.</p>
 					<a class="button" href="<?php echo site_url(); ?>/blog">View All</a>

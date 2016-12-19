@@ -177,6 +177,11 @@ dd {
 		display: block;
 		clear: both;
 	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
 	a {
 		float: left;
 		width: calc(100% / 3);
@@ -227,20 +232,21 @@ dd {
 			width: 50px;
 		}
 		.left {
-			position: absolute;
-			left: 0;
+			float: left;
 		}
 		.right {
-			position: absolute;
-			right: 0;
+			float: right;
 		}
 		a {
-			width: calc(100% / 6);
+			width: auto;
 			border-bottom: 1px solid $border;
 			height: $nav-height;
 			line-height: $nav-height;
 			&:hover {
 				color: $heading-color;
+			}
+			+ a {
+				margin-left: 2rem;
 			}
 		}
 	}
@@ -252,7 +258,7 @@ dd {
 .banner {
 	padding: 2rem 0 1rem;
 	background: white;
-	text-align: center;
+	border-bottom: 1px solid $border;
 	h1 {
 		font-size: 2.5rem;
 		margin-bottom: .5rem;
@@ -271,7 +277,6 @@ dd {
 	}
 	.opener {
 		margin: 0 auto;
-		max-width: 650px;
 	}
 }
 
@@ -680,6 +685,18 @@ blockquote {
 	}
 }
 
+@include small-breakpoint {
+	blockquote {
+		margin-left: -2.5rem;
+		&.alert,
+		&.info,
+		&.note,
+		&.details {
+			margin-left: auto;
+		}
+	}
+}
+
 
 /* Footer */
 
@@ -925,7 +942,7 @@ a.social-icon {
 }
 
 .search-form {
-	text-align: center;
+	text-align: right;
 	label {
 		display: inline-block;
 	}

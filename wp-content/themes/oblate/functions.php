@@ -59,6 +59,15 @@ function modify_read_more_link() {
 add_filter( 'the_content_more_link', 'modify_read_more_link' );
 
 /** 
+ * Include navigation menu
+ */
+
+function register_my_menu() {
+  register_nav_menu('nav-menu',__( 'Navigation Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
+
+/** 
  * jQuery to the bottom
  */
 

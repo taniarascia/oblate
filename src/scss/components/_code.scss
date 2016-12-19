@@ -59,7 +59,7 @@ pre code {
 @include large-breakpoint {
 	pre code {
 		padding: 1.5rem;
-		margin: 2rem -15%;
+		margin: 2rem -25% 2rem -2.5rem;
 		border-left: 20px solid #232323;
 	}
 	#comments pre code {
