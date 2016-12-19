@@ -170,7 +170,7 @@ dd {
 	position: static;
 	width: 100%;
 	border-bottom: 1px solid $border;
-	background: white;
+		background: rgba(255,255,255,.98);
 	z-index: 2;
 	&:after {
 		content: '';
@@ -182,42 +182,35 @@ dd {
 		padding: 0;
 		margin: 0;
 	}
+	.current-menu-item a {
+		color: $heading-color;
+	}
 	a {
 		float: left;
 		width: calc(100% / 3);
 		display: block;
-		height: 50px;
-		line-height: 50px;
+		height: 40px;
+		line-height: 40px;
 		font-size: 1rem;
 		font-family: $nav-family;
 		font-weight: 500;
 		color: #676767;
 		text-decoration: none;
-		background: white;
 		text-align: center;
+		padding: 0 1rem;
 		&:hover {
 			color: $heading-color;
-		}
-	}
-	.face {
-		display: inline-block;
-		height: 40px;
-		width: 40px;
-		padding: 4px;
-		box-sizing: content-box;
-		&::before,
-		&::after {
-			box-sizing: content-box;
 		}
 	}
 }
 
 @include small-breakpoint {
 	.nav-container {
-		max-width: $tablet;
+		max-width: 580px;
 		padding: 0 1rem;
 		margin-left: auto;
 		margin-right: auto;
+		height: $nav-height;
 	}
 	.navigation {
 		position: fixed;
@@ -225,28 +218,15 @@ dd {
 		left: 0;
 		width: 100%;
 		height: $nav-height;
-		background: white;
 		border-bottom: 1px solid $border;
-		.face {
-			height: 50px;
-			width: 50px;
-		}
-		.left {
-			float: left;
-		}
-		.right {
-			float: right;
-		}
 		a {
-			width: auto;
+			width: calc(100% / 6);
 			border-bottom: 1px solid $border;
 			height: $nav-height;
 			line-height: $nav-height;
+			text-align: center;
 			&:hover {
 				color: $heading-color;
-			}
-			+ a {
-				margin-left: 2rem;
 			}
 		}
 	}
@@ -259,6 +239,7 @@ dd {
 	padding: 2rem 0 1rem;
 	background: white;
 	border-bottom: 1px solid $border;
+	text-align: center;
 	h1 {
 		font-size: 2.5rem;
 		margin-bottom: .5rem;
@@ -276,6 +257,7 @@ dd {
 		}
 	}
 	.opener {
+		max-width: 600px;
 		margin: 0 auto;
 	}
 }
@@ -529,8 +511,7 @@ a .article-excerpt {
 @include small-breakpoint {
 	.article-excerpt {
 		padding: 2rem 0;
-		flex-direction: row;
-		text-align: left;
+		flex-direction: column-reverse;
 		img {
 			display: block;
 			padding: 1rem;
@@ -942,7 +923,7 @@ a.social-icon {
 }
 
 .search-form {
-	text-align: right;
+	text-align: center;
 	label {
 		display: inline-block;
 	}

@@ -3,14 +3,12 @@
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 		<section class="banner">
-			<div class="small-container">
-				<div class="opener">
-					<h1>Tania Rascia</h1>
-					<a class="github-button" href="https://github.com/taniarascia" data-count-href="/taniarascia/followers" data-count-api="/users/taniarascia#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @taniarascia on GitHub">taniarascia</a>
-					<a class="twitter-follow-button" href="https://twitter.com/taniarascia" data-show-screen-name="false">Follow @taniarascia</a>
-					<div class="the-content">
-						<?php the_content(); ?>
-					</div>
+			<div class="small-container opener">
+				<h1>Tania Rascia</h1>
+				<a class="github-button" href="https://github.com/taniarascia" data-count-href="/taniarascia/followers" data-count-api="/users/taniarascia#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @taniarascia on GitHub">taniarascia</a>
+				<a class="twitter-follow-button" href="https://twitter.com/taniarascia" data-show-screen-name="false">Follow @taniarascia</a>
+				<div class="the-content">
+					<?php the_content(); ?>
 				</div>
 			</div>
 		</section>
@@ -18,7 +16,7 @@
 		<?php endwhile; endif; ?>
 
 			<section class="content">
-				<div class="small-container">
+				<div class="small-container text-center">
 					<h2 class="large-heading">Tutorials</h2>
 					<p>The missing instruction manuals for popular web services.</p>
 					<a class="button" href="<?php echo site_url(); ?>/blog">View All</a>

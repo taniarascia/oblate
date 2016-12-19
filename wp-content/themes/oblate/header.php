@@ -6,7 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <?php if ( !is_single() ) { ?><meta name="description" content="I'm Tania, and I'm dedicated to simplifying web development through effective and concise tutorials. Let's learn and create."><?php } ?>
+  <?php if ( !is_single() ) { ?><meta name="description" content="I'm Tania, and I simplify web development through effective and concise tutorials. Let's learn and create."><?php } ?>
   
   <?php if ( is_page('projects') ) { ?>
   	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
@@ -41,18 +41,9 @@
 <body>
 
    <nav class="navigation">
-    <div class="nav-container">
-     <div class="left">
-      <a href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/tr.png" class="face" alt="Tania Rascia"></a>
+			<div class="nav-container">
+				<?php wp_nav_menu( array( 'theme_location' => 'nav-menu' ) ); ?>
 			</div>
-			<div class="right">
-				<a href="<?php echo site_url(); ?>/blog">Articles</a>
-				<a href="<?php echo site_url(); ?>/me">About</a>
-				<a href="<?php echo site_url(); ?>/portfolio">Portfolio</a>
-				<a href="<?php echo site_url(); ?>/projects">Projects</a>
-				<a href="<?php echo site_url(); ?>/contact">Contact</a>
-			</div>		
-    </div>
   </nav>
 
 	<main class="main-content">
