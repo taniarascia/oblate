@@ -183,7 +183,7 @@ dd {
 		margin: 0;
 	}
 	.current-menu-item a {
-		color: $heading-color;
+		color: $link-color;
 	}
 	a {
 		float: left;
@@ -238,7 +238,6 @@ dd {
 .banner {
 	padding: 2rem 0 1rem;
 	background: white;
-	border-bottom: 1px solid $border;
 	text-align: center;
 	h1 {
 		font-size: 2.5rem;
@@ -253,7 +252,7 @@ dd {
 	.banner {
 		padding: 4rem 0 2rem;
 		h1 {
-			font-size: 3rem;
+			font-size: 3.5rem;
 		}
 	}
 	.opener {
@@ -272,8 +271,8 @@ dd {
 	}
 }
 
-.latest-articles,
-.more-projects {
+.latest-articles {
+	background: $light-background;
 	a.article-link {
 		background: $light-background;
 		transition: all .2s ease;
@@ -292,8 +291,7 @@ dd {
 }
 
 @include large-breakpoint {
-	.latest-articles,
-	.more-projects {
+	.latest-articles {
 		display: flex;
 		flex-direction: row;
 		a.article-link {

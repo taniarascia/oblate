@@ -159,9 +159,6 @@ a .article-excerpt:hover {
 	.nav-container {
 		max-width: 1000px !important;
 	}
-	.navigation a {
-		width: auto;
-	}
 }
 
 .button,

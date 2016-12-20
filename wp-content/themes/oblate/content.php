@@ -5,6 +5,6 @@
 			<?php the_excerpt(); ?>
 	</div>
 	<div class="article-image">
-		<?php if ( get_post_thumbnail_id() ) { ?><a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>"></a><?php } ?>
+		<?php if ( get_post_thumbnail_id() ) { ?><a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="150" width="150"></a><?php } ?>
 	</div>
 </article>

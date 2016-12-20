@@ -240,3 +240,11 @@ function create_post_portfolio() {
 	));
 }
 add_action('init', 'create_post_portfolio'); // Add our Portfolio Item Type
+
+// Remove WP embed script
+function speed_stop_loading_wp_embed() {
+if (!is_admin()) {
+wp_deregister_script('wp-embed');
+}
+}
+add_action('init', 'speed_stop_loading_wp_embed');
