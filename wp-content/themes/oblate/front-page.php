@@ -15,12 +15,6 @@
 
 		<?php endwhile; endif; ?>
 
-			<section class="content">
-				<div class="small-container text-center">
-					<h2 class="large-heading">Latest Articles</h2>
-					<p>My most recent thoughts, guides, and tutorials.</p>
-				</div>
-			</section>
 
 			<?php $args = array(
 				'posts_per_page' => '3',
@@ -30,8 +24,10 @@
 
 			if ( $latest->have_posts() ) : ?>
 
-				<section class="latest-articles">
-					<div class="small-container">
+				<section class="content latest-articles">
+					<div class="small-container text-center">
+					<h2 class="large-heading">Latest Articles</h2>
+					<p>My most recent thoughts, guides, and tutorials.</p>
 						<?php while ( $latest->have_posts() ) : $latest->the_post(); 
 							get_template_part( 'content', get_post_format() );
 						endwhile; ?>

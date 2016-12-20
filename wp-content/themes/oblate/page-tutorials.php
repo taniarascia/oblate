@@ -1,10 +1,12 @@
 <?php get_header(); ?>
+
 	<section class="content">
 		<div class="small-container text-center">
 			<h2 class="large-heading">Tutorials</h2>
 			<p>The missing instruction manuals for popular web services.</p>
 		</div>
 	</section>
+	
 	<section class="tutorials">
 		<div class="tutorials-grid">
 			<a href="<?php echo site_url(); ?>/developing-a-wordpress-theme-from-scratch/" id="wordpress-tutorial" class="tutorials-cell">
