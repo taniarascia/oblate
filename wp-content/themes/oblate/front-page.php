@@ -24,7 +24,7 @@
 
 			if ( $latest->have_posts() ) : ?>
 
-				<section class="content latest-articles">
+				<section class="content">
 					<div class="small-container text-center">
 					<h2 class="large-heading">Latest Articles</h2>
 					<p>My most recent thoughts, guides, and tutorials.</p>
