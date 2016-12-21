@@ -47,7 +47,7 @@ h5 {
 	line-height: 1.1;
 	font-weight: 700;
 	letter-spacing: -0.05rem;
-	margin: 0 0 .75rem;
+	margin: 0 0 1rem;
 	color: $heading-color;
 }
 
@@ -63,19 +63,19 @@ h2 {
 
 h3 {
 	font-size: 1.6rem;
-	color: lighten($font-color, 10%);
+	color: $heading-color;
 }
 
 h4 {
 	font-size: 1.4rem;
 	font-weight: 500;
-	color: lighten($font-color, 20%);
+	color: lighten($heading-color, 20%);
 }
 
 h5 {
 	font-size: 1.2rem;
 	font-weight: 400;
-	color: lighten($font-color, 25%);
+	color: lighten($heading-color, 25%);
 }
 
 h1:not(:first-child),
@@ -650,36 +650,30 @@ blockquote {
 		background: #FFECEC;
 		border: 1px solid #C6585D;
 		color: #8a3d41;
-		border-left: 12px solid #C6585D;
+		border-left: 16px solid #C6585D;
 	}
 	&.info {
 		background: #FFF4CA;
 		border: 1px solid #FFE168;
 		color: #755D00;
-		border-left: 12px solid #FFE168;
+		border-left: 16px solid #FFE168;
 	}
 	&.note {
 		background: $background;
 		border: 1px solid $border;
-		border-left: 12px solid $border;
+		border-left: 16px solid $border;
 	}
 	&.details {
 		background: #f7f9fd;
 		border: 1px solid #4075D0;
 		color: #335da6;
-		border-left: 12px solid #4075D0;
+		border-left: 16px solid #4075D0;
 	}
 }
 
 @include small-breakpoint {
 	blockquote {
-		margin-left: -2.5rem;
-		&.alert,
-		&.info,
-		&.note,
-		&.details {
-			margin-left: auto;
-		}
+		margin-left: -2rem;
 	}
 }
 
