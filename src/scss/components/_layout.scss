@@ -52,7 +52,7 @@ h5 {
 }
 
 h1 {
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	font-weight: 800;
 	margin: 0;
 }
@@ -78,6 +78,12 @@ h5 {
 	color: lighten($font-color, 25%);
 }
 
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child) {
+	margin-top: 2.5rem;
+}
+
 p,
 ol,
 ul,
@@ -88,9 +94,6 @@ table {
 }
 
 @include small-breakpoint {
-	body {
-		font-size: 1.2rem;
-	}
 	h1 {
 		font-size: 1.8rem;
 	}
@@ -105,6 +108,11 @@ table {
 	}
 	h5 {
 		font-size: 1.4rem;
+	}
+	h1:not(:first-child),
+	h2:not(:first-child),
+	h3:not(:first-child) {
+		margin-top: 3rem;
 	}
 }
 
@@ -239,7 +247,7 @@ dd {
 	background: white;
 	h1 {
 		font-size: 3rem;
-		margin-bottom: .5rem;
+		margin-bottom: 0;
 	}
 	.the-content {
 		padding-top: 1rem;
@@ -250,13 +258,13 @@ dd {
 	.banner {
 		padding: 3rem 0 2rem;
 		h1 {
-			font-size: 5rem;
+			font-size: 4rem;
 		}
 	}
 }
 
 .large-heading {
-	font-size: 2.8rem !important;
+	font-size: 2.5rem !important;
 	border-bottom-color: #FFEA96;
 	box-shadow: inset 0 -20px 0 #FFEA96;
 	padding-right: 40px;
@@ -266,7 +274,7 @@ dd {
 @include small-breakpoint {
 	.large-heading {
 		padding-right: 60px;
-		font-size: 4rem !important;
+		font-size: 3.2rem !important;
 		box-shadow: inset 0 -30px 0 #FFEA96;
 	}
 }

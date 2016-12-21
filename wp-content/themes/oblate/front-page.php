@@ -5,10 +5,11 @@
     <section class="banner">
       <div class="small-container">
         <h1>Tania Rascia</h1>
-       	<a href="https://github.com/taniarascia" target="_blank" class="gh-button"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a> <a href="https://twitter.com/taniarascia" target="_blank" class="tw-button"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+      	<a href="https://github.com/taniarascia" target="_blank" class="gh-button"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a> <a href="https://twitter.com/taniarascia" target="_blank" class="tw-button"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
         <div class="the-content">
           <?php the_content(); ?>
         </div>
+         	
       </div>
     </section>
 
@@ -27,7 +28,6 @@
             <h2 class="large-heading">Latest Articles</h2>
             <p>My most recent thoughts, guides, and tutorials.</p>
             
-						<p><a class="button" href="<?php echo site_url(); ?>/blog">View All</a></p>
             
             <?php while ( $latest->have_posts() ) : $latest->the_post(); 
 						
