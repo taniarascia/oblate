@@ -32,7 +32,7 @@
 
 <?php } ?>
 
-<?php if ( is_page( 'me' ) { ?>
+<?php if ( is_page( 'me' ) ) { ?>
 
 <script type="application/ld+json">
     {
