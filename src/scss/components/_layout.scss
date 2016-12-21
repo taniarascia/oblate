@@ -153,7 +153,6 @@ dd {
 
 .content {
 	padding: 1rem 0;
-	text-align: center;
 }
 
 @include small-breakpoint {
@@ -170,7 +169,7 @@ dd {
 	position: static;
 	width: 100%;
 	border-bottom: 1px solid $border;
-		background: rgba(255,255,255,.98);
+	background: rgba(255, 255, 255, .98);
 	z-index: 2;
 	&:after {
 		content: '';
@@ -239,7 +238,7 @@ dd {
 	padding: 2rem 0 1rem;
 	background: white;
 	h1 {
-		font-size: 2.5rem;
+		font-size: 3rem;
 		margin-bottom: .5rem;
 	}
 	.the-content {
@@ -257,50 +256,18 @@ dd {
 }
 
 .large-heading {
-	font-size: 2.5rem !important;
-  border-bottom-color: #FFEA96;
-  box-shadow: inset 0 -30px 0 #FFEA96;
-  max-width: 550px;
-  text-align: left;
+	font-size: 3rem !important;
+	border-bottom-color: #FFEA96;
+	box-shadow: inset 0 -20px 0 #FFEA96;
+	padding-right: 40px;
+	display: inline-block;
 }
 
 @include small-breakpoint {
 	.large-heading {
-		font-size: 4.5rem !important; 
-	}
-}
-
-.latest-articles {
-	a.article-link {
-		background: $light-background;
-		transition: all .2s ease;
-		margin-bottom: 1rem;
-		&:hover {
-			box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
-		}
-	}
-	a .article-excerpt {
-		border: 0;
-		&:hover {
-			border: 0;
-			box-shadow: none;
-		}
-	}
-}
-
-@include large-breakpoint {
-	.latest-articles {
-		display: flex;
-		flex-direction: row-reverse;
-		a.article-link {
-			flex: 1;
-			~ a.article-link {
-				margin-left: 1rem;
-			}
-		}
-		a .article-excerpt {
-			border: 0;
-		}
+		padding-right: 60px;
+		font-size: 4.5rem !important;
+		box-shadow: inset 0 -30px 0 #FFEA96;
 	}
 }
 
@@ -514,15 +481,36 @@ a .article-excerpt {
 			width: 150px;
 			height: 150px;
 			max-width: 150px;
-      margin: 0 1rem;
+			margin: 0 1rem;
 		}
+	}
+}
+
+.latest-articles .article-excerpt {
+	text-align: left;
+}
+
+@include large-breakpoint {
+	.latest-articles {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+}
+
+.latest-articles .article-excerpt {
+	flex-direction: row;
+	text-align: left;
+	p {
+		display: none;
 	}
 }
 
 @include small-breakpoint {
 	.latest-articles .article-excerpt {
 		flex-direction: row-reverse;
-    text-align: left;
+		p {
+			display: block;
+		}
 	}
 }
 
@@ -563,10 +551,10 @@ a .article-excerpt {
 .single-article-image {
 	padding-top: 1.5rem;
 	text-align: center;
-  img {
-    width: 75px;
-    height: 75px;
-  }
+	img {
+		width: 75px;
+		height: 75px;
+	}
 }
 
 .single-article-header {
@@ -583,18 +571,18 @@ a .article-excerpt {
 	.article-header {
 		padding: 3rem 0;
 	}
-  .single-article-image {
-	padding-top: 1.5rem;
-	text-align: center;
-  img {
-    width: 150px;
-    height: 150px;
-  }
-}
+	.single-article-image {
+		padding-top: 1.5rem;
+		text-align: center;
+		img {
+			width: 150px;
+			height: 150px;
+		}
+	}
 }
 
 .page-header {
-	text-align: center;
+	text-align: left;
 	padding: 1.5rem 0;
 }
 
@@ -942,8 +930,8 @@ a.social-icon {
 /* Author Background Highlighting For Threaded Comments */
 
 .bypostauthor > div .fn {
-	border-bottom-color: #ffeeaa;
-	box-shadow: inset 0 -5px 0 #ffeeaa;
+	border-bottom-color: #FFEA96;
+	box-shadow: inset 0 -5px 0 #FFEA96;
 }
 
 

@@ -248,3 +248,18 @@ wp_deregister_script('wp-embed');
 }
 }
 add_action('init', 'speed_stop_loading_wp_embed');
+
+/**
+ * Remove contact form scripts 
+ */
+
+//*
+function load_contactform7_on_specific_page() {
+   //  Edit page IDs here
+   if ( !is_page( 'contact' ) ) {		
+      wp_dequeue_script('contact-form-7'); // Dequeue JS Script file.
+      wp_dequeue_style('contact-form-7');  // Dequeue CSS file. 
+   }
+}
+
+add_action( 'wp_enqueue_scripts', 'load_contactform7_on_specific_page' );

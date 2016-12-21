@@ -9,8 +9,8 @@
 
 		endwhile; else: ?>
 
-			<h3 class="text-center">Sorry, no results were found!</h3>
-			<?php endif; ?>
+		<h3 class="text-center">Sorry, no results were found!</h3>
+		<?php endif; ?>
 
 	</div>
 </section>

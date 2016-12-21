@@ -6,7 +6,6 @@
 			<p>A minimalist CSS framework and Sass starter-pack for front end web developers. Also includes <span class="eighties">Eighties Mode!</span></p>
 			<a class="button-primitive" href="http://taniarascia.github.io/primitive/" target="_blank">View Project</a>
 			<a class="button-primitive" href="http://github.com/taniarascia/primitive/" target="_blank">GitHub Repo</a>
-
 		</div>
 	</section>
 

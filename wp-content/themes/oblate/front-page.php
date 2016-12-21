@@ -5,8 +5,7 @@
     <section class="banner">
       <div class="small-container">
         <h1>Tania Rascia</h1>
-        <a class="github-button" href="https://github.com/taniarascia" data-count-href="/taniarascia/followers" data-count-api="/users/taniarascia#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @taniarascia on GitHub">taniarascia</a>
-        <a class="twitter-follow-button" href="https://twitter.com/taniarascia" data-show-screen-name="false">Follow @taniarascia</a>
+       	<a href="https://github.com/taniarascia" target="_blank" class="gh-button"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a> <a href="https://twitter.com/taniarascia" target="_blank" class="tw-button"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
         <div class="the-content">
           <?php the_content(); ?>
         </div>
@@ -14,7 +13,6 @@
     </section>
 
     <?php endwhile; endif; ?>
-
 
       <?php $args = array(
 				'posts_per_page' => '3',
@@ -28,10 +26,15 @@
           <div class="small-container">
             <h2 class="large-heading">Latest Articles</h2>
             <p>My most recent thoughts, guides, and tutorials.</p>
-            <a class="button" href="<?php echo site_url(); ?>/blog">View All</a>
+            
+						<p><a class="button" href="<?php echo site_url(); ?>/blog">View All</a></p>
+            
             <?php while ( $latest->have_posts() ) : $latest->the_post(); 
+						
 							get_template_part( 'content', get_post_format() );
+						
 						endwhile; ?>
+          
           </div>
         </section>
 
@@ -85,4 +88,4 @@
             </div>
           </section>
 
-          <?php get_footer(); ?>
+<?php get_footer(); ?>

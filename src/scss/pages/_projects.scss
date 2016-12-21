@@ -22,7 +22,7 @@
 	h1 {
 		color: white;
 		font-size: 1.8rem;
-		margin: 0;
+		margin-bottom: 1rem;
 		font-family: 'Press Start 2P';
 	}
 	p {
@@ -43,7 +43,7 @@
 		color: #fff;
 		font-weight: 400;
 		font-size: 1rem;
-    font-family: Helvetica Neue, sans-serif;
+		font-family: Helvetica Neue, sans-serif;
 		padding: .7rem 1.2rem;
 		margin: 0;
 		white-space: nowrap;
@@ -145,7 +145,7 @@
 		padding: 0 0 .5rem 0;
 		font-size: 1.6rem;
 		margin-bottom: 1rem;
-		color: rgba(255,255,255,.8);
+		color: rgba(255, 255, 255, .8);
 		font-family: 'Roboto', sans-serif !important;
 		font-weight: 300;
 	}
@@ -269,10 +269,9 @@
 	p {
 		font-family: 'Heebo', sans-serif;
 		font-weight: 600;
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		color: #E06C75;
 		line-height: 1.1;
-		
 	}
 	a.button {
 		border-radius: 0;
@@ -285,7 +284,6 @@
 		&:focus {
 			background: transparent;
 			color: #E5C07B;
-			
 		}
 	}
 }
@@ -348,6 +346,11 @@ a.tw-button {
 	#balance {
 		h1 {
 			font-size: 3.2rem;
+		}
+	}
+	#balance {
+		p {
+			font-size: 1.5rem;
 		}
 	}
 	#new-moon,

@@ -31,7 +31,7 @@
 
 		<?php endif; // have_comments() 
 
-		$args = array('comment_notes_after' => '<p style="font-size: .9rem;margin-bottom:1rem;"><a href="https://en.support.wordpress.com/markdown-quick-reference/">Markdown</a> is enabled in comments. If you would like to post code in your comments, please wrap it in a <code style="font-size:.9rem;">&lt;pre&gt;&lt;code&gt;</code>. HTML/PHP code must be <a href="http://www.freeformatter.com/html-escape.html">escaped</a>. Failure to do so will make me sad. </p>'); comment_form( $args ); 
+		$args = array('comment_notes_after' => '<p style="font-size: .9rem;margin-bottom:1rem;">If you would like to post code in your comments, please wrap it in a <code style="font-size:.9rem;">&lt;pre&gt;&lt;code&gt;</code>. HTML/PHP code must be <a href="http://www.freeformatter.com/html-escape.html">escaped</a>. Failure to do so will make me sad. </p>'); comment_form( $args ); 
 
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 			if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>

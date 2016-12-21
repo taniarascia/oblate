@@ -3,6 +3,7 @@
 <?php if ( get_post_thumbnail_id() ) { ?>
 	<div class="about-me" style="background:url(<?php echo the_post_thumbnail_url(); ?>) no-repeat right center / cover;"></div>
 <?php } ?>
+
 	<section class="single">
 		<div class="small-container">
 
@@ -22,4 +23,5 @@
 
 		</div>
 	</section>
+	
 <?php get_footer(); ?>
