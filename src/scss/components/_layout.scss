@@ -258,6 +258,7 @@ dd {
 	.banner {
 		padding: 3rem 0 2rem;
 		h1 {
+			text-indent: -10px;
 			font-size: 4rem;
 		}
 	}
@@ -266,16 +267,17 @@ dd {
 .large-heading {
 	font-size: 2.5rem !important;
 	border-bottom-color: #FFEA96;
-	box-shadow: inset 0 -20px 0 #FFEA96;
-	padding-right: 40px;
+	box-shadow: inset 0 -15px 0 #FFEA96;
+	padding-right: 20px;
 	display: inline-block;
 }
 
 @include small-breakpoint {
 	.large-heading {
-		padding-right: 60px;
+		padding-right: 30px;
 		font-size: 3.2rem !important;
-		box-shadow: inset 0 -30px 0 #FFEA96;
+		text-indent: -10px;
+		box-shadow: inset 0 -20px 0 #FFEA96;
 	}
 }
 
@@ -934,6 +936,7 @@ a.social-icon {
 .bypostauthor > div .fn {
 	border-bottom-color: #FFEA96;
 	box-shadow: inset 0 -5px 0 #FFEA96;
+	padding-right: 4px;
 }
 
 
@@ -1020,5 +1023,5 @@ caption {
 /* Selections */
 
 ::selection {
-	background: RGBA(255, 234, 150, .9);
+	background: RGBA(255, 244, 150, .9);
 }
