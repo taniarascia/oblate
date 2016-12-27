@@ -13,6 +13,8 @@
 }
 
 .portfolio-example {
+	padding: 2rem;
+	background: $light-background;
 	img {
 		display: block;
 	}
@@ -30,6 +32,13 @@
 }
 
 @include small-breakpoint {
+	.portfolio-description,
+	.portfolio-example {
+		max-width: 50%;
+	}
+	.portfolio-example {
+		padding: 4rem;
+	}
 	.portfolio-container {
 		display: flex;
 		min-height: 400px;
