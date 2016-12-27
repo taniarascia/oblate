@@ -831,7 +831,7 @@ a.social-icon {
 	padding-bottom: .5rem;
 }
 
-.posts-links {
+.posts-links, .comment-links {
 	padding: 0;
 	&:after {
 		content: '';
@@ -844,16 +844,11 @@ a.social-icon {
 	.posts-links {
 		padding-top: 1rem;
 	}
-	#comments .posts-links {
-		margin-bottom: 1rem;
-		padding-top: 0;
-	}
 }
 
 .pagination-left,
 .pagination-right {
 	float: none;
-	padding: 5px;
 	margin: 0 auto;
 	text-align: center;
 }

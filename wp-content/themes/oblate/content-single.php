@@ -5,11 +5,11 @@
 	</div>
 	<?php } ?>
 		
-		<div class="single-article-header">
-			<h1><?php the_title(); ?></h1>
-			<time datetime="<?php the_time( 'Y-m-d' ); ?>"><?php the_time( 'F j, Y' ); ?></time>
-			<?php the_tags('<div class="tags-container"><span class="tags">' ,'</span><span class="tags">','</span></div>'); ?>
-		</div>
+	<div class="single-article-header">
+		<h1><?php the_title(); ?></h1>
+		<time datetime="<?php the_time( 'Y-m-d' ); ?>"><?php the_time( 'F j, Y' ); ?></time>
+		<?php the_tags('<div class="tags-container"><span class="tags">' ,'</span><span class="tags">','</span></div>'); ?>
+	</div>
 
 	<?php the_content(); ?>
 </article>

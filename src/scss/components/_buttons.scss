@@ -3,29 +3,29 @@
 
 // Button Extend  
 .buttons {
-  display: inline-block;
-  padding: 10px 25px 8px;
-  text-align: center;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  text-decoration: none;
-  white-space: nowrap;
-  background: $link-color;
-  border-radius: 30px;
-  border: 1px solid $link-color;
-  cursor: pointer;
-  font-weight: 600;
-  margin: 5px 0;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
-  font-family: $button-family;
-  color: white;
+	display: inline-block;
+	padding: 10px 25px 8px;
+	text-align: center;
+	font-size: 1.1rem;
+	line-height: 1.6;
+	text-decoration: none;
+	white-space: nowrap;
+	background: $link-color;
+	border-radius: 30px;
+	border: 1px solid $link-color;
+	cursor: pointer;
+	font-weight: 600;
+	margin: 5px 0;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
+	font-family: $button-family;
+	color: white;
 }
 
 .buttons-hover {
-  color: $link-color;
-  background: white;
-  border: 1px solid $link-color;
-  text-decoration: none;
+	color: $link-color;
+	background: white;
+	border: 1px solid $link-color;
+	text-decoration: none;
 }
 
 // Button Output
@@ -33,23 +33,49 @@ a.button,
 .button,
 button,
 .posts-links a {
-  @extend .buttons;
-  &:hover,
-  &:focus,
-  &:active {
-    @extend .buttons-hover;
-  }
+	@extend .buttons;
+	&:hover,
+	&:focus,
+	&:active {
+		@extend .buttons-hover;
+	}
 }
 
 input {
-  &[type="submit"],
-  &[type="reset"],
-  &[type="button"] {
-    @extend .buttons;
-    &:hover,
-    &:focus,
-    &:active {
-      @extend .buttons-hover;
-    }
-  }
+	&[type="submit"],
+	&[type="reset"],
+	&[type="button"] {
+		@extend .buttons;
+		&:hover,
+		&:focus,
+		&:active {
+			@extend .buttons-hover;
+		}
+	}
+}
+
+.comment-links a {
+	display: inline-block;
+	padding: 15px 20px 10px;
+	text-align: center;
+	font-size: 1rem;
+	line-height: 1.6;
+	text-decoration: none;
+	background: transparent;
+	border-radius: 30px;
+	border: 1px solid #efefef;
+	cursor: pointer;
+	font-weight: 600;
+	margin: 20px 0 35px;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
+	font-family: $button-family;
+	color: #404040;
+	&:hover,
+	&:focus,
+	&:active {
+		color: white;
+		background: $link-color;
+		border: 1px solid $link-color;
+		text-decoration: none;
+	}
 }

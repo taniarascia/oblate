@@ -20,7 +20,7 @@
 		) );
 	?>
 		</ul>
-		<div class="posts-links">
+		<div class="comment-links">
 			<div class="pagination-left">
 				<?php previous_comments_link(); ?>
 			</div>
