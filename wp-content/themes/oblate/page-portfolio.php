@@ -4,23 +4,24 @@
 				'post_type' => 'portfolio-items',
 				'order' => 'asc',
 				'posts_per_page' => '30',
-			 );
+			);
 
 			$portfolio = new WP_Query( $args );
 
-			if ( $portfolio->have_posts() ) : ?>
+			if ( $portfolio->have_posts() ) :  while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?>
 
-		<div class="portfolio">
-
-			<?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?>
-				<div class="portfolio-item">
-					<h2><?php the_title(); ?></h2>
-					<a href="<?php echo get_the_excerpt(); ?>" target="_blank"><img src="<?php echo the_post_thumbnail_url( 'large' ); ?>" class="responsive-image" alt="<?php the_title(); ?>"></a>
-				</div>
-			<?php endwhile; ?>
-
+<section class="portfolio-container">
+	<div class="portfolio-example">
+		<img src="<?php echo the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title(); ?>">
+	</div>
+	<div class="portfolio-description">
+		<div class="portfolio-inner">
+			<h3><?php the_title(); ?></h3>
+			<a class="button" href="<?php echo get_the_excerpt(); ?>" target="_blank">View Website</a>
 		</div>
+	</div>
+</section>
 
-	<?php endif; wp_reset_postdata(); ?>
+<?php endwhile; endif; wp_reset_postdata(); ?>
 
 <?php get_footer(); ?>

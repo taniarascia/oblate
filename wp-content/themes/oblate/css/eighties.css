@@ -1,6 +1,4 @@
 @import 'https://fonts.googleapis.com/css?family=Press+Start+2P';
-html {}
-
 h1,
 h2,
 h3,
@@ -111,20 +109,8 @@ h1 {
 	color: white !important;
 }
 
-.latest-articles a.article-link {
-	color: #fff;
-	background: #121212 !important;
-	border: 1px solid #2467DB;
-}
-
 .article-excerpt {
 	border-bottom: 0 !important;
-}
-
-.latest-articles a.article-link:hover,
-a.article-link:hover,
-a .article-excerpt:hover {
-	background: #121212 !important;
 }
 
 .navigation a:hover,
@@ -149,11 +135,6 @@ a .article-excerpt:hover {
 	border: 1px solid #2467DB !important;
 	color: #2467DB !important;
 }
-
-
-/* .navigation {
-	border-bottom: 2px solid #2467DB;
-} */
 
 @media (min-width: 600px) {
 	.nav-container {
@@ -187,6 +168,11 @@ a:active {
 	color: #FF2155 !important;
 }
 
+.page,
+.single {
+	background: transparent !important;
+}
+
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -210,105 +196,3 @@ select {
 a .article-excerpt {
 	color: white;
 }
-
-/* .token.doctype {
-	background: #000;
-	color: #fff
-}
-
-.token.cdata,
-.token.comment,
-.token.prolog {
-	color: #a9a9a9
-}
-
-.token.namespace {
-	opacity: .7
-}
-
-.token.attr-value,
-.token.string {
-	color: #00FF00
-}
-
-.token.punctuation {
-	color: white
-}
-
-.token.operator {
-	color: #FCB42A
-}
-
-.token.variable {
-	color: #FF2155
-}
-
-.token.property {
-	color: #d5d5d5
-}
-
-.token.boolean,
-.token.constant,
-.token.entity,
-.token.inserted,
-.token.number,
-.token.regex,
-.token.symbol,
-.token.url {
-	color: #fca369
-}
-
-.token.delimiter {
-	background: #000;
-	color: #fff;
-	padding: 1px 2px
-}
-
-.token.atrule {
-	color: #76d4d6
-}
-
-.token.keyword {
-	color: #F7F461
-}
-
-.language-autohotkey .token.selector {
-	color: #FCB42A
-}
-
-.token.attr-name {
-	color: #F7F461
-}
-
-.token.function {
-	color: #76d4d6
-}
-
-.language-php .token.function {
-	color: #fff
-}
-
-.token.class-name {
-	color: #FFB8DE
-}
-
-.language-autohotkey .token.tag,
-.token.deleted {
-	color: #FCB42A
-}
-
-.token.tag {
-	color: #2467DB
-}
-
-.language-autohotkey .token.keyword {
-	color: #ffeead
-}
-
-.token.selector {
-	color: #FCB42A
-}
-
-.token.italic {
-	font-style: italic
-} */

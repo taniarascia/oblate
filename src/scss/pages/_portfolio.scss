@@ -1,32 +1,41 @@
 /* Projects
 =============== */
 
-.main-content.portfolio-page {
-	background: $background;
+.portfolio-container {
+	display: flex;
+	min-height: 400px;
+	flex-direction: column;
 }
 
-.portfolio {
-	.portfolio-item {
-		padding: .5rem;
-		padding-bottom: 1rem;
+.portfolio-description,
+.portfolio-example {
+	flex: 1;
+}
+
+.portfolio-example {
+	img {
+		display: block;
 	}
 }
 
-@include large-breakpoint {
-	.portfolio {
+.portfolio-description {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.portfolio-inner {
+	text-align: center;
+	padding: 2rem;
+}
+
+@include small-breakpoint {
+	.portfolio-container {
 		display: flex;
+		min-height: 400px;
 		flex-direction: row;
-		flex-wrap: wrap;
-		.portfolio-item {
-			padding: 1rem;
-			padding-bottom: 2rem;
-			width: calc(100% / 2);
-			img {
-				transition: all .2s ease;
-			}
-			img:hover {
-				box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .15);
-			}
-		}
+	}
+	.portfolio-container:nth-of-type(even) .portfolio-example {
+		order: 2;
 	}
 }
