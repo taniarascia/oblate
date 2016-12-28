@@ -263,3 +263,20 @@ function load_contactform7_on_specific_page() {
 }
 
 add_action( 'wp_enqueue_scripts', 'load_contactform7_on_specific_page' );
+
+/*** Remove Query String from Static Resources ***/
+function remove_cssjs_ver( $src ) {
+ if( strpos( $src, '?ver=' ) )
+ $src = remove_query_arg( 'ver', $src );
+ return $src;
+}
+add_filter( 'style_loader_src', 'remove_cssjs_ver', 10, 2 );
+add_filter( 'script_loader_src', 'remove_cssjs_ver', 10, 2 );
+
+/*** Remove Query String from Static Resources ***/
+function remove_cssjs_ver2( $src ) {
+ if( strpos( $src, 'ver=' ) )
+ $src = remove_query_arg( 'ver', $src );
+ return $src;
+}
+add_filter( 'style_loader_src', 'remove_cssjs_ver2', 10, 2 );
