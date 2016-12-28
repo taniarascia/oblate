@@ -4,7 +4,9 @@
 wp-config.php
 wp-content/uploads
 wp-content/plugins
-/wp-content/cache
+wp-content/cache
+wp-content/w3tc-config/
+wp-content/advanced-cache.php
 .sass-cache
 node_modules
 src/scss/.sass-cache
