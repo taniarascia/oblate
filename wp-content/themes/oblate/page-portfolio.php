@@ -12,7 +12,7 @@
 
 <section class="portfolio-container">
 	<div class="portfolio-example">
-		<img src="<?php echo the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title(); ?>">
+		<a href="<?php echo get_the_excerpt(); ?>" target="_blank"><img src="<?php echo the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title(); ?>"></a>
 	</div>
 	<div class="portfolio-description">
 		<div class="portfolio-inner">
