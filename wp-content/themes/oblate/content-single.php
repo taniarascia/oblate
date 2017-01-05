@@ -18,3 +18,21 @@
 	<cite>Written by Tania Rascia<br>
 		<a href="https://github.com/taniarascia" target="_blank" class="gh-button"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a> <a href="https://twitter.com/taniarascia" target="_blank" class="tw-button"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></cite>
 </div>
+
+<div class="container random-posts">
+	<?php
+	$args = array( 
+		'posts_per_page' => 3, 
+		'orderby' => 'rand' );
+
+	$rand_posts = get_posts( $args );
+
+	foreach ( $rand_posts as $post ) : setup_postdata( $post ); ?>
+			
+			<h3><?php if ( get_post_thumbnail_id() ) { ?><a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="35" width="35"></a><?php } ?> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			 
+
+	<?php endforeach; 
+
+	wp_reset_postdata(); ?>
+</div>

@@ -97,7 +97,7 @@ kbd {
 /* Inline code */
 
 :not(pre) > code[class*="language-"] {
-	padding: .2rem .4rem;
+	padding: .1rem .3rem;
 	background: #343434;
 	border: 0px solid #343434;
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -105,7 +105,7 @@ kbd {
 
 :not(pre) > code {
 	font-size: 1rem;
-	padding: .2rem .4rem;
+	padding: .1rem .3rem;
 	background: rgba(0, 0, 0, .05);
 	font-family: $code;
 	font-weight: 400;

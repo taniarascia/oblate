@@ -43,15 +43,12 @@
 	.portfolio-example {
 		max-width: 50%;
 	}
-	.portfolio-example {
-		padding: 4rem;
-	}
 	.portfolio-container {
 		display: flex;
 		min-height: 400px;
 		flex-direction: row;
 	}
 	.portfolio-container:nth-of-type(even) .portfolio-example {
-		order: 2;
+		//order: 2;
 	}
 }
