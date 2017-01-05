@@ -90,7 +90,63 @@ ul,
 dl,
 blockquote,
 table {
-	margin: 0 0 2rem;
+	margin-top: 0;
+	margin-bottom: 2rem;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+blockquote,
+dl,
+ul,
+ol,
+li,
+table,
+time,
+.terminal,
+#comments,
+.blurb,
+.contain-table,
+.article-excerpt,
+iframe,
+.cp_embed_wrapper {
+	max-width: $tablet;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+dl,
+ul,
+ol,
+table,
+li,
+time,
+.terminal,
+#comments,
+.blurb,
+.contain-table {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+ul,
+ol,
+dl {
+	padding-left: 2.25rem;
+}
+
+li {
+	padding-left: .25rem;
 }
 
 @include small-breakpoint {
@@ -145,6 +201,12 @@ dd {
 	padding: 0 1rem;
 }
 
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: $tablet;
+}
+
 .small-container {
 	max-width: $tablet;
 }
@@ -173,7 +235,7 @@ dd {
 
 /* Navigation */
 
-.navigation { 
+.navigation {
 	position: static;
 	width: 100%;
 	border-bottom: 1px solid $border;
@@ -182,7 +244,7 @@ dd {
 	&:after {
 		content: '';
 		display: block;
-		clear: both; 
+		clear: both;
 	}
 	ul {
 		list-style: none;
@@ -378,6 +440,7 @@ dd {
 	background: #E48632;
 }
 
+
 /* Articles */
 
 time {
@@ -552,6 +615,7 @@ blockquote {
 	border-left: 16px solid $background;
 	font-family: $heading-family;
 	font-weight: 600;
+	margin-top: 2rem;
 	h1,
 	h2,
 	h3,
@@ -570,6 +634,7 @@ blockquote {
 	p {
 		font-size: 1.3rem;
 		margin: 0;
+		padding: 0;
 		&:last-of-type {
 			margin-bottom: 0;
 		}
@@ -614,12 +679,6 @@ blockquote {
 		border: 1px solid #4075D0;
 		color: #335da6;
 		border-left: 16px solid #4075D0;
-	}
-}
-
-@include small-breakpoint {
-	blockquote {
-		margin-left: -2rem;
 	}
 }
 
@@ -708,6 +767,10 @@ a.social-icon {
 	p {
 		font-size: 1rem;
 		margin: 0 0 1rem;
+		padding: 0;
+	}
+	h3 {
+		padding: 0;
 	}
 }
 
@@ -779,6 +842,7 @@ a.social-icon {
 // Form
 .comment-form {
 	p {
+		padding: 0;
 		margin: 0;
 	}
 }
@@ -831,7 +895,8 @@ a.social-icon {
 	padding-bottom: .5rem;
 }
 
-.posts-links, .comment-links {
+.posts-links,
+.comment-links {
 	padding: 0;
 	&:after {
 		content: '';
@@ -851,6 +916,7 @@ a.social-icon {
 	float: none;
 	margin: 0 auto;
 	text-align: center;
+	padding-top: 1rem;
 }
 
 @include small-breakpoint {
@@ -885,7 +951,7 @@ a.social-icon {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-	width: 100%;
+	width: $tablet;
 	max-width: 100%;
 }
 
@@ -919,7 +985,8 @@ caption {
 
 // Container for responsive tables
 .contain-table {
-	overflow-x: auto;
+	//overflow-x: auto;
+	margin-bottom: 2rem;
 }
 
 @include small-breakpoint {
@@ -937,6 +1004,12 @@ caption {
 
 .about-me {
 	height: 60vh;
+}
+
+.vertical-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 
@@ -958,7 +1031,7 @@ caption {
 	height: 300px;
 }
 
- 
+
 /* Selections */
 
 ::selection {

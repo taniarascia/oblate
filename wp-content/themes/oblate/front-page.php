@@ -3,7 +3,7 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <section class="banner">
-	<div class="small-container">
+	<div class="container">
 		<h1>Tania Rascia</h1>
 		<a href="https://github.com/taniarascia" target="_blank" class="gh-button"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a> <a href="https://twitter.com/taniarascia" target="_blank" class="tw-button"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
 		<div class="the-content">
@@ -23,9 +23,10 @@ $latest = new WP_Query( $args );
 if ( $latest->have_posts() ) : ?>
 
 	<section class="content latest-articles">
-		<div class="small-container">
+		<div class="container">
 			<h2 class="large-heading">Latest Articles</h2>
 			<p>My most recent thoughts, guides, and tutorials.</p>
+			<p><a href="<?php echo site_url(); ?>/blog" class="button">View all</a></p>
 
 			<?php while ( $latest->have_posts() ) : $latest->the_post(); 
 
@@ -39,7 +40,7 @@ if ( $latest->have_posts() ) : ?>
 <?php endif; wp_reset_postdata(); ?>
 
 	<section class="content">
-		<div class="small-container">
+		<div class="container">
 			<h2 class="large-heading">Tutorials</h2>
 			<p>The missing instruction manuals for popular web services.</p>
 		</div>

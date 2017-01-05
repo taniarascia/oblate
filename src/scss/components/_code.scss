@@ -15,7 +15,7 @@ mark {
 	border: 1px solid #d8d9da;
 	box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
 	border-radius: 4px;
-	margin: 0 0 2rem 0;
+	margin-bottom: 2rem;
 	font-size: .9rem;
 }
 
@@ -40,6 +40,8 @@ pre code {
 	hyphens: none;
 	font-size: .9rem;
 	border-radius: 0;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -49,21 +51,29 @@ pre code {
 pre code {
 	display: block;
 	font-size: .75rem;
-	padding: 1rem;
-	margin: 0 0 2rem 0;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 	overflow: auto;
-	border: 0px solid #3B3B3B;
-	background-color: #3B3B3B;
+	border: 0;
+	background-color: #232323;
+}
+
+@media screen and (min-width: $tablet) {
+	pre code {
+		padding-top: 2rem;
+		padding-right: 2rem;
+		padding-bottom: 2rem;
+		padding-left: calc(50% - 410px);
+	}
 }
 
 @include large-breakpoint {
-	pre code {
-		padding: 1.5rem;
-		margin: 2rem -22% 2rem -2rem;
-		border-left: 16px solid #232323;
-	}
 	#comments pre code {
-		margin: 1.5rem 0;
+		margin: 2rem 0;
 	}
 }
 
@@ -214,28 +224,36 @@ code[class*=language-sass] {
 
 .token.italic {
 	font-style: italic;
-} 
-
-pre::-moz-selection, pre ::-moz-selection,
-code::-moz-selection, code ::-moz-selection {
-	text-shadow: none;
-	background: RGBA(200, 200, 200, .4) !important;
 }
 
-pre::selection, pre ::selection,
-code::selection, code ::selection {
+pre::-moz-selection,
+pre ::-moz-selection,
+code::-moz-selection,
+code ::-moz-selection {
 	text-shadow: none;
-	background: RGBA(200, 200, 200, .4) !important;
+	background: rgba(100,100,100,.5) !important;
 }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+pre::selection,
+pre ::selection,
+code::selection,
+code ::selection {
 	text-shadow: none;
-	background: RGBA(200, 200, 200, .4) !important;
+	background: rgba(100,100,100,.5) !important;
 }
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
 	text-shadow: none;
-	background: RGBA(200, 200, 200, .4) !important;
+	background: rgba(100,100,100,.5) !important;
+}
+
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: rgba(100,100,100,.5) !important;
 }

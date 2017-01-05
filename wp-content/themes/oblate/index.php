@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
 <section class="blog-index">
-	<div class="small-container">
 
 	<?php get_search_form(); ?>
 
@@ -21,8 +20,7 @@
 		</div>
 
 	<?php endif; ?>
-
-	</div>
+	
 </section>
 
 <?php get_footer(); ?>

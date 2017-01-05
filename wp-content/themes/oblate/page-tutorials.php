@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section class="content">
-	<div class="small-container text-center">
+	<div class="text-center">
 		<h2 class="large-heading">Tutorials</h2>
 		<p>The missing instruction manuals for popular web services.</p>
 	</div>
