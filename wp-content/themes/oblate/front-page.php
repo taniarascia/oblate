@@ -5,7 +5,9 @@
 <section class="banner">
 	<div class="container">
 		<h1>Tania Rascia</h1>
+		<div class="small-container">
 		<a href="https://github.com/taniarascia" target="_blank" class="gh-button"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a> <a href="https://twitter.com/taniarascia" target="_blank" class="tw-button"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+		</div>
 		<div class="the-content">
 			<?php the_content(); ?>
 		</div>
@@ -24,7 +26,7 @@ if ( $latest->have_posts() ) : ?>
 
 	<section class="content latest-articles">
 		<div class="container">
-			<h2 class="large-heading">Latest Articles</h2>
+			<h2>Latest Articles</h2>
 			<p>My most recent thoughts, guides, and tutorials.</p>
 			<p><a href="<?php echo site_url(); ?>/blog" class="button">View all</a></p>
 
@@ -41,7 +43,7 @@ if ( $latest->have_posts() ) : ?>
 
 	<section class="content">
 		<div class="container">
-			<h2 class="large-heading">Tutorials</h2>
+			<h2>Tutorials</h2>
 			<p>The missing instruction manuals for popular web services.</p>
 		</div>
 	</section>
