@@ -51,9 +51,14 @@ h5 {
 	color: $heading-color;
 }
 
-h1 {
+article h1 {
 	font-size: 1.5rem;
-	margin: 0;
+	margin-bottom: 0;
+}
+
+h1 {
+	font-size: 2rem;
+	margin-bottom: .5rem;
 }
 
 h2 {
@@ -82,6 +87,42 @@ h2:not(:first-child),
 h3:not(:first-child) {
 	margin-top: 2.5rem;
 }
+
+@include small-breakpoint {
+	article h1 {
+		font-size: 1.8rem;
+	}
+	h1 {
+		font-size: 2.5rem;
+	}
+	h2 {
+		font-size: 2.2rem;
+	}
+	h3 {
+		font-size: 1.8rem;
+	}
+	h4 {
+		font-size: 1.6rem;
+	}
+	h5 {
+		font-size: 1.4rem;
+	}
+	h1:not(:first-child),
+	h2:not(:first-child),
+	h3:not(:first-child) {
+		margin-top: 3rem;
+	}
+}
+
+// Definition list
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-bottom: .5rem;
+}
+
 
 p,
 ol,
@@ -113,7 +154,8 @@ time,
 .article-excerpt,
 iframe,
 .cp_embed_wrapper,
-.posts-links {
+.posts-links,
+.contact-form {
 	max-width: $tablet;
 	margin-left: auto;
 	margin-right: auto;
@@ -147,38 +189,6 @@ dl {
 
 li {
 	padding-left: .25rem;
-}
-
-@include small-breakpoint {
-	h1 {
-		font-size: 1.8rem;
-	}
-	h2 {
-		font-size: 2.2rem;
-	}
-	h3 {
-		font-size: 1.8rem;
-	}
-	h4 {
-		font-size: 1.6rem;
-	}
-	h5 {
-		font-size: 1.4rem;
-	}
-	h1:not(:first-child),
-	h2:not(:first-child),
-	h3:not(:first-child) {
-		margin-top: 3rem;
-	}
-}
-
-// Definition list
-dt {
-	font-weight: bold;
-}
-
-dd {
-	margin-bottom: .5rem;
 }
 
 
@@ -320,7 +330,6 @@ dd {
 	.banner {
 		padding: 3rem 0 2rem;
 		h1 {
-			text-indent: -10px;
 			font-size: 3rem;
 		}
 	}
@@ -539,27 +548,7 @@ a .article-excerpt {
 	padding-top: 1rem;
 }
 
-
-/* Single and page */
-
-.single,
-.page {
-	max-width: $desktop;
-	margin-left: auto;
-	margin-right: auto;
-	h1 {
-		font-size: 1.8rem;
-	}
-}
-
 @include small-breakpoint {
-	.single,
-	.page {
-		padding: 0 2rem;
-		h1 {
-			font-size: 2.6rem;
-		}
-	}
 	.blog-index {
 		padding: 1rem 2rem 0;
 	}
@@ -951,7 +940,7 @@ a.social-icon {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-	width: 100%; 
+	width: 100%;
 }
 
 thead th,

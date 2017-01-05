@@ -26,7 +26,7 @@ if ( $latest->have_posts() ) : ?>
 
 	<section class="content latest-articles">
 		<div class="container">
-			<h2>Latest Articles</h2>
+			<h1>Latest Articles</h1>
 			<p>My most recent thoughts, guides, and tutorials.</p>
 			<p><a href="<?php echo site_url(); ?>/blog" class="button">View all</a></p>
 
@@ -43,7 +43,7 @@ if ( $latest->have_posts() ) : ?>
 
 	<section class="content">
 		<div class="container">
-			<h2>Tutorials</h2>
+			<h1>Tutorials</h1>
 			<p>The missing instruction manuals for popular web services.</p>
 		</div>
 	</section>
