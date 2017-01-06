@@ -107,12 +107,11 @@ kbd {
 :not(pre) > code {
 	font-size: 1rem;
 	padding: 1px 2px;
-	background: rgba(0, 0, 0, .05);
+	background: rgba(0, 0, 0, .04);
 	font-family: $code;
 	font-weight: 400;
 	border-radius: 0;
-	color: #bf616a;
-	-webkit-font-smoothing: subpixel-antialiased;
+	color: #d14;
 }
 
 code[class*=language-css],
@@ -232,7 +231,7 @@ pre ::-moz-selection,
 code::-moz-selection,
 code ::-moz-selection {
 	text-shadow: none;
-	background: rgba(120,120,120,.4) !important;
+	background: rgba(150,150,150,.3) !important;
 }
 
 pre::selection,
@@ -240,7 +239,7 @@ pre ::selection,
 code::selection,
 code ::selection {
 	text-shadow: none;
-	background: rgba(120,120,120,.4) !important;
+	background: rgba(150,150,150,.3) !important;
 }
 
 pre[class*="language-"]::-moz-selection,
@@ -248,7 +247,7 @@ pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection,
 code[class*="language-"] ::-moz-selection {
 	text-shadow: none;
-	background: rgba(120,120,120,.4) !important;
+	background: rgba(150,150,150,.3) !important;
 }
 
 pre[class*="language-"]::selection,
@@ -256,5 +255,5 @@ pre[class*="language-"] ::selection,
 code[class*="language-"]::selection,
 code[class*="language-"] ::selection {
 	text-shadow: none;
-	background: rgba(130,130,130,.4) !important;
+	background: rgba(150,150,150,.3) !important;
 }
