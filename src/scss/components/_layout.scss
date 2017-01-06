@@ -334,23 +334,6 @@ li {
 	}
 }
 
-.large-heading {
-	font-size: 2rem !important;
-	border-bottom-color: #FFEA96;
-	box-shadow: inset 0 -12px 0 #FFEA96;
-	padding-right: 20px;
-	display: inline-block;
-}
-
-@include small-breakpoint {
-	.large-heading {
-		padding-right: 30px;
-		font-size: 2.5rem !important;
-		text-indent: -10px;
-		box-shadow: inset 0 -18px 0 #FFEA96;
-	}
-}
-
 .tutorials-grid {
 	display: flex;
 	flex-direction: row;
@@ -478,11 +461,11 @@ a .article-excerpt {
 }
 
 .article-excerpt {
-	padding: 1rem 0;
+	padding: .5rem 0;
 	display: flex;
 	flex-direction: column-reverse;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 	border-bottom: 1px solid $border;
 	text-align: center;
 	h1 a {
@@ -499,7 +482,7 @@ a .article-excerpt {
 
 @include small-breakpoint {
 	.article-excerpt {
-		padding: 2rem 0;
+		padding: 1rem 0;
 		flex-direction: column-reverse;
 		img {
 			display: block;
@@ -1018,24 +1001,42 @@ caption {
 	height: 300px;
 }
 
+.random {
+	border-top: 1px solid $border;
+	padding-top: 2rem;
+	margin-top: 2rem;
+}
+
 .random-posts {
-	padding: 1rem 0;
-	h3 {
-		font-size: 1.4rem;
-		vertical-align: middle;
-		img {
-			vertical-align: middle;
-			margin-right: 1rem;
-		}
-		a {
-			vertical-align: middle;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	display: flex;
+	flex-direction: row;
+}
+
+.random-links {
+	a {
+		font-family: $heading-family;
+		font-weight: 700;
+		letter-spacing: -0.03rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		font-size: 1.3rem;
+		color: $heading-color;
+		display: block;
+		&:hover,
+		&:active,
+		&:focus {
 			color: $heading-color;
-			&:hover,
-			&:active,
-			&:focus {
-				color: $heading-color;
-			}
 		}
+	}
+}
+
+.random-thumbs {
+	img {
+		max-width: 35px;
+		height: 35px;
+		width: 35px;
 	}
 }
 

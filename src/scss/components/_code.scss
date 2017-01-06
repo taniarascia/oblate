@@ -74,6 +74,7 @@ pre code {
 @include large-breakpoint {
 	#comments pre code {
 		margin: 2rem 0;
+		padding: 1.5rem;
 	}
 }
 
@@ -97,7 +98,7 @@ kbd {
 /* Inline code */
 
 :not(pre) > code[class*="language-"] {
-	padding: .1rem .3rem;
+	padding: 1px 2px;
 	background: #343434;
 	border: 0px solid #343434;
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -105,7 +106,7 @@ kbd {
 
 :not(pre) > code {
 	font-size: 1rem;
-	padding: .1rem .3rem;
+	padding: 1px 2px;
 	background: rgba(0, 0, 0, .05);
 	font-family: $code;
 	font-weight: 400;
@@ -231,7 +232,7 @@ pre ::-moz-selection,
 code::-moz-selection,
 code ::-moz-selection {
 	text-shadow: none;
-	background: rgba(100,100,100,.5) !important;
+	background: rgba(120,120,120,.4) !important;
 }
 
 pre::selection,
@@ -239,7 +240,7 @@ pre ::selection,
 code::selection,
 code ::selection {
 	text-shadow: none;
-	background: rgba(100,100,100,.5) !important;
+	background: rgba(120,120,120,.4) !important;
 }
 
 pre[class*="language-"]::-moz-selection,
@@ -247,7 +248,7 @@ pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection,
 code[class*="language-"] ::-moz-selection {
 	text-shadow: none;
-	background: rgba(100,100,100,.5) !important;
+	background: rgba(120,120,120,.4) !important;
 }
 
 pre[class*="language-"]::selection,
@@ -255,5 +256,5 @@ pre[class*="language-"] ::selection,
 code[class*="language-"]::selection,
 code[class*="language-"] ::selection {
 	text-shadow: none;
-	background: rgba(100,100,100,.5) !important;
+	background: rgba(130,130,130,.4) !important;
 }
