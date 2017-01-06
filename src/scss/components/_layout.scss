@@ -740,6 +740,9 @@ a.social-icon {
 		margin: 0 0 1rem;
 		padding: 0;
 	}
+	li {
+		padding: 0;
+	}
 	h3 {
 		padding: 0;
 	}
@@ -821,6 +824,7 @@ a.social-icon {
 .children {
 	margin-left: 0;
 	padding-left: 15px;
+	padding-right: 0;
 	margin-top: 15px;
 	margin-bottom: 15px;
 	list-style: none;

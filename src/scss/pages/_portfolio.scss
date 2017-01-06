@@ -31,7 +31,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
+} 
 
 .portfolio-inner {
 	text-align: center;
@@ -41,7 +41,7 @@
 @include small-breakpoint {
 	.portfolio-description,
 	.portfolio-example {
-		max-width: 50%;
+		//max-width: 50%; 
 	}
 	.portfolio-container {
 		display: flex;
