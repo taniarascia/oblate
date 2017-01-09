@@ -53,6 +53,7 @@ h5 {
 
 .article-excerpt h1 {
 	font-size: 1.5rem;
+	margin-top: 1rem;
 	margin-bottom: 0;
 }
 
@@ -470,11 +471,14 @@ time {
 		height: 75px;
 		max-width: 75px;
 	}
+	&:last-of-type {
+		border-bottom: 0;
+	}
 }
 
 @include small-breakpoint {
 	.article-excerpt {
-		padding: 2rem 0 1rem;
+		padding: 1rem 0;
 		flex-direction: row-reverse;
 		text-align: left;
 		img {
@@ -497,6 +501,7 @@ time {
 		}
 	}
 }
+
 
 /* Blog index */
 
@@ -522,6 +527,9 @@ time {
 .single-article-header {
 	text-align: center;
 	padding: 1.5rem 0;
+	h1 {
+		margin-bottom: 0;
+	}
 }
 
 .article-header {
@@ -681,14 +689,14 @@ a.social-icon {
 	padding: .5rem 1rem;
 	margin: 2px;
 	background: rgba(0, 0, 0, .04);
-	color: #d14;
+	color: #F23974;
 	border-radius: 0;
 	font-size: 1rem;
 	text-decoration: none;
 	&:hover,
 	&:focus,
 	&:active {
-		color: darken(#d14, 10%);
+		color: darken(#F23974, 10%);
 		background: rgba(0, 0, 0, .07);
 	}
 }
