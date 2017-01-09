@@ -280,3 +280,12 @@ function remove_cssjs_ver2( $src ) {
  return $src;
 }
 add_filter( 'style_loader_src', 'remove_cssjs_ver2', 10, 2 );
+
+// Filter search
+function exclude_pages($query) {
+if ($query->is_search) {
+ $query->set('post_type', 'post');
+}
+ return $query;
+}
+add_filter('pre_get_posts','exclude_pages');
