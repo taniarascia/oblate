@@ -3,7 +3,7 @@
 <?php $args = array(
 				'post_type' => 'portfolio-items',
 				'order' => 'asc',
-				'posts_per_page' => '30',
+				'posts_per_page' => '-1',
 			);
 
 			$portfolio = new WP_Query( $args );

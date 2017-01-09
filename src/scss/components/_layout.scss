@@ -94,7 +94,8 @@ h3:not(:first-child) {
 		font-size: 1.8rem;
 	}
 	h1 {
-		font-size: 2.5rem;
+		font-size: 4rem;
+  	max-width: 1000px !important;
 	}
 	h2 {
 		font-size: 2.2rem;
@@ -111,7 +112,7 @@ h3:not(:first-child) {
 	h1:not(:first-child),
 	h2:not(:first-child),
 	h3:not(:first-child) {
-		margin-top: 3rem;
+		margin-top: 3.5rem;
 	}
 }
 
@@ -252,7 +253,7 @@ ul li ul {
 	position: static;
 	width: 100%;
 	border-bottom: 1px solid $border;
-	background: rgba(255, 255, 255, .98);
+	background: rgba(255, 255, 255, .94);
 	z-index: 2;
 	&:after {
 		content: '';
@@ -275,8 +276,8 @@ ul li ul {
 		line-height: 40px;
 		font-size: 1rem;
 		font-family: $nav-family;
-		font-weight: 500;
-		color: #676767;
+		font-weight: 400;
+		color: rgba(0, 0, 0, 0.6);
 		text-decoration: none;
 		text-align: center;
 		padding: 0 1rem;
@@ -333,7 +334,7 @@ ul li ul {
 	.banner {
 		padding: 3rem 0 2rem;
 		h1 {
-			font-size: 3rem;
+			font-size: 4rem;
 		}
 	}
 }
@@ -427,8 +428,8 @@ ul li ul {
 	background: #F7AE41;
 }
 
-#apache-tutorial {
-	background: white;
+#lamp-tutorial {
+	background: #347DAB;
 }
 
 #grunt-tutorial {
@@ -456,11 +457,11 @@ time {
 .article-excerpt {
 	padding: 1rem 0;
 	display: flex;
-	flex-direction: column-reverse;
+	flex-direction: row-reverse;
 	align-items: center;
 	justify-content: space-between;
-	border-bottom: 1px solid $border;
-	text-align: center;
+	//border-bottom: 1px solid $border;
+	text-align: left;
 	h1 a {
 		color: $heading-color;
 	}
@@ -481,12 +482,9 @@ time {
 
 @include small-breakpoint {
 	.article-excerpt {
-		padding: 1rem 0;
-		flex-direction: row-reverse;
-		text-align: left;
+		padding: 1.5rem 0;
 		img {
 			display: block;
-			padding: 1rem;
 			width: 150px;
 			height: 150px;
 			max-width: 150px;
@@ -494,13 +492,6 @@ time {
 		}
 		p {
 			display: block;
-		}
-		img {
-			display: block;
-			padding: .5rem;
-			width: 125px;
-			height: 125px;
-			max-width: 125px;
 		}
 	}
 }

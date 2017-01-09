@@ -78,9 +78,9 @@ if ( $latest->have_posts() ) : ?>
 <img src="<?php echo site_url(); ?>/wp-content/uploads/awstut.png" class="responsive-image" alt="AWS">
 <h3>Amazon Web Services</h3>
 </a>
-<a href="<?php echo site_url(); ?>/local-environment/" id="apache-tutorial" class="tutorials-cell">
-<img src="<?php echo site_url(); ?>/wp-content/uploads/apache.png" class="responsive-image" alt="Apache">
-<h3>Apache</h3>
+<a href="<?php echo site_url(); ?>/local-environment/" id="lamp-tutorial" class="tutorials-cell">
+<img src="<?php echo site_url(); ?>/wp-content/uploads/mamppro.png" class="responsive-image" alt="Apache">
+<h3>LAMP Stack</h3>
 </a>
 <a href="<?php echo site_url(); ?>/getting-started-with-grunt-and-sass/" id="grunt-tutorial" class="tutorials-cell">
 <img src="<?php echo site_url(); ?>/wp-content/uploads/grunt-150x150.png" class="responsive-image" alt="Grunt">

@@ -85,7 +85,7 @@ add_action( 'wp_enqueue_scripts', 'starter_scripts' );
 
 function oblate_scripts() {
 	wp_dequeue_style( 'starter-style' );
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css?01-09-2016' );
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css?01-09-2016x2' );
 	wp_enqueue_script( 'prism', get_template_directory_uri() . '/js/prism.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
 }
@@ -96,7 +96,7 @@ add_action( 'wp_enqueue_scripts', 'oblate_scripts' );
  */
 
 function load_fonts() {
-	wp_register_style( 'All', '//fonts.googleapis.com/css?family=PT+Serif:400,700|Heebo:500,700|Roboto+Mono:400' );
+	wp_register_style( 'All', '//fonts.googleapis.com/css?family=PT+Serif:400,700|Heebo:400,500,700|Roboto+Mono:400' );
 	wp_register_style('FontAwesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
 	wp_enqueue_style( 'All' );
 	wp_enqueue_style( 'FontAwesome' );
@@ -155,13 +155,13 @@ function meta_og() {
 		array_pop($excerptwords);
 		$excerpt = implode(' ', $excerptwords) . $excerpt_more;
 		?>
-<meta name="author" content="Your Name">
+<meta name="author" content="Tania Rascia">
 <meta name="description" content="<?php echo $excerpt; ?>">
 <meta property="og:title" content="<?php echo the_title(); ?>">
 <meta property="og:description" content="<?php echo $excerpt; ?>">
 <meta property="og:type" content="article">
 <meta property="og:url" content="<?php echo the_permalink(); ?>">
-<meta property="og:site_name" content="Your Site Name">
+<meta property="og:site_name" content="Tania Rascia Web Design and Development">
 <meta property="og:image" content="<?php echo $img_src[0]; ?>">
 <?php
 	} else {
@@ -241,11 +241,14 @@ function create_post_portfolio() {
 }
 add_action('init', 'create_post_portfolio'); // Add our Portfolio Item Type
 
-// Remove WP embed script
+/**
+ * Remove WP embed script
+ */
+
 function speed_stop_loading_wp_embed() {
-if (!is_admin()) {
-wp_deregister_script('wp-embed');
-}
+	if (!is_admin()) {
+		wp_deregister_script('wp-embed');
+	}
 }
 add_action('init', 'speed_stop_loading_wp_embed');
 
@@ -264,7 +267,10 @@ function load_contactform7_on_specific_page() {
 
 add_action( 'wp_enqueue_scripts', 'load_contactform7_on_specific_page' );
 
-/*** Remove Query String from Static Resources ***/
+/**
+ * Remove Query String from Static Resources 
+ */
+
 function remove_cssjs_ver( $src ) {
  if( strpos( $src, '?ver=' ) )
  $src = remove_query_arg( 'ver', $src );
@@ -273,18 +279,24 @@ function remove_cssjs_ver( $src ) {
 add_filter( 'style_loader_src', 'remove_cssjs_ver', 10, 2 );
 add_filter( 'script_loader_src', 'remove_cssjs_ver', 10, 2 );
 
-/*** Remove Query String from Static Resources ***/
+/**
+ * Remove Query String from Static Resources 
+ */
+
 function remove_cssjs_ver2( $src ) {
- if( strpos( $src, 'ver=' ) )
- $src = remove_query_arg( 'ver', $src );
- return $src;
+	if( strpos( $src, 'ver=' ) )
+		$src = remove_query_arg( 'ver', $src );
+	return $src;
 }
 add_filter( 'style_loader_src', 'remove_cssjs_ver2', 10, 2 );
 
-// Filter search
+/**
+ * Filter search
+ */
+
 function exclude_pages($query) {
 if ($query->is_search) {
- $query->set('post_type', 'post');
+	$query->set('post_type', 'post');
 }
  return $query;
 }
