@@ -692,14 +692,14 @@ a.social-icon {
 	padding: .5rem 1rem;
 	margin: 2px;
 	background: rgba(0, 0, 0, .04);
-	color: #d93368;
+	color: #E43557;
 	border-radius: 0;
 	font-size: 1rem;
 	text-decoration: none;
 	&:hover,
 	&:focus,
 	&:active {
-		color: darken(#d93368, 10%);
+		color: darken(#E43557, 10%);
 		background: rgba(0, 0, 0, .07);
 	}
 }
