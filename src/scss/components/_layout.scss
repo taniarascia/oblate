@@ -58,7 +58,7 @@ h5 {
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	margin-bottom: .5rem;
 }
 
@@ -457,10 +457,8 @@ time {
 .article-excerpt {
 	padding: 1rem 0;
 	display: flex;
-	flex-direction: row-reverse;
-	align-items: center;
-	justify-content: space-between;
-	//border-bottom: 1px solid $border;
+	flex-direction: row;
+	justify-content: flex-start;
 	text-align: left;
 	h1 a {
 		color: $heading-color;
@@ -488,7 +486,7 @@ time {
 			width: 150px;
 			height: 150px;
 			max-width: 150px;
-			margin: 0 1rem;
+			margin: 1rem;
 		}
 		p {
 			display: block;
@@ -582,6 +580,7 @@ blockquote {
 		font-size: 1.3rem;
 		margin: 0;
 		padding: 0;
+		padding-right: 1rem;
 		&:last-of-type {
 			margin-bottom: 0;
 		}

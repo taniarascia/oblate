@@ -36,12 +36,12 @@
 			<a class="gh-button" href="https://github.com/taniarascia/js/" target="_blank"><i class="fa fa-star" aria-hidden="true"></i> GitHub Repo</a>
 		</p>
 		<pre><code class="language-js">var batman = {
-firstName: &quot;Bruce&quot;,  // string
-lastName: &quot;Wayne&quot;,
-location: &quot;Gotham&quot;,
-introduced: 1939,    // number
-billionaire: true,   // boolean
-weakness: null,      // null
+  firstName: &quot;Bruce&quot;,  // string
+  lastName: &quot;Wayne&quot;,
+  location: &quot;Gotham&quot;,
+  introduced: 1939,    // number
+  billionaire: true,   // boolean
+  weakness: null,      // null
 };</code></pre>
 	</div>
 </section>

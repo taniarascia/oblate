@@ -3,52 +3,29 @@
 
 .portfolio-container {
 	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 	min-height: 400px;
-	flex-direction: column;
-}
-
-.portfolio-description,
-.portfolio-example {
-	flex: 1;
-}
-
-.portfolio-example {
-	padding: 2rem;
 	background: $light-background;
+}
+
+.portfolio-example {
+	width: 100%;
+	padding: 2rem;
 	img {
 		display: block;
 		box-shadow: 2px 2px 30px rgba(0, 0, 0, .2);
-		transition: all .2s ease;
+		transition: all .3s ease;
 		&:hover,
 		&:active,
 		&:focus {
-			box-shadow: 2px 2px 30px rgba(0, 0, 0, .3);
+			box-shadow: 2px 2px 30px rgba(0, 0, 0, .4);
 		}
 	}
 }
 
-.portfolio-description {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-} 
-
-.portfolio-inner {
-	text-align: center;
-	padding: 2rem;
-}
-
 @include small-breakpoint {
-	.portfolio-description,
 	.portfolio-example {
-		//max-width: 50%; 
-	}
-	.portfolio-container {
-		display: flex;
-		min-height: 400px;
-		flex-direction: row;
-	}
-	.portfolio-container:nth-of-type(even) .portfolio-example {
-		//order: 2;
+		width: 50%;
 	}
 }
