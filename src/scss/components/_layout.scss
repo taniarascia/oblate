@@ -304,7 +304,7 @@ ul li ul {
 		height: $nav-height;
 		border-bottom: 1px solid $border;
 		a {
-			width: calc(100% / 6);
+			width: auto;
 			border-bottom: 1px solid $border;
 			height: $nav-height;
 			line-height: $nav-height;
