@@ -253,7 +253,7 @@ ul li ul {
 	position: static;
 	width: 100%;
 	border-bottom: 1px solid $border;
-	background: rgba(255, 255, 255, .94);
+	background: rgba(255, 255, 255, .97);
 	z-index: 2;
 	&:after {
 		content: '';
@@ -267,6 +267,7 @@ ul li ul {
 	}
 	.current-menu-item a {
 		color: $link-color;
+		border-bottom: 2px solid $link-color;
 	}
 	a {
 		float: left;
@@ -276,8 +277,8 @@ ul li ul {
 		line-height: 40px;
 		font-size: 1rem;
 		font-family: $nav-family;
-		font-weight: 400;
-		color: rgba(0, 0, 0, 0.6);
+		font-weight: 700;
+		color: rgba(0, 0, 0, 0.5);
 		text-decoration: none;
 		text-align: center;
 		padding: 0 1rem;
@@ -309,7 +310,6 @@ ul li ul {
 			line-height: $nav-height;
 			text-align: center;
 			&:hover {
-				color: $heading-color;
 			}
 		}
 	}
