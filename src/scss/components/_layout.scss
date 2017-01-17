@@ -1037,7 +1037,7 @@ caption {
 	padding-top: 2rem;
 	margin-top: 2rem;
 }
- 
+
 .each-post {
 	padding: .5rem 1rem;
 	display: flex;
@@ -1061,12 +1061,20 @@ caption {
 		&:active,
 		&:focus {
 			color: $heading-color;
+			text-decoration: underline;
 			background: transparent;
 		}
 	}
 }
 
 .thumbs {
+	a {
+		&:hover,
+		&:active,
+		&:focus {
+			background: transparent;
+		}
+	}
 	img {
 		display: block;
 		max-width: none;
