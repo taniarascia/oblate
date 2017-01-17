@@ -27,8 +27,8 @@ a {
 	&:hover,
 	&:focus,
 	&:active {
-		color: darken($link-color, 15%);
-		text-decoration: underline;
+		color: white;
+		background: $link-color;
 	}
 }
 
@@ -60,6 +60,12 @@ h5 {
 h1 {
 	font-size: 2.5rem;
 	margin-bottom: .5rem;
+	a {
+		&:hover, &:focus, &:active {
+			background: transparent;
+			text-decoration: underline;
+		}
+	}
 }
 
 h2 {
@@ -95,7 +101,7 @@ h3:not(:first-child) {
 	}
 	h1 {
 		font-size: 4rem;
-  	max-width: 1000px !important;
+		max-width: 1000px !important;
 	}
 	h2 {
 		font-size: 2.2rem;
@@ -196,6 +202,7 @@ ul li ul {
 	margin-bottom: 0;
 }
 
+
 /* Containers */
 
 .main-content {
@@ -268,6 +275,7 @@ ul li ul {
 	.current-menu-item a {
 		color: $link-color;
 		border-bottom: 2px solid $link-color;
+		background: white;
 	}
 	a {
 		float: left;
@@ -282,15 +290,18 @@ ul li ul {
 		text-decoration: none;
 		text-align: center;
 		padding: 0 1rem;
-		&:hover {
+		&:hover,
+		&:active,
+		&:focus {
 			color: $heading-color;
+			background: transparent;
 		}
 	}
 }
 
 @include small-breakpoint {
 	.nav-container {
-		max-width: 550px;
+		max-width: 560px;
 		padding: 0 1rem;
 		margin-left: auto;
 		margin-right: auto;
@@ -309,8 +320,7 @@ ul li ul {
 			height: $nav-height;
 			line-height: $nav-height;
 			text-align: center;
-			&:hover {
-			}
+			&:hover {}
 		}
 	}
 }
@@ -653,26 +663,39 @@ blockquote {
 	background: #fff;
 	.fa {
 		margin: .25rem;
+		&:hover,
+		&:active,
+		&:focus {
+			background: transparent;
+		}
 	}
 	.fa-twitter:hover {
 		color: #00aced;
+		background: transparent;
 	}
 	.fa-codepen:hover {
 		color: #47CF73;
+		background: transparent;
 	}
 	.fa-stack-overflow:hover {
 		color: #F48024;
+		background: transparent;
 	}
 	.fa-github:hover {
 		color: #B992E3;
+		background: transparent;
 	}
 	.fa-rss:hover {
 		color: #F8981C;
+		background: transparent;
 	}
 }
 
 a.social-icon {
 	color: darken($background, 10%);
+	&:hover {
+		background: transparent;
+	}
 }
 
 @include small-breakpoint {
@@ -755,12 +778,24 @@ a.social-icon {
 		color: $font-color;
 		font-weight: 600;
 		font-family: $font-family;
+		&:hover,
+		&:active,
+		&:focus {
+			background: white;
+			text-decoration: underline
+		}
 	}
 }
 
 .comment-meta {
 	a {
 		color: $font-color;
+		&:hover,
+		&:active,
+		&:focus {
+			background: white;
+			text-decoration: underline;
+		}
 	}
 }
 
