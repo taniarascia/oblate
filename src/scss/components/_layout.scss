@@ -290,7 +290,7 @@ ul li ul {
 
 @include small-breakpoint {
 	.nav-container {
-		max-width: 580px;
+		max-width: 550px;
 		padding: 0 1rem;
 		margin-left: auto;
 		margin-right: auto;
@@ -422,6 +422,22 @@ ul li ul {
 
 #jekyll-tutorial {
 	background: #dedede;
+}
+
+#js-tutorial {
+	background: #EFDA4F;
+}
+
+#js-tutorial {
+	background: #EFDA4F;
+}
+
+#apple-tutorial {
+	background: #161616;
+}
+
+#shell-tutorial {
+	background: #323232;
 }
 
 #aws-tutorial {
