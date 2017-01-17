@@ -94,7 +94,7 @@ if ( $latest->have_posts() ) : ?>
 			<img src="<?php echo site_url(); ?>/wp-content/uploads/mamppro.png" class="responsive-image" alt="Apache">
 			<h3>LAMP Stack</h3>
 		</a>
-		<a href="<?php echo site_url(); ?>/javascript-day-one" id="apple-tutorial" class="tutorials-cell">
+		<a href="<?php echo site_url(); ?>/setting-up-a-brand-new-mac-for-development/" id="apple-tutorial" class="tutorials-cell">
 			<img src="<?php echo site_url(); ?>/wp-content/uploads/appletut-150x150.png" class="responsive-image" alt="Apple">
 			<h3>macOS</h3>
 		</a>
