@@ -341,12 +341,22 @@ ul li ul {
 	}
 }
 
+.callout-image {
+	max-width: 150px;
+	float: right;
+	margin: 0 1rem;
+}
+
 @include small-breakpoint {
 	.banner {
 		padding: 3rem 0 2rem;
 		h1 {
 			font-size: 4rem;
 		}
+	}
+	.callout-image {
+		max-width: 100%;
+		margin-left: 0 2rem;
 	}
 }
 
