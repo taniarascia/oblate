@@ -9,6 +9,6 @@
 			<?php the_content(); ?>
 			</article>
 
-		endwhile; endif; ?>
+		<?php endwhile; endif; ?>
 
 <?php get_footer(); ?>
