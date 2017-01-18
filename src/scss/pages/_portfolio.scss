@@ -7,11 +7,12 @@
 	flex-direction: row;
 	min-height: 400px;
 	background: $light-background;
+	padding: 1rem;
 }
 
 .portfolio-example {
 	width: 100%;
-	padding: 2rem;
+	padding: .5rem 0;
 	img {
 		display: block;
 		box-shadow: 2px 2px 30px rgba(0, 0, 0, .2);
@@ -27,5 +28,12 @@
 @include small-breakpoint {
 	.portfolio-example {
 		width: 50%;
+		padding: 1rem 0;
+		&:nth-of-type(even) {
+			padding-left: .5rem;
+		}
+		&:nth-of-type(odd) {
+			padding-right: .5rem;
+		}
 	}
 }
