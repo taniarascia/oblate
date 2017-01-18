@@ -66,7 +66,8 @@
 	text-align: center;
 	font-family: 'Roboto', sans-serif !important;
 	img {
-		margin: -30px 0;
+		margin: -20px 0;
+		max-width: 200px;
 	}
 	h1 {
 		font-weight: 100;
@@ -165,6 +166,9 @@
 		tab-size: 2;
 		hyphens: none;
 		-webkit-font-smoothing: subpixel-antialiased;
+	}
+	pre code {
+		padding: 0 2rem;
 	}
 	/* Code blocks */
 	pre[class*="language-"] {
@@ -265,6 +269,7 @@
 	text-align: center;
 	h1 {
 		color: white;
+		margin-top: 1rem;
 	}
 	p {
 		font-family: 'Heebo', sans-serif;
@@ -278,13 +283,15 @@
 		background: #E5C07B;
 		color: #282C34;
 		border: 1px solid #E5C07B;
-		margin-top: 2rem;
 		&:hover,
 		&:active,
 		&:focus {
 			background: transparent;
 			color: #E5C07B;
 		}
+	}
+	img {
+		max-width: 150px;
 	}
 }
 
