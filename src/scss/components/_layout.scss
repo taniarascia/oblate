@@ -44,7 +44,7 @@ h3,
 h4,
 h5 {
 	font-family: $heading-family;
-	line-height: 1.1;
+	line-height: 1;
 	font-weight: 700;
 	letter-spacing: -0.05rem;
 	margin: 0 0 1rem;
@@ -103,7 +103,6 @@ h3:not(:first-child) {
 	}
 	h1 {
 		font-size: 4rem;
-		max-width: 1000px !important;
 	}
 	h2 {
 		font-size: 2.2rem;
@@ -277,7 +276,7 @@ ul li ul {
 	.current-menu-item a {
 		color: $link-color;
 		border-bottom: 2px solid $link-color;
-		background: white;
+		background: transparent;
 	}
 	a {
 		float: left;
@@ -549,6 +548,7 @@ time {
 	padding: 1.5rem 0;
 	h1 {
 		margin-bottom: 0;
+		max-width: 1000px !important;
 	}
 }
 

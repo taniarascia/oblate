@@ -4,7 +4,9 @@ h2,
 h3,
 h4,
 h5,
-label {
+label,
+.article-excerpt h1 a,
+.links a {
 	font-family: 'Press Start 2P', monospace !important;
 	color: #FCB42A !important;
 }
@@ -115,9 +117,9 @@ h1 {
 
 .navigation a:hover,
 :not(pre)>code {
-	color: #FF2155 !important;
-	border-radius: 0 !important;
-	border-bottom: 1px solid #2467DB !important;
+	color: #FFB8DE !important;
+	border-radius: 4px !important;
+	border: 1px solid #FFB8DE !important;
 }
 
 .comment-meta a {
@@ -138,7 +140,7 @@ h1 {
 
 @media (min-width: 600px) {
 	.nav-container {
-		max-width: 1000px !important;
+		max-width: 780px !important;
 	}
 }
 
@@ -155,13 +157,13 @@ input[type=submit] {
 }
 
 a {
-	color: #2467DB;
+	color: #708EFC;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #FF2155 !important;
+	color: white !important;
 }
 
 .tags a {
