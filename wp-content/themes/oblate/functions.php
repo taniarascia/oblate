@@ -85,7 +85,7 @@ add_action( 'wp_enqueue_scripts', 'starter_scripts' );
 
 function oblate_scripts() {
 	wp_dequeue_style( 'starter-style' );
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css?01-17-2017x10' );
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css?01-15-2017' );
 	wp_enqueue_script( 'prism', get_template_directory_uri() . '/js/prism.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
 }
@@ -273,6 +273,35 @@ if ($query->is_search) {
  return $query;
 }
 add_filter('pre_get_posts','exclude_pages');
+
+
+/** 
+ * Work type
+ */
+
+function create_post_work() {
+	register_post_type('work', // Register Custom Post Type
+		array(
+		'labels' => array(
+			'name' => __('Work', 'oblate'), // Rename these to suit
+		),
+		'public' => true,
+		'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+		'has_archive' => true,
+		'supports' => array(
+			'title',
+			'editor',
+			'excerpt',
+			'thumbnail'
+		), // Go to Dashboard Custom HTML5 Blank post for supports
+		'can_export' => true, // Allows export in Tools > Export
+		'taxonomies' => array(
+				'post_tag',
+				'category'
+		) // Add Category and Post Tags support
+	));
+}
+add_action('init', 'create_post_work'); // Add our Portfolio Item Type
 
 /** 
  * Portfolio type

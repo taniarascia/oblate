@@ -44,10 +44,10 @@ h3,
 h4,
 h5 {
 	font-family: $heading-family;
-	line-height: 1;
+	line-height: 1.1;
 	font-weight: 700;
 	letter-spacing: -0.05rem;
-	margin: 0 0 1rem;
+	margin: 0 0 1.25rem;
 	color: $heading-color;
 	a {
 		&:hover,
@@ -102,7 +102,7 @@ h3:not(:first-child) {
 		font-size: 1.8rem;
 	}
 	h1 {
-		font-size: 4rem;
+		font-size: 3.8rem;
 	}
 	h2 {
 		font-size: 2.2rem;
@@ -163,7 +163,8 @@ time,
 iframe,
 .cp_embed_wrapper,
 .posts-links,
-.contact-form {
+.contact-form,
+.gist {
 	max-width: $tablet;
 	margin-left: auto;
 	margin-right: auto;
@@ -263,15 +264,21 @@ ul li ul {
 	border-bottom: 1px solid $border;
 	background: rgba(255, 255, 255, .97);
 	z-index: 2;
+	text-align: center;
 	&:after {
 		content: '';
 		display: block;
 		clear: both;
 	}
 	ul {
+		max-width: none;
 		list-style: none;
 		padding: 0;
 		margin: 0;
+		font-size: 0;
+	}
+	li {
+		padding: 0;
 	}
 	.current-menu-item a {
 		color: $link-color;
@@ -299,10 +306,9 @@ ul li ul {
 		}
 	}
 }
-
+ 
 @include small-breakpoint {
 	.nav-container {
-		max-width: 560px;
 		padding: 0 1rem;
 		margin-left: auto;
 		margin-right: auto;
@@ -315,7 +321,11 @@ ul li ul {
 		width: 100%;
 		height: $nav-height;
 		border-bottom: 1px solid $border;
+		li {
+			display: inline-block;
+		}
 		a {
+			float: none;
 			width: auto;
 			border-bottom: 1px solid $border;
 			height: $nav-height;
@@ -745,11 +755,6 @@ a.social-icon {
 	}
 }
 
-// Remove the pagination title
-.screen-reader-text {
-	display: none;
-}
-
 // Bottom of the page pagination
 .pagination {
 	max-width: $mobile;
@@ -777,7 +782,7 @@ a.social-icon {
 .comment-meta.commentmetadata,
 .comment-notes {
 	font-size: .85rem;
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 }
 
 // Author name
@@ -1089,6 +1094,11 @@ caption {
 		display: block;
 		max-width: none;
 	}
+}
+
+// Remove the pagination title
+.screen-reader-text {
+	display: none;
 }
 
 
