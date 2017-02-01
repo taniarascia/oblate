@@ -27,25 +27,6 @@
 	</div>
 </section>
 
-<section id="jsref" class="projects">
-	<div class="small-container">
-		<h1>JS Reference</h1>
-		<p>A JavaScript reference guide.</p>
-		<p>
-			<a class="gh-button" href="https://taniarascia.github.io/js/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> View Project</a>
-			<a class="gh-button" href="https://github.com/taniarascia/js/" target="_blank"><i class="fa fa-star" aria-hidden="true"></i> GitHub Repo</a>
-		</p>
-		<pre><code class="language-js">var batman = {
-  firstName: &quot;Bruce&quot;,  // string
-  lastName: &quot;Wayne&quot;,
-  location: &quot;Gotham&quot;,
-  introduced: 1939,    // number
-  billionaire: true,   // boolean
-  weakness: null,      // null
-};</code></pre>
-	</div>
-</section>
-
 <section id="balance" class="projects">
 	<div class="small-container">
 		<img src="https://taniarascia.github.io/balancewebdev/images/enso.png" class="responsive-image">
