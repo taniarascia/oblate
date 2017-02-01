@@ -14,7 +14,10 @@
 
 
 			<div class="portfolio-example">
-				<a href="<?php echo get_the_excerpt(); ?>" target="_blank"><img src="<?php echo the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title(); ?>"></a>
+				<div class="portfolio-item">
+					<a href="<?php echo get_the_excerpt(); ?>" target="_blank"><img src="<?php echo the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title(); ?>"></a>
+					<h3><?php the_title(); ?></h3>
+				</div>
 			</div>
 
 			<?php endwhile; endif; wp_reset_postdata(); ?>
