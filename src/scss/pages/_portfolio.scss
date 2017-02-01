@@ -30,9 +30,11 @@
 		box-shadow: 0 20px 80px rgba(0, 0, 0, .2), 0 5px 20px rgba(0, 0, 0, .08);
 	}
 	h3 {
+		border-top: 1px solid $border;
 		font-size: 1.2rem;
 		font-weight: 500;
-		margin: 2rem 0;
+		padding: 2rem;
+		margin: 0;
 	}
 }
 
