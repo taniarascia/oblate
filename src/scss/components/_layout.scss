@@ -77,6 +77,14 @@ h2 {
 h3 {
 	font-size: 1.6rem;
 	color: $heading-color;
+	a {
+		&:hover,
+		&:focus,
+		&:active {
+			color: $link-color;
+			text-decoration: underline;
+		}
+	}
 }
 
 h4 {
@@ -306,7 +314,7 @@ ul li ul {
 		}
 	}
 }
- 
+
 @include small-breakpoint {
 	.nav-container {
 		padding: 0 1rem;
