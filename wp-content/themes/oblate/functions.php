@@ -287,7 +287,7 @@ function create_post_work() {
 		),
 		'public' => true,
 		'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
-		'has_archive' => true,
+		'has_archive' => false,
 		'supports' => array(
 			'title',
 			'editor',
