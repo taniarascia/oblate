@@ -301,32 +301,4 @@ function create_post_work() {
 		) // Add Category and Post Tags support
 	));
 }
-add_action('init', 'create_post_work'); // Add our Portfolio Item Type
-
-/** 
- * Portfolio type
- */
-
-function create_post_portfolio() {
-	register_post_type('portfolio-items', // Register Custom Post Type
-		array(
-		'labels' => array(
-			'name' => __('Portfolio Item', 'oblate'), // Rename these to suit
-		),
-		'public' => true,
-		'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
-		'has_archive' => true,
-		'supports' => array(
-			'title',
-			'editor',
-			'excerpt',
-			'thumbnail'
-		), // Go to Dashboard Custom HTML5 Blank post for supports
-		'can_export' => true, // Allows export in Tools > Export
-		'taxonomies' => array(
-				'post_tag',
-				'category'
-		) // Add Category and Post Tags support
-	));
-}
-add_action('init', 'create_post_portfolio'); // Add our Portfolio Item Type
+add_action('init', 'create_post_work'); // Add our work type

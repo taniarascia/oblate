@@ -8,10 +8,9 @@
 				'posts_per_page' => '-1',
 			);
 
-			$portfolio = new WP_Query( $args );
+			$work = new WP_Query( $args );
 
-			if ( $portfolio->have_posts() ) :  while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?>
-
+			if ( $work->have_posts() ) :  while ( $work->have_posts() ) : $work->the_post(); ?>
 
 			<div class="portfolio-example">
 				<div class="portfolio-item">
