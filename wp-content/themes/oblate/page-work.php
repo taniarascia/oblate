@@ -14,7 +14,7 @@
 
 			<div class="portfolio-example">
 				<div class="portfolio-item">
-					<a href="<?php echo the_permalink(); ?>" target="_blank"><img src="<?php echo the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title(); ?>"></a>
+					<a href="<?php echo the_permalink(); ?>"><img src="<?php echo the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title(); ?>"></a>
 					<h3><?php the_title(); ?></h3>
 				</div>
 			</div>
