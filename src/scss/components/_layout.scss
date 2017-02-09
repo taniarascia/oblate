@@ -48,6 +48,14 @@ article {
 			background: transparent;
 		}
 	}
+	h2 a {
+		&:hover,
+		&:focus,
+		&:active {
+			color: $link-color;
+			text-decoration: underline;
+		}
+	}
 }
 
 #comments a:hover {
