@@ -8,7 +8,7 @@
 	text-align: center;
 	font-size: 1.1rem;
 	line-height: 1.6;
-	text-decoration: none;
+	text-decoration: none !important;
 	white-space: nowrap;
 	background: $link-color;
 	border-radius: 30px;
@@ -19,6 +19,7 @@
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
 	font-family: $button-family;
 	color: white;
+	text-shadow: none;
 }
 
 .buttons-hover {

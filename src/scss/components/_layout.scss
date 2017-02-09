@@ -24,13 +24,36 @@ body {
 a {
 	color: $link-color;
 	text-decoration: none;
-	&:hover,
-	&:focus,
-	&:active {
-		color: white;
-		background: $link-color;
+}
+
+article {
+	a {
+		text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+		background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 2px, $link-color 2px, $link-color 3px, rgba(0, 0, 0, 0) 3px);
+		&:hover,
+		&:focus,
+		&:active {
+			color: white;
+			background: $link-color;
+			text-shadow: none;
+		}
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		a {
+			text-shadow: none;
+			background: transparent;
+		}
 	}
 }
+
+#comments a:hover {
+	text-decoration: underline;
+}
+
 
 // Images always responsive
 img {
