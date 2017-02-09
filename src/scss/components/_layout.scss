@@ -54,7 +54,6 @@ article {
 	text-decoration: underline;
 }
 
-
 // Images always responsive
 img {
 	max-width: 100%;
@@ -95,6 +94,14 @@ h1 {
 
 h2 {
 	font-size: 1.8rem;
+	a {
+		&:hover,
+		&:focus,
+		&:active {
+			color: $link-color;
+			text-decoration: underline;
+		}
+	}
 }
 
 h3 {
