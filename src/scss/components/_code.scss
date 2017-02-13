@@ -67,7 +67,7 @@ pre code {
 		padding-top: 2rem;
 		padding-right: 2rem;
 		padding-bottom: 2rem;
-		padding-left: calc(50% - 400px);
+		padding-left: calc(50% - 385px);
 	}
 }
 
@@ -107,10 +107,11 @@ kbd {
 :not(pre) > code {
 	font-size: 1rem;
 	padding: 1px 2px;
-	background: rgba(0, 0, 0, .04);
+	//background: rgba(0, 0, 0, .04);
 	font-family: $code;
 	font-weight: 400;
 	border-radius: 0;
+	letter-spacing: -0.03rem;
 	color: #E43557;
 }
 
