@@ -688,6 +688,7 @@ blockquote {
 		font-weight: 400;
 	}
 	:not(pre)>code {
+		background: rgba(0,0,0,.1);
 	}
 	&.alert,
 	&.info,
@@ -704,15 +705,15 @@ blockquote {
 		}
 	}
 	&.alert {
-		background: #ffffff;
+		background: #fceaee;
 		border: 1px solid #e43557;
-		color: #e43557;
+		color: #111;
 		//border-left: 16px solid #e43557;
 	}
 	&.info {
-		background: #fff;
+		background: #fff4cc;
 		border: 1px solid #FFCB00;
-		color: #C67D00;
+		color: #111;
 		//border-left: 16px solid #FFCB00;
 	}
 	&.note {
@@ -722,9 +723,9 @@ blockquote {
 		//border-left: 16px solid #00E87F;
 	}
 	&.details {
-		background: #fff;
+		background: #B3F9CB;
 		border: 1px solid #00E87F;
-		color: #00b965;
+		color: #111;
 		//border-left: 16px solid $link-color;
 	}
 }
