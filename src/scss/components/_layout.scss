@@ -688,7 +688,7 @@ blockquote {
 		font-weight: 400;
 	}
 	:not(pre)>code {
-		background: rgba(0,0,0,.1);
+		color: #111;
 	}
 	&.alert,
 	&.info,
@@ -709,26 +709,26 @@ blockquote {
 		}
 	}
 	&.alert {
-		background: #fceaee;
+		background: #e43557;
 		border: 1px solid #e43557;
-		color: #111;
+		color: #fff;
 		//border-left: 16px solid #e43557;
 	}
 	&.info {
-		background: #fff4cc;
-		border: 1px solid #FFCB00;
+		background: $background;
+		border: 1px solid $background;
 		color: #111;
 		//border-left: 16px solid #FFCB00;
-	}
+	} 
 	&.note {
-		background: #fff;
-		border: 1px solid $link-color;
-		color: $link-color;
+		background: $background;
+		border: 1px solid $background;
+		color: #111;
 		//border-left: 16px solid #00E87F;
 	}
 	&.details {
-		background: #B4FABD;
-		border: 1px solid #00E87F;
+		background: $background;
+		border: 1px solid $background;
 		color: #111;
 		//border-left: 16px solid $link-color;
 	}
@@ -902,7 +902,7 @@ a.social-icon {
 	font-size: .95rem;
 	font-family: $font-family;
 	margin-bottom: 15px;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid $background;
 	.reply {
 		text-align: right;
 		font-size: 1rem;
