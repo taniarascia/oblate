@@ -150,7 +150,7 @@ h3:not(:first-child) {
 		font-size: 1.8rem;
 	}
 	h1 {
-		font-size: 3.2rem;
+		font-size: 2.8rem;
 	}
 	h2 {
 		font-size: 2.2rem;
@@ -535,15 +535,15 @@ ul li ul {
 time {
 	color: lighten($font-color, 30%);
 	display: block;
-	font-family: $font-family;
-	font-size: 1.1rem;
-	font-weight: 700;
+	font-family: $heading-family;
+	font-size: 1rem;
+	font-weight: 400;
 	margin-bottom: .5rem;
 }
 
 @include small-breakpoint {
 	time {
-		font-size: 1.3rem;
+		font-size: 1.1rem;
 	}
 }
 
@@ -614,7 +614,7 @@ time {
 	padding: 1.5rem 0;
 	h1 {
 		margin-bottom: 0;
-		max-width: 1000px !important;
+		max-width: 800px !important;
 	}
 }
 
@@ -809,9 +809,9 @@ a.social-icon {
 	&:hover,
 	&:focus,
 	&:active {
-		background: transparent;
-		color: darken(#E43557, 15%);
-		border: 1px solid darken(#E43557, 15%);
+		background: #E43557;
+		color: white;
+		border: 1px solid #E43557;
 	}
 }
 
@@ -941,8 +941,8 @@ a.social-icon {
 // Reply
 .comment-reply-link {
 	@extend .buttons;
-	color: white;
-	background: $link-color;
+	color: $link-color;
+	background: transparent;
 	font-size: .9rem;
 	border: 1px solid $link-color;
 	padding: 5px 15px;
@@ -951,8 +951,8 @@ a.social-icon {
 	&:active {
 		@extend .buttons-hover;
 		border: 1px solid $link-color;
-		color: $link-color;
-		background: white;
+		color: white;
+		background: $link-color;
 	}
 }
 
