@@ -703,6 +703,10 @@ blockquote {
 		p {
 			font-size: 1.15rem;
 		}
+		a {
+			text-shadow: none;
+			background-image: none; 
+		}
 	}
 	&.alert {
 		background: #fceaee;
