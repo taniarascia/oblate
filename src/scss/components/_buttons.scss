@@ -4,9 +4,9 @@
 // Button Extend  
 .buttons {
 	display: inline-block;
-	padding: 10px 25px 8px;
+	padding: 8px 20px 6px;
 	text-align: center;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	line-height: 1.6;
 	text-decoration: none !important;
 	white-space: nowrap;
@@ -57,26 +57,26 @@ input {
 
 .comment-links a {
 	display: inline-block;
-	padding: 15px 20px 10px;
+	padding: 8px 20px 6px;
 	text-align: center;
 	font-size: 1rem;
 	line-height: 1.6;
 	text-decoration: none;
 	background: transparent;
 	border-radius: 30px;
-	border: 1px solid #efefef;
+	border: 1px solid $link-color;
 	cursor: pointer;
 	font-weight: 600;
 	margin: 20px 0 35px;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
 	font-family: $button-family;
-	color: #404040;
+	color: $link-color;
 	&:hover,
 	&:focus,
 	&:active {
 		color: white;
 		background: $link-color;
 		border: 1px solid $link-color;
-		text-decoration: none;
+		text-decoration: none !important;
 	}
 }
