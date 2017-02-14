@@ -316,7 +316,7 @@ ul li ul {
 		content: '';
 		display: block;
 		clear: both;
-	}
+	}  
 	ul {
 		max-width: none;
 		list-style: none;
@@ -709,10 +709,10 @@ blockquote {
 		}
 	}
 	&.alert {
-		background: #e43557;
-		border: 1px solid #e43557;
+		background: $alt-color;
+		border: 1px solid $alt-color;
 		color: #fff;
-		//border-left: 16px solid #e43557;
+		//border-left: 16px solid $alt-color;
 	}
 	&.info {
 		background: $background;

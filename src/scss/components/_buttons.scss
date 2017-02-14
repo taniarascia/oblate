@@ -80,3 +80,29 @@ input {
 		text-decoration: none !important;
 	}
 }
+
+#cancel-comment-reply-link {
+	display: inline-block;
+	padding: 8px 20px 6px;
+	text-align: center;
+	font-size: 1rem;
+	line-height: 1.6;
+	text-decoration: none;
+	background: transparent;
+	border-radius: 30px;
+	border: 1px solid $alt-color;
+	cursor: pointer;
+	font-weight: 600;
+	margin: 20px 5px 35px;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
+	font-family: $button-family;
+	color: $alt-color;
+	&:hover,
+	&:focus,
+	&:active {
+		color: white;
+		background: $alt-color;
+		border: 1px solid $alt-color;
+		text-decoration: none !important;
+	}
+}
