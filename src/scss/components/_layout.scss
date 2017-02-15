@@ -847,6 +847,15 @@ a.social-icon {
 	margin-bottom: 1.5rem;
 }
 
+.comment-reply-title {
+	small {
+		display: block;
+	}
+	a {
+		color: $heading-color;
+	}
+}
+
 // Author name
 .comment-author {
 	cite.fn,
@@ -965,9 +974,7 @@ a.social-icon {
 }
 
 .logged-in-as {
-	font-family: $heading-family;
-	font-size: 1rem;
-	padding-bottom: .5rem;
+	display: none;
 }
 
 .comment-notes {
