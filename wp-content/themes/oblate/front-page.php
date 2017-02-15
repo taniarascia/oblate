@@ -5,9 +5,7 @@
 <section class="banner">
 	<div class="container">
 		<h1>Tania Rascia</h1>
-		<div class="the-content">
 			<?php the_content(); ?>
-		</div>
 	</div>
 </section>
 
