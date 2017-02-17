@@ -14,7 +14,7 @@
 	<?php the_content(); ?>
 </article>
 
-<div class="blurb">
+<blockquote class="details blurb">
 	<div>
 		<img src="<?php echo site_url(); ?>/wp-content/themes/oblate/images/tr.png" class="blurb-image">
 		Written by Tania Rascia
@@ -22,4 +22,4 @@
 	<div>
  		<a href="http://twitter.com/intent/tweet?text=<?php echo the_title()?>&url=<?php the_permalink();?>&via=taniarascia" target="_blank" title="Share to Twitter"><i class="fa fa-twitter fa-2x"></i></a>
 	</div>
-</div>
+</blockquote>
