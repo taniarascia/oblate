@@ -15,24 +15,11 @@
 </article>
 
 <div class="blurb">
-	<cite>Written by Tania Rascia<br>
-		<a href="https://github.com/taniarascia" target="_blank" class="gh-button"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a> <a href="https://twitter.com/taniarascia" target="_blank" class="tw-button"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></cite>
-</div>
-
-<div class="container list-of-posts">
-	<?php
-	$args = array( 
-		'posts_per_page' => 5, 
-		'orderby' => 'rand' );
-
-	$rand_posts = get_posts( $args );
-
-	foreach ( $rand_posts as $post ) : setup_postdata( $post ); ?>
-	<div class="each-post">		
-	<?php if ( get_post_thumbnail_id() ) { ?><div class="thumbs vertical-center"><a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="35" width="35"></a></div><?php } ?> <div class="links"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+	<div>
+		<img src="<?php echo site_url(); ?>/wp-content/themes/oblate/images/tr.png" class="blurb-image">
+		Written by Tania Rascia
 	</div>
-
-	<?php endforeach; 
-
-	wp_reset_postdata(); ?>
+	<div>
+ 		<a href="http://twitter.com/intent/tweet?text=<?php echo the_title()?>&url=<?php the_permalink();?>&via=taniarascia" target="_blank" title="Share to Twitter"><i class="fa fa-twitter fa-2x"></i></a>
+	</div>
 </div>

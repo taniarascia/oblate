@@ -85,7 +85,7 @@ add_action( 'wp_enqueue_scripts', 'starter_scripts' );
 
 function oblate_scripts() {
 	wp_dequeue_style( 'starter-style' );
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css?02-15-2017x2' );
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css?02-17-2017' );
 	wp_enqueue_script( 'prism', get_template_directory_uri() . '/js/prism.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
 }
@@ -302,3 +302,16 @@ function create_post_work() {
 	));
 }
 add_action('init', 'create_post_work'); // Add our work type
+
+/** 
+ * Disable Website Field From Comment Form
+ */
+
+function disable_website_field( $field ) { 
+	if( isset($field['url']) ) {
+		unset( $field['url'] );
+	}
+	return $field;
+}
+
+add_filter('comment_form_default_fields', 'disable_website_field');

@@ -689,9 +689,6 @@ blockquote {
 		text-align: right;
 		font-weight: 400;
 	}
-	:not(pre)>code {
-		color: #111;
-	}
 	&.alert,
 	&.info,
 	&.note,
@@ -715,6 +712,9 @@ blockquote {
 		border: 1px solid $alt-color;
 		color: #fff;
 		//border-left: 16px solid $alt-color;
+		&:not(pre)>code {
+			color: #111;
+		}
 	}
 	&.info {
 		background: $background;
@@ -790,7 +790,17 @@ a.social-icon {
 /* WordPress */
 
 .blurb {
-	text-align: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	a {
+		vertical-align: middle;
+	}
+}
+
+.blurb-image {
+	vertical-align: middle;
+	margin-right: 1rem;
 }
 
 .tags-container {
@@ -922,7 +932,7 @@ a.social-icon {
 
 @include small-breakpoint {
 	.comment-body {
-		padding: 1rem .5rem;
+		padding: 1rem 0;
 	}
 }
 
