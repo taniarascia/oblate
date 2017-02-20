@@ -2,7 +2,7 @@
 
 <section class="content">
 	<div class="text-center">
-		<h2>Tutorials</h2>
+		<h2>Guides</h2>
 		<p>The missing instruction manuals for popular web services.</p>
 	</div>
 </section>
