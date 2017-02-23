@@ -6,6 +6,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   
+
 <?php if ( !is_single() ) { ?><meta name="description" content="I'm Tania. I design and develop websites, and share everything I learn along the way."><?php } ?>
 
 <?php if ( is_page('projects') ) { ?>
