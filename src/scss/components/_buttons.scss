@@ -56,6 +56,22 @@ a.button.alt-button,
 	}
 }
 
+// Button Output
+a.button.ghost-button,
+.button.ghost-button {
+	color: $link-color;
+	background: transparent;
+	border: 1px solid $link-color;
+	&:hover,
+	&:focus,
+	&:active {
+		color: white;
+		background: $link-color;
+		border: 1px solid $link-color;
+	}
+}
+
+
 input {
 	&[type="submit"],
 	&[type="reset"],
