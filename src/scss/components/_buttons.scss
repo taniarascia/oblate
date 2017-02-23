@@ -42,6 +42,20 @@ button,
 	}
 }
 
+// Button Output
+a.button.alt-button,
+.button.alt-button {
+	background: $alt-color;
+	border: 1px solid $alt-color;
+	&:hover,
+	&:focus,
+	&:active {
+		color: $alt-color;
+		background: white;
+		border: 1px solid $alt-color;
+	}
+}
+
 input {
 	&[type="submit"],
 	&[type="reset"],

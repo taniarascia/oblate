@@ -8,6 +8,13 @@
   }
 }
 
+// Break on middle
+@mixin mid-breakpoint {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+
 // Break on desktop
 @mixin large-breakpoint {
   @media (min-width: #{$desktop}) {

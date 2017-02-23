@@ -387,7 +387,6 @@ ul li ul {
 
 .banner {
 	padding: 2rem 0 1rem;
-	background: white;
 	h1 {
 		font-size: 2.5rem;
 		margin-bottom: 0;
@@ -402,7 +401,7 @@ ul li ul {
 
 @include small-breakpoint {
 	.banner {
-		padding: 3rem 0 2rem;
+		padding: 3rem 2rem 2rem;
 		h1 {
 			font-size: 4rem;
 		}
@@ -551,6 +550,8 @@ time {
 	flex-direction: row;
 	justify-content: flex-start;
 	text-align: left;
+	align-content: space-between;
+	align-items: center;
 	h1 {
 		margin-top: 0 !important;
 		margin-bottom: .5rem;
@@ -571,6 +572,9 @@ time {
 	&:last-of-type {
 		border-bottom: 0;
 	}
+	time {
+		display: none;
+	}
 }
 
 @include small-breakpoint {
@@ -585,6 +589,9 @@ time {
 		}
 		p {
 			display: block;
+		}
+		time {
+			display:  block;
 		}
 	}
 }
@@ -736,9 +743,12 @@ blockquote {
 /* Footer */
 
 .footer {
-	padding: 20px 0;
 	text-align: center;
 	background: #fff;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	.fa {
 		margin: .25rem;
 		&:hover,
@@ -773,12 +783,6 @@ a.social-icon {
 	color: darken($background, 10%);
 	&:hover {
 		background: transparent;
-	}
-}
-
-@include small-breakpoint {
-	.footer {
-		padding: 1.5rem 0;
 	}
 }
 
@@ -1089,8 +1093,33 @@ caption {
 
 /* Helpers */
 
+.lead {
+	font-size: 1.4rem;
+	font-family: $heading-family;
+	a {
+		color: white;
+		text-shadow: -1px -1px 0 $link-color, 1px -1px 0 $link-color, -1px 1px 0 $link-color, 1px 1px 0 $link-color;
+		background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 2px, white 2px, white 3px, rgba(0, 0, 0, 0) 3px);
+		&:hover,
+		&:focus,
+		&:active {
+			background: white;
+			color: $link-color;
+			text-shadow: none;
+		}
+	}
+}
+
 .text-center {
 	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
 }
 
 .about-me {
@@ -1174,6 +1203,43 @@ caption {
 // Remove the pagination title
 .screen-reader-text {
 	display: none;
+}
+
+.landing-page {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid $border;
+	a.button {
+		margin-bottom: 2rem;
+	}
+	.landing-content {
+		background: $link-color;
+		color: white;
+		flex: 1;
+		h1 {
+			color: white;
+		}
+	}
+	.latest-container {
+		padding: 1rem;
+	}
+	.callout-content {
+		flex: 1;
+		h2 {
+			font-size: 1.6rem;
+			color: white;
+			&.callout-latest {
+				color: $link-color;
+			}
+		}
+	}
+}
+
+@include mid-breakpoint {
+	.landing-page {
+		min-height: calc(100vh - 130px);
+		flex-direction: row;
+	}
 }
 
 

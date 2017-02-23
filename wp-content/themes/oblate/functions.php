@@ -39,7 +39,7 @@ add_action( 'init' , 'add_categories_for_attachments' );
  */
 
 function custom_excerpt_length( $length ) {
-	return 30;
+	return 15;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
@@ -85,7 +85,7 @@ add_action( 'wp_enqueue_scripts', 'starter_scripts' );
 
 function oblate_scripts() {
 	wp_dequeue_style( 'starter-style' );
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css?02-21-2017' );
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css?02-23-2017' );
 	wp_enqueue_script( 'prism', get_template_directory_uri() . '/js/prism.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
 }
@@ -161,7 +161,7 @@ function meta_og() {
 <meta property="og:description" content="<?php echo $excerpt; ?>">
 <meta property="og:type" content="article">
 <meta property="og:url" content="<?php echo the_permalink(); ?>">
-<meta property="og:site_name" content="Tania Rascia Web Design and Development">
+<meta property="og:site_name" content="Tania Rascia - Web Design and Development">
 <meta property="og:image" content="<?php echo $img_src[0]; ?>">
 <?php
 	} else {
