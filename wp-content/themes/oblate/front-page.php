@@ -1,39 +1,42 @@
 <?php get_header(); ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<section class="landing-page">
 
-<section class="banner">
-	<div class="container">
-		<h1>Tania Rascia</h1>
-			<?php the_content(); ?>
-	</div>
-</section>
-
-<?php endwhile; endif; ?>
-
-<?php $args = array(
-	'posts_per_page' => '3',
- );
+		<div class="landing-content vertical-center">
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<div class="banner">
+					<div class="container">
+						<h1>Tania Rascia</h1>
+						<?php the_content(); ?>
+					</div>
+				</div>
+				<?php endwhile; endif; ?>
+		</div>
+		<div class="callout-content vertical-center">
+			<?php $args = array(
+							'posts_per_page' => '3',
+						);
 
 $latest = new WP_Query( $args );
 
 if ( $latest->have_posts() ) : ?>
 
-	<section class="content latest-articles">
-		<div class="container">
-			<h1>Latest Articles</h1>
-			<p>My most recent thoughts, guides, and tutorials.</p>
-			<p><a href="<?php echo site_url(); ?>/blog" class="button">View all</a></p>
+				<div class="latest-container">
 
-			<?php while ( $latest->have_posts() ) : $latest->the_post(); 
+					<?php while ( $latest->have_posts() ) : $latest->the_post(); ?>
 
-				get_template_part( 'content', get_post_format() );
+						<?php get_template_part( 'content', get_post_format() ); ?>
 
-			endwhile; ?>
+							<?php endwhile; ?>
+
+								<div class="text-center"> <a href="<?php echo site_url(); ?>" class="button alt-button">View All</a></div>
+
+				</div>
+
+				<?php endif; wp_reset_postdata(); ?>
 
 		</div>
+
 	</section>
 
-<?php endif; wp_reset_postdata(); ?>
-
-<?php get_footer(); ?>
+	<?php get_footer(); ?>
