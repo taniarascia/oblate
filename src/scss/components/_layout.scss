@@ -403,7 +403,7 @@ ul li ul {
 	.banner {
 		padding: 3rem 2rem 2rem;
 		h1 {
-			font-size: 4rem;
+			font-size: 4.5rem;
 		}
 	}
 	.callout-image {
@@ -579,16 +579,17 @@ time {
 
 @include small-breakpoint {
 	.article-excerpt {
-		padding: 1.5rem 0;
+		padding: 1rem 0;
 		img {
 			display: block;
-			width: 150px;
-			height: 150px;
-			max-width: 150px;
+			width: 100px;
+			height: 100px;
+			max-width: 100px;
 			margin: 1rem;
 		}
 		p {
 			display: block;
+			margin-bottom: 1rem;
 		}
 		time {
 			display:  block;
@@ -1107,6 +1108,13 @@ caption {
 			color: $link-color;
 			text-shadow: none;
 		}
+	}
+}
+
+@include small-breakpoint {
+	.lead {
+		font-size: 1.6rem;
+		font-weight: 500;
 	}
 }
 

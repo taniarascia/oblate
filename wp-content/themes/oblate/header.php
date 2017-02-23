@@ -6,11 +6,11 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   
-<?php if ( !is_single() ) { ?><meta name="description" content="I'm Tania, and I simplify web development through effective and concise tutorials. Let's learn and create."><?php } ?>
+<?php if ( !is_single() ) { ?><meta name="description" content="I'm Tania. I design and develop websites, and share everything I learn along the way."><?php } ?>
 
 <?php if ( is_page('projects') ) { ?>
 <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet" type="text/css">
 <?php } ?>
 
 <?php wp_head(); ?>
