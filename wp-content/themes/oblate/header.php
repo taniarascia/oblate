@@ -10,7 +10,7 @@
 
 <?php if ( is_page('projects') ) { ?>
 <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet" type="text/css"> 
 <?php } ?>
 
 <?php wp_head(); ?>
