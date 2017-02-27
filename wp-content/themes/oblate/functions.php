@@ -37,7 +37,7 @@ add_action( 'init' , 'add_categories_for_attachments' );
 
 /**
  * Custom length for the_excerpt 
- */ 
+ */  
 
 function custom_excerpt_length() {
 	if ( is_front_page() ) {
