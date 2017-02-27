@@ -34,14 +34,20 @@ function add_categories_for_attachments() {
 }
 add_action( 'init' , 'add_categories_for_attachments' );
 
-/** 
- * Custom excerpt length
- */
 
-function custom_excerpt_length( $length ) {
-	return 25;
+/**
+ * Custom length for the_excerpt 
+ */ 
+
+function custom_excerpt_length() {
+	if ( is_front_page() ) {
+		return 25;
+	} else {
+		return 45;
+	}
 }
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+add_filter('excerpt_length', 'custom_excerpt_length');
 
 /** 
  * Support search form
