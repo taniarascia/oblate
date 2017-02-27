@@ -389,7 +389,7 @@ ul li ul {
 	padding: 2rem 0 1rem;
 	h1 {
 		font-size: 2.5rem;
-		margin-bottom: 0;
+		margin-bottom: .5rem;
 	}
 }
 
@@ -403,7 +403,7 @@ ul li ul {
 	.banner {
 		padding: 3rem 2rem 2rem;
 		h1 {
-			font-size: 4.5rem;
+			font-size: 4rem;
 		}
 	}
 	.callout-image {
@@ -746,7 +746,7 @@ blockquote {
 .footer {
 	text-align: center;
 	background: #fff;
-	height: 80px;
+	height: 60px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1097,6 +1097,7 @@ caption {
 .lead {
 	font-size: 1.4rem;
 	font-family: $heading-family;
+	line-height: 1.15;
 	a {
 		color: white;
 		text-shadow: -1px -1px 0 $link-color, 1px -1px 0 $link-color, -1px 1px 0 $link-color, 1px 1px 0 $link-color;
@@ -1245,8 +1246,11 @@ caption {
 
 @include mid-breakpoint {
 	.landing-page {
-		min-height: calc(100vh - 130px);
+		min-height: calc(100vh - 110px);
 		flex-direction: row;
+		.latest-container {
+			padding: 1rem 2rem 1rem 1rem;
+		}
 	}
 }
 

@@ -29,7 +29,7 @@ if ( $latest->have_posts() ) : ?>
 
 							<?php endwhile; ?>
 
-								<div class="text-center"> <a href="<?php echo site_url(); ?>" class="button alt-button">View All</a></div>
+								<div class="text-center"> <a href="<?php echo site_url(); ?>/blog" class="button alt-button">View All</a></div>
 
 				</div>
 
