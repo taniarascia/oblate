@@ -11,17 +11,22 @@ label,
 	color: #FCB42A !important;
 }
 
+a:hover {
+	background: transparent !important;
+}
+
 article a {
 	text-shadow: none;
-	background-image: none;
+	background: transparent;
 	color: #708EFC;
 }
 
 article a:hover,
 article a:focus,
 article a:active {
-	background: white;
+	background: transparent;
 	color: #708EFC;
+	text-decoration: underline;
 }
 
 time {
@@ -29,9 +34,30 @@ time {
 	color: #708EFC;
 }
 
+.comment-author a, .comment-author cite.fn {
+	color: white;
+}
+
+.lead {
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+.lead a {
+	color: #708EFC;
+	text-shadow: none;
+}
+
+.lead a:hover {
+	color: #708EFC;
+}
+
 .single h1 {
 	font-size: 24px !important;
 	margin-bottom: 15px;
+}
+
+.comment-author a:active, .comment-author a:focus, .comment-author a:hover, .comment-author cite.fn:active, .comment-author cite.fn:focus, .comment-author cite.fn:hover, time:hover {
+	background: transparent !important;
 }
 
 h1 {
@@ -61,7 +87,6 @@ body {
 	background: #121212 !important;
 }
 
-.comment-author a,
 .comment-author cite.fn,
 p,
 ul,
@@ -124,16 +149,20 @@ h1 {
 	color: white !important;
 }
 
+.navigation a:hover {
+	color: #e43557 !important;
+}
+
 .article-excerpt {
 	border-bottom: 0 !important;
 }
 
 :not(pre)>code {
-	color: #FF2155 !important;
+	color: #e43557 !important;
 }
 
 .comment-meta a {
-	color: #FF2155 !important;
+	color: #e43557 !important;
 	font-family: Courier New, monospace !important;
 }
 
@@ -165,20 +194,16 @@ input[type=button],
 input[type=reset],
 input[type=submit] {
 	font-family: Courier New, monospace !important;
+	background: #708EFC;
+	border: 1px solid #708EFC;
 }
 
 a {
 	color: #708EFC;
 }
 
-a:hover,
-a:focus,
-a:active {
-	color: white !important;
-}
-
 .tags a {
-	color: #FF2155 !important;
+	color: #e43557 !important;
 }
 
 .page,
@@ -218,6 +243,6 @@ a .article-excerpt {
 	background: #121212;
 }
 
-.landing-page.landing-content {
+.landing-page .landing-content {
 	background: #121212;
 }
