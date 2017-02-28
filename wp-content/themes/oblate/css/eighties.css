@@ -11,9 +11,22 @@ label,
 	color: #FCB42A !important;
 }
 
+article a {
+	text-shadow: none;
+	background-image: none;
+	color: #708EFC;
+}
+
+article a:hover,
+article a:focus,
+article a:active {
+	background: white;
+	color: #708EFC;
+}
+
 time {
 	font-family: 'Press Start 2P', monospace !important;
-	color: #2467DB;
+	color: #708EFC;
 }
 
 .single h1 {
@@ -115,11 +128,8 @@ h1 {
 	border-bottom: 0 !important;
 }
 
-.navigation a:hover,
 :not(pre)>code {
-	color: #FFB8DE !important;
-	border-radius: 4px !important;
-	border: 1px solid #FFB8DE !important;
+	color: #FF2155 !important;
 }
 
 .comment-meta a {
@@ -128,14 +138,15 @@ h1 {
 }
 
 .comment-reply-link {
-	background: #2467DB !important;
-	border: 1px solid #2467DB !important;
+	color: white;
+	background: #708EFC !important;
+	border: 1px solid #708EFC !important;
 }
 
 .comment-reply-link:hover {
 	background: transparent !important;
-	border: 1px solid #2467DB !important;
-	color: #2467DB !important;
+	border: 1px solid #708EFC !important;
+	color: #708EFC !important;
 }
 
 @media (min-width: 600px) {
@@ -187,8 +198,12 @@ select {
 	background: transparent !important;
 	color: white !important;
 	font-family: Courier New, monospace !important;
-	border: 1px solid #2467DB !important;
+	border: 1px solid #708EFC !important;
 	border-radius: 0 !important;
+}
+
+tbody tr:nth-child(odd) td {
+	background: #000;
 }
 
 :not(pre)>code {
@@ -197,4 +212,12 @@ select {
 
 a .article-excerpt {
 	color: white;
+}
+
+.four-oh-four {
+	background: #121212;
+}
+
+.landing-page.landing-content {
+	background: #121212;
 }

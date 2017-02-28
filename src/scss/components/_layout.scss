@@ -592,7 +592,7 @@ time {
 			margin-bottom: 1rem;
 		}
 		time {
-			display:  block;
+			display: block;
 		}
 	}
 }
@@ -1251,6 +1251,35 @@ caption {
 		.latest-container {
 			padding: 1rem 2rem 1rem 1rem;
 		}
+	}
+}
+
+.four-oh-four {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid $border;
+	flex-direction: row;
+	background: $link-color;
+	color: white;
+	font-family: Courier, monospace;
+	-webkit-font-smoothing: subpixel-antialiased;
+	h1 span {
+		padding: .1rem .5rem;
+		background: #eee;
+		color: $link-color;
+		font-size: 1.6rem;
+		font-family: Courier, monospace;
+		-webkit-font-smoothing: subpixel-antialiased;
+	}
+	.bsod-list {
+		margin-bottom: .2rem;
+	}
+}
+
+@include mid-breakpoint {
+	.four-oh-four {
+		flex-direction: column;
+		min-height: calc(100vh - 110px);
 	}
 }
 
