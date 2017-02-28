@@ -1216,7 +1216,6 @@ caption {
 .landing-page {
 	display: flex;
 	flex-direction: column;
-	border-bottom: 1px solid $border;
 	a.button {
 		margin-bottom: 2rem;
 	}
@@ -1247,19 +1246,20 @@ caption {
 	.landing-page {
 		min-height: calc(100vh - 110px);
 		flex-direction: row;
+		border-bottom: 1px solid $border;
 		.latest-container {
 			padding: 1rem 2rem 1rem 1rem;
-		}
+		} 
 	}
 }
 
 .four-oh-four {
 	display: flex;
 	flex-direction: column;
-	border-bottom: 1px solid $border;
 	flex-direction: row;
 	background: $link-color;
 	color: white;
+	line-height: 1.4;
 	font-family: Courier, monospace;
 	-webkit-font-smoothing: subpixel-antialiased;
 	h1 span {
