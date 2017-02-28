@@ -718,14 +718,13 @@ blockquote {
 		background: $alt-color;
 		border: 1px solid $alt-color;
 		color: #fff;
-		//border-left: 16px solid $alt-color;
 		:not(pre)>code {
 			color: #fff;
 		}
 	}
 	&.info {
-		background: $background;
-		border: 1px solid $background;
+		background: #FFEA96;
+		border: 1px solid #FFEA96;
 		color: #111;
 	}
 	&.note {
