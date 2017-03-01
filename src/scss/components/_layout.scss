@@ -27,15 +27,11 @@ a {
 }
 
 article {
-	a {
-		text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-		background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 2px, $link-color 2px, $link-color 3px, rgba(0, 0, 0, 0) 3px);
+	a { 
 		&:hover,
 		&:focus,
 		&:active {
-			color: white;
-			background: $link-color;
-			text-shadow: none;
+			text-decoration: underline;
 		}
 	}
 	h1,
@@ -53,7 +49,6 @@ article {
 			&:hover,
 			&:focus,
 			&:active {
-				color: $link-color;
 				text-decoration: underline;
 			}
 		}
@@ -79,7 +74,7 @@ h5 {
 	line-height: 1.1;
 	font-weight: 700;
 	letter-spacing: -0.05rem;
-	margin: 0 0 1.25rem;
+	margin: 0 0 1rem;
 	color: $heading-color;
 	a {
 		&:hover,
@@ -129,14 +124,16 @@ h3 {
 
 h4 {
 	font-size: 1.4rem;
-	font-weight: 500;
-	color: lighten($heading-color, 20%);
+	font-weight: 600;
+	color: #343434;
+	margin-bottom: .5rem;
 }
 
 h5 {
 	font-size: 1.2rem;
-	font-weight: 500;
-	color: lighten($heading-color, 25%);
+	font-weight: 600;
+	color: #626262;
+	margin-bottom: .5rem;
 }
 
 h1:not(:first-child),
@@ -825,6 +822,7 @@ a.social-icon {
 		background: #E43557;
 		color: white;
 		border: 1px solid #E43557;
+		text-decoration: none;
 	}
 }
 
@@ -1100,8 +1098,6 @@ caption {
 	line-height: 1.15;
 	a {
 		color: white;
-		text-shadow: -1px -1px 0 $link-color, 1px -1px 0 $link-color, -1px 1px 0 $link-color, 1px 1px 0 $link-color;
-		background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 2px, white 2px, white 3px, rgba(0, 0, 0, 0) 3px);
 		&:hover,
 		&:focus,
 		&:active {

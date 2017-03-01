@@ -113,7 +113,7 @@ var easter_egg = new Konami(function () {
 
 	link.type = 'text/css'
 	link.rel = 'stylesheet'
-	link.href = 'https://www.taniarascia.com/wp-content/themes/oblate/css/eighties.css?ver=2'
+	link.href = 'https://www.taniarascia.com/wp-content/themes/oblate/css/eighties.css?ver=3'
 
 	head.appendChild(link)
 

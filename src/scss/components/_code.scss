@@ -106,13 +106,13 @@ kbd {
 
 :not(pre) > code {
 	font-size: 1rem;
-	padding: 1px 2px;
-	//background: rgba(0, 0, 0, .04);
+	padding: 2px 4px;
 	font-family: $code;
 	font-weight: 400;
 	border-radius: 0;
 	letter-spacing: -0.03rem;
-	color: $alt-color;
+	color: #242424;
+	background: rgba(0,0,0,.1);
 }
 
 code[class*=language-css],
