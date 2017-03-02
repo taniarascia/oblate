@@ -548,9 +548,8 @@ time {
 	justify-content: flex-start;
 	text-align: left;
 	align-content: space-between;
-	align-items: center;
 	h1 {
-		margin-top: 0 !important;
+		margin-top: .5rem !important;
 		margin-bottom: .5rem;
 		a {
 			color: $heading-color;
@@ -805,6 +804,11 @@ a.social-icon {
 	padding-top: 1rem;
 }
 
+.tags-container-page {
+	padding: 0 1rem;
+	display: inline-block;
+}
+
 .tags a {
 	display: inline-block;
 	font-family: $code;
@@ -814,7 +818,7 @@ a.social-icon {
 	color: #E43557;
 	border: 1px solid #E43557;
 	border-radius: 30px;
-	font-size: .8rem;
+	font-size: .7rem;
 	text-decoration: none;
 	&:hover,
 	&:focus,
