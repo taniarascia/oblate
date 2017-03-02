@@ -22,21 +22,13 @@ $latest = new WP_Query( $args );
 if ( $latest->have_posts() ) : ?>
 
 				<div class="latest-container">
-
 					<?php while ( $latest->have_posts() ) : $latest->the_post(); ?>
-
-						<?php get_template_part( 'content', get_post_format() ); ?>
-
-							<?php endwhile; ?>
-
-								<div class="text-center"> <a href="<?php echo site_url(); ?>/blog" class="button alt-button">View All</a></div>
-
+						<?php get_template_part( 'content-front', get_post_format() ); ?>
+					<?php endwhile; ?>
 				</div>
-
 				<?php endif; wp_reset_postdata(); ?>
-
 		</div>
 
 	</section>
 
-	<?php get_footer(); ?>
+<?php get_footer(); ?>

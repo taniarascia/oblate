@@ -27,7 +27,7 @@ a {
 }
 
 article {
-	a { 
+	a {
 		&:hover,
 		&:focus,
 		&:active {
@@ -814,7 +814,7 @@ a.social-icon {
 	color: #E43557;
 	border: 1px solid #E43557;
 	border-radius: 30px;
-	font-size: .9rem;
+	font-size: .8rem;
 	text-decoration: none;
 	&:hover,
 	&:focus,
@@ -1128,7 +1128,7 @@ caption {
 }
 
 .about-me {
-	height: 60vh;
+	height: 50vh;
 }
 
 .vertical-center {
@@ -1237,6 +1237,21 @@ caption {
 			}
 		}
 	}
+	.article-excerpt {
+		padding: .5rem 0;
+		p {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-height: 700px) {
+	.landing-page .article-excerpt {
+		padding: 2rem 0;
+		p {
+			display: block;
+		}
+	}
 }
 
 @include mid-breakpoint {
@@ -1246,7 +1261,7 @@ caption {
 		border-bottom: 1px solid $border;
 		.latest-container {
 			padding: 1rem 2rem 1rem 1rem;
-		} 
+		}
 	}
 }
 
