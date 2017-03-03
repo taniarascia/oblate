@@ -305,8 +305,7 @@ ul li ul {
 .navigation {
 	position: static;
 	width: 100%;
-	border-bottom: 1px solid $border;
-	background: rgba(255, 255, 255, .97);
+	background: #121212;
 	z-index: 2;
 	text-align: center;
 	&:after {
@@ -322,10 +321,10 @@ ul li ul {
 		font-size: 0;
 	}
 	li {
-		padding: 0;
+		padding: 0; 
 	}
 	.current-menu-item a {
-		color: $link-color;
+		color: lighten($link-color, 8%);
 		background: transparent;
 	}
 	a {
@@ -337,14 +336,14 @@ ul li ul {
 		font-size: .95rem;
 		font-family: $nav-family;
 		font-weight: 400;
-		color: rgba(0, 0, 0, 0.5);
+		color: rgba(255, 255, 255, 0.8);
 		text-decoration: none;
 		text-align: center;
 		padding: 0 1rem;
 		&:hover,
 		&:active,
 		&:focus {
-			color: $link-color;
+			color: lighten($link-color, 8%);
 			background: transparent;
 		}
 	}
@@ -363,14 +362,12 @@ ul li ul {
 		left: 0;
 		width: 100%;
 		height: $nav-height;
-		border-bottom: 1px solid $border;
 		li {
 			display: inline-block;
 		}
 		a {
 			float: none;
 			width: auto;
-			border-bottom: 1px solid $border;
 			height: $nav-height;
 			line-height: $nav-height;
 			text-align: center;
