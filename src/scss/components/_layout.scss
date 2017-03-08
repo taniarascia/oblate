@@ -209,7 +209,11 @@ iframe,
 .cp_embed_wrapper,
 .posts-links,
 .contact-form,
-.gist {
+.gist,
+.tags-container,
+.author,
+.name,
+.single-article-image {
 	max-width: $tablet;
 	margin-left: auto;
 	margin-right: auto;
@@ -230,7 +234,11 @@ time,
 .terminal,
 #comments,
 .blurb,
-.contain-table {
+.contain-table,
+.tags-container,
+.author,
+.name,
+.singler-article-image {
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
@@ -257,7 +265,7 @@ ul li ul {
 
 @include small-breakpoint {
 	.main-content {
-		margin: $nav-height 0 0;
+		//margin: $nav-height 0 0;
 	}
 }
 
@@ -305,9 +313,10 @@ ul li ul {
 .navigation {
 	position: static;
 	width: 100%;
-	background: #121212;
+	background: #fff;
 	z-index: 2;
 	text-align: center;
+	border-bottom: 1px solid $border;
 	&:after {
 		content: '';
 		display: block;
@@ -321,10 +330,10 @@ ul li ul {
 		font-size: 0;
 	}
 	li {
-		padding: 0; 
+		padding: 0;
 	}
 	.current-menu-item a {
-		color: lighten($link-color, 8%);
+		color: $link-color;
 		background: transparent;
 	}
 	a {
@@ -336,14 +345,14 @@ ul li ul {
 		font-size: .95rem;
 		font-family: $nav-family;
 		font-weight: 400;
-		color: rgba(255, 255, 255, 0.8);
+		color: rgba(0, 0, 0, 0.6);
 		text-decoration: none;
 		text-align: center;
 		padding: 0 1rem;
 		&:hover,
 		&:active,
 		&:focus {
-			color: lighten($link-color, 8%);
+			color: $link-color;
 			background: transparent;
 		}
 	}
@@ -357,11 +366,8 @@ ul li ul {
 		height: $nav-height;
 	}
 	.navigation {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
 		height: $nav-height;
+		border-bottom: 1px solid $border;
 		li {
 			display: inline-block;
 		}
@@ -526,15 +532,28 @@ time {
 	color: lighten($font-color, 30%);
 	display: block;
 	font-family: $heading-family;
-	font-size: .9rem;
+	font-size: .85rem;
 	font-weight: 400;
-	text-transform: uppercase;
 	margin-bottom: .5rem;
 }
 
 @include small-breakpoint {
 	time {
-		font-size: .9rem;
+		font-size: .85rem;
+	}
+}
+
+.author {
+	margin-top: 1rem;
+	position: relative;
+	padding-left: 60px; 
+	font-family: $heading-family;
+	font-size: .85rem;
+	font-weight: 400;
+	img {
+		position: absolute;
+		left: 1rem;
+		top: 0;
 	}
 }
 
@@ -552,9 +571,6 @@ time {
 			color: $heading-color;
 		}
 	}
-	p {
-		display: none;
-	}
 	img {
 		display: block;
 		padding: .5rem;
@@ -564,6 +580,9 @@ time {
 	}
 	&:last-of-type {
 		border-bottom: 0;
+	}
+	p {
+		margin-bottom: .5rem;
 	}
 	time {
 		display: none;
@@ -606,7 +625,7 @@ time {
 
 .single-article-image {
 	padding-top: 1.5rem;
-	text-align: center;
+	text-align: left;
 	img {
 		width: 75px;
 		height: 75px;
@@ -614,9 +633,10 @@ time {
 }
 
 .single-article-header {
-	text-align: center;
+	text-align: left;
 	padding: 1.5rem 0;
 	h1 {
+		margin-top: 1.5rem;
 		margin-bottom: 0;
 		max-width: 800px !important;
 	}
@@ -633,7 +653,6 @@ time {
 	}
 	.single-article-image {
 		padding-top: 1.5rem;
-		text-align: center;
 		img {
 			width: 150px;
 			height: 150px;
@@ -1092,6 +1111,21 @@ caption {
 
 /* Helpers */
 
+.lead-excerpt p {
+	margin-top: 1.5rem;
+	margin-bottom: 0;
+	font-size: 1.4rem;
+	line-height: 1.4;
+	color: lighten($font-color, 30%);
+}
+
+@include small-breakpoint {
+	.lead-excerpt p {
+		font-size: 1.6rem;
+		font-weight: 500;
+	}
+}
+
 .lead {
 	font-size: 1.4rem;
 	font-family: $heading-family;
@@ -1225,7 +1259,7 @@ caption {
 		}
 	}
 	.latest-container {
-		padding: 1rem;
+		padding: 1rem 0;
 	}
 	.callout-content {
 		flex: 1.5;

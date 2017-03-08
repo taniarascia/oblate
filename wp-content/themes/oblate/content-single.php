@@ -1,14 +1,16 @@
 <article id="post-<?php the_ID(); ?>">
-	<?php if ( get_post_thumbnail_id() ) { ?>
-	<div class="single-article-image">
-		<img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="150" width="150">
-	</div>
-	<?php } ?>
 		
 	<div class="single-article-header">
-		<h1><?php the_title(); ?></h1>
-		<time datetime="<?php the_time( 'Y-m-d' ); ?>"><?php the_time( 'F j, Y' ); ?></time>
-		<?php the_tags('<div class="tags-container"><span class="tags">' ,'</span><span class="tags">','</span></div>'); ?>
+		<div class="author">
+			<img src="<?php echo site_url(); ?>/wp-content/themes/oblate/images/tr.png"> 
+			<div class="name"><a href="<?php echo site_url(); ?>/me">Tania Rascia</a> - <a href="https://twitter.com/taniarascia" target="_blank"><i class="fa fa-twitter"></i></a> <a href="https://github.com/taniarascia" target="_blank"><i class="fa fa-github"></i></a> </div>
+			<time datetime="<?php the_time( 'Y-m-d' ); ?>"><?php the_time( 'F j, Y' ); ?> - <?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?></time>
+		</div>
+		
+	<h1><?php the_title(); ?></h1>
+		<?php if ( has_excerpt() ) { ?>
+		<div class="lead-excerpt"><p><?php the_excerpt(); ?></p></div>
+		<?php } ?>
 	</div>
 
 	<?php the_content(); ?>
