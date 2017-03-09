@@ -9,7 +9,7 @@
 		
 	<h1><?php the_title(); ?></h1>
 		<?php if ( has_excerpt() ) { ?>
-		<div class="lead-excerpt"><p><?php the_excerpt(); ?></p></div>
+		<div class="lead-excerpt"><?php the_excerpt(); ?></div>
 		<?php } ?>
 	</div>
 
@@ -17,11 +17,6 @@
 </article>
 
 <blockquote class="details blurb">
-	<div>
-		<img src="<?php echo site_url(); ?>/wp-content/themes/oblate/images/tr.png" class="blurb-image">
-		Written by Tania Rascia
-	</div>
-	<div>
- 		<a href="http://twitter.com/intent/tweet?text=<?php echo the_title()?>&url=<?php the_permalink();?>&via=taniarascia" target="_blank" title="Share to Twitter"><i class="fa fa-twitter fa-2x"></i></a>
-	</div>
+If you found this article useful, please share it!
+	<a href="http://twitter.com/intent/tweet?text=<?php echo the_title()?>&url=<?php the_permalink();?>&via=taniarascia" target="_blank" title="Share to Twitter"><i class="fa fa-twitter fa-2x"></i></a> 	
 </blockquote>
