@@ -15,8 +15,3 @@
 
 	<?php the_content(); ?>
 </article>
-
-<blockquote class="details blurb">
-If you found this article useful, please share it!
-	<a href="http://twitter.com/intent/tweet?text=<?php echo the_title()?>&url=<?php the_permalink();?>&via=taniarascia" target="_blank" title="Share to Twitter"><i class="fa fa-twitter fa-2x"></i></a> 	
-</blockquote>
