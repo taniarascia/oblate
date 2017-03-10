@@ -143,6 +143,10 @@ h1 {
 	background: #121212 !important;
 }
 
+.navigation {
+	border-bottom: 1px solid transparent !important;
+}
+
 .navigation a {
 	font-family: 'Press Start 2P', monospace !important;
 	font-size: 14px !important;
