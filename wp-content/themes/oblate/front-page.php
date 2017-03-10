@@ -1,34 +1,36 @@
 <?php get_header(); ?>
 
-	<section class="landing-page">
+<section class="landing-page">
+	
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-		<div class="landing-content vertical-center">
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<div class="banner">
-					<div class="container">
-						<h1>Tania Rascia</h1>
-						<?php the_content(); ?>
-					</div>
-				</div>
-				<?php endwhile; endif; ?>
+	<div class="banner">
+		<div class="container">
+			<h1>Tania Rascia</h1>
+			<?php the_content(); ?>
+				<h1 class="secondary">Latest Articles</h1>
 		</div>
-		<div class="callout-content vertical-center">
-			<?php $args = array(
-							'posts_per_page' => '3',
-						);
+	</div>
+	
+	<?php endwhile; endif; ?>
 
-$latest = new WP_Query( $args );
+	<div class="latest">
+	<?php 
+	$args = array(
+						'posts_per_page' => '3',
+					);
 
-if ( $latest->have_posts() ) : ?>
+	$latest = new WP_Query( $args );
 
-				<div class="latest-container">
-					<?php while ( $latest->have_posts() ) : $latest->the_post(); ?>
-						<?php get_template_part( 'content-front', get_post_format() ); ?>
-					<?php endwhile; ?>
-				</div>
-				<?php endif; wp_reset_postdata(); ?>
-		</div>
+	if ( $latest->have_posts() ) : ?>
 
-	</section>
+
+	<?php while ( $latest->have_posts() ) : $latest->the_post(); ?>
+		<?php get_template_part( 'content-front', get_post_format() ); ?>
+	<?php endwhile; ?>
+<?php endif; wp_reset_postdata(); ?>
+	</div>
+
+</section>
 
 <?php get_footer(); ?>

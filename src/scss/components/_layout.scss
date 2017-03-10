@@ -360,6 +360,7 @@ ul li ul {
 
 @include small-breakpoint {
 	.nav-container {
+		max-width: 880px;
 		padding: 0 1rem;
 		margin-left: auto;
 		margin-right: auto;
@@ -369,6 +370,7 @@ ul li ul {
 		height: $nav-height;
 		border-bottom: 1px solid $border;
 		li {
+			width: calc(100% / 6);
 			display: inline-block;
 		}
 		a {
@@ -377,7 +379,6 @@ ul li ul {
 			height: $nav-height;
 			line-height: $nav-height;
 			text-align: center;
-			&:hover {}
 		}
 	}
 }
@@ -391,6 +392,10 @@ ul li ul {
 		font-size: 2.5rem;
 		margin-bottom: .5rem;
 	}
+	.secondary {
+		margin-top: 0;
+		font-size: 2rem;
+	}
 }
 
 .callout-image {
@@ -401,14 +406,20 @@ ul li ul {
 
 @include small-breakpoint {
 	.banner {
-		padding: 3rem 2rem 2rem;
+		padding: 3rem 0 0;
 		h1 {
 			font-size: 4rem;
+		}
+		.secondary {
+			font-size: 3rem;
 		}
 	}
 	.callout-image {
 		max-width: 100%;
 		margin: 0 1rem;
+	}
+	.landing-page {
+		padding: 0 2rem;
 	}
 }
 
@@ -1134,18 +1145,8 @@ caption {
 
 .lead {
 	font-size: 1.4rem;
-	font-family: $heading-family;
-	line-height: 1.15;
-	a {
-		color: white;
-		&:hover,
-		&:focus,
-		&:active {
-			background: white;
-			color: $link-color;
-			text-shadow: none;
-		}
-	}
+	line-height: 1.4;
+	color: lighten($font-color, 30%);
 }
 
 @include small-breakpoint {
@@ -1250,61 +1251,6 @@ caption {
 	display: none;
 }
 
-.landing-page {
-	display: flex;
-	flex-direction: column;
-	a.button {
-		margin-bottom: 2rem;
-	}
-	.landing-content {
-		background: $link-color;
-		color: white;
-		flex: 1;
-		h1 {
-			color: white;
-		}
-	}
-	.latest-container {
-		padding: 1rem 0;
-	}
-	.callout-content {
-		flex: 1.5;
-		h2 {
-			font-size: 1.6rem;
-			color: white;
-			&.callout-latest {
-				color: $link-color;
-			}
-		}
-	}
-	.article-excerpt {
-		padding: .5rem 0;
-		p {
-			display: none;
-		}
-	}
-}
-
-@media screen and (min-height: 800px) {
-	.landing-page .article-excerpt {
-		padding: 2rem 0;
-		p {
-			display: block;
-		}
-	}
-}
-
-@include mid-breakpoint {
-	.landing-page {
-		min-height: calc(100vh - 110px);
-		flex-direction: row;
-		border-bottom: 1px solid $border;
-		.latest-container {
-			padding: 1rem 2rem 1rem 1rem;
-		}
-	}
-}
-
 .four-oh-four {
 	display: flex;
 	flex-direction: column;
@@ -1338,5 +1284,5 @@ caption {
 /* Selections */
 
 ::selection {
-	background: rgba(254, 241, 50, .7);
+	background: rgba(254, 245, 50, .7);
 }
