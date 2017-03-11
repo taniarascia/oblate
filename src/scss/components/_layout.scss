@@ -316,6 +316,7 @@ ul li ul {
 	background: #fff;
 	z-index: 2;
 	text-align: center;
+	border-bottom: 1px solid $border;
 	&:after {
 		content: '';
 		display: block;
@@ -367,6 +368,8 @@ ul li ul {
 	}
 	.navigation {
 		height: $nav-height;
+		text-align: left;
+		border-bottom: none;
 		li {
 			display: inline-block;
 		}
@@ -405,9 +408,10 @@ ul li ul {
 	.banner {
 		padding: 3rem 0 0;
 		h1 {
-			font-size: 4rem;
+			font-size: 3rem;
 		}
 		.secondary {
+			margin-top: 3rem;
 			font-size: 3rem;
 		}
 	}
@@ -604,7 +608,7 @@ time {
 
 @include small-breakpoint {
 	.article-excerpt {
-		padding: 2rem 0;
+		padding: 1.5rem 0;
 		img {
 			display: block;
 			width: 100px;
