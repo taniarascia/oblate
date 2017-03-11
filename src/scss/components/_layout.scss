@@ -316,7 +316,6 @@ ul li ul {
 	background: #fff;
 	z-index: 2;
 	text-align: center;
-	border-bottom: 1px solid $border;
 	&:after {
 		content: '';
 		display: block;
@@ -345,7 +344,7 @@ ul li ul {
 		font-size: .95rem;
 		font-family: $nav-family;
 		font-weight: 400;
-		color: rgba(0, 0, 0, 0.6);
+		color: rgba(0, 0, 0, 0.5);
 		text-decoration: none;
 		text-align: center;
 		padding: 0 1rem;
@@ -360,7 +359,7 @@ ul li ul {
 
 @include small-breakpoint {
 	.nav-container {
-		max-width: 880px;
+		max-width: 820px;
 		padding: 0 1rem;
 		margin-left: auto;
 		margin-right: auto;
@@ -368,9 +367,7 @@ ul li ul {
 	}
 	.navigation {
 		height: $nav-height;
-		border-bottom: 1px solid $border;
 		li {
-			width: calc(100% / 6);
 			display: inline-block;
 		}
 		a {
