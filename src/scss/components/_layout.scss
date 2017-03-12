@@ -387,14 +387,12 @@ ul li ul {
 /* Front Page */
 
 .banner {
-	padding: 2rem 0 1rem;
+	text-align: center;
+	max-width: 550px;
+	padding: 2rem 0 0;
 	h1 {
 		font-size: 2.5rem;
 		margin-bottom: .5rem;
-	}
-	.secondary {
-		margin-top: 0;
-		font-size: 2rem;
 	}
 }
 
@@ -408,11 +406,7 @@ ul li ul {
 	.banner {
 		padding: 3rem 0 0;
 		h1 {
-			font-size: 3rem;
-		}
-		.secondary {
-			margin-top: 3rem;
-			font-size: 2.5rem;
+			font-size: 4.5rem;
 		}
 	}
 	.callout-image {
@@ -779,7 +773,7 @@ blockquote {
 	justify-content: center;
 	align-items: center;
 	.fa {
-		margin: .25rem;
+		margin: .5rem;
 		&:hover,
 		&:active,
 		&:focus {
