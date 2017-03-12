@@ -18,6 +18,13 @@ body {
 	color: $font-color;
 	position: relative;
 	font-size: 1.15rem;
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+}
+
+.navigation, .main-content, .footer {
+	flex: 1;
 }
 
 // Links
