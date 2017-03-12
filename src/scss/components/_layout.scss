@@ -93,7 +93,7 @@ h5 {
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	margin-bottom: .5rem;
 }
 
@@ -217,6 +217,10 @@ iframe,
 	max-width: $tablet;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.contact-form {
+	max-width: 600px;
 }
 
 p,
@@ -607,9 +611,9 @@ time {
 		padding: 1.5rem 0;
 		img {
 			display: block;
-			width: 100px;
-			height: 100px;
-			max-width: 100px;
+			width: 125px;
+			height: 125px;
+			max-width: 125px;
 			margin: 1rem;
 		}
 		p {
