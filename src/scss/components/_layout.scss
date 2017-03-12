@@ -592,7 +592,7 @@ time {
 		}
 	}
 	.article-image {
-		align-self: center;
+		align-self: flex-start;
 	}
 	img {
 		display: block;
@@ -614,9 +614,9 @@ time {
 
 @include small-breakpoint {
 	.article-excerpt {
-		padding: 1.5rem 0;
+		padding: 2rem 0;
 		.article-image {
-			align-self: top;
+			align-self: center;
 		}
 		img {
 			display: block;
