@@ -1,6 +1,10 @@
 <?php get_header(); ?>
 
 <section class="blog-index">
+	
+	<div class="page-header text-center">
+		<h1>Blog</h1>
+	</div>
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 
