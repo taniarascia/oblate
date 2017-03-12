@@ -16,6 +16,7 @@
 
 	</div>
 
+	<div class="author">
 	<img src="<?php echo site_url(); ?>/wp-content/themes/oblate/images/tr.png">
 	<div class="name"><a href="<?php echo site_url(); ?>/me">Tania Rascia</a> - <a href="https://twitter.com/taniarascia" target="_blank"><i class="fa fa-twitter"></i></a> <a href="https://github.com/taniarascia" target="_blank"><i class="fa fa-github"></i></a> </div>
 	<time datetime="<?php the_time( 'Y-m-d' ); ?>">
