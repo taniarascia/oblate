@@ -87,7 +87,7 @@ h5 {
 }
 
 .article-excerpt h1 {
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	margin-top: 1rem;
 	margin-bottom: 0;
 }
@@ -144,7 +144,7 @@ h3:not(:first-child) {
 
 @include small-breakpoint {
 	.article-excerpt h1 {
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 	}
 	h1 {
 		font-size: 4.5rem;
@@ -599,6 +599,7 @@ time {
 		width: 75px;
 		height: 75px;
 		max-width: 75px;
+		margin: 0 1rem;
 	}
 	&:last-of-type {
 		border-bottom: 0;
@@ -614,12 +615,15 @@ time {
 @include small-breakpoint {
 	.article-excerpt {
 		padding: 1.5rem 0;
+		.article-image {
+			align-self: top;
+		}
 		img {
 			display: block;
 			width: 100px;
 			height: 100px;
 			max-width: 100px;
-			margin: 0 1rem;
+			margin: 0 1.5rem;
 		}
 		p {
 			color: lighten($font-color, 20%);
