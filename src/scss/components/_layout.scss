@@ -93,7 +93,7 @@ h5 {
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 3rem;
 	margin-bottom: .5rem;
 }
 
@@ -637,7 +637,6 @@ time {
 
 .single-article-image {
 	padding-top: 1.5rem;
-	text-align: left;
 	img {
 		width: 75px;
 		height: 75px;
@@ -668,6 +667,11 @@ time {
 		img {
 			width: 150px;
 			height: 150px;
+		}
+	}
+	.single-article-header {
+		h1 {
+			font-size: 3rem;
 		}
 	}
 }
@@ -1125,7 +1129,7 @@ caption {
 
 .lead-excerpt {
 	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
+	margin-bottom: 0;
 	p {
 		font-size: 1.4rem;
 		line-height: 1.4;
