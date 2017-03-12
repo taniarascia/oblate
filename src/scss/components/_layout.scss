@@ -650,6 +650,9 @@ time {
 		margin-bottom: 0;
 		max-width: 800px !important;
 	}
+	time {
+		margin-top: 1.5rem;
+	}
 }
 
 .article-header {
@@ -1133,6 +1136,7 @@ caption {
 		font-size: 1.4rem;
 		line-height: 1.4;
 		color: lighten($font-color, 30%);
+		margin-bottom: 0;
 	}
 }
 
