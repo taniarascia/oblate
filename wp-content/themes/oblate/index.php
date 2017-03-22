@@ -1,24 +1,36 @@
 <?php get_header(); ?>
 
-	<div class="page-header text-center">
-		<h1>Blog</h1>
+<header class="page-header">
+	<h1>Blog</h1>
+</header>
+
+<div class="large-container">
+	<div class="grid">
+
+		<?php 
+		
+		if ( have_posts() ) : while ( have_posts() ) : the_post();
+		
+		 get_template_part( 'content', get_post_format() );
+		
+		endwhile; ?>
+
+	</div>
+</div>
+
+<div class="large-container">
+
+	<div class="posts-links">
+		<div class="pagination-left">
+			<?php previous_posts_link(); ?>
+		</div>
+		<div class="pagination-right">
+			<?php next_posts_link(); ?>
+		</div>
 	</div>
 
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+</div>
 
-		get_template_part( 'content', get_post_format() );
+<?php endif; ?>
 
-	endwhile; ?>
-	
-		<div class="posts-links">
-			<div class="pagination-left">
-				<?php previous_posts_link(); ?>
-			</div>
-			<div class="pagination-right">
-				<?php next_posts_link(); ?>
-			</div>
-		</div>
-
-	<?php endif; ?>
-	
 <?php get_footer(); ?>

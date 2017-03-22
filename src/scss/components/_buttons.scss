@@ -55,9 +55,9 @@ a.button.alt-button,
 	&:hover,
 	&:focus,
 	&:active {
-		color: $alt-color;
-		background: white;
-		border: 1px solid $alt-color;
+		color: white;
+		background: darken($alt-color, 10%);
+		border: 1px solid darken($alt-color, 10%);
 	}
 }
 

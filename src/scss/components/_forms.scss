@@ -19,20 +19,15 @@ select,
 [type="tel"],
 [type="url"],
 [type="password"] {
-		@extend .forms;
-		&:hover {
-			border: 1px solid darken($border, 10%);
-		}
-		&:focus,
-		&:active {
-			border: 1px solid $link-color;
-			outline: 0;
-		}
+	@extend .forms;
+	&:hover {
+		border: 1px solid darken($border, 10%);
 	}
-
-input[type="search"] {
-	margin-bottom: 20px;
-	margin-right: .5rem;
+	&:focus,
+	&:active {
+		border: 1px solid $link-color;
+		outline: 0;
+	}
 }
 
 textarea {
@@ -49,7 +44,7 @@ legend {
 	font-family: $heading-family;
 }
 
-label > .label-body {
+label>.label-body {
 	display: inline-block;
 	margin-left: .5rem;
 	font-weight: normal;

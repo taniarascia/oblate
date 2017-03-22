@@ -10,9 +10,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 		
 			comments_template();
 		
-		endif; ?>
-
-<?php	
+		endif; 
 
 endwhile; endif; 
 

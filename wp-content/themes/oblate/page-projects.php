@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section id="primitive" class="projects">
-	<div class="small-container">
+	<div class="container">
 		<h1>Primitive</h1>
 		<p>A minimalist CSS framework and Sass starter-pack for front end web developers. Also includes <span class="eighties">Eighties Mode!</span></p>
 		<a class="button-primitive" href="https://taniarascia.github.io/primitive/" target="_blank">View Project</a>
@@ -10,7 +10,7 @@
 </section>
 
 <section id="new-moon" class="projects">
-	<div class="small-container">
+	<div class="container">
 		<img src="<?php echo site_url(); ?>/wp-content/uploads/newmoon.png" class="responsive-image">
 		<h1>New Moon</h1>
 		<p>Beautiful syntax highlighting for Atom, Brackets, &amp; Sublime.</p>
@@ -20,7 +20,7 @@
 </section>
 
 <section id="music" class="projects">
-	<div class="small-container">
+	<div class="container">
 		<h1>Ivory &amp; Ivory</h1>
 		<p>Really weird musical side project.</p>
 		<a class="button" target="_blank" href="https://www.taniarascia.com/music/">View Project</a>
@@ -28,7 +28,7 @@
 </section>
 
 <section id="balance" class="projects">
-	<div class="small-container">
+	<div class="container">
 		<img src="https://taniarascia.github.io/balancewebdev/images/enso.png" class="responsive-image">
 		<h1>Balance Web Development</h1>
 		<p>A timeline of web design trends from 1996 to 2016.</p>
