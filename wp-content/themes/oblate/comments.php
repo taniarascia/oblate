@@ -3,43 +3,46 @@
 } ?>
 
 	<div id="comments" class="comments-area">
+		<div class="container">
 
-		<?php if ( have_comments() ) : ?>
+			<?php	comment_form( array(
+    					'title_reply' => 'Write a response'
+						)); ?>
 
-		<h3 class="comments-title">
+				<?php if ( have_comments() ) : ?>
+
+					<h3 class="comments-title">
 		<?php
-		printf( _nx( 'Responses', '%1$s Responses', get_comments_number(), ''),
+		printf( _nx( 'responses', '%1$s responses', get_comments_number(), ''),
 			number_format_i18n( get_comments_number() ), get_the_title() );
 		?>
 		</h3>
-		<ul class="comment-list">
-			<?php
+					<ul class="comment-list">
+						<?php
 		wp_list_comments( array(
 			'short_ping'  => true,
-			'avatar_size' => 50,
+			'avatar_size' => 45,
 		) );
 	?>
-		</ul>
-		<div class="comment-links">
-			<div class="pagination-left">
-				<?php previous_comments_link(); ?>
-			</div>
-			<div class="pagination-right">
-				<?php next_comments_link(); ?>
-			</div>
-		</div>
+					</ul>
+					<div class="comment-links">
+						<div class="pagination-left">
+							<?php previous_comments_link(); ?>
+						</div>
+						<div class="pagination-right">
+							<?php next_comments_link(); ?>
+						</div>
+					</div>
 
-		<?php endif; // have_comments() 
-
-		/* $args = array('comment_notes_after' => '<p style="font-size: .9rem;margin-bottom:1rem;">If you would like to post code in your comments, please wrap it in a <code style="font-size:.9rem;">&lt;pre&gt;&lt;code&gt;</code>. HTML/PHP code must be <a href="http://www.freeformatter.com/html-escape.html">escaped</a>. Failure to do so will make me sad. </p>');*/ comment_form(); 
+					<?php endif; // have_comments() 
 
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 			if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 
-		<p class="no-comments">
-			<?php _e( 'Comments are closed.' ); ?>
-		</p>
+						<p class="no-comments">
+							<?php _e( 'Comments are closed.' ); ?>
+						</p>
 
-		<?php endif; ?>
+						<?php endif; ?>
 
-	</div>
+		</div>

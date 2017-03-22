@@ -1,11 +1,10 @@
 /* Variables
   =============== */
 
-
 /* Mobile Breakpoints */
 
-$mobile: 600px;
-$tablet: 800px;
+$mobile: 500px;
+$tablet: 700px;
 $desktop: 1200px;
 
 /* Content Font Styling */ 
@@ -13,24 +12,30 @@ $desktop: 1200px;
 $font-style: normal;
 $font-variant: normal;
 $font-weight: normal;
-$font-color: #404040;
+$font-color: #444;
 $font-size: 1rem;
-$font-family: 'PT Serif', Georgia, serif;
+$body-size: 1.1rem;
 
 $line-height: 1.6;
-$link-color: #0068FF;
-$alt-color: #e43557;
 
-$heading-color: #111;
-$heading-family: 'Heebo', -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
-$nav-family: -apple-system, BlinkMacSystemFont, 'Heebo', Helvetica Neue, Helvetica, Arial, sans-serif;
-$button-family: -apple-system, BlinkMacSystemFont, 'Heebo', Helvetica Neue, Helvetica, Arial, sans-serif;
+$margin: 1.5rem;
+
+$link-color: #0066FA;
+$alt-color: #FC1052;
+$heading-color: #222;
+$light-color: lighten($font-color, 30%);
+
+$font-family: 'Roboto', sans-serif;
+$heading-family: 'Roboto', sans-serif;
+$nav-family: 'Roboto', sans-serif;
+$button-family: 'Roboto', sans-serif;
+$background: #efefef;
+$transition: all .2s ease;
 
 /* Borders */
 
 $border: #e2e2e2;
-$background: #efefef;
-$light-background: #f2f2f2;
+
 
 /* Code */
 
@@ -38,7 +43,7 @@ $code: Menlo, 'Roboto Mono', Courier New, monospace;
 
 /* Navigation */
 
-$nav-height: 50px;
+$nav-height: 60px;
 
 /* Variables */
 

@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 
+	<header class="page-header">
+		<h1><?php the_title(); ?></h1>
+	</header>
+
 	<div class="portfolio-container vertical-center">
 
 		<?php $args = array(
@@ -13,10 +17,14 @@
 			if ( $work->have_posts() ) :  while ( $work->have_posts() ) : $work->the_post(); ?>
 
 			<div class="portfolio-example">
-				<div class="portfolio-item">
-					<a href="<?php echo the_permalink(); ?>"><img src="<?php echo the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title(); ?>"></a>
-					<h3><?php the_title(); ?></h3>
-				</div>
+				<a href="<?php echo the_permalink(); ?>">
+					<div class="portfolio-item">
+						<img src="<?php echo the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title(); ?>">
+						<h3><?php the_title(); ?></h3>
+						<?php the_excerpt(); ?>
+							<p class="more-info">Design / Development</p>
+					</div>
+				</a>
 			</div>
 
 			<?php endwhile; endif; wp_reset_postdata(); ?>

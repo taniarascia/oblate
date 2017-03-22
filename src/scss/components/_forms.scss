@@ -2,58 +2,37 @@
 
 // Forms Extend
 .forms {
-	padding: 12px;
-	border-radius: 0;
-	border: 1px solid $background;
-	margin: auto auto 6px;
+	padding: 1rem;
+	border-radius: 6px;
+	border: 1px solid $border;
 	max-width: 100%;
-	font-family: $code;
 	font-size: .9rem;
-	transition: ease .2s all;
-	background: $background;
-	font-weight: 400;
-	-webkit-font-smoothing: subpixel-antialiased;
 }
 
 // Forms Output CSS
-input {
-	&[type="email"],
-	&[type="number"],
-	&[type="search"],
-	&[type="text"],
-	&[type="tel"],
-	&[type="url"],
-	&[type="password"] {
+textarea,
+select,
+[type="email"],
+[type="number"],
+[type="search"],
+[type="text"],
+[type="tel"],
+[type="url"],
+[type="password"] {
 		@extend .forms;
+		&:hover {
+			border: 1px solid darken($border, 10%);
+		}
 		&:focus,
 		&:active {
-			border: 1px solid $border;
-			background: white;
+			border: 1px solid $link-color;
 			outline: 0;
 		}
-		&:hover {
-			border: 1px solid $border;
-		}
 	}
-}
 
 input[type="search"] {
 	margin-bottom: 20px;
 	margin-right: .5rem;
-}
-
-textarea,
-select {
-	@extend .forms;
-	&:focus,
-	&:active {
-		border: 1px solid $border;
-		background: transparent;
-		outline: 0;
-	}
-	&:hover {
-		border: 1px solid darken($border, 5%);
-	}
 }
 
 textarea {
@@ -64,9 +43,9 @@ textarea {
 label,
 legend {
 	display: block;
-	margin: .4rem 0 .2rem;
-	font-weight: 600;
-	font-size: 1.1rem;
+	margin: 0 0 .25rem;
+	font-weight: 700;
+	font-size: 1rem;
 	font-family: $heading-family;
 }
 
