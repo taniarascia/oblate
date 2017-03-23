@@ -389,8 +389,8 @@ mark {
 	border-bottom: 1px solid $border;
 	h1 {
 		margin-top: 0;
-		font-size: 1.5rem;
 		line-height: 1.2;
+		font-size: 1.25rem;
 	}
 	a {
 		display: block;
@@ -402,7 +402,51 @@ mark {
 }
 
 .article-image {
-	display: none;
+	padding-left: 1rem;
+	img {
+		height: 50px;
+		width: 50px;
+		min-width: 50px;
+	}
+}
+
+.article-flex {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	.basic-image {
+		padding-left: 1rem;
+		img {
+			width: 50px;
+			height: 50px;
+			min-width: 50px;
+		}
+	}
+}
+
+@include small-breakpoint {
+	.article-excerpt {
+		h1 {
+			font-size: 1.5rem;
+		}
+	}
+	.article-flex {
+		.basic-image {
+			img {
+				width: 75px;
+				height: 75px;
+				min-width: 75px;
+			}
+		}
+	}
+}
+
+.cell {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: center;
 }
 
 
@@ -416,6 +460,7 @@ mark {
 		flex-wrap: wrap;
 	}
 	.cell {
+		display: block;
 		width: calc(33.333% - 2rem);
 		margin: 1rem;
 		border: 1px solid $border;
@@ -428,6 +473,7 @@ mark {
 	.article-image {
 		display: block;
 		padding-bottom: 2rem;
+		padding-left: 0;
 		img {
 			margin: 0 auto;
 			display: block;
@@ -545,6 +591,10 @@ a.social-icon {
 
 
 /* MailChimp */
+
+#mc_embed_signup {
+	max-width: 300px;
+}
 
 #mc_embed_signup br,
 #mc_embed_signup p {
