@@ -39,7 +39,7 @@
 			<h4>Popular Posts</h4>
 
 			<?php $args = array(
-				'order' => 'desc',
+				'order' => 'asc',
 				'posts_per_page' => '3',
 				'category_name' => 'Popular',
 			);
