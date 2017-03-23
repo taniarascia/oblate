@@ -1,5 +1,18 @@
 <?php get_header(); ?>
 
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+<header class="page-header">
+	<div class="small-container">
+		<h1>
+			<?php the_title; ?>
+		</h1>
+		<?php the_content(); ?>
+	</div>
+</header>
+
+<?php endwhile; endif; ?>
+
 <section id="primitive" class="projects">
 	<div class="container">
 		<h1>Primitive</h1>

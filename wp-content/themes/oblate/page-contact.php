@@ -3,12 +3,13 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <header class="page-header">
-	<h1>Say Hello</h1>
+	<div class="small-container">
+		<h1>
+			<?php the_title; ?>
+		</h1>
+		<?php the_content(); ?>
+	</div>
 </header>
-
-<div class="container">
-	<?php the_content(); ?>
-</div>
 
 <?php endwhile; endif; ?>
 

@@ -1,15 +1,19 @@
 <?php get_header(); ?>
 
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
 <header class="page-header">
-	<div class="container">
+	<div class="small-container">
 		<h1>
-			<?php the_title(); ?>
+			<?php the_title; ?>
 		</h1>
 		<?php the_content(); ?>
 	</div>
 </header>
 
-<div class="container">
+<?php endwhile; endif; ?>
+	
+	<div class="container">
 
 	<?php $args = array(
 				'order' => 'desc',

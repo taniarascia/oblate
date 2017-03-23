@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <header class="page-header">
-	<div class="container">
+	<div class="small-container">
 		<h1>
 			<?php the_search_query(); ?>
 		</h1>
@@ -9,7 +9,7 @@
 	</div>
 </header>
 
-<div class="container">
+<div class="small-container">
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 

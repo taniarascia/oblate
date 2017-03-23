@@ -6,4 +6,5 @@
 		</a>
 	</h1>
 	<?php the_excerpt(); ?>
+	<?php the_tags( '<div class="tags">', '', '</div>' ); ?>
 </article>

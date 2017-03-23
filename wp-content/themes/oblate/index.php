@@ -1,24 +1,24 @@
 <?php get_header(); ?>
 
 <header class="page-header">
-	<h1>Blog</h1>
+	<div class="small-container">
+		<h1>Blog</h1>
+	</div>
 </header>
 
-<div class="large-container">
-	<div class="grid">
+<div class="small-container">
 
 		<?php 
 		
 		if ( have_posts() ) : while ( have_posts() ) : the_post();
 		
-		 get_template_part( 'content', get_post_format() );
+		 get_template_part( 'content-basic', get_post_format() );
 		
 		endwhile; ?>
 
 	</div>
-</div>
 
-<div class="large-container">
+<div class="small-container">
 
 	<div class="posts-links">
 		<div class="pagination-left">

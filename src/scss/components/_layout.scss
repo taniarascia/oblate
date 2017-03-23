@@ -290,40 +290,6 @@ mark {
 }
 
 
-/* Front Page */
-
-.banner {
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 550px;
-	padding: 2rem 0 0;
-	h1 {
-		font-size: 2.5rem;
-		margin-bottom: .5rem;
-	}
-}
-
-.callout-image {
-	max-width: 150px;
-	float: right;
-	margin: 0 1rem;
-}
-
-@include small-breakpoint {
-	.banner {
-		padding: 3rem 2rem 0;
-		h1 {
-			font-size: 4.5rem;
-		}
-	}
-	.callout-image {
-		max-width: 100%;
-		margin: 0 1rem;
-	}
-}
-
-
 /* Pages */
 
 .page-header {
@@ -356,9 +322,10 @@ mark {
 /* Article Excerpts */
 
 .article-excerpt {
-	max-width: $tablet;
+	max-width: $mobile;
 	margin: 0 auto;
 	padding: 2rem 0;
+	border-bottom: 1px solid $border;
 	h1 {
 		margin-top: 0;
 		font-size: 1.5rem;
@@ -390,9 +357,11 @@ mark {
 		width: calc(33.333% - 2rem);
 		margin: 1rem;
 		border: 1px solid $border;
+		position: relative;
+		padding: 2rem 2rem 4rem !important; 
 	}
 	.article-excerpt {
-		padding: 2rem;
+		padding: 2rem 0;
 	}
 	.article-image {
 		display: block;
@@ -400,8 +369,8 @@ mark {
 		img {
 			margin: 0 auto;
 			display: block;
-			height: 150px;
-			width: 150px;
+			height: 100px;
+			width: 100px;
 		}
 	}
 }
@@ -551,9 +520,17 @@ a.social-icon {
 	&:hover,
 	&:focus,
 	&:active {
-		background: darken($background, 10%);
-		border: 1px solid darken($background, 10%);
+		background: darken($background, 7%);
+		border: 1px solid darken($background, 7%);
 		text-decoration: none;
+	}
+}
+
+@include large-breakpoint {
+	.tags-container {
+		position: absolute;
+		bottom: 2rem;
+		left: 2rem;
 	}
 }
 
@@ -695,7 +672,7 @@ a.social-icon {
 
 .posts-links,
 .comment-links {
-	padding: 0;
+	padding: 1rem 0;
 	&:after {
 		content: '';
 		display: table;
@@ -705,7 +682,7 @@ a.social-icon {
 
 @include small-breakpoint {
 	.posts-links {
-		padding-top: 1rem;
+		padding: 1.5rem 0;
 	}
 }
 
@@ -739,6 +716,7 @@ a.social-icon {
 	padding: 1rem 1.5rem;
 	line-height: 0;
 	margin: 0;
+	font-size: 1.1rem;
 }
 
 input[type="search"] {

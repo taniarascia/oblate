@@ -33,6 +33,8 @@
 					<?php next_comments_link(); ?>
 				</div>
 			</div>
+			
+			<p class="text-center"><a href="<?php echo get_comments_link(); ?>">Write a response</a></p>
 
 			<?php endif; // have_comments() 
 
