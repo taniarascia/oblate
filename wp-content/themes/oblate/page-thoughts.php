@@ -12,7 +12,8 @@
 <?php endwhile; endif; ?>
 
 	
-	<div class="container">
+<div class="large-container">
+	<div class="grid">
 
 	<?php $args = array(
 				'order' => 'desc',
@@ -27,6 +28,8 @@
 				get_template_part( 'content', get_post_format() );
 
 			endwhile; ?>
+			
+	</div>
 
 	<div class="posts-links">
 		<div class="pagination-left">

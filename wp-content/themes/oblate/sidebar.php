@@ -2,12 +2,6 @@
 	<header class="sidebar-header">
 		<h1>Tania Rascia</h1>
 		<p>I'm Tania, a front end web developer from Chicago.</p>
-		<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/taniarascia" data-count-href="/taniarascia/followers" data-count-api="/users/taniarascia#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @taniarascia on GitHub">Follow</a>
-<a class="twitter-follow-button"
-  href="https://twitter.com/taniarascia"
-  data-show-screen-name="false">
-Follow</a>
 	</header>
 
 	<nav class="sidebar-nav">
@@ -30,6 +24,10 @@ Follow</a>
 
 		<div class="social-icons">
 			<a href="<?php echo site_url(); ?>/feed" class="social-icon"><i class="fa fa-rss fa-2x"></i></a>
+			<a href="https://twitter.com/taniarascia" class="social-icon" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+			<a href="https://github.com/taniarascia" class="social-icon" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+			<a href="https://codepen.io/taniarascia/" class="social-icon" target="_blank"><i class="fa fa-codepen fa-2x"></i></a>
+			<a href="https://stackoverflow.com/users/4541434/tania-rascia" class="social-icon" target="_blank"><i class="fa fa-stack-overflow fa-2x"></i></a>
 		</div>
 
 	</section>
