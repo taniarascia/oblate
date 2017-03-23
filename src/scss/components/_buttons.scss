@@ -45,10 +45,10 @@ button,
 	&:focus {
 		outline: 0;
 		transform: scale(.95);
-	}
+	} 
 }
 
-// Button Output
+// Alt button
 a.button.alt-button,
 .button.alt-button {
 	background: $alt-color;
@@ -62,7 +62,7 @@ a.button.alt-button,
 	}
 }
 
-// Button Output
+// Ghost button
 a.button.ghost-button,
 .button.ghost-button {
 	color: $link-color;
@@ -74,5 +74,20 @@ a.button.ghost-button,
 		color: white;
 		background: $link-color;
 		border: 1px solid $link-color;
+	}
+}
+
+// Other button
+a.button.secondary-button,
+.button.secondary-button {
+	color: $heading-color;
+	background: #f0f0f0;
+	border: 1px solid $border;
+	&:hover,
+	&:focus,
+	&:active {
+		color: black;
+		background: darken(#f0f0f0, 5%);
+		border: 1px solid darken($border, 7%);
 	}
 }

@@ -1,18 +1,18 @@
 <aside class="sidebar">
 	<header class="sidebar-header">
+	<img src="<?php echo site_url(); ?>/wp-content/uploads/trsidebar.jpg" class="my-face">
 		<h1><a href="<?php echo site_url(); ?>">Tania Rascia</a></h1>
 		<p>I'm Tania, a web designer and developer from Chicago. More about me and my work below.</p>
 	</header>
 
 	<nav class="sidebar-nav">
-		<a href="<?php echo site_url(); ?>/me">Me</a>
-		<a href="<?php echo site_url(); ?>/work">Work</a>
-		<a href="<?php echo site_url(); ?>/projects">Play</a>
-		<a href="<?php echo site_url(); ?>/contact">Contact</a>
+		<a href="<?php echo site_url(); ?>/me">About Me</a>
+		<a href="<?php echo site_url(); ?>/work">Professional Work</a>
+		<a href="<?php echo site_url(); ?>/projects">Personal Projects</a>
 	</nav>
 
 	<section class="sidebar-content">
-		<p>My site is free – and free of ads, clickbait, pop-ups, social media, and bullshit. If you're all about that and my site has helped you out - consider donating.</p>
+		<p>My site is free – and free of ads, clickbait, pop-ups, social media, and bullshit. If this website has been valuable to you, please consider donating.</p>
 
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 			<input type="hidden" name="cmd" value="_s-xclick" />

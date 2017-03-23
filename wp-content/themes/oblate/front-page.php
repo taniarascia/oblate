@@ -8,6 +8,8 @@
 		<div class="small-container">
 			<h1>Tania Rascia</h1>
 			<?php the_content(); ?>
+			<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/taniarascia" data-count-href="/taniarascia/followers" data-count-api="/users/taniarascia#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @taniarascia on GitHub">Follow</a>
 		</div>
 	</header>
 
