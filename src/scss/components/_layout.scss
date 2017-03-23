@@ -171,6 +171,7 @@ mark {
 	align-items: center;
 	text-align: center;
 	transition: left .3s ease;
+	height: $nav-height;
 	border-bottom: 1px solid $border;
 	ul {
 		list-style: none;
@@ -205,6 +206,10 @@ mark {
 	}
 }
 
+#menu-item-2473 {
+	display: none;
+}
+
 @include small-breakpoint {
 	.navigation {
 		height: $nav-height;
@@ -237,6 +242,9 @@ mark {
 		i {
 			line-height: $nav-height;
 		}
+	}
+	#menu-item-2473 {
+		display: block;
 	}
 }
 
