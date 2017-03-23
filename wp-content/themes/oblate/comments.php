@@ -2,7 +2,7 @@
 	return;
 } ?>
 
-<div id="comments" class="comments-area">
+<section id="comments" class="comments-area">
 	<div class="container">
 
 		<?php	comment_form( array(
@@ -33,7 +33,7 @@
 					<?php next_comments_link(); ?>
 				</div>
 			</div>
-			
+
 			<p class="text-center"><a href="<?php echo get_comments_link(); ?>">Write a response</a></p>
 
 			<?php endif; // have_comments() 
@@ -48,4 +48,4 @@
 			<?php endif; ?>
 
 	</div>
-</div>
+</section>

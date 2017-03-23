@@ -4,7 +4,9 @@
 
 <header class="page-header">
 	<div class="small-container">
-		<h1><?php the_title(); ?></h1>
+		<h1>
+			<?php the_title(); ?>
+		</h1>
 		<?php the_content(); ?>
 	</div>
 </header>
@@ -14,7 +16,7 @@
 </div>
 
 <div class="container">
-	<p class="text-center"><strong>Popular topics:</strong> <a href="<?php echo site_url(); ?>?s=wordpress">WordPress</a>, <a href="<?php echo site_url(); ?>?s=bootstrap">Bootstrap</a>, <a href="<?php echo site_url(); ?>?s=jekyll">Jekyll</a>, <a href="<?php echo site_url(); ?>?s=sass">Sass</a>, <a href="<?php echo site_url(); ?>?s=navigation">navigation</a>
+	<p class="text-center"><small><strong>Popular topics:</strong> <a href="<?php echo site_url(); ?>?s=wordpress">WordPress</a>, <a href="<?php echo site_url(); ?>?s=bootstrap">Bootstrap</a>, <a href="<?php echo site_url(); ?>?s=jekyll">Jekyll</a>, <a href="<?php echo site_url(); ?>?s=sass">Sass</a>, <a href="<?php echo site_url(); ?>?s=navigation">navigation</a></small></p>
 </div>
 
 <?php endwhile; endif; ?>

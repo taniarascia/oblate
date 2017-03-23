@@ -1,6 +1,6 @@
 <aside class="sidebar">
 	<header class="sidebar-header">
-		<h1>Tania Rascia</h1>
+		<h1><a href="<?php echo site_url(); ?>">Tania Rascia</a></h1>
 		<p>I'm Tania, a web designer and developer from Chicago. More about me and my work below.</p>
 	</header>
 
@@ -12,7 +12,6 @@
 	</nav>
 
 	<section class="sidebar-content">
-
 		<p>My site is free – and free of ads, clickbait, pop-ups, social media, and bullshit. If you're all about that and my site has helped you out - consider donating.</p>
 
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -29,7 +28,5 @@
 			<a href="https://codepen.io/taniarascia/" class="social-icon" target="_blank"><i class="fa fa-codepen fa-2x"></i></a>
 			<a href="https://stackoverflow.com/users/4541434/tania-rascia" class="social-icon" target="_blank"><i class="fa fa-stack-overflow fa-2x"></i></a>
 		</div>
-
 	</section>
-
 </aside>

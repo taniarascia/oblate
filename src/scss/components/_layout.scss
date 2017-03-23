@@ -191,7 +191,7 @@ mark {
 	}
 	a {
 		display: block;
-		font-size: .95rem;
+		font-size: .9rem;
 		font-family: $nav-family;
 		font-weight: 400;
 		color: rgba(0, 0, 0, .8);
@@ -206,13 +206,28 @@ mark {
 	}
 }
 
-#menu-item-2473 {
+#menu-item-2473,
+#menu-item-2689 {
 	display: none;
 }
 
 @include small-breakpoint {
 	.navigation {
 		height: $nav-height;
+		a {
+			height: $nav-height;
+			line-height: $nav-height;
+			text-align: center;
+			padding: 0 1rem;
+			font-size: .9rem;
+		}
+		li {
+			display: inline-block;
+		}
+		i {
+			text-align: right;
+			line-height: $nav-height;
+		}
 		.home {
 			display: flex;
 			flex-direction: row;
@@ -228,31 +243,9 @@ mark {
 		.search a {
 			text-align: right;
 		}
-		.face {
-			display: block;
-			a {
-				display: block;
-				padding: 5px;
-			}
-			img {
-				display: block;
-			}
-		}
-		li {
-			display: inline-block;
-		}
-		a {
-			height: $nav-height;
-			line-height: $nav-height;
-			text-align: center;
-			padding: 0 1rem;
-		}
-		i {
-			text-align: right;
-			line-height: $nav-height;
-		}
 	}
-	#menu-item-2473 {
+	#menu-item-2473,
+	#menu-item-2689 {
 		display: inline-block;
 	}
 }
@@ -293,6 +286,9 @@ mark {
 	h1 {
 		color: white;
 		font-size: 1.2rem;
+		a {
+			color: white;
+		}
 	}
 }
 
@@ -359,10 +355,16 @@ mark {
 
 .single-header {
 	text-align: center;
-	padding: 2.5rem 0;
+	padding: 1.5rem 0;
 	h1 {
 		font-weight: 900;
 		margin: .5rem 0;
+	}
+}
+
+@include small-breakpoint {
+	.single-header {
+		padding: 2.5rem 0;
 	}
 }
 

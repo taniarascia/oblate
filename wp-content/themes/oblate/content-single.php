@@ -9,9 +9,9 @@
 				<?php the_title(); ?>
 			</h1>
 			<time datetime="<?php the_time( 'Y-m-d' ); ?>">
-						<?php the_time( 'F j, Y' ); ?> -
-							<?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?>
-					</time>
+				<?php the_time( 'F j, Y' ); ?> -
+				<?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?>
+			</time>
 		</div>
 	</header>
 
@@ -22,20 +22,15 @@
 				<?php the_excerpt(); ?>
 			</div>
 			<?php } ?>
-
 			<?php the_content(); ?>
-
 			<?php the_tags( '<div class="tags">', '', '</div>' ); ?>
-
 		</div>
 
 		<div class="email-container">
 			<div class="dark-box">
 				<div class="container">
 					<h2>My email list</h2>
-
 					<p>If you'd like to get on the list to be updated about any posts, e-books, podcasts, or video tutorials to come, sign up below!</p>
-
 					<div id="mc_embed_signup">
 						<form action="//taniarascia.us12.list-manage.com/subscribe/post?u=ec794fab6e35a491a001cc25d&amp;id=5276386071" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 							<label for="mce-EMAIL" style="margin-bototm:.5rem;">Email</label>
