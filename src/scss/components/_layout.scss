@@ -75,11 +75,15 @@ h2 {
 }
 
 h3 {
-	font-size: 1.25rem;
+	font-size: 1.4rem;
+	color: lighten($heading-color, 25%);
 }
 
 h4 {
-	font-size: 1rem;
+	font-size: 1.2rem;
+	padding-bottom: .5rem;
+	color: lighten($heading-color, 25%);
+	border-bottom: 1px solid $border;
 }
 
 h5 {
@@ -95,14 +99,10 @@ h5 {
 		font-size: 1.75rem;
 	}
 	h3 {
-		color: lighten($heading-color, 25%);
 		font-size: 1.3rem;
 	}
 	h4 {
-		font-size: 1.1rem;
-		padding-bottom: .5rem;
-		color: lighten($heading-color, 25%);
-		border-bottom: 1px solid $border;
+		font-size: 1.2rem;
 	}
 	h5 {
 		font-size: 1.2rem;
@@ -221,7 +221,8 @@ mark {
 			text-align: center;
 			cursor: pointer;
 		}
-		.home, .search {
+		.home,
+		.search {
 			width: 60px;
 		}
 		.search a {
@@ -375,7 +376,7 @@ mark {
 .article-excerpt {
 	max-width: $mobile;
 	margin: 0 auto;
-	padding: 2rem 0;
+	padding: 1rem 0;
 	border-bottom: 1px solid $border;
 	h1 {
 		margin-top: 0;
@@ -553,7 +554,8 @@ a.social-icon {
 	margin: 3rem 0;
 }
 
-.latest, .popular {
+.latest,
+.popular {
 	margin-bottom: 3rem;
 	h1 {
 		margin-top: 0;
@@ -774,7 +776,7 @@ a.social-icon {
 	text-align: center;
 	label {
 		display: inline-block;
-		width: 80%;
+		width: 70%;
 	}
 }
 
