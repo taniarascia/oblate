@@ -20,6 +20,7 @@
 			<?php $args = array(
 				'order' => 'desc',
 				'posts_per_page' => '3',
+				'category__not_in' => array( 5 ),
 			);
 
 			$latest = new WP_Query( $args );
@@ -42,6 +43,7 @@
 				'order' => 'asc',
 				'posts_per_page' => '3',
 				'category_name' => 'Popular',
+				'category__not_in' => array( 5 ),
 			);
 
 			$popular = new WP_Query( $args );
