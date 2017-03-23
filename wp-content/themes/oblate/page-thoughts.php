@@ -4,14 +4,13 @@
 
 <header class="page-header">
 	<div class="small-container">
-		<h1>
-			<?php the_title; ?>
-		</h1>
+		<h1><?php the_title(); ?></h1>
 		<?php the_content(); ?>
 	</div>
 </header>
 
 <?php endwhile; endif; ?>
+
 	
 	<div class="container">
 
@@ -25,7 +24,7 @@
 
 			if ( $thoughts->have_posts() ) :  while ( $thoughts->have_posts() ) : $thoughts->the_post(); 
 
-				get_template_part( 'content-basic', get_post_format() );
+				get_template_part( 'content', get_post_format() );
 
 			endwhile; ?>
 
