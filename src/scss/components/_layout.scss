@@ -178,7 +178,11 @@ mark {
 		margin: 0;
 	}
 	li {
+		display: inline-block;
 		padding: 0;
+	}
+	.face {
+		display: none;
 	}
 	.current-menu-item a {
 		color: black;
@@ -213,6 +217,7 @@ mark {
 			cursor: pointer;
 		}
 		.face {
+			display: block;
 			a {
 				display: block;
 				padding: 5px;
@@ -262,6 +267,7 @@ mark {
 	background: $heading-color;
 	transform: translate3d(-300px, 0, 0);
 	transition: transform .3s ease;
+	font-size: .95rem;
 	color: rgba(255, 255, 255, .5);
 }
 
@@ -278,10 +284,12 @@ mark {
 }
 
 .sidebar-nav {
+	padding-top: 1.5rem;
 	a {
 		display: block;
-		padding: .5rem 1.5rem;
+		padding: .4rem 1.5rem;
 		color: rgba(255, 255, 255, 1);
+		font-size: .95rem;
 		&:hover {
 			background: lighten($heading-color, 10%);
 			text-decoration: none;
@@ -294,11 +302,20 @@ mark {
 
 .page-header {
 	text-align: center;
-	padding: 2.5rem 0;
+	padding: 1.5rem 0;
 	h1 {
 		margin: .5rem 0;
 		font-weight: 900;
-		font-size: 3rem;
+		font-size: 2rem;
+	}
+}
+
+@include small-breakpoint {
+	.page-header {
+		padding: 2.5rem 0;
+		h1 {
+			font-size: 3rem;
+		}
 	}
 }
 
@@ -358,7 +375,7 @@ mark {
 		margin: 1rem;
 		border: 1px solid $border;
 		position: relative;
-		padding: 2rem 2rem 4rem !important; 
+		padding: 2rem 2rem 4rem !important;
 	}
 	.article-excerpt {
 		padding: 2rem 0;
