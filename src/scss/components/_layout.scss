@@ -197,7 +197,7 @@ mark {
 		color: rgba(0, 0, 0, .8);
 		text-decoration: none;
 		text-align: center;
-		padding: 0 1rem;
+		padding: 0 .5rem;
 		&:hover,
 		&:active,
 		&:focus {
@@ -221,6 +221,12 @@ mark {
 			text-align: center;
 			cursor: pointer;
 		}
+		.home, .search {
+			width: 120px;
+		}
+		.search a {
+			text-align: right;
+		}
 		.face {
 			display: block;
 			a {
@@ -238,8 +244,10 @@ mark {
 			height: $nav-height;
 			line-height: $nav-height;
 			text-align: center;
+			padding: 0 1rem;
 		}
 		i {
+			text-align: right;
 			line-height: $nav-height;
 		}
 	}
@@ -326,6 +334,25 @@ mark {
 	}
 }
 
+.landing-header {
+	text-align: left;
+	padding: 1.5rem 0;
+	h1 {
+		margin: .5rem 0;
+		font-weight: 900;
+		font-size: 2rem;
+	}
+}
+
+@include small-breakpoint {
+	.landing-header {
+		padding: 2.5rem 0;
+		h1 {
+			font-size: 3rem;
+		}
+	}
+}
+
 
 /* Articles */
 
@@ -373,6 +400,7 @@ mark {
 
 @include large-breakpoint {
 	.grid {
+		margin: 0 -1rem;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -521,10 +549,21 @@ a.social-icon {
 	margin: 4rem 0;
 }
 
+.section-content {
+	margin: 3rem 0;
+}
+
+.latest {
+	margin-bottom: 3rem;
+	h1 {
+		margin-top: 0;
+	}
+}
+
 .dark-box {
 	background: $heading-color;
-	color: rgba(255, 255, 255, .8);
-	padding: 2rem;
+	color: rgba(255, 255, 255, .6);
+	padding: 2rem 0;
 	box-shadow: 1px 8px 25px rgba(0, 0, 0, 0.25);
 	h2 {
 		color: white;

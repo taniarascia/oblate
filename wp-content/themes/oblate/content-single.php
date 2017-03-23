@@ -34,7 +34,7 @@
 				<div class="container">
 					<h2>My email list</h2>
 
-					<p>Consider joining my email list. I'll only be sending out the important stuff, like new blog posts and any updates about e-books, podcasts, or video tutorials to come.</p>
+					<p>If you'd like to get on the list to be updated about any posts, e-books, podcasts, or video tutorials to come, sign up below!</p>
 
 					<div id="mc_embed_signup">
 						<form action="//taniarascia.us12.list-manage.com/subscribe/post?u=ec794fab6e35a491a001cc25d&amp;id=5276386071" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

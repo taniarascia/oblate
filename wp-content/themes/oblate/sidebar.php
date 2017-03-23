@@ -1,7 +1,7 @@
 <aside class="sidebar">
 	<header class="sidebar-header">
 		<h1>Tania Rascia</h1>
-		<p>I'm Tania, a front end web developer from Chicago.</p>
+		<p>I'm Tania, a web designer and developer from Chicago. More about me and my work below.</p>
 	</header>
 
 	<nav class="sidebar-nav">
@@ -13,7 +13,7 @@
 
 	<section class="sidebar-content">
 
-		<p>My site is free – and free of ads, clickbait, pop-ups, social media, and bullshit. If you like that, please consider donating!</p>
+		<p>My site is free – and free of ads, clickbait, pop-ups, social media, and bullshit. If you're all about that and my site has helped you out - consider donating.</p>
 
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 			<input type="hidden" name="cmd" value="_s-xclick" />
