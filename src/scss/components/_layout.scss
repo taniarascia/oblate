@@ -222,7 +222,7 @@ mark {
 			cursor: pointer;
 		}
 		.home, .search {
-			width: 120px;
+			width: 60px;
 		}
 		.search a {
 			text-align: right;
@@ -553,7 +553,7 @@ a.social-icon {
 	margin: 3rem 0;
 }
 
-.latest {
+.latest, .popular {
 	margin-bottom: 3rem;
 	h1 {
 		margin-top: 0;

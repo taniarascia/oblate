@@ -50,9 +50,6 @@
 			<div>
 				<a id="toggle"><i class="fa fa-2x fa-bars" aria-hidden="true"></i></a>
 			</div>
-			<div class="face">
-				<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/themes/oblate/images/tr.png"></a>
-			</div>
 		</div>
 
 		<?php wp_nav_menu( array( 'theme_location' => 'nav-menu' ) ); ?>
