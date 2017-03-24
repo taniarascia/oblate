@@ -6,13 +6,15 @@
 
 	<header class="landing-header">
 		<div class="small-container">
-			<h1>Tania Rascia</h1>
-			<?php the_content(); ?>
-			<!-- Place this tag where you want the button to render. -->
-			<a class="github-button" href="https://github.com/taniarascia" data-count-href="/taniarascia/followers" data-count-api="/users/taniarascia#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @taniarascia on GitHub">Follow</a>
-			<a class="twitter-follow-button" data-show-screen-name="false" href="https://twitter.com/taniarascia">Follow</a>
+			<div class="banner">
+				<h1>Tania Rascia</h1>
+				<?php the_content(); ?>
+				<!-- Place this tag where you want the button to render. -->
+				<a class="github-button" href="https://github.com/taniarascia" data-count-href="/taniarascia/followers" data-count-api="/users/taniarascia#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @taniarascia on GitHub">Follow</a>
+				<a class="twitter-follow-button" data-show-screen-name="false" href="https://twitter.com/taniarascia">Follow</a>
+			</div>
 
-			<h4>My email list</h4>
+			<h4>Email list</h4>
 
 			<p>If you'd like to get on the list to be updated about any posts, e-books, podcasts, or video tutorials to come, sign up below!</p>
 			<div id="mc_embed_signup">
@@ -39,7 +41,7 @@
 
 	<section class="latest">
 		<div class="small-container">
-			<h4>Latest Posts</h4>
+			<h4>Latest posts</h4>
 
 			<?php $args = array(
 				'order' => 'desc',
@@ -61,7 +63,7 @@
 	<section class="popular">
 		<div class="small-container">
 
-			<h4>Popular Posts</h4>
+			<h4>Popular posts</h4>
 
 			<?php $args = array(
 				'order' => 'asc',
