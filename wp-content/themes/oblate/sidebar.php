@@ -12,7 +12,7 @@
 	</nav>
 
 	<section class="sidebar-content">
-		<p>My site is free – and free of ads, clickbait, pop-ups, sponsorships, and bullshit. If this website has been valuable to you, please consider donating.</p>
+		<p>My site is <strong>free</strong> – and free of ads, clickbait, pop-ups, sponsorships, and bullshit. If this website has been valuable to you, please consider donating.</p>
 
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 			<input type="hidden" name="cmd" value="_s-xclick" />

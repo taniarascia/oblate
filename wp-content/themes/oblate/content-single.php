@@ -37,32 +37,18 @@
 				<i class="fa fa-twitter" aria-hidden="true"></i> Share to Twitter
 			</a>
 
-
 			<?php the_tags( '<div class="tags">', '', '</div>' ); ?>
-
 
 		</div>
 
 		<div class="email-container">
 			<div class="dark-box">
 				<div class="container">
-					<h2>My email list</h2>
-					<p>If you'd like to get on the list to be updated about any posts, e-books, podcasts, or video tutorials to come, sign up below!</p>
+					<h2>Email list</h2>
+					<p>Join the list and I'll keep you up to date with new posts about design and development, along with information about my future endeavors. I respect your inbox as if it were my own - no bullshit, gimmicks, or ads.</p>
 					<div id="mc_embed_signup">
 						<form action="//taniarascia.us12.list-manage.com/subscribe/post?u=ec794fab6e35a491a001cc25d&amp;id=5276386071" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-							<label for="mce-EMAIL"><span class="screen-reader-text">Email</span></label>
-							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address">
-							<div id="mce-responses" class="clear">
-								<div class="response" id="mce-error-response" style="display:none"></div>
-								<div class="response" id="mce-success-response" style="display:none"></div>
-							</div>
-							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-							<div style="position: absolute; left: -5000px;" aria-hidden="true">
-								<input type="text" name="b_ec794fab6e35a491a001cc25d_5276386071" tabindex="-1" value="">
-							</div>
-							<div class="clear">
-								<input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button">
-							</div>
+							<label for="mce-EMAIL"><span class="screen-reader-text">Email</span></label><input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address"><div id="mce-responses" class="clear"><div class="response" id="mce-error-response" style="display:none"></div><div class="response" id="mce-success-response" style="display:none"></div></div><!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--><div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ec794fab6e35a491a001cc25d_5276386071" tabindex="-1" value=""></div><div class="clear"><input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
 						</form>
 					</div>
 				</div>

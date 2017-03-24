@@ -310,6 +310,7 @@ mark {
 	}
 }
 
+
 /* Front */
 
 .banner {
@@ -321,7 +322,7 @@ mark {
 	height: 75px;
 	border-radius: 6px;
 }
- 
+
 
 /* Pages */
 
@@ -599,11 +600,22 @@ a.social-icon {
 /* MailChimp */
 
 #mc_embed_signup {
-	max-width: 300px;
+	max-width: 400px;
+	padding-bottom: 1px;
+	label {
+		display: inline-block;
+	}
+	.clear {
+		display: inline-block;
+	}
 }
 
 #mce-EMAIL {
-	float: left;
+	display: inline-block;
+	padding: .5rem 1rem;
+	height: 50px;
+	font-size: .9rem;
+	overflow: hidden;
 }
 
 #mc_embed_signup br,
@@ -613,7 +625,10 @@ a.social-icon {
 
 #mc-embedded-subscribe {
 	margin: 0 0 0 .5rem;
-	padding: .67rem 1.2rem;
+	padding: .95rem 1rem;
+	height: 50px;
+	font-size: .9rem;
+	overflow: hidden;
 }
 
 .email-container {
