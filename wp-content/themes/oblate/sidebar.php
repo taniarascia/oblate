@@ -2,7 +2,7 @@
 	<header class="sidebar-header">
 	<img src="<?php echo site_url(); ?>/wp-content/uploads/trsidebar.jpg" class="my-face">
 		<h1><a href="<?php echo site_url(); ?>">Tania Rascia</a></h1>
-		<p>I'm Tania, a web designer and developer from Chicago. More about me and my work below.</p>
+		<p>I'm Tania, a web designer, developer, and writer. More about me and my work below.</p>
 	</header>
 
 	<nav class="sidebar-nav">

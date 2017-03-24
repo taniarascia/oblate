@@ -61,9 +61,15 @@ pre code {
 
 pre code {
 	display: block;
-	padding: 1.5rem;
+	padding: 1rem;
 	overflow: auto;
 	background-color: #2D2D2D;
+}
+
+@include small-breakpoint {
+	pre code {
+		padding: 1.5rem;
+	}
 }
 
 // Keyboard input
