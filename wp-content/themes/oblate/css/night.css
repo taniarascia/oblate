@@ -1,0 +1,72 @@
+
+body {
+	background: #2e323e!important;
+	color: #c1cace!important
+}
+
+.navigation {
+	background: #2e323e;
+	border-bottom: 1px solid #516272
+}
+
+.navigation a {
+	color: #fff!important
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: #c38e7d!important
+}
+
+h1 {
+	color: #fff!important
+}
+
+.button,
+[type=button],
+[type=submit] {
+	background: #54678b!important;
+	border: 1px solid #54678b!important
+}
+
+a {
+	color: #d0b57e
+}
+
+.comment-author a,
+.comment-author cite.fn {
+	color: #b65e67
+}
+
+.terminal {
+	background: #111;
+	border: 1px solid #000
+}
+
+.article-excerpt,
+.comment-body {
+	border-bottom: 1px solid #516272
+}
+
+pre code {
+	background: #111
+}
+
+:not(pre) code {
+	color: #fff !important
+}
+
+.bypostauthor>div .fn {
+	border-bottom-color: #d0b57e;
+	box-shadow: inset 0 -2px 0 #d0b57e;
+	padding-right: 4px
+}
+
+blockquote.note {
+	background: #516272;
+	color: #fff;
+	border-color: #c1cace
+}
