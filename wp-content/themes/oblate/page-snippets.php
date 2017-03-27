@@ -24,13 +24,13 @@
 				'category_name' => 'Snippets',
 			);
 
-			$thoughts = new WP_Query( $args );
+			$snippets = new WP_Query( $args );
 
-			if ( $thoughts->have_posts() ) :  while ( $thoughts->have_posts() ) : $thoughts->the_post(); 
+			if ( $snippets->have_posts() ) :  while ( $snippets->have_posts() ) : $snippets->the_post(); ?>
 
-				get_template_part( 'content', get_post_format() );
+			<?php get_template_part( 'content', get_post_format() ); ?>
 
-			endwhile; ?>
+			<?php	endwhile; ?>
 
 		</div>
 
