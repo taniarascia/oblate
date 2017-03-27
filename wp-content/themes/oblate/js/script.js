@@ -5,7 +5,6 @@ console.log('Hi! Thanks for visiting. :)');
 
 		// Toggle navigation
 		$('#toggle').click(function () {
-			//this.classList.toggle("active");
 			// If sidebar is visible:
 			if ($('body').hasClass('sidebar-visible')) {
 				// Hide sidebar
@@ -17,7 +16,6 @@ console.log('Hi! Thanks for visiting. :)');
 		});
 
 		$('.content').click(function () {
-			//this.classList.toggle("active");
 			// If sidebar is visible:
 			if ($('body').hasClass('sidebar-visible')) {
 				// Hide sidebar
