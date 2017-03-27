@@ -1,21 +1,31 @@
 console.log('Hi! Thanks for visiting. :)');
 
-(function($) {
-  $(function() { // DOM Ready
+(function ($) {
+	$(function () { // DOM Ready
 
-    // Toggle navigation
-    $('#toggle').click(function() {
-      //this.classList.toggle("active");
-      // If sidebar is visible:
-      if ($('body').hasClass('sidebar-visible')) {
-        // Hide sidebar
-        $('body').removeClass('sidebar-visible');
-      } else { // If sidebar is hidden:
-        $('body').addClass('sidebar-visible');
-        // Display sidebar
-      }
-    });
-  });
+		// Toggle navigation
+		$('#toggle').click(function () {
+			//this.classList.toggle("active");
+			// If sidebar is visible:
+			if ($('body').hasClass('sidebar-visible')) {
+				// Hide sidebar
+				$('body').removeClass('sidebar-visible');
+			} else { // If sidebar is hidden:
+				$('body').addClass('sidebar-visible');
+				// Display sidebar
+			}
+		});
+
+		$('.content').click(function () {
+			//this.classList.toggle("active");
+			// If sidebar is visible:
+			if ($('body').hasClass('sidebar-visible')) {
+				// Hide sidebar
+				$('body').removeClass('sidebar-visible');
+			}
+		});
+
+	});
 })(jQuery);
 
 /*
