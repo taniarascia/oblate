@@ -16,7 +16,6 @@ html {
 body {
 	color: $font-color;
 	font-size: $body-size;
-	position: relative;
 	overflow-x: hidden;
 }
 
@@ -128,10 +127,6 @@ mark {
 
 .content {
 	transition: transform .3s ease;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
 }
 
 .small-container,
