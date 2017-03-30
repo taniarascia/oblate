@@ -41,6 +41,13 @@ table,
 	margin-bottom: $margin;
 }
 
+dl {
+	margin-bottom: .5rem;
+	dt {
+		font-weight: 600;
+	}
+}
+
 // Images always responsive
 img {
 	max-width: 100%;
@@ -126,9 +133,7 @@ mark {
 	margin-top: $nav-height;
 }
 
-.content {
-	transition: transform .3s ease;
-}
+.content {}
 
 .small-container,
 .large-container,
@@ -152,6 +157,20 @@ mark {
 
 
 /* Navigation */
+
+.close-button {
+	float: right;
+	padding: 1rem 1rem 0 0;
+}
+
+a.close {
+	color: white;
+	&:hover,
+	&:active,
+	&:focus {
+		color: $alt-color;
+	}
+}
 
 .navigation {
 	position: fixed;
@@ -254,14 +273,6 @@ mark {
 	transform: translate3d(0, 0, 0);
 }
 
-.sidebar-visible .navigation {
-	transform: translate3d(300px, 0, 0);
-}
-
-.sidebar-visible .content {
-	transform: translate3d(300px, 0, 0);
-}
-
 .sidebar {
 	position: fixed;
 	top: 0;
@@ -281,7 +292,7 @@ mark {
 .sidebar-header {
 	padding: 1.5rem 1.5rem 0;
 	h1 {
-		margin-top: 0;
+		margin-top: .5rem;
 		color: white;
 		font-size: 1.2rem;
 		a {

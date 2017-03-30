@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<?php if ( !is_single() ) { ?>
-	<meta name="description" content="I'm Tania. I design and develop websites, and share everything I learn along the way.">
+	<meta name="description" content="I'm Tania, a web designer, front end developer, and technical writer.">
 	<?php } ?>
 
 	<?php if ( is_page('projects') ) { ?>
@@ -38,10 +38,9 @@
 	</script>
 
 	<?php endif; ?>
-	
-	<!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-	
+
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+
 </head>
 
 <body>

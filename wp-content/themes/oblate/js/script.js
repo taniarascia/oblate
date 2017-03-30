@@ -15,7 +15,7 @@ console.log('Hi! Thanks for visiting. :)');
 			}
 		});
 
-		$('.content').click(function () {
+		$('.content, .close').click(function () {
 			// If sidebar is visible:
 			if ($('body').hasClass('sidebar-visible')) {
 				// Hide sidebar

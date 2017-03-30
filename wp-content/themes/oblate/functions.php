@@ -41,7 +41,7 @@ add_action( 'init' , 'add_categories_for_attachments' );
 
 function custom_excerpt_length() {
 	if ( is_front_page() ) {
-		return 25;
+		return 20;
 	} else {
 		return 30;
 	}
@@ -90,9 +90,9 @@ add_action( 'wp_enqueue_scripts', 'starter_scripts' );
 
 function oblate_scripts() {
 	wp_dequeue_style( 'starter-style' );
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css?03-27-2017x3' );
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css?03-29-2017' );
 	wp_enqueue_script( 'prism', get_template_directory_uri() . '/js/prism.js', array(), '1.0.0', true );
-	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js?03-27-2017', array(), '1.0.0', true );
+	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js?03-29-2017', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'oblate_scripts' );
  

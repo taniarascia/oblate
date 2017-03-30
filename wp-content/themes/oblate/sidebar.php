@@ -1,8 +1,11 @@
 <aside class="sidebar">
+	<div class="close-button">
+		<a href="#!" class="close"><i class="fa fa-2x fa-times" aria-hidden="true"></i></a>
+	</div>
 	<header class="sidebar-header">
-	<img src="<?php echo site_url(); ?>/wp-content/uploads/trsidebar.jpg" class="my-face">
+		<img src="<?php echo site_url(); ?>/wp-content/uploads/trsidebar.jpg" class="my-face">
 		<h1><a href="<?php echo site_url(); ?>">Tania Rascia</a></h1>
-		<p>I'm Tania, a web designer, developer, and writer. More about me and my work below.</p>
+		<p>I'm Tania, a web designer, developer, and technical writer.</p>
 	</header>
 
 	<nav class="sidebar-nav">
@@ -12,7 +15,7 @@
 	</nav>
 
 	<section class="sidebar-content">
-		<p>My site is <strong>free</strong> – and free of ads, clickbait, pop-ups, sponsorships, and bullshit. If this website has been valuable to you, please consider donating.</p>
+		<p>My site is <strong>free</strong> – and free of ads, clickbait, popups, guest posts, sponsorships, and bullshit. If this website has been valuable to you, please consider donating.</p>
 
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 			<input type="hidden" name="cmd" value="_s-xclick" />
