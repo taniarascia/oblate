@@ -51,7 +51,7 @@ pre code {
 	font-weight: 400;
 	tab-size: 2;
 	hyphens: none;
-	border-radius: 0;
+	border-radius: 6px;
 	margin: 2rem 0;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
@@ -98,10 +98,12 @@ kbd {
 
 :not(pre) > code {
 	padding: 2px 4px;
+	border: 1px solid darken($border, 5%);
 	font-family: $code;
 	font-weight: 400;
 	color: $heading-color;
-	background: rgba(0, 0, 0, .08);
+	border-radius: 4px;
+	//background: rgba(0, 0, 0, .08);
 }
 
 code[class*=language-css],

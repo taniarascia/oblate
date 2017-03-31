@@ -48,6 +48,7 @@ dl {
 		margin-bottom: .25rem;
 	}
 	dd {
+		color: lighten($font-color, 20%);
 		margin-left: 0;
 	}
 }
@@ -164,7 +165,7 @@ mark {
 
 .close-button {
 	float: right;
-	padding: 1rem 1rem 0 0;
+	padding: .8rem .8rem 0 0;
 }
 
 a.close {
@@ -172,7 +173,7 @@ a.close {
 	&:hover,
 	&:active,
 	&:focus {
-		color: $alt-color;
+		color: $link-color;
 	}
 }
 
@@ -203,7 +204,7 @@ a.close {
 		padding: 0;
 		line-height: $nav-height;
 	}
-	i.fa-bars {
+	.fa-bars {
 		text-align: right;
 		line-height: $nav-height;
 	}
@@ -211,8 +212,20 @@ a.close {
 		display: none;
 	}
 	.current-menu-item a {
-		color: black;
+		color: $heading-color;
 		font-weight: 700;
+	}
+	.home,
+	.search {
+		a {
+			color: $heading-color;
+			cursor: pointer;
+			&:hover,
+			&:active,
+			&:focus {
+				color: $link-color;
+			}
+		}
 	}
 	.search {
 		form {
@@ -224,14 +237,14 @@ a.close {
 		font-size: .9rem;
 		font-family: $nav-family;
 		font-weight: 400;
-		color: rgba(0, 0, 0, .8);
+		color: rgba(0, 0, 0, .65);
 		text-decoration: none;
 		text-align: center;
 		padding: 0 .75rem;
 		&:hover,
 		&:active,
 		&:focus {
-			color: $alt-color;
+			color: $link-color;
 		}
 	}
 }
@@ -928,7 +941,7 @@ a.social-icon {
 	background: transparent;
 	padding: 0 1rem;
 	font-size: 1.6rem;
-	color: rgba(0, 0, 0, .8);
+	color: $heading-color;
 	border: 0;
 	box-shadow: none;
 	&:hover,
@@ -936,7 +949,7 @@ a.social-icon {
 	&:active {
 		border: 0;
 		background: 0;
-		color: $alt-color;
+		color: $link-color;
 	}
 }
 
