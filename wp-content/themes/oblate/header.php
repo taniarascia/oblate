@@ -57,7 +57,14 @@
 		<?php wp_nav_menu( array( 'theme_location' => 'nav-menu' ) ); ?>
 
 		<div class="search">
-			<a href="<?php echo site_url(); ?>/search"><i class="fa fa-2x fa-search" aria-hidden="true"></i></a>
+			<a href="<?php echo site_url(); ?>/search" class="mobile-only"><i class="fa fa-2x fa-search" aria-hidden="true"></i></a>
+			<form role="search" method="get" class="search-header-form" action="<?php echo home_url( '/' ); ?>">
+				<label>
+				<span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span>
+				<input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'e.g. sass, responsive', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+				</label>
+				<button type="submit" class="search-header-submit"><i class="fa fa-search" aria-hidden="true"></i><span class="screen-reader-text">Search</span></button>
+			</form>
 		</div>
 	</nav>
 
