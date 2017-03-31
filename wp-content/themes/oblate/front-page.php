@@ -36,7 +36,7 @@
 		<div class="small-container">
 			<h4>Latest posts</h4>
 
-			<dl>
+			<ul>
 				<?php $args = array(
 				'order' => 'desc',
 				'posts_per_page' => '5',
@@ -47,16 +47,15 @@
 
 			if ( $latest->have_posts() ) :  while ( $latest->have_posts() ) : $latest->the_post(); ?>
 
-				<dt>
+				<li>
 					<a href="<?php the_permalink(); ?>">
 						<?php the_title(); ?>
 					</a> 
-				</dt>
-				<dd><?php the_excerpt(); ?></dd>
+				</li>
 
 				<?php endwhile; endif; wp_reset_postdata(); ?>
 
-			</dl>
+			</ul>
 		</div>
 	</section>
 
@@ -65,7 +64,7 @@
 
 			<h4>Popular posts</h4>
 
-			<dl>
+			<ul>
 				<?php $args = array(
 				'order' => 'asc',
 				'posts_per_page' => '5',
@@ -77,15 +76,15 @@
 
 			if ( $popular->have_posts() ) :  while ( $popular->have_posts() ) : $popular->the_post(); ?>
 
-				<dt>
+				<li>
 					<a href="<?php the_permalink(); ?>">
 						<?php the_title(); ?>
 					</a> 
-				</dt>
-				<dd><?php the_excerpt(); ?></dd>
+				</li>
 
-				<?php endwhile; endif; ?>
-			</dl>
+				<?php endwhile; endif; wp_reset_postdata(); ?>
+
+			</ul>
 
 		</div>
 	</section>
