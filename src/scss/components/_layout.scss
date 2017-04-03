@@ -138,8 +138,6 @@ mark {
 	margin-top: $nav-height;
 }
 
-.content {}
-
 .small-container,
 .large-container,
 .container {
@@ -307,6 +305,10 @@ a.close {
 
 .sidebar-visible .sidebar {
 	transform: translate3d(0, 0, 0);
+}
+
+.sidebar-visible .fa-bars {
+	display: none;
 }
 
 @include large-breakpoint {
@@ -680,6 +682,7 @@ a.social-icon {
 
 #mc-embedded-subscribe {
 	margin: 0;
+	margin-left: -4px;
 	padding: .95rem 1.5rem;
 	height: 50px;
 	font-size: .9rem;
