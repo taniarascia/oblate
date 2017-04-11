@@ -341,7 +341,7 @@ a.close {
 .sidebar-header {
 	padding: 1.5rem 1.5rem 0;
 	h1 {
-		margin-top: .5rem;
+		margin-top: 1rem;
 		color: white;
 		font-size: 1.2rem;
 		a {
@@ -599,7 +599,7 @@ blockquote {
 	}
 	&.info {
 		background: #fff4ca;
-		border: 1px solid darken(#FFE26D, 15%);
+		border: 1px solid darken(#FFE26D, 20%);
 	}
 	&.note {
 		background: $background;
