@@ -400,7 +400,7 @@ a.close {
 			font-size: 3rem;
 		}
 	}
-} 
+}
 
 .landing-header {
 	text-align: left;
@@ -1134,6 +1134,65 @@ caption {
 	}
 	.bsod-list {
 		margin-bottom: .2rem;
+	}
+}
+
+.resume {
+	padding-bottom: 2.5rem;
+	ul {
+		margin: 0;
+		padding: 0;
+		padding-left: .5rem;
+		list-style-type: none;
+		a {
+			font-weight: bold;
+		}
+		>li:before {
+			content: '– ';
+		}
+		li ul li:before {
+			content: '';
+		}
+		li ul li a {
+			font-weight: normal;
+		}
+	}
+	h3 {
+		color: #111;
+		font-weight: 900;
+		font-size: 1.5rem;
+		padding: .4rem 0;
+		border-bottom: 1px solid rgba(0, 0, 0, .15);
+	}
+	h4 {
+		font-size: 1.1rem;
+		padding: 0;
+		border: none;
+	}
+	.title {
+		margin-top: 100px;
+		margin-bottom: 0;
+		font-weight: 900;
+		color: #111;
+	}
+	.sub-title {
+		color: rgba(0, 0, 0, .4);
+		font-weight: 700;
+		font-size: 1.4rem;
+	}
+}
+
+@include small-breakpoint {
+	.resume {
+		h3 {
+			font-size: 1.8rem;
+		}
+		h4 {
+			font-size: 1.2rem;
+		}
+		.sub-title {
+			font-size: 1.6rem;
+		}
 	}
 }
 
