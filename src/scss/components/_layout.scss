@@ -1156,29 +1156,32 @@ caption {
 		li ul li a {
 			font-weight: normal;
 		}
-	}
-	h3 {
-		color: #111;
-		font-weight: 900;
-		font-size: 1.5rem;
-		padding: .4rem 0;
-		border-bottom: 1px solid rgba(0, 0, 0, .15);
-	}
-	h4 {
-		font-size: 1.1rem;
-		padding: 0;
-		border: none;
-	}
-	.title {
-		margin-top: 100px;
-		margin-bottom: 0;
-		font-weight: 900;
-		color: #111;
-	}
-	.sub-title {
-		color: rgba(0, 0, 0, .4);
-		font-weight: 700;
-		font-size: 1.4rem;
+		li ul {
+			padding: 0 0 0 2rem
+		}
+		h3 {
+			color: #111;
+			font-weight: 900;
+			font-size: 1.5rem;
+			padding: .4rem 0;
+			border-bottom: 1px solid rgba(0, 0, 0, .15);
+		}
+		h4 {
+			font-size: 1.1rem;
+			padding: 0;
+			border: none;
+		}
+		.title {
+			margin-top: 100px;
+			margin-bottom: 0;
+			font-weight: 900;
+			color: #111;
+		}
+		.sub-title {
+			color: rgba(0, 0, 0, .4);
+			font-weight: 700;
+			font-size: 1.4rem;
+		}
 	}
 }
 
