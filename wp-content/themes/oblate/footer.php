@@ -1,6 +1,6 @@
 	<div class="small-container">
 	<footer class="footer">
-	<span>Tania Rascia is my name. </span>
+	<span>Tania Rascia is my name.</span>
 		<nav>
 			<a href="<?php echo site_url(); ?>/me">About</a>
 			<a href="<?php echo site_url(); ?>/blog">Blog</a>
@@ -51,7 +51,7 @@
       "@type": "Person",
       "name": "Tania Rascia"
     },
-  "description": "I'm Tania, and I simplify web development through effective and concise tutorials. Let's learn and create.",
+  "description": "Web designer, developer, autodidact. Tania breaks down complex concepts in a clear, simple way for all skill levels.",
   "potentialAction": { 
     "@type": "SearchAction", 
     "target": "<?php echo site_url(); ?>/?s={search_term}", 

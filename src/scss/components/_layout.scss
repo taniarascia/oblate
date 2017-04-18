@@ -730,7 +730,7 @@ a.social-icon {
 }
 
 .email-container {
-	margin: 4rem 0;
+	margin: 2rem 0 4rem;
 }
 
 .section-content {
@@ -1109,7 +1109,7 @@ caption {
 	text-align: left;
 	p {
 		font-size: 1.4rem;
-		line-height: 1.1;
+		line-height: 1.3;
 		color: lighten($font-color, 20%);
 	}
 }
@@ -1118,6 +1118,7 @@ caption {
 	.lead {
 		p {
 			font-size: 1.6rem;
+			line-height: 1.4;
 		}
 	}
 }

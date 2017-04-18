@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<?php if ( !is_single() ) { ?>
-	<meta name="description" content="I'm Tania, a web designer, front end developer, and technical writer.">
+	<meta name="description" content="Web designer, developer, autodidact. Tania breaks down complex concepts in a clear, simple way for all skill levels.">
 	<?php } ?>
 
 	<?php if ( is_page('projects') ) { ?>
