@@ -619,7 +619,7 @@ blockquote {
 	border-top: 1px solid $background;
 	margin-top: 2.5rem;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
 	span {
 		font-size: .9rem;
@@ -645,6 +645,12 @@ blockquote {
 				color: $link-color;
 			}
 		}
+	}
+}
+
+@include small-breakpoint {
+	.footer {
+		flex-direction: row;
 	}
 }
 
