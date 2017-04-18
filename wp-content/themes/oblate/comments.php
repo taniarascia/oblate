@@ -34,7 +34,7 @@
 				</div>
 			</div>
 
-			<p class="text-center"><a href="<?php echo get_comments_link(); ?>">Write a response</a></p>
+			<p class="text-center"><a href="<?php echo get_comments_link(); ?>" class="button">Write a response</a></p>
 
 			<?php endif; // have_comments() 
 

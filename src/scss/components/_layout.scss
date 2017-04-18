@@ -190,7 +190,7 @@ a.close {
 	text-align: center;
 	transition: left .3s ease;
 	height: $nav-height; 
-	border-bottom: 1px solid $border;
+	border-bottom: 1px solid $background;
 	transition: transform .3s ease;
 	ul {
 		list-style: none;
@@ -221,7 +221,6 @@ a.close {
 			&:hover,
 			&:active,
 			&:focus {
-				background: lighten($background, 2%); 
 				color: $link-color;
 			}
 		}
@@ -244,7 +243,7 @@ a.close {
 		&:active,
 		&:focus {
 			color: $link-color;
-			background: darken($background, 4%);
+			background: lighten($background, 2%); 
 		}
 	}
 }
@@ -728,7 +727,7 @@ a.social-icon {
 	display: inline-block;
 	padding: .25rem .75rem;
 	margin: 2px;
-	background: linear-gradient(-180deg, #fefefe 0%, rgba(0,0,0,.04)  90%);
+	background: linear-gradient(-180deg, #fafafa 0%, rgba(0,0,0,.04) 90%);
 	color: $heading-color;
 	border: 1px solid darken($border, 2%);
 	border-radius: 6px;
@@ -737,8 +736,9 @@ a.social-icon {
 	&:hover,
 	&:focus,
 	&:active {
-		background: linear-gradient(-180deg, #f0f0f0 0%, rgba(0,0,0,.08)  90%);
-		border: 1px solid darken($border, 10%);
+		color: black;
+		background: linear-gradient(-180deg, #f0f0f0 0%, rgba(0,0,0,.07) 90%);
+		border: 1px solid darken($border, 12%);
 		text-decoration: none;
 	}
 }
