@@ -111,10 +111,10 @@ h5 {
 		font-size: 1.75rem;
 	}
 	h3 {
-		font-size: 1.3rem;
+		font-size: 1.4rem;
 	}
 	h4 {
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 	}
 	h5 {
 		font-size: 1.2rem;
@@ -709,8 +709,8 @@ a.social-icon {
 }
 
 .dark-box {
-	background: $heading-color;
-	color: rgba(255, 255, 255, .6);
+	background: #292929;
+	color: #CBCBCB;
 	padding: 2rem 0;
 	box-shadow: 1px 8px 25px rgba(0, 0, 0, 0.25);
 	h2 {
@@ -728,7 +728,7 @@ a.social-icon {
 	margin: 2px;
 	background: $background;
 	color: $heading-color;
-	border: 1px solid $border;
+	border: 1px solid darken($border, 2%);
 	border-radius: 6px;
 	font-size: .7rem;
 	text-decoration: none;
@@ -736,7 +736,7 @@ a.social-icon {
 	&:focus,
 	&:active {
 		background: darken($background, 5%);
-		border: 1px solid darken($border, 5%);
+		border: 1px solid darken($border, 8%);
 		text-decoration: none;
 	}
 }
@@ -840,7 +840,7 @@ a.social-icon {
 		padding: 0;
 	}
 	.reply {
-		display: none;
+		//display: none;
 	}
 }
 
@@ -1038,7 +1038,7 @@ caption {
 	text-align: left;
 	p {
 		font-size: 1.4rem;
-		line-height: 1.4;
+		line-height: 1.1;
 		color: lighten($font-color, 20%);
 	}
 }
@@ -1053,7 +1053,7 @@ caption {
 
 .lead-subtitle {
 	font-size: 1.4rem;
-	line-height: 1.4;
+	line-height: 1.1;
 	color: lighten($font-color, 20%);
 }
 

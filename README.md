@@ -1,15 +1,16 @@
 # Oblate WordPress Theme
 
-## Personal WordPress theme for blogging
+### Custom Web Development Blog
 
-I like simple, clean, minimalist blogs. I don't like sidebars, ads, widgets, plugins, or anything else on my blog - because if you're here, you're here for the content. Outside of a simple header with links to my GitHub, Twitter, and RSS feeds, the site consists only of articles.
+I like simple, clean, minimalist blogs. I don't like sidebars, ads, widgets, plugins, or anything else on my blog - because if you're here, you're here for the content. 
+
+Articles are organized into **Tutorials**, **Snippets**, and **Thoughts**. 
 
 ## External resources
 
-* Browser consistency with [Normalize.css](https://necolas.github.io/normalize.css/) 
-* Syntax highlighting with [Prism](http://prismjs.com/)
-* Custom fonts with [Google Fonts](https://www.google.com/fonts)
-* Task running with [Gulp](http://gulpjs.com/)
+* Syntax highlighting via [Prism](http://prismjs.com/)
+* Task running via [Gulp](http://gulpjs.com/)
+* Roboto font via [Google Fonts](https://www.google.com/fonts)
 
 ## Directory Structure
 
