@@ -621,13 +621,13 @@ blockquote {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 	span {
 		font-size: .9rem;
 		font-family: $nav-family;
 		font-weight: 400;
 		color: rgba(0, 0, 0, .65);
 		text-decoration: none;
-		text-align: center;
 		padding: 0 .25rem;
 	}
 	nav {
@@ -749,14 +749,14 @@ a.social-icon {
 }
 
 .dark-box {
-	background: #292929;
-	color: #CBCBCB;
-	padding: 2rem 0;
-	box-shadow: 1px 8px 25px rgba(0, 0, 0, 0.25);
-	h2 {
-		color: white;
-		margin-top: 0;
-	}
+	//background: #292929;
+	//color: #CBCBCB;
+	//padding: 2rem 0;
+	//box-shadow: 1px 8px 25px rgba(0, 0, 0, 0.25);
+	//h2 {
+	//	color: white;
+	//	margin-top: 0;
+	//}
 }
 
 
