@@ -18,6 +18,7 @@
 				Share
 			</a>
 			</time>
+			<?php the_tags( '<div class="tags">', '', '</div>' ); ?>
 		</div>
 	</header>
 
@@ -36,8 +37,6 @@
 					text=<?php the_title(); ?>">
 				<i class="fa fa-twitter" aria-hidden="true"></i> Share to Twitter
 			</a>
-
-			<?php the_tags( '<div class="tags">', '', '</div>' ); ?>
 
 		</div>
 
