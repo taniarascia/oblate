@@ -9,9 +9,9 @@
 	font-size: .95rem;
 	line-height: 1.4;
 	text-decoration: none !important;
-	background: $link-color;
+	background: linear-gradient(-180deg, lighten($link-color, 10%) 0%, $link-color 90%);
+	border: 1px solid darken($link-color, 8%);
 	border-radius: 6px;
-	border: 1px solid $link-color;
 	cursor: pointer;
 	font-weight: 600;
 	margin: 5px 0;
@@ -24,8 +24,8 @@
 }
 
 .buttons-hover {
-	border: 1px solid darken($link-color, 10%);
-	background: darken($link-color, 10%);
+	border: 1px solid darken($link-color, 15%);
+	background: linear-gradient(-180deg, $link-color 0%, darken($link-color, 12%) 90%);
 	text-decoration: none;
 }
 
@@ -51,14 +51,14 @@ button,
 // Alt button
 a.button.alt-button,
 .button.alt-button {
-	background: $alt-color;
-	border: 1px solid $alt-color;
+	background: linear-gradient(-180deg, lighten($alt-color, 10%) 0%, $alt-color 90%);
+	border: 1px solid darken($alt-color, 8%);
 	&:hover,
 	&:focus,
 	&:active {
 		color: white;
-		background: darken($alt-color, 10%);
-		border: 1px solid darken($alt-color, 10%);
+	border: 1px solid darken($alt-color, 15%);
+	background: linear-gradient(-180deg, $alt-color 0%, darken($alt-color, 12%) 90%);
 	}
 }
 
@@ -80,14 +80,14 @@ a.button.ghost-button,
 // Other button
 a.button.secondary-button,
 .button.secondary-button {
+	background: linear-gradient(-180deg, #fefefe 0%, rgba(0,0,0,.04)  90%);
 	color: $heading-color;
-	background: #f0f0f0;
-	border: 1px solid $border;
+	border: 1px solid darken($border, 2%);
 	&:hover,
 	&:focus,
 	&:active {
-		color: black;
-		background: darken(#f0f0f0, 5%);
-		border: 1px solid darken($border, 7%);
+		background: linear-gradient(-180deg, #f0f0f0 0%, rgba(0,0,0,.08)  90%);
+		border: 1px solid darken($border, 10%);
+		text-decoration: none;
 	}
 }

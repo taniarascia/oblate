@@ -10,7 +10,7 @@ code {
 	padding: 1rem;
 	font-family: $code;
 	border: 1px solid #d8d9da;
-	box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, .16);
 	border-radius: 6px;
 	padding-top: 45px;
 	margin: 2rem 0;
@@ -94,6 +94,7 @@ kbd {
 :not(pre) > code[class*="language-"] {
 	padding: 2px 4px;
 	background: #2D2D2D;
+	border: 1px solid #2D2D2D;
 }
 
 :not(pre) > code {
