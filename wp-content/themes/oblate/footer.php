@@ -1,6 +1,6 @@
 <footer class="footer">
 <nav>
-	<span>Tania Rascia</span>
+	<span>Tania Rascia is my name. </span>
 	<a href="<?php echo site_url(); ?>/me">About</a>
 	<a href="<?php echo site_url(); ?>/blog">Blog</a>
 	<a href="<?php echo site_url(); ?>/work">Portfolio</a>

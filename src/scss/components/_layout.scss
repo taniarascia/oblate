@@ -615,10 +615,11 @@ blockquote {
 /* Footer */
 
 .footer {
-	padding: 40px 0;
+	padding: 2.5rem 0;
+	border-top: 1px solid $background;
+	margin-top: 2.5rem;
 	nav {
 		a {
-			display: block;
 			font-size: .9rem;
 			font-family: $nav-family;
 			font-weight: 400;
@@ -966,6 +967,7 @@ a.social-icon {
 		}
 		&:active,
 		&:focus {
+			background: white;
 			border: 1px solid $link-color;
 		}
 	}
