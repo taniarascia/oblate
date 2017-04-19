@@ -1246,18 +1246,6 @@ caption {
 		a {
 			font-weight: bold;
 		}
-		>li:before {
-			content: '– ';
-		}
-		li ul li:before {
-			content: '';
-		}
-		li ul li a {
-			font-weight: normal;
-		}
-		li ul {
-			padding: 0 0 0 2rem
-		}
 	}
 }
 
