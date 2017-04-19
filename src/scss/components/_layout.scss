@@ -589,7 +589,8 @@ blockquote {
 	&.alert,
 	&.info,
 	&.note,
-	&.details {
+	&.details,
+	&.success {
 		font-size: 1.1rem;
 		color: $heading-color;
 		font-family: $heading-family;
