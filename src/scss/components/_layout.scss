@@ -385,7 +385,7 @@ a.close {
 
 .page-header {
 	text-align: center;
-	padding: 1.5rem 0;
+	padding: 1.5rem 0 .5rem;
 	h1 {
 		margin: .5rem 0;
 		font-weight: 900;
@@ -395,9 +395,9 @@ a.close {
 
 @include small-breakpoint {
 	.page-header {
-		padding: 2.5rem 0;
+		padding: 2.5rem 0 1rem;
 		h1 {
-			font-size: 3rem;
+			font-size: 2.5rem;
 		}
 	}
 }
@@ -450,7 +450,10 @@ a.close {
 	max-width: $mobile;
 	margin: 0 auto;
 	padding: 1.5rem 0;
-	border-bottom: 1px solid $border;
+	border-bottom: 1px solid $background;
+	&:last-of-type {
+		border-bottom: 0;
+	}
 	h1 {
 		margin-top: 0;
 		line-height: 1.2;
@@ -478,7 +481,7 @@ a.close {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	.basic-image {
 		padding-left: 1rem;
 		img {
@@ -626,7 +629,7 @@ blockquote {
 		font-size: .9rem;
 		font-family: $nav-family;
 		font-weight: 400;
-		color: rgba(0, 0, 0, .65);
+		color: rgba(0, 0, 0, .7);
 		text-decoration: none;
 		padding: 0 .25rem;
 	}
@@ -635,7 +638,7 @@ blockquote {
 			font-size: .9rem;
 			font-family: $nav-family;
 			font-weight: 400;
-			color: rgba(0, 0, 0, .65);
+			color: rgba(0, 0, 0, .5);
 			text-decoration: none;
 			text-align: center;
 			padding: 0 .25rem;
