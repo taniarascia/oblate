@@ -650,8 +650,13 @@ blockquote {
 
 @include small-breakpoint {
 	.footer {
-		margin-top: 2.5rem;
 		flex-direction: row;
+	}
+}
+
+@include large-breakpoint {
+	.footer {
+		margin-top: 2.5rem;
 	}
 }
 
