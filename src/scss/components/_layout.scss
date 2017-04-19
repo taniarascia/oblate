@@ -235,7 +235,7 @@ a.close {
 		font-size: .9rem;
 		font-family: $nav-family;
 		font-weight: 400;
-		color: rgba(0, 0, 0, .65);
+		color: rgba(0, 0, 0, .5);
 		text-decoration: none;
 		text-align: center;
 		padding: 0 .75rem;
@@ -635,7 +635,7 @@ blockquote {
 			font-size: .9rem;
 			font-family: $nav-family;
 			font-weight: 400;
-			color: rgba(0, 0, 0, .7);
+			color: rgba(0, 0, 0, .8);
 			text-decoration: none;
 			padding: 0 .4rem;
 		}
@@ -743,6 +743,12 @@ a.social-icon {
 	margin: 2rem 0;
 }
 
+@include small-breakpoint {
+	.email-container {
+		margin: 3.5rem 0;
+	}
+}
+
 .section-content {
 	margin: 3rem 0;
 }
@@ -758,7 +764,8 @@ a.social-icon {
 		border-bottom: 1px solid $border;
 	}
 	h3 {
-		margin-top: 1.5rem;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
 	}
 	time {
 		margin-bottom: 1rem;
