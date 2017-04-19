@@ -1225,12 +1225,6 @@ caption {
 }
 
 .resume {
-	article {
-		background: white;
-		padding: 2rem;
-		margin: 2rem 0;
-		box-shadow: 1px 8px 25px rgba(0, 0, 0, 0.25);
-	}
 	.accomplishments li {
 		margin-bottom: .5rem;
 	}
@@ -1253,7 +1247,6 @@ caption {
 		font-weight: 900;
 		font-size: 1.5rem;
 		padding: .4rem 0;
-		margin: 0;
 		border-bottom: 1px solid rgba(0, 0, 0, .15);
 	}
 	h4 {
