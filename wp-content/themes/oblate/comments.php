@@ -25,6 +25,11 @@
 		) );
 	?>
 			</ul>
+		<?php
+		$prev_comment_link = get_previous_comments_link();
+		$next_comment_link = get_next_comments_link();
+		
+		if ($prev_comment_link || $next_comment_link) { ?>
 			<div class="comment-links">
 				<div class="pagination-left">
 					<?php previous_comments_link(); ?>
@@ -33,6 +38,7 @@
 					<?php next_comments_link(); ?>
 				</div>
 			</div>
+			<?php } ?>
 
 			<p class="text-center"><a href="<?php echo get_comments_link(); ?>" class="button">Write a response</a></p>
 
