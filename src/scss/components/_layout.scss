@@ -221,7 +221,8 @@ a.close {
 			&:hover,
 			&:active,
 			&:focus {
-				color: $link-color;
+				color: black;
+				background: #f5f5f5;
 			}
 		}
 	}
@@ -242,7 +243,8 @@ a.close {
 		&:hover,
 		&:active,
 		&:focus {
-			color: $link-color;
+			color: black;
+			background: #f5f5f5;
 		}
 	}
 }
@@ -760,7 +762,7 @@ a.social-icon {
 
 .latest,
 .popular {
-	margin-bottom: 3rem; 
+	margin-bottom: 3rem;
 	h1 {
 		margin-top: 0;
 	}
