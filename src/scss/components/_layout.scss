@@ -1220,7 +1220,21 @@ caption {
 	}
 }
 
+.resume-outer {
+	background: #f0f0f0;
+}
+
 .resume {
+	article {
+		background: white;
+		padding: 1.5rem;
+	}
+	a {
+		color: rgba(0,0,0,.7);
+		&:hover {
+			color: #111;
+		}
+	}
 	.accomplishments li {
 		margin-bottom: .5rem;
 	}
@@ -1234,6 +1248,9 @@ caption {
 		color: rgba(0, 0, 0, .4);
 		font-weight: 700;
 		font-size: 1.4rem;
+	}
+	h2 {
+		font-size: 1.7rem;
 	}
 	h3 {
 		color: #111;
@@ -1252,8 +1269,11 @@ caption {
 
 @include small-breakpoint {
 	.resume {
+		h2 {
+			font-size: 2rem;
+		}
 		h3 {
-			font-size: 1.6rem;
+			font-size: 1.5rem;
 		}
 		h4 {
 			font-size: 1.2rem;

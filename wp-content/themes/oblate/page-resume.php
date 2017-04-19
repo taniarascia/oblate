@@ -2,10 +2,12 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<div class="container">
-	<?php the_content(); ?>
-</div>
+<section class="resume-outer">
+	<div class="container">
+		<?php the_content(); ?>
+	</div>
+</section>
 
 <?php endwhile; endif; ?>
 
-<?php get_footer(); 
+<?php get_footer();
