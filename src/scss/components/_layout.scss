@@ -604,6 +604,10 @@ blockquote {
 		background: #fff4ca;
 		border: 1px solid darken(#FFE26D, 20%);
 	}
+	&.success {
+		background: #BFEBCE;
+		border: 1px solid #5FBA7D;
+	}
 	&.note {
 		background: $background;
 		border: 1px solid $border;
@@ -631,7 +635,7 @@ blockquote {
 		font-weight: 400;
 		color: rgba(0, 0, 0, .7);
 		text-decoration: none;
-		padding: 0 .25rem;
+		padding: 0 .4rem;
 	}
 	nav {
 		a {
@@ -641,7 +645,7 @@ blockquote {
 			color: rgba(0, 0, 0, .5);
 			text-decoration: none;
 			text-align: center;
-			padding: 0 .25rem;
+			padding: 0 .4rem;
 			&:hover,
 			&:active,
 			&:focus {
@@ -1252,7 +1256,7 @@ caption {
 @include small-breakpoint {
 	.resume {
 		h3 {
-			font-size: 1.8rem;
+			font-size: 1.6rem; 
 		}
 		h4 {
 			font-size: 1.2rem;
