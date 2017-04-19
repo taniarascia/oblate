@@ -659,7 +659,7 @@ blockquote {
 }
 
 @include small-breakpoint {
-	.footer {
+	.footer .small-container {
 		flex-direction: row;
 	}
 }
