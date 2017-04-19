@@ -643,6 +643,7 @@ blockquote {
 			padding: 0 .4rem;
 		}
 		nav {
+			text-align: center;
 			a {
 				font-size: .9rem;
 				font-family: $nav-family;
@@ -767,6 +768,7 @@ a.social-icon {
 		border-bottom: 1px solid $border;
 	}
 	h3 {
+		font-size: 1.3rem;
 		margin-top: 2rem;
 		margin-bottom: 1rem;
 	}
@@ -1262,7 +1264,7 @@ caption {
 	h3 {
 		color: #121212;
 		font-weight: 900;
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 		padding: .4rem 0;
 		border-bottom: 1px solid rgba(0, 0, 0, .15);
 	}
