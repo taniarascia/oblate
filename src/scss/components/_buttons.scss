@@ -80,13 +80,13 @@ a.button.ghost-button,
 // Other button
 a.button.secondary-button,
 .button.secondary-button {
-	background: linear-gradient(-180deg, #fefefe 0%, rgba(0,0,0,.04)  90%);
+	background: linear-gradient(-180deg, #fefefe 0%, #f5f5f5  90%);
 	color: $heading-color;
 	border: 1px solid darken($border, 2%);
 	&:hover,
 	&:focus,
 	&:active {
-		background: linear-gradient(-180deg, #f0f0f0 0%, rgba(0,0,0,.08)  90%);
+		background: linear-gradient(-180deg, #f0f0f0 0%, #eeeeee  90%);
 		border: 1px solid darken($border, 10%);
 		text-decoration: none;
 	}
