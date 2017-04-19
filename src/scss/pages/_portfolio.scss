@@ -23,20 +23,21 @@
 
 .portfolio-item {
 	margin: .5rem 1rem;
-	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+	//box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 	transition: all .3s ease;
-	background: $heading-color;
-	color: rgba(255,255,255,.9);
+	background: white;
+	color: #444;
 	padding-bottom: .5rem;
 	&:hover,
 	&:active,
 	&:focus {
 		text-decoration: none;
 		transform: translateY(-3px);
+		background: #f0f0f0;
 		box-shadow: 0 8px 100px rgba(0, 0, 0, 0.75);
 	}
 	h3 {
-		color: white;
+		color: $heading-color;
 		font-size: 1.1rem;
 		padding: 2rem 2rem 0;
 		margin: 0;
@@ -44,10 +45,10 @@
 	p {
 		padding: 0 2rem;
 		font-size: .9rem;
-		color: rgba(255,255,255,.6);
+		color: $font-color;
 	}
 	.more-info {
-		color: lighten($link-color, 15%);
+		color: $link-color;
 		text-transform: uppercase;
 		font-size: .8rem;
 	}
