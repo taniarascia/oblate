@@ -1,5 +1,5 @@
-	<div class="small-container">
 	<footer class="footer">
+	<div class="small-container">
 	<span>Tania Rascia is my name.</span>
 		<nav>
 			<a href="<?php echo site_url(); ?>/me">About</a>
@@ -9,9 +9,9 @@
 			<a href="<?php echo site_url(); ?>/contact">Contact</a>
 			<a href="https://github.com/taniarascia">GitHub</a>
 		</nav>
-	</footer>
 	</div>
-
+	</footer>
+	
 </main>
 
 </section>
