@@ -13,7 +13,7 @@
 				<a class="github-button" href="https://github.com/taniarascia" data-count-href="/taniarascia/followers" data-count-api="/users/taniarascia#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @taniarascia on GitHub">Follow</a>
 				<a class="twitter-follow-button" data-show-screen-name="false" href="https://twitter.com/taniarascia">Follow</a>
 			</div>
-			<h4>Email list</h4>
+			<h2>Email list</h2>
 			<p>Join the list and I'll keep you up to date with new posts about design and development, along with information about my future endeavors. I respect your inbox as if it were my own - no bullshit, gimmicks, or ads.</p>
 			<div id="mc_embed_signup">
 				<form action="//taniarascia.us12.list-manage.com/subscribe/post?u=ec794fab6e35a491a001cc25d&amp;id=5276386071" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -34,13 +34,12 @@
 
 	<section class="latest">
 		<div class="small-container">
-			<h4>Latest posts</h4>
+			<h2>Latest posts</h2>
 
-			<ul>
 				<?php $args = array(
 				'order' => 'desc',
 				'posts_per_page' => '5',
-				'category__not_in' => array( 5 ),
+				'category__not_in' => array( 3 ),
 			);
 
 			$latest = new WP_Query( $args );
@@ -57,36 +56,34 @@
 
 				<?php endwhile; endif; wp_reset_postdata(); ?>
 
-			</ul>
 		</div>
 	</section>
 
 	<section class="popular">
 		<div class="small-container">
 
-			<h4>Popular posts</h4>
+			<h2>Popular posts</h2>
 
-			<ul>
 				<?php $args = array(
 				'order' => 'asc',
 				'posts_per_page' => '5',
 				'category_name' => 'Popular',
-				'category__not_in' => array( 5 ),
+				'category__not_in' => array( 3 ),
 			);
 
 			$popular = new WP_Query( $args );
 
 			if ( $popular->have_posts() ) :  while ( $popular->have_posts() ) : $popular->the_post(); ?>
 
-				<li>
+				<h3>
 					<a href="<?php the_permalink(); ?>">
 						<?php the_title(); ?>
 					</a> 
-				</li>
+				</h3>
+				<?php the_excerpt(); ?>
 
 				<?php endwhile; endif; wp_reset_postdata(); ?>
 
-			</ul>
 
 		</div>
 	</section>
