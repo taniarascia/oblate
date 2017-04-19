@@ -454,9 +454,9 @@ a.close {
 	margin: 0 auto;
 	padding: 1.5rem 0;
 	border-bottom: 1px solid $background;
-	&:last-of-type {
-		border-bottom: 0;
-	}
+	//&:last-of-type {
+	//	border-bottom: 0;
+	//}
 	h1 {
 		margin-top: 0;
 		line-height: 1.2;
@@ -744,6 +744,7 @@ a.social-icon {
 }
 
 .email-container {
+	padding-top: 2rem;
 	margin: 2rem 0;
 }
 
@@ -779,9 +780,10 @@ a.social-icon {
 
 .dark-box {
 	border-top: 1px solid $background;
+	background: #f5f5f5;
 	//background: #292929;
 	//color: #CBCBCB;
-	//padding: 2rem 0;
+	padding: 2rem 0;
 	//box-shadow: 1px 8px 25px rgba(0, 0, 0, 0.25);
 	//h2 {
 	//	color: white;
