@@ -1229,12 +1229,7 @@ caption {
 		background: white;
 		padding: 2rem;
 		margin: 2rem 0;
-	}
-	a {
-		color: rgba(0,0,0,.7);
-		&:hover {
-			color: #111;
-		}
+		box-shadow: 1px 8px 25px rgba(0, 0, 0, 0.25);
 	}
 	.accomplishments li {
 		margin-bottom: .5rem;
@@ -1246,7 +1241,7 @@ caption {
 		color: #111;
 	}
 	.sub-title {
-		color: rgba(0, 0, 0, .4);
+		color: $primary-color;
 		font-weight: 700;
 		font-size: 1.4rem;
 	}
@@ -1254,10 +1249,11 @@ caption {
 		font-size: 1.7rem;
 	}
 	h3 {
-		color: #111;
+		color: #121212;
 		font-weight: 900;
 		font-size: 1.5rem;
 		padding: .4rem 0;
+		margin: 0;
 		border-bottom: 1px solid rgba(0, 0, 0, .15);
 	}
 	h4 {
