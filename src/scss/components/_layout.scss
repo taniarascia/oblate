@@ -617,7 +617,7 @@ blockquote {
 .footer {
 	padding: 1.5rem 0;
 	border-top: 1px solid $background;
-	margin-top: 2.5rem;
+	margin-top: 1rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -650,6 +650,7 @@ blockquote {
 
 @include small-breakpoint {
 	.footer {
+		margin-top: 2.5rem;
 		flex-direction: row;
 	}
 }
