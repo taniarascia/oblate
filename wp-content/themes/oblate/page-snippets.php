@@ -34,6 +34,11 @@
 
 		</div>
 
+		<?php 
+		$prev_link = get_previous_posts_link();
+		$next_link = get_next_posts_link();
+
+		if ($prev_link || $next_link) { ?>
 		<div class="posts-links">
 			<div class="pagination-left">
 				<?php previous_posts_link(); ?>
@@ -42,6 +47,7 @@
 				<?php next_posts_link(); ?>
 			</div>
 		</div>
+		<?php } ?>
 
 	</div>
 
@@ -49,4 +55,4 @@
 
 <?php endif; wp_reset_postdata(); ?>
 
-<?php get_footer(); 
+<?php get_footer();
