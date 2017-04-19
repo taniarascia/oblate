@@ -47,11 +47,13 @@
 
 			if ( $latest->have_posts() ) :  while ( $latest->have_posts() ) : $latest->the_post(); ?>
 
-				<li>
+				<h3>
 					<a href="<?php the_permalink(); ?>">
 						<?php the_title(); ?>
 					</a> 
-				</li>
+				</h3>
+				
+				<?php the_excerpt(); ?>
 
 				<?php endwhile; endif; wp_reset_postdata(); ?>
 
