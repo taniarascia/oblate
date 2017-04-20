@@ -88,13 +88,13 @@ h2 {
 
 h3 {
 	font-size: 1.4rem;
-	color: lighten($heading-color, 25%);
+	color: lighten($heading-color, 10%);
 }
 
 h4 {
 	font-size: 1.2rem;
 	padding-bottom: .5rem;
-	color: lighten($heading-color, 25%);
+	color: lighten($heading-color, 20%);
 	border-bottom: 1px solid $border;
 }
 
@@ -643,10 +643,10 @@ blockquote {
 /* Footer */
 
 .footer {
-	padding: 1.5rem 0;
-	border-top: 1px solid $border;
-	margin-top: 1rem;
+	margin-top: 2rem;
 	.container {
+		padding: 1.5rem 0;
+		border-top: 1px solid $border;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -807,7 +807,6 @@ a.social-icon {
 }
 
 .dark-box {
-	border-top: 1px solid $border;
 	background: #f5f5f5;
 	//background: #292929;
 	//color: #CBCBCB;
@@ -1251,7 +1250,7 @@ caption {
 }
 
 .four-oh-four {
-	min-height: calc(100vh - 60px);
+	min-height: calc(100vh - 160px);
 	display: flex;
 	flex-direction: column;
 	flex-direction: row;
