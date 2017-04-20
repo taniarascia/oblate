@@ -7,9 +7,14 @@
 		<h1>
 			<?php the_title(); ?>
 		</h1>
-		<?php the_content(); ?>
 	</div>
 </header>
+
+<section>
+	<div class="container">
+		<?php the_content(); ?>
+	</div>
+</section>
 
 <?php endwhile; endif; ?>
 

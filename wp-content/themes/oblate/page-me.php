@@ -10,9 +10,11 @@
 	</div>
 </header>
 
-<div class="container">
-	<?php the_content(); ?>
-</div>
+<section>
+	<div class="container">
+		<?php the_content(); ?>
+	</div>
+</section>
 
 <?php endwhile; endif; ?>
 

@@ -5,7 +5,7 @@
 	<header class="sidebar-header">
 		<img src="<?php echo site_url(); ?>/wp-content/uploads/trsidebar.jpg" class="my-face">
 		<h1><a href="<?php echo site_url(); ?>">Tania Rascia</a></h1>
-		<p>Web Designer, Developer, Autodidact</p>
+		<p>Web Designer, developer, autodidact</p>
 	</header>
 
 	<nav class="sidebar-nav">

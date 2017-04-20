@@ -40,10 +40,11 @@ button,
 .comment-links a {
 	@extend .buttons;
 	&:hover,
-	&:active {
+	&:focus {
+		outline: 0;
 		@extend .buttons-hover;
 	}
-	&:focus {
+	&:active {
 		outline: 0;
 		transform: scale(.95);
 	} 
@@ -57,7 +58,7 @@ a.button.alt-button,
 	&:hover,
 	&:focus,
 	&:active {
-		color: white;
+	color: white;
 	border: 1px solid darken($alt-color, 15%);
 	background: linear-gradient(-180deg, $alt-color 0%, darken($alt-color, 12%) 90%);
 	}
