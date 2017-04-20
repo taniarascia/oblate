@@ -387,7 +387,7 @@ a.close {
 
 .page-header {
 	text-align: center;
-	padding: 1.5rem 0 .5rem;
+	padding: 1.5rem 0;
 	h1 {
 		margin: 1rem 0;
 		font-weight: 900;
@@ -400,9 +400,9 @@ a.close {
 
 @include small-breakpoint {
 	.page-header {
-		padding: 2.5rem 0 1rem;
+		padding: 1.5rem 0 2.5rem;
 		h1 {
-			font-size: 2.75rem;
+			font-size: 3rem;
 		}
 	}
 }
@@ -1055,8 +1055,8 @@ a.social-icon {
 	&:focus,
 	&:active {
 		border: 0;
-		background: 0;
-		color: $link-color;
+		background: #f5f5f5;
+		color: black;
 	}
 }
 
@@ -1255,7 +1255,7 @@ caption {
 		margin-top: 100px;
 		margin-bottom: 0;
 		font-weight: 900;
-		color: #111;
+		color: $heading-color;
 	}
 	.sub-title {
 		color: rgba(0, 0, 0, .6);
@@ -1266,7 +1266,7 @@ caption {
 		font-size: 1.7rem;
 	}
 	h3 {
-		color: #121212;
+		color: $heading-color;
 		font-weight: 900;
 		font-size: 1.4rem;
 		padding: .4rem 0;
