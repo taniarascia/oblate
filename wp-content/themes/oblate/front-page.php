@@ -5,7 +5,7 @@
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 	<header class="landing-header">
-		<div class="small-container">
+		<div class="container">
 			<div class="banner">
 				<h1>Tania Rascia</h1>
 				<?php the_content(); ?>
@@ -13,6 +13,7 @@
 				<a class="github-button" href="https://github.com/taniarascia" data-count-href="/taniarascia/followers" data-count-api="/users/taniarascia#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @taniarascia on GitHub">Follow</a>
 				<a class="twitter-follow-button" data-show-screen-name="false" href="https://twitter.com/taniarascia">Follow</a>
 			</div>
+			<div class="email-box">
 			<h2>Email list</h2>
 			<p>Join the list and I'll keep you up to date with new posts about design and development, along with information about my future endeavors. I respect your inbox as if it were my own - no bullshit, gimmicks, or ads.</p>
 			<div id="mc_embed_signup">
@@ -27,13 +28,14 @@
 					<div class="clear"><input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
 				</form>
 			</div>
+			</div>
 		</div>
 	</header>
 
 	<?php endwhile; endif; ?>
 
 	<section class="latest">
-		<div class="small-container">
+		<div class="container">
 			<h2>Latest posts</h2>
 
 				<?php $args = array(
@@ -60,7 +62,7 @@
 	</section>
 
 	<section class="popular">
-		<div class="small-container">
+		<div class="container">
 
 			<h2>Popular posts</h2>
 
