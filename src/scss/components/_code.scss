@@ -99,12 +99,12 @@ kbd {
 
 :not(pre) > code {
 	padding: 2px 4px;
-	border: 1px solid darken($border, 5%);
+	border: 1px solid rgba(0, 0, 0, 0.06);
 	font-family: $code;
 	font-weight: 400;
 	color: $heading-color;
 	border-radius: 4px;
-	//background: rgba(0, 0, 0, .08);
+	background: rgba(0, 0, 0, 0.06);
 }
 
 code[class*=language-css],

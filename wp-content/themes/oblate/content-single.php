@@ -9,8 +9,8 @@
 				<?php the_title(); ?>
 			</h1>
 			<time datetime="<?php the_time( 'Y-m-d' ); ?>">
-				<?php the_time( 'F j, Y' ); ?> -
-				<?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?> -
+				<?php the_time( 'F j, Y' ); ?> /
+				<?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?> /
 						<a href="https://twitter.com/share?
 					url=<?php the_permalink(); ?>&
 					via=taniarascia&

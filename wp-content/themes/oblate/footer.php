@@ -1,11 +1,11 @@
 	<footer class="footer">
-	<div class="small-container">
+	<div class="container">
 	<span>Tania Rascia is my name.</span>
 		<nav>
 			<a href="<?php echo site_url(); ?>/me">About</a>
+			<a href="<?php echo site_url(); ?>/resume">Resume</a>
 			<a href="<?php echo site_url(); ?>/blog">Blog</a>
 			<a href="<?php echo site_url(); ?>/work">Portfolio</a>
-			<a href="<?php echo site_url(); ?>/resume">Resume</a>
 			<a href="<?php echo site_url(); ?>/contact">Contact</a>
 			<a href="https://github.com/taniarascia">GitHub</a>
 		</nav>

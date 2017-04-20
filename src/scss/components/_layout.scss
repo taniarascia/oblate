@@ -190,7 +190,7 @@ a.close {
 	text-align: center;
 	transition: left .3s ease;
 	height: $nav-height;
-	border-bottom: 1px solid $background;
+	border-bottom: 1px solid $border;
 	transition: transform .3s ease;
 	ul {
 		list-style: none;
@@ -455,7 +455,7 @@ a.close {
 	max-width: $mobile;
 	margin: 0 auto;
 	padding: 1.5rem 0;
-	border-bottom: 1px solid $background;
+	border-bottom: 1px solid $border;
 	//&:last-of-type {
 	//	border-bottom: 0;
 	//}
@@ -619,7 +619,7 @@ blockquote {
 		border: 1px solid $border;
 	}
 	&.details {
-		background: lighten($link-color, 46%);
+		background: lighten($link-color, 55%);
 		border: 1px solid lighten($link-color, 15%);
 	}
 }
@@ -631,7 +631,7 @@ blockquote {
 	padding: 1.5rem 0;
 	border-top: 1px solid $background;
 	margin-top: 1rem;
-	.small-container {
+	.container {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -768,20 +768,23 @@ a.social-icon {
 	}
 	h2 {
 		padding: .5rem 0;
-		border-bottom: 1px solid $border;
 	}
 	h3 {
-		font-size: 1.2rem;
-		margin-top: 2rem;
+		font-size: 1.15rem;
+		margin-top: 0;
 		margin-bottom: .5rem;
 	}
 	time {
 		margin-bottom: 1rem;
 	}
+	p {
+		padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+	}
 }
 
 .dark-box {
-	border-top: 1px solid $background;
+	border-top: 1px solid $border;
 	background: #f5f5f5;
 	//background: #292929;
 	//color: #CBCBCB;
@@ -909,7 +912,7 @@ a.social-icon {
 .comment-body {
 	padding: 1rem 0;
 	font-family: $font-family;
-	border-bottom: 1px solid $background;
+	border-bottom: 1px solid $border;
 	margin: .5rem 0;
 	p {
 		padding: 0 0 0 62px;
@@ -1055,8 +1058,7 @@ a.social-icon {
 	&:focus,
 	&:active {
 		border: 0;
-		background: #f5f5f5;
-		color: black;
+		color: $link-color;
 	}
 }
 
