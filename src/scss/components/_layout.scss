@@ -385,6 +385,9 @@ a.close {
 .email-box {
 	background: #f5f5f5;
 	padding: 1rem;
+	h2 {
+		margin-top: 0;
+	}
 }
 
 @include small-breakpoint {
@@ -654,7 +657,6 @@ blockquote {
 			font-weight: 400;
 			color: rgba(0, 0, 0, .8);
 			text-decoration: none;
-			padding: 0 .4rem;
 		}
 		nav {
 			text-align: center;
@@ -665,7 +667,11 @@ blockquote {
 				color: rgba(0, 0, 0, .5);
 				text-decoration: none;
 				text-align: center;
-				padding: 0 .4rem;
+				padding: 0 .5rem;
+				&:last-of-type,
+				&:first-of-type {
+					padding: 0;
+				}
 				&:hover,
 				&:active,
 				&:focus {
@@ -1074,8 +1080,10 @@ a.social-icon {
 	&:hover,
 	&:focus,
 	&:active {
-		border: 0;
-		color: $link-color;
+		border: none;
+		color: black;
+		background: #f5f5f5;
+		border-bottom: 1px solid $border;
 	}
 }
 
