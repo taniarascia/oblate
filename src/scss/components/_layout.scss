@@ -667,10 +667,6 @@ blockquote {
 				text-decoration: none;
 				text-align: center;
 				padding: 0 .5rem;
-				&:last-of-type,
-				&:first-of-type {
-					padding: 0;
-				}
 				&:hover,
 				&:active,
 				&:focus {
@@ -684,6 +680,14 @@ blockquote {
 @include small-breakpoint {
 	.footer .container {
 		flex-direction: row;
+		nav a {
+			&:last-of-type {
+				padding-right: 0;
+			}
+			&:first-of-type {
+				padding-left: 0;
+			}
+		}
 	}
 }
 
