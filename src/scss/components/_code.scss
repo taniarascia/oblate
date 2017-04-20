@@ -99,7 +99,7 @@ kbd {
 
 :not(pre) > code {
 	padding: 2px 4px;
-	border: 1px solid rgba(0, 0, 0, 0.06);
+	border: none;
 	font-family: $code;
 	font-weight: 400;
 	color: $heading-color;
