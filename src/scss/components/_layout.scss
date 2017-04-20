@@ -645,8 +645,7 @@ blockquote {
 .footer {
 	margin-top: 2rem;
 	.container {
-		padding: 1.5rem 0;
-		border-top: 1px solid $border;
+		padding: 1.5rem 1rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -1250,7 +1249,7 @@ caption {
 }
 
 .four-oh-four {
-	min-height: calc(100vh - 160px);
+	min-height: calc(100vh - 120px);
 	display: flex;
 	flex-direction: column;
 	flex-direction: row;

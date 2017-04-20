@@ -36,7 +36,8 @@
 a.button,
 .button,
 button,
-.posts-links a {
+.posts-links a,
+.comment-links a {
 	@extend .buttons;
 	&:hover,
 	&:active {
@@ -79,7 +80,8 @@ a.button.ghost-button,
 
 // Other button
 a.button.secondary-button,
-.button.secondary-button {
+.button.secondary-button,
+.comment-links a {
 	background: linear-gradient(-180deg, #fefefe 0%, #f5f5f5  90%);
 	color: $heading-color;
 	border: 1px solid darken($border, 2%);
