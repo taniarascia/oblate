@@ -382,6 +382,18 @@ a.close {
 	border-radius: 6px;
 }
 
+.email-box {
+	background: #f5f5f5;
+	padding: 1rem;
+}
+
+@include small-breakpoint {
+	.email-box {
+		background: #f5f5f5;
+		padding: 2rem;
+	}
+}
+
 
 /* Pages */
 
@@ -779,7 +791,7 @@ a.social-icon {
 	}
 	p {
 		padding-bottom: 1.5rem;
-    border-bottom: 1px solid #eee;
+		border-bottom: 1px solid #eee;
 		&:last-of-type {
 			border-bottom: 0;
 		}
@@ -1036,8 +1048,9 @@ a.social-icon {
 	}
 	[type="search"] {
 		margin: 0;
-		background: #f0f0f0;
-		border: 1px solid #f0f0f0;
+		background: white;
+		border: 1px solid white;
+		border-left: 1px solid $border;
 		&:hover {
 			border: 1px solid $border;
 		}
