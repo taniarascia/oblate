@@ -387,7 +387,7 @@ a.close {
 	padding: 1rem;
 	h2 {
 		margin-top: 0;
-	}
+	} 
 }
 
 @include small-breakpoint {
@@ -932,7 +932,7 @@ a.social-icon {
 }
 
 // Comment body
-.comments {
+.comment {
 	border-bottom: 1px solid #eee;
 	&:last-of-type {
 		border-bottom: none;
