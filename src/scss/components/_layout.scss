@@ -402,7 +402,7 @@ a.close {
 
 .page-header {
 	text-align: center;
-	padding: 1rem 0;
+	padding: 1rem 0 0;
 	h1 {
 		margin: 1rem 0;
 		font-weight: 900;
@@ -415,7 +415,7 @@ a.close {
 
 @include small-breakpoint {
 	.page-header {
-		padding: 1.5rem 0;
+		padding: 1.5rem 0 .25rem;
 		h1 {
 			font-size: 3rem;
 		}
@@ -634,7 +634,7 @@ blockquote {
 		border: 1px solid $border;
 	}
 	&.details {
-		background: lighten($link-color, 55%);
+		background: lighten($link-color, 45%);
 		border: 1px solid lighten($link-color, 15%);
 	}
 }
@@ -1088,6 +1088,7 @@ a.social-icon {
 	&:hover,
 	&:focus,
 	&:active {
+		transform: scale(1);
 		border: none;
 		border-radius: 0;
 		color: black;
