@@ -37,7 +37,6 @@
 					text=<?php the_title(); ?>">
 				<i class="fa fa-twitter" aria-hidden="true"></i> Share to Twitter
 			</a>
-
 		</div>
 
 		<div class="email-container">
