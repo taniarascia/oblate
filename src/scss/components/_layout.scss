@@ -660,13 +660,13 @@ blockquote {
 		nav {
 			text-align: center;
 			a {
-				font-size: .9rem;
+				font-size: .85rem;
 				font-family: $nav-family;
 				font-weight: 400;
 				color: rgba(0, 0, 0, .5);
 				text-decoration: none;
 				text-align: center;
-				padding: 0 .5rem;
+				padding: 0 .25rem;
 				&:last-of-type {
 					padding-right: 0;
 				}
@@ -686,6 +686,10 @@ blockquote {
 @include small-breakpoint {
 	.footer .container {
 		flex-direction: row;
+		nav a {
+			font-size: .9rem;
+			padding: 0 .5rem;
+		}
 	}
 }
 
