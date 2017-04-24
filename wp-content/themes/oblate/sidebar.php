@@ -3,12 +3,13 @@
 		<a href="#!" class="close"><i class="fa fa-2x fa-times" aria-hidden="true"></i></a>
 	</div>
 	<header class="sidebar-header">
-		<img src="<?php echo site_url(); ?>/wp-content/uploads/trsidebar.jpg" class="my-face">
+		<img src="<?php echo site_url(); ?>/wp-content/uploads/face-150x150.jpg" class="my-face">
 		<h1><a href="<?php echo site_url(); ?>">Tania Rascia</a></h1>
-		<p>Web designer, developer, autodidact</p>
+		<p>Web designer/developer</p>
 	</header>
 
 	<nav class="sidebar-nav">
+		<a href="<?php echo site_url(); ?>">Home</a>
 		<a href="<?php echo site_url(); ?>/me">About Me</a>
 		<a href="<?php echo site_url(); ?>/work">Professional Work</a>
 		<a href="<?php echo site_url(); ?>/projects">Personal Projects</a>
