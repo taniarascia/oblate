@@ -5,7 +5,7 @@
 	<header class="sidebar-header">
 		<img src="<?php echo site_url(); ?>/wp-content/uploads/face-150x150.jpg" class="my-face">
 		<h1><a href="<?php echo site_url(); ?>">Tania Rascia</a></h1>
-		<p>Web designer/developer, tech writer and problem solver. Loves hiking, karaoke, accordions, and old video games. </p>
+		<p>Web designer/developer, tech writer and problem solver. Minimalist. Loves hiking, karaoke, accordions, and old video games. </p>
 	</header>
 
 	<nav class="sidebar-nav">
