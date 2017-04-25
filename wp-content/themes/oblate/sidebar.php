@@ -5,7 +5,7 @@
 	<header class="sidebar-header">
 		<img src="<?php echo site_url(); ?>/wp-content/uploads/face-150x150.jpg" class="my-face">
 		<h1><a href="<?php echo site_url(); ?>">Tania Rascia</a></h1>
-		<p>Web designer/developer</p>
+		<p>Web designer/developer, tech writer and problem solver. Loves hiking, karaoke, accordions, and old video games. </p>
 	</header>
 
 	<nav class="sidebar-nav">
@@ -16,14 +16,7 @@
 	</nav>
 
 	<section class="sidebar-content">
-		<p>My site is <strong>free</strong> – and free of ads, clickbait, popups, guest posts, sponsorships, and bullshit. If this website has been valuable to you, please consider donating.</p>
-
-		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-			<input type="hidden" name="cmd" value="_s-xclick" />
-			<input type="hidden" name="hosted_button_id" value="7JMKA39JXQNGL" />
-			<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate" />
-			<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-		</form>
+		<p>My site is <strong>free</strong> – and free of ads, clickbait, popups, guest posts, sponsorships, and bullshit.</p>
 
 		<div class="social-icons">
 			<a href="<?php echo site_url(); ?>/feed" class="social-icon"><i class="fa fa-rss fa-2x"></i></a>
