@@ -14,8 +14,8 @@
 				<a class="twitter-follow-button" data-show-screen-name="false" href="https://twitter.com/taniarascia">Follow</a>
 			</div>
 			<div class="email-box">
-			<h2>Email list</h2>
-			<p>Join the list and I'll keep you up to date with new posts about design and development, along with information about my future endeavors. I respect your inbox as if it were my own - no bullshit, gimmicks, or ads.</p>
+			<h2>Tania's List</h2>
+			<p>Tutorials, guides, and articles for web designers, developers, and autodidacts, sent out once a month or so. No bullshit, ads, pop-ups, or tricks. </p>
 			<div id="mc_embed_signup">
 				<form action="//taniarascia.us12.list-manage.com/subscribe/post?u=ec794fab6e35a491a001cc25d&amp;id=5276386071" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 					<label for="mce-EMAIL"><span class="screen-reader-text">Email</span></label><input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address">
@@ -25,7 +25,7 @@
 					</div>
 					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ec794fab6e35a491a001cc25d_5276386071" tabindex="-1" value=""></div>
-					<div class="clear"><input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					<div class="clear"><input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button alt-button"></div>
 				</form>
 			</div>
 			</div>
