@@ -9,8 +9,9 @@
 	font-size: .95rem;
 	line-height: 1.4;
 	text-decoration: none !important;
-	background: linear-gradient(-180deg, lighten($link-color, 10%) 0%, $link-color 90%);
+	background: $link-color;
 	border: 1px solid darken($link-color, 8%);
+	border-bottom: 4px solid darken($link-color, 8%);
 	border-radius: 6px;
 	cursor: pointer;
 	font-weight: 600;
@@ -25,7 +26,8 @@
 
 .buttons-hover {
 	border: 1px solid darken($link-color, 15%);
-	background: linear-gradient(-180deg, $link-color 0%, darken($link-color, 12%) 90%);
+	border-bottom: 4px solid darken($link-color, 15%);
+	background: darken($link-color, 5%);
 	text-decoration: none;
 }
 
@@ -46,21 +48,26 @@ button,
 	}
 	&:active {
 		outline: 0;
-		transform: scale(.95);
-	} 
+		border-bottom: 2px solid darken($link-color, 15%);
+	}
 }
 
 // Alt button
 a.button.alt-button,
 .button.alt-button {
-	background: linear-gradient(-180deg, lighten($alt-color, 10%) 0%, $alt-color 90%);
+	background: $alt-color;
 	border: 1px solid darken($alt-color, 8%);
+	border-bottom: 4px solid darken($alt-color, 8%);
 	&:hover,
-	&:focus,
+	&:focus {
+		color: white;
+		border: 1px solid darken($alt-color, 15%);
+		border-bottom: 4px solid darken($alt-color, 15%);
+		background: darken($alt-color, 5%);
+	}
 	&:active {
-	color: white;
-	border: 1px solid darken($alt-color, 15%);
-	background: linear-gradient(-180deg, $alt-color 0%, darken($alt-color, 12%) 90%);
+		outline: 0;
+		border-bottom: 2px solid darken($alt-color, 15%);
 	}
 }
 
@@ -83,14 +90,16 @@ a.button.ghost-button,
 a.button.secondary-button,
 .button.secondary-button,
 .comment-links a {
-	background: linear-gradient(-180deg, #fefefe 0%, #f5f5f5  90%);
+	background: linear-gradient(-180deg, #fefefe 0%, #f5f5f5 90%);
 	color: $heading-color;
 	border: 1px solid darken($border, 2%);
+	border-bottom: 1px solid darken($border, 2%);
 	&:hover,
 	&:focus,
 	&:active {
-		background: linear-gradient(-180deg, #f0f0f0 0%, #eeeeee  90%);
+		background: linear-gradient(-180deg, #f0f0f0 0%, #eeeeee 90%);
 		border: 1px solid darken($border, 10%);
+		border-bottom: 1px solid darken($border, 10%);
 		text-decoration: none;
 	}
 }

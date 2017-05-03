@@ -552,7 +552,8 @@ a.close {
 		margin: 1rem;
 		border: 1px solid $border;
 		position: relative;
-		padding: 2rem 2rem 4rem !important;
+		//padding: 2rem 2rem 4rem !important; use this if using tags
+		padding: 2rem !important;
 	}
 	.article-excerpt {
 		padding: 2rem 0;

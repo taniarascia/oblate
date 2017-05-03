@@ -5,6 +5,7 @@
 	padding: .8rem 1rem;
 	border-radius: 6px;
 	border: 1px solid $border;
+	border-bottom: 4px solid $border;
 	max-width: 100%;
 	font-size: .9rem;
 	background: white;
@@ -24,10 +25,12 @@ select,
 	@extend .forms;
 	&:hover {
 		border: 1px solid darken($border, 10%);
+		border-bottom: 4px solid darken($border, 10%);
 	}
 	&:focus,
 	&:active {
 		border: 1px solid $link-color;
+		border-bottom: 4px solid $link-color;
 		outline: 0;
 	}
 }
@@ -58,9 +61,8 @@ label>.label-body {
 
 div.wpcf7-mail-sent-ok {
 	border: 1px solid #54c381;
-	border-left: 12px solid #54c381;
-	border-radius: 0;
-	padding: 15px;
+	border-radius: 6px;
+	padding: 1.5rem;
 	background: #edf9f2;
 	color: #214e33;
 	font-size: 1rem;
@@ -68,9 +70,8 @@ div.wpcf7-mail-sent-ok {
 
 div.wpcf7-validation-errors {
 	border: 1px solid #FFE168;
-	border-left: 12px solid #FFE168;
-	border-radius: 0;
-	padding: 15px;
+	border-radius: 6px;
+	padding: 1.5rem;
 	background: #FFF4CA;
 	color: #755D00;
 	font-size: 1rem;
