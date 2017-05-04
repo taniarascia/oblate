@@ -1060,9 +1060,17 @@ a.social-icon {
 .search-form {
 	text-align: center;
 	margin-bottom: 1rem;
+	&::after {
+		content: '';
+		display: block;
+		float: none;
+	}
 	label {
 		display: inline-block;
 		float: left;
+	}
+	[type=search] {
+		margin-top: 0;
 	}
 	[type=submit] {
 		float: left;
