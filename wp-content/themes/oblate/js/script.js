@@ -1,10 +1,10 @@
 console.log('Hello, fellow developer! Thanks for visiting. :)'
-					+ '\n\n In case you\'re wondering, the design and theme'
-					+ '\n of this blog is completely custom, and you can'
-					+ '\n view that open source code here:'
-					+ '\n https://github.com/taniarascia/oblate'
-					+ '\n\n Don\'t forget to try out the cheat code!'
-					+ '↑ ↑ ↓ ↓ ← → ← → B A');
+					+ '\n\nIn case you\'re wondering, the design and theme'
+					+ '\nof this blog is completely custom, and you can'
+					+ '\nview that open source code here:'
+					+ '\nhttps://github.com/taniarascia/oblate'
+					+ '\n\nDon\'t forget to try out the cheat code!'
+					+ '\n↑ ↑ ↓ ↓ ← → ← → B A');
 
 (function ($) {
 	$(function () { // DOM Ready
