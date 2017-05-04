@@ -1,4 +1,10 @@
-console.log('Hi! Thanks for visiting. :)');
+console.log('Hello, fellow developer! Thanks for visiting. :) '
+					+ '\n\n In case you\'re wondering, the design and theme'
+					+ '\n of this blog is completely custom, and you can'
+					+ '\n view that open source code here:'
+					+ '\n https://github.com/taniarascia/oblate'
+					+ '\n\n Don\'t forget to try out the cheat code! 
+					+ '↑ ↑ ↓ ↓ ← → ← → B A');
 
 (function ($) {
 	$(function () { // DOM Ready
@@ -139,7 +145,7 @@ var easter_egg = new Konami(function () {
 
 	link.type = 'text/css'
 	link.rel = 'stylesheet'
-	link.href = 'https://www.taniarascia.com/wp-content/themes/oblate/css/eighties.css?ver=3'
+	link.href = 'https://www.taniarascia.com/wp-content/themes/oblate/css/eighties.css?ver=4'
 
 	head.appendChild(link)
 
