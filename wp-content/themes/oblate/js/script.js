@@ -1,9 +1,9 @@
-console.log('Hello, fellow developer! Thanks for visiting. :) '
+console.log('Hello, fellow developer! Thanks for visiting. :)'
 					+ '\n\n In case you\'re wondering, the design and theme'
 					+ '\n of this blog is completely custom, and you can'
 					+ '\n view that open source code here:'
 					+ '\n https://github.com/taniarascia/oblate'
-					+ '\n\n Don\'t forget to try out the cheat code! 
+					+ '\n\n Don\'t forget to try out the cheat code!'
 					+ '↑ ↑ ↓ ↓ ← → ← → B A');
 
 (function ($) {
