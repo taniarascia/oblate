@@ -158,6 +158,13 @@ mark {
 	max-width: $desktop;
 }
 
+.search-container {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 1rem;
+	max-width: 320px;
+}
+
 
 /* Navigation */
 
@@ -333,7 +340,7 @@ a.close {
 	overflow: hidden;
 	min-height: 100vh;
 	z-index: 3;
-	background: $heading-color;
+	background: darken($heading-color, 5%);
 	transform: translate3d(-300px, 0, 0);
 	transition: transform .3s ease;
 	font-size: .95rem;
@@ -753,6 +760,7 @@ a.social-icon {
 	height: 50px;
 	font-size: .9rem;
 	overflow: hidden;
+	float: left;
 }
 
 #mc_embed_signup br,
@@ -767,6 +775,7 @@ a.social-icon {
 	height: 50px;
 	font-size: .9rem;
 	overflow: hidden;
+	float: left;
 }
 
 .email-container {
@@ -1053,6 +1062,11 @@ a.social-icon {
 	margin-bottom: 1rem;
 	label {
 		display: inline-block;
+		float: left;
+	}
+	[type=submit] {
+		float: left;
+		margin-left: .25rem;
 	}
 }
 
@@ -1262,7 +1276,7 @@ caption {
 }
 
 .four-oh-four {
-	min-height: calc(100vh - 160px);
+	min-height: calc(100vh - 80px);
 	display: flex;
 	flex-direction: column;
 	flex-direction: row;
