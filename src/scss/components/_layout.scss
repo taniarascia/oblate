@@ -163,6 +163,11 @@ mark {
 	margin-right: auto;
 	padding: 0 1rem;
 	max-width: 320px;
+	&::after {
+		content: '';
+		display: block;
+		float: none;
+	}
 }
 
 
@@ -1060,12 +1065,8 @@ a.social-icon {
 .search-form {
 	text-align: center;
 	margin-bottom: 1rem;
-	&::after {
-		content: '';
-		display: block;
-		float: none;
-	}
 	label {
+		margin-top: 0;
 		display: inline-block;
 		float: left;
 	}
