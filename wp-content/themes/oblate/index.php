@@ -6,9 +6,9 @@
 	</div>
 </header>
 
-<div class="small-container">
+<div class="container">
 
-		<?php 
+	<?php 
 		
 		if ( have_posts() ) : while ( have_posts() ) : the_post();
 		
@@ -16,10 +16,9 @@
 		
 		endwhile; ?>
 
-	</div>
+</div>
 
-<div class="small-container">
-
+<div class="container">
 	<div class="posts-links">
 		<div class="pagination-left">
 			<?php previous_posts_link(); ?>
@@ -28,9 +27,8 @@
 			<?php next_posts_link(); ?>
 		</div>
 	</div>
-
 </div>
 
 <?php endif; ?>
 
-<?php get_footer(); ?>
+<?php get_footer(); 
