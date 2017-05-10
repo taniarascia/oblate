@@ -1,10 +1,6 @@
 # Oblate WordPress Theme
 
-### Custom Web Development Blog
-
-I like simple, clean, minimalist blogs. I don't like sidebars, ads, widgets, plugins, or anything else on my blog - because if you're here, you're here for the content. 
-
-Articles are organized into **Tutorials**, **Snippets**, and **Thoughts**. 
+This is the code for [my website](https://www.taniarascia.com/), open source for your inspiration. It's not meant for installation or customization - a lot of Tania-specific data is hard-coded into it. I encourage you to be unique and create your own theme. If you don't know how to do so, [here is the tutorial](https://www.taniarascia.com/developing-a-wordpress-theme-from-scratch/).
 
 ## External resources
 
