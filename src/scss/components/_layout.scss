@@ -475,6 +475,8 @@ a.close {
 
 .article-excerpt {
 	max-width: $tablet;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 1.5rem 0;
 	border-bottom: 1px solid $border;
 	//&:last-of-type {
@@ -558,7 +560,7 @@ a.close {
 		margin: 1rem;
 		border: 1px solid $border;
 		position: relative;
-		//padding: 2rem 2rem 4rem !important; use this if using tags
+		padding: 2rem 2rem 4rem !important; //use this if using tags
 		padding: 2rem !important;
 	}
 	.article-excerpt {
