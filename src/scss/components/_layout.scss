@@ -220,23 +220,19 @@ a.close {
 		color: $heading-color;
 		font-weight: 700;
 	}
-	.home {
+	.home,
+	.search {
 		a {
 			color: $heading-color;
 			cursor: pointer;
 			&:hover,
 			&:active,
 			&:focus {
-				color: black;
-				background: #f5f5f5;
-				border-bottom: 1px solid $border;
+				color: $link-color;
 			}
 		}
 	}
 	.search {
-		a {
-			color: $link-color;
-		}
 		form {
 			display: none;
 		}
@@ -257,7 +253,7 @@ a.close {
 		}
 	}
 }
-
+ 
 .mobile-only {
 	display: block;
 }
@@ -292,6 +288,15 @@ a.close {
 		.home,
 		.search {
 			flex: 0 0 256px;
+			a {
+				&:hover,
+				&:active,
+				&:focus {
+					color: black;
+					background: #f5f5f5;
+					border-bottom: 1px solid $border;
+				}
+			}
 		}
 		.search {
 			form {
@@ -300,11 +305,6 @@ a.close {
 		}
 		.search a {
 			text-align: right;
-			&:hover {
-				color: black;
-				background: #f5f5f5;
-				border-bottom: 1px solid $border;
-			}
 		}
 	}
 	#menu-item-2473,
