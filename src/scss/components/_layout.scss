@@ -220,8 +220,7 @@ a.close {
 		color: $heading-color;
 		font-weight: 700;
 	}
-	.home,
-	.search {
+	.home {
 		a {
 			color: $heading-color;
 			cursor: pointer;
@@ -235,6 +234,9 @@ a.close {
 		}
 	}
 	.search {
+		a {
+			color: $link-color;
+		}
 		form {
 			display: none;
 		}
@@ -298,6 +300,11 @@ a.close {
 		}
 		.search a {
 			text-align: right;
+			&:hover {
+				color: black;
+				background: #f5f5f5;
+				border-bottom: 1px solid $border;
+			}
 		}
 	}
 	#menu-item-2473,
@@ -1059,7 +1066,7 @@ a.social-icon {
 }
 
 .search-form {
-	text-align: center; 
+	text-align: center;
 	margin-bottom: 1.5rem;
 	&::after {
 		display: block;
