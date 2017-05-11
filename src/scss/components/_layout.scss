@@ -370,7 +370,7 @@ a.close {
 		color: rgba(255, 255, 255, 1);
 		font-size: .95rem;
 		&:hover {
-			background: $alt-color;
+			background: $link-color;
 			text-decoration: none;
 		}
 	}
@@ -474,6 +474,7 @@ a.close {
 /* Article Excerpts */
 
 .article-excerpt {
+	max-width: $tablet;
 	padding: 1.5rem 0;
 	border-bottom: 1px solid $border;
 	//&:last-of-type {

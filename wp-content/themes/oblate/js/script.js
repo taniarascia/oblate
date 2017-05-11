@@ -1,8 +1,8 @@
 console.log('Hello, fellow developer! Thanks for visiting. :)'
 					+ '\n\nIn case you\'re wondering, the design and theme'
-					+ '\nof this blog is completely custom, and you can'
-					+ '\nview that open source code here:'
-					+ '\nhttps://github.com/taniarascia/oblate'
+					+ '\nof this blog is completely custom, based on my own'
+					+ '\nCSS/Sass framework, Primitive. Check it out!'
+					+ '\nhttps://taniarascia.github.io/primitive'
 					+ '\n\nDon\'t forget to try out the cheat code!'
 					+ '\n↑ ↑ ↓ ↓ ← → ← → B A');
 
