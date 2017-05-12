@@ -39,7 +39,7 @@
 
 	<?php endif; ?>
 
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+<?php if ( is_front_page() ) { ?><script async defer src="https://buttons.github.io/buttons.js"></script><?php } ?>
 
 </head>
 
