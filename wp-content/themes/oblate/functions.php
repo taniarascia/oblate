@@ -74,7 +74,7 @@ add_action( 'init', 'register_my_menu' );
 
 /**
  * Remove jQuery
- */
+ *
 
 function change_default_jquery( &$scripts){
     if (!is_admin()) {
@@ -83,10 +83,11 @@ function change_default_jquery( &$scripts){
     }
 }
 add_filter( 'wp_default_scripts', 'change_default_jquery' );
+*/
 
 /** 
  * jQuery to the bottom
- *
+ */
 
 function starter_scripts() {
 	wp_deregister_script( 'jquery' );
