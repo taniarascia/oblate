@@ -72,9 +72,21 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
+/**
+ * Remove jQuery
+ */
+
+function change_default_jquery( &$scripts){
+    if (!is_admin()) {
+        $scripts->remove( 'jquery');
+        $scripts->add( 'jquery', false, array( 'jquery-core' ), '1.10.2' );
+    }
+}
+add_filter( 'wp_default_scripts', 'change_default_jquery' );
+
 /** 
  * jQuery to the bottom
- */
+ *
 
 function starter_scripts() {
 	wp_deregister_script( 'jquery' );
