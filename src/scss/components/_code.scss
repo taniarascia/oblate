@@ -88,7 +88,7 @@ kbd {
 	font-size: 14px;
 }
 
-
+ 
 /* Inline code */
 
 :not(pre) > code[class*="language-"] {
@@ -112,6 +112,18 @@ code[class*=language-scss],
 code[class*=language-less],
 code[class*=language-sass] {
 	color: #CC99CC;
+}
+
+.filename {
+	margin-bottom: calc(-2rem - 4px);
+	font-family: $font-family;
+	background: #111;
+	padding: .5rem 1rem .75rem;
+	font-size: 1rem;
+	color: white;
+	font-weight: bold;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
 }
 
 
