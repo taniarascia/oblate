@@ -81,7 +81,7 @@
 
 <?php } ?>
 	
-<?php if ( is_single() ) { ?>
+<?php if ( is_singular() && !is_singular( 'work' ) ) { ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

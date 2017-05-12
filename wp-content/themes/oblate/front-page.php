@@ -9,8 +9,7 @@
 			<div class="banner">
 				<h1 class="text-center">Tania Rascia</h1>
 				<?php the_content(); ?>
-				<!-- Place this tag where you want the button to render. -->
-				<a class="github-button" href="https://github.com/taniarascia" data-count-href="/taniarascia/followers" data-count-api="/users/taniarascia#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @taniarascia on GitHub">Follow</a>
+				<a class="github-button" href="https://github.com/taniarascia" data-show-count="true" aria-label="Follow @taniarascia on GitHub">Follow @taniarascia</a>
 				<a class="twitter-follow-button" data-show-screen-name="false" href="https://twitter.com/taniarascia">Follow</a>
 			</div>
 			<div class="email-box">
