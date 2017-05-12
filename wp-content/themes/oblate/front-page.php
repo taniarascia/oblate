@@ -9,7 +9,7 @@
 			<div class="banner">
 				<h1 class="text-center">Tania Rascia</h1>
 				<?php the_content(); ?>
-				<a class="github-button" href="https://github.com/taniarascia" data-show-count="true" data-size="large" aria-label="Follow @taniarascia on GitHub">Follow @taniarascia</a>
+				<a class="github-button" href="https://github.com/taniarascia" data-show-count="true" data-size="large" aria-label="Follow @taniarascia on GitHub">Follow</a>
 				<a class="twitter-follow-button" data-size="large" data-show-screen-name="false" href="https://twitter.com/taniarascia">Follow</a>
 			</div>
 			<div class="email-box">
