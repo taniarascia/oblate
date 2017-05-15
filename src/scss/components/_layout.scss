@@ -239,7 +239,7 @@ a.close {
 	}
 	a {
 		display: block;
-		font-size: 1rem;
+		font-size: .9rem;
 		font-family: $nav-family;
 		font-weight: 400;
 		color: rgba(0, 0, 0, .5);
@@ -271,7 +271,7 @@ a.close {
 			line-height: $nav-height;
 			text-align: center;
 			padding: 0 1rem;
-			font-size: .9rem;
+			font-size: 1rem;
 		}
 		i.fa-bars {
 			text-align: right;
