@@ -1128,8 +1128,7 @@ a.social-icon {
 		transform: scale(1);
 		border: none;
 		border-radius: 0;
-		color: black;
-		background: #f5f5f5;
+		color: $link-color; 
 		border-bottom: 1px solid $border;
 	}
 }
