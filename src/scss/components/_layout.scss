@@ -203,11 +203,13 @@ a.close {
 		list-style: none;
 		padding: 0;
 		margin: 0;
+		font-size: 0;
 	}
 	li {
 		display: inline-block;
 		padding: 0;
 		line-height: $nav-height;
+		font-size: 0;
 	}
 	.fa-bars {
 		text-align: right;
@@ -241,15 +243,16 @@ a.close {
 		display: block;
 		font-size: .9rem;
 		font-family: $nav-family;
-		font-weight: 400;
-		color: rgba(0, 0, 0, .5);
+		font-weight: 700;
+		color: rgba(0, 0, 0, .75);
 		text-decoration: none;
 		text-align: center;
 		padding: 0 .75rem;
 		&:hover,
 		&:active,
 		&:focus {
-			color: $link-color;
+			color: white;
+			background: $link-color;
 		}
 	}
 }
@@ -271,7 +274,7 @@ a.close {
 			line-height: $nav-height;
 			text-align: center;
 			padding: 0 1rem;
-			font-size: 1rem;
+			font-size: .9rem;
 		}
 		i.fa-bars {
 			text-align: right;
