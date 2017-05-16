@@ -219,8 +219,7 @@ a.close {
 		display: none;
 	}
 	.current-menu-item a {
-		color: $heading-color;
-		font-weight: 700;
+		border-bottom: 3px solid $link-color; 
 	}
 	.home,
 	.search {
