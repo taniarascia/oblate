@@ -231,6 +231,7 @@ a.close {
 			&:active,
 			&:focus {
 				color: $link-color;
+				background: transparent; 
 			}
 		}
 	}
