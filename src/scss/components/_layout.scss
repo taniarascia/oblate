@@ -321,6 +321,10 @@ mark {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	.fa {
+		margin: auto;
+		display: block;
+	}
 }
 
 .nav-search-input {
@@ -329,14 +333,18 @@ mark {
 	padding: 1rem;
 	width: 100%;
 	max-width: 400px;
-	min-width: 160px;
+	min-width: 130px;
 	color: white;
 	height: 50px;
-	&:hover,
-	&:active,
-	&:focus {
+	&:hover {
 		background: lighten(#404040, 2%);
 		border: 0;
+	}
+	&:active,
+	&:focus {
+		background: lighten(#404040, 5%);
+		border: 0;
+		outline: 0;
 	}
 	&::placeholder {
 		color: rgba(255, 255, 255, .7);

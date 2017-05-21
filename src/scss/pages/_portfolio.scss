@@ -12,13 +12,20 @@
 		}
 	}
 	.portfolio-thumbnail {
-		img, a {
+		img,
+		a {
 			display: block;
-		}
+		} 
 	}
 	.portfolio-description {
-		padding: 2rem;
+		padding: 1rem;
 		border-top: 1px solid $border;
+	}
+}
+
+@include small-breakpoint {
+	.portfolio-description {
+		padding: 2rem;
 	}
 }
 
