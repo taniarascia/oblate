@@ -163,7 +163,7 @@ mark {
 /* Navigation */
 
 .main-navigation {
-	margin-top: 40px;
+	margin-top: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -247,7 +247,7 @@ mark {
 	width: 100%;
 	top: 0;
 	left: 0;
-	height: 40px;
+	height: 50px;
 	background: #181818;
 	text-align: center;
 	display: flex;
@@ -259,7 +259,7 @@ mark {
 	color: white;
 	font-weight: 600;
 	font-size: 1.1rem;
-	margin: 0 1rem;
+	margin: 0 0 0 .5rem;
 	display: flex;
 	align-items: center;
 	a {
@@ -284,6 +284,7 @@ mark {
 
 @include nav-breakpoint {
 	.secondary-title {
+		margin: 0 0 0 1rem;
 		a {
 			color: white;
 			white-space: nowrap;
@@ -302,15 +303,16 @@ mark {
 
 .nav-search {
 	display: flex;
-	height: 40px;
+	height: 50px;
 }
 
 .nav-search-submit {
 	background: #4473FE;
 	border: 0;
 	padding: 0;
+	text-align: center;
 	font-size: 1.3rem;
-	height: 40px;
+	height: 50px;
 	width: 60px;
 	color: white;
 	font-weight: bold;
@@ -329,7 +331,7 @@ mark {
 	max-width: 400px;
 	min-width: 160px;
 	color: white;
-	height: 40px;
+	height: 50px;
 	&:hover,
 	&:active,
 	&:focus {
@@ -357,7 +359,7 @@ mark {
 /* Landing */
 
 .header {
-	text-align: center;
+	text-align: left;
 	padding: 1.5rem 0;
 	h1 {
 		margin: 0 0 1.5rem;
@@ -434,7 +436,7 @@ mark {
 }
 
 .alternate-background {
-	padding: 2rem 0;
+	padding: 1rem 0;
 	background: $background;
 }
 
@@ -518,7 +520,7 @@ mark {
 	margin: .5rem;
 	border: 1px solid $border;
 	position: relative;
-	padding: 1.5rem;
+	padding: 1.5rem 1.5rem .5rem;
 	p {
 		color: $light-font;
 		font-size: 1.0rem;
@@ -653,12 +655,18 @@ blockquote {
 .footer {
 	background: $dark;
 	color: $light;
-	padding: 3rem 0;
+	padding: 1.5rem 0;
 	p {
 		font-size: 1rem;
 	}
 	a {
 		color: $yellow;
+	}
+}
+
+@include small-breakpoint {
+	.footer {
+		padding: 3rem 0;
 	}
 }
 
