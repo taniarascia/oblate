@@ -20,14 +20,14 @@
 		<section class="portfolio-page alternate-background">
 			<h3>Portfolio</h3>
 			<div class="text-center margin-bottom">
-				<a class="button alt-button" href="<?php echo site_url(); ?>/work">View all</a>
+				<a class="button alt-button" href="<?php echo site_url(); ?>/work" style="margin-bottom: 1.5rem;">View all</a>
 			</div>
 			<div class="large-container">
 				<div class="grid">
 
 					<?php $args = array(
 				'post_type' => 'work',
-				'order' => 'desc',
+				'order' => 'asc',
 				'posts_per_page' => '6',
 			);
 
