@@ -472,22 +472,22 @@ mark {
 }
 
 .bright-header {
-	background: $bg, linear-gradient(to top right, darken($blue, 30%), $blue);
+	background: linear-gradient(to top right, darken($blue, 30%), $blue);
 	color: rgba(255, 255, 255, .8);
 	h1 {
 		color: white;
 	}
 	&.snippets-header {
-		background: $bg, linear-gradient(to top right, $green, $blue);
+		background: linear-gradient(to top right, $green, $blue);
 	}
 	&.tania-header {
-		background: $bg, linear-gradient(to top right, $pink, $blue);
+		background: linear-gradient(to top right, $pink, $blue);
 	}
 	&.portfolio-header {
-		background: $bg, linear-gradient(to top right, darken($yellow, 10%), $blue);
+		background: linear-gradient(to top right, darken($yellow, 10%), $blue);
 	}
 	&.thoughts-header {
-		background: $bg, linear-gradient(to top right, $purple, $blue);
+		background: linear-gradient(to top right, $purple, $blue);
 	}
 }
 
