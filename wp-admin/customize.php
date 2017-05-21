@@ -102,7 +102,7 @@ if ( $wp_customize->is_ios() ) {
 if ( is_rtl() ) {
 	$body_class .= ' rtl';
 }
-$body_class .= ' locale-' . sanitize_html_class( strtolower( str_replace( '_', '-', get_locale() ) ) );
+$body_class .= ' locale-' . sanitize_html_class( strtolower( str_replace( '_', '-', get_user_locale() ) ) );
 
 $admin_title = sprintf( $wp_customize->get_document_title_template(), __( 'Loading&hellip;' ) );
 
@@ -155,7 +155,7 @@ do_action( 'customize_controls_print_scripts' );
 			<div id="customize-info" class="accordion-section customize-info">
 				<div class="accordion-section-title">
 					<span class="preview-notice"><?php
-						echo sprintf( __( 'You are customizing %s' ), '<strong class="panel-title site-title">' . get_bloginfo( 'name' ) . '</strong>' );
+						echo sprintf( __( 'You are customizing %s' ), '<strong class="panel-title site-title">' . get_bloginfo( 'name', 'display' ) . '</strong>' );
 					?></span>
 					<button type="button" class="customize-help-toggle dashicons dashicons-editor-help" aria-expanded="false"><span class="screen-reader-text"><?php _e( 'Help' ); ?></span></button>
 				</div>
