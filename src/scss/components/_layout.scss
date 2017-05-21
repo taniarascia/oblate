@@ -791,7 +791,7 @@ blockquote {
 		background: darken($pink, 10%);
 	}
 }
- 
+
 .section-content {
 	margin: 1.5rem 0;
 }
@@ -1129,37 +1129,102 @@ caption {
 	}
 }
 
+
+/* Landing */
+
+.resume-header {
+	text-align: left;
+	padding: 1.5rem 0;
+	h1 {
+		margin: 0;
+		font-weight: 800;
+		font-size: 1.5rem;
+	}
+	a {
+		font-weight: 700;
+		color: $heading-color;
+		text-decoration: underline;
+		&:hover {
+			color: $yellow;
+		}
+	}
+	.subtitle {
+		font-weight: 800;
+		font-size: 1.3rem;
+		color: $pink;
+	}
+}
+
+@include small-breakpoint {
+	.resume-header {
+		padding: 2rem 0;
+		h1 {
+			font-size: 2.5rem;
+		}
+		.subtitle {
+			font-size: 2rem;
+		}
+	}
+}
+
+@include nav-breakpoint {
+	.resume-header {
+		padding: 3rem 0;
+		h1 {
+			font-size: 3.5rem;
+		}
+	}
+}
+
 .resume {
+	p {
+		margin-bottom: 1.5rem;
+		padding-bottom: 1.5rem;
+		border-bottom: 1px solid $border;
+	}
+	p:last-of-type {
+		padding-bottom: 0;
+		border-bottom: 0;
+		margin-bottom: 0;
+	}
 	.accomplishments li {
 		margin-bottom: .5rem;
 	}
 	.title {
 		margin-top: 100px;
 		margin-bottom: 0;
-		font-weight: 900;
+		font-weight: 800;
 		color: $heading-color;
 	}
 	.sub-title {
-		color: lighten($font-color, 20%);
-		font-weight: 400;
+		color: $pink;
+		font-weight: 800;
 		font-size: 1.4rem;
 	}
 	h2 {
 		font-size: 1.7rem;
 	}
 	h3 {
+		text-align: center;
 		color: $heading-color;
-		font-weight: 900;
-		font-size: 1.4rem;
-		padding: .4rem 0;
-		border-bottom: 1px solid rgba(0, 0, 0, .15);
+		font-weight: 800;
+		font-size: 2rem;
+		margin: 2rem 0 1rem;
 	}
 	h4 {
+		color: $heading-color;
+		margin-top: 0;
 		font-size: 1.1rem;
 		padding: 0;
 		border: none;
 		margin-bottom: .25rem;
 	}
+}
+
+.panel {
+	padding: 1.5rem;
+	background: white;
+	border: 1px solid $border;
 }
 
 @include small-breakpoint {
@@ -1168,7 +1233,8 @@ caption {
 			font-size: 2rem;
 		}
 		h3 {
-			font-size: 1.5rem;
+			font-size: 2.5rem;
+			margin: 3.5rem 0 1.5rem;
 		}
 		h4 {
 			font-size: 1.2rem;
@@ -1176,6 +1242,11 @@ caption {
 		.sub-title {
 			font-size: 1.6rem;
 		}
+	}
+	.panel {
+		padding: 2rem;
+		background: white;
+		border: 1px solid $border;
 	}
 }
 
