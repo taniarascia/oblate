@@ -15,7 +15,7 @@
 		img,
 		a {
 			display: block;
-		} 
+		}
 	}
 	.portfolio-description {
 		padding: 1rem;
@@ -24,7 +24,7 @@
 }
 
 @include small-breakpoint {
-	.portfolio-description {
+	.portfolio-page .portfolio-description {
 		padding: 2rem;
 	}
 }
