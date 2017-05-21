@@ -15,7 +15,13 @@ html {
 // Body base 
 body {
 	color: $font-color;
-	font-size: $body-size;
+	font-size: 1rem;
+}
+
+@include small-breakpoint {
+	body {
+		font-size: $body-size;
+	}
 }
 
 // Links
@@ -157,29 +163,29 @@ mark {
 /* Navigation */
 
 .main-navigation {
-	margin-top: 60px;
+	margin-top: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background: white;
 	max-width: 100%;
-	height: 80px;
 	padding: 0 1rem;
 	border-bottom: 1px solid rgba(0, 0, 0, .1);
 	a {
 		display: block;
-		font-size: .9rem;
+		font-size: .95rem;
 		text-decoration: none;
 		color: $light-font;
-		padding: 0 .5rem;
-		height: 80px;
-		line-height: 80px;
-		.fa {
-			display: none;
-			padding-right: .5rem;
-		}
+		padding: 1rem .5rem .75rem .5rem;
+		flex: 1;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
 		&:hover {
 			color: black;
+		}
+		.fa {
+			padding: .25rem 0;
 		}
 	}
 }
@@ -188,17 +194,21 @@ mark {
 	.main-navigation {
 		a {
 			font-size: 1.1rem;
-			padding: 0 1.5rem;
+			padding: 1rem;
+			.fa {
+				padding: 0 .5rem 0 0;
+			}
 		}
 	}
 }
 
 @include nav-breakpoint {
 	.main-navigation {
+		margin-top: 60px;
 		a {
-			.fa {
-				display: inline-block;
-			}
+			flex: initial;
+			padding: 1.5rem;
+			display: block;
 		}
 	}
 }
@@ -206,7 +216,7 @@ mark {
 @include large-breakpoint {
 	.main-navigation {
 		a {
-			padding: 0 2rem;
+			padding: 1.5rem;
 		}
 	}
 }
@@ -237,7 +247,7 @@ mark {
 	width: 100%;
 	top: 0;
 	left: 0;
-	height: 60px;
+	height: 40px;
 	background: #181818;
 	text-align: center;
 	display: flex;
@@ -249,12 +259,15 @@ mark {
 	color: white;
 	font-weight: 600;
 	font-size: 1.1rem;
-	padding: 0 .5rem;
+	margin: 0 1rem;
 	display: flex;
 	align-items: center;
 	a {
 		color: white;
-		min-width: 120px;
+		white-space: nowrap;
+		&:hover {
+			text-decoration: none;
+		}
 	}
 	.divider {
 		display: none;
@@ -271,6 +284,15 @@ mark {
 
 @include nav-breakpoint {
 	.secondary-title {
+		a {
+			color: white;
+			white-space: nowrap;
+			border-bottom: 3px solid $dark;
+			&:hover {
+				text-decoration: none;
+				border-bottom: 3px solid $blue;
+			}
+		}
 		.secondary-subtitle,
 		.divider {
 			display: block;
@@ -280,18 +302,23 @@ mark {
 
 .nav-search {
 	display: flex;
-	height: 60px;
+	height: 40px;
 }
 
 .nav-search-submit {
 	background: #4473FE;
 	border: 0;
+	padding: 0;
 	font-size: 1.3rem;
-	width: 80px;
+	height: 40px;
+	width: 60px;
 	color: white;
 	font-weight: bold;
 	color: white;
 	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .nav-search-input {
@@ -302,6 +329,7 @@ mark {
 	max-width: 400px;
 	min-width: 160px;
 	color: white;
+	height: 40px;
 	&:hover,
 	&:active,
 	&:focus {
@@ -313,18 +341,56 @@ mark {
 	}
 }
 
+@include nav-breakpoint {
+	.nav-search-submit {
+		width: 80px;
+	}
+	.secondary-navigation,
+	.nav-search-submit,
+	.nav-search-input,
+	.nav-search {
+		height: 60px;
+	}
+}
+
 
 /* Landing */
 
 .header {
 	text-align: center;
-	padding: 3rem 0;
+	padding: 1.5rem 0;
 	h1 {
 		margin: 0 0 1.5rem;
 		font-weight: 800;
-		font-size: 2.2rem;
+		font-size: 1.5rem;
 		span {
 			color: $pink;
+		}
+	}
+	a {
+		font-weight: 700;
+		color: $heading-color;
+		text-decoration: underline;
+		&:hover {
+			color: $yellow;
+		}
+	}
+}
+
+@include small-breakpoint {
+	.header {
+		padding: 2rem 0;
+		h1 {
+			font-size: 2.2rem;
+		}
+	}
+}
+
+@include nav-breakpoint {
+	.header {
+		padding: 3rem 0;
+		h1 {
+			font-size: 2.2rem;
 		}
 	}
 }
@@ -332,16 +398,25 @@ mark {
 .top-three {
 	background: $background;
 	h2 {
-		padding: 2rem 0;
-		font-size: 2rem;
+		padding: 1rem 0;
+		font-size: 1.5rem;
 		text-align: center;
 		margin: 0;
 	}
 	&:first-of-type {
-		padding-top: 2rem;
+		padding-top: .5rem;
 	}
 	&.last {
-		padding-bottom: 2rem; 
+		padding-bottom: 2rem;
+	}
+}
+
+@include small-breakpoint {
+	.top-three {
+		h2 {
+			padding: 2rem 0;
+			font-size: 2rem;
+		}
 	}
 }
 
@@ -375,11 +450,32 @@ mark {
 	}
 }
 
+@include nav-breakpoint {
+	.page-header {
+		padding: 3rem 0;
+		h1 {
+			font-size: 4rem;
+		}
+	}
+}
+
 .bright-header {
-	background: $blue;
+	background: $bg, linear-gradient(to top right, darken($blue, 30%), $blue);
 	color: rgba(255, 255, 255, .8);
 	h1 {
 		color: white;
+	}
+	&.snippets-header {
+		background: $bg, linear-gradient(to top right, $green, $blue);
+	}
+	&.tania-header {
+		background: $bg, linear-gradient(to top right, $pink, $blue);
+	}
+	&.portfolio-header {
+		background: $bg, linear-gradient(to top right, darken($yellow, 10%), $blue);
+	}
+	&.thoughts-header {
+		background: $bg, linear-gradient(to top right, $purple, $blue);
 	}
 }
 
@@ -418,18 +514,18 @@ mark {
 .cell {
 	background: white;
 	display: block;
-	width: calc(100% - 2rem);
-	margin: 1rem;
+	width: calc(100% - 1rem);
+	margin: .5rem;
 	border: 1px solid $border;
 	position: relative;
-	padding: 2rem;
+	padding: 1.5rem;
 	p {
 		color: $light-font;
-		font-size: 1.05rem;
+		font-size: 1.0rem;
 	}
 	h1 {
 		margin-top: 1.5rem;
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 		a {
 			color: $heading-color;
 		}
@@ -441,20 +537,43 @@ mark {
 	img {
 		margin: 0 auto;
 		display: block;
-		height: 100px;
-		width: 100px;
+		height: 50px;
+		width: 50px;
 	}
 }
 
 @include small-breakpoint {
 	.cell {
-		width: calc(50% - 2rem);
+		width: calc(50% - 1rem);
+		&:last-of-type {
+			display: none;
+		}
+	}
+}
+
+@include nav-breakpoint {
+	.cell {
+		width: calc(33.3333% - 1rem);
+		padding: 2rem;
+		&:last-of-type {
+			display: block;
+		}
+	}
+	.image-thumbnail img {
+		height: 100px;
+		width: 100px;
 	}
 }
 
 @include large-breakpoint {
 	.cell {
-		width: calc(33.333% - 2rem);
+		width: calc(33.3333% - 2rem);
+		p {
+			font-size: 1.05rem;
+		}
+		h1 {
+			font-size: 1.4rem;
+		}
 	}
 }
 
@@ -503,14 +622,14 @@ blockquote {
 		color: $heading-color;
 		font-family: $heading-family;
 		padding: 1rem;
-		border-radius: 6px;
+		border-radius: $br;
 	}
 	&.alert {
 		background: lighten($pink, 28%);
 		border: 1px solid $pink;
 	}
 	&.info {
-		background: lighten($yellow, 28%);
+		background: lighten($yellow, 29%);
 		border: 1px solid $yellow;
 	}
 	&.success {
@@ -586,14 +705,23 @@ blockquote {
 
 .newsletter {
 	background: $blue;
-	padding: 3rem 0;
+	padding: 1.5rem 0;
 	h2 {
 		color: white;
 		margin-top: 0;
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 	p {
 		color: white;
+	}
+}
+
+@include small-breakpoint {
+	.newsletter {
+		padding: 3rem 0;
+		h2 {
+			font-size: 2rem;
+		}
 	}
 }
 
@@ -614,6 +742,7 @@ blockquote {
 	border: 0;
 	width: 80%;
 	font-size: 1.1rem;
+	height: 60px;
 	&:hover,
 	&:active,
 	&:focus {
@@ -633,6 +762,7 @@ blockquote {
 	font-size: 1.5rem;
 	color: white;
 	font-weight: 800;
+	height: 60px;
 	&:hover,
 	&:active,
 	&:focus {

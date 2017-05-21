@@ -52,11 +52,11 @@
 	</nav>
 
 	<nav class="main-navigation">
-		<a href="<?php echo site_url(); ?>/tutorials" class="tutorials"><i class="fa fa-map-o" aria-hidden="true"></i> Tutorials</a>
-		<a href="<?php echo site_url(); ?>/snippets" class="snippets"><i class="fa fa-scissors" aria-hidden="true"></i> Snippets</a>
-		<a href="<?php echo site_url(); ?>/me" class="tania"><i class="fa fa-heart-o" aria-hidden="true"></i> Tania</a>
-		<a href="<?php echo site_url(); ?>/work" class="portfolio"><i class="fa fa-folder-open-o" aria-hidden="true"></i> Portfolio</a>
-		<a href="<?php echo site_url(); ?>/thoughts" class="thoughts"><i class="fa fa-commenting-o" aria-hidden="true"></i> Thoughts</a>
+		<a href="<?php echo site_url(); ?>/tutorials" class="tutorials"><i class="fa fa-map-o" aria-hidden="true"></i> <span>Tutorials</span></a>
+		<a href="<?php echo site_url(); ?>/snippets" class="snippets"><i class="fa fa-scissors" aria-hidden="true"></i> <span>Snippets</span></a>
+		<a href="<?php echo site_url(); ?>/me" class="tania"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>Tania</span></a>
+		<a href="<?php echo site_url(); ?>/work" class="portfolio"><i class="fa fa-folder-open-o" aria-hidden="true"></i> <span>Portfolio</span></a>
+		<a href="<?php echo site_url(); ?>/thoughts" class="thoughts"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>Thoughts</span></a>
 	</nav>
 
 	<main class="main">

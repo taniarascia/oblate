@@ -51,7 +51,7 @@ pre code {
 	font-weight: 400;
 	tab-size: 2;
 	hyphens: none;
-	border-radius: 6px;
+	border-radius: $br;
 	margin: 2rem 0;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
@@ -103,7 +103,7 @@ kbd {
 	font-family: $code;
 	font-weight: 400;
 	color: $heading-color;
-	border-radius: 4px;
+	border-radius: $br;
 	background: rgba(0, 0, 0, 0.06);
 }
 
