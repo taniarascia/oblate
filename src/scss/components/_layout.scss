@@ -265,6 +265,7 @@ mark {
 	a {
 		color: white;
 		white-space: nowrap;
+		padding-right: .5rem;
 		&:hover {
 			text-decoration: none;
 		}
@@ -280,7 +281,7 @@ mark {
 		font-weight: 400;
 		font-size: 1rem;
 	}
-}
+} 
 
 @include nav-breakpoint {
 	.secondary-title {
@@ -289,6 +290,7 @@ mark {
 			color: white;
 			white-space: nowrap;
 			border-bottom: 3px solid $dark;
+			padding-right: 0;
 			&:hover {
 				text-decoration: none;
 				border-bottom: 3px solid $blue;
