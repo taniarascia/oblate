@@ -1,86 +1,33 @@
-/* Projects
+/* Portfolio
 =============== */
 
-.portfolio-container {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-}
-
-.portfolio-example {
-	width: 100%;
-	img {
-		display: block;
-	}
-	a {
-		&:hover,
-		&:active,
-		&:focus {
-			text-decoration: none;
+.portfolio-page {
+	.cell {
+		padding: 0;
+		h1 {
+			margin-top: 0;
+		}
+		p {
+			margin-bottom: 0;
 		}
 	}
+	.portfolio-thumbnail {
+		img, a {
+			display: block;
+		}
+	}
+	.portfolio-description {
+		padding: 2rem;
+		border-top: 1px solid $border;
+	}
 }
 
-.portfolio-item {
-	text-align: center;
-	margin: .5rem 1rem;
-	//box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-	transition: all .3s ease;
-	background: white;
-	color: #444;
-	padding-bottom: .5rem;
-	border: 1px solid $border;
-	&:hover,
-	&:active,
-	&:focus {
-		text-decoration: none;
-		//transform: translateY(-3px);
-		//background: #f5f5f5;
-		box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-		//box-shadow: 0 8px 100px rgba(0, 0, 0, 0.75);
-	}
-	h3 {
-		border-top: 1px solid $border;
-		color: $heading-color;
-		font-size: 1.1rem;
-		padding: 2rem 2rem 0;
-		margin: 0;
+#projects {
+	padding: 3rem 0;
+	h1 {
+		font-size: 1.4rem;
 	}
 	p {
-		padding: 0 2rem;
-		font-size: .9rem;
-		color: $font-color;
-	}
-	.more-info {
-		color: $link-color;
-		text-transform: uppercase;
-		font-size: .8rem;
-	}
-}
-
-@include small-breakpoint {
-	.portfolio-container {
-		padding: 0 1rem;
-	}
-	.portfolio-example {
-		width: 50%;
-	}
-	.portfolio-item {
-		margin: 1rem;
-	}
-}
-
-@include large-breakpoint {
-	.portfolio-container {
-		padding: 0 1.5rem;
-	}
-	.portfolio-example {
-		width: calc(100% / 3);
-	}
-	.portfolio-item {
-		margin: 0 1.5rem 3rem;
-		h3 {
-			font-size: 1.2rem;
-		}
+		color: $light-font;
 	}
 }

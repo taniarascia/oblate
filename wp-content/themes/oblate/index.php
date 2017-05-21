@@ -2,7 +2,7 @@
 
 <header class="page-header">
 	<div class="small-container">
-		<h1>Blog</h1>
+		<h1>All Posts</h1>
 	</div>
 </header>
 

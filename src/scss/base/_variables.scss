@@ -5,7 +5,7 @@
 
 $mobile: 600px;
 $tablet: 800px;
-$nav-breakpoint: 970px;
+$nav-breakpoint: 800px;
 $desktop: 1200px;
 
 /* Content Font Styling */ 
@@ -13,29 +13,40 @@ $desktop: 1200px;
 $font-style: normal;
 $font-variant: normal;
 $font-weight: normal;
-$font-color: #444;
+$font-color: #404040;
 $font-size: 1rem;
-$body-size: 1.05rem;
+$body-size: 1.15rem;
 
 $line-height: 1.6;
 
-$margin: 1.5rem;
+/* Colors */
 
-$link-color: #1E6BD6;
-$alt-color: #FF5559;
-$heading-color: #252525;
+$blue: #4473FE;
+$pink: #FC5D76;
+$green: #61C45B;
+$yellow: #FDB54B;
+$purple: #A566EC;
+$dark: #181818;
+$light: rgba(255,255,255,.5);
+$light-font: #6d6e70;
+
+$margin: 1.5rem; 
+
+$link-color: $blue;
+$alt-color: $pink;
+$heading-color: #333;
 $light-color: lighten($font-color, 30%);
 
 $font-family: 'Roboto', sans-serif;
 $heading-family: 'Roboto', sans-serif;
 $nav-family: 'Roboto', sans-serif;
 $button-family: 'Roboto', sans-serif;
-$background: #f2f2f2;
-$transition: all .2s ease;
+$background: #F6F6F7;
+$transition: none;
 
 /* Borders */
 
-$border: #e2e2e2;
+$border: #ddddde;
 
 
 /* Code */

@@ -1,20 +1,44 @@
-	<footer class="footer">
-	<div class="container">
-	<span>Tania Rascia is my name.</span>
-		<nav>
-			<a href="<?php echo site_url(); ?>/me">About</a>
-			<a href="<?php echo site_url(); ?>/resume">Resume</a>
-			<a href="<?php echo site_url(); ?>/blog">Blog</a>
-			<a href="<?php echo site_url(); ?>/work">Portfolio</a>
-			<a href="<?php echo site_url(); ?>/contact">Contact</a>
-			<a href="https://github.com/taniarascia">GitHub</a>
-		</nav>
+<section class="newsletter">
+	<div class="small-container text-center">
+		<h2>Tania's List</h2>
+		<p>My tutorials, guides, and articles for <strong>web designers, developers, and autodidacts</strong>, sent out once a month or so. No bullshit, ads, or tricks.</p>
+		<div id="mc_embed_signup">
+			<form action="//taniarascia.us12.list-manage.com/subscribe/post?u=ec794fab6e35a491a001cc25d&amp;id=5276386071" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<label for="mce-EMAIL"><span class="screen-reader-text">Email</span></label><input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address">
+				<div id="mce-responses" class="clear">
+					<div class="response" id="mce-error-response" style="display:none"></div>
+					<div class="response" id="mce-success-response" style="display:none"></div>
+				</div>
+				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ec794fab6e35a491a001cc25d_5276386071" tabindex="-1" value=""></div>
+				<div class="clear"><button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button></div>
+			</form>
+		</div>
 	</div>
-	</footer>
+</section>
+
+<footer class="footer">
+ <div class="container flex-container">
+	 <div class="footer-social">
+		 <p>I'm <strong>Tania Rascia</strong>, a web designer/developer, autodidact, tech writer and problem solver. I love hiking, karaoke, accordions, and sharing knowledge. <strong><a href="<?php echo site_url(); ?>/contact">Say hello</a></strong>. </p>
+	  <div class="social-icons">
+     <a href="https://www.taniarascia.com/feed" class="social-icon"><i class="fa fa-rss fa-2x"></i></a>
+     <a href="https://twitter.com/taniarascia" class="social-icon" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+     <a href="https://github.com/taniarascia" class="social-icon" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+     <a href="https://codepen.io/taniarascia/" class="social-icon" target="_blank"><i class="fa fa-codepen fa-2x"></i></a>
+     <a href="https://stackoverflow.com/users/4541434/tania-rascia" class="social-icon" target="_blank"><i class="fa fa-stack-overflow fa-2x"></i></a>
+    </div>
+	 </div>
+	 <div class="footer-support">
+		 <p>My site is <strong>free</strong> – and free of ads, clickbait, popups, guest posts, sponsorships, and bullshit.
+
+</p>
+		 	<p>
+				<strong><a href="https://www.patreon.com/taniarascia" target="_blank">Become a patron</a></strong> if you would like to support my work.</p>
+	 </div>
+	 </div>
+</footer>
 	
 </main>
-
-</section>
 
 <?php if ( is_front_page() ) { ?>
 

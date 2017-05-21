@@ -2,12 +2,11 @@
 
 // Forms Extend
 .forms {
-	padding: .8rem 1rem;
-	border-radius: 6px;
+	padding: 1rem 1.25rem;
+	border-radius: 0;
 	border: 1px solid $border;
-	border-bottom: 4px solid $border;
 	max-width: 100%;
-	font-size: .9rem;
+	font-size: 1rem;
 	background: white;
 	-webkit-appearance: none;
 }
@@ -25,12 +24,10 @@ select,
 	@extend .forms;
 	&:hover {
 		border: 1px solid darken($border, 10%);
-		border-bottom: 4px solid darken($border, 10%);
 	}
 	&:focus,
 	&:active {
 		border: 1px solid $link-color;
-		border-bottom: 4px solid $link-color;
 		outline: 0;
 	}
 }

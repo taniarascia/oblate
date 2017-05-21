@@ -4,29 +4,23 @@
 // Button Extend  
 .buttons {
 	display: inline-block;
-	padding: .5rem 1rem;
+	padding: .75rem 1.25rem;
 	text-align: center;
-	font-size: .95rem;
-	line-height: 1.4;
+	font-size: 1.05rem;
 	text-decoration: none !important;
 	background: $link-color;
-	border: 1px solid darken($link-color, 8%);
-	border-bottom: 4px solid darken($link-color, 8%);
-	border-radius: 6px;
+	border: 0;
+	border-radius: 0;
 	cursor: pointer;
 	font-weight: 600;
-	margin: 5px 0;
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
+	margin: 0;
 	font-family: $button-family;
 	color: white;
 	text-shadow: none;
-	transition: transform .1s ease;
 	-webkit-appearance: none;
 }
 
 .buttons-hover {
-	border: 1px solid darken($link-color, 15%);
-	border-bottom: 4px solid darken($link-color, 15%);
 	background: darken($link-color, 5%);
 	text-decoration: none;
 }
@@ -56,14 +50,10 @@ button,
 a.button.alt-button,
 .button.alt-button {
 	background: $alt-color;
-	border: 1px solid darken($alt-color, 8%);
-	border-bottom: 4px solid darken($alt-color, 8%);
 	&:hover,
 	&:focus {
+		background: darken($alt-color, 10%);
 		color: white;
-		border: 1px solid darken($alt-color, 15%);
-		border-bottom: 4px solid darken($alt-color, 15%);
-		background: darken($alt-color, 5%);
 	}
 	&:active {
 		outline: 0;
@@ -89,16 +79,10 @@ a.button.ghost-button,
 a.button.secondary-button,
 .button.secondary-button,
 .comment-links a {
-	background: linear-gradient(-180deg, #fefefe 0%, #f5f5f5 90%);
-	color: $heading-color;
-	border: 1px solid darken($border, 2%);
-	border-bottom: 1px solid darken($border, 2%);
+	background: $yellow;
 	&:hover,
 	&:focus,
 	&:active {
-		background: linear-gradient(-180deg, #f0f0f0 0%, #eeeeee 90%);
-		border: 1px solid darken($border, 10%);
-		border-bottom: 1px solid darken($border, 10%);
-		text-decoration: none;
+		background: darken($yellow, 10%);
 	}
 }

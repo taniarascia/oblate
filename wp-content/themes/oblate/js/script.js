@@ -6,32 +6,6 @@ console.log('Hello, fellow developer! Thanks for visiting. :)'
 					+ '\n\nDon\'t forget to try out the cheat code!'
 					+ '\n↑ ↑ ↓ ↓ ← → ← → B A');
 
-(function ($) {
-	$(function () { // DOM Ready
-
-		// Toggle navigation
-		$('#toggle').click(function () {
-			// If sidebar is visible:
-			if ($('body').hasClass('sidebar-visible')) {
-				// Hide sidebar
-				$('body').removeClass('sidebar-visible');
-			} else { // If sidebar is hidden:
-				$('body').addClass('sidebar-visible');
-				// Display sidebar
-			}
-		});
-
-		$('.content, .close').click(function () {
-			// If sidebar is visible:
-			if ($('body').hasClass('sidebar-visible')) {
-				// Hide sidebar
-				$('body').removeClass('sidebar-visible');
-			}
-		});
-
-	});
-})(jQuery);
-
 /*
  * Konami-JS ~ 
  * :: Now with support for touch events and multiple instances for 

@@ -10,11 +10,6 @@
 	<meta name="description" content="Web designer, developer, autodidact. Tania breaks down complex concepts in a clear, simple way for all skill levels.">
 	<?php } ?>
 
-	<?php if ( is_page('projects') ) { ?>
-	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet" type="text/css">
-	<?php } ?>
-
 	<?php wp_head(); ?>
 
 	<?php if (!isset($_SERVER['HTTP_USER_AGENT']) || stripos($_SERVER['HTTP_USER_AGENT'], 'Speed Insights') === false): ?>
@@ -39,35 +34,29 @@
 
 	<?php endif; ?>
 
-<?php if ( is_front_page() ) { ?><script async defer src="https://buttons.github.io/buttons.js"></script><?php } ?>
+	<?php if ( is_front_page() ) { ?>
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<?php } ?>
 
 </head>
 
 <body>
-
-	<?php get_sidebar(); ?>
-
-	<nav class="navigation">
-		<div class="home">
-			<div>
-				<a id="toggle"><i class="fa fa-2x fa-bars" aria-hidden="true"></i></a>
-			</div>
-		</div>
-
-		<?php wp_nav_menu( array( 'theme_location' => 'nav-menu' ) ); ?>
-
-		<div class="search">
-			<a href="<?php echo site_url(); ?>/search" class="mobile-only"><i class="fa fa-2x fa-search" aria-hidden="true"></i></a>
-			<form role="search" method="get" class="search-header-form" action="<?php echo home_url( '/' ); ?>">
-				<label>
-				<span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span>
-				<input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'search for anything', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
-				</label>
-				<button type="submit" class="search-header-submit"><i class="fa fa-search" aria-hidden="true"></i><span class="screen-reader-text">Search</span></button>
-			</form>
-		</div>
+	<nav class="secondary-navigation">
+		<div class="secondary-title"><a href="<?php echo site_url(); ?>">Tania Rascia</a> <span class="divider">|</span> <span class="secondary-subtitle"><?php if (is_front_page()) { ?>Web Designer, Developer, Autodidact<?php } else { echo get_the_title(); } ?></span></div>
+		<form role="search" method="get" class="nav-search" action="<?php echo home_url( '/' ); ?>">
+		<label>
+			<span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span></label>
+			<input type="search" placeholder="<?php echo esc_attr_x( 'Search', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" class="nav-search-input">
+			<button type="submit" class="nav-search-submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+		</form>
 	</nav>
 
-	<section class="content">
+	<nav class="main-navigation">
+		<a href="<?php echo site_url(); ?>/tutorials" class="tutorials"><i class="fa fa-map-o" aria-hidden="true"></i> Tutorials</a>
+		<a href="<?php echo site_url(); ?>/snippets" class="snippets"><i class="fa fa-scissors" aria-hidden="true"></i> Snippets</a>
+		<a href="<?php echo site_url(); ?>/me" class="tania"><i class="fa fa-heart-o" aria-hidden="true"></i> Tania</a>
+		<a href="<?php echo site_url(); ?>/work" class="portfolio"><i class="fa fa-folder-open-o" aria-hidden="true"></i> Portfolio</a>
+		<a href="<?php echo site_url(); ?>/thoughts" class="thoughts"><i class="fa fa-commenting-o" aria-hidden="true"></i> Thoughts</a>
+	</nav>
 
-		<main class="main">
+	<main class="main">

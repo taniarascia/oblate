@@ -1,44 +1,27 @@
 <?php get_header(); ?>
 
-<section class="landing-page">
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<header class="header">
+	<div class="small-container">
+		<h1>I'm a <span>web designer and developer</span> who loves sharing knowledge.</h1>
+		<?php the_content(); ?>
+		<a class="github-button" href="https://github.com/taniarascia" data-show-count="true" data-size="large" aria-label="Follow @taniarascia on GitHub">Follow</a>
+		<a class="twitter-follow-button" data-size="large" data-show-screen-name="false" href="https://twitter.com/taniarascia">Follow</a>
+	</div>
+</header>
 
-	<header class="landing-header">
-		<div class="container">
-			<div class="banner">
-				<h1 class="text-center">Tania Rascia</h1>
-				<?php the_content(); ?>
-				<a class="github-button" href="https://github.com/taniarascia" data-show-count="true" data-size="large" aria-label="Follow @taniarascia on GitHub">Follow</a>
-				<a class="twitter-follow-button" data-size="large" data-show-screen-name="false" href="https://twitter.com/taniarascia">Follow</a>
-			</div>
-			<div class="email-box">
-			<h2>Tania's List</h2>
-			<p>Tutorials, guides, and articles for web designers, developers, and autodidacts, sent out once a month or so. No bullshit, ads, pop-ups, or tricks. </p>
-			<div id="mc_embed_signup">
-				<form action="//taniarascia.us12.list-manage.com/subscribe/post?u=ec794fab6e35a491a001cc25d&amp;id=5276386071" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-					<label for="mce-EMAIL"><span class="screen-reader-text">Email</span></label><input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address">
-					<div id="mce-responses" class="clear">
-						<div class="response" id="mce-error-response" style="display:none"></div>
-						<div class="response" id="mce-success-response" style="display:none"></div>
-					</div>
-					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ec794fab6e35a491a001cc25d_5276386071" tabindex="-1" value=""></div>
-					<div class="clear"><input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button alt-button"></div>
-				</form>
-			</div>
-			</div>
-		</div>
-	</header>
+<?php endwhile; endif; ?>
 
-	<?php endwhile; endif; ?>
+<section class="top-three">
+	<div class="large-container">
+		<h2>Latest Tutorials</h2>
+		<div class="grid">
 
-	<section class="latest">
-		<div class="container">
-			<h2>Latest posts</h2>
-
-				<?php $args = array(
+			<?php $args = array(
 				'order' => 'desc',
 				'posts_per_page' => '3',
+				'category_name' => 'Tutorials',
 				'category__not_in' => array( 5 ),
 			);
 
@@ -46,25 +29,32 @@
 
 			if ( $latest->have_posts() ) :  while ( $latest->have_posts() ) : $latest->the_post(); ?>
 
-				<h3>
+			<article class="cell">
+				<div class="image-thumbnail">
+					<a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="150" width="150"></a>
+				</div>
+				<h1>
 					<a href="<?php the_permalink(); ?>">
 						<?php the_title(); ?>
-					</a> 
-				</h3>
-				
+					</a>
+				</h1>
 				<?php the_excerpt(); ?>
+			</article>
 
-				<?php endwhile; endif; wp_reset_postdata(); ?>
+			<?php endwhile; endif; wp_reset_postdata(); ?>
 
 		</div>
-	</section>
+	</div>
+</section>
 
-	<section class="popular">
-		<div class="container">
+<section class="top-three">
+	<div class="large-container">
 
-			<h2>Popular posts</h2>
+		<h2>Most Popular</h2>
 
-				<?php $args = array(
+		<div class="grid">
+
+			<?php $args = array(
 				'order' => 'asc',
 				'posts_per_page' => '3',
 				'category_name' => 'Popular',
@@ -75,18 +65,58 @@
 
 			if ( $popular->have_posts() ) :  while ( $popular->have_posts() ) : $popular->the_post(); ?>
 
-				<h3>
+			<article class="cell">
+				<div class="image-thumbnail">
+					<a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="150" width="150"></a>
+				</div>
+				<h1>
 					<a href="<?php the_permalink(); ?>">
 						<?php the_title(); ?>
-					</a> 
-				</h3>
+					</a>
+				</h1>
 				<?php the_excerpt(); ?>
+			</article>
 
-				<?php endwhile; endif; wp_reset_postdata(); ?>
-
+			<?php endwhile; endif; wp_reset_postdata(); ?>
 
 		</div>
-	</section>
-
+	</div>
 </section>
-<?php get_footer(); ?>
+
+<section class="top-three last">
+	<div class="large-container">
+
+		<h2>My Thoughts</h2>
+
+		<div class="grid">
+
+			<?php $args = array(
+				'order' => 'desc',
+				'posts_per_page' => '3',
+				'category_name' => 'Thoughts',
+				'category__not_in' => array( 5 ),
+			);
+
+			$thoughts = new WP_Query( $args );
+
+			if ( $thoughts->have_posts() ) :  while ( $thoughts->have_posts() ) : $thoughts->the_post(); ?>
+
+			<article class="cell">
+				<div class="image-thumbnail">
+					<a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="150" width="150"></a>
+				</div>
+				<h1>
+					<a href="<?php the_permalink(); ?>">
+						<?php the_title(); ?>
+					</a>
+				</h1>
+				<?php the_excerpt(); ?>
+			</article>
+
+			<?php endwhile; endif; wp_reset_postdata(); ?>
+
+		</div>
+	</div>
+</section>
+
+<?php get_footer();

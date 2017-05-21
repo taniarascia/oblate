@@ -2,7 +2,7 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<header class="page-header">
+<header class="page-header bright-header">
 	<div class="small-container">
 		<h1>
 			<?php the_title(); ?>
@@ -10,7 +10,7 @@
 	</div>
 </header>
 
-<section>
+<section class="section-content">
 	<div class="container">
 		<?php the_content(); ?>
 	</div>

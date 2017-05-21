@@ -2,25 +2,23 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<header class="page-header">
+<header class="page-header bright-header">
 	<div class="small-container">
 		<h1>
 			<?php the_title(); ?>
 		</h1>
+		<?php the_content(); ?>
 	</div>
 </header>
 
-<section>
-	<div class="container">
-		<?php the_content(); ?>
-	</div>
-</section>
-
 <?php endwhile; endif; ?>
 
-<section class="portfolio-container vertical-center">
+<section class="portfolio-page alternate-background">
 
-	<?php $args = array(
+	<div class="large-container">
+		<div class="grid">
+
+			<?php $args = array(
 				'post_type' => 'work',
 				'order' => 'asc',
 				'posts_per_page' => '-1',
@@ -30,21 +28,28 @@
 
 			if ( $work->have_posts() ) :  while ( $work->have_posts() ) : $work->the_post(); ?>
 
-	<div class="portfolio-example">
-		<a href="<?php echo the_permalink(); ?>">
-			<div class="portfolio-item">
-				<img src="<?php echo the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title(); ?>">
-				<h3>
-					<?php the_title(); ?>
-				</h3>
-				<?php the_excerpt(); ?>
-				<p class="more-info">Design / Development</p>
-			</div>
-		</a>
+
+			<article id="post-<?php the_ID(); ?>" class="cell">
+				<?php if ( get_post_thumbnail_id() ) { ?>
+				<div class="portfolio-thumbnail">
+					<a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title(); ?>"></a>
+				</div>
+				<?php } ?>
+				<div class="portfolio-description">
+					<h1>
+						<a href="<?php the_permalink(); ?>">
+							<?php the_title(); ?>
+						</a>
+					</h1>
+
+					<?php the_excerpt(); ?>
+				</div>
+			</article>
+
+			<?php endwhile; endif; wp_reset_postdata(); ?>
+
+		</div>
 	</div>
-
-	<?php endwhile; endif; wp_reset_postdata(); ?>
-
 </section>
 
 <?php get_footer();

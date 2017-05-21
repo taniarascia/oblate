@@ -12,9 +12,10 @@
 			<?php if ( have_comments() ) : ?>
 
 			<h3 class="comments-title">
+			Discussion
 				<?php
-		printf( _nx( 'responses', '%1$s responses', get_comments_number(), ''),
-			number_format_i18n( get_comments_number() ), get_the_title() );
+		// printf( _nx( 'responses', '%1$s responses', get_comments_number(), ''),
+			//number_format_i18n( get_comments_number() ), get_the_title() );
 		?>
 			</h3>
 			<ul class="comment-list">
@@ -40,7 +41,7 @@
 			</div>
 			<?php } ?>
 
-			<p class="text-center"><a href="<?php echo get_comments_link(); ?>" class="button">Write a response</a></p>
+			<p class="text-center"><a href="<?php echo get_comments_link(); ?>" class="button secondary-button">Add your response</a></p>
 
 			<?php endif; // have_comments() 
 
