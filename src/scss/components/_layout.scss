@@ -281,7 +281,7 @@ mark {
 		font-weight: 400;
 		font-size: 1rem;
 	}
-} 
+}
 
 @include nav-breakpoint {
 	.secondary-title {
@@ -791,9 +791,15 @@ blockquote {
 		background: darken($pink, 10%);
 	}
 }
-
+ 
 .section-content {
-	margin: 3rem 0;
+	margin: 1.5rem 0;
+}
+
+@include small-breakpoint {
+	.section-content {
+		margin: 3rem 0;
+	}
 }
 
 

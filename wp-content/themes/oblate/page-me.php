@@ -10,11 +10,13 @@
 	</div>
 </header>
 
-<section>
+<section class="section-content">
 	<div class="container">
 		<?php the_content(); ?>
 	</div>
 </section>
+
+<img src="<?php echo site_url(); ?>/wp-content/uploads/20172.jpg" alt="" class="responsive-image" style="display: block;">
 
 <?php endwhile; endif; ?>
 
