@@ -30,19 +30,27 @@ a {
 	text-decoration: none;
 	&:hover,
 	&:focus,
-	&:active { 
+	&:active {
 		text-decoration: underline;
 	}
 }
 
-article p a {
-	color: $link-color;
-	text-decoration: none;
-	&:hover,
-	&:focus,
-	&:active {
-		color: $pink;
-		text-decoration: underline;
+article {
+	p,
+	ul,
+	ol,
+	li,
+	dl {
+		a {
+			color: $link-color;
+			text-decoration: none;
+			&:hover,
+			&:focus,
+			&:active {
+				color: $pink;
+				text-decoration: underline;
+			}
+		}
 	}
 }
 
@@ -495,7 +503,7 @@ mark {
 	color: rgba(255, 255, 255, .8);
 	h1 {
 		color: white;
-	} 
+	}
 	&.snippets-header {
 		background: $bg, linear-gradient(to top right, $green, $blue);
 	}

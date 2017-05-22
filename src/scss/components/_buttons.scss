@@ -36,10 +36,12 @@ button {
 	&:hover,
 	&:focus {
 		outline: 0;
+		color: white;
 		@extend .buttons-hover;
 	}
 	&:active {
 		outline: 0;
+		color: white;
 		transform: scale(.95);
 	}
 }
@@ -47,6 +49,7 @@ button {
 // Alt button
 a.button.alt-button,
 .button.alt-button {
+	color: white;
 	background: $alt-color;
 	&:hover,
 	&:focus {
@@ -77,9 +80,11 @@ a.button.ghost-button,
 a.button.secondary-button,
 .button.secondary-button {
 	background: $yellow;
+	color: white;
 	&:hover,
 	&:focus,
 	&:active {
+		color: white; 
 		background: darken($yellow, 10%);
 	}
 }
