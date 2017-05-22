@@ -480,11 +480,11 @@ mark {
 }
 
 .bright-header {
-	background: linear-gradient(to top right, darken($blue, 30%), $blue);
+	background: $bg, linear-gradient(to top right, darken($blue, 30%), $blue);
 	color: rgba(255, 255, 255, .8);
 	h1 {
 		color: white;
-	}
+	} 
 	&.snippets-header {
 		background: $bg, linear-gradient(to top right, $green, $blue);
 	}
