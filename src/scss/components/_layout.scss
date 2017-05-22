@@ -30,7 +30,18 @@ a {
 	text-decoration: none;
 	&:hover,
 	&:focus,
+	&:active { 
+		text-decoration: underline;
+	}
+}
+
+article p a {
+	color: $link-color;
+	text-decoration: none;
+	&:hover,
+	&:focus,
 	&:active {
+		color: $pink;
 		text-decoration: underline;
 	}
 }
@@ -1191,6 +1202,11 @@ caption {
 }
 
 .resume {
+	a:hover,
+	a:active,
+	a:focus {
+		color: $pink;
+	}
 	.cell h1 {
 		margin-bottom: 0;
 		margin-top: 0;
