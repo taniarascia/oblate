@@ -16,7 +16,7 @@
 	</div>
 </section>
 
-<img src="<?php echo site_url(); ?>/wp-content/uploads/20172.jpg" alt="" class="responsive-image" style="display: block;">
+<img src="<?php echo site_url(); ?>/wp-content/uploads/20172.jpg" alt="" class="responsive-image" style="display: block; margin: 0 auto;">
 
 <?php endwhile; endif; ?>
 

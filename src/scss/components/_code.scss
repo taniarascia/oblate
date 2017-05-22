@@ -2,7 +2,7 @@
   =============== */
 
 code {
-	font-size: 14px;
+	font-size: 15px;
 }
 
 .terminal {
@@ -14,7 +14,7 @@ code {
 	border-radius: 6px;
 	padding-top: 45px;
 	margin: 2rem 0;
-	font-size: 14px;
+	font-size: 15px;
 	&::before {
 		content: '\2022 \2022 \2022';
 		position: absolute;
@@ -64,6 +64,7 @@ pre code {
 	padding: 1rem;
 	overflow: auto;
 	background-color: #2D2D2D;
+	box-shadow: 2px 3px 20px rgba(0,0,0,.1);
 }
 
 @include small-breakpoint {
@@ -85,7 +86,7 @@ kbd {
 	margin: 0 .1em;
 	padding: .1em .6em;
 	text-shadow: 0 1px 0 white;
-	font-size: 14px;
+	font-size: 15px;
 }
 
  

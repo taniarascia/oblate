@@ -31,9 +31,7 @@
 [type="button"],
 a.button,
 .button,
-button,
-.posts-links a,
-.comment-links a {
+button {
 	@extend .buttons;
 	&:hover,
 	&:focus {
@@ -77,8 +75,7 @@ a.button.ghost-button,
 
 // Other button
 a.button.secondary-button,
-.button.secondary-button,
-.comment-links a {
+.button.secondary-button {
 	background: $yellow;
 	&:hover,
 	&:focus,

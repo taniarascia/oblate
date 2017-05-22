@@ -156,7 +156,7 @@ mark {
 }
 
 .large-container {
-	max-width: $desktop;
+	max-width: 1300px;
 }
 
 
@@ -471,6 +471,14 @@ mark {
 	}
 }
 
+@include large-breakpoint {
+	.page-header {
+		h1 {
+			font-size: 5rem;
+		}
+	}
+}
+
 .bright-header {
 	background: linear-gradient(to top right, darken($blue, 30%), $blue);
 	color: rgba(255, 255, 255, .8);
@@ -478,16 +486,16 @@ mark {
 		color: white;
 	}
 	&.snippets-header {
-		background: linear-gradient(to top right, $green, $blue);
+		background: $bg, linear-gradient(to top right, $green, $blue);
 	}
 	&.tania-header {
-		background: linear-gradient(to top right, $pink, $blue);
+		background: $bg, linear-gradient(to top right, $pink, $blue);
 	}
 	&.portfolio-header {
-		background: linear-gradient(to top right, darken($yellow, 10%), $blue);
+		background: $bg, linear-gradient(to top right, darken($yellow, 10%), $blue);
 	}
 	&.thoughts-header {
-		background: linear-gradient(to top right, $purple, $blue);
+		background: $bg, linear-gradient(to top right, $purple, $blue);
 	}
 }
 
@@ -534,6 +542,7 @@ mark {
 	p {
 		color: $light-font;
 		font-size: 1.0rem;
+		margin-bottom: 0;
 	}
 	h1 {
 		margin-top: 1.5rem;
@@ -954,6 +963,11 @@ blockquote {
 		display: table;
 		clear: both;
 	}
+	a {
+		color: $heading-color;
+		font-weight: 600;
+		font-size: 1rem;
+	}
 }
 
 @include small-breakpoint {
@@ -1177,6 +1191,10 @@ caption {
 }
 
 .resume {
+	.cell h1 {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
 	p {
 		margin-bottom: 1.5rem;
 		padding-bottom: 1.5rem;
@@ -1200,6 +1218,10 @@ caption {
 		color: $pink;
 		font-weight: 800;
 		font-size: 1.4rem;
+	}
+	ul {
+		margin: 0;
+		padding: 1.5rem;
 	}
 	h2 {
 		font-size: 1.7rem;
@@ -1229,6 +1251,9 @@ caption {
 
 @include small-breakpoint {
 	.resume {
+		.cell h1 {
+			margin-top: .5rem;
+		}
 		h2 {
 			font-size: 2rem;
 		}
