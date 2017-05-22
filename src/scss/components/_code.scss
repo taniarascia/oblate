@@ -47,7 +47,7 @@ pre code {
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
-	line-height: 1.55;
+	line-height: 1.6;
 	font-weight: 400;
 	tab-size: 2;
 	hyphens: none;
@@ -94,8 +94,8 @@ kbd {
 
 :not(pre) > code[class*="language-"] {
 	padding: 2px 4px;
-	background: #2D2D2D;
-	border: 1px solid #2D2D2D;
+	background: #333;
+	border: 1px solid #333; 
 }
 
 :not(pre) > code {
@@ -116,7 +116,7 @@ code[class*=language-sass] {
 }
 
 .filename {
-	margin-bottom: calc(-2rem - 4px);
+	margin-bottom: calc(-2.5rem - 4px);
 	font-family: $font-family;
 	background: #111;
 	padding: .5rem 1rem .75rem;
