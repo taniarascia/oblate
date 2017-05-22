@@ -408,6 +408,20 @@ mark {
 	}
 }
 
+.gradient {
+	background: $bg, linear-gradient(to top right, $purple, $blue);
+	color: rgba(255, 255, 255, .8);
+	h1 {
+		color: white;
+		span {
+			color: lighten($yellow, 10%);
+		}
+	}
+	a {
+		color: white;
+	}
+}
+
 @include small-breakpoint {
 	.header {
 		padding: 2rem 0;
@@ -422,6 +436,15 @@ mark {
 		padding: 3rem 0;
 		h1 {
 			font-size: 2.2rem;
+		}
+	}
+}
+
+@include large-breakpoint {
+	.header {
+		padding: 5rem 0;
+		h1 {
+			font-size: 2.5rem;
 		}
 	}
 }
@@ -750,7 +773,7 @@ blockquote {
 /* MailChimp */
 
 .newsletter {
-	background: $blue;
+	background: $blue $bg;
 	padding: 1.5rem 0;
 	h2 {
 		color: white;
@@ -766,7 +789,7 @@ blockquote {
 	.newsletter {
 		padding: 3rem 0;
 		h2 {
-			font-size: 2rem;
+			font-size: 2.2rem;
 		}
 	}
 }

@@ -2,8 +2,8 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<header class="header">
-	<div class="small-container">
+<header class="header gradient">
+	<div class="container">
 		<h1>I'm a <span>web designer and developer</span> who loves sharing knowledge.</h1>
 		<?php the_content(); ?>
 		<a class="github-button" href="https://github.com/taniarascia" data-show-count="true" data-size="large" aria-label="Follow @taniarascia on GitHub">Follow</a>
