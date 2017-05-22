@@ -2,7 +2,7 @@
   =============== */
 
 code {
-	font-size: 15px;
+	font-size: 14px;
 }
 
 .terminal {
@@ -14,7 +14,7 @@ code {
 	border-radius: 6px;
 	padding-top: 45px;
 	margin: 2rem 0;
-	font-size: 15px;
+	font-size: 14px;
 	&::before {
 		content: '\2022 \2022 \2022';
 		position: absolute;
@@ -47,12 +47,12 @@ pre code {
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
-	line-height: 1.5;
+	line-height: 1.55;
 	font-weight: 400;
 	tab-size: 2;
 	hyphens: none;
 	border-radius: $br;
-	margin: 2rem 0;
+	margin: 2.5rem 0;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -63,7 +63,7 @@ pre code {
 	display: block;
 	padding: 1rem;
 	overflow: auto;
-	background-color: #2D2D2D;
+	background-color: #333;
 	box-shadow: 2px 3px 20px rgba(0,0,0,.1);
 }
 
@@ -86,7 +86,7 @@ kbd {
 	margin: 0 .1em;
 	padding: .1em .6em;
 	text-shadow: 0 1px 0 white;
-	font-size: 15px;
+	font-size: 14px;
 }
 
  
