@@ -271,7 +271,7 @@ mark {
 	text-align: center;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: center; 
 }
 
 .secondary-title {
@@ -296,9 +296,9 @@ mark {
 	}
 	.secondary-subtitle {
 		display: none;
-		color: rgba(255, 255, 255, .6);
-		font-weight: 400;
-		font-size: 1rem;
+		color: rgba(255, 255, 255, .7);
+		font-weight: 600;
+		font-size: 1.1rem;
 	}
 }
 
