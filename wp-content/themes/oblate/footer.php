@@ -29,13 +29,10 @@
     </div>
 	 </div>
 	 <div class="footer-support">
-		 <p>My site is <strong>free</strong> – and free of ads, clickbait, popups, guest posts, sponsorships, and bullshit.
-
-</p>
-		 	<p>
-				<strong><a href="https://www.patreon.com/taniarascia" target="_blank">Become a patron</a></strong> if you would like to support my work.</p>
+		 <p>My site is <strong>free</strong> – and free of ads, clickbait, popups, guest posts, sponsorships, and bullshit.</p>
+		 	<p><strong><a href="https://www.patreon.com/taniarascia" target="_blank">Become a patron</a></strong> if you would like to support my work.</p>
 	 </div>
-	 </div>
+	</div>
 </footer>
 	
 </main>
@@ -60,11 +57,8 @@
 }(document, "script", "twitter-wjs"));</script>
 
 <?php } ?>
-
 <?php wp_footer(); ?>
-
 <?php if ( is_front_page() ) { ?>
-
 <script type="application/ld+json">
 { 
   "@context": "http://schema.org", 
@@ -82,11 +76,8 @@
     "query-input": "required name=search_term" } 
     }
 </script>
-
 <?php } ?>
-
 <?php if ( is_page( 'me' ) ) { ?>
-
 <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -102,13 +93,10 @@
 			]
     }
     </script>
-
 <?php } ?>
 	
-<?php if ( is_singular() && !is_singular( 'work' ) ) { ?>
-
+<?php if ( is_singular() && !is_singular( 'work' ) && !is_front_page() ) { ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
 <script type="application/ld+json">
 { "@context": "http://schema.org", 
  "@type": "TechArticle",
@@ -130,16 +118,11 @@
 ?>", 
  "url": "<?php the_permalink(); ?>",
  "datePublished": "<?php the_time( 'Y-m-d' ); ?>",
- "description": "<?php echo esc_html(get_the_excerpt()); ?>",
- "articleBody": "<?php $content = get_the_content();  echo wp_filter_nohtml_kses( $content ); ?>"
+ "description": "<?php echo esc_html(get_the_excerpt()); ?>"
  }
 </script>	
-
 <?php endwhile; endif; ?>
-	
 <?php } ?>
-	
-		
 </body>
 
 </html>

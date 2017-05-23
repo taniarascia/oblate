@@ -54,6 +54,17 @@ article {
 	}
 }
 
+.section-content a {
+	color: $link-color;
+	text-decoration: none;
+	&:hover,
+	&:focus,
+	&:active {
+		color: $pink;
+		text-decoration: underline;
+	}
+}
+
 p,
 ol,
 ul,
@@ -271,7 +282,7 @@ mark {
 	text-align: center;
 	display: flex;
 	justify-content: space-between;
-	align-items: center; 
+	align-items: center;
 }
 
 .secondary-title {
@@ -296,7 +307,7 @@ mark {
 	}
 	.secondary-subtitle {
 		display: none;
-		color: rgba(255, 255, 255, .7);
+		color: rgba(255, 255, 255, .8);
 		font-weight: 600;
 		font-size: 1.1rem;
 	}
@@ -424,7 +435,7 @@ mark {
 
 @include small-breakpoint {
 	.header {
-		padding: 2rem 0;
+		padding: 2.5rem 0;
 		h1 {
 			font-size: 2.2rem;
 		}
@@ -580,7 +591,7 @@ mark {
 	margin: .5rem;
 	border: 1px solid $border;
 	position: relative;
-	padding: 1.5rem 1.5rem .5rem;
+	padding: 1.5rem;
 	p {
 		color: $light-font;
 		font-size: 1.0rem;
@@ -644,14 +655,14 @@ time {
 	color: $light-color;
 	display: block;
 	font-family: $heading-family;
-	font-size: .85rem;
+	font-size: .9rem;
 	font-weight: 400;
 	margin-bottom: .5rem;
 }
 
 @include small-breakpoint {
 	time {
-		font-size: .85rem;
+		font-size: 1rem;
 	}
 }
 
@@ -1170,14 +1181,14 @@ caption {
 	background: $link-color;
 	color: white;
 	line-height: 1.4;
-	font-family: Courier, monospace;
+	font-family: $code;
 	-webkit-font-smoothing: subpixel-antialiased;
 	h1 span {
 		padding: .1rem .5rem;
 		background: #eee;
 		color: $link-color;
 		font-size: 1.6rem;
-		font-family: Courier, monospace;
+		font-family: $code;
 		-webkit-font-smoothing: subpixel-antialiased;
 	}
 	.bsod-list {
@@ -1190,15 +1201,18 @@ caption {
 
 .resume-header {
 	text-align: left;
+	background: $bg, linear-gradient(to top right, $purple, $blue);
 	padding: 1.5rem 0;
+	color: rgba(255,255,255,.8);
 	h1 {
 		margin: 0;
 		font-weight: 800;
+		color: white;
 		font-size: 1.5rem;
 	}
 	a {
 		font-weight: 700;
-		color: $heading-color;
+		color: white;
 		text-decoration: underline;
 		&:hover {
 			color: $yellow;
@@ -1207,7 +1221,7 @@ caption {
 	.subtitle {
 		font-weight: 800;
 		font-size: 1.3rem;
-		color: $pink;
+		color: lighten($yellow, 10%);
 	}
 }
 
@@ -1341,6 +1355,12 @@ caption {
 	p {
 		margin-bottom: 0;
 		color: $light-font;
+	}
+}
+
+.case-study {
+	a.button {
+		margin-bottom: 3rem;
 	}
 }
 

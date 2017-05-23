@@ -12,11 +12,11 @@
 			<?php if ( have_comments() ) : ?>
 
 			<h3 class="comments-title">
-			Discussion
+				Discussion
 				<?php
 		// printf( _nx( 'responses', '%1$s responses', get_comments_number(), ''),
 			//number_format_i18n( get_comments_number() ), get_the_title() );
-		?>
+				?>
 			</h3>
 			<ul class="comment-list">
 				<?php
@@ -24,35 +24,34 @@
 			'short_ping'  => true,
 			'avatar_size' => 45,
 		) );
-	?>
+				?>
 			</ul>
-		<?php
+			<?php
 		$prev_comment_link = get_previous_comments_link();
 		$next_comment_link = get_next_comments_link();
 		
 		if ($prev_comment_link || $next_comment_link) { ?>
-			<div class="comment-links">
-				<div class="pagination-left">
-					<?php previous_comments_link(); ?>
+				<div class="comment-links">
+					<div class="pagination-left">
+						<?php previous_comments_link(); ?>
+					</div>
+					<div class="pagination-right">
+						<?php next_comments_link(); ?>
+					</div>
 				</div>
-				<div class="pagination-right">
-					<?php next_comments_link(); ?>
-				</div>
-			</div>
-			<?php } ?>
+				<?php } ?>
 
-			<p class="text-center"><a href="<?php echo get_comments_link(); ?>" class="button secondary-button">Add your response</a></p>
+				<p class="text-center"><a href="<?php echo get_comments_link(); ?>" class="button secondary-button">Add your response</a></p>
 
-			<?php endif; // have_comments() 
+				<?php endif; // have_comments() 
 
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 			if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 
-			<p class="no-comments">
-				<?php _e( 'Comments are closed.' ); ?>
-			</p>
+				<p class="no-comments">
+					<?php _e( 'Comments are closed.' ); ?>
+				</p>
 
-			<?php endif; ?>
-
+				<?php endif; ?>
 	</div>
 </section>
