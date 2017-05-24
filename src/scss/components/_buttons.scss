@@ -22,6 +22,7 @@
 
 .buttons-hover {
 	background: darken($link-color, 5%);
+	border-bottom: 0 !important;
 	text-decoration: none;
 }
 
@@ -43,6 +44,7 @@ button {
 		outline: 0;
 		color: white;
 		transform: scale(.95);
+		border-bottom: 0 !important;
 	}
 }
 
