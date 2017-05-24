@@ -7,7 +7,9 @@
 </header>
 
 <section>
-	<div class="container">
-		<?php the_content(); ?>
-	</div>
+	<article>
+		<div class="container">
+			<?php the_content(); ?>
+		</div>
+	</article>
 </section>
