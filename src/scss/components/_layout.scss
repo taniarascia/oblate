@@ -1218,10 +1218,10 @@ caption {
 		color: lighten($yellow, 10%);
 	}
 }
-
+ 
 @include small-breakpoint {
 	.resume-header {
-		padding: 2rem 0;
+		padding: 2rem 0; 
 		h1 {
 			font-size: 2.5rem;
 		}

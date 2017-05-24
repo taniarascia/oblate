@@ -13,19 +13,20 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <section class="resume">
-	<div class="alternate-background">
+	<article>
+		<div class="alternate-background">
 
-		<?php the_content(); ?>
+			<?php the_content(); ?>
 
-		<section class="portfolio-page alternate-background">
-			<h3>Portfolio</h3>
-			<div class="text-center margin-bottom">
-				<a class="button alt-button" href="<?php echo site_url(); ?>/work" style="margin-bottom: 1.5rem;">View all</a>
-			</div>
-			<div class="large-container">
-				<div class="grid">
+			<section class="portfolio-page alternate-background">
+				<h3>Portfolio</h3>
+				<div class="text-center margin-bottom">
+					<a class="button alt-button" href="<?php echo site_url(); ?>/work" style="margin-bottom: 1.5rem;">View all</a>
+				</div>
+				<div class="large-container">
+					<div class="grid">
 
-					<?php $args = array(
+						<?php $args = array(
 				'post_type' => 'work',
 				'order' => 'asc',
 				'posts_per_page' => '6',
@@ -36,29 +37,30 @@
 			if ( $work->have_posts() ) :  while ( $work->have_posts() ) : $work->the_post(); 
 			$url = get_post_meta($post->ID, 'url', true); ?>
 
-					<article id="post-<?php the_ID(); ?>" class="cell">
-						<?php if ( get_post_thumbnail_id() ) { ?>
-						<div class="portfolio-thumbnail">
-							<a href="<?php echo $url; ?>"><img src="<?php the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title(); ?>"></a>
-						</div>
-						<?php } ?>
-						<div class="portfolio-description">
-							<h1>
-								<a href="<?php echo $url; ?>">
-									<?php the_title(); ?>
-								</a>
-							</h1>
+						<article id="post-<?php the_ID(); ?>" class="cell">
+							<?php if ( get_post_thumbnail_id() ) { ?>
+							<div class="portfolio-thumbnail">
+								<a href="<?php echo $url; ?>"><img src="<?php the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title(); ?>"></a>
+							</div>
+							<?php } ?>
+							<div class="portfolio-description">
+								<h1>
+									<a href="<?php echo $url; ?>">
+										<?php the_title(); ?>
+									</a>
+								</h1>
 
-							<?php the_excerpt(); ?>
-						</div>
-					</article>
+								<?php the_excerpt(); ?>
+							</div>
+						</article>
 
-					<?php endwhile; endif; wp_reset_postdata(); ?>
+						<?php endwhile; endif; wp_reset_postdata(); ?>
 
+					</div>
 				</div>
-			</div>
-		</section>
-	</div>
+			</section>
+		</div>
+	</article>
 </section>
 
 <?php endwhile; endif; ?>
