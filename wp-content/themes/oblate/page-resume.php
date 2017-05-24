@@ -33,18 +33,18 @@
 
 			$work = new WP_Query( $args );
 
-			if ( $work->have_posts() ) :  while ( $work->have_posts() ) : $work->the_post(); ?>
-
+			if ( $work->have_posts() ) :  while ( $work->have_posts() ) : $work->the_post(); 
+			$url = get_post_meta($post->ID, 'url', true); ?>
 
 					<article id="post-<?php the_ID(); ?>" class="cell">
 						<?php if ( get_post_thumbnail_id() ) { ?>
 						<div class="portfolio-thumbnail">
-							<a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title(); ?>"></a>
+							<a href="<?php echo $url; ?>"><img src="<?php the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title(); ?>"></a>
 						</div>
 						<?php } ?>
 						<div class="portfolio-description">
 							<h1>
-								<a href="<?php the_permalink(); ?>">
+								<a href="<?php echo $url; ?>">
 									<?php the_title(); ?>
 								</a>
 							</h1>

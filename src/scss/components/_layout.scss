@@ -44,24 +44,17 @@ article {
 		a {
 			color: $link-color;
 			text-decoration: none;
+			font-weight: 600;
+			border-bottom: 2px solid lighten($link-color, 25%);
 			&:hover,
 			&:focus,
 			&:active {
 				color: $pink;
-				text-decoration: underline;
+				font-weight: 600;
+				border-bottom: 2px solid lighten($pink, 20%);
+				text-decoration: none;
 			}
 		}
-	}
-}
-
-.section-content a {
-	color: $link-color;
-	text-decoration: none;
-	&:hover,
-	&:focus,
-	&:active {
-		color: $pink;
-		text-decoration: underline;
 	}
 }
 
@@ -1213,6 +1206,7 @@ caption {
 	a {
 		font-weight: 700;
 		color: white;
+		border-bottom: 0;
 		text-decoration: underline;
 		&:hover {
 			color: $yellow;
@@ -1247,11 +1241,6 @@ caption {
 }
 
 .resume {
-	a:hover,
-	a:active,
-	a:focus {
-		color: $pink;
-	}
 	.cell h1 {
 		margin-bottom: 0;
 		margin-top: 0;
