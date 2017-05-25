@@ -41,7 +41,7 @@ article {
 	ol,
 	li,
 	dl,
-	h3, 
+	h3,
 	h4 {
 		a {
 			color: $link-color;
@@ -189,7 +189,7 @@ mark {
 
 .main-navigation {
 	position: fixed;
-	top: 0;
+	top: 50px;
 	width: 100%;
 	left: 0;
 	display: flex;
@@ -198,6 +198,7 @@ mark {
 	background: white;
 	max-width: 100%;
 	padding: 0 1rem;
+	z-index: 5;
 	border-bottom: 1px solid rgba(0, 0, 0, .1);
 	a {
 		display: block;
@@ -232,7 +233,7 @@ mark {
 
 @include nav-breakpoint {
 	.main-navigation {
-		margin-top: 60px;
+		top: 60px;
 		a {
 			flex: initial;
 			padding: 1.5rem;
@@ -270,7 +271,7 @@ mark {
 }
 
 .secondary-navigation {
-	z-index: 5;
+	z-index: 6;
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -328,6 +329,16 @@ mark {
 		.divider {
 			display: block;
 		}
+	}
+}
+
+.main {
+	margin-top: 120px;
+}
+
+@include nav-breakpoint {
+	.main {
+		margin-top: 130px;
 	}
 }
 
@@ -1201,7 +1212,7 @@ caption {
 	text-align: left;
 	background: $bg, linear-gradient(to top right, $purple, $blue);
 	padding: 1.5rem 0;
-	color: rgba(255,255,255,.8);
+	color: rgba(255, 255, 255, .8);
 	h1 {
 		margin: 0;
 		font-weight: 800;
@@ -1223,10 +1234,10 @@ caption {
 		color: lighten($yellow, 10%);
 	}
 }
- 
+
 @include small-breakpoint {
 	.resume-header {
-		padding: 2rem 0; 
+		padding: 2rem 0;
 		h1 {
 			font-size: 2.5rem;
 		}
@@ -1359,14 +1370,16 @@ caption {
 }
 
 .headroom {
-    will-change: transform;
-    transition: transform 200ms linear;
+	will-change: transform;
+	transition: transform 200ms linear;
 }
+
 .headroom--pinned {
-    transform: translateY(0%);
+	transform: translateY(0%);
 }
+
 .headroom--unpinned {
-    transform: translateY(-100%);
+	transform: translateY(-100%);
 }
 
 
