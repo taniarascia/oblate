@@ -11,13 +11,6 @@ console.log('Hello, fellow developer! Thanks for visiting. :)'
 					+ '\n\nDon\'t forget to try out the cheat code!'
 					+ '\n↑ ↑ ↓ ↓ ← → ← → B A');
 
-// grab an element
-var myElement = document.querySelector(".main-navigation");
-// construct an instance of Headroom, passing the element
-var headroom  = new Headroom(myElement);
-// initialise
-headroom.init(); 
-
 /*
  * Konami-JS ~ 
  * :: Now with support for touch events and multiple instances for 

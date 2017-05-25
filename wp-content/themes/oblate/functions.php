@@ -92,7 +92,6 @@ function oblate_scripts() {
 	wp_dequeue_style( 'starter-style' );
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css?05-25-2017x2' );
 	wp_enqueue_script( 'prism', get_template_directory_uri() . '/js/prism.js', array(), '1.0.0', true );
-	wp_enqueue_script( 'headroom', get_template_directory_uri() . '/js/headroom.min.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js?05-25-2017x2', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'oblate_scripts' );
