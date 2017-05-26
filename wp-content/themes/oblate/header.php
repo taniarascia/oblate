@@ -41,7 +41,6 @@
 </head>
 
 <body>
-<section class="navigation">
 	<nav class="secondary-navigation">
 		<div class="secondary-title"><a href="<?php echo site_url(); ?>">Tania Rascia</a> <span class="divider">|</span> <span class="secondary-subtitle"><?php if (is_front_page()) { ?>Web Designer, Developer, Autodidact<?php } else { echo get_the_title(); } ?></span></div>
 		<form role="search" method="get" class="nav-search" action="<?php echo home_url( '/' ); ?>">
@@ -51,7 +50,6 @@
 			<button type="submit" class="nav-search-submit"><i class="fa fa-search" aria-hidden="true"></i></button>
 		</form>
 	</nav>
-</section>
 
 	<nav class="main-navigation">
 		<a href="<?php echo site_url(); ?>/tutorials" class="tutorials"><i class="fa fa-map-o" aria-hidden="true"></i> <span>Tutorials</span></a>

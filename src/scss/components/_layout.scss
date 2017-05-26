@@ -773,7 +773,7 @@ blockquote {
 		margin: .25rem;
 	}
 	.fa-twitter:hover {
-		color: #00aced;
+		color: #55ACEE;
 	}
 	.fa-codepen:hover {
 		color: #47CF73;
@@ -786,6 +786,30 @@ blockquote {
 	}
 	.fa-rss:hover {
 		color: #F8981C;
+	}
+}
+
+.share {
+	a {
+		color: $font-color;
+		display: inline-block;
+		padding-right: 1rem;
+		opacity: .5;
+		.fa-twitter {
+			color: #55ACEE;
+		}
+		.fa-facebook-official {
+			color: #3B5998;
+		}
+		.fa-hacker-news {
+			color: #FF6600;
+		}
+		.fa-reddit-alien {
+			color: #FF4100;
+		}
+		&:hover, &:focus, &:active {
+			opacity: 1;
+		}
 	}
 }
 

@@ -40,12 +40,12 @@
 						<article id="post-<?php the_ID(); ?>" class="cell">
 							<?php if ( get_post_thumbnail_id() ) { ?>
 							<div class="portfolio-thumbnail">
-								<a href="<?php echo $url; ?>"><img src="<?php the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title(); ?>"></a>
+								<a href="<?php echo $url; ?>" target="_blank"><img src="<?php the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title(); ?>"></a>
 							</div>
 							<?php } ?>
 							<div class="portfolio-description">
 								<h1>
-									<a href="<?php echo $url; ?>">
+									<a href="<?php echo $url; ?>" target="_blank">
 										<?php the_title(); ?>
 									</a>
 								</h1>
