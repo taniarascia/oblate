@@ -52,8 +52,16 @@ pre code {
 	tab-size: 2;
 	hyphens: none;
 	border-radius: $br;
-	margin: 2.5rem 0;
+	margin: $margin 0;
 	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+@include large-breakpoint {
+	code[class*="language-"],
+	pre[class*="language-"],
+	pre code {
+		margin: 2.5rem 0;
+	}
 }
 
 
