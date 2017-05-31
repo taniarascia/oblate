@@ -648,9 +648,9 @@ mark {
 	}
 }
 
-@include large-breakpoint {
+@include large-breakpoint { 
 	.cell {
-		width: calc(33.3333% - 2rem);
+		width: calc(33.3333% - 1rem);
 		p {
 			font-size: 1.05rem;
 		}
