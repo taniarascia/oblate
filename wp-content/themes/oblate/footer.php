@@ -1,3 +1,4 @@
+<?php if ( !is_page( 'resume' ) ) { ?>
 <section class="newsletter">
 	<div class="small-container text-center">
 		<h2>Tania's List</h2>
@@ -15,11 +16,12 @@
 		</div>
 	</div>
 </section>
+<?php } ?>
 
 <footer class="footer">
  <div class="container flex-container">
 	 <div class="footer-social">
-		 <p>I'm <strong>Tania Rascia</strong>, a web designer/developer, autodidact, tech writer and problem solver. I love hiking, karaoke, recording music, and building communities. <strong><a href="<?php echo site_url(); ?>/contact">Say hello</a></strong>! </p>
+		 <p>I'm <strong>Tania Rascia</strong>, a web designer/developer, autodidact, tech writer and problem solver. I love hiking, karaoke, recording music, and building communities. <strong><a href="<?php echo site_url(); ?>/contact">Say hello!</a></strong></p>
 	  <div class="social-icons">
      <a href="https://www.taniarascia.com/feed"><i class="fa fa-rss fa-2x"></i></a>
      <a href="https://twitter.com/taniarascia" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
@@ -30,7 +32,6 @@
 	 </div>
 	 <div class="footer-support">
 		 <p>My site is <strong>free</strong> – and free of ads, clickbait, popups, guest posts, sponsorships, and bullshit.</p>
-		 	<p><strong>Please consider <a href="https://www.patreon.com/taniarascia" target="_blank">becoming a patron</a></strong> if my work has been valuable to you.</p>
 	 </div>
 	</div>
 </footer>
