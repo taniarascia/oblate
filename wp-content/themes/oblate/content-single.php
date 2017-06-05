@@ -17,11 +17,6 @@
 
 	<section class="single-body">
 		<div class="container">
-			<?php if ( has_excerpt() ) { ?>
-			<div class="lead">
-				<?php the_excerpt(); ?>
-			</div>
-			<?php } ?>
 			<?php the_content(); ?>
 			<div class="section-content share" id="share">
 				<a href="https://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=taniarascia&hashtags=webdev" target="_blank">
