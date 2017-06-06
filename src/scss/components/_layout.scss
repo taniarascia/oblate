@@ -97,7 +97,7 @@ h4,
 h5 {
 	font-family: $special-heading;
 	line-height: 1.2;
-	font-weight: 800;
+	font-weight: 700;
 	color: $heading-color;
 	margin-bottom: 1.5rem;
 }
@@ -143,22 +143,22 @@ h5 {
 		font-size: 2.75rem;
 	}
 	h2 {
-		font-size: 2rem;
+		font-size: 2.25rem;
 	}
 	h3 {
-		font-size: 1.5rem;
+		font-size: 1.75rem;
 	}
 	h4 {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 	}
 	h5 {
-		font-size: 1.25rem;
+		font-size: 1.2rem;
 	}
 }
 
 // Definition list
 dt {
-	font-weight: 800;
+	font-weight: 900;
 	font-family: $heading-family;
 }
 
@@ -416,7 +416,7 @@ mark {
 	padding: 1.5rem 0;
 	h1 {
 		margin: 0 0 1.5rem;
-		font-weight: 800;
+		font-weight: 900;
 		font-size: 1.5rem;
 		span {
 			color: $pink;
@@ -506,7 +506,7 @@ mark {
 	padding: 1rem 0;
 	h1 {
 		margin: 1rem 0;
-		font-weight: 800;
+		font-weight: 900;
 		font-size: 2rem;
 	}
 }
@@ -574,7 +574,7 @@ mark {
 	h1 {
 		font-family: $special-heading;
 		font-weight: 900;
-		margin: .5rem 0;
+		margin: .5rem 0 1rem;
 	}
 }
 
@@ -588,6 +588,7 @@ mark {
 	.single-header {
 		h1 {
 			font-size: 3.5rem;
+			margin: .5rem 0 2rem;
 		}
 	}
 }
@@ -1263,7 +1264,7 @@ caption {
 	color: rgba(255, 255, 255, .8);
 	h1 {
 		margin: 0;
-		font-weight: 800;
+		font-weight: 900;
 		color: white;
 		font-size: 1.5rem;
 	}
@@ -1277,7 +1278,7 @@ caption {
 		}
 	}
 	.subtitle {
-		font-weight: 800;
+		font-weight: 700;
 		font-size: 1.3rem;
 		color: lighten($yellow, 10%);
 	}

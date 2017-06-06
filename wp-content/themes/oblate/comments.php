@@ -41,8 +41,6 @@
 				</div>
 				<?php } ?>
 
-				<p class="text-center"><a href="<?php echo get_comments_link(); ?>" class="button secondary-button">Add your response</a></p>
-
 				<?php endif; // have_comments() 
 
 		// If comments are closed and there are comments, let's leave a little note, shall we?
