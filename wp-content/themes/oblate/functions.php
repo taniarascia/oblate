@@ -90,9 +90,9 @@ add_action( 'wp_enqueue_scripts', 'starter_scripts' );
 
 function oblate_scripts() {
 	wp_dequeue_style( 'starter-style' );
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css?06-05-2017' );
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css?06-06-2017' );
 	wp_enqueue_script( 'prism', get_template_directory_uri() . '/js/prism.js', array(), '1.0.0', true );
-	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js?05-26-2017', array(), '1.0.0', true );
+	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js?06-06-2017', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'oblate_scripts' );
  
@@ -101,39 +101,12 @@ add_action( 'wp_enqueue_scripts', 'oblate_scripts' );
  */
 
 function load_fonts() {
-	wp_register_style( 'All', '//fonts.googleapis.com/css?family=Roboto:400,700,900|Roboto+Mono:400' );
+	wp_register_style( 'All', '//fonts.googleapis.com/css?family=Roboto:400,700,900|Roboto+Mono:400|Merriweather:700,900' );
 	wp_register_style('FontAwesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 	wp_enqueue_style( 'All' );
 	wp_enqueue_style( 'FontAwesome' );
 }
 add_action('wp_print_styles', 'load_fonts'); 
-
-/** 
- * Disable emojis
- */
-
-function disable_wp_emojicons() {
-	// all actions related to emojis
-	remove_action( 'admin_print_styles', 'print_emoji_styles' );
-	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-	remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
-	remove_action( 'wp_print_styles', 'print_emoji_styles' );
-	remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
-	remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
-	remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
-
-// filter to remove TinyMCE emojis
-add_filter( 'tiny_mce_plugins', 'disable_emojicons_tinymce' );
-}
-add_action( 'init', 'disable_wp_emojicons' );
-
-function disable_emojicons_tinymce( $plugins ) {
-  if ( is_array( $plugins ) ) {
-    return array_diff( $plugins, array( 'wpemoji' ) );
-  } else {
-    return array();
-  }
-}
 
 // Disable XML RPC
 add_filter('xmlrpc_enabled', '__return_false');

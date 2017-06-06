@@ -27,7 +27,6 @@
 		<?php next_posts_link(); ?>
 	</div>
 </div>
-</div>
 
 <?php endif; ?>
 

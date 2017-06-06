@@ -3,13 +3,11 @@ console.log('Hello, fellow developer! Thanks for visiting. :)'
 					+ '\nof this blog is completely custom, based on my own'
 					+ '\nCSS/Sass framework, Primitive. Check it out!'
 					+ '\nhttps://taniarascia.github.io/primitive'
-					+ '\n\nLike the code theme you see on my site?'
+					+ '\n\nLike the syntax theme for code you see on my site?'
 					+ '\nNew Moon is available for Atom, Brackets, VSCode and Sublime!'
 					+ '\nhttps://taniarascia.github.io/new-moon'
 					+ '\n\nIf you\'re hiring, my resume can be found here:'
-					+ '\nhttps://www.taniarascia.com/resume'
-					+ '\n\nDon\'t forget to try out the cheat code!'
-					+ '\n↑ ↑ ↓ ↓ ← → ← → B A');
+					+ '\nhttps://www.taniarascia.com/resume');
 
 /*
  * Konami-JS ~ 

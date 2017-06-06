@@ -1,7 +1,7 @@
 <article id="post-<?php the_ID(); ?>">
 
 	<header class="single-header">
-		<div class="container">
+		<div class="large-container">
 			<?php if ( get_post_thumbnail_id() ) { ?>
 			<a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="150" width="150"></a>
 			<?php } ?>
@@ -9,9 +9,11 @@
 				<?php the_title(); ?>
 			</h1>
 			<time datetime="<?php the_time( 'Y-m-d' ); ?>">
+				<img src="<?php echo site_url(); ?>/wp-content/uploads/face-150x150.jpg" class="avatar-tania">
 				<?php the_time( 'F j, Y' ); ?> /
 				<?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?>
 			</time>
+			
 		</div>
 	</header>
 

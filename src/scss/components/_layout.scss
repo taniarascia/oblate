@@ -15,7 +15,7 @@ html {
 // Body base 
 body {
 	color: $font-color;
-	font-size: 1rem;
+	font-size: 1.05rem;
 }
 
 @include small-breakpoint {
@@ -95,11 +95,11 @@ h2,
 h3,
 h4,
 h5 {
-	font-family: $heading-family;
+	font-family: $special-heading;
 	line-height: 1.2;
 	font-weight: 800;
 	color: $heading-color;
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 }
 
 h1:not(:first-child),
@@ -134,20 +134,25 @@ h5 {
 }
 
 @include small-breakpoint {
+	h1:not(:first-child),
+	h2:not(:first-child),
+	h3:not(:first-child) {
+		margin-top: 3.5rem;
+	}
 	h1 {
-		font-size: 2.5rem;
+		font-size: 2.75rem;
 	}
 	h2 {
-		font-size: 1.75rem;
+		font-size: 2rem;
 	}
 	h3 {
-		font-size: 1.4rem;
+		font-size: 1.5rem;
 	}
 	h4 {
-		font-size: 1.3rem;
+		font-size: 1.5rem;
 	}
 	h5 {
-		font-size: 1.2rem;
+		font-size: 1.25rem;
 	}
 }
 
@@ -188,8 +193,7 @@ mark {
 /* Navigation */
 
 .main-navigation {
-	position: fixed;
-	top: 50px;
+	margin-top: 50px;
 	width: 100%;
 	left: 0;
 	display: flex;
@@ -233,7 +237,7 @@ mark {
 
 @include nav-breakpoint {
 	.main-navigation {
-		top: 60px;
+		margin-top: 60px;
 		a {
 			flex: initial;
 			padding: 1.5rem;
@@ -333,12 +337,12 @@ mark {
 }
 
 .main {
-	margin-top: 120px;
+	margin-top: 0;
 }
 
 @include nav-breakpoint {
 	.main {
-		margin-top: 130px;
+		margin-top: 0;
 	}
 }
 
@@ -568,6 +572,7 @@ mark {
 	text-align: center;
 	padding: 1.5rem 0;
 	h1 {
+		font-family: $special-heading;
 		font-weight: 900;
 		margin: .5rem 0;
 	}
@@ -611,7 +616,7 @@ mark {
 	padding: 1.5rem;
 	p {
 		color: $light-font;
-		font-size: 1.0rem;
+		font-size: 1.05rem;
 		margin-bottom: 0;
 	}
 	h1 {
@@ -639,6 +644,9 @@ mark {
 		&:last-of-type {
 			display: none;
 		}
+		p {
+			font-size: 1.1rem;
+		}
 	}
 }
 
@@ -656,12 +664,9 @@ mark {
 	}
 }
 
-@include large-breakpoint { 
+@include large-breakpoint {
 	.cell {
 		width: calc(33.3333% - 1rem);
-		p {
-			font-size: 1.05rem;
-		}
 		h1 {
 			font-size: 1.4rem;
 		}
@@ -681,6 +686,15 @@ time {
 	time {
 		font-size: 1rem;
 	}
+}
+
+.avatar-tania {
+	height: 50px;
+	width: 50px;
+	max-width: 50px;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-right: .5rem;
 }
 
 blockquote {
@@ -713,7 +727,7 @@ blockquote {
 		color: $heading-color;
 		font-family: $heading-family;
 		padding: 1rem;
-		border-radius: $br;
+		border-radius: 6px;
 	}
 	&.alert {
 		background: lighten($pink, 28%);
@@ -815,7 +829,9 @@ blockquote {
 		.fa-reddit-alien {
 			color: #FF4100;
 		}
-		&:hover, &:focus, &:active {
+		&:hover,
+		&:focus,
+		&:active {
 			opacity: 1;
 		}
 	}
@@ -1243,7 +1259,7 @@ caption {
 .resume-header {
 	text-align: left;
 	background: $bg, linear-gradient(to top right, $purple, $blue);
-	padding: 1.5rem 0;
+	padding: 2rem 0;
 	color: rgba(255, 255, 255, .8);
 	h1 {
 		margin: 0;
@@ -1269,7 +1285,7 @@ caption {
 
 @include small-breakpoint {
 	.resume-header {
-		padding: 2rem 0;
+		padding: 2.5rem 0;
 		h1 {
 			font-size: 2.5rem;
 		}
@@ -1281,7 +1297,7 @@ caption {
 
 @include nav-breakpoint {
 	.resume-header {
-		padding: 3rem 0;
+		padding: 3.5rem 0;
 		h1 {
 			font-size: 3.5rem;
 		}
