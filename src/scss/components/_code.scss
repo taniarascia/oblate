@@ -59,7 +59,8 @@ pre code {
 @include large-breakpoint {
 	code[class*="language-"],
 	pre[class*="language-"],
-	pre code {
+	pre code,
+	.terminal {
 		margin: 2.5rem 0;
 	}
 }
@@ -124,7 +125,7 @@ code[class*=language-sass] {
 }
 
 .filename {
-	margin-bottom: calc(-2.5rem - 4px);
+	margin-bottom: calc(-1.5rem - 4px);
 	font-family: $font-family;
 	background: #111;
 	padding: .5rem 1rem .75rem;
@@ -133,6 +134,12 @@ code[class*=language-sass] {
 	font-weight: bold;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px;
+}
+
+@include small-breakpoint {
+	.filename {
+		margin-bottom: calc(-2.5rem - 4px);
+	}
 }
 
 

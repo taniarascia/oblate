@@ -15,7 +15,7 @@ html {
 // Body base 
 body {
 	color: $font-color;
-	font-size: 1.05rem;
+	font-size: 1.05rem; 
 }
 
 @include small-breakpoint {
@@ -114,23 +114,24 @@ h1 {
 
 h2 {
 	font-size: 1.5rem;
+	font-weight: 900;
 }
 
 h3 {
 	font-size: 1.4rem;
-	color: lighten($heading-color, 10%);
+	color: lighten($heading-color, 12%);
 }
 
 h4 {
 	font-size: 1.2rem;
 	padding-bottom: .5rem;
-	color: lighten($heading-color, 20%);
+	color: lighten($heading-color, 22%);
 	border-bottom: 1px solid $border;
 }
 
 h5 {
-	font-size: 1rem;
-	margin-bottom: .25rem;
+	font-size: 1.1rem;
+	margin-bottom: .5rem;
 }
 
 @include small-breakpoint {
@@ -138,6 +139,9 @@ h5 {
 	h2:not(:first-child),
 	h3:not(:first-child) {
 		margin-top: 3.5rem;
+	}
+	h4:not(:first-child) {
+		margin-top: 2.5rem;
 	}
 	h1 {
 		font-size: 2.75rem;
@@ -164,6 +168,10 @@ dt {
 
 mark {
 	background: #FFEA96;
+}
+
+ul li ul {
+	margin-bottom: 0;
 }
 
 
@@ -642,9 +650,6 @@ mark {
 @include small-breakpoint {
 	.cell {
 		width: calc(50% - 1rem);
-		&:last-of-type {
-			display: none;
-		}
 		p {
 			font-size: 1.1rem;
 		}
@@ -655,9 +660,6 @@ mark {
 	.cell {
 		width: calc(33.3333% - 1rem);
 		padding: 2rem;
-		&:last-of-type {
-			display: block;
-		}
 	}
 	.image-thumbnail img {
 		height: 100px;
@@ -735,8 +737,8 @@ blockquote {
 		border: 1px solid $pink;
 	}
 	&.info {
-		background: lighten($yellow, 29%);
-		border: 1px solid $yellow;
+		background: #fff6d5;
+		border: 1px solid #F0D461;
 	}
 	&.success {
 		background: lighten($green, 30%);
@@ -1320,8 +1322,11 @@ caption {
 		border-bottom: 0;
 		margin-bottom: 0;
 	}
-	.accomplishments li {
-		margin-bottom: .5rem;
+	.accomplishments {
+		padding-top: 0;
+		li {
+			margin-bottom: .5rem;
+		}
 	}
 	.title {
 		margin-top: 100px;
@@ -1355,6 +1360,7 @@ caption {
 		padding: 0;
 		border: none;
 		margin-bottom: .25rem;
+		line-height: 1.5;
 	}
 }
 

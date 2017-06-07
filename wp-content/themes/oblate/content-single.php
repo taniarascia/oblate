@@ -9,7 +9,7 @@
 				<?php the_title(); ?>
 			</h1>
 			<time datetime="<?php the_time( 'Y-m-d' ); ?>">
-				<img src="<?php echo site_url(); ?>/wp-content/uploads/face-150x150.jpg" class="avatar-tania">
+				<a href="https://twitter.com/taniarascia"><img src="<?php echo site_url(); ?>/wp-content/uploads/face-150x150.jpg" class="avatar-tania"></a>
 				<?php the_time( 'F j, Y' ); ?> /
 				<?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?>
 			</time>
