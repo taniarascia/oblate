@@ -10,7 +10,9 @@ wp-content/advanced-cache.php
 wp-config-sample.php
 .sass-cache
 node_modules
+.DS_Store
 src/scss/.sass-cache
+package-lock.json
 /projects
 /music
 BingSiteAuth.xml
