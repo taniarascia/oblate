@@ -13,6 +13,13 @@
 
 <?php endwhile; endif; ?>
 
+<section>
+	<div class="container">
+		<blockquote style="border-left: none">"Tania writes extremely clear, concise tutorials that have the best ratio of learning to bullshit that I've encountered so far. It's no exaggeration to say that I wouldn't currently have a job in development without this site. So thanks for ruining my life, Tania."
+		<cite>&mdash; Craig Lam</cite></blockquote>
+	</div>
+</section>
+
 <section class="top-three">
 	<div class="large-container">
 		<h2>Latest Tutorials</h2>

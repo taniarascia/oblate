@@ -42,7 +42,13 @@
 
 <body>
 	<nav class="secondary-navigation">
-		<div class="secondary-title"><a href="<?php echo site_url(); ?>">Tania Rascia</a> <span class="divider">|</span> <span class="secondary-subtitle"><?php if (is_front_page()) { ?>Web Designer, Developer, Autodidact<?php } else { echo get_the_title(); } ?></span></div>
+		<div class="secondary-title"><a href="<?php echo site_url(); ?>">Tania Rascia</a> <span class="divider">|</span> 
+		<span class="secondary-subtitle">
+		<?php 
+		if ( is_front_page() ) { echo "Web Designer, Developer, Autodidact"; } 
+		elseif ( is_search() ) { echo get_search_query(); } 
+		else { echo get_the_title(); } ?>
+		</span></div>
 		<form role="search" method="get" class="nav-search" action="<?php echo home_url( '/' ); ?>">
 		<label>
 			<span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span></label>
