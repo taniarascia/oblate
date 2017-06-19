@@ -22,27 +22,165 @@
 
 <section class="alternate-background">
 	<div class="large-container">
-		<div class="grid">
+		
 
 			<?php $args = array(
 				'order' => 'desc',
 				'posts_per_page' => '-1',
-				'category_name' => 'Tutorials',
+				'category_name' => 'front-end',
 			);
 
-			$thoughts = new WP_Query( $args );
+			$frontend = new WP_Query( $args );
 
-			if ( $thoughts->have_posts() ) :  while ( $thoughts->have_posts() ) : $thoughts->the_post(); ?>
+			if ( $frontend->have_posts() ) : ?>
+
+			<h2>Front End &amp; Design</h2>
+			<div class="grid">
+			
+			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
 
 			<?php get_template_part( 'content', get_post_format() ); ?>
 
-			<?php	endwhile; ?>
+			<?php	endwhile; ?> 
+			</div>
+			<?php endif; wp_reset_postdata(); ?>
+
+			<?php $args = array(
+				'order' => 'desc',
+				'posts_per_page' => '-1',
+				'category_name' => 'back-end',
+			);
+
+			$frontend = new WP_Query( $args );
+
+			if ( $frontend->have_posts() ) : ?>
+
+			<h2>Back End Development</h2>
+			<div class="grid">
+			
+			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
+
+			<?php get_template_part( 'content', get_post_format() ); ?>
+
+			<?php	endwhile; ?> 
+			</div>
+			<?php endif; wp_reset_postdata(); ?>
+
+
+			<?php $args = array(
+				'order' => 'desc',
+				'posts_per_page' => '-1',
+				'category_name' => 'javascript',
+			);
+
+			$frontend = new WP_Query( $args );
+
+			if ( $frontend->have_posts() ) : ?>
+
+			<h2>JavaScript</h2>
+			<div class="grid">
+			
+			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
+
+			<?php get_template_part( 'content', get_post_format() ); ?>
+
+			<?php	endwhile; ?> 
+			</div>
+			<?php endif; wp_reset_postdata(); ?>
+
+
+			<?php $args = array(
+				'order' => 'desc',
+				'posts_per_page' => '-1',
+				'category_name' => 'workflow',
+			);
+
+			$frontend = new WP_Query( $args );
+
+			if ( $frontend->have_posts() ) : ?>
+
+			<h2>Developer Workflow</h2>
+			<div class="grid">
+			
+			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
+
+			<?php get_template_part( 'content', get_post_format() ); ?>
+
+			<?php	endwhile; ?> 
+			</div>
+			<?php endif; wp_reset_postdata(); ?>
+
+
+			<?php $args = array(
+				'order' => 'desc',
+				'posts_per_page' => '-1',
+				'category_name' => 'system',
+			);
+
+			$frontend = new WP_Query( $args );
+
+			if ( $frontend->have_posts() ) : ?>
+
+			<h2>System Administration</h2>
+			<div class="grid">
+			
+			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
+
+			<?php get_template_part( 'content', get_post_format() ); ?>
+
+			<?php	endwhile; ?> 
+			</div>
+			<?php endif; wp_reset_postdata(); ?>
+
+
+			<?php $args = array(
+				'order' => 'desc',
+				'posts_per_page' => '-1',
+				'category_name' => 'wordpress',
+			);
+
+			$frontend = new WP_Query( $args );
+
+			if ( $frontend->have_posts() ) : ?>
+
+			<h2>WordPress</h2>
+			<div class="grid">
+			
+			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
+
+			<?php get_template_part( 'content', get_post_format() ); ?>
+
+			<?php	endwhile; ?> 
+			</div>
+			<?php endif; wp_reset_postdata(); ?>
+
+
+			<?php $args = array(
+				'order' => 'desc',
+				'posts_per_page' => '-1',
+				'category_name' => 'general',
+			);
+
+			$frontend = new WP_Query( $args );
+
+			if ( $frontend->have_posts() ) : ?>
+
+			<h2>General</h2>
+			<div class="grid">
+			
+			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
+
+			<?php get_template_part( 'content', get_post_format() ); ?>
+
+			<?php	endwhile; ?> 
+			</div>
+			<?php endif; wp_reset_postdata(); ?>
+
 
 		</div>
+
 	</div>
 </section>
-
-<?php endif; wp_reset_postdata(); ?>
 
 <section>
 	<div class="container">

@@ -15,7 +15,7 @@
 
 <section>
 	<div class="container">
-		<blockquote class="testimonial">"Thanks a million for your well-written, easy-to-follow and practical guides. Previously I hated working in Wordpress because it always felt a bit like trying to find the right tools in somebody else's kitchen — but now I feel confident opening up an existing theme and understanding how it works."
+		<blockquote class="testimonial">"Thanks a million for your well-written, easy-to-follow and practical guides. Previously I hated working in WordPress because it always felt a bit like trying to find the right tools in somebody else's kitchen — but now I feel confident opening up an existing theme and understanding how it works."
 		<cite>&mdash; David Bock</cite></blockquote>
 	</div>
 </section>
@@ -30,9 +30,9 @@
 				'category_name' => 'Snippets',
 			);
 
-			$thoughts = new WP_Query( $args );
+			$snippets = new WP_Query( $args );
 
-			if ( $thoughts->have_posts() ) :  while ( $thoughts->have_posts() ) : $thoughts->the_post(); ?>
+			if ( $snippets->have_posts() ) :  while ( $snippets->have_posts() ) : $snippets->the_post(); ?>
 
 			<?php get_template_part( 'content', get_post_format() ); ?>
 
