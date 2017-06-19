@@ -44,4 +44,11 @@
 
 <?php endif; wp_reset_postdata(); ?>
 
+<section>
+	<div class="container">
+		<blockquote class="testimonial">"The team I work with is made up of mostly designers who learned to code on the job, and they have been having a hard time keeping up with modern workflows and standards. This blog, and your open source projects, are exactly what I've been hoping to find to help remedy some of their pain and confusion. I think you hit a major pain point for a lot of devs who are both new and even experienced ones."
+		<cite>&mdash; Dan Fletcher</cite></blockquote>
+	</div>
+</section>
+
 <?php get_footer(); 
