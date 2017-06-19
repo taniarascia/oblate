@@ -13,6 +13,13 @@
 
 <?php endwhile; endif; ?>
 
+<section>
+	<div class="container">
+		<blockquote class="testimonial">"Tania's articles fill a much needed void in the web development world: they are both in-depth and extremely beginner-friendly. I love that she documents things as she learns them; I really feel like we're growing together as developers."
+		<cite>&mdash; Ben Schroeder</cite></blockquote>
+	</div>
+</section>
+
 <section class="portfolio-page alternate-background">
 
 	<div class="large-container">
