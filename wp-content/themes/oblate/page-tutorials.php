@@ -11,6 +11,13 @@
 	</div>
 </header>
 
+<section>
+	<div class="container">
+		<blockquote class="testimonial">"By far your articles are the most crystal clear I've seen.  An ace web developer who can articulate without ego? That's gold!"
+		<cite>&mdash; Ralphie Harvey</cite></blockquote>
+	</div>
+</section>
+
 <?php endwhile; endif; ?>
 
 <section class="alternate-background">
@@ -36,5 +43,12 @@
 </section>
 
 <?php endif; wp_reset_postdata(); ?>
+
+<section>
+	<div class="container">
+		<blockquote class="testimonial">"I just stayed up almost all night with excitement after reading a number of your articles due to how well written and understandable they are. I feel like I hit the jackpot and did more work in one night than I have in a year."
+		<cite>&mdash; Becci Melson</cite></blockquote>
+	</div>
+</section>
 
 <?php get_footer(); 

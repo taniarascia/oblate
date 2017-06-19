@@ -13,6 +13,13 @@
 
 <?php endwhile; endif; ?>
 
+<section>
+	<div class="container">
+		<blockquote class="testimonial">"Thanks a million for your well-written, easy-to-follow and practical guides. Previously I hated working in Wordpress because it always felt a bit like trying to find the right tools in somebody else's kitchen — but now I feel confident opening up an existing theme and understanding how it works."
+		<cite>&mdash; David Bock</cite></blockquote>
+	</div>
+</section>
+
 <section class="alternate-background">
 	<div class="large-container">
 		<div class="grid">

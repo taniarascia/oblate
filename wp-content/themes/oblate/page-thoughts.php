@@ -13,6 +13,13 @@
 
 <?php endwhile; endif; ?>
 
+<section>
+	<div class="container">
+		<blockquote class="testimonial">"Just wanted to say that I find the tone and style of your articles to be very easy to learn from and they have helped me and a handful of people I know a long way."
+		<cite>&mdash; James Cruickshank, Perlego</cite></blockquote>
+	</div>
+</section>
+
 <section class="alternate-background">
 	<div class="large-container">
 		<div class="grid">
@@ -38,3 +45,4 @@
 <?php endif; wp_reset_postdata(); ?>
 
 <?php get_footer(); 
+
