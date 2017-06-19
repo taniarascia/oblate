@@ -15,7 +15,7 @@ html {
 // Body base 
 body {
 	color: $font-color;
-	font-size: 1.05rem; 
+	font-size: 1.05rem;
 }
 
 @include small-breakpoint {
@@ -42,7 +42,8 @@ article {
 	li,
 	dl,
 	h3,
-	h4 {
+	h4,
+	.response {
 		a {
 			color: $link-color;
 			text-decoration: none;
@@ -595,7 +596,7 @@ ul li ul {
 @include large-breakpoint {
 	.single-header {
 		h1 {
-			font-size: 2.5rem; 
+			font-size: 2.5rem;
 			margin: .5rem 0 2rem;
 		}
 	}
@@ -622,7 +623,10 @@ ul li ul {
 	margin: .5rem;
 	border: 1px solid $border;
 	position: relative;
-	padding: 1.5rem;
+	padding: 1.5rem 1.5rem 4rem;
+	&:hover {
+		border: 1px solid darken($border, 8%);
+	}
 	p {
 		color: $light-font;
 		font-size: 1.05rem;
@@ -635,6 +639,18 @@ ul li ul {
 		a {
 			color: $heading-color;
 		}
+	}
+	.response {
+		font-size: .9rem;
+		position: absolute;
+		bottom: 1.5rem;
+		left: 1.5rem;
+	}
+}
+
+.tutorials-page {
+	h2 {
+		text-align: center;
 	}
 }
 
@@ -651,8 +667,15 @@ ul li ul {
 @include small-breakpoint {
 	.cell {
 		width: calc(50% - 1rem);
+		padding: 2rem 2rem 5rem;
 		p {
 			font-size: 1.1rem;
+		}
+		.response {
+			font-size: .9rem;
+			position: absolute;
+			bottom: 2rem;
+			left: 2rem;
 		}
 	}
 }
@@ -660,7 +683,6 @@ ul li ul {
 @include nav-breakpoint {
 	.cell {
 		width: calc(33.3333% - 1rem);
-		padding: 2rem;
 	}
 	.image-thumbnail img {
 		height: 100px;
@@ -677,7 +699,7 @@ ul li ul {
 	}
 }
 
-time {
+.the-time {
 	color: $light-color;
 	display: block;
 	font-family: $heading-family;
@@ -687,7 +709,7 @@ time {
 }
 
 @include small-breakpoint {
-	time {
+	.the-time {
 		font-size: 1rem;
 	}
 }
@@ -949,8 +971,7 @@ blockquote {
 
 // Comments
 #comments {
-	line-height: 1.4;
-	// Comment body
+	line-height: 1.4; // Comment body
 	.comment {
 		border-bottom: 1px solid #eee;
 		&:last-of-type {

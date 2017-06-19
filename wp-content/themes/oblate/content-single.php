@@ -8,10 +8,10 @@
 			<h1>
 				<?php the_title(); ?>
 			</h1>
-			<time datetime="<?php the_time( 'Y-m-d' ); ?>">
-				<?php the_time( 'F j, Y' ); ?> /
+			<div class="the-time"><time datetime="<?php the_time( 'Y-m-d' ); ?>">
+				<?php the_time( 'F j, Y' ); ?></time> /
 				<?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?>
-			</time>
+			</div>
 			
 		</div>
 	</header>

@@ -20,10 +20,9 @@
 
 <?php endwhile; endif; ?>
 
-<section class="alternate-background">
+<section class="alternate-background tutorials-page">
 	<div class="large-container">
 		
-
 			<?php $args = array(
 				'order' => 'desc',
 				'posts_per_page' => '-1',
@@ -68,7 +67,7 @@
 
 
 			<?php $args = array(
-				'order' => 'desc',
+				'order' => 'asc',
 				'posts_per_page' => '-1',
 				'category_name' => 'javascript',
 			);
@@ -134,7 +133,7 @@
 
 
 			<?php $args = array(
-				'order' => 'desc',
+				'order' => 'asc',
 				'posts_per_page' => '-1',
 				'category_name' => 'wordpress',
 			);
