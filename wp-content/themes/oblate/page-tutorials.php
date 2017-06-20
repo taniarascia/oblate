@@ -13,17 +13,44 @@
 
 <section>
 	<div class="container">
-		<blockquote class="testimonial">"By far your articles are the most crystal clear I've seen.  An ace web developer who can articulate without ego? That's gold!"
-		<cite>&mdash; Ralphie Harvey</cite></blockquote>
+		<blockquote class="testimonial">"By far your articles are the most crystal clear I've seen. An ace web developer who can articulate without ego? That's
+			gold!"
+			<cite>&mdash; Ralphie Harvey</cite></blockquote>
 	</div>
 </section>
 
 <?php endwhile; endif; ?>
 
 <section class="alternate-background tutorials-page">
+	<section class="topics">
+		<div class="container">
+			<div class="topic">
+				<h3><a href="#front-end"><span class="ico"><i class="fa fa-pencil" aria-hidden="true"></i></span> <span>Front End &amp; Design</span></a></h3>
+			</div>
+			<div class="topic">
+				<h3><a href="#front-end"><span class="ico"><i class="fa fa-database" aria-hidden="true"></i></span> <span>Back End Development</span></a></h3>
+			</div>
+			<div class="topic">
+				<h3><a href="#front-end"><span class="ico"><i class="fa fa-code" aria-hidden="true"></i></span> <span>JavaScript</span></a></h3>
+			</div>
+			<div class="topic">
+				<h3><a href="#front-end"><span class="ico"><i class="fa fa-code-fork" aria-hidden="true"></i></span> <span>Developer Workflow</span></a></h3>
+			</div>
+			<div class="topic">
+				<h3><a href="#front-end"><span class="ico"><i class="fa fa-server" aria-hidden="true"></i></span> <span>System Administration</span></a></h3>
+			</div>
+			<div class="topic">
+				<h3><a href="#front-end"><span class="ico"><i class="fa fa-wordpress" aria-hidden="true"></i></span> <span>WordPress</span></a></h3>
+			</div>
+			<div class="topic">
+				<h3><a href="#front-end"><span class="ico"><i class="fa fa-desktop" aria-hidden="true"></i></span> <span>General</span></a></h3>
+			</div>
+		</div>
+	</section>
+
 	<div class="large-container">
-		
-			<?php $args = array(
+
+		<?php $args = array(
 				'order' => 'desc',
 				'posts_per_page' => '-1',
 				'category_name' => 'front-end',
@@ -33,18 +60,18 @@
 
 			if ( $frontend->have_posts() ) : ?>
 
-			<h2>Front End &amp; Design</h2>
-			<div class="grid">
-			
+		<h2 id="front-end">Front End &amp; Design</h2>
+		<div class="grid">
+
 			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
 
 			<?php get_template_part( 'content', get_post_format() ); ?>
 
-			<?php	endwhile; ?> 
-			</div>
-			<?php endif; wp_reset_postdata(); ?>
+			<?php	endwhile; ?>
+		</div>
+		<?php endif; wp_reset_postdata(); ?>
 
-			<?php $args = array(
+		<?php $args = array(
 				'order' => 'desc',
 				'posts_per_page' => '-1',
 				'category_name' => 'back-end',
@@ -54,19 +81,19 @@
 
 			if ( $frontend->have_posts() ) : ?>
 
-			<h2>Back End Development</h2>
-			<div class="grid">
-			
+		<h2 id="back-end">Back End Development</h2>
+		<div class="grid">
+
 			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
 
 			<?php get_template_part( 'content', get_post_format() ); ?>
 
-			<?php	endwhile; ?> 
-			</div>
-			<?php endif; wp_reset_postdata(); ?>
+			<?php	endwhile; ?>
+		</div>
+		<?php endif; wp_reset_postdata(); ?>
 
 
-			<?php $args = array(
+		<?php $args = array(
 				'order' => 'asc',
 				'posts_per_page' => '-1',
 				'category_name' => 'javascript',
@@ -76,19 +103,19 @@
 
 			if ( $frontend->have_posts() ) : ?>
 
-			<h2>JavaScript</h2>
-			<div class="grid">
-			
+		<h2 id="javascript">JavaScript</h2>
+		<div class="grid">
+
 			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
 
 			<?php get_template_part( 'content', get_post_format() ); ?>
 
-			<?php	endwhile; ?> 
-			</div>
-			<?php endif; wp_reset_postdata(); ?>
+			<?php	endwhile; ?>
+		</div>
+		<?php endif; wp_reset_postdata(); ?>
 
 
-			<?php $args = array(
+		<?php $args = array(
 				'order' => 'desc',
 				'posts_per_page' => '-1',
 				'category_name' => 'workflow',
@@ -98,19 +125,19 @@
 
 			if ( $frontend->have_posts() ) : ?>
 
-			<h2>Developer Workflow</h2>
-			<div class="grid">
-			
+		<h2 id="workflow">Developer Workflow</h2>
+		<div class="grid">
+
 			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
 
 			<?php get_template_part( 'content', get_post_format() ); ?>
 
-			<?php	endwhile; ?> 
-			</div>
-			<?php endif; wp_reset_postdata(); ?>
+			<?php	endwhile; ?>
+		</div>
+		<?php endif; wp_reset_postdata(); ?>
 
 
-			<?php $args = array(
+		<?php $args = array(
 				'order' => 'desc',
 				'posts_per_page' => '-1',
 				'category_name' => 'system',
@@ -120,19 +147,19 @@
 
 			if ( $frontend->have_posts() ) : ?>
 
-			<h2>System Administration</h2>
-			<div class="grid">
-			
+		<h2 id="workflow">System Administration</h2>
+		<div class="grid">
+
 			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
 
 			<?php get_template_part( 'content', get_post_format() ); ?>
 
-			<?php	endwhile; ?> 
-			</div>
-			<?php endif; wp_reset_postdata(); ?>
+			<?php	endwhile; ?>
+		</div>
+		<?php endif; wp_reset_postdata(); ?>
 
 
-			<?php $args = array(
+		<?php $args = array(
 				'order' => 'asc',
 				'posts_per_page' => '-1',
 				'category_name' => 'wordpress',
@@ -142,19 +169,19 @@
 
 			if ( $frontend->have_posts() ) : ?>
 
-			<h2>WordPress</h2>
-			<div class="grid">
-			
+		<h2 id="wordpress">WordPress</h2>
+		<div class="grid">
+
 			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
 
 			<?php get_template_part( 'content', get_post_format() ); ?>
 
-			<?php	endwhile; ?> 
-			</div>
-			<?php endif; wp_reset_postdata(); ?>
+			<?php	endwhile; ?>
+		</div>
+		<?php endif; wp_reset_postdata(); ?>
 
 
-			<?php $args = array(
+		<?php $args = array(
 				'order' => 'desc',
 				'posts_per_page' => '-1',
 				'category_name' => 'general',
@@ -164,28 +191,29 @@
 
 			if ( $frontend->have_posts() ) : ?>
 
-			<h2>General</h2>
-			<div class="grid">
-			
+		<h2 id="general">General</h2>
+		<div class="grid">
+
 			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
 
 			<?php get_template_part( 'content', get_post_format() ); ?>
 
-			<?php	endwhile; ?> 
-			</div>
-			<?php endif; wp_reset_postdata(); ?>
-
-
+			<?php	endwhile; ?>
 		</div>
+		<?php endif; wp_reset_postdata(); ?>
+
+
+	</div>
 
 	</div>
 </section>
 
 <section>
 	<div class="container">
-		<blockquote class="testimonial">"I just stayed up almost all night with excitement after reading a number of your articles due to how well written and understandable they are. I feel like I hit the jackpot and did more work in one night than I have in a year."
-		<cite>&mdash; Becci Melson</cite></blockquote>
+		<blockquote class="testimonial">"I just stayed up almost all night with excitement after reading a number of your articles due to how well written and
+			understandable they are. I feel like I hit the jackpot and did more work in one night than I have in a year."
+			<cite>&mdash; Becci Melson</cite></blockquote>
 	</div>
 </section>
 
-<?php get_footer(); 
+<?php get_footer();

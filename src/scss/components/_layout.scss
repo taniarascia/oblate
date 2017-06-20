@@ -651,9 +651,64 @@ ul li ul {
 	}
 }
 
+
+/* Tutorials page */
+
 .tutorials-page {
 	h2 {
 		text-align: center;
+	}
+}
+
+.topic {
+	&:first-of-type {
+		border-top: 1px solid $border;
+	}
+	background: white;
+	border-bottom: 1px solid $border;
+	border-left: 1px solid $border;
+	border-right: 1px solid $border;
+	h3 {
+		margin: 0;
+		font-size: 1.1rem;
+		font-family: $font-family;
+		font-weight: 700;
+		a {
+			display: flex;
+			justify-content: space-between;
+			color: $heading-color;
+			padding: .75rem 1rem;
+			&:hover,
+			&:focus,
+			&:active {
+				text-decoration: none;
+				background: #f9f9f9;
+			}
+			&:hover .fa-wordpress {
+				color: #0073AA;
+			}
+			&:hover .fa-code {
+				color: #F0DB4F;
+			}
+			&:hover .fa-database {
+				color: #00BCD4;
+			}
+			&:hover .fa-server {
+				color: #009688;
+			}
+			&:hover .fa-pencil {
+				color: $yellow;
+			}
+			&:hover .fa-desktop {
+				color: $green;
+			}
+			&:hover .fa-code-fork {
+				color: $purple;
+			}
+			.ico {
+				order: 2;
+			}
+		}
 	}
 }
 
@@ -1307,7 +1362,7 @@ caption {
 		color: white;
 		font-size: 1.5rem;
 	}
-	a { 
+	a {
 		font-weight: 700;
 		color: white;
 		border-bottom: 2px solid $yellow;
