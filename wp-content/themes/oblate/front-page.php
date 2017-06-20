@@ -118,6 +118,7 @@
 					</a>
 				</h1>
 				<?php the_excerpt(); ?>
+				<div class="response"><?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?></div>
 			</article>
 
 			<?php endwhile; endif; wp_reset_postdata(); ?>
@@ -128,7 +129,7 @@
 
 <section>
 	<div class="container">
-		<blockquote class="testimonial">"Hi Tania, I just wanted to say that your tutorials are by far the best I've seen in a <em>long</em> time. Well written and well explained. Thank you for all your effort."
+		<blockquote class="testimonial">"Hi Tania, I just wanted to say that your tutorials are by far the best I've seen. Well written and well explained. Thank you for all your effort."
 		<cite>&mdash; João Vilaça</cite></blockquote>
 	</div>
 </section>
