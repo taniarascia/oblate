@@ -21,8 +21,8 @@
 
 <?php endwhile; endif; ?>
 
-<section class="alternate-background tutorials-page">
-	<section class="topics">
+<section class="topics">
+	<h2 class="text-center">Topics</h2>
 		<div class="container">
 			<div class="topic">
 				<h3><a href="#front-end"><span class="ico"><i class="fa fa-pencil" aria-hidden="true"></i></span> <span>Front End &amp; Design</span></a></h3>
@@ -47,6 +47,8 @@
 			</div>
 		</div>
 	</section>
+
+<section class="alternate-background tutorials-page">
 
 	<div class="large-container">
 

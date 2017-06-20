@@ -660,17 +660,25 @@ ul li ul {
 	}
 }
 
+.topics {
+	margin-bottom: 1.5rem;
+}
+
+@include small-breakpoint {
+.topics {
+	margin-bottom: 2.5rem;
+}	
+}
+
 .topic {
-	&:first-of-type {
-		border-top: 1px solid $border;
-	}
 	background: white;
 	border-bottom: 1px solid $border;
-	border-left: 1px solid $border;
-	border-right: 1px solid $border;
+	&:last-of-type {
+		border-bottom: 0;
+	}
 	h3 {
 		margin: 0;
-		font-size: 1.1rem;
+		font-size: 1rem;
 		font-family: $font-family;
 		font-weight: 700;
 		a {
@@ -684,11 +692,18 @@ ul li ul {
 				text-decoration: none;
 				background: #f9f9f9;
 			}
+			.fa {
+				color: $light-font;
+			}
+			&:hover .fa {
+				color: $heading-color;
+			}
+			/*
 			&:hover .fa-wordpress {
 				color: #0073AA;
 			}
 			&:hover .fa-code {
-				color: #F0DB4F;
+				color: darken(#F0DB4F, 20%);
 			}
 			&:hover .fa-database {
 				color: #00BCD4;
@@ -704,7 +719,7 @@ ul li ul {
 			}
 			&:hover .fa-code-fork {
 				color: $purple;
-			}
+			}*/
 			.ico {
 				order: 2;
 			}
