@@ -46,6 +46,7 @@
 					</a>
 				</h1>
 				<?php the_excerpt(); ?>
+				<div class="response"><?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?></div>
 			</article>
 
 			<?php endwhile; endif; wp_reset_postdata(); ?>
@@ -82,6 +83,7 @@
 					</a>
 				</h1>
 				<?php the_excerpt(); ?>
+				<div class="response"><?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?></div>
 			</article>
 
 			<?php endwhile; endif; wp_reset_postdata(); ?>
