@@ -60,4 +60,11 @@
 	</div>
 </section>
 
+<section>
+	<div class="container">
+		<blockquote class="testimonial">"It's definitely an inspiration seeing the great work you do, and the fact that you're so willing to share your knowledge so freely with the rest of us. I have to say I've already learned a great number of things from your resources and tutorials."
+		<cite>&mdash; Louis Wong</cite></blockquote>
+	</div>
+</section>
+
 <?php get_footer();

@@ -434,7 +434,7 @@ ul li ul {
 	a {
 		font-weight: 700;
 		color: $heading-color;
-		text-decoration: underline;
+		border-bottom: 2px solid #feca7d;
 		&:hover {
 			color: $yellow;
 		}
@@ -1307,8 +1307,7 @@ caption {
 	a {
 		font-weight: 700;
 		color: white;
-		border-bottom: 0;
-		text-decoration: underline;
+		border-bottom: 2px solid $yellow;
 		&:hover {
 			color: $yellow;
 		}
