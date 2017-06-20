@@ -435,7 +435,10 @@ ul li ul {
 		font-weight: 700;
 		color: $heading-color;
 		border-bottom: 2px solid #feca7d;
-		&:hover {
+		&:hover,
+		&:active,
+		&:focus {
+			text-decoration: none;
 			color: $yellow;
 		}
 	}
@@ -1304,12 +1307,15 @@ caption {
 		color: white;
 		font-size: 1.5rem;
 	}
-	a {
+	a { 
 		font-weight: 700;
 		color: white;
 		border-bottom: 2px solid $yellow;
-		&:hover {
+		&:hover,
+		&:active,
+		&:focus {
 			color: $yellow;
+			text-decoration: none;
 		}
 	}
 	.subtitle {
