@@ -149,7 +149,7 @@
 
 			if ( $frontend->have_posts() ) : ?>
 
-		<h2 id="workflow">System Administration</h2>
+		<h2 id="system">System Administration</h2>
 		<div class="grid">
 
 			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
