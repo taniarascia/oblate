@@ -621,16 +621,18 @@ ul li ul {
 
 .cell {
 	background: white;
-	display: block;
+	display: flex;
+	align-items: center;
 	width: calc(100% - 1rem);
 	margin: .5rem;
 	border: 1px solid $border;
 	position: relative;
-	padding: 1.5rem 1.5rem 4rem;
+	padding: 1.5rem;
 	&:hover {
 		border: 1px solid darken($border, 8%);
 	}
 	p {
+		display: none;
 		color: $light-font;
 		font-size: 1.05rem;
 		margin-bottom: 0;
@@ -644,6 +646,7 @@ ul li ul {
 		}
 	}
 	.response {
+		display: none;
 		font-size: .9rem;
 		position: absolute;
 		bottom: 1.5rem;
@@ -651,6 +654,54 @@ ul li ul {
 	}
 }
 
+.image-thumbnail {
+	display: block;
+	img {
+		margin-right: 1rem;
+		display: block;
+		height: 50px;
+		width: 50px;
+		min-width: 50px;
+	}
+}
+
+@include small-breakpoint {
+	.cell {
+		display: block;
+		width: calc(50% - 1rem);
+		padding: 2rem 2rem 5rem;
+		p {
+			display: block;
+			font-size: 1.1rem;
+		}
+		.response {
+			display: block;
+			font-size: .9rem;
+			position: absolute;
+			bottom: 2rem;
+			left: 2rem;
+		}
+	}
+}
+
+@include nav-breakpoint {
+	.cell {
+		width: calc(33.3333% - 1rem);
+	}
+	.image-thumbnail img {
+		height: 100px;
+		width: 100px;
+	}
+}
+
+@include large-breakpoint {
+	.cell {
+		width: calc(33.3333% - 1rem);
+		h1 {
+			font-size: 1.4rem;
+		}
+	}
+}
 
 /* Tutorials page */
 
@@ -698,76 +749,9 @@ ul li ul {
 			&:hover .fa {
 				color: $heading-color;
 			}
-			/*
-			&:hover .fa-wordpress {
-				color: #0073AA;
-			}
-			&:hover .fa-code {
-				color: darken(#F0DB4F, 20%);
-			}
-			&:hover .fa-database {
-				color: #00BCD4;
-			}
-			&:hover .fa-server {
-				color: #009688;
-			}
-			&:hover .fa-pencil {
-				color: $yellow;
-			}
-			&:hover .fa-desktop {
-				color: $green;
-			}
-			&:hover .fa-code-fork {
-				color: $purple;
-			}*/
 			.ico {
 				order: 2;
 			}
-		}
-	}
-}
-
-.image-thumbnail {
-	display: block;
-	img {
-		margin: 0 auto;
-		display: block;
-		height: 50px;
-		width: 50px;
-	}
-}
-
-@include small-breakpoint {
-	.cell {
-		width: calc(50% - 1rem);
-		padding: 2rem 2rem 5rem;
-		p {
-			font-size: 1.1rem;
-		}
-		.response {
-			font-size: .9rem;
-			position: absolute;
-			bottom: 2rem;
-			left: 2rem;
-		}
-	}
-}
-
-@include nav-breakpoint {
-	.cell {
-		width: calc(33.3333% - 1rem);
-	}
-	.image-thumbnail img {
-		height: 100px;
-		width: 100px;
-	}
-}
-
-@include large-breakpoint {
-	.cell {
-		width: calc(33.3333% - 1rem);
-		h1 {
-			font-size: 1.4rem;
 		}
 	}
 }
