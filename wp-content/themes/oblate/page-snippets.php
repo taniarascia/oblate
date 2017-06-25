@@ -13,7 +13,7 @@
 
 <?php endwhile; endif; ?>
 
-<section>
+<section class="quote-container">
 	<div class="container">
 		<blockquote class="testimonial">"Thanks a million for your well-written, easy-to-follow and practical guides. Previously I hated working in WordPress because it always felt a bit like trying to find the right tools in somebody else's kitchen — but now I feel confident opening up an existing theme and understanding how it works."
 		<cite>&mdash; David Bock</cite></blockquote>
@@ -44,7 +44,7 @@
 
 <?php endif; wp_reset_postdata(); ?>
 
-<section>
+<section class="quote-container">
 	<div class="container">
 		<blockquote class="testimonial">"The team I work with is made up of mostly designers who learned to code on the job, and they have been having a hard time keeping up with modern workflows and standards. This blog, and your open source projects, are exactly what I've been hoping to find to help remedy some of their pain and confusion. I think you hit a major pain point for a lot of devs who are both new and even experienced ones."
 		<cite>&mdash; Dan Fletcher</cite></blockquote>

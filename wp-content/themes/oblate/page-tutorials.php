@@ -11,7 +11,7 @@
 	</div>
 </header>
 
-<section>
+<section class="quote-container">
 	<div class="container">
 		<blockquote class="testimonial">"By far your articles are the most crystal clear I've seen. An ace web developer who can articulate without ego? That's
 			gold!"
@@ -23,7 +23,7 @@
 
 <section class="topics">
 	<h2 class="text-center">Topics</h2>
-		<div class="container">
+		<div class="small-container">
 			<div class="topic">
 				<h3><a href="#front-end"><span class="ico"><i class="fa fa-pencil" aria-hidden="true"></i></span> <span>Front End &amp; Design</span></a></h3>
 			</div>
@@ -210,7 +210,7 @@
 	</div>
 </section>
 
-<section>
+<section class="quote-container">
 	<div class="container">
 		<blockquote class="testimonial">"I just stayed up almost all night with excitement after reading a number of your articles due to how well written and
 			understandable they are. I feel like I hit the jackpot and did more work in one night than I have in a year."

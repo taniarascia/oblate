@@ -114,17 +114,17 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	font-weight: 900;
 }
 
 h3 {
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 	color: lighten($heading-color, 12%);
 }
 
 h4 {
-	font-size: 1.2rem;
+	font-size: 1.15rem;
 	padding-bottom: .5rem;
 	color: lighten($heading-color, 22%);
 	border-bottom: 1px solid $border;
@@ -215,10 +215,10 @@ ul li ul {
 	border-bottom: 1px solid rgba(0, 0, 0, .1);
 	a {
 		display: block;
-		font-size: .95rem;
+		font-size: .9rem;
 		text-decoration: none;
 		color: $light-font;
-		padding: 1rem .5rem .75rem .5rem;
+		padding: 1rem .25rem .75rem;
 		flex: 1;
 		text-align: center;
 		display: flex;
@@ -426,7 +426,7 @@ ul li ul {
 	h1 {
 		margin: 0 0 1.5rem;
 		font-weight: 900;
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 		span {
 			color: $pink;
 		}
@@ -493,11 +493,11 @@ ul li ul {
 		text-align: center;
 		margin: 0;
 	}
-	&:first-of-type {
-		padding-top: .5rem;
-	}
 	&.last {
 		padding-bottom: 2rem;
+	}
+	&.first {
+		padding-top: .5rem;
 	}
 }
 
@@ -519,7 +519,7 @@ ul li ul {
 	h1 {
 		margin: 1rem 0;
 		font-weight: 900;
-		font-size: 2rem;
+		font-size: 1.75rem;
 	}
 }
 
@@ -622,6 +622,7 @@ ul li ul {
 .cell {
 	background: white;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	width: calc(100% - 1rem);
 	margin: .5rem;
@@ -657,7 +658,7 @@ ul li ul {
 .image-thumbnail {
 	display: block;
 	img {
-		margin-right: 1.5rem;
+		margin-bottom: 1.5rem;
 		display: block;
 		height: 50px;
 		width: 50px;
@@ -692,8 +693,8 @@ ul li ul {
 		width: calc(33.3333% - 1rem);
 	}
 	.image-thumbnail img {
-		height: 100px;
-		width: 100px;
+		height: 75px;
+		width: 75px;
 	}
 }
 
@@ -716,36 +717,35 @@ ul li ul {
 }
 
 .topics {
-	margin-bottom: 1.5rem;
+	background: $background;
+	padding: 1rem 0;
 }
 
 @include small-breakpoint {
 	.topics {
-		margin-bottom: 2.5rem;
+		padding: 1.5rem 0;
 	}
 }
 
 .topic {
-	background: white;
-	border-bottom: 1px solid $border;
-	&:last-of-type {
-		border-bottom: 0;
-	}
 	h3 {
 		margin: 0;
-		font-size: 1rem;
+		font-size: 1.1rem;
 		font-family: $font-family;
-		font-weight: 700;
+		font-weight: 400;
 		a {
 			display: flex;
 			justify-content: space-between;
 			color: $heading-color;
-			padding: .75rem 1rem;
+			padding: .5rem;
+			border-radius: 6px;
+			border: 1px solid $background;
 			&:hover,
 			&:focus,
 			&:active {
 				text-decoration: none;
-				background: #f9f9f9;
+				background: white;
+				border: 1px solid $border;
 			}
 			.fa {
 				color: $light-font;
@@ -753,9 +753,38 @@ ul li ul {
 			&:hover .fa {
 				color: $heading-color;
 			}
+			&:hover .fa-pencil {
+				color: $yellow;
+			}
+			&:hover .fa-database {
+				color: $blue;
+			}
+			&:hover .fa-code {
+				color: $purple;
+			}
+			&:hover .fa-code-fork {
+				color: $green;
+			}
+			&:hover .fa-server {
+				color: $pink;
+			}
+			&:hover .fa-wordpress {
+				color: #1F74AA;
+			}
+			&:hover .fa-desktop {
+				color: $yellow;
+			}
 			.ico {
 				order: 2;
 			}
+		}
+	}
+}
+
+@include small-breakpoint {
+	.topic {
+		h3 a {
+			padding: .75rem;
 		}
 	}
 }
@@ -784,13 +813,18 @@ ul li ul {
 	margin-right: .5rem;
 }
 
+.quote-container {
+	border-top: 1px solid $border;
+	border-bottom: 1px solid $border;
+}
+
 blockquote {
 	color: $light-color;
 	border-left: 8px solid $background;
 	font-weight: 400;
 	margin: 2rem 0;
 	padding-left: 1.5rem;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	line-height: 1.4;
 	font-family: Georgia, serif;
 	p {
@@ -802,7 +836,7 @@ blockquote {
 	cite {
 		display: block;
 		margin-top: 1rem;
-		font-size: .9rem;
+		font-size: 1rem;
 		text-align: right;
 		font-family: $font-family;
 	}
@@ -846,7 +880,7 @@ blockquote {
 
 @include small-breakpoint {
 	blockquote {
-		font-size: 1.6rem;
+		font-size: 1.5rem;
 		line-height: 1.6;
 	}
 }
@@ -1497,13 +1531,17 @@ caption {
 /* Search */
 
 .search-results {
-	padding: 2rem 0;
+	padding: 1.5rem 0;
 	border-bottom: 1px solid $border;
+	&:first-of-type {
+		padding-top: 0;
+	}
 	&:last-of-type {
 		border-bottom: none;
 	}
 	h1 {
 		margin-top: 0;
+		margin-bottom: .75rem;
 		font-size: 1.4rem;
 		a {
 			color: $heading-color;
@@ -1512,6 +1550,12 @@ caption {
 	p {
 		margin-bottom: 0;
 		color: $light-font;
+	}
+}
+
+@include small-breakpoint {
+	.search-results {
+		padding: 2.5rem 0;
 	}
 }
 

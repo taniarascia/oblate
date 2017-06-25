@@ -81,12 +81,12 @@ a.button.ghost-button,
 // Other button
 a.button.secondary-button,
 .button.secondary-button {
-	background: $yellow;
+	background: darken($yellow, 8%);
 	color: white;
 	&:hover,
 	&:focus,
 	&:active {
 		color: white; 
-		background: darken($yellow, 10%);
+		background: darken($yellow, 15%);
 	}
 }

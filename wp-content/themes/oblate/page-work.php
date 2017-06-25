@@ -13,7 +13,7 @@
 
 <?php endwhile; endif; ?>
 
-<section>
+<section class="quote-container">
 	<div class="container">
 		<blockquote class="testimonial">"Tania's articles fill a much needed void in the web development world: they are both in-depth and extremely beginner-friendly. I love that she documents things as she learns them; I really feel like we're growing together as developers."
 		<cite>&mdash; Ben Schroeder</cite></blockquote>
@@ -37,7 +37,7 @@
 			$url = get_post_meta($post->ID, 'url', true); ?>
 
 
-			<article id="post-<?php the_ID(); ?>" class="cell">
+			<article id="post-<?php the_ID(); ?>" class="cell port">
 				<?php if ( get_post_thumbnail_id() ) { ?>
 				<div class="portfolio-thumbnail">
 					<a href="<?php echo $url; ?>" target="_blank"><img src="<?php the_post_thumbnail_url( 'large' ); ?>" alt="<?php the_title(); ?>"></a>
@@ -60,7 +60,7 @@
 	</div>
 </section>
 
-<section>
+<section class="quote-container">
 	<div class="container">
 		<blockquote class="testimonial">"It's definitely an inspiration seeing the great work you do, and the fact that you're so willing to share your knowledge so freely with the rest of us. I have to say I've already learned a great number of things from your resources and tutorials."
 		<cite>&mdash; Louis Wong</cite></blockquote>

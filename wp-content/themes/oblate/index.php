@@ -2,11 +2,11 @@
 
 <header class="page-header">
 	<div class="small-container">
-		<h1>All Posts</h1>
+		<h1>Posts</h1>
 	</div>
 </header>
 
-<div class="container">
+<div class="small-container">
 
 	<?php 
 		

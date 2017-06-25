@@ -42,11 +42,12 @@
 
 <body>
 	<nav class="secondary-navigation">
-		<div class="secondary-title"><a href="<?php echo site_url(); ?>">Tania Rascia</a> <span class="divider">|</span> 
+		<div class="secondary-title"><a href="<?php echo site_url(); ?>"><i class="fa fa-home" aria-hidden-"true"></i> Tania Rascia</a> <span class="divider">|</span> 
 		<span class="secondary-subtitle">
 		<?php 
 		if ( is_front_page() ) { echo "Web Designer, Developer, Autodidact"; } 
 		elseif ( is_search() ) { echo get_search_query(); } 
+		elseif ( is_page( 'blog' ) ) { echo "Archive"; } 
 		else { echo get_the_title(); } ?>
 		</span></div>
 		<form role="search" method="get" class="nav-search" action="<?php echo home_url( '/' ); ?>">
