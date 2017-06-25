@@ -16,7 +16,7 @@
 <section class="quote-container">
 	<div class="container">
 		<blockquote class="testimonial">"Tania writes extremely clear, concise tutorials that have the best ratio of learning to bullshit that I've encountered so far. It's no exaggeration to say that I wouldn't currently have a job in development without this site. So thanks for ruining my life, Tania."
-		<cite>&mdash; Craig Lam</cite></blockquote>
+		<cite>&mdash; <a href="http://craiglam.com/" target="_blank">Craig Lam</a>, Web Developer</cite></blockquote>
 	</div>
 </section>
 
@@ -132,7 +132,7 @@
 <section class="quote-container">
 	<div class="container">
 		<blockquote class="testimonial">"Hi Tania, I just wanted to say that your tutorials are by far the best I've seen. Well written and well explained. Thank you for all your effort."
-		<cite>&mdash; João Vilaça</cite></blockquote>
+		<cite>&mdash; <a href="https://github.com/jpggvilaca" target="_blank">João Vilaça</a>, Software Engineer</cite></blockquote>
 	</div>
 </section>
 

@@ -16,7 +16,7 @@
 <section class="quote-container">
 	<div class="container">
 		<blockquote class="testimonial">"I find the tone and style of your articles to be very easy to learn from and they have helped me and a handful of people I know a long way."
-		<cite>&mdash; James Cruickshank, Perlego</cite></blockquote>
+		<cite>&mdash; <a href="http://jameswebdev.com/" target="_blank">James Cruickshank</a>, Developer, Perlego</cite></blockquote>
 	</div>
 </section>
 
@@ -47,7 +47,7 @@
 <section class="quote-container">
 	<div class="container">
 		<blockquote class="testimonial">"Thank you so much for the tutorials and the great work you are doing. So many tutorials out there but somehow you get to combine the best bits of clear thought out instructions with sufficiently in-depth instructions to get projects started."
-		<cite>&mdash; Stephan Ye</cite></blockquote>
+		<cite>&mdash; <a href="http://www.stephanye.org/" target="_blank">Stephan Ye</a>, Product Designer</cite></blockquote>
 	</div>
 </section>
 

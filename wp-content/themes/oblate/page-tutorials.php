@@ -15,7 +15,7 @@
 	<div class="container">
 		<blockquote class="testimonial">"By far your articles are the most crystal clear I've seen. An ace web developer who can articulate without ego? That's
 			gold!"
-			<cite>&mdash; Ralphie Harvey</cite></blockquote>
+			<cite>&mdash; Ralphie Harvey, Agile Software Product Delivery Expert</cite></blockquote>
 	</div>
 </section>
 
@@ -214,7 +214,7 @@
 	<div class="container">
 		<blockquote class="testimonial">"I just stayed up almost all night with excitement after reading a number of your articles due to how well written and
 			understandable they are. I feel like I hit the jackpot and did more work in one night than I have in a year."
-			<cite>&mdash; Becci Melson</cite></blockquote>
+			<cite>&mdash; <a href="beccimelson.com" target="blank">Becci Melson</a>, Support Engineer</cite></blockquote>
 	</div>
 </section>
 
