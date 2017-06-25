@@ -531,7 +531,7 @@ ul li ul {
 @include small-breakpoint {
 	.page-header {
 		padding: 2rem 0;
-		h1 {
+		h1 { 
 			font-size: 3rem;
 		}
 		p {
@@ -639,6 +639,7 @@ ul li ul {
 		margin-bottom: 0;
 	}
 	h1 {
+		text-align: center;
 		margin: 0;
 		font-size: 1.2rem;
 		line-height: 1.2;
@@ -672,6 +673,7 @@ ul li ul {
 		width: calc(50% - 1rem);
 		padding: 2rem 2rem 5rem;
 		h1 {
+			text-align: left;
 			margin: 1.5rem 0 1rem;
 		}
 		p {
