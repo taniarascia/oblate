@@ -202,7 +202,8 @@ ul li ul {
 /* Navigation */
 
 .main-navigation {
-	margin-top: 50px;
+	position: fixed;
+	top: 40px;
 	width: 100%;
 	left: 0;
 	display: flex;
@@ -213,12 +214,13 @@ ul li ul {
 	padding: 0 1rem;
 	z-index: 5;
 	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	box-shadow: 2px 3px 10px rgba(0, 0, 0, .1);
 	a {
 		display: block;
 		font-size: .9rem;
 		text-decoration: none;
 		color: $light-font;
-		padding: 1rem .25rem .75rem;
+		padding: .5rem .25rem .25rem;
 		flex: 1;
 		text-align: center;
 		display: flex;
@@ -236,7 +238,7 @@ ul li ul {
 	.main-navigation {
 		a {
 			font-size: 1.1rem;
-			padding: 1rem;
+			padding: 1rem .25rem .75rem;
 			.fa {
 				padding: 0 .5rem 0 0;
 			}
@@ -246,10 +248,10 @@ ul li ul {
 
 @include nav-breakpoint {
 	.main-navigation {
-		margin-top: 60px;
+		top: 50px;
 		a {
 			flex: initial;
-			padding: 1.5rem;
+			padding: 1.25rem;
 			display: block;
 		}
 	}
@@ -289,7 +291,7 @@ ul li ul {
 	width: 100%;
 	top: 0;
 	left: 0;
-	height: 50px;
+	height: 40px;
 	background: #181818;
 	text-align: center;
 	display: flex;
@@ -346,18 +348,24 @@ ul li ul {
 }
 
 .main {
-	margin-top: 0;
+	margin-top: 100px;
+}
+
+@include small-breakpoint {
+	.main {
+		margin-top: 110px;
+	}
 }
 
 @include nav-breakpoint {
 	.main {
-		margin-top: 0;
+		margin-top: 120px;
 	}
 }
 
 .nav-search {
 	display: flex;
-	height: 50px;
+	height: 40px;
 }
 
 .nav-search-submit {
@@ -366,7 +374,7 @@ ul li ul {
 	padding: 0;
 	text-align: center;
 	font-size: 1.3rem;
-	height: 50px;
+	height: 40px;
 	width: 60px;
 	color: white;
 	font-weight: bold;
@@ -389,7 +397,7 @@ ul li ul {
 	max-width: 400px;
 	min-width: 130px;
 	color: white;
-	height: 50px;
+	height: 40px;
 	&:hover {
 		background: lighten(#404040, 2%);
 		border: 0;
@@ -407,13 +415,13 @@ ul li ul {
 
 @include nav-breakpoint {
 	.nav-search-submit {
-		width: 80px;
+		width: 70px;
 	}
 	.secondary-navigation,
 	.nav-search-submit,
 	.nav-search-input,
 	.nav-search {
-		height: 60px;
+		height: 50px;
 	}
 }
 
@@ -531,7 +539,7 @@ ul li ul {
 @include small-breakpoint {
 	.page-header {
 		padding: 2rem 0;
-		h1 { 
+		h1 {
 			font-size: 3rem;
 		}
 		p {
@@ -670,7 +678,6 @@ ul li ul {
 @include small-breakpoint {
 	.cell {
 		display: block;
-		width: calc(50% - 1rem);
 		padding: 2rem 2rem 5rem;
 		h1 {
 			text-align: left;
