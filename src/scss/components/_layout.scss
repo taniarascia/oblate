@@ -302,7 +302,7 @@ ul li ul {
 .secondary-title {
 	color: white;
 	font-weight: 600;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	margin: 0 0 0 .5rem;
 	display: flex;
 	align-items: center;
@@ -323,7 +323,7 @@ ul li ul {
 		display: none;
 		color: rgba(255, 255, 255, .8);
 		font-weight: 600;
-		font-size: 1.1rem;
+		font-size: 1rem;
 	}
 }
 
@@ -348,7 +348,7 @@ ul li ul {
 }
 
 .main {
-	margin-top: 100px;
+	margin-top: 95px;
 }
 
 @include small-breakpoint {
@@ -359,7 +359,7 @@ ul li ul {
 
 @include nav-breakpoint {
 	.main {
-		margin-top: 120px;
+		margin-top: 115px;
 	}
 }
 
@@ -739,14 +739,14 @@ ul li ul {
 .topic {
 	h3 {
 		margin: 0;
-		font-size: 1.1rem;
+		font-size: 1rem;
 		font-family: $font-family;
 		font-weight: 400;
 		a {
 			display: flex;
 			justify-content: space-between;
 			color: $heading-color;
-			padding: .5rem;
+			padding: .75rem;
 			border-radius: 6px;
 			margin: .5rem 0;
 			border: 1px solid $border;
