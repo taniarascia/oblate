@@ -46,7 +46,9 @@
 					</a>
 				</h1>
 				<?php the_excerpt(); ?>
-				<div class="response"><?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?></div>
+				<div class="response"><a href="<?php the_permalink(); ?>">Read</a> | <?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?></div>
+				<div class="cell-share"> <a href="https://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=taniarascia&hashtags=webdev"
+			  target="_blank"><i class="fa fa-twitter"></i></a></div>
 			</article>
 
 			<?php endwhile; endif; wp_reset_postdata(); ?>
@@ -83,7 +85,9 @@
 					</a>
 				</h1>
 				<?php the_excerpt(); ?>
-				<div class="response"><?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?></div>
+				<div class="response"><a href="<?php the_permalink(); ?>">Read</a> | <?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?></div>
+				<div class="cell-share"> <a href="https://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=taniarascia&hashtags=webdev"
+			  target="_blank"><i class="fa fa-twitter"></i></a></div>
 			</article>
 
 			<?php endwhile; endif; wp_reset_postdata(); ?>
@@ -120,7 +124,9 @@
 					</a>
 				</h1>
 				<?php the_excerpt(); ?>
-				<div class="response"><?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?></div>
+				<div class="response"><a href="<?php the_permalink(); ?>">Read</a> | <?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?></div>
+				<div class="cell-share"> <a href="https://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=taniarascia&hashtags=webdev"
+			  target="_blank"><i class="fa fa-twitter"></i></a></div>
 			</article>
 
 			<?php endwhile; endif; wp_reset_postdata(); ?>

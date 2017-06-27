@@ -59,11 +59,11 @@
 	</nav>
 
 	<nav class="main-navigation">
-		<a href="<?php echo site_url(); ?>/tutorials" class="tutorials"><i class="fa fa-map-o" aria-hidden="true"></i> <span>Tutorials</span></a>
-		<a href="<?php echo site_url(); ?>/snippets" class="snippets"><i class="fa fa-scissors" aria-hidden="true"></i> <span>Snippets</span></a>
-		<a href="<?php echo site_url(); ?>/me" class="tania"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>Tania</span></a>
-		<a href="<?php echo site_url(); ?>/work" class="portfolio"><i class="fa fa-folder-open-o" aria-hidden="true"></i> <span>Portfolio</span></a>
-		<a href="<?php echo site_url(); ?>/thoughts" class="thoughts"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>Thoughts</span></a>
+		<a href="<?php echo site_url(); ?>/tutorials" class="tutorials <?php if ( is_page( 'tutorials' ) ) { ?>current<?php } ?>"><i class="fa fa-map-o" aria-hidden="true"></i> <span>Tutorials</span></a>
+		<a href="<?php echo site_url(); ?>/snippets" class="snippets <?php if ( is_page( 'snippets' ) ) { ?>current<?php } ?>"><i class="fa fa-scissors" aria-hidden="true"></i> <span>Snippets</span></a>
+		<a href="<?php echo site_url(); ?>/me" class="tania <?php if ( is_page( 'me' ) ) { ?>current<?php } ?>"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>Tania</span></a>
+		<a href="<?php echo site_url(); ?>/work" class="portfolio <?php if ( is_page( 'work' ) ) { ?>current<?php } ?>"><i class="fa fa-folder-open-o" aria-hidden="true"></i> <span>Portfolio</span></a>
+		<a href="<?php echo site_url(); ?>/thoughts" class="thoughts <?php if ( is_page( 'thoughts' ) ) { ?>current<?php } ?>"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>Thoughts</span></a>
 	</nav>
 
 	<main class="main">

@@ -15,7 +15,7 @@ html {
 // Body base 
 body {
 	color: $font-color;
-	font-size: 1.05rem;
+	font-size: 1rem;
 }
 
 @include small-breakpoint {
@@ -265,24 +265,33 @@ ul li ul {
 	}
 }
 
-.tutorials:hover .fa {
+.tutorials:hover .fa,
+.tutorials.current .fa {
 	color: $blue;
 }
 
-.snippets:hover .fa {
+.snippets:hover .fa,
+.snippets.current .fa {
 	color: $green;
 }
 
-.portfolio:hover .fa {
+.portfolio:hover .fa,
+.portfolio.current .fa {
 	color: $yellow;
 }
 
-.tania:hover .fa {
+.tania:hover .fa,
+.tania.current .fa {
 	color: $pink;
 }
 
-.thoughts:hover .fa {
+.thoughts:hover .fa,
+.thoughts.current .fa {
 	color: $purple;
+}
+
+a.current {
+	color: $heading-color;
 }
 
 .secondary-navigation {
@@ -342,6 +351,7 @@ ul li ul {
 		}
 		.secondary-subtitle,
 		.divider {
+			border-bottom: 3px solid #181818;
 			display: block;
 		}
 	}
@@ -470,7 +480,7 @@ ul li ul {
 	.header {
 		padding: 2.5rem 0;
 		h1 {
-			font-size: 2.2rem;
+			font-size: 2rem;
 		}
 	}
 }
@@ -479,7 +489,7 @@ ul li ul {
 	.header {
 		padding: 3rem 0;
 		h1 {
-			font-size: 2.2rem;
+			font-size: 2.1rem;
 		}
 	}
 }
@@ -488,7 +498,7 @@ ul li ul {
 	.header {
 		padding: 5rem 0;
 		h1 {
-			font-size: 2.5rem;
+			font-size: 2.3rem;
 		}
 	}
 }
@@ -497,7 +507,7 @@ ul li ul {
 	background: $background;
 	h2 {
 		padding: 1rem 0;
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 		text-align: center;
 		margin: 0;
 	}
@@ -513,7 +523,7 @@ ul li ul {
 	.top-three {
 		h2 {
 			padding: 2rem 0;
-			font-size: 2rem;
+			font-size: 1.5rem;
 		}
 	}
 }
@@ -636,14 +646,14 @@ ul li ul {
 	margin: .5rem;
 	border: 1px solid $border;
 	position: relative;
-	padding: 1.5rem;
+	padding: 1.25rem;
 	&:hover {
 		border: 1px solid darken($border, 8%);
 	}
 	p {
 		display: none;
 		color: $light-font;
-		font-size: 1.05rem;
+		font-size: 1rem;
 		margin-bottom: 0;
 	}
 	h1 {
@@ -662,6 +672,13 @@ ul li ul {
 		bottom: 1.5rem;
 		left: 1.5rem;
 	}
+	.cell-share {
+		display: none;
+		font-size: .9rem;
+		position: absolute;
+		bottom: 1.5rem;
+		right: 1.5rem;
+	}
 }
 
 .image-thumbnail {
@@ -678,21 +695,38 @@ ul li ul {
 @include small-breakpoint {
 	.cell {
 		display: block;
-		padding: 2rem 2rem 5rem;
+		padding: 1.5rem 1.5rem 5rem;
 		h1 {
 			text-align: left;
 			margin: 1.5rem 0 1rem;
 		}
 		p {
 			display: block;
-			font-size: 1.1rem;
+			font-size: 1rem;
 		}
 		.response {
 			display: block;
 			font-size: .9rem;
 			position: absolute;
-			bottom: 2rem;
-			left: 2rem;
+			bottom: 1.5rem;
+			left: 1.5rem;
+		}
+		.cell-share {
+			display: block;
+			font-size: .9rem;
+			position: absolute;
+			right: 1.5rem;
+			bottom: 1.5rem;
+			a {
+				display: block;
+			}
+			.fa-twitter {
+				color: #dedede;
+				font-size: 1.5rem;
+				&:hover {
+					color: #55ACEE;
+				}
+			}
 		}
 	}
 }
@@ -702,8 +736,8 @@ ul li ul {
 		width: calc(33.3333% - 1rem);
 	}
 	.image-thumbnail img {
-		height: 75px;
-		width: 75px;
+		height: 60px;
+		width: 60px;
 	}
 }
 
@@ -711,7 +745,7 @@ ul li ul {
 	.cell {
 		width: calc(33.3333% - 1rem);
 		h1 {
-			font-size: 1.4rem;
+			font-size: 1.3rem;
 		}
 	}
 }
@@ -745,7 +779,7 @@ ul li ul {
 		a {
 			display: flex;
 			justify-content: space-between;
-			color: $heading-color;
+			color: lighten($heading-color, 6%);
 			padding: .75rem;
 			border-radius: 6px;
 			margin: .5rem 0;
@@ -756,6 +790,7 @@ ul li ul {
 				text-decoration: none;
 				background: white;
 				border: 1px solid darken($border, 8%);
+				color: $heading-color;
 			}
 			.fa {
 				color: $light-font;
@@ -908,6 +943,9 @@ blockquote {
 	a {
 		color: $yellow;
 	}
+	strong {
+		color: white;
+	}
 }
 
 @include small-breakpoint {
@@ -952,32 +990,45 @@ blockquote {
 	.fa-rss:hover {
 		color: #F8981C;
 	}
+	.fa-linkedin-square:hover {
+		color: #0077B5;
+	}
+}
+
+.twitter {
+	color: #55ACEE;
+}
+
+.reddit {
+	color: #FF4500;
+}
+
+.hackernews {
+	color: #FF6600;
+}
+
+.facebook {
+	color: #3B5998;
 }
 
 .share {
 	a {
-		color: $font-color;
 		display: inline-block;
-		padding-right: 1rem;
-		opacity: .5;
-		.fa-twitter {
-			color: #55ACEE;
-		}
-		.fa-facebook-official {
-			color: #3B5998;
-		}
-		.fa-hacker-news {
-			color: #FF6600;
-		}
-		.fa-reddit-alien {
-			color: #FF4100;
-		}
+		padding-right: .5rem;
+		color: $heading-color;
 		&:hover,
 		&:focus,
 		&:active {
-			opacity: 1;
+			color: $pink;
 		}
 	}
+}
+
+.my-avatar {
+	float: right;
+	max-width: 33%;
+	border-radius: 50%;
+	margin-left: 2rem;
 }
 
 
@@ -989,7 +1040,8 @@ blockquote {
 	h2 {
 		color: white;
 		margin-top: 0;
-		font-size: 1.5rem;
+		margin-bottom: 1rem;
+		font-size: 1.4rem;
 	}
 	p {
 		color: white;
@@ -1000,7 +1052,7 @@ blockquote {
 	.newsletter {
 		padding: 3rem 0;
 		h2 {
-			font-size: 2.2rem;
+			font-size: 2rem;
 		}
 	}
 }
@@ -1552,7 +1604,7 @@ caption {
 	h1 {
 		margin-top: 0;
 		margin-bottom: .75rem;
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 		a {
 			color: $heading-color;
 		}
