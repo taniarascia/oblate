@@ -206,6 +206,7 @@ ul li ul {
 	top: 40px;
 	width: 100%;
 	left: 0;
+	height: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -236,9 +237,11 @@ ul li ul {
 
 @include small-breakpoint {
 	.main-navigation {
+		height: 60px;
 		a {
+			flex: initial;
+			padding: .25rem 1.5rem 0;
 			font-size: 1.1rem;
-			padding: 1rem .25rem .75rem;
 			.fa {
 				padding: 0 .5rem 0 0;
 			}
@@ -248,10 +251,7 @@ ul li ul {
 
 @include nav-breakpoint {
 	.main-navigation {
-		top: 50px;
 		a {
-			flex: initial;
-			padding: 1.25rem;
 			display: block;
 		}
 	}
@@ -260,7 +260,7 @@ ul li ul {
 @include large-breakpoint {
 	.main-navigation {
 		a {
-			padding: 1.5rem;
+			padding: 0 1.5rem;
 		}
 	}
 }
@@ -342,34 +342,34 @@ a.current {
 		a {
 			color: white;
 			white-space: nowrap;
-			border-bottom: 3px solid $dark;
 			padding-right: 0;
-			&:hover {
+			&:hover,
+			&:active,
+			&:focus {
+				color: $yellow;
 				text-decoration: none;
-				border-bottom: 3px solid $blue;
 			}
 		}
 		.secondary-subtitle,
 		.divider {
-			border-bottom: 3px solid #181818;
 			display: block;
 		}
 	}
 }
 
 .main {
-	margin-top: 95px;
+	margin-top: 90px;
 }
 
 @include small-breakpoint {
 	.main {
-		margin-top: 110px;
+		margin-top: 100px;
 	}
 }
 
 @include nav-breakpoint {
 	.main {
-		margin-top: 115px;
+		margin-top: 100px;
 	}
 }
 
@@ -425,13 +425,13 @@ a.current {
 
 @include nav-breakpoint {
 	.nav-search-submit {
-		width: 70px;
+		width: 60px;
 	}
 	.secondary-navigation,
 	.nav-search-submit,
 	.nav-search-input,
 	.nav-search {
-		height: 50px;
+		height: 40px;
 	}
 }
 
@@ -593,6 +593,9 @@ a.current {
 	&.thoughts-header {
 		background: $bg, linear-gradient(to top right, $purple, $blue);
 	}
+	p {
+		font-size: 1rem;
+	}
 }
 
 
@@ -611,6 +614,11 @@ a.current {
 @include small-breakpoint {
 	.single-header {
 		padding: 2.5rem 0;
+	}
+	.bright-header {
+		p {
+			font-size: 1.1rem;
+		}
 	}
 }
 
@@ -696,6 +704,7 @@ a.current {
 	.cell {
 		display: block;
 		padding: 1.5rem 1.5rem 5rem;
+		flex: 1 1 calc(50% - 1rem);
 		h1 {
 			text-align: left;
 			margin: 1.5rem 0 1rem;
@@ -733,7 +742,7 @@ a.current {
 
 @include nav-breakpoint {
 	.cell {
-		width: calc(33.3333% - 1rem);
+		flex: 1 1 calc(33.3333% - 1rem);
 	}
 	.image-thumbnail img {
 		height: 60px;
@@ -925,8 +934,8 @@ blockquote {
 
 @include small-breakpoint {
 	blockquote {
-		font-size: 1.5rem;
-		line-height: 1.6;
+		font-size: 1.4rem;
+		line-height: 1.5;
 	}
 }
 
@@ -943,8 +952,11 @@ blockquote {
 	a {
 		color: $yellow;
 	}
+	div {
+		flex: 1;
+	}
 	strong {
-		color: white;
+		color: #ddd;
 	}
 }
 
@@ -1638,6 +1650,10 @@ caption {
 
 .headroom--unpinned {
 	transform: translateY(-100%);
+}
+
+.pink {
+	color: $pink;
 }
 
 
