@@ -23,6 +23,7 @@
 <section class="top-three first">
 	<div class="large-container">
 		<h2>Latest Tutorials</h2>
+		<p class="text-center"><a href="<?php echo site_url(); ?>/tutorials" class="tag-button">View All</a></p>
 		<div class="grid">
 
 			<?php $args = array(
@@ -61,6 +62,7 @@
 	<div class="large-container">
 
 		<h2>Most Popular</h2>
+		<p class="text-center"><a href="<?php echo site_url(); ?>/tutorials" class="tag-button">View All</a></p>
 
 		<div class="grid">
 
@@ -100,6 +102,7 @@
 	<div class="large-container">
 
 		<h2>My Thoughts</h2>
+		<p class="text-center"><a href="<?php echo site_url(); ?>/thoughts" class="tag-button">View All</a></p>
 
 		<div class="grid">
 

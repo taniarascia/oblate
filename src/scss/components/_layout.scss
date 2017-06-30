@@ -522,8 +522,8 @@ a.current {
 @include small-breakpoint {
 	.top-three {
 		h2 {
-			padding: 2rem 0;
-			font-size: 1.5rem;
+			padding: 1.5rem 0;
+			font-size: 1.75rem;
 		}
 	}
 }
@@ -686,6 +686,9 @@ a.current {
 		position: absolute;
 		bottom: 1.5rem;
 		right: 1.5rem;
+		a {
+			line-height: 0;
+		}
 	}
 }
 
@@ -1446,6 +1449,7 @@ caption {
 	line-height: 1.4;
 	font-family: $code;
 	-webkit-font-smoothing: subpixel-antialiased;
+	min-height: calc(100vh - 100px);
 	h1 span {
 		padding: .1rem .5rem;
 		background: #eee;
@@ -1457,6 +1461,18 @@ caption {
 	.bsod-list {
 		margin-bottom: .2rem;
 	}
+}
+
+// This is important;
+.blink {
+	 animation: blink .75s linear infinite;
+}
+
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
 }
 
 

@@ -8,7 +8,7 @@
 		<p>A fatal exception 0E has occurred at 74616e6961 in 404: page not found.</p>
 		<p class="bsod-list">* &nbsp; Click any link to terminate the current application.</p>
 		<p class="bsod-list">* &nbsp; Press UP + UP + DOWN + DOWN + LEFT + RIGHT + LEFT + RIGHT + B + A at any time to improve the situation.</p>
-		<p class="text-right">Click any link to continue _</p>
+		<p class="text-right">Click any link to continue <span class="blink">_</span></p>
 
 	</div>
 </section>
