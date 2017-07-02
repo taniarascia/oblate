@@ -947,13 +947,20 @@ blockquote {
 
 .footer {
 	background: $dark;
-	color: $light;
+	color: #aaaaaa;
 	padding: 1.5rem 0;
 	p {
 		font-size: 1rem;
 	}
 	a {
-		color: $yellow;
+		color: white;
+		border-bottom: 2px solid $yellow;
+		&:hover,
+		&:active,
+		&:focus {
+			color: $yellow;
+			text-decoration: none;
+		}
 	}
 	div {
 		flex: 1;
@@ -986,28 +993,34 @@ blockquote {
 
 .social-icons {
 	padding-bottom: 1rem;
+	a {
+		border-bottom: 0;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 .4rem;
+	}
 	.fa {
 		color: white;
-		margin: .25rem;
 	}
-	.fa-twitter:hover {
-		color: #55ACEE;
+	/*.fa-twitter:hover {
+		background: #55ACEE;
 	}
 	.fa-codepen:hover {
-		color: #47CF73;
+		background: #47CF73;
 	}
 	.fa-stack-overflow:hover {
-		color: #F48024;
+		background: #F48024;
 	}
 	.fa-github:hover {
-		color: #B992E3;
+		background: #B992E3;
 	}
 	.fa-rss:hover {
-		color: #F8981C;
+		background: #F8981C;
 	}
 	.fa-linkedin-square:hover {
-		color: #0077B5;
-	}
+		background: #0077B5;
+	}*/
 }
 
 .twitter {
@@ -1465,14 +1478,22 @@ caption {
 
 // This is important;
 .blink {
-	 animation: blink .75s linear infinite;
+	animation: blink .75s linear infinite;
 }
 
 @keyframes blink {
-	0% { opacity: 1; }
-	50% { opacity: 1; }
-	50.01% { opacity: 0; }
-	100% { opacity: 0; }
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	50.01% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 
