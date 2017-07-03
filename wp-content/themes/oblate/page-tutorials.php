@@ -23,17 +23,17 @@
 	<div class="small-container">
 		<h2 class="text-center">Popular Queries</h2>
 		<article class="quick">
-			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/wp-2-150x150.png"> WordPress</a>
-			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/bs.png"> Bootstrap</a>
-			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/jq1-150x150.png"> jQuery</a>
-			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/sass-150x150.png"> Sass</a>
-			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/grunt-150x150.png"> Grunt</a>
-			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/gulp-150x150.png"> Gulp</a>
-			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/git-150x150.png"> Git</a>
-			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/jsonimg-150x150.png"> JSON</a>
-			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/jekyll-2-150x150.png"> Jekyll</a>
-			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/terminal-150x150.png"> command line</a>
-			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/v-150x150.png"> Vagrant/VirtualBox</a>
+			<a href="<?php echo site_url(); ?>/developing-a-wordpress-theme-from-scratch/"><img src="<?php echo site_url(); ?>/wp-content/uploads/wp-2-150x150.png"> WordPress</a>
+			<a href="<?php echo site_url(); ?>/what-is-bootstrap-and-how-do-i-use-it/"><img src="<?php echo site_url(); ?>/wp-content/uploads/bs.png"> Bootstrap</a>
+			<a href="<?php echo site_url(); ?>/how-to-use-jquery-a-javascript-library/"><img src="<?php echo site_url(); ?>/wp-content/uploads/jq1-150x150.png"> jQuery</a>
+			<a href="<?php echo site_url(); ?>/learn-sass-now/"><img src="<?php echo site_url(); ?>/wp-content/uploads/sass-150x150.png"> Sass</a>
+			<a href="<?php echo site_url(); ?>/getting-started-with-grunt-and-sass/"><img src="<?php echo site_url(); ?>/wp-content/uploads/grunt-150x150.png"> Grunt</a>
+			<a href="<?php echo site_url(); ?>/getting-started-with-gulp/"><img src="<?php echo site_url(); ?>/wp-content/uploads/gulp-150x150.png"> Gulp</a>
+			<a href="<?php echo site_url(); ?>/getting-started-with-git/"><img src="<?php echo site_url(); ?>/wp-content/uploads/git-150x150.png"> Git</a>
+			<a href="<?php echo site_url(); ?>/how-to-use-json-data-with-php-or-javascript/"><img src="<?php echo site_url(); ?>/wp-content/uploads/jsonimg-150x150.png"> JSON</a>
+			<a href="<?php echo site_url(); ?>/make-a-static-website-with-jekyll/"><img src="<?php echo site_url(); ?>/wp-content/uploads/jekyll-2-150x150.png"> Jekyll</a>
+			<a href="<?php echo site_url(); ?>/how-to-use-the-command-line-for-apple-macos-and-linux/"><img src="<?php echo site_url(); ?>/wp-content/uploads/terminal-150x150.png"> command line</a>
+			<a href="<?php echo site_url(); ?>/what-are-vagrant-and-virtualbox-and-how-do-i-use-them/"><img src="<?php echo site_url(); ?>/wp-content/uploads/v-150x150.png"> Vagrant/VirtualBox</a>
 		</article>
 	</div>
 </section>
