@@ -178,12 +178,17 @@ ul li ul {
 
 /* Containers */
 
+.tiny-container,
 .small-container,
 .large-container,
 .container {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 1rem;
+}
+
+.tiny-container {
+	max-width: 400px;
 }
 
 .small-container {
@@ -523,7 +528,7 @@ a.current {
 	.top-three {
 		h2 {
 			padding: 1.5rem 0;
-			font-size: 1.75rem;
+			font-size: 2.25rem;
 		}
 	}
 }
@@ -746,6 +751,7 @@ a.current {
 @include nav-breakpoint {
 	.cell {
 		flex: 1 1 calc(33.3333% - 1rem);
+		max-width: calc(33.3333% - 1rem);
 	}
 	.image-thumbnail img {
 		height: 60px;
@@ -755,7 +761,6 @@ a.current {
 
 @include large-breakpoint {
 	.cell {
-		width: calc(33.3333% - 1rem);
 		h1 {
 			font-size: 1.3rem;
 		}
@@ -764,6 +769,35 @@ a.current {
 
 
 /* Tutorials page */
+
+.quick {
+	text-align: center;
+	img {
+		display: inline-block;
+		height: 20px;
+		width: 20px;
+		max-width: 20px;
+		margin-right: 5px;
+	}
+	a {
+		display: inline-flex;
+		align-items: center;
+		color: lighten($heading-color, 6%);
+		padding: .5rem;
+		border-radius: 6px;
+		margin: .2rem 0;
+		font-size: 1rem;
+		border: 1px solid $border;
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: none;
+			background: white;
+			border: 1px solid darken($border, 8%);
+			color: $heading-color;
+		}
+	}
+}
 
 .tutorials-page {
 	h2 {

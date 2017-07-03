@@ -94,10 +94,11 @@ a.button.secondary-button,
 // Tag button
 a.tag-button,
 .tag-button {
+	display: inline-block;
 	color: lighten($heading-color, 6%);
 	padding: .75rem 1rem;
 	border-radius: 6px;
-	margin: .5rem 0;
+	margin: 0;
 	border: 1px solid $border;
 	background: transparent;
 	font-size: 1rem;

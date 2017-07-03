@@ -15,8 +15,29 @@
 
 <section class="quote-container">
 	<div class="container">
-		<blockquote class="testimonial">"Tania writes extremely clear, concise tutorials that have the best ratio of learning to bullshit that I've encountered so far. It's no exaggeration to say that I wouldn't currently have a job in development without this site. So thanks for ruining my life, Tania."
-		<cite>&mdash; <a href="http://craiglam.com/" target="_blank">Craig Lam</a>, Web Developer</cite></blockquote>
+		<blockquote class="testimonial">"Tania writes extremely clear, concise tutorials that have the best ratio of learning to bullshit that I've encountered
+			so far. It's no exaggeration to say that I wouldn't currently have a job in development without this site. So thanks for
+			ruining my life, Tania."
+			<cite>&mdash; <a href="http://craiglam.com/" target="_blank">Craig Lam</a>, Web Developer</cite></blockquote>
+	</div>
+</section>
+
+<section class="topics">
+	<div class="small-container">
+		<h2 class="text-center">Popular Queries</h2>
+		<article class="quick">
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/wp-2-150x150.png"> WordPress</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/bs.png"> Bootstrap</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/jq1-150x150.png"> jQuery</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/sass-150x150.png"> Sass</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/grunt-150x150.png"> Grunt</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/gulp-150x150.png"> Gulp</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/git-150x150.png"> Git</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/jsonimg-150x150.png"> JSON</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/jekyll-2-150x150.png"> Jekyll</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/terminal-150x150.png"> command line</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/v-150x150.png"> Vagrant/VirtualBox</a>
+		</article>
 	</div>
 </section>
 
@@ -46,10 +67,17 @@
 						<?php the_title(); ?>
 					</a>
 				</h1>
+				<div class="the-time">
+					<time datetime="<?php the_time('Y-m-d'); ?>">
+						<?php the_time('F j, Y'); ?>
+					</time>
+				</div>
 				<?php the_excerpt(); ?>
-				<div class="response"><a href="<?php the_permalink(); ?>">Read</a> | <?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?></div>
+				<div class="response"><a href="<?php the_permalink(); ?>">Read</a> |
+					<?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?>
+				</div>
 				<div class="cell-share"> <a href="https://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=taniarascia&hashtags=webdev"
-			  target="_blank"><i class="fa fa-twitter"></i></a></div>
+					  target="_blank"><i class="fa fa-twitter"></i></a></div>
 			</article>
 
 			<?php endwhile; endif; wp_reset_postdata(); ?>
@@ -87,9 +115,11 @@
 					</a>
 				</h1>
 				<?php the_excerpt(); ?>
-				<div class="response"><a href="<?php the_permalink(); ?>">Read</a> | <?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?></div>
+				<div class="response"><a href="<?php the_permalink(); ?>">Read</a> |
+					<?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?>
+				</div>
 				<div class="cell-share"> <a href="https://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=taniarascia&hashtags=webdev"
-			  target="_blank"><i class="fa fa-twitter"></i></a></div>
+					  target="_blank"><i class="fa fa-twitter"></i></a></div>
 			</article>
 
 			<?php endwhile; endif; wp_reset_postdata(); ?>
@@ -127,9 +157,11 @@
 					</a>
 				</h1>
 				<?php the_excerpt(); ?>
-				<div class="response"><a href="<?php the_permalink(); ?>">Read</a> | <?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?></div>
+				<div class="response"><a href="<?php the_permalink(); ?>">Read</a> |
+					<?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?>
+				</div>
 				<div class="cell-share"> <a href="https://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=taniarascia&hashtags=webdev"
-			  target="_blank"><i class="fa fa-twitter"></i></a></div>
+					  target="_blank"><i class="fa fa-twitter"></i></a></div>
 			</article>
 
 			<?php endwhile; endif; wp_reset_postdata(); ?>
@@ -140,8 +172,9 @@
 
 <section class="quote-container">
 	<div class="container">
-		<blockquote class="testimonial">"Hi Tania, I just wanted to say that your tutorials are by far the best I've seen. Well written and well explained. Thank you for all your effort."
-		<cite>&mdash; <a href="https://github.com/jpggvilaca" target="_blank">João Vilaça</a>, Software Engineer</cite></blockquote>
+		<blockquote class="testimonial">"Hi Tania, I just wanted to say that your tutorials are by far the best I've seen. Well written and well explained. Thank
+			you for all your effort."
+			<cite>&mdash; <a href="https://github.com/jpggvilaca" target="_blank">João Vilaça</a>, Software Engineer</cite></blockquote>
 	</div>
 </section>
 

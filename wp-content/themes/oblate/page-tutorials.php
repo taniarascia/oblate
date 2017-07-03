@@ -19,34 +19,53 @@
 	</div>
 </section>
 
+<section class="topics">
+	<div class="small-container">
+		<h2 class="text-center">Popular Queries</h2>
+		<article class="quick">
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/wp-2-150x150.png"> WordPress</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/bs.png"> Bootstrap</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/jq1-150x150.png"> jQuery</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/sass-150x150.png"> Sass</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/grunt-150x150.png"> Grunt</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/gulp-150x150.png"> Gulp</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/git-150x150.png"> Git</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/jsonimg-150x150.png"> JSON</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/jekyll-2-150x150.png"> Jekyll</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/terminal-150x150.png"> command line</a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/v-150x150.png"> Vagrant/VirtualBox</a>
+		</article>
+	</div>
+</section>
+
 <?php endwhile; endif; ?>
 
 <section class="topics">
 	<h2 class="text-center">Topics</h2>
-		<div class="small-container">
-			<div class="topic">
-				<h3><a href="#front-end"><span class="ico"><i class="fa fa-pencil" aria-hidden="true"></i></span> <span>Front End &amp; Design</span></a></h3>
-			</div>
-			<div class="topic">
-				<h3><a href="#back-end"><span class="ico"><i class="fa fa-database" aria-hidden="true"></i></span> <span>Back End Development</span></a></h3>
-			</div>
-			<div class="topic">
-				<h3><a href="#javascript"><span class="ico"><i class="fa fa-code" aria-hidden="true"></i></span> <span>JavaScript</span></a></h3>
-			</div>
-			<div class="topic">
-				<h3><a href="#workflow"><span class="ico"><i class="fa fa-code-fork" aria-hidden="true"></i></span> <span>Developer Workflow</span></a></h3>
-			</div>
-			<div class="topic">
-				<h3><a href="#system"><span class="ico"><i class="fa fa-server" aria-hidden="true"></i></span> <span>System Administration</span></a></h3>
-			</div>
-			<div class="topic">
-				<h3><a href="#wordpress"><span class="ico"><i class="fa fa-wordpress" aria-hidden="true"></i></span> <span>WordPress</span></a></h3>
-			</div>
-			<div class="topic">
-				<h3><a href="#general"><span class="ico"><i class="fa fa-desktop" aria-hidden="true"></i></span> <span>General</span></a></h3>
-			</div>
+	<div class="tiny-container">
+		<div class="topic">
+			<h3><a href="#front-end"><span class="ico"><i class="fa fa-pencil" aria-hidden="true"></i></span> <span>Front End &amp; Design</span></a></h3>
 		</div>
-	</section>
+		<div class="topic">
+			<h3><a href="#back-end"><span class="ico"><i class="fa fa-database" aria-hidden="true"></i></span> <span>Back End Development</span></a></h3>
+		</div>
+		<div class="topic">
+			<h3><a href="#javascript"><span class="ico"><i class="fa fa-code" aria-hidden="true"></i></span> <span>JavaScript</span></a></h3>
+		</div>
+		<div class="topic">
+			<h3><a href="#workflow"><span class="ico"><i class="fa fa-code-fork" aria-hidden="true"></i></span> <span>Developer Workflow</span></a></h3>
+		</div>
+		<div class="topic">
+			<h3><a href="#system"><span class="ico"><i class="fa fa-server" aria-hidden="true"></i></span> <span>System Administration</span></a></h3>
+		</div>
+		<div class="topic">
+			<h3><a href="#wordpress"><span class="ico"><i class="fa fa-wordpress" aria-hidden="true"></i></span> <span>WordPress</span></a></h3>
+		</div>
+		<div class="topic">
+			<h3><a href="#general"><span class="ico"><i class="fa fa-desktop" aria-hidden="true"></i></span> <span>General</span></a></h3>
+		</div>
+	</div>
+</section>
 
 <section class="alternate-background tutorials-page">
 
