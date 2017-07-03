@@ -41,15 +41,17 @@
 	</div>
 </section>
 
-<section class="top-three first">
-	<div class="large-container">
-		<h2>Latest Tutorials</h2>
-		<p class="text-center"><a href="<?php echo site_url(); ?>/tutorials" class="tag-button">View All</a></p>
-		<div class="grid">
+<section class="top">
+	<div class="container">
+		<div class="top-title">
+			<h2>Latest Tutorials</h2>
+			<a href="<?php echo site_url(); ?>/tutorials" class="tag-button">View All</a>
+		</div>
 
+		<div class="grid">
 			<?php $args = array(
 				'order' => 'desc',
-				'posts_per_page' => '3',
+				'posts_per_page' => '4',
 				'category_name' => 'Tutorials',
 				'category__not_in' => array( 5 ),
 			);
@@ -83,20 +85,16 @@
 			<?php endwhile; endif; wp_reset_postdata(); ?>
 
 		</div>
-	</div>
-</section>
 
-<section class="top-three">
-	<div class="large-container">
-
-		<h2>Most Popular</h2>
-		<p class="text-center"><a href="<?php echo site_url(); ?>/tutorials" class="tag-button">View All</a></p>
+		<div class="top-title">
+			<h2>Most Popular</h2>
+			<a href="<?php echo site_url(); ?>/tutorials" class="tag-button">View All</a>
+		</div>
 
 		<div class="grid">
-
 			<?php $args = array(
 				'order' => 'asc',
-				'posts_per_page' => '3',
+				'posts_per_page' => '4',
 				'category_name' => 'Popular',
 				'category__not_in' => array( 5 ),
 			);
@@ -123,22 +121,19 @@
 			</article>
 
 			<?php endwhile; endif; wp_reset_postdata(); ?>
-
 		</div>
-	</div>
-</section>
 
-<section class="top-three last">
-	<div class="large-container">
 
-		<h2>My Thoughts</h2>
-		<p class="text-center"><a href="<?php echo site_url(); ?>/thoughts" class="tag-button">View All</a></p>
+		<div class="top-title">
+			<h2>My Thoughts</h2>
+			<a href="<?php echo site_url(); ?>/thoughts" class="tag-button">View All</a>
+		</div>
 
 		<div class="grid">
 
 			<?php $args = array(
 				'order' => 'desc',
-				'posts_per_page' => '3',
+				'posts_per_page' => '4',
 				'category_name' => 'Thoughts',
 				'category__not_in' => array( 5 ),
 			);
@@ -167,7 +162,6 @@
 			<?php endwhile; endif; wp_reset_postdata(); ?>
 
 		</div>
-	</div>
 </section>
 
 <section class="quote-container">

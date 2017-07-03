@@ -69,7 +69,7 @@
 
 <section class="alternate-background tutorials-page">
 
-	<div class="large-container">
+	<div class="container">
 
 		<?php $args = array(
 				'order' => 'desc',

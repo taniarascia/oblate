@@ -23,7 +23,7 @@
 				<div class="text-center margin-bottom">
 					<a class="button alt-button" href="<?php echo site_url(); ?>/work" style="margin-bottom: 1.5rem;">View all</a>
 				</div>
-				<div class="large-container">
+				<div class="container">
 					<div class="grid">
 
 						<?php $args = array(

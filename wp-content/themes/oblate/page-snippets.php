@@ -21,7 +21,7 @@
 </section>
 
 <section class="alternate-background">
-	<div class="large-container">
+	<div class="container">
 		<div class="grid">
 
 			<?php $args = array(

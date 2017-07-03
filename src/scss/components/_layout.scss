@@ -200,7 +200,7 @@ ul li ul {
 }
 
 .large-container {
-	max-width: 1300px;
+	max-width: 1000px;
 }
 
 
@@ -508,27 +508,28 @@ a.current {
 	}
 }
 
-.top-three {
+.top {
+	padding: 1rem 0;
 	background: $background;
 	h2 {
-		padding: 1rem 0;
-		font-size: 1.3rem;
-		text-align: center;
-		margin: 0;
-	}
-	&.last {
-		padding-bottom: 2rem;
-	}
-	&.first {
-		padding-top: .5rem;
+		font-size: 1.2rem;
+		margin: 0 .2rem;
 	}
 }
 
+.top-title {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 @include small-breakpoint {
-	.top-three {
+	.top {
 		h2 {
-			padding: 1.5rem 0;
-			font-size: 2.25rem;
+			padding: 0;
+			font-size: 1.4rem;
+			font-family: $font-family;
 		}
 	}
 }
@@ -719,11 +720,11 @@ a.current {
 		}
 		p {
 			display: block;
-			font-size: 1rem;
+			font-size: .9rem;
 		}
 		.response {
 			display: block;
-			font-size: .9rem;
+			font-size: .85rem;
 			position: absolute;
 			bottom: 1.5rem;
 			left: 1.5rem;
@@ -750,8 +751,7 @@ a.current {
 
 @include nav-breakpoint {
 	.cell {
-		flex: 1 1 calc(33.3333% - 1rem);
-		max-width: calc(33.3333% - 1rem);
+		flex: 1 1 calc(50% - 1rem);
 	}
 	.image-thumbnail img {
 		height: 60px;
@@ -762,7 +762,7 @@ a.current {
 @include large-breakpoint {
 	.cell {
 		h1 {
-			font-size: 1.3rem;
+			font-size: 1.1rem;
 		}
 	}
 }
@@ -801,7 +801,10 @@ a.current {
 
 .tutorials-page {
 	h2 {
-		text-align: center;
+		margin: 0 .2rem;
+		padding: 1.5rem 0 .5rem;
+		font-size: 1.4rem;
+		font-family: $font-family;
 	}
 }
 
@@ -891,7 +894,7 @@ a.current {
 
 @include small-breakpoint {
 	.the-time {
-		font-size: 1rem;
+		font-size: .9rem;
 	}
 }
 
