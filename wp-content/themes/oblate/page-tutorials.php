@@ -214,7 +214,7 @@
 	<div class="container">
 		<blockquote class="testimonial">"I just stayed up almost all night with excitement after reading a number of your articles due to how well written and
 			understandable they are. I feel like I hit the jackpot and did more work in one night than I have in a year."
-			<cite>&mdash; <a href="beccimelson.com" target="blank">Becci Melson</a>, Support Engineer</cite></blockquote>
+			<cite>&mdash; <a href="http://beccimelson.com" target="blank">Becci Melson</a>, Support Engineer</cite></blockquote>
 	</div>
 </section>
 
