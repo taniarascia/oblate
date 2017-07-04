@@ -720,7 +720,7 @@ a.current {
 		}
 		p {
 			display: block;
-			font-size: .9rem;
+			font-size: 1rem;
 		}
 		.response {
 			display: block;
@@ -762,7 +762,7 @@ a.current {
 @include large-breakpoint {
 	.cell {
 		h1 {
-			font-size: 1.1rem;
+			font-size: 1.2rem;
 		}
 	}
 }
