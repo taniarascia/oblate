@@ -446,6 +446,14 @@ a.current {
 .header {
 	text-align: left;
 	padding: 1.5rem 0;
+	.header-email {
+		padding: 1rem 0;
+		margin: 1.5rem 0 0;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
 	h1 {
 		margin: 0 0 1.5rem;
 		font-weight: 900;
@@ -453,6 +461,13 @@ a.current {
 		span {
 			color: $pink;
 		}
+	}
+	h3 {
+		margin: 0 0 .5rem;
+		color: white;
+		font-family: $font-family;
+		font-size: 1.6rem;
+		font-weight: 800;
 	}
 	a {
 		font-weight: 700;
@@ -493,6 +508,18 @@ a.current {
 @include nav-breakpoint {
 	.header {
 		padding: 3rem 0;
+		.container {
+			flex-direction: row;
+			align-items: center;
+			input {
+				min-width: 180px;
+			}
+		}
+		.header-email {
+			background: rgba(0, 0, 0, .3);
+			padding: 2rem;
+			margin: 2rem;
+		}
 		h1 {
 			font-size: 2.1rem;
 		}
@@ -1117,8 +1144,18 @@ blockquote {
 	.newsletter {
 		padding: 3rem 0;
 		h2 {
-			font-size: 2rem;
+			font-size: 1.6rem;
 		}
+	}
+}
+
+#mailchimp {
+	display: flex;
+	label {
+		display: inline-block;
+	}
+	.clear {
+		display: inline-block;
 	}
 }
 
