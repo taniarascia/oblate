@@ -43,6 +43,7 @@ article {
 	dl,
 	h3,
 	h4,
+	.the-time,
 	.response {
 		a {
 			color: $link-color;
@@ -659,7 +660,7 @@ a.current {
 	.single-header {
 		h1 {
 			font-size: 2.5rem;
-			margin: .5rem 0 2rem;
+			margin: .5rem 0 1rem;
 		}
 	}
 }
@@ -1531,7 +1532,7 @@ caption {
 
 .four-oh-four {
 	padding: 3rem 0;
-	background: $link-color;
+	background: #0515A7;
 	color: white;
 	line-height: 1.4;
 	font-family: $code;
@@ -1540,7 +1541,7 @@ caption {
 	h1 span {
 		padding: .1rem .5rem;
 		background: #eee;
-		color: $link-color;
+		color: #0515A7; 
 		font-size: 1.6rem;
 		font-family: $code;
 		-webkit-font-smoothing: subpixel-antialiased;
