@@ -64,7 +64,7 @@
 	<div class="container">
 		<div class="top-title">
 			<h2>Latest Tutorials</h2>
-			<a href="<?php echo site_url(); ?>/tutorials" class="tag-button">View All</a>
+			<a href="<?php echo site_url(); ?>/tutorials" class="non-button">View All</a>
 		</div>
 
 		<div class="grid">
@@ -107,7 +107,7 @@
 
 		<div class="top-title">
 			<h2>Most Popular</h2>
-			<a href="<?php echo site_url(); ?>/tutorials" class="tag-button">View All</a>
+			<a href="<?php echo site_url(); ?>/tutorials" class="non-button">View All</a>
 		</div>
 
 		<div class="grid">
@@ -145,7 +145,7 @@
 
 		<div class="top-title">
 			<h2>My Thoughts</h2>
-			<a href="<?php echo site_url(); ?>/thoughts" class="tag-button">View All</a>
+			<a href="<?php echo site_url(); ?>/thoughts" class="non-button">View All</a>
 		</div>
 
 		<div class="grid">

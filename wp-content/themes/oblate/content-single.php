@@ -17,7 +17,7 @@
 	</header>
 
 	<section class="single-body">
-		<div class="container">
+		<div class="small-container">
 			<?php the_content(); ?>
 			<div class="section-content share" id="share">
 			<h2>The Author</h2>

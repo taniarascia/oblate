@@ -12,7 +12,7 @@
 
 <section class="section-content">
 	<article>
-		<div class="container">
+		<div class="small-container">
 			<?php the_content(); ?>
 		</div>
 	</article>

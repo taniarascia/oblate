@@ -3,7 +3,7 @@
 } ?>
 
 <section id="comments" class="comments-area">
-	<div class="container">
+	<div class="small-container">
 
 		<?php	comment_form( array(
     					'title_reply' => 'Write a response'

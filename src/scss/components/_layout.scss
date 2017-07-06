@@ -193,15 +193,15 @@ ul li ul {
 }
 
 .small-container {
-	max-width: $mobile;
+	max-width: 800px;
 }
 
 .container {
-	max-width: $tablet;
+	max-width: 1050px;
 }
 
 .large-container {
-	max-width: 1000px;
+	max-width: 1050px;
 }
 
 
@@ -448,8 +448,9 @@ a.current {
 	text-align: left;
 	padding: 1.5rem 0;
 	.header-email {
-		padding: 1rem 0;
-		margin: 1.5rem 0 0;
+		background: rgba(0, 0, 0, .3);
+		padding: 1rem;
+		margin: 1.5rem -1rem -1rem;
 	}
 	.container {
 		display: flex;
@@ -529,7 +530,7 @@ a.current {
 
 @include large-breakpoint {
 	.header {
-		padding: 5rem 0;
+		padding: 4rem 0;
 		h1 {
 			font-size: 2.3rem;
 		}
@@ -541,7 +542,7 @@ a.current {
 	background: $background;
 	h2 {
 		font-size: 1.2rem;
-		margin: 0 .2rem;
+		margin: .5rem .2rem;
 	}
 }
 
@@ -594,9 +595,9 @@ a.current {
 
 @include nav-breakpoint {
 	.page-header {
-		padding: 3rem 0;
+		padding: 2.5rem 0;
 		h1 {
-			font-size: 4rem;
+			font-size: 3.5rem;
 		}
 	}
 }
@@ -604,25 +605,25 @@ a.current {
 @include large-breakpoint {
 	.page-header {
 		h1 {
-			font-size: 5rem;
+			font-size: 4rem;
 		}
 	}
 }
 
 .bright-header {
-	background: $bg, linear-gradient(to top right, darken($blue, 30%), $blue);
+	background: $bg, linear-gradient(to top right, #47CEC0, $blue);
 	color: rgba(255, 255, 255, .8);
 	h1 {
 		color: white;
 	}
 	&.snippets-header {
-		background: $bg, linear-gradient(to top right, $green, $blue);
+		background: $bg, linear-gradient(to top right, lighten($green, 10%), $blue);
 	}
 	&.tania-header {
-		background: $bg, linear-gradient(to top right, $pink, $blue);
+		background: $bg, linear-gradient(to top right, lighten($pink, 10%), $blue);
 	}
 	&.portfolio-header {
-		background: $bg, linear-gradient(to top right, darken($yellow, 10%), $blue);
+		background: $bg, linear-gradient(to top right, lighten($yellow, 10%), $blue);
 	}
 	&.thoughts-header {
 		background: $bg, linear-gradient(to top right, $purple, $blue);
@@ -812,7 +813,6 @@ a.current {
 		align-items: center;
 		color: lighten($heading-color, 6%);
 		padding: .5rem;
-		border-radius: 6px;
 		margin: .2rem 0;
 		font-size: 1rem;
 		border: 1px solid $border;
@@ -857,10 +857,7 @@ a.current {
 			display: flex;
 			justify-content: space-between;
 			color: lighten($heading-color, 6%);
-			padding: .75rem;
-			border-radius: 6px;
-			margin: .5rem 0;
-			border: 1px solid $border;
+			border: 1px solid transparent;
 			&:hover,
 			&:focus,
 			&:active {
@@ -1037,7 +1034,7 @@ blockquote {
 
 @include small-breakpoint {
 	.footer {
-		padding: 3rem 0;
+		padding: 2.5rem 0;
 	}
 }
 
@@ -1143,7 +1140,7 @@ blockquote {
 
 @include small-breakpoint {
 	.newsletter {
-		padding: 3rem 0;
+		padding: 2.5rem 0;
 		h2 {
 			font-size: 1.6rem;
 		}
@@ -1215,7 +1212,7 @@ blockquote {
 
 @include small-breakpoint {
 	.section-content {
-		margin: 3rem 0;
+		margin: 2.5rem 0;
 	}
 }
 
@@ -1531,7 +1528,7 @@ caption {
 }
 
 .four-oh-four {
-	padding: 3rem 0;
+	padding: 2.5rem 0;
 	background: #0515A7;
 	color: white;
 	line-height: 1.4;
