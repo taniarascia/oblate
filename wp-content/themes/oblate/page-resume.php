@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <header class="resume-header">
-	<div class="container">
+	<div class="small-container">
 		<h1>Tania Rascia</h1>
 		<div class="subtitle">Web Designer &amp; Developer</div>
 		<p>I'm a web designer and developer who's passionate about taking complex concepts and simplifying them. Below is a list of my knowledge, skills, published websites and articles.</p>
@@ -23,7 +23,7 @@
 				<div class="text-center margin-bottom">
 					<a class="button alt-button" href="<?php echo site_url(); ?>/work" style="margin-bottom: 1.5rem;">View all</a>
 				</div>
-				<div class="container">
+				<div class="small-container">
 					<div class="grid">
 
 						<?php $args = array(

@@ -204,6 +204,15 @@ ul li ul {
 	max-width: 1050px;
 }
 
+@include small-breakpoint {
+	.tiny-container,
+	.small-container,
+	.large-container,
+	.container {
+		padding: 0 2rem;
+	}
+}
+
 
 /* Navigation */
 
@@ -446,15 +455,20 @@ a.current {
 
 .header {
 	text-align: left;
-	padding: 1.5rem 0;
+	padding: 2rem 0;
 	.header-email {
+		display: inline-flex;
+		flex-direction: column;
 		background: rgba(0, 0, 0, .3);
-		padding: 1rem;
-		margin: 1.5rem -1rem -1rem;
+		padding: 1.5rem;
+		margin: 1.5rem 0 0;
+	}
+	.header-main {
+		max-width: 600px;
+		margin: 0 auto;
 	}
 	.container {
-		display: flex;
-		flex-direction: column;
+		text-align: center;
 	}
 	h1 {
 		margin: 0 0 1.5rem;
@@ -511,6 +525,8 @@ a.current {
 	.header {
 		padding: 3rem 0;
 		.container {
+			text-align: left;
+			display: flex;
 			flex-direction: row;
 			align-items: center;
 			input {
@@ -518,9 +534,10 @@ a.current {
 			}
 		}
 		.header-email {
+			display: block;
 			background: rgba(0, 0, 0, .3);
 			padding: 2rem;
-			margin: 2rem;
+			margin: 0 0 0 2rem;
 		}
 		h1 {
 			font-size: 2.1rem;
@@ -1538,7 +1555,7 @@ caption {
 	h1 span {
 		padding: .1rem .5rem;
 		background: #eee;
-		color: #0515A7; 
+		color: #0515A7;
 		font-size: 1.6rem;
 		font-family: $code;
 		-webkit-font-smoothing: subpixel-antialiased;
@@ -1572,7 +1589,7 @@ caption {
 /* Landing */
 
 .resume-header {
-	text-align: left;
+	text-align: center;
 	background: $bg, linear-gradient(to top right, $purple, $blue);
 	padding: 2rem 0;
 	color: rgba(255, 255, 255, .8);
@@ -1594,7 +1611,7 @@ caption {
 		}
 	}
 	.subtitle {
-		font-weight: 700;
+		font-weight: 400;
 		font-size: 1.3rem;
 		color: lighten($yellow, 10%);
 	}
@@ -1622,6 +1639,12 @@ caption {
 }
 
 .resume {
+	hr {
+		height: 1px;
+		background: $border;
+		border: none;
+		margin-bottom: 1.5rem;
+	}
 	.cell h1 {
 		margin-bottom: 0;
 		margin-top: 0;

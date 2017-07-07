@@ -19,7 +19,7 @@
 <?php } ?>
 
 <footer class="footer">
- <div class="container flex-container">
+ <div class="small-container flex-container">
 	 <div class="footer-social">
 		 <p>I'm <strong><a href="<?php echo site_url(); ?>/me">Tania Rascia</a></strong>, a web designer/developer, autodidact, tech writer and problem solver. I love hiking, karaoke, recording music, and building communities. <strong><a href="<?php echo site_url(); ?>/contact">Say hello!</a></strong></p>
 	  <div class="social-icons">
@@ -29,7 +29,7 @@
      <a href="https://stackoverflow.com/users/4541434/tania-rascia" target="_blank"><i class="fa fa-stack-overflow fa-2x"></i></a>
      <a href="https://www.linkedin.com/in/taniarascia/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
     </div>
-    <p>All code open source under <a href="https://opensource.org/licenses/MIT">MIT</a>.<br>(Unless otherwise specified)</p>
+    <p>Open source <a href="https://opensource.org/licenses/MIT">MIT</a>.</p>
 	 </div>
 	 <div class="footer-support">
 		 <p>My site is <strong class="pink">free</strong> – and free of ads, clickbait, popups, guest posts, and sponsored content. Has this site been valuable to you? Please consider <strong>donating</strong> so I can continue creating!</p>
