@@ -197,11 +197,11 @@ ul li ul {
 }
 
 .container {
-	max-width: 1050px;
+	max-width: 1000px;
 }
 
 .large-container {
-	max-width: 1050px;
+	max-width: 1000px;
 }
 
 @include small-breakpoint {
@@ -230,7 +230,7 @@ ul li ul {
 	padding: 0 1rem;
 	z-index: 5;
 	border-bottom: 1px solid rgba(0, 0, 0, .1);
-	box-shadow: 2px 3px 10px rgba(0, 0, 0, .1);
+	box-shadow: 2px 3px 10px rgba(0, 0, 0, .05);
 	a {
 		display: block;
 		font-size: .9rem;
@@ -326,13 +326,14 @@ a.current {
 .secondary-title {
 	color: white;
 	font-weight: 600;
-	font-size: 1rem;
+	font-size: .9rem;
 	margin: 0 0 0 .5rem;
 	display: flex;
 	align-items: center;
 	a {
 		color: white;
 		white-space: nowrap;
+		font-size: .9rem;
 		padding-right: .5rem;
 		&:hover {
 			text-decoration: none;
@@ -347,7 +348,7 @@ a.current {
 		display: none;
 		color: rgba(255, 255, 255, .8);
 		font-weight: 600;
-		font-size: 1rem;
+		font-size: .9rem;
 	}
 }
 
@@ -358,6 +359,7 @@ a.current {
 			color: white;
 			white-space: nowrap;
 			padding-right: 0;
+			font-size: 1rem;
 			&:hover,
 			&:active,
 			&:focus {
@@ -368,6 +370,7 @@ a.current {
 		.secondary-subtitle,
 		.divider {
 			display: block;
+			font-size: 1rem;
 		}
 	}
 }
@@ -398,7 +401,7 @@ a.current {
 	border: 0;
 	padding: 0;
 	text-align: center;
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	height: 40px;
 	width: 60px;
 	color: white;
@@ -418,6 +421,7 @@ a.current {
 	background: #404040;
 	border: 0;
 	padding: 1rem;
+	font-size: .9rem;
 	width: 100%;
 	max-width: 400px;
 	min-width: 130px;
@@ -457,22 +461,19 @@ a.current {
 	text-align: left;
 	padding: 2rem 0;
 	.header-email {
-		display: inline-flex;
+		display: none;
 		flex-direction: column;
-		background: rgba(0, 0, 0, .3);
-		padding: 1.5rem;
 		margin: 1.5rem 0 0;
+		padding: 0;
 	}
 	.header-main {
 		max-width: 600px;
 		margin: 0 auto;
 	}
-	.container {
-		text-align: center;
-	}
 	h1 {
 		margin: 0 0 1.5rem;
 		font-weight: 900;
+		line-height: 1.3;
 		font-size: 1.4rem;
 		span {
 			color: $pink;
@@ -482,8 +483,8 @@ a.current {
 		margin: 0 0 .5rem;
 		color: white;
 		font-family: $font-family;
-		font-size: 1.6rem;
-		font-weight: 800;
+		font-size: 1.3rem;
+		font-weight: 700;
 	}
 	a {
 		font-weight: 700;
@@ -536,8 +537,11 @@ a.current {
 		.header-email {
 			display: block;
 			background: rgba(0, 0, 0, .3);
-			padding: 2rem;
-			margin: 0 0 0 2rem;
+			padding: 2.5rem;
+			margin: 0 0 0 3rem;
+			h3 {
+				font-size: 1.5rem;
+			}
 		}
 		h1 {
 			font-size: 2.1rem;
@@ -559,12 +563,13 @@ a.current {
 	background: $background;
 	h2 {
 		font-size: 1.2rem;
-		margin: .5rem .2rem;
+		margin: .5rem .5rem 1rem;
+		font-family: $font-family;
 	}
 }
 
 .top-title {
-	margin-top: 1rem;
+	margin-top: 2.5rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -594,7 +599,7 @@ a.current {
 }
 
 .alternate-background {
-	padding: 1rem 0;
+	padding: .75rem 0;
 	background: $background;
 }
 
@@ -647,6 +652,7 @@ a.current {
 	}
 	p {
 		font-size: 1rem;
+		margin-bottom: 1rem;
 	}
 }
 
@@ -698,17 +704,20 @@ a.current {
 }
 
 .cell {
+	transition: all .3s ease;
 	background: white;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	width: calc(100% - 1rem);
 	margin: .5rem;
 	border: 1px solid $border;
 	position: relative;
 	padding: 1.25rem;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	&:hover {
-		border: 1px solid darken($border, 8%);
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	}
+	.flex {
+		display: flex;
+		align-items: center;
 	}
 	p {
 		display: none;
@@ -717,11 +726,14 @@ a.current {
 		margin-bottom: 0;
 	}
 	h1 {
-		text-align: center;
 		margin: 0;
-		font-size: 1.2rem;
-		line-height: 1.2;
+		width: 100%;
+		font-size: 1.1rem;
+		line-height: 1.3;
+		font-family: $font-family;
+		font-weight: 700;
 		a {
+			display: block;
 			color: $heading-color;
 		}
 	}
@@ -747,7 +759,7 @@ a.current {
 .image-thumbnail {
 	display: block;
 	img {
-		margin-bottom: 1.5rem;
+		margin-right: 1.5rem;
 		display: block;
 		height: 50px;
 		width: 50px;
@@ -758,10 +770,16 @@ a.current {
 @include small-breakpoint {
 	.cell {
 		display: block;
-		padding: 1.5rem 1.5rem 5rem;
-		flex: 1 1 calc(50% - 1rem);
+		padding: 2rem 2rem 5rem;
+		margin: .75rem;
+		flex: 1 1 calc(50% - 1.5rem);
+		max-width: calc(50% - 1.5rem);
+		.flex {
+			margin-bottom: 1.5rem;
+		}
 		h1 {
 			text-align: left;
+			font-size: 1.25rem;
 			margin: 1.5rem 0 1rem;
 		}
 		p {
@@ -772,15 +790,15 @@ a.current {
 			display: block;
 			font-size: .85rem;
 			position: absolute;
-			bottom: 1.5rem;
-			left: 1.5rem;
+			bottom: 2rem;
+			left: 2rem;
 		}
 		.cell-share {
 			display: block;
 			font-size: .9rem;
 			position: absolute;
-			right: 1.5rem;
-			bottom: 1.5rem;
+			right: 2rem;
+			bottom: 2rem;
 			a {
 				display: block;
 			}
@@ -796,20 +814,10 @@ a.current {
 }
 
 @include nav-breakpoint {
-	.cell {
-		flex: 1 1 calc(50% - 1rem);
-	}
 	.image-thumbnail img {
+		margin-right: 2rem;
 		height: 60px;
 		width: 60px;
-	}
-}
-
-@include large-breakpoint {
-	.cell {
-		h1 {
-			font-size: 1.2rem;
-		}
 	}
 }
 
@@ -875,6 +883,7 @@ a.current {
 			justify-content: space-between;
 			color: lighten($heading-color, 6%);
 			border: 1px solid transparent;
+			padding: .5rem;
 			&:hover,
 			&:focus,
 			&:active {
@@ -989,7 +998,6 @@ blockquote {
 		color: $heading-color;
 		font-family: $heading-family;
 		padding: 1rem;
-		border-radius: 6px;
 	}
 	&.alert {
 		background: lighten($pink, 28%);
@@ -1142,13 +1150,13 @@ blockquote {
 /* MailChimp */
 
 .newsletter {
-	background: $blue $bg;
+	background: $bg, linear-gradient(to bottom right, #47CEC0, $blue);
 	padding: 1.5rem 0;
 	h2 {
 		color: white;
-		margin-top: 0;
+		margin-top: .5rem;
 		margin-bottom: 1rem;
-		font-size: 1.4rem;
+		font-size: 1.25rem;
 	}
 	p {
 		color: white;
@@ -1192,6 +1200,7 @@ blockquote {
 	width: 80%;
 	font-size: 1.1rem;
 	height: 60px;
+	transition: all .3s ease;
 	&:hover,
 	&:active,
 	&:focus {
@@ -1212,6 +1221,7 @@ blockquote {
 	color: white;
 	font-weight: 800;
 	height: 60px;
+	transition: all .3s ease;
 	&:hover,
 	&:active,
 	&:focus {
@@ -1589,7 +1599,6 @@ caption {
 /* Landing */
 
 .resume-header {
-	text-align: center;
 	background: $bg, linear-gradient(to top right, $purple, $blue);
 	padding: 2rem 0;
 	color: rgba(255, 255, 255, .8);
@@ -1611,7 +1620,6 @@ caption {
 		}
 	}
 	.subtitle {
-		font-weight: 400;
 		font-size: 1.3rem;
 		color: lighten($yellow, 10%);
 	}
@@ -1624,7 +1632,7 @@ caption {
 			font-size: 2.5rem;
 		}
 		.subtitle {
-			font-size: 2rem;
+			font-size: 1.7rem;
 		}
 	}
 }
@@ -1633,7 +1641,7 @@ caption {
 	.resume-header {
 		padding: 3.5rem 0;
 		h1 {
-			font-size: 3.5rem;
+			font-size: 2.5rem;
 		}
 	}
 }
@@ -1684,11 +1692,11 @@ caption {
 		font-size: 1.7rem;
 	}
 	h3 {
-		text-align: center;
+		font-family: $font-family;
 		color: $heading-color;
-		font-weight: 800;
-		font-size: 2rem;
-		margin: 2rem 0 1rem;
+		font-weight: 700;
+		font-size: 1.4rem;
+		margin: 2rem .5rem 1rem;
 	}
 	h4 {
 		color: $heading-color;
@@ -1705,6 +1713,7 @@ caption {
 	padding: 1.5rem;
 	background: white;
 	border: 1px solid $border;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 @include small-breakpoint {
@@ -1716,8 +1725,8 @@ caption {
 			font-size: 2rem;
 		}
 		h3 {
-			font-size: 2.5rem;
-			margin: 3.5rem 0 1.5rem;
+			font-size: 1.5rem;
+			margin: 3.5rem .5rem 1.5rem;
 		}
 		h4 {
 			font-size: 1.2rem;

@@ -4,7 +4,8 @@
 	<div class="small-container">
 		<h1>Tania Rascia</h1>
 		<div class="subtitle">Web Designer &amp; Developer</div>
-		<p>I'm a web designer and developer who's passionate about taking complex concepts and simplifying them. Below is a list of my knowledge, skills, published websites and articles.</p>
+		<p>I'm a web designer and developer who's passionate about taking complex concepts and simplifying them. Below is a list of
+			my knowledge, skills, published websites and articles.</p>
 		<b>Email:</b> <a href="mailto:taniarascia@gmail.com">taniarascia@gmail.com</a><br>
 		<b>GitHub:</b> <a href="https://github.com/taniarascia">taniarascia</a>
 	</div>
@@ -19,11 +20,8 @@
 			<?php the_content(); ?>
 
 			<section class="portfolio-page alternate-background">
-				<h3>Portfolio</h3>
-				<div class="text-center margin-bottom">
-					<a class="button alt-button" href="<?php echo site_url(); ?>/work" style="margin-bottom: 1.5rem;">View all</a>
-				</div>
 				<div class="small-container">
+					<h3>Portfolio</h3>
 					<div class="grid">
 
 						<?php $args = array(
