@@ -9,7 +9,7 @@
 	</div>
 </header>
 
-<div class="container">
+<div class="small-container">
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 
