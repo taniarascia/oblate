@@ -11,11 +11,11 @@
 </header>
 
 <section class="section-content">
-	<div class="container">
+	<div class="small-container">
 		<?php the_content(); ?>
 	</div>
 </section>
 
 <?php endwhile; endif; ?>
 
-<?php get_footer(); 
+<?php get_footer();
