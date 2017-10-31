@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<?php if ( !is_single() ) { ?>
-	<meta name="description" content="Web designer, developer, autodidact. Tania breaks down complex concepts in a clear, simple way for all skill levels.">
+	<meta name="description" content="Web developer, designer, autodidact. Tania breaks down complex concepts in a clear, simple way for all skill levels.">
 	<?php } ?>
 
 	<?php wp_head(); ?>
@@ -43,6 +43,7 @@
 	<h1 class="screen-reader-text">Tania Rascia Web Design and Development</h1>
 	<a class="screen-reader-text" href="#main-content">Skip Navigation</a>
 	
+	<?php if ( !is_page( 'resume' ) ) { ?>
 	<nav class="secondary-navigation">
 		<div class="secondary-title"><a href="<?php echo site_url(); ?>"><i class="fa fa-home" aria-hidden-"true"></i>&nbsp; Tania Rascia</a> <span class="divider"> | </span>
 			<span class="secondary-subtitle">
@@ -60,6 +61,7 @@
 			<button type="submit" class="nav-search-submit"><i class="fa fa-search" aria-hidden="true"></i></button>
 		</form>
 	</nav>
+	<?php } ?>
 
 	<nav class="main-navigation">
 		<a href="<?php echo site_url(); ?>/tutorials" class="tutorials <?php if ( is_page( 'tutorials' ) ) { ?>current<?php } ?>"><i class="fa fa-map-o" aria-hidden="true"></i> <span>Tutorials</span></a>

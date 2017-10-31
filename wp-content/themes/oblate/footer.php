@@ -16,7 +16,7 @@
 		</div>
 	</div>
 </section>
-<?php } ?>
+
 
 <footer class="footer">
  <div class="small-container flex-container">
@@ -43,7 +43,7 @@
 	 </div>
 	</div>
 </footer>
-	
+<?php } ?>
 </main>
 
 <?php if ( is_front_page() ) { ?>
