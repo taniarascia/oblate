@@ -21,7 +21,6 @@
 			<section class="portfolio-page alternate-background">
 				<div class="small-container">
 					<h3>Portfolio</h3>
-					<a href="<?php echo site_url(); ?>">View All</a>
 					<div class="grid">
 
 			<?php $args = array(
