@@ -10,7 +10,7 @@
 	text-decoration: none !important;
 	background: $link-color;
 	border: 0;
-	border-radius: 0;
+	border-radius: $br;
 	cursor: pointer;
 	font-weight: 600;
 	margin: 0;
@@ -81,13 +81,13 @@ a.button.ghost-button,
 // Other button
 a.button.secondary-button,
 .button.secondary-button {
-	background: darken($yellow, 8%);
+	background: darken($green, 15%);
 	color: white;
 	&:hover,
 	&:focus,
 	&:active {
 		color: white;
-		background: darken($yellow, 15%);
+		background: darken($green, 20%);
 	}
 }
 

@@ -1,5 +1,4 @@
 <article id="post-<?php the_ID(); ?>" class="cell">
-	<div class="flex">
 		<?php if ( get_post_thumbnail_id() ) { ?>
 		<div class="image-thumbnail">
 			<a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="150" width="150"></a>
@@ -10,7 +9,6 @@
 				<?php the_title(); ?>
 			</a>
 		</h1>
-	</div>
 	<div>
 		<?php the_excerpt(); ?>
 	</div>

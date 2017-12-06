@@ -49,14 +49,11 @@ article {
 			color: $link-color;
 			text-decoration: none;
 			font-weight: 600;
-			border-bottom: 2px solid lighten($link-color, 25%);
 			&:hover,
 			&:focus,
 			&:active {
 				color: $pink;
 				font-weight: 600;
-				border-bottom: 2px solid lighten($pink, 20%);
-				text-decoration: none;
 			}
 		}
 	}
@@ -197,11 +194,11 @@ ul li ul {
 }
 
 .container {
-	max-width: 1000px;
+	max-width: 1200px;
 }
 
 .large-container {
-	max-width: 1000px;
+	max-width: 1200px;
 }
 
 @include small-breakpoint {
@@ -216,58 +213,60 @@ ul li ul {
 
 /* Navigation */
 
-.main-navigation {
+.main-nav-outer {
 	position: fixed;
-	top: 40px;
+	z-index: 5;
+	top: 0;
 	width: 100%;
 	left: 0;
-	height: 50px;
+	height: 80px;
+	background: $nav-bg;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-navigation {
+	max-width: 1200px;
+	margin: 0 auto;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	background: white;
-	max-width: 100%;
-	padding: 0 1rem;
-	z-index: 5;
-	border-bottom: 1px solid rgba(0, 0, 0, .1);
-	box-shadow: 2px 3px 10px rgba(0, 0, 0, .05);
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border-bottom: 1px solid rgba(0, 0, 0, .15);
 	a {
 		display: block;
 		font-size: .9rem;
 		text-decoration: none;
-		color: $light-font;
-		padding: .5rem .25rem .25rem;
-		flex: 1;
+		color: rgba(255, 255, 255, .7);
+		height: 100%;
+		width: 100%;
+		flex: 1 1 33%;
 		text-align: center;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		height: 40px;
 		&:hover {
-			color: black;
+			color: white;
+			background: darken($nav-bg, 3%);
 		}
-		.fa {
-			padding: .25rem 0;
-		}
+	}
+	.fa {
+		padding: 0 .5rem 0 0;
 	}
 }
 
 @include small-breakpoint {
 	.main-navigation {
-		height: 60px;
+		height: 80px;
 		a {
-			flex: initial;
-			padding: .25rem 1.5rem 0;
+			flex: 1;
+			flex-direction: column;
+			height: 100%;
 			font-size: 1.1rem;
-			.fa {
-				padding: 0 .5rem 0 0;
-			}
 		}
-	}
-}
-
-@include nav-breakpoint {
-	.main-navigation {
-		a {
-			display: block;
+		.fa {
+			padding: .25rem 0;
 		}
 	}
 }
@@ -278,6 +277,11 @@ ul li ul {
 			padding: 0 1.5rem;
 		}
 	}
+}
+
+.home:hover .fa,
+.home.current .fa {
+	color: $yellow;
 }
 
 .tutorials:hover .fa,
@@ -306,7 +310,7 @@ ul li ul {
 }
 
 a.current {
-	color: $heading-color;
+	color: white;
 }
 
 .secondary-navigation {
@@ -376,18 +380,18 @@ a.current {
 }
 
 .main {
-	margin-top: 90px;
+	margin-top: 80px;
 }
 
 @include small-breakpoint {
 	.main {
-		margin-top: 100px;
+		margin-top: 80px;
 	}
 }
 
 @include nav-breakpoint {
 	.main {
-		margin-top: 100px;
+		margin-top: 80px;
 	}
 }
 
@@ -459,101 +463,96 @@ a.current {
 
 .header {
 	text-align: left;
-	padding: 2rem 0;
+	padding: 3rem 0;
 	.header-email {
-		display: none;
+		text-align: center;
+		background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+		box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+		color: #6f1c26;
 		flex-direction: column;
-		margin: 1.5rem 0 0;
-		padding: 0;
-	}
-	.header-main {
-		max-width: 600px;
-		margin: 0 auto;
+		border-radius: $br;
+		padding: 2rem;
+		margin: 2rem 0 0;
+
 	}
 	h1 {
 		margin: 0 0 1.5rem;
-		font-weight: 900;
-		line-height: 1.3;
-		font-size: 1.4rem;
+		font-weight: 700;
+		line-height: 1.2;
+		font-size: 1.75rem;
 		span {
 			color: $pink;
 		}
 	}
 	h3 {
 		margin: 0 0 .5rem;
-		color: white;
-		font-family: $font-family;
 		font-size: 1.3rem;
 		font-weight: 700;
 	}
 	a {
 		font-weight: 700;
 		color: $heading-color;
-		border-bottom: 2px solid #feca7d;
-		&:hover,
-		&:active,
-		&:focus {
-			text-decoration: none;
-			color: $yellow;
-		}
 	}
 }
 
 .gradient {
-	background: $bg, linear-gradient(to top right, $purple, $blue);
+	background: linear-gradient(62deg, #3C4556, #282A36);
 	color: rgba(255, 255, 255, .8);
 	h1 {
 		color: white;
-		span {
-			color: lighten($yellow, 10%);
-		}
 	}
 	a {
-		color: white;
+		color: $yellow;
+		font-weight: 700;
 	}
 }
 
 @include small-breakpoint {
 	.header {
-		padding: 2.5rem 0;
+		padding: 4rem 0;
+		.header-main {
+			max-width: 680px;
+			font-size: 1.2rem;
+		}
 		h1 {
-			font-size: 2rem;
+			font-size: 2.25rem;
 		}
 	}
 }
 
 @include nav-breakpoint {
 	.header {
-		padding: 3rem 0;
+		padding: 5rem 0;
 		.container {
 			text-align: left;
 			display: flex;
 			flex-direction: row;
 			align-items: center;
+			justify-content: space-between;
 			input {
 				min-width: 180px;
 			}
 		}
 		.header-email {
 			display: block;
-			background: rgba(0, 0, 0, .3);
-			padding: 2.5rem;
 			margin: 0 0 0 3rem;
+			padding: 2.5rem;
 			h3 {
+				color: $heading-color;
 				font-size: 1.5rem;
 			}
 		}
 		h1 {
-			font-size: 2.1rem;
+			font-size: 2.5rem;
 		}
 	}
 }
 
 @include large-breakpoint {
 	.header {
-		padding: 4rem 0;
+		padding: 6rem 0;
 		h1 {
-			font-size: 2.3rem;
+			font-size: 2.75rem;
 		}
 	}
 }
@@ -605,7 +604,7 @@ a.current {
 
 @include small-breakpoint {
 	.page-header {
-		padding: 2rem 0;
+		padding: 3rem 0;
 		h1 {
 			font-size: 3rem;
 		}
@@ -617,7 +616,7 @@ a.current {
 
 @include nav-breakpoint {
 	.page-header {
-		padding: 2.5rem 0;
+		padding: 3rem 0;
 		h1 {
 			font-size: 3.5rem;
 		}
@@ -626,33 +625,35 @@ a.current {
 
 @include large-breakpoint {
 	.page-header {
+		padding: 4rem 0;
 		h1 {
-			font-size: 4rem;
+			font-size: 3.5rem;
 		}
 	}
 }
 
 .bright-header {
-	background: $bg, linear-gradient(to top right, #47CEC0, $blue);
+	background: $bg, linear-gradient(62deg, $blue, darken($blue, 30%));
 	color: rgba(255, 255, 255, .8);
 	h1 {
+		margin-top: 0;
 		color: white;
 	}
 	&.snippets-header {
-		background: $bg, linear-gradient(to top right, lighten($green, 10%), $blue);
+		background: $bg, linear-gradient(62deg, $green, darken($green, 30%));
 	}
 	&.tania-header {
-		background: $bg, linear-gradient(to top right, lighten($pink, 10%), $blue);
+		background: $bg, linear-gradient(62deg, $pink, darken($pink, 30%));
 	}
 	&.portfolio-header {
-		background: $bg, linear-gradient(to top right, lighten($yellow, 10%), $blue);
+		background: linear-gradient(62deg, #F7CE68, #FBAB7E);
 	}
 	&.thoughts-header {
-		background: $bg, linear-gradient(to top right, $purple, $blue);
+		background: $bg, linear-gradient(62deg, $purple, darken($purple, 30%));
 	}
 	p {
-		font-size: 1rem;
-		margin-bottom: 1rem;
+		font-size: 1.1rem;
+		margin-bottom: 0;
 	}
 }
 
@@ -661,17 +662,17 @@ a.current {
 
 .single-header {
 	text-align: center;
-	padding: 1.5rem 0;
+	padding: 2rem 0;
 	h1 {
 		font-family: $special-heading;
-		font-weight: 900;
+		font-weight: 700;
 		margin: .5rem 0 1rem;
 	}
 }
 
 @include small-breakpoint {
 	.single-header {
-		padding: 2.5rem 0;
+		padding: 4rem 0;
 	}
 	.bright-header {
 		p {
@@ -682,6 +683,7 @@ a.current {
 
 @include large-breakpoint {
 	.single-header {
+		padding: 4rem 0;
 		h1 {
 			font-size: 2.5rem;
 			margin: .5rem 0 1rem;
@@ -706,27 +708,29 @@ a.current {
 .cell {
 	transition: all .3s ease;
 	background: white;
-	width: calc(100% - 1rem);
 	margin: .5rem;
-	border: 1px solid $border;
+	border: 0px solid $border;
+	border-radius: $br;
 	position: relative;
 	padding: 1.25rem;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	flex: auto;
 	&:hover {
-		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+		transform: translate3D(0, -1px, 0);
+		box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 	}
 	.flex {
 		display: flex;
 		align-items: center;
 	}
 	p {
-		display: none;
 		color: $light-font;
 		font-size: 1.05rem;
 		margin-bottom: 0;
 	}
 	h1 {
-		margin: 0;
+		text-align: center;
+		margin-top: 0;
 		width: 100%;
 		font-size: 1.1rem;
 		line-height: 1.3;
@@ -758,9 +762,10 @@ a.current {
 
 .image-thumbnail {
 	display: block;
+	margin: 0 auto 1rem;
 	img {
-		margin-right: 1.5rem;
 		display: block;
+		margin: 0 auto;
 		height: 50px;
 		width: 50px;
 		min-width: 50px;
@@ -768,17 +773,28 @@ a.current {
 }
 
 @include small-breakpoint {
+	.image-thumbnail img {
+		margin: 0 auto 2rem;
+		height: 100px;
+		width: 100px;
+		min-width: 100px;
+	}
+	.cell {
+		padding: 2rem;
+	}
+}
+
+@include large-breakpoint {
 	.cell {
 		display: block;
 		padding: 2rem 2rem 5rem;
 		margin: .75rem;
-		flex: 1 1 calc(50% - 1.5rem);
-		max-width: calc(50% - 1.5rem);
+		flex: 1 1 calc(33% - 1.5rem);
+		max-width: calc(33% - 1.5rem);
 		.flex {
 			margin-bottom: 1.5rem;
 		}
 		h1 {
-			text-align: left;
 			font-size: 1.25rem;
 			margin: 1.5rem 0 1rem;
 		}
@@ -813,14 +829,6 @@ a.current {
 	}
 }
 
-@include nav-breakpoint {
-	.image-thumbnail img {
-		margin-right: 2rem;
-		height: 60px;
-		width: 60px;
-	}
-}
-
 
 /* Tutorials page */
 
@@ -835,20 +843,23 @@ a.current {
 	}
 	a {
 		display: inline-flex;
+		border-radius: $br;
 		align-items: center;
 		color: lighten($heading-color, 6%);
 		padding: .5rem;
 		margin: .2rem 0;
 		font-size: 1rem;
-		border: 1px solid $border;
+		border: 1px solid darken($border, 5%);
+		transition: all .2s ease;
 		&:hover,
 		&:focus,
 		&:active {
+			transform: translate3D(0, -1px, 0);
 			text-decoration: none;
 			background: white;
-			border: 1px solid darken($border, 8%);
+			border: 1px solid darken($border, 10%);
 			color: $heading-color;
-		} 
+		}
 	}
 }
 
@@ -869,68 +880,6 @@ a.current {
 @include small-breakpoint {
 	.topics {
 		padding: 1.5rem 0;
-	}
-}
-
-.topic {
-	h3 {
-		margin: 0;
-		font-size: 1rem;
-		font-family: $font-family;
-		font-weight: 400;
-		a {
-			display: flex;
-			justify-content: space-between;
-			color: lighten($heading-color, 6%);
-			border: 1px solid transparent;
-			padding: .5rem;
-			&:hover,
-			&:focus,
-			&:active {
-				text-decoration: none;
-				background: white;
-				border: 1px solid darken($border, 8%);
-				color: $heading-color;
-			}
-			.fa {
-				color: $light-font;
-			}
-			&:hover .fa {
-				color: $heading-color;
-			}
-			&:hover .fa-pencil {
-				color: $yellow;
-			}
-			&:hover .fa-database {
-				color: $blue;
-			}
-			&:hover .fa-code {
-				color: $purple;
-			}
-			&:hover .fa-code-fork {
-				color: $green;
-			}
-			&:hover .fa-server {
-				color: $pink;
-			}
-			&:hover .fa-wordpress {
-				color: #1F74AA;
-			}
-			&:hover .fa-desktop {
-				color: $yellow;
-			}
-			.ico {
-				order: 2;
-			}
-		}
-	}
-}
-
-@include small-breakpoint {
-	.topic {
-		h3 a {
-			padding: .75rem;
-		}
 	}
 }
 
@@ -998,6 +947,7 @@ blockquote {
 		color: $heading-color;
 		font-family: $heading-family;
 		padding: 1rem;
+		border-radius: $br;
 	}
 	&.alert {
 		background: lighten($pink, 28%);
@@ -1016,9 +966,8 @@ blockquote {
 		border: 1px solid $border;
 	}
 	&.details {
-		background: lighten($blue, 33%);
+		background: #e8f5fd;
 		border: 1px solid $blue;
-		;
 	}
 }
 
@@ -1033,21 +982,9 @@ blockquote {
 /* Footer */
 
 .footer {
-	background: $dark;
-	color: #aaaaaa;
-	padding: 1.5rem 0;
+	padding: 2rem 0;
 	p {
 		font-size: 1rem;
-	}
-	a {
-		color: white;
-		border-bottom: 2px solid $yellow;
-		&:hover,
-		&:active,
-		&:focus {
-			color: $yellow;
-			text-decoration: none;
-		}
 	}
 	div {
 		flex: 1;
@@ -1055,11 +992,14 @@ blockquote {
 	strong {
 		color: #ddd;
 	}
+	h3 {
+		color: white;
+	}
 }
 
 @include small-breakpoint {
 	.footer {
-		padding: 2.5rem 0;
+		padding: 3rem 0;
 	}
 }
 
@@ -1075,14 +1015,13 @@ blockquote {
 }
 
 .footer-social {
-	padding-right: 1.5rem;
+	margin-right: 2.5rem;
 }
 
 .social-icons {
 	padding-bottom: 1rem;
 	a {
 		border-bottom: 0;
-		display: inline-flex;
 		justify-content: center;
 		align-items: center;
 		margin: 0 .4rem;
@@ -1090,24 +1029,24 @@ blockquote {
 	.fa {
 		color: white;
 	}
-	/*.fa-twitter:hover {
-		background: #55ACEE;
+	.fa-twitter:hover {
+		color: #55ACEE;
 	}
 	.fa-codepen:hover {
-		background: #47CF73;
+		color: #47CF73;
 	}
 	.fa-stack-overflow:hover {
-		background: #F48024;
+		color: #F48024;
 	}
 	.fa-github:hover {
-		background: #B992E3;
+		color: #B992E3;
 	}
 	.fa-rss:hover {
-		background: #F8981C;
+		color: #F8981C;
 	}
 	.fa-linkedin-square:hover {
-		background: #0077B5;
-	}*/
+		color: #0077B5;
+	}
 }
 
 .twitter {
@@ -1150,30 +1089,30 @@ blockquote {
 /* MailChimp */
 
 .newsletter {
-	background: $bg, linear-gradient(to bottom right, #47CEC0, $blue);
-	padding: 1.5rem 0;
+	background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+	padding: 2rem 0;
 	h2 {
-		color: white;
+		color: $heading-color;
 		margin-top: .5rem;
 		margin-bottom: 1rem;
-		font-size: 1.25rem;
+		font-size: 1.5rem;
 	}
 	p {
-		color: white;
+		color: #6f1c26;
 	}
 }
 
 @include small-breakpoint {
 	.newsletter {
-		padding: 2.5rem 0;
+		padding: 3rem 0;
 		h2 {
-			font-size: 1.6rem;
+			font-size: 2rem;
 		}
 	}
 }
 
 #mailchimp {
-	display: flex;
+	//display: flex;
 	label {
 		display: inline-block;
 	}
@@ -1196,15 +1135,17 @@ blockquote {
 #mce-EMAIL {
 	padding: 1rem;
 	background: #F6F6F7;
-	border: 0;
+	border: 1px solid #F6F6F7;
 	width: 80%;
 	font-size: 1.1rem;
 	height: 60px;
-	transition: all .3s ease;
+	transition: all .2s ease;
+	margin-right: .25rem;
+	max-width: 300px;
 	&:hover,
 	&:active,
 	&:focus {
-		box-shadow: 2px 3px 20px rgba(0, 0, 0, .3);
+		border: 1px solid darken($border, 8%);
 	}
 }
 
@@ -1225,7 +1166,7 @@ blockquote {
 	&:hover,
 	&:active,
 	&:focus {
-		box-shadow: 2px 3px 20px rgba(0, 0, 0, .3);
+		background: darken($pink, 10%);
 	}
 	&:active,
 	&:focus {
@@ -1598,150 +1539,6 @@ caption {
 
 /* Landing */
 
-.resume-header {
-	background: $bg, linear-gradient(to top right, $purple, $blue);
-	padding: 2rem 0;
-	color: rgba(255, 255, 255, .8);
-	h1 {
-		margin: 0;
-		font-weight: 900;
-		color: white;
-		font-size: 1.5rem;
-	}
-	a {
-		font-weight: 700;
-		color: white;
-		border-bottom: 2px solid $yellow;
-		&:hover,
-		&:active,
-		&:focus {
-			color: $yellow;
-			text-decoration: none;
-		}
-	}
-	.subtitle {
-		font-size: 1.3rem;
-		color: lighten($yellow, 10%);
-	}
-}
-
-@include small-breakpoint {
-	.resume-header {
-		padding: 2.5rem 0;
-		h1 {
-			font-size: 2.5rem;
-		}
-		.subtitle {
-			font-size: 1.7rem;
-		}
-	}
-}
-
-@include nav-breakpoint {
-	.resume-header {
-		padding: 3.5rem 0;
-		h1 {
-			font-size: 2.5rem;
-		}
-	}
-}
-
-.resume {
-	hr {
-		height: 1px;
-		background: $border;
-		border: none;
-		margin-bottom: 1.5rem;
-	}
-	.cell h1 {
-		margin-bottom: 0;
-		margin-top: 0;
-	}
-	p {
-		margin-bottom: 1.5rem;
-		padding-bottom: 1.5rem;
-		border-bottom: 1px solid $border;
-	}
-	p:last-of-type {
-		padding-bottom: 0;
-		border-bottom: 0;
-		margin-bottom: 0;
-	}
-	.accomplishments {
-		padding-top: 0;
-		li {
-			margin-bottom: .5rem;
-		}
-	}
-	.title {
-		margin-top: 100px;
-		margin-bottom: 0;
-		font-weight: 800;
-		color: $heading-color;
-	}
-	.sub-title {
-		color: $pink;
-		font-weight: 800;
-		font-size: 1.4rem;
-	}
-	ul {
-		margin: 0;
-		padding: 1.5rem;
-	}
-	h2 {
-		font-size: 1.7rem;
-	}
-	h3 {
-		font-family: $font-family;
-		color: $heading-color;
-		font-weight: 700;
-		font-size: 1.4rem;
-		margin: 2rem .5rem 1rem;
-	}
-	h4 {
-		color: $heading-color;
-		margin-top: 0;
-		font-size: 1.1rem;
-		padding: 0;
-		border: none;
-		margin-bottom: .25rem;
-		line-height: 1.5;
-	}
-}
-
-.panel {
-	padding: 1.5rem;
-	background: white;
-	border: 1px solid $border;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-@include small-breakpoint {
-	.resume {
-		.cell h1 {
-			margin-top: .5rem;
-		}
-		h2 {
-			font-size: 2rem;
-		}
-		h3 {
-			font-size: 1.5rem;
-			margin: 3.5rem .5rem 1.5rem;
-		}
-		h4 {
-			font-size: 1.2rem;
-		}
-		.sub-title {
-			font-size: 1.6rem;
-		}
-	}
-	.panel {
-		padding: 2rem;
-		background: white;
-		border: 1px solid $border;
-	}
-}
-
 
 /* Search */
 
@@ -1795,6 +1592,14 @@ caption {
 
 .pink {
 	color: $pink;
+}
+
+.primary {
+	color: $primary !important;
+}
+
+.secondary {
+	color: $secondary !important;
 }
 
 

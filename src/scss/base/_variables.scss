@@ -15,41 +15,45 @@ $font-variant: normal;
 $font-weight: normal;
 $font-color: #404040;
 $font-size: 1rem;
-$body-size: 1.15rem;
+$body-size: 1.1rem;
+$nav-bg: #282B36;
 
 $line-height: 1.6;
 
+$primary: #4CBBF9;
+$secondary: #5EEDA3;
+
 /* Colors */
 
-$blue: #4473FE;
+$blue: $primary;
 $pink: #FC5D76;
-$green: #61C45B;
+$green: $secondary;
 $yellow: #FDB54B;
-$purple: #A566EC;
+$purple: #BD96F6;
 $dark: #181818;
 $light: rgba(255,255,255,.5);
 $light-font: #6d6e70;
 $bg: url("https://www.taniarascia.com/wp-content/uploads/pixels.png");
 $margin: 1.5rem; 
 
-$link-color: $blue;
+$link-color: darken($blue, 15%);
 $alt-color: $pink;
-$heading-color: #333;
+$heading-color: #222;
 $light-color: lighten($font-color, 30%);
 
-$font-family: 'Roboto', sans-serif;
-$heading-family: 'Roboto', sans-serif;
-$nav-family: 'Roboto', sans-serif;
-$button-family: 'Roboto', sans-serif;
-$special-heading: 'Merriweather', sans-serif;
+$font-family: 'Nunito Sans', sans-serif;
+$heading-family: 'Nunito Sans', sans-serif;
+$nav-family: 'Nunito Sans', sans-serif;
+$button-family: 'Nunito Sans', sans-serif;
+$special-heading: 'Nunito Sans', sans-serif;
 
-$background: #F6F6F7;
+$background: #F8F8F9;
 $transition: none;
-$br: 0;
+$br: 6px;
 
 /* Borders */
 
-$border: #ddddde;
+$border: #f0f0f0;
 
 /* Code */
 

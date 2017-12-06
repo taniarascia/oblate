@@ -20,7 +20,7 @@
 </section>
 
 <section class="topics">
-	<div class="container">
+	<div class="small-container">
 		<article class="quick">
 			<p>Quick! I want to learn...</p>
 			<a href="<?php echo site_url(); ?>/developing-a-wordpress-theme-from-scratch/"><img src="<?php echo site_url(); ?>/wp-content/uploads/wp-2-150x150.png"> WordPress</a>
@@ -40,33 +40,6 @@
 </section>
 
 <?php endwhile; endif; ?>
-
-<section class="topics">
-	<h2 class="text-center">Topics</h2>
-	<div class="tiny-container">
-		<div class="topic">
-			<h3><a href="#front-end"><span class="ico"><i class="fa fa-pencil" aria-hidden="true"></i></span> <span>Front End &amp; Design</span></a></h3>
-		</div>
-		<div class="topic">
-			<h3><a href="#back-end"><span class="ico"><i class="fa fa-database" aria-hidden="true"></i></span> <span>Back End Development</span></a></h3>
-		</div>
-		<div class="topic">
-			<h3><a href="#javascript"><span class="ico"><i class="fa fa-code" aria-hidden="true"></i></span> <span>JavaScript</span></a></h3>
-		</div>
-		<div class="topic">
-			<h3><a href="#workflow"><span class="ico"><i class="fa fa-code-fork" aria-hidden="true"></i></span> <span>Developer Workflow</span></a></h3>
-		</div>
-		<div class="topic">
-			<h3><a href="#system"><span class="ico"><i class="fa fa-server" aria-hidden="true"></i></span> <span>System Administration</span></a></h3>
-		</div>
-		<div class="topic">
-			<h3><a href="#wordpress"><span class="ico"><i class="fa fa-wordpress" aria-hidden="true"></i></span> <span>WordPress</span></a></h3>
-		</div>
-		<div class="topic">
-			<h3><a href="#general"><span class="ico"><i class="fa fa-desktop" aria-hidden="true"></i></span> <span>General</span></a></h3>
-		</div>
-	</div>
-</section>
 
 <section class="alternate-background tutorials-page">
 
