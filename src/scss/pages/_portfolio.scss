@@ -43,14 +43,14 @@
 @include small-breakpoint {
 	.cell.port {
 		display: block;
-		flex: 1 1 calc(50% - 1rem);
+		flex: 1 1 calc(50% - 1.5rem);
 		max-width: 50%;
 	}
 }
 
 @include mid-breakpoint {
 	.cell.port {
-		flex: 1 1 calc(33.3333% - 1rem);
+		flex: 1 1 calc(33.3333% - 1.5rem);
 		max-width: 33%;
 	}
 }
