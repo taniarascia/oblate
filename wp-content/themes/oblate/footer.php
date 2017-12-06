@@ -35,7 +35,7 @@
     </div>
 	 </div>
 	 <div class="footer-support">
-     <h3>Also...</h3>
+     <h3>About</h3>
 		 <p>My site is <strong class="secondary">free</strong> – and free of ads, clickbait, popups, guest posts, and sponsored content! Has this site been valuable to you? Please consider <strong class="secondary">donating</strong> so I can continue creating!</p>
      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
       <input type="hidden" name="cmd" value="_s-xclick">

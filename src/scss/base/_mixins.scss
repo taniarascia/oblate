@@ -9,8 +9,8 @@
 }
 
 // Media query for nav
-@mixin nav-breakpoint {
-	@media (min-width: #{$nav-breakpoint}) {
+@mixin mid-breakpoint {
+	@media (min-width: #{$tablet}) {
 		@content;
 	}
 }

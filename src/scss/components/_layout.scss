@@ -48,12 +48,12 @@ article {
 		a {
 			color: $link-color;
 			text-decoration: none;
-			font-weight: 600;
+			font-weight: 700;
 			&:hover,
 			&:focus,
 			&:active {
 				color: $pink;
-				font-weight: 600;
+				font-weight: 700;
 			}
 		}
 	}
@@ -72,7 +72,7 @@ table,
 
 dl {
 	dt {
-		font-weight: 600;
+		font-weight: 700;
 		margin-bottom: .25rem;
 	}
 	dd {
@@ -113,7 +113,7 @@ h1 {
 
 h2 {
 	font-size: 1.4rem;
-	font-weight: 900;
+	font-weight: 700;
 }
 
 h3 {
@@ -125,7 +125,7 @@ h4 {
 	font-size: 1.15rem;
 	padding-bottom: .5rem;
 	color: lighten($heading-color, 22%);
-	border-bottom: 1px solid $border;
+	border-bottom: 1px solid darken($border, 8%);
 }
 
 h5 {
@@ -161,7 +161,7 @@ h5 {
 
 // Definition list
 dt {
-	font-weight: 900;
+	font-weight: 700;
 	font-family: $heading-family;
 }
 
@@ -210,11 +210,21 @@ ul li ul {
 	}
 }
 
+#main-content {
+	margin-top: 80px;
+}
+
+@include mid-breakpoint {
+	#main-content {
+		margin-top: 80px;
+	}
+}
+
 
 /* Navigation */
 
 .main-nav-outer {
-	position: fixed;
+	position: absolute;
 	z-index: 5;
 	top: 0;
 	width: 100%;
@@ -224,11 +234,18 @@ ul li ul {
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.main-navigation {
+.nav-container {
 	max-width: 1200px;
 	margin: 0 auto;
 	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.main-navigation {
+	display: flex;
 	align-items: center;
+	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	border-bottom: 1px solid rgba(0, 0, 0, .15);
@@ -237,7 +254,6 @@ ul li ul {
 		font-size: .9rem;
 		text-decoration: none;
 		color: rgba(255, 255, 255, .7);
-		height: 100%;
 		width: 100%;
 		flex: 1 1 33%;
 		text-align: center;
@@ -264,6 +280,7 @@ ul li ul {
 			flex-direction: column;
 			height: 100%;
 			font-size: 1.1rem;
+			padding: 0 .5rem;
 		}
 		.fa {
 			padding: .25rem 0;
@@ -271,10 +288,22 @@ ul li ul {
 	}
 }
 
+@include mid-breakpoint {
+	.main-nav-outer {
+		height: 80px;
+	}
+	.main-navigation a {
+		padding: 0 1.1rem
+	}
+	.nav-container {
+		flex-direction: row;
+	}
+}
+
 @include large-breakpoint {
 	.main-navigation {
 		a {
-			padding: 0 1.5rem;
+			padding: 0 2.5rem;
 		}
 	}
 }
@@ -329,7 +358,7 @@ a.current {
 
 .secondary-title {
 	color: white;
-	font-weight: 600;
+	font-weight: 700;
 	font-size: .9rem;
 	margin: 0 0 0 .5rem;
 	display: flex;
@@ -351,12 +380,12 @@ a.current {
 	.secondary-subtitle {
 		display: none;
 		color: rgba(255, 255, 255, .8);
-		font-weight: 600;
+		font-weight: 700;
 		font-size: .9rem;
 	}
 }
 
-@include nav-breakpoint {
+@include mid-breakpoint {
 	.secondary-title {
 		margin: 0 0 0 1rem;
 		a {
@@ -383,38 +412,36 @@ a.current {
 	margin-top: 80px;
 }
 
-@include small-breakpoint {
-	.main {
-		margin-top: 80px;
-	}
-}
-
-@include nav-breakpoint {
-	.main {
-		margin-top: 80px;
-	}
-}
-
 .nav-search {
 	display: flex;
-	height: 40px;
+	height: 80px;
+}
+
+.search-div {
+	display: none;
 }
 
 .nav-search-submit {
-	background: #4473FE;
+	border-radius: 0;
+	background: transparent;
 	border: 0;
 	padding: 0;
 	text-align: center;
 	font-size: 1.1rem;
 	height: 40px;
-	width: 60px;
+	width: 100px;
 	color: white;
 	font-weight: bold;
-	color: white;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	&:hover,
+	&:active,
+	&:focus {
+		color: $green;
+		background: transparent;
+	}
 	.fa {
 		margin: auto;
 		display: block;
@@ -422,39 +449,42 @@ a.current {
 }
 
 .nav-search-input {
-	background: #404040;
+	border-radius: 0;
 	border: 0;
 	padding: 1rem;
-	font-size: .9rem;
+	font-size: 1rem;
 	width: 100%;
-	max-width: 400px;
 	min-width: 130px;
+	background: lighten($nav-bg, 10%);
 	color: white;
 	height: 40px;
 	&:hover {
-		background: lighten(#404040, 2%);
+		background: lighten($nav-bg, 12%);
 		border: 0;
 	}
 	&:active,
 	&:focus {
-		background: lighten(#404040, 5%);
+		background: lighten($nav-bg, 15%);
 		border: 0;
 		outline: 0;
 	}
 	&::placeholder {
-		color: rgba(255, 255, 255, .7);
+		color: rgba(255, 255, 255, .8);
 	}
 }
 
-@include nav-breakpoint {
+@include mid-breakpoint {
+	.search-div {
+		display: block;
+	}
 	.nav-search-submit {
-		width: 60px;
+		width: 120px;
 	}
 	.secondary-navigation,
 	.nav-search-submit,
 	.nav-search-input,
 	.nav-search {
-		height: 40px;
+		height: 80px;
 	}
 }
 
@@ -464,7 +494,9 @@ a.current {
 .header {
 	text-align: center;
 	padding: 2rem 0;
+	font-size: 1.1rem;
 	.header-email {
+		display: none;
 		text-align: center;
 		background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
 		box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
@@ -478,7 +510,7 @@ a.current {
 		margin: 0 0 1.5rem;
 		font-weight: 700;
 		line-height: 1.2;
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 		span {
 			color: $pink;
 		}
@@ -494,21 +526,9 @@ a.current {
 	}
 }
 
-.gradient {
-	background: linear-gradient(62deg, #3C4556, #282A36);
-	color: rgba(255, 255, 255, .8);
-	h1 {
-		color: white;
-	}
-	a {
-		color: $yellow;
-		font-weight: 700;
-	}
-}
-
 @include small-breakpoint {
 	.header {
-		text-align: left;	
+		text-align: left;
 		padding: 4rem 0;
 		.header-main {
 			max-width: 680px;
@@ -520,7 +540,7 @@ a.current {
 	}
 }
 
-@include nav-breakpoint {
+@include mid-breakpoint {
 	.header {
 		padding: 5rem 0;
 		.container {
@@ -543,7 +563,7 @@ a.current {
 			}
 		}
 		h1 {
-			font-size: 2.5rem;
+			font-size: 2.25rem;
 		}
 	}
 }
@@ -554,6 +574,21 @@ a.current {
 		h1 {
 			font-size: 2.75rem;
 		}
+	}
+}
+
+.gradient {
+	background: linear-gradient(62deg, #3C4556, #282A36);
+	color: rgba(255, 255, 255, .8);
+	h1 {
+		color: white;
+	}
+	a {
+		color: $yellow;
+		font-weight: 700;
+	}
+	&.mb {
+		margin-bottom: 3rem;
 	}
 }
 
@@ -592,7 +627,7 @@ a.current {
 	padding: 2rem 0;
 	h1 {
 		margin: 1rem 0;
-		font-weight: 900;
+		font-weight: 700;
 		font-size: 1.75rem;
 	}
 }
@@ -614,7 +649,7 @@ a.current {
 	}
 }
 
-@include nav-breakpoint {
+@include mid-breakpoint {
 	.page-header {
 		padding: 3rem 0;
 		h1 {
@@ -646,7 +681,11 @@ a.current {
 		background: linear-gradient(62deg, $pink, darken($pink, 30%));
 	}
 	&.portfolio-header {
-		background: linear-gradient(62deg, #F7CE68, #FBAB7E);
+		background: linear-gradient(62deg,#FBAB7E, #F7CE68);
+		color: #6f1c26;
+		h1 {
+			color: #222;
+		}
 	}
 	&.thoughts-header {
 		background: linear-gradient(62deg, $purple, darken($purple, 30%));
@@ -683,7 +722,7 @@ a.current {
 
 @include large-breakpoint {
 	.single-header {
-		padding: 4rem 0;
+		padding: 5rem 0;
 		h1 {
 			font-size: 2.5rem;
 			margin: .5rem 0 1rem;
@@ -784,7 +823,7 @@ a.current {
 	}
 }
 
-@include large-breakpoint {
+@include mid-breakpoint {
 	.cell {
 		display: block;
 		padding: 2rem 2rem 5rem;
@@ -849,7 +888,7 @@ a.current {
 		padding: .5rem;
 		margin: .2rem 0;
 		font-size: 1rem;
-		border: 1px solid darken($border, 5%);
+		border: 1px solid darken($border, 8%);
 		transition: all .2s ease;
 		&:hover,
 		&:focus,
@@ -857,7 +896,7 @@ a.current {
 			transform: translate3D(0, -1px, 0);
 			text-decoration: none;
 			background: white;
-			border: 1px solid darken($border, 10%);
+			border: 1px solid darken($border, 12%);
 			color: $heading-color;
 		}
 	}
@@ -984,9 +1023,6 @@ blockquote {
 .footer {
 	text-align: center;
 	padding: 2rem 0;
-	p {
-		font-size: 1rem;
-	}
 	div {
 		flex: 1;
 	}
@@ -1010,14 +1046,13 @@ blockquote {
 	flex-direction: column;
 }
 
-@include small-breakpoint {
+@include mid-breakpoint {
 	.flex-container {
 		flex-direction: row;
 	}
-}
-
-.footer-social {
-	margin-right: 2.5rem;
+	.footer-social {
+		margin-right: 6rem;
+	}
 }
 
 .social-icons {
@@ -1108,7 +1143,7 @@ blockquote {
 	.newsletter {
 		padding: 3rem 0;
 		h2 {
-			font-size: 2rem;
+			font-size: 1.75rem;
 		}
 	}
 }
@@ -1339,7 +1374,7 @@ blockquote {
 	}
 	a {
 		color: $heading-color;
-		font-weight: 600;
+		font-weight: 700;
 		font-size: 1rem;
 	}
 }

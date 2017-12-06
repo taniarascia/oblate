@@ -4,7 +4,8 @@
 .forms {
 	padding: 1rem 1.25rem;
 	border-radius: $br;
-	border: 1px solid $border;
+	border: 1px solid darken($border, 8%);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 	max-width: 100%;
 	font-size: 1rem;
 	background: white;
@@ -23,7 +24,7 @@ select,
 [type="password"] {
 	@extend .forms;
 	&:hover {
-		border: 1px solid darken($border, 10%);
+		border: 1px solid darken($border, 12%);
 	}
 	&:focus,
 	&:active {
@@ -57,17 +58,17 @@ label>.label-body {
 }
 
 div.wpcf7-mail-sent-ok {
-	border: 1px solid #54c381;
-	border-radius: 6px;
+	border: 1px solid $green;
+	border-radius: $br;
 	padding: 1.5rem;
-	background: #edf9f2;
-	color: #214e33;
+	background: lighten($green, 15%);
+	color: darken($green, 25%);
 	font-size: 1rem;
 }
 
 div.wpcf7-validation-errors {
 	border: 1px solid #FFE168;
-	border-radius: 6px;
+	border-radius: $br;
 	padding: 1.5rem;
 	background: #FFF4CA;
 	color: #755D00;

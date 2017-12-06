@@ -42,26 +42,9 @@
 <body>
 	<h1 class="screen-reader-text">Tania Rascia Web Design and Development</h1>
 	<a class="screen-reader-text" href="#main-content">Skip Navigation</a>
-	
-	<!-- <nav class="secondary-navigation">
-		<div class="secondary-title"><a href="<?php echo site_url(); ?>"><i class="fa fa-home" aria-hidden-"true"></i>&nbsp; Tania Rascia</a> <span class="divider"> | </span>
-			<span class="secondary-subtitle">
-		<?php 
-		if ( is_front_page() ) { echo "Web designer, developer, autodidact"; } 
-		elseif ( is_search() ) { echo get_search_query(); } 
-		elseif ( is_page( 'blog' ) ) { echo "Archive"; } 
-		else { echo get_the_title(); } ?>
-		</span></div>
-		<form role="search" method="get" class="nav-search" action="<?php echo home_url( '/' ); ?>">
-			<label>
-			<span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span></label>
-			<input type="search" placeholder="<?php echo esc_attr_x( 'Search', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>"
-			  name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" class="nav-search-input">
-			<button type="submit" class="nav-search-submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-		</form>
-	</nav> -->
 
 	<header class="main-nav-outer">
+		<div class="nav-container">
 		<nav class="main-navigation">
 			<a href="<?php echo site_url(); ?>" class="home <?php if ( is_front_page() ) { ?>current<?php } ?>"><i class="fa fa-home" aria-hidden="true"></i> <span>Home</span></a>
 			<a href="<?php echo site_url(); ?>/tutorials" class="tutorials <?php if ( is_page( 'tutorials' ) ) { ?>current<?php } ?>"><i class="fa fa-map-o" aria-hidden="true"></i> <span>Tutorials</span></a>
@@ -70,6 +53,16 @@
 			<a href="<?php echo site_url(); ?>/work" class="portfolio <?php if ( is_page( 'work' ) ) { ?>current<?php } ?>"><i class="fa fa-folder-open-o" aria-hidden="true"></i> <span>Portfolio</span></a>
 			<a href="<?php echo site_url(); ?>/thoughts" class="thoughts <?php if ( is_page( 'thoughts' ) ) { ?>current<?php } ?>"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>Thoughts</span></a>
 		</nav>
+		<div class="search-div">
+			<form role="search" method="get" class="nav-search" action="<?php echo home_url( '/' ); ?>">
+				<label>
+				<span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span></label>
+				<input type="search" placeholder="<?php echo esc_attr_x( 'Search for anything', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>"
+					name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" class="nav-search-input">
+				<button type="submit" class="nav-search-submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+			</form>
+		</div>
+	</div>
 	</header>
 
 	<main class="main" id="main-content">
