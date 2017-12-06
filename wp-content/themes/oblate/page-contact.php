@@ -7,6 +7,7 @@
 		<h1>
 			<?php the_title(); ?>
 		</h1>
+		<p>Hey there! This is your direct line to me. I’d love to hear from you!</p>
 	</div>
 </header>
 

@@ -462,8 +462,8 @@ a.current {
 /* Landing */
 
 .header {
-	text-align: left;
-	padding: 3rem 0;
+	text-align: center;
+	padding: 2rem 0;
 	.header-email {
 		text-align: center;
 		background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
@@ -473,7 +473,6 @@ a.current {
 		border-radius: $br;
 		padding: 2rem;
 		margin: 2rem 0 0;
-
 	}
 	h1 {
 		margin: 0 0 1.5rem;
@@ -509,6 +508,7 @@ a.current {
 
 @include small-breakpoint {
 	.header {
+		text-align: left;	
 		padding: 4rem 0;
 		.header-main {
 			max-width: 680px;
@@ -589,7 +589,7 @@ a.current {
 
 .page-header {
 	text-align: center;
-	padding: 1rem 0;
+	padding: 2rem 0;
 	h1 {
 		margin: 1rem 0;
 		font-weight: 900;
@@ -633,23 +633,23 @@ a.current {
 }
 
 .bright-header {
-	background: $bg, linear-gradient(62deg, $blue, darken($blue, 30%));
+	background: linear-gradient(62deg, $blue, darken($blue, 30%));
 	color: rgba(255, 255, 255, .8);
 	h1 {
 		margin-top: 0;
 		color: white;
 	}
 	&.snippets-header {
-		background: $bg, linear-gradient(62deg, $green, darken($green, 30%));
+		background: linear-gradient(62deg, $green, darken($green, 30%));
 	}
 	&.tania-header {
-		background: $bg, linear-gradient(62deg, $pink, darken($pink, 30%));
+		background: linear-gradient(62deg, $pink, darken($pink, 30%));
 	}
 	&.portfolio-header {
 		background: linear-gradient(62deg, #F7CE68, #FBAB7E);
 	}
 	&.thoughts-header {
-		background: $bg, linear-gradient(62deg, $purple, darken($purple, 30%));
+		background: linear-gradient(62deg, $purple, darken($purple, 30%));
 	}
 	p {
 		font-size: 1.1rem;
@@ -982,6 +982,7 @@ blockquote {
 /* Footer */
 
 .footer {
+	text-align: center;
 	padding: 2rem 0;
 	p {
 		font-size: 1rem;
@@ -999,6 +1000,7 @@ blockquote {
 
 @include small-breakpoint {
 	.footer {
+		text-align: left;
 		padding: 3rem 0;
 	}
 }
@@ -1545,6 +1547,7 @@ caption {
 .search-results {
 	padding: 1.5rem 0;
 	border-bottom: 1px solid $border;
+	display: flex;
 	&:first-of-type {
 		padding-top: 0;
 	}
@@ -1559,6 +1562,13 @@ caption {
 			color: $heading-color;
 		}
 	}
+	img {
+		width: 50px;
+		height: 50px;
+		max-width: 50px;
+		min-width: 50px;
+		margin-right: 2rem;
+	}
 	p {
 		margin-bottom: 0;
 		color: $light-font;
@@ -1568,6 +1578,13 @@ caption {
 @include small-breakpoint {
 	.search-results {
 		padding: 2.5rem 0;
+		img {
+			width: 100px;
+			height: 100px;
+			max-width: 100px;
+			min-width: 100px;
+			margin-right: 3rem;
+		}
 	}
 }
 
