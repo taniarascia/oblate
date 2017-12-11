@@ -293,7 +293,7 @@ ul li ul {
 		height: 80px;
 	}
 	.main-navigation a {
-		padding: 0 1.1rem
+		padding: 0 1rem
 	}
 	.nav-container {
 		flex-direction: row;
@@ -303,7 +303,7 @@ ul li ul {
 @include large-breakpoint {
 	.main-navigation {
 		a {
-			padding: 0 2.5rem;
+			padding: 0 2rem;
 		}
 	}
 }
