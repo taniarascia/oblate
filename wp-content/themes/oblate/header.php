@@ -57,7 +57,7 @@
 			<form role="search" method="get" class="nav-search" action="<?php echo home_url( '/' ); ?>">
 				<label>
 				<span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span></label>
-				<input type="search" placeholder="<?php echo esc_attr_x( 'Search for anything', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>"
+				<input type="search" placeholder="<?php echo esc_attr_x( 'Search', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>"
 					name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" class="nav-search-input">
 				<button type="submit" class="nav-search-submit"><i class="fa fa-search" aria-hidden="true"></i></button>
 			</form>
