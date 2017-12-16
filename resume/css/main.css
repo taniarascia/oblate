@@ -262,12 +262,6 @@ tbody > tr:last-child > td {
   flex-wrap: wrap;
 }
 
-.skills .card {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 calc(50% - 1rem);
-  flex: 1 1 calc(50% - 1rem);
-}
-
 .skills .card img {
   max-width: 50px;
   border-radius: 6px;
@@ -594,6 +588,7 @@ a.button-secondary {
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.01)), to(rgba(255, 255, 255, 0.05)));
   background: linear-gradient(to top right, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.05));
+  margin: 5px;
 }
 
 .button-secondary:hover,
