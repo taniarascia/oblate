@@ -14,7 +14,7 @@
 <?php endwhile; endif; ?>
 
 <section class="quote-container">
-	<div class="container">
+	<div class="small-container">
 		<blockquote class="testimonial">"Tania's articles fill a much needed void in the web development world: they are both in-depth and extremely beginner-friendly. I love that she documents things as she learns them; I really feel like we're growing together as developers."
 		<cite>&mdash; <a href="https://www.benschroeder.com/" target="_blank">Ben Schroeder</a>, JavaScript Developer</cite></blockquote>
 	</div>
@@ -61,7 +61,7 @@
 </section>
 
 <section class="quote-container">
-	<div class="container">
+	<div class="small-container">
 		<blockquote class="testimonial">"It's definitely an inspiration seeing the great work you do, and the fact that you're so willing to share your knowledge so freely with the rest of us. I have to say I've already learned a great number of things from your resources and tutorials."
 		<cite>&mdash; Louis Wong</cite></blockquote>
 	</div>

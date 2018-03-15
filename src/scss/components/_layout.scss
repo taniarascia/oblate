@@ -1,7 +1,6 @@
 /* Layout
 =============== */
 
-
 /* Scaffolding */
 
 // HTML base
@@ -112,24 +111,23 @@ h1 {
 }
 
 h2 {
-	font-size: 1.4rem;
-	font-weight: 700;
+	font-size: 1.7rem;
 }
 
 h3 {
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	color: lighten($heading-color, 12%);
 }
 
 h4 {
-	font-size: 1.15rem;
+	font-size: 1.3rem;
 	padding-bottom: .5rem;
 	color: lighten($heading-color, 22%);
 	border-bottom: 1px solid darken($border, 8%);
 }
 
 h5 {
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	margin-bottom: .5rem;
 }
 
@@ -143,19 +141,25 @@ h5 {
 		margin-top: 2.5rem;
 	}
 	h1 {
-		font-size: 2.75rem;
+		font-size: 2.5rem;
 	}
 	h2 {
-		font-size: 2rem;
+		font-size: 2.6rem;
 	}
 	h3 {
-		font-size: 1.75rem;
+		font-size: 2rem;
 	}
 	h4 {
-		font-size: 1.4rem;
+		font-size: 1.6rem;
 	}
 	h5 {
 		font-size: 1.2rem;
+	}
+}
+
+@include large-breakpoint {
+	h1 {
+		font-size: 2.5rem;
 	}
 }
 
@@ -172,7 +176,6 @@ mark {
 ul li ul {
 	margin-bottom: 0;
 }
-
 
 /* Containers */
 
@@ -220,7 +223,6 @@ ul li ul {
 	}
 }
 
-
 /* Navigation */
 
 .main-nav-outer {
@@ -254,7 +256,7 @@ ul li ul {
 		display: block;
 		font-size: .9rem;
 		text-decoration: none;
-		color: rgba(255, 255, 255, .7);
+		color: lighten($nav-bg, 50%);
 		width: 100%;
 		flex: 1 1 33%;
 		text-align: center;
@@ -296,7 +298,7 @@ ul li ul {
 	.main-navigation a {
 		//padding: 0 1rem
 	}
-	.nav-container { 
+	.nav-container {
 		flex-direction: row;
 	}
 }
@@ -415,7 +417,8 @@ a.current {
 
 .nav-search {
 	display: flex;
-	height: 80px;
+	height: 50px;
+	border-radius: 6px;
 }
 
 .search-div {
@@ -477,18 +480,23 @@ a.current {
 @include mid-breakpoint {
 	.search-div {
 		display: block;
+		display: flex;
+		align-items: center;
+		border-bottom: 1px solid rgba(0,0,0,.15);
 	}
 	.nav-search-submit {
 		width: 120px;
 	}
-	.secondary-navigation,
+	.secondary-navigation, {
+		height: 80px;
+	}
 	.nav-search-submit,
 	.nav-search-input,
 	.nav-search {
-		height: 80px;
+		height: 50px;
+		border-radius: 6px;
 	}
 }
-
 
 /* Landing */
 
@@ -511,7 +519,7 @@ a.current {
 		margin: 0 0 1.5rem;
 		font-weight: 700;
 		line-height: 1.2;
-		font-size: 1.5rem;
+		font-size: 2.25rem;
 		span {
 			color: $pink;
 		}
@@ -525,6 +533,9 @@ a.current {
 		font-weight: 700;
 		color: $heading-color;
 	}
+	p {
+		font-size: 1.3rem;
+	}
 }
 
 @include small-breakpoint {
@@ -532,11 +543,13 @@ a.current {
 		text-align: left;
 		padding: 4rem 0;
 		.header-main {
-			max-width: 680px;
-			font-size: 1.2rem;
+			max-width: 650px;
+		}
+		p {
+			font-size: 1.5rem;
 		}
 		h1 {
-			font-size: 2.25rem;
+			font-size: 3rem;
 		}
 	}
 }
@@ -544,12 +557,17 @@ a.current {
 @include mid-breakpoint {
 	.header {
 		padding: 5rem 0;
+		.header-main {
+			h1 {
+				font-size: 4rem;
+			}
+		}
 		.container {
 			text-align: left;
 			display: flex;
 			flex-direction: row;
 			align-items: center;
-			justify-content: space-between;
+			justify-content: space-around;
 			input {
 				min-width: 180px;
 			}
@@ -580,7 +598,7 @@ a.current {
 
 .gradient {
 	background: linear-gradient(62deg, #3C4556, #282A36);
-	color: rgba(255, 255, 255, .8);
+	color: lighten($nav-bg, 50%);
 	h1 {
 		color: white;
 	}
@@ -620,7 +638,6 @@ a.current {
 	}
 }
 
-
 /* Pages */
 
 .page-header {
@@ -629,7 +646,7 @@ a.current {
 	h1 {
 		margin: 1rem 0;
 		font-weight: 700;
-		font-size: 1.75rem;
+		font-size: 2rem;
 	}
 }
 
@@ -682,7 +699,7 @@ a.current {
 		background: linear-gradient(62deg, $pink, darken($pink, 30%));
 	}
 	&.portfolio-header {
-		background: linear-gradient(62deg,#FBAB7E, #F7CE68);
+		background: linear-gradient(62deg, #FBAB7E, #F7CE68);
 		color: #6f1c26;
 		h1 {
 			color: #222;
@@ -692,41 +709,56 @@ a.current {
 		background: linear-gradient(62deg, $purple, darken($purple, 30%));
 	}
 	p {
-		font-size: 1.1rem;
+		font-size: 1.2rem;
 		margin-bottom: 0;
 	}
 }
 
-
 /* Articles */
 
 .single-header {
-	text-align: center;
+	text-align: left;
 	padding: 2rem 0;
+	margin-bottom: 3rem;
+	border-bottom: 1px solid $border;
 	h1 {
-		font-family: $special-heading;
-		font-weight: 700;
 		margin: .5rem 0 1rem;
+	}
+	img {
+		float: left;
+		margin-right: 2rem;
+		max-width: 100px;
+		width: 100px;
+		max-height: 100px;
 	}
 }
 
 @include small-breakpoint {
 	.single-header {
-		padding: 4rem 0;
+		padding: 3rem 0;
+		img {
+			max-width: 125px;
+			width: 125px;
+			max-height: 125px;
+		}
 	}
 	.bright-header {
 		p {
-			font-size: 1.1rem;
+			font-size: 1.3rem;
 		}
 	}
 }
 
 @include large-breakpoint {
 	.single-header {
-		padding: 5rem 0;
+		padding: 4rem 0;
 		h1 {
-			font-size: 2.5rem;
 			margin: .5rem 0 1rem;
+		}
+	}
+	.bright-header {
+		p {
+			font-size: 1.5rem;
 		}
 	}
 }
@@ -734,7 +766,6 @@ a.current {
 .single-body {
 	margin-bottom: 5rem;
 }
-
 
 /* Article Excerpts */
 
@@ -746,7 +777,7 @@ a.current {
 }
 
 .cell {
-	transition: all .3s ease;
+	transition: all .2s ease;
 	background: white;
 	margin: .5rem;
 	border: 0px solid $border;
@@ -774,7 +805,7 @@ a.current {
 		width: 100%;
 		font-size: 1.1rem;
 		line-height: 1.3;
-		font-family: $font-family;
+		font-family: $special-heading;
 		font-weight: 700;
 		a {
 			display: block;
@@ -869,7 +900,6 @@ a.current {
 	}
 }
 
-
 /* Tutorials page */
 
 .quick {
@@ -901,14 +931,35 @@ a.current {
 			color: $heading-color;
 		}
 	}
+	&.quick-header {
+		a {
+			font-weight: 400;
+			border: 1px solid lighten($nav-bg, 10%);
+			background: lighten($nav-bg, 20%);
+			color: lighten($nav-bg, 60%);
+			&:hover,
+			&:focus,
+			&:active {
+				border: 1px solid lighten($nav-bg, 40%);
+				background: lighten($nav-bg, 30%);
+				color: lighten($nav-bg, 80%);
+			}
+		}
+	}
+}
+
+@include small-breakpoint {
+	.quick.quick-header {
+		text-align: left;
+	}
 }
 
 .tutorials-page {
 	h2 {
 		margin: 0 .5rem;
 		padding: 3rem 0 1rem;
+		font-weight: 700;
 		font-size: 1.4rem;
-		font-family: $font-family;
 	}
 }
 
@@ -1018,20 +1069,33 @@ blockquote {
 	}
 }
 
-
 /* Footer */
 
 .footer {
+	background: $nav-bg;
 	text-align: center;
 	padding: 2rem 0;
-	div {
+	color: lighten($nav-bg, 50%);
+	font-size: 1.05rem;
+	.footer-social, .footer-support {
 		flex: 1;
+		max-width: 425px;
 	}
 	strong {
 		color: #ddd;
 	}
 	h3 {
 		color: white;
+		font-size: 1.3rem;
+		margin-top: 0;
+		margin-bottom: .5rem;
+	}
+	a {
+		margin: 0 5px;
+		color: lighten($nav-bg, 30%);
+		&:hover {
+			color: $pink;
+		}
 	}
 }
 
@@ -1050,79 +1114,29 @@ blockquote {
 @include mid-breakpoint {
 	.flex-container {
 		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
 	}
 	.footer-social {
 		margin-right: 6rem;
 	}
 }
 
-.social-icons {
-	padding-bottom: 1rem;
-	a {
-		border-bottom: 0;
-		justify-content: center;
-		align-items: center;
-		margin: 0 .4rem;
-	}
-	.fa {
-		color: white;
-	}
-	.fa-twitter:hover {
-		color: #55ACEE;
-	}
-	.fa-codepen:hover {
-		color: #47CF73;
-	}
-	.fa-stack-overflow:hover {
-		color: #F48024;
-	}
-	.fa-github:hover {
-		color: #B992E3;
-	}
-	.fa-rss:hover {
-		color: #F8981C;
-	}
-	.fa-linkedin-square:hover {
-		color: #0077B5;
-	}
-}
-
-.twitter {
-	color: #55ACEE;
-}
-
-.reddit {
-	color: #FF4500;
-}
-
-.hackernews {
-	color: #FF6600;
-}
-
-.facebook {
-	color: #3B5998;
-}
-
-.share {
-	a {
-		display: inline-block;
-		padding-right: .5rem;
-		color: $heading-color;
-		&:hover,
-		&:focus,
-		&:active {
-			color: $pink;
-		}
+.author {
+	h3 {
+		font-size: 1.5rem;
+		margin-bottom: .5rem;
+		color: #222;
 	}
 }
 
 .my-avatar {
-	float: right;
-	max-width: 33%;
+	float: left;
+	max-width: 20%;
 	border-radius: 50%;
-	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-top: 1rem;
 }
-
 
 /* MailChimp */
 
@@ -1161,7 +1175,6 @@ blockquote {
 
 #mc-embedded-subscribe-form {
 	display: flex;
-	justify-content: center;
 	label {
 		display: inline-block;
 	}
@@ -1198,9 +1211,9 @@ blockquote {
 	border: 0;
 	font-size: 1.5rem;
 	color: white;
-	font-weight: 800;
+	font-weight: 700;
 	height: 60px;
-	transition: all .3s ease;
+	transition: all .2s ease;
 	&:hover,
 	&:active,
 	&:focus {
@@ -1221,7 +1234,6 @@ blockquote {
 		margin: 2.5rem 0;
 	}
 }
-
 
 /* WordPress */
 
@@ -1253,6 +1265,10 @@ blockquote {
 #cancel-comment-reply-link {
 	font-size: .8rem;
 	display: none;
+}
+
+.comment-respond {
+	margin-bottom: 3rem;
 }
 
 // Date and Time meta data below commentator's name
@@ -1368,6 +1384,7 @@ blockquote {
 .posts-links,
 .comment-links {
 	padding: 1rem 0;
+	margin: 2rem 0;
 	&:after {
 		content: '';
 		display: table;
@@ -1403,7 +1420,6 @@ blockquote {
 	}
 }
 
-
 /* Author Background Highlighting For Threaded Comments */
 
 .bypostauthor>div .fn {
@@ -1411,7 +1427,6 @@ blockquote {
 	box-shadow: inset 0 -8px 0 #FFEA96;
 	padding-right: 4px;
 }
-
 
 /* Tables */
 
@@ -1460,7 +1475,6 @@ caption {
 		width: 100%;
 	}
 }
-
 
 /* Helpers */
 
@@ -1574,9 +1588,7 @@ caption {
 	}
 }
 
-
 /* Landing */
-
 
 /* Search */
 
@@ -1654,7 +1666,6 @@ caption {
 .secondary {
 	color: $secondary !important;
 }
-
 
 /* Selections */
 

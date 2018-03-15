@@ -2,7 +2,7 @@
   =============== */
 
 code {
-	font-size: 14px;
+	font-size: 15px;
 }
 
 .terminal {
@@ -14,7 +14,7 @@ code {
 	border-radius: $br;
 	padding-top: 45px;
 	margin: 2rem 0;
-	font-size: 14px;
+	font-size: 15px;
 	&::before {
 		content: '\2022 \2022 \2022';
 		position: absolute;
@@ -95,7 +95,7 @@ kbd {
 	margin: 0 .1em;
 	padding: .1em .6em;
 	text-shadow: 0 1px 0 white;
-	font-size: 14px;
+	font-size: 15px;
 }
 
  

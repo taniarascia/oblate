@@ -22,7 +22,6 @@
 
 .buttons-hover {
 	background: darken($link-color, 5%);
-	border-bottom: 0 !important;
 	text-decoration: none;
 }
 
@@ -81,13 +80,13 @@ a.button.ghost-button,
 // Other button
 a.button.secondary-button,
 .button.secondary-button {
-	background: darken($green, 15%);
-	color: white;
+	background: #F4F5F6;
+	color: #333;
+	border: 1px solid #E6E7EB;
 	&:hover,
 	&:focus,
 	&:active {
-		color: white;
-		background: darken($green, 20%);
+		border: 1px solid darken(#E6E7EB, 10%);
 	}
 }
 

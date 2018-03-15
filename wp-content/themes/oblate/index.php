@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<header class="page-header">
+<header class="page-header gradient mb">
 	<div class="small-container">
 		<h1>Posts</h1>
 	</div>
