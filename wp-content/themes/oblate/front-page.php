@@ -6,7 +6,7 @@
 	<div class="container">
 		<div class="header-main">
 			<h1>Tania Rascia</h1>
-			<p>I'm a developer, designer, writer, and autodidact. Everything on this website is for you, ad-free. <a href="<?php echo site_url(); ?>/me">More about me</a>.</p>
+			<p>I'm a developer, designer, writer, and autodidact. Everything on this website is for you, ad-free. <a href="<?php echo site_url(); ?>/me">About me</a>.</p>
 			<article class="quick quick-header">
 				<a href="<?php echo site_url(); ?>/developing-a-wordpress-theme-from-scratch/"><img src="<?php echo site_url(); ?>/wp-content/uploads/wp-2-150x150.png"> WordPress</a>
 				<a href="<?php echo site_url(); ?>/what-is-bootstrap-and-how-do-i-use-it/"><img src="<?php echo site_url(); ?>/wp-content/uploads/bs.png"> Bootstrap</a>
@@ -21,7 +21,7 @@
 			</article>
 		</div>
 		<div class="header-email">
-			<p>Get friendly updates</p>
+			<p>Get friendly updates, infrequently.</p>
 			<div id="mailchimp">
 				<form action="//taniarascia.us12.list-manage.com/subscribe/post?u=ec794fab6e35a491a001cc25d&amp;id=5276386071" method="post"
 				  id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

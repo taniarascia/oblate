@@ -97,7 +97,7 @@ h5 {
 	line-height: 1.2;
 	font-weight: 700;
 	color: $heading-color;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1.25rem;
 }
 
 h1:not(:first-child),
@@ -121,7 +121,7 @@ h3 {
 
 h4 {
 	font-size: 1.3rem;
-	padding-bottom: .5rem;
+	padding-bottom: .3rem;
 	color: lighten($heading-color, 22%);
 	border-bottom: 1px solid darken($border, 8%);
 }
@@ -144,10 +144,12 @@ h5 {
 		font-size: 2.5rem;
 	}
 	h2 {
-		font-size: 2.6rem;
+		margin-bottom: 1.1rem;
+		font-size: 2.2rem;
 	}
 	h3 {
-		font-size: 2rem;
+		margin-bottom: 1.1rem;
+		font-size: 1.8rem;
 	}
 	h4 {
 		font-size: 1.6rem;
@@ -504,17 +506,6 @@ a.current {
 	text-align: center;
 	padding: 2rem 0;
 	font-size: 1.1rem;
-	.header-email {
-		display: none;
-		text-align: center;
-		background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-		box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-		color: #6f1c26;
-		flex-direction: column;
-		border-radius: $br;
-		padding: 2rem;
-		margin: 2rem 0 0;
-	}
 	h1 {
 		margin: 0 0 1.5rem;
 		font-weight: 700;
@@ -536,6 +527,27 @@ a.current {
 	p {
 		font-size: 1.3rem;
 	}
+}
+.header-email, .article-email {
+	text-align: center;
+	background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+	color: #6f1c26;
+	flex-direction: column;
+	border-radius: $br;
+	padding: 2rem;
+	margin: 2rem 0 0;
+}
+
+.article-email {
+	text-align: left;
+	h3 {
+		margin-top: 0;
+	}
+}
+
+.header-email {
+	display: none;
 }
 
 @include small-breakpoint {
@@ -572,19 +584,23 @@ a.current {
 				min-width: 180px;
 			}
 		}
-		.header-email {
-			display: block;
-			margin: 0 0 0 3rem;
-			padding: 2.5rem;
-			h3 {
-				color: $heading-color;
-				font-size: 1.5rem;
-			}
-		}
+
 		h1 {
 			font-size: 2.25rem;
 		}
 	}
+}
+
+.header-email, .article-email {
+	display: block;
+	padding: 2.5rem;
+	h3 {
+		color: $heading-color;
+		font-size: 1.5rem;
+	}
+}
+
+#mailchimp-article form {
 }
 
 @include large-breakpoint {
@@ -725,12 +741,17 @@ a.current {
 		margin: .5rem 0 1rem;
 	}
 	img {
-		float: left;
-		margin-right: 2rem;
+		margin: 1rem 2rem 0 0;
 		max-width: 100px;
 		width: 100px;
 		max-height: 100px;
 	}
+}
+
+.excerpt {
+	font-family: $special-heading;
+	color: lighten($heading-color, 22%);
+	font-size: 1.4rem;
 }
 
 @include small-breakpoint {
@@ -981,6 +1002,7 @@ a.current {
 	font-size: .9rem;
 	font-weight: 400;
 	margin-bottom: .5rem;
+	min-width: 120px;
 }
 
 @include small-breakpoint {
@@ -1092,7 +1114,7 @@ blockquote {
 	}
 	a {
 		margin: 0 5px;
-		color: lighten($nav-bg, 30%);
+		color: lighten($nav-bg, 35%);
 		&:hover {
 			color: $pink;
 		}
@@ -1109,6 +1131,10 @@ blockquote {
 .flex-container {
 	display: flex;
 	flex-direction: column;
+}
+
+.fs {
+	align-items: flex-start !important;
 }
 
 @include mid-breakpoint {
