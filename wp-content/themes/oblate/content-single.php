@@ -1,23 +1,25 @@
 <article id="post-<?php the_ID(); ?>">
-
 	<header class="single-header alternate-background">
-		<div class="small-container">
+		<div class="container">
 		<div class="flex-container fs">
 			<?php if ( get_post_thumbnail_id() ) { ?>
 			<a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="150" width="150"></a>
 			<?php } ?>
-			<div>
-			<h1>
-				<?php the_title(); ?>
-			</h1>
-			<div class="the-time">
-				By <a href="<?php echo site_url(); ?>/me">Tania Rascia</a> &nbsp;/&nbsp;
-				<?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?>
-				<time datetime="<?php the_time( 'Y-m-d' ); ?>"> &nbsp;/&nbsp;
-				<?php the_time( 'F j, Y' ); ?></time>
+				<div class="single-title">
+					<h1>
+						<?php the_title(); ?>
+					</h1>
+					<div class="the-time">
+						By <a href="<?php echo site_url(); ?>/me">Tania Rascia</a> &nbsp;/&nbsp;
+						<?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?>
+						<time datetime="<?php the_time( 'Y-m-d' ); ?>"> &nbsp;/&nbsp;
+						<?php the_time( 'F j, Y' ); ?></time>
+				</div>	
 			</div>
-			</div>
-			</div>
+			<div class="single-social">
+						<a class="button secondary-button" href="https://github.com/taniarascia" target="_blank"><i class="fa fa-github"></i> &nbsp;GitHub</a>
+						<a class="button secondary-button" href="https://twitter.com/intent/tweet?text=<?php echo the_title(); ?>&amp;url=<?php echo the_permalink(); ?>&amp;hashtags=webdev&amp;via=taniarascia" target="_blank"><i class="fa fa-twitter"></i> &nbsp;Twitter</a>
+				</div>
 		</div>
 	</header>
 

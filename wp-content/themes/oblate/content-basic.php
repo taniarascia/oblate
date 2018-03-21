@@ -1,7 +1,7 @@
 <article id="post-<?php the_ID(); ?>" class="search-results">
 	<div>
 	<?php if ( get_post_thumbnail_id() ) { ?>
-				<a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="150" width="150"></a>
+				<a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="150" width="150" class="search-image"></a>
 				<?php } ?>
 	</div>
 	<div>

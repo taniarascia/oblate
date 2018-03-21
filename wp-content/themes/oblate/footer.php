@@ -4,12 +4,18 @@
  <div class="small-container flex-container">
 	 <div class="footer-social">
      <h3>Tania Rascia</h3>
-		 <p>
-       <a href="https://github.com/taniarascia"><i class="fa fa-github"></i> GitHub</a> |
-       <a href="<?php echo site_url(); ?>/blog">Posts</a> |
-       <a href="<?php echo site_url(); ?>/me">About</a> |
-       <a href="<?php echo site_url(); ?>/contact">Contact</a>
+     <p>
+       <a href="<?php echo site_url(); ?>/blog">Posts</a>&nbsp;|&nbsp;
+       <a href="<?php echo site_url(); ?>/me">About</a>&nbsp;|&nbsp; 
+       <a href="<?php echo site_url(); ?>/contact">Contact</a>&nbsp;|&nbsp;
+       <a href="https://github.com/taniarascia/ama/issues/new" target="_blank">AMA</a>
       </p>
+      <p>
+        <a href="https://github.com/taniarascia" target="_blank"><i class="fa fa-github"></i> GitHub</a>&nbsp;|&nbsp; 
+        <a href="https://twitter.com/taniarascia" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>&nbsp;|&nbsp;
+        <a href="https://linkedin.com/in/taniarascia" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
+    </p>
+		
 	 </div>
 	 <div class="footer-support">
    <p>Get friendly updates on my tutorials for <strong>web designers and developers</strong>, sent out infrequently.</p>

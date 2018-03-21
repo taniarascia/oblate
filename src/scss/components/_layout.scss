@@ -97,7 +97,7 @@ h5 {
 	line-height: 1.2;
 	font-weight: 700;
 	color: $heading-color;
-	margin-bottom: 1.25rem;
+	margin-bottom: 1rem;
 }
 
 h1:not(:first-child),
@@ -199,11 +199,11 @@ ul li ul {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1120px;
 }
 
 .large-container {
-	max-width: 1200px;
+	max-width: 1120px;
 }
 
 @include small-breakpoint {
@@ -239,7 +239,7 @@ ul li ul {
 }
 
 .nav-container {
-	max-width: 1200px;
+	max-width: 1120px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
@@ -421,6 +421,7 @@ a.current {
 	display: flex;
 	height: 50px;
 	border-radius: 6px;
+	margin-left: 2rem;
 }
 
 .search-div {
@@ -507,7 +508,7 @@ a.current {
 	padding: 2rem 0;
 	font-size: 1.1rem;
 	h1 {
-		margin: 0 0 1.5rem;
+		margin: 0 0 .5rem;
 		font-weight: 700;
 		line-height: 1.2;
 		font-size: 2.25rem;
@@ -542,7 +543,7 @@ a.current {
 .article-email {
 	text-align: left;
 	h3 {
-		margin-top: 0;
+		margin-top: 0; 
 	}
 }
 
@@ -589,16 +590,20 @@ a.current {
 			font-size: 2.25rem;
 		}
 	}
-}
-
-.header-email, .article-email {
-	display: block;
-	padding: 2.5rem;
-	h3 {
-		color: $heading-color;
-		font-size: 1.5rem;
+	.header-email, .article-email {
+		display: block;
+		padding: 2.5rem;
+		h3 {
+			color: $heading-color;
+			font-size: 1.5rem;
+		}
+	}
+	.header-email {
+		margin: 2rem;
 	}
 }
+
+
 
 #mailchimp-article form {
 }
@@ -638,13 +643,16 @@ a.current {
 }
 
 .top-title {
-	margin-top: 2.5rem;
+	margin-top: .5rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
 @include small-breakpoint {
+	.top-title {
+		margin-top: 2rem;
+	}
 	.top {
 		h2 {
 			padding: 0;
@@ -734,29 +742,70 @@ a.current {
 
 .single-header {
 	text-align: left;
-	padding: 2rem 0;
-	margin-bottom: 3rem;
+	padding: 1.5rem 0;
+	margin-bottom: 1.5rem;
 	border-bottom: 1px solid $border;
 	h1 {
 		margin: .5rem 0 1rem;
 	}
 	img {
-		margin: 1rem 2rem 0 0;
-		max-width: 100px;
-		width: 100px;
-		max-height: 100px;
+		margin: 1rem 2.25rem 0 0;
+		max-width: 75px;
+		width: 75px;
+		max-height: 75px;
+	}
+}
+
+.single-social {
+	.fa {
+		font-size: 1.2rem;
+	}
+	a.secondary-button {
+		font-size: 1rem;
+		padding: .5rem 1rem;
+		margin: 1rem 0;
+		background: white;
+		transition: all .2s ease;
+		&:hover {
+			transform: translate3D(0, -1px, 0);
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+		}
+	}
+}
+
+@include small-breakpoint {
+	.single-title {
+		flex: 1 0 calc(100% - 320px);
+	}
+	.single-social {
+		max-width: 160px;
+		margin-top: 1rem;
+		.fa {
+			font-size: 1.5rem;
+		}
+		a.secondary-button {
+			padding: .75rem 1.5rem;
+			font-size: 1.1rem;
+			margin: 0 0 .5rem;
+		}
 	}
 }
 
 .excerpt {
 	font-family: $special-heading;
 	color: lighten($heading-color, 22%);
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 }
 
 @include small-breakpoint {
+	.excerpt {
+		font-family: $special-heading;
+		color: lighten($heading-color, 22%);
+		font-size: 1.4rem;
+	}
 	.single-header {
 		padding: 3rem 0;
+		margin-bottom: 2rem;
 		img {
 			max-width: 125px;
 			width: 125px;
@@ -772,9 +821,9 @@ a.current {
 
 @include large-breakpoint {
 	.single-header {
-		padding: 4rem 0;
+		padding: 3.5rem;
 		h1 {
-			margin: .5rem 0 1rem;
+			margin: 1rem 0;
 		}
 	}
 	.bright-header {
@@ -785,7 +834,7 @@ a.current {
 }
 
 .single-body {
-	margin-bottom: 5rem;
+	margin-bottom: 4rem;
 }
 
 /* Article Excerpts */
@@ -1113,10 +1162,11 @@ blockquote {
 		margin-bottom: .5rem;
 	}
 	a {
-		margin: 0 5px;
+		margin: 0 5px 0 0;
 		color: lighten($nav-bg, 35%);
 		&:hover {
-			color: $pink;
+			color: white;
+			text-decoration: none;
 		}
 	}
 }
@@ -1135,6 +1185,7 @@ blockquote {
 
 .fs {
 	align-items: flex-start !important;
+	justify-content: flex-start !important;
 }
 
 @include mid-breakpoint {
@@ -1646,6 +1697,9 @@ caption {
 	p {
 		margin-bottom: 0;
 		color: $light-font;
+	}
+	.search-image {
+		margin-top: 1.75rem;
 	}
 }
 

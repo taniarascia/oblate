@@ -6,7 +6,7 @@
 	<div class="container">
 		<div class="header-main">
 			<h1>Tania Rascia</h1>
-			<p>I'm a developer, designer, writer, and autodidact. Everything on this website is for you, ad-free. <a href="<?php echo site_url(); ?>/me">About me</a>.</p>
+			<p>I'm a developer, designer, writer, and autodidact. Everything on this website is for you, ad-free.<br> <a href="<?php echo site_url(); ?>/me">More about me</a>.</p>
 			<article class="quick quick-header">
 				<a href="<?php echo site_url(); ?>/developing-a-wordpress-theme-from-scratch/"><img src="<?php echo site_url(); ?>/wp-content/uploads/wp-2-150x150.png"> WordPress</a>
 				<a href="<?php echo site_url(); ?>/what-is-bootstrap-and-how-do-i-use-it/"><img src="<?php echo site_url(); ?>/wp-content/uploads/bs.png"> Bootstrap</a>
@@ -80,8 +80,8 @@
 
 		<div class="grid">
 			<?php $args = array(
-				'order' => 'asc',
-				'posts_per_page' => '3',
+				'order' => 'desc',
+				'posts_per_page' => '6',
 				'category_name' => 'Popular',
 				'category__not_in' => array( 5 ),
 			);
