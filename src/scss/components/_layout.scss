@@ -741,7 +741,7 @@ a.current {
 /* Articles */
 
 .single-header {
-	text-align: left;
+	text-align: center;
 	padding: 1.5rem 0;
 	margin-bottom: 1.5rem;
 	border-bottom: 1px solid $border;
@@ -749,7 +749,7 @@ a.current {
 		margin: .5rem 0 1rem;
 	}
 	img {
-		margin: 1rem 2.25rem 0 0;
+		margin: 0 0 1rem;
 		max-width: 75px;
 		width: 75px;
 		max-height: 75px;
@@ -774,17 +774,12 @@ a.current {
 }
 
 @include small-breakpoint {
-	.single-title {
-		flex: 1 0 calc(100% - 320px);
-	}
 	.single-social {
-		max-width: 160px;
 		margin-top: 1rem;
 		.fa {
 			font-size: 1.5rem;
 		}
 		a.secondary-button {
-			padding: .75rem 1.5rem;
 			font-size: 1.1rem;
 			margin: 0 0 .5rem;
 		}
