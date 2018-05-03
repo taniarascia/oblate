@@ -1,4 +1,4 @@
-<header class="page-header">
+<header class="page-header gradient mb">
 	<div class="small-container">
 		<h1>
 			<?php the_title(); ?>
@@ -8,7 +8,7 @@
 
 <section>
 	<article>
-		<div class="container">
+		<div class="small-container">
 			<?php the_content(); ?>
 		</div>
 	</article>

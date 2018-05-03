@@ -917,6 +917,8 @@ a.current {
 	}
 	.cell {
 		padding: 2rem;
+		flex: 1 1 calc(50% - 1.5rem);
+		max-width: calc(50% - 1.5rem);
 	}
 }
 
@@ -1136,6 +1138,47 @@ blockquote {
 }
 
 /* Footer */
+
+.new-moon {
+	background: #111;
+	h1 {
+		color: white;
+	}
+	p {
+		color: rgba(255,255,255,.8);
+	}
+	.sub {
+		font-family: $special-heading;
+		color: $yellow;
+	}
+	.nm-logo {
+		margin: 2rem 0 -20px 0;
+		max-width: 125px;
+		width: 125px;
+		height: auto;
+	}
+}
+
+.nm {
+	margin: 0 !important;
+}
+
+.programs {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	a {
+		display: block;
+	}
+	img {
+		display: block;
+		width: 50px;
+		max-width: 50px;
+		height: 50px;
+		flex: 1;
+		margin: 0 .5rem;
+	}
+}
 
 .footer {
 	background: $nav-bg;
@@ -1740,6 +1783,19 @@ caption {
 
 .secondary {
 	color: $secondary !important;
+}
+
+.green {
+	color: $green;
+}
+
+/* EDD */
+
+.edd-submit.button.blue, .edd-submit.button {
+	background: $link-color;
+	border: 0;
+	border-radius: $br;
+	color: white;
 }
 
 /* Selections */

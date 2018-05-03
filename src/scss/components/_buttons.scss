@@ -90,6 +90,20 @@ a.button.secondary-button,
 	}
 }
 
+// Other button
+a.button.paypal-button,
+.button.paypal-button {
+	background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+	color: #6f1c26;
+	border: 1px solid darken($yellow, 10%);
+	margin-bottom: 1rem;
+	&:hover,
+	&:focus,
+	&:active {
+		border: 1px solid lighten($yellow, 30%);
+	}
+}
+
 // Tag button
 a.tag-button,
 .tag-button {
@@ -117,4 +131,11 @@ a.tag-button,
 	font-weight: 600;
 	margin-right: .5rem;
 	text-transform: uppercase;
+}
+
+#edd-purchase-button, .edd-submit, input[type=submit].edd-submit {
+	@extend .buttons;
+	&:hover {
+		@extend .buttons-hover;	
+	}
 }

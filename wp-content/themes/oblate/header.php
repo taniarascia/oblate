@@ -10,7 +10,7 @@
 	<meta name="description" content="Web developer, designer, autodidact. Tania breaks down complex concepts in a clear, simple way for all skill levels.">
 	<?php } ?>
 
-	<?php wp_head(); ?>
+
 
 	<?php if (!isset($_SERVER['HTTP_USER_AGENT']) || stripos($_SERVER['HTTP_USER_AGENT'], 'Speed Insights') === false): ?>
 
@@ -32,7 +32,7 @@
 	</script>
 
 	<?php endif; ?>
-
+	<?php wp_head(); ?>
 </head>
 
 <body>

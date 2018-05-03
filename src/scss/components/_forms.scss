@@ -98,3 +98,7 @@ span.wpcf7-not-valid-tip {
 		display: block;
 	}
 }
+
+#edd_checkout_form_wrap input[type=email], #edd_checkout_form_wrap input[type=password], #edd_checkout_form_wrap input[type=tel], #edd_checkout_form_wrap input[type=text], #edd_checkout_form_wrap textarea {
+	padding: 1rem 1.25rem;
+}

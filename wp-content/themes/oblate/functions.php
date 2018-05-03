@@ -115,39 +115,39 @@ add_filter('xmlrpc_enabled', '__return_false');
 remove_action( 'wp_head', 'rsd_link' );
 remove_action( 'wp_head', 'wlwmanifest_link' );
 
-// OG Tags
-function meta_og() {
+function insert_fb_in_head() {
 	global $post;
-	if ( is_single() ) {
-		if(has_post_thumbnail($post->ID)) {
-			$img_src = wp_get_attachment_image_src(get_post_thumbnail_id( $post->ID ), 'thumbnail');
-		} 
-		$excerpt = strip_tags($post->post_content);
-		$excerpt_more = '';
-		if (strlen($excerpt) > 155) {
-			$excerpt = substr($excerpt,0,155);
-			$excerpt_more = ' ...';
-		}
-		$excerpt = str_replace('"', '', $excerpt);
-		$excerpt = str_replace("'", '', $excerpt);
-		$excerptwords = preg_split('/[\n\r\t ]+/', $excerpt, -1, PREG_SPLIT_NO_EMPTY);
-		array_pop($excerptwords);
-		$excerpt = implode(' ', $excerptwords) . $excerpt_more;
-		?>
-<meta name="author" content="Tania Rascia">
-<meta name="description" content="<?php echo $excerpt; ?>">
-<meta property="og:title" content="<?php echo the_title(); ?>">
-<meta property="og:description" content="<?php echo $excerpt; ?>">
-<meta property="og:type" content="article">
-<meta property="og:url" content="<?php echo the_permalink(); ?>">
-<meta property="og:site_name" content="Tania Rascia - Web Design and Development">
-<meta property="og:image" content="<?php echo $img_src[0]; ?>">
-<?php
-	} else {
-			return;
+	if ( !is_singular()) return; 
+	
+	$meta = strip_tags($post->post_content);
+	$meta = strip_shortcodes($post->post_content);
+	$meta = str_replace(array("\n", "\r", "\t"), ' ', $meta);
+	$meta = substr($meta, 0, 125);    
+    $meta = strip_tags($meta);
+    
+    // basics, same for all    
+    echo '<meta property="og:locale" content="en_US">' . "\n";
+    echo '<meta property="og:type" content="article">' . "\n";
+    echo '<meta name="twitter:creator" content="@taniarascia">' . "\n";
+    echo '<meta name="twitter:site" content="@taniarascia">' . "\n";
+    echo '<meta name="twitter:domain" content="Tania Rascia">' . "\n";
+    echo '<meta property="og:site_name" content="Tania Rascia">' . "\n";
+    // title, URL, description
+    echo '<meta property="og:title" content="' . htmlspecialchars(get_the_title()) . '">' . "\n";
+    echo '<meta property="og:url" content="' . get_permalink() . '">' . "\n";
+    echo '<meta property="og:description" content="' . $meta . '">' . "\n";
+    echo '<meta name="description" content="' . $meta . '">' . "\n";
+	
+    // post image
+    if (!has_post_thumbnail( $post->ID )) { 
+    		echo '<meta property="og:image" content="https://www.taniarascia.com/wp-content/uploads/face-300x300.jpg"/>' . "\n";
+	}
+	else{
+		$thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
+		echo '<meta property="og:image" content="' . esc_attr( $thumbnail_src[0] ) . '">' . "\n";
 	}
 }
-add_action('wp_head', 'meta_og', 5);
+add_action( 'wp_head', 'insert_fb_in_head', 5 );
 
 /** 
  * Escape HTML

@@ -9,6 +9,9 @@
 				<?php the_title(); ?>
 			</a>
 		</h1>
+		<div class="the-time text-center">
+			<time><?php the_time( 'F j, Y' ); ?></time>
+		</div>	
 	<div>
 		<?php the_excerpt(); ?>
 	</div>

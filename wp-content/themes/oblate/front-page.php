@@ -59,7 +59,7 @@
 		<div class="grid">
 			<?php $args = array(
 				'order' => 'desc',
-				'posts_per_page' => '3',
+				'posts_per_page' => '6',
 				'category_name' => 'Tutorials',
 				'category__not_in' => array( 5 ),
 			);
@@ -105,7 +105,7 @@
 
 			<?php $args = array(
 				'order' => 'desc',
-				'posts_per_page' => '3',
+				'posts_per_page' => '6',
 				'category_name' => 'Thoughts',
 				'category__not_in' => array( 5 ),
 			);
