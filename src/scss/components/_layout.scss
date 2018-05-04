@@ -1249,7 +1249,7 @@ blockquote {
 		flex: 1;
 		margin: 0 .5rem;
 		transition: transform .1s linear;
-		&:hover {
+		&:hover { 
 			transform: scale(1.1);
 		}
 	}
