@@ -199,11 +199,11 @@ ul li ul {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1130px;
 }
 
 .large-container {
-	max-width: 1200px;
+	max-width: 1130px;
 }
 
 @include small-breakpoint {
@@ -239,7 +239,7 @@ ul li ul {
 }
 
 .nav-container {
-	max-width: 1200px;
+	max-width: 1130px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
@@ -613,7 +613,8 @@ a.current {
 
 @include large-breakpoint {
 	.header {
-		padding: 7rem 0;
+		padding: 6rem 0;
+		max-height: 100vh;
 		h1 {
 			font-size: 2.75rem;
 		}
