@@ -1248,7 +1248,6 @@ blockquote {
 		height: 50px;
 		flex: 1;
 		margin: 0 .5rem;
-		will-change: transform;
 		transition: transform .1s linear;
 		&:hover {
 			transform: scale(1.1);
@@ -1845,7 +1844,6 @@ caption {
 }
 
 .headroom {
-	will-change: transform;
 	transition: transform 200ms linear;
 }
 
