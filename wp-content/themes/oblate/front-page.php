@@ -7,7 +7,7 @@
 		<div class="header-main">
 			<h1>Tania Rascia</h1>
 			<p>I'm a developer, designer, writer, and autodidact. Everything on this website is for you, <span class="green">ad-free</span>.
-			 <p>
+			 <p class="front-page-social">
 				 <a class="sh" href="<?php echo site_url(); ?>/me/" target="_blank"><i class="fa fa-heart"></i> About</a> 
 				<a class="sh" href="https://github.com/taniarascia" target="_blank"><i class="fa fa-github"></i> GitHub</a> 
 				<a class="sh" href="https://twitter.com/taniarascia" target="_blank"><i class="fa fa-twitter"></i> Twitter</a> 

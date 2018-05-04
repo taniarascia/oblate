@@ -504,7 +504,7 @@ a.current {
 /* Landing */
 
 .header {
-	height: calc(100vh - 80px);
+	height: calc(90vh - 80px);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -541,6 +541,16 @@ a.current {
 	border-radius: $br;
 	padding: 2rem;
 	margin: 2rem 0 0;
+}
+
+.front-page-social {
+	text-align: center;
+}
+
+@include small-breakpoint {
+	.front-page-social {
+		text-align: left;
+	}
 }
 
 .gradient a.sh {
@@ -622,7 +632,8 @@ a.current {
 }
 
 .gradient {
-	background: linear-gradient(to bottom right,#2A55F1, #162d81);
+	background: linear-gradient(to bottom right, darken($nav-bg, 10%), lighten($nav-bg, 15%));
+	//background: linear-gradient(to bottom right,#2A55F1, #162d81);
 	color: rgba(255,255,255,.8);
 	h1 {
 		color: white;
@@ -1198,7 +1209,8 @@ blockquote {
 
 .new-moon {
 	padding: 2rem 0;
-	background: radial-gradient(ellipse at top, #2A55F1, #193390, $nav-bg 60%);
+	background: linear-gradient(to bottom, darken($nav-bg, 10%), $nav-bg);
+	//background: radial-gradient(ellipse at top, #2A55F1, #193390, $nav-bg 60%);
 	h1 {
 		color: white;
 	}
@@ -1265,7 +1277,7 @@ blockquote {
 	.footer-social, .footer-support {
 		flex: 1;
 		max-width: 425px;
-		margin: 0 auto;
+		margin: 1rem auto;
 	}
 	strong {
 		color: #ddd;
