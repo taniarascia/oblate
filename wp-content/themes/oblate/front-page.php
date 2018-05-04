@@ -64,7 +64,7 @@
 			ruining my life, Tania."
 			<cite>&mdash; <a href="http://craiglam.com/" target="_blank">Craig Lam</a>, Web Developer</cite></blockquote>
 
-			<blockquote class="testimonial">"I look forward to anything and everything you put out. You’re like a online programming coach!"
+			<blockquote class="testimonial">"I look forward to anything and everything you put out. You’re like an online programming coach!"
 			<cite>&mdash; <a href="https://twitter.com/jondelbruggemma" target="_blank">Jon Delbrugge</a>, Mixed Martial Arts Fighter</cite></blockquote> 
 
 	</div>

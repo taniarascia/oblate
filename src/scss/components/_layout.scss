@@ -504,8 +504,11 @@ a.current {
 /* Landing */
 
 .header {
+	height: calc(100vh - 80px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	text-align: center;
-	padding: 2rem 0;
 	font-size: 1.1rem;
 	h1 {
 		margin: 0 0 1rem;
@@ -561,7 +564,6 @@ a.current {
 @include small-breakpoint {
 	.header {
 		text-align: left;
-		padding: 4rem 0;
 		.header-main {
 			max-width: 650px;
 		}
@@ -576,7 +578,6 @@ a.current {
 
 @include mid-breakpoint {
 	.header {
-		padding: 5rem 0;
 		.header-main {
 			margin-right: 2rem;
 			h1 {
@@ -613,8 +614,7 @@ a.current {
 
 @include large-breakpoint {
 	.header {
-		padding: 6rem 0;
-		max-height: 100vh;
+		max-height: 600px;;
 		h1 {
 			font-size: 2.75rem;
 		}
@@ -1008,7 +1008,7 @@ a.current {
 		flex-direction: column;
 		align-items: center;
 		border-radius: $br;
-		padding: 5px;
+		padding: 15px 5px;
 		margin: 2px;
 		font-size: .9rem;
 		font-weight: 400;
@@ -1065,12 +1065,12 @@ a.current {
 @include large-breakpoint {
 	.quick {
 		img {
-			width: 125px;
-			height: 125px;
-			max-width: 125px;
+			width: 100px;
+			height: 100px;
+			max-width: 100px;
 		}
 		a {
-			font-size: 1.1rem;
+			font-size: 1.05rem;
 			flex: 1 1 calc((100% / 6) - 50px);
 			max-width: calc(100% / 6);
 			padding: 25px;
@@ -1228,8 +1228,8 @@ blockquote {
 
 @include small-breakpoint {
 	.new-moon {
-		padding: 2.5rem 0 0;
-	}
+		padding: 2.5rem 0;
+	} 
 	.nm-ss {
 		display: block;
 	}
@@ -1278,7 +1278,7 @@ blockquote {
 	}
 	a {
 		margin: 0 5px 0 0;
-		color: #ffeea6;
+		color: lighten($nav-bg, 45%);
 		&:hover {
 			color: white;
 		}

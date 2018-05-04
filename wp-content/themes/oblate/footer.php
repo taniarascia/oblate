@@ -12,12 +12,10 @@
       <a target="_blank" href="https://packagecontrol.io/packages/New%20Moon%20Color%20Scheme"><img src="<?php echo site_url(); ?>/wp-content/uploads/sublime-150x150.png"></a>
       <a target="_blank" href="https://chrome.google.com/webstore/detail/devtools-theme-new-moon/lndddploiofhfpdcoclegenegblkhlfk?hl=en"><img src="<?php echo site_url(); ?>/wp-content/uploads/chrome-2-150x150.png"></a>
 </p>
-    <p>A middle-contrast, easy-on-the-eyes dark theme optimized for HTML, PHP, JavaScript, CSS, and Sass. Your new favorite theme.</p>
-    <a target="_blank" href="https://taniarascia.github.io/new-moon/" target="_blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/nmss.png" class="nm-ss"></a>
   </div>
 </footer>
 <footer class="footer">
- <div class="small-container flex-container">
+ <div class="container flex-container">
 	 <div class="footer-social">
      <h3>Tania Rascia</h3>
      <p>
