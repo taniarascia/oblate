@@ -2,7 +2,7 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<header class="page-header bright-header">
+<header class="page-header gradient">
 	<div class="small-container">
 		<h1>
 			<?php the_title(); ?>

@@ -4,7 +4,7 @@
   <div class="small-container text-center">
   <a href="https://taniarascia.github.io/new-moon/" target="_blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/newmoon-150x150.png" class="nm-logo"></a>
     <h1 class="nm">New Moon</h1>
-    <p class="sub">Beautiful Syntax Highlighting by Tania</p>
+    <p class="sub">Beautiful Syntax Highlighting</p>
     <p class="programs">
       <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode"><img src="<?php echo site_url(); ?>/wp-content/uploads/vsc-150x150.png"></a>
       <a target="_blank" href="https://github.com/taniarascia/new-moon"><img src="<?php echo site_url(); ?>/wp-content/uploads/brackets-1-150x150.png"></a>
@@ -41,6 +41,7 @@
 		
 	 </div>
 	 <div class="footer-support">
+   <h3>Mailing list</h3>
    <p>Get friendly updates on my tutorials for <strong>web designers and developers</strong>, sent out infrequently.</p>
 		<div id="mc_embed_signup">
 			<form action="//taniarascia.us12.list-manage.com/subscribe/post?u=ec794fab6e35a491a001cc25d&amp;id=5276386071" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

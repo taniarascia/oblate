@@ -20,7 +20,7 @@ $nav-bg: #272A34;
 
 $line-height: 1.6;
 
-$primary: #4CBBF9;
+$primary: #2768FF; 
 $secondary: #5EEDA3;
 
 /* Colors */
@@ -36,8 +36,8 @@ $light-font: #6d6e70;
 $bg: url("https://www.taniarascia.com/wp-content/uploads/pixels.png");
 $margin: 1.5rem;  
 
-$link-color: darken($blue, 15%);
-$alt-color: $pink;
+$link-color: $primary;
+$alt-color: $secondary;
 $heading-color: #222;
 $light-color: lighten($font-color, 30%);
 
