@@ -10,7 +10,13 @@
 	<meta name="description" content="Web developer, designer, autodidact. Tania breaks down complex concepts in a clear, simple way for all skill levels.">
 	<?php } ?>
 
-
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-W788DFR');</script>
+	<!-- End Google Tag Manager -->
 
 	<?php if (!isset($_SERVER['HTTP_USER_AGENT']) || stripos($_SERVER['HTTP_USER_AGENT'], 'Speed Insights') === false): ?>
 
@@ -36,6 +42,10 @@
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W788DFR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 	<h1 class="screen-reader-text">Tania Rascia Web Design and Development</h1>
 	<a class="screen-reader-text" href="#main-content">Skip Navigation</a>
 
