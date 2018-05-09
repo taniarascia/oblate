@@ -39,7 +39,8 @@
 
 <section class="choose-your-destiny text-center">
 	<div class="container">
-		<h2>Quick! I want to learn about...</h2>
+		<h2>Quick! I want an awesome introduction to...</h2>
+		<p>Click on any of the subjects below to go directly to a straightforward tutorial or resource.</p>
 		<article class="quick quick-header">
 			<a href="<?php echo site_url(); ?>/es6-syntax-and-feature-overview/"><img src="<?php echo site_url(); ?>/wp-content/uploads/js-150x150.png"> JavaScript ES6</a>
 			<a href="<?php echo site_url(); ?>/developing-a-wordpress-theme-from-scratch/"><img src="<?php echo site_url(); ?>/wp-content/uploads/wp-2-150x150.png"> WordPress</a>
@@ -74,6 +75,7 @@
 	<div class="container">
 		<div class="top-title">
 			<h2>Latest Tutorials</h2>
+			<p><a href="<?php echo site_url(); ?>/blog">View all</a></p>
 		</div>
 
 		<div class="grid">

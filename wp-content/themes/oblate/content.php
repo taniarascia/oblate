@@ -9,13 +9,10 @@
 				<?php the_title(); ?>
 			</a>
 		</h1>
-		<div class="the-time text-center">
-			<time><?php the_time( 'F j, Y' ); ?></time>
-		</div>	
 	<div>
 		<?php the_excerpt(); ?>
 	</div>
-	<div class="response"><a href="<?php the_permalink(); ?>">Read</a> |
+	<div class="response"><time><?php the_time( 'F j, Y' ); ?></time> |
 		<?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?>
 	</div>
 </article>
