@@ -1056,7 +1056,7 @@ a.current {
 		a {
 			font-size: 1rem;
 			flex: 1 1 calc((100% / 4) - 30px);
-			max-width: calc(100% / 4);
+			//max-width: calc(100% / 4);
 			padding: 15px;
 			margin: 5px;
 		}
@@ -1067,19 +1067,19 @@ a.current {
 	.quick {
 		a {
 			font-size: 1.1rem;
-			flex: 1 1 calc((100% / 7) - 50px);
-			max-width: calc(100% / 7);
+			flex: 1 1 calc((100% / 6) - 50px);
+			//max-width: calc(100% / 6);
 			padding: 25px;
 		}
-	} 
+	}
 }
 
 @include large-breakpoint {
 	.quick {
 		a {
 			font-size: 1.05rem;
-			flex: 1 1 calc((100% / 7) - 50px);
-			max-width: calc(100% / 7);
+			flex: 1 1 calc((100% / 6) - 50px);
+			//max-width: calc(100% / 6);
 			padding: 25px;
 		}
 	}
