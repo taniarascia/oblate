@@ -939,7 +939,7 @@ a.current {
 @include mid-breakpoint {
 	.cell {
 		display: block;
-		padding: 2rem 2rem 5rem;
+		padding: 2rem 2rem 6rem;
 		margin: .75rem;
 		flex: 1 1 calc(33% - 1.5rem);
 		max-width: calc(33% - 1.5rem);
@@ -960,6 +960,12 @@ a.current {
 			position: absolute;
 			bottom: 2rem;
 			left: 2rem;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100%;
+			time {
+				color: $light-color;
+			}
 		}
 		.cell-share {
 			display: block;
