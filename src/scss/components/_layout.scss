@@ -1065,11 +1065,6 @@ a.current {
 
 @include mid-breakpoint {
 	.quick {
-		img {
-			width: 100px;
-			height: 100px;
-			max-width: 100px;
-		}
 		a {
 			font-size: 1.1rem;
 			flex: 1 1 calc((100% / 6) - 50px);
@@ -1081,11 +1076,6 @@ a.current {
 
 @include large-breakpoint {
 	.quick {
-		img {
-			width: 100px;
-			height: 100px;
-			max-width: 100px;
-		}
 		a {
 			font-size: 1.05rem;
 			flex: 1 1 calc((100% / 6) - 50px);
