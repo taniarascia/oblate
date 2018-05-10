@@ -6,7 +6,8 @@
 	<div class="small-container">
 
 		<?php	comment_form( array(
-    					'title_reply' => 'Write a response'
+						'title_reply' => 'Write a response',
+						'comment_notes_after' => '<p>All code will be displayed literally.</p>'
 						)); ?>
 
 			<?php if ( have_comments() ) : ?>
