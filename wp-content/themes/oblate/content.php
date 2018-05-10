@@ -12,7 +12,7 @@
 	<div>
 		<?php the_excerpt(); ?>
 	</div>
-	<div class="response"><time><?php the_time( 'F j, Y' ); ?></time> |
+	<div class="response"><time><?php the_time( 'F j, Y' ); ?></time> 
 		<?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?>
 	</div>
 </article>

@@ -8,7 +8,7 @@
 			<h1>Tania Rascia</h1>
 			<p>I'm a developer, designer, writer, and autodidact. Everything on this website is for you, <span class="green">ad-free</span>.
 			 <p class="front-page-social">
-				 <a class="sh" href="<?php echo site_url(); ?>/me/" target="_blank"><i class="fa fa-heart"></i> About</a> 
+				 <a class="sh" href="<?php echo site_url(); ?>/me/"><i class="fa fa-heart"></i> About</a> 
 				<a class="sh" href="https://github.com/taniarascia" target="_blank"><i class="fa fa-github"></i> GitHub</a> 
 				<a class="sh" href="https://twitter.com/taniarascia" target="_blank"><i class="fa fa-twitter"></i> Twitter</a> 
 			</p>
@@ -40,7 +40,7 @@
 <section class="choose-your-destiny text-center">
 	<div class="container">
 		<h2>Quick! I want an awesome introduction to...</h2>
-		<p>Click on any of the subjects below to go directly to a straightforward tutorial or resource.</p>
+		<p>Click to go directly to a straightforward tutorial or resource.</p>
 		<article class="quick quick-header">
 			<a href="<?php echo site_url(); ?>/es6-syntax-and-feature-overview/"><img src="<?php echo site_url(); ?>/wp-content/uploads/js-150x150.png"> JavaScript/ES6</a>
 			<a href="<?php echo site_url(); ?>/developing-a-wordpress-theme-from-scratch/"><img src="<?php echo site_url(); ?>/wp-content/uploads/wp-2-150x150.png"> WordPress</a>
@@ -52,7 +52,7 @@
 			<a href="<?php echo site_url(); ?>/how-to-use-json-data-with-php-or-javascript/"><img src="<?php echo site_url(); ?>/wp-content/uploads/jsonimg-150x150.png"> JSON</a>
 			<a href="<?php echo site_url(); ?>/how-to-use-the-command-line-for-apple-macos-and-linux/"><img src="<?php echo site_url(); ?>/wp-content/uploads/terminal-150x150.png"> Command line</a>
 			<a href="<?php echo site_url(); ?>/create-a-simple-database-app-connecting-to-mysql-with-php/"><img src="<?php echo site_url(); ?>/wp-content/uploads/php-150x150.png"> PHP &amp; MySQL</a>
-			<a href="<?php echo site_url(); ?>/how-to-install-and-use-node-js-and-npm-mac-and-windows/"><img src="<?php echo site_url(); ?>/wp-content/uploads/nodejs-150x150.png"> Node</a>
+			<a href="<?php echo site_url(); ?>/how-to-install-and-use-node-js-and-npm-mac-and-windows/"><img src="<?php echo site_url(); ?>/wp-content/uploads/nodejs-150x150.png"> Node.js</a>
 			<a href="<?php echo site_url(); ?>/design-for-developers/"><img src="<?php echo site_url(); ?>/wp-content/uploads/coloricon-150x150.png"> Design</a>
 		</article>
 	</div>
@@ -75,7 +75,8 @@
 	<div class="container">
 		<div class="top-title">
 			<h2>Latest Tutorials</h2>
-			<p><a href="<?php echo site_url(); ?>/blog">View all</a></p>
+			<p>My most recent articles, tutorials, and resources.</p>
+			<p><a href="<?php echo site_url(); ?>/tutorials" class="button">View all</a></p>
 		</div>
 
 		<div class="grid">
@@ -98,6 +99,7 @@
 
 		<div class="top-title">
 			<h2>Most Popular</h2>
+			<p>The biggest crowd pleasers.</p>
 		</div>
 
 		<div class="grid">
@@ -121,6 +123,7 @@
 
 		<div class="top-title">
 			<h2>My Thoughts</h2>
+			<p>My life, observations, miscellaneous.</p>
 		</div>
 
 		<div class="grid">

@@ -13,9 +13,10 @@
 
 <section class="choose-your-destiny text-center">
 	<div class="container">
-		<h2>Quick! I want to learn about...</h2>
+	<h2>Quick! I want an awesome introduction to...</h2>
+		<p>Click to go directly to a straightforward tutorial or resource.</p>
 		<article class="quick quick-header">
-			<a href="<?php echo site_url(); ?>/es6-syntax-and-feature-overview/"><img src="<?php echo site_url(); ?>/wp-content/uploads/js-150x150.png"> JavaScript ES6</a>
+			<a href="<?php echo site_url(); ?>/es6-syntax-and-feature-overview/"><img src="<?php echo site_url(); ?>/wp-content/uploads/js-150x150.png"> JavaScript/ES6</a>
 			<a href="<?php echo site_url(); ?>/developing-a-wordpress-theme-from-scratch/"><img src="<?php echo site_url(); ?>/wp-content/uploads/wp-2-150x150.png"> WordPress</a>
 			<a href="<?php echo site_url(); ?>/what-is-bootstrap-and-how-do-i-use-it/"><img src="<?php echo site_url(); ?>/wp-content/uploads/bs-logo-150x150.png"> Bootstrap</a>
 			<a href="<?php echo site_url(); ?>/how-to-use-jquery-a-javascript-library/"><img src="<?php echo site_url(); ?>/wp-content/uploads/jq1-150x150.png"> jQuery</a>
@@ -25,7 +26,7 @@
 			<a href="<?php echo site_url(); ?>/how-to-use-json-data-with-php-or-javascript/"><img src="<?php echo site_url(); ?>/wp-content/uploads/jsonimg-150x150.png"> JSON</a>
 			<a href="<?php echo site_url(); ?>/how-to-use-the-command-line-for-apple-macos-and-linux/"><img src="<?php echo site_url(); ?>/wp-content/uploads/terminal-150x150.png"> Command line</a>
 			<a href="<?php echo site_url(); ?>/create-a-simple-database-app-connecting-to-mysql-with-php/"><img src="<?php echo site_url(); ?>/wp-content/uploads/php-150x150.png"> PHP &amp; MySQL</a>
-			<a href="<?php echo site_url(); ?>/how-to-install-and-use-node-js-and-npm-mac-and-windows/"><img src="<?php echo site_url(); ?>/wp-content/uploads/nodejs-150x150.png"> Node</a>
+			<a href="<?php echo site_url(); ?>/how-to-install-and-use-node-js-and-npm-mac-and-windows/"><img src="<?php echo site_url(); ?>/wp-content/uploads/nodejs-150x150.png"> Node.js</a>
 			<a href="<?php echo site_url(); ?>/design-for-developers/"><img src="<?php echo site_url(); ?>/wp-content/uploads/coloricon-150x150.png"> Design</a>
 		</article>
 	</div>
@@ -36,6 +37,21 @@
 		<blockquote class="testimonial">"By far your articles are the most crystal clear I've seen. An ace web developer who can articulate without ego? That's
 			gold!"
 			<cite>&mdash; Ralphie Harvey, Agile Software Product Delivery Expert</cite></blockquote>
+	</div>
+</section>
+
+<section class="topics">
+	<div class="small-container">
+		<h2>Topics</h2>
+		<ul>
+		<li><a href="#front-end">Front End &amp; Design</a></li>
+		<li><a href="#back-end">Back End Development</a></li>
+		<li><a href="#javascript">JavaScript</a></li>
+		<li><a href="#workflow">Developer Workflow</a></li>
+		<li><a href="#system">System Administration</a></li>
+		<li><a href="#wordpress">WordPress</a></li>
+		<li><a href="#general">General &amp; Miscellaneous</a></li>
+		</ul>
 	</div>
 </section>
 
@@ -56,6 +72,7 @@
 			if ( $frontend->have_posts() ) : ?>
 
 		<h2 id="front-end">Front End &amp; Design</h2>
+		<p>CSS, Sass, JavaScript, JS frameworks, APIs, and anything client-side.</p>
 		<div class="grid">
 
 			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
@@ -77,6 +94,7 @@
 			if ( $frontend->have_posts() ) : ?>
 
 		<h2 id="back-end">Back End Development</h2>
+		<p>Node.js, PHP, MySQL, and anything server-side. </p>
 		<div class="grid">
 
 			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
@@ -99,6 +117,7 @@
 			if ( $frontend->have_posts() ) : ?>
 
 		<h2 id="javascript">JavaScript</h2>
+		<p>JavaScript, ES6, frameworks, and libraries.</p>
 		<div class="grid">
 
 			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
@@ -121,6 +140,7 @@
 			if ( $frontend->have_posts() ) : ?>
 
 		<h2 id="workflow">Developer Workflow</h2>
+		<p>Task runners, preprocessors, and developer setup.</p>
 		<div class="grid">
 
 			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
@@ -143,6 +163,7 @@
 			if ( $frontend->have_posts() ) : ?>
 
 		<h2 id="system">System Administration</h2>
+		<p>Linux, virtual servers, command line, and AWS. </p>
 		<div class="grid">
 
 			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
@@ -165,6 +186,7 @@
 			if ( $frontend->have_posts() ) : ?>
 
 		<h2 id="wordpress">WordPress</h2>
+		<p>Custom theming guides on the most popular content management system.</p>
 		<div class="grid">
 
 			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>
@@ -187,6 +209,7 @@
 			if ( $frontend->have_posts() ) : ?>
 
 		<h2 id="general">General</h2>
+		<p>Setup, developer tips, SEO, and blogging.</p>
 		<div class="grid">
 
 			<?php while ( $frontend->have_posts() ) : $frontend->the_post(); ?>

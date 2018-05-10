@@ -260,7 +260,7 @@ ul li ul {
 		text-decoration: none;
 		color: lighten($nav-bg, 50%);
 		width: 100%;
-		flex: 1 1 33%;
+		flex: 1 1 calc(100% / 3);
 		text-align: center;
 		display: flex;
 		flex-direction: row;
@@ -558,6 +558,9 @@ a.current {
 	i {
 		margin-right: .25rem;
 	}
+	&:last-of-type {
+		margin-right: 0;
+	}
 }
 
 .article-email {
@@ -648,11 +651,11 @@ a.current {
 }
 
 .top {
-	padding: 1rem 0;
+	padding: 2rem 0;
 	background: $background;
 	h2 {
 		font-size: 1.2rem;
-		margin: .5rem .5rem 1rem;
+		margin: 1rem 0;
 		font-family: $font-family;
 	}
 }
@@ -848,7 +851,7 @@ a.current {
 /* Article Excerpts */
 
 .grid {
-	margin: 0 -.5rem;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -859,21 +862,22 @@ a.current {
 	transition: all .2s ease;
 	background: white;
 	margin: .5rem;
-	border: 0px solid $border;
+	border: 1px solid transparent;
 	border-radius: $br;
 	position: relative;
 	padding: 1.25rem;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 	flex: auto;
 	&:hover {
-		transform: translate3D(0, -1px, 0);
-		box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+		//transform: translate3D(0, -1px, 0);
+		//box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 	}
 	.flex {
 		display: flex;
 		align-items: center;
 	}
 	p {
+		display: none;
 		color: $light-font;
 		font-size: 1.05rem;
 		margin-bottom: 0;
@@ -931,8 +935,8 @@ a.current {
 	}
 	.cell {
 		padding: 2rem;
-		flex: 1 1 calc(50% - 1.5rem);
-		max-width: calc(50% - 1.5rem);
+		flex: 1 1 calc(50% - 1rem);
+		max-width: calc(50% - 1rem);
 	}
 }
 
@@ -940,9 +944,8 @@ a.current {
 	.cell {
 		display: block;
 		padding: 2rem 2rem 6rem;
-		margin: .75rem;
-		flex: 1 1 calc(33% - 1.5rem);
-		max-width: calc(33% - 1.5rem);
+		flex: 1 1 calc((100% / 3) - 1rem);
+		max-width: calc((100% / 3) - 1rem);
 		.flex {
 			margin-bottom: 1.5rem;
 		}
@@ -964,6 +967,7 @@ a.current {
 			transform: translateX(-50%);
 			width: 100%;
 			time {
+				margin-right: 1rem;
 				color: $light-color;
 			}
 		}
@@ -1056,7 +1060,6 @@ a.current {
 		a {
 			font-size: 1rem;
 			flex: 1 1 calc((100% / 4) - 30px);
-			//max-width: calc(100% / 4);
 			padding: 15px;
 			margin: 5px;
 		}
@@ -1066,9 +1069,8 @@ a.current {
 @include mid-breakpoint {
 	.quick {
 		a {
-			font-size: 1.1rem;
-			flex: 1 1 calc((100% / 6) - 50px);
-			//max-width: calc(100% / 6);
+			font-size: 1.05rem;
+			flex: 1 1 calc(100% / 6);
 			padding: 25px;
 		}
 	}
@@ -1077,9 +1079,8 @@ a.current {
 @include large-breakpoint {
 	.quick {
 		a {
-			font-size: 1.05rem;
-			flex: 1 1 calc((100% / 6) - 50px);
-			//max-width: calc(100% / 6);
+			flex: 1 1 calc(1200px / 6 - 50px);
+			width: 100%;
 			padding: 25px;
 		}
 	}
@@ -1087,16 +1088,58 @@ a.current {
 
 .tutorials-page {
 	h2 {
-		margin: 0 .5rem;
+		text-align: center;
+		margin: 0;
 		padding: 3rem 0 1rem;
 		font-weight: 700;
 		font-size: 1.4rem;
+		+ p {
+			text-align: center;
+		}
+	}
+}
+
+@include small-breakpoint {
+	.tutorials-page {
+		h2 {
+			font-size: 2rem;
+			padding: 4rem 0 1rem;
+			+ p {
+				padding-bottom: 1rem;
+			}
+		}
 	}
 }
 
 .topics {
+	text-align: center;
 	background: $background;
 	padding: 1rem 0;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		border-radius: $br;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+		li {
+			a {
+				overflow: hidden;
+				display: block;
+				color: #111;
+				font-family: $special-heading;
+				font-size: 1.1;
+				background: white;
+				border-top: 1px solid transparent;
+				border-bottom: 1px solid $border;
+				position: relative;
+				padding: 1.25rem;
+				&:hover {
+					background: #eaf1fe;
+					border: 1px solid #aecafd;
+				}
+			}
+		}
+	}
 }
 
 @include small-breakpoint {
