@@ -2,7 +2,7 @@
 	<header class="single-header alternate-background">
 		<div class="small-container">
 			<?php if ( get_post_thumbnail_id() ) { ?>
-			<a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="150" width="150"></a>
+			<img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="150" width="150">
 			<?php } ?>
 				<div class="single-title">
 					<h1>
