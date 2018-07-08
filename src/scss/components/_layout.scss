@@ -507,10 +507,10 @@ a.current {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	text-align: center;
-	padding: 30px 0;
+	padding: 45px 0;
 	font-size: 1.1rem;
 	h1 {
+		text-align: center;
 		margin: 0 0 1rem;
 		font-weight: 700;
 		line-height: 1.2;
@@ -528,8 +528,11 @@ a.current {
 		font-weight: 700;
 		color: $heading-color;
 	}
-	p {
+	.lead {
 		font-size: 1.2rem;
+	}
+	p {
+		font-size: 1.1rem;
 	}
 }
 .header-email, .article-email {
@@ -544,12 +547,14 @@ a.current {
 }
 
 .front-page-social {
-	text-align: center;
+	display: flex;
+    flex-direction: column;
 }
 
 @include small-breakpoint {
 	.front-page-social {
 		text-align: left;
+		display: block;
 	}
 }
 
@@ -1313,7 +1318,6 @@ blockquote {
 
 .footer {
 	background: $nav-bg;
-	text-align: center;
 	padding: 2rem 0;
 	color: lighten($nav-bg, 60%);
 	font-size: 1.05rem;
