@@ -6,7 +6,7 @@
 	<div class="container">
 		<div class="header-main">
 			<h1>Tania Rascia</h1>
-			<p class="lead">Hi, I'm Tania! I'm a <strong>developer, designer, writer, and former chef</strong>. I document everything I learn, package it into the easy-to-follow tutorials, and <strong>provide it on my website for <span class="green">free</span></strong>.</p>
+			<p class="lead">Hi, I'm Tania! I'm a <strong>developer, designer, writer, and former chef</strong>. I document everything I learn, package it into easy-to-follow tutorials, and <strong>provide it on my website for <span class="green">free</span></strong>.</p>
 			<p>I love creating open-source projects from scratch. <a href="https://taniarascia.github.io/primitive/" target="_blank">Primitive</a> is my Sass/CSS framework, <a href="https://github.com/taniarascia/laconia" target="_blank">Laconia</a> is my PHP MVC framework, and <a href="http://taniarascia.github.io/new-moon/" target="_blank">New Moon</a> is my code syntax theme, available on VSCode, Atom, Sublime, Brackets, and Chrome DevTools. I also occasionally write for <a href="https://www.digitalocean.com/community/tutorial_series/how-to-code-in-javascript">DigitalOcean</a> and <a href="https://www.sitepoint.com/beginners-guide-javascript-variables-and-datatypes/">SitePoint</a>.</p>
 			 <p class="front-page-social text-center">
 				<a class="sh" href="<?php echo site_url(); ?>/me/"><i class="fa fa-heart"></i> About me</a> 
