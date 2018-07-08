@@ -10,7 +10,7 @@
        <a href="https://twitter.com/taniarascia">Twitter</a>&nbsp;|&nbsp;
        <a href="<?php echo site_url(); ?>/contact">Contact</a>
       </p>
-    <p>I'm Tania, a <strong>designer, developer, writer, and former chef</strong> from Chicago. I currently work full-time as a web developer, and sometimes I write for <a href="https://www.digitalocean.com/community/tutorial_series/how-to-code-in-javascript">DigitalOcean</a> and SitePoint. I love to create things for the web. <a href="<?php echo site_url(); ?>/contact">Say hello</a>!</p>
+    <p>I'm <a href="<?php echo site_url(); ?>/me">Tania</a>, a <strong>designer, developer, writer, and former chef</strong> from Chicago. I currently work full-time as a web developer, and sometimes I write for <a href="https://www.digitalocean.com/community/tutorial_series/how-to-code-in-javascript">DigitalOcean</a> and SitePoint. I love to create things for the web.</p>
 		
 	 </div>
 	 <div class="footer-support">
