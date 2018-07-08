@@ -1336,10 +1336,10 @@ blockquote {
 		margin-bottom: .5rem;
 	}
 	a {
-		margin: 0 5px 0 0;
-		color: lighten($nav-bg, 45%);
+		color: $keyword;
+		font-weight: 700;
 		&:hover {
-			color: white;
+			color: darken($keyword, 10%);
 		}
 	}
 }

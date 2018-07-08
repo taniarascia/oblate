@@ -29,7 +29,7 @@
 				<p>
 					<img src="<?php echo site_url(); ?>/wp-content/uploads/face-300x300.jpg" class="my-avatar">
 					<h3>Tania Rascia</h3>
-					<p>I'm Tania, a designer, developer, writer, and former chef from Chicago. I currently work full-time as a PHP developer, and sometimes I write for publications like DigitalOcean and SitePoint. I love to create things for the web. </p>
+					<p>I'm Tania, a <strong>designer, developer, writer, and former chef</strong> from Chicago. I currently work full-time as a web developer, and sometimes I write for <a href="https://www.digitalocean.com/community/tutorial_series/how-to-code-in-javascript">DigitalOcean</a> and SitePoint. I love to create things for the web. <a href="<?php echo site_url(); ?>/contact">Say hello</a>!</p>
 				</p>
 			</div>
 
