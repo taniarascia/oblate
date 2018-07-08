@@ -9,8 +9,7 @@
        <a href="<?php echo site_url(); ?>/blog">Archive</a>&nbsp;|&nbsp;
        <a href="<?php echo site_url(); ?>/contact">Contact</a>
       </p>
-    <p>It takes a lot of time, effort, and hard work to write these tutorials. <mark><b>Please help me continue to help you and others like you by making a contribution.</b></mark> Thank you!</p>
-    <p><a class="button paypal-button" href="https://www.paypal.me/taniarascia/5" target="_blank">Buy me a Coffee</a></p>
+    <p>I'm Tania, a designer, developer, writer, and former chef from Chicago. I currently work full-time as a PHP developer, and sometimes I write for publications like DigitalOcean and SitePoint. I love to create things for the web. </p>
 		
 	 </div>
 	 <div class="footer-support">

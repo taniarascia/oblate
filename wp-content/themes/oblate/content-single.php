@@ -25,14 +25,11 @@
 		<div class="excerpt"><?php the_excerpt(); ?></div>
 			<?php the_content(); ?>
 
-			<div class="donate">
-			
 			<div class="author">
 				<p>
 					<img src="<?php echo site_url(); ?>/wp-content/uploads/face-300x300.jpg" class="my-avatar">
 					<h3>Tania Rascia</h3>
-					Hi, I'm Tania! I'm a developer, designer, writer, and former chef. I also write straightforward tutorials to help bridge the learing gap for new developers. <mark><strong>Please help me keep this website free and ad-free, so I can continue to help you and others.</strong></mark> Thank you!<br><br>
-					<a class="button" href="https://paypal.me/taniarascia/5" target="_blank">Buy me a coffee</a>
+					<p>I'm Tania, a designer, developer, writer, and former chef from Chicago. I currently work full-time as a PHP developer, and sometimes I write for publications like DigitalOcean and SitePoint. I love to create things for the web. </p>
 				</p>
 			</div>
 
@@ -52,7 +49,6 @@
 					<div class="clear"><button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button></div>
 				</form>
 			</div>
-		</div>
 		</div>
 
 	</section>

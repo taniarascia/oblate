@@ -8,9 +8,7 @@
 			<h1>Tania Rascia</h1>
 			<p class="lead">Hi, I'm Tania! I'm a <strong>developer, designer, writer, and former chef</strong>. I document everything I learn, package it into the easy-to-follow tutorials, and <strong>provide it on my website for <span class="green">free</span></strong>.</p>
 			<p>I love creating open-source projects from scratch. <a href="https://taniarascia.github.io/primitive/" target="_blank">Primitive</a> is my Sass/CSS framework, <a href="https://github.com/taniarascia/laconia" target="_blank">Laconia</a> is my PHP MVC framework, and <a href="http://taniarascia.github.io/new-moon/" target="_blank">New Moon</a> is my code syntax theme, available on VSCode, Atom, Sublime, Brackets, and Chrome DevTools. I've also written for <a href="https://www.digitalocean.com/community/tutorial_series/how-to-code-in-javascript">DigitalOcean</a> and <a href="https://www.sitepoint.com/beginners-guide-javascript-variables-and-datatypes/">SitePoint</a>.</p>
-			<p>Please share my site and support me in any way you can.</p>
 			 <p class="front-page-social">
-			 	<a class="sh button paypal-button" href="https://www.paypal.me/taniarascia/5" target="_blank">Buy me a Coffee</a>
 				<a class="sh" href="<?php echo site_url(); ?>/me/"><i class="fa fa-heart"></i> About me</a> 
 				<a class="sh" href="https://github.com/taniarascia" target="_blank"><i class="fa fa-github"></i> GitHub</a> 
 				<a class="sh" href="https://twitter.com/taniarascia" target="_blank"><i class="fa fa-twitter"></i> Twitter</a> 
