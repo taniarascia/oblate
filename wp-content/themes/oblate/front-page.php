@@ -14,7 +14,7 @@
 				 <a class="sh" href="<?php echo site_url(); ?>/me/"><i class="fa fa-heart"></i> About me</a> 
 				<a class="sh" href="https://github.com/taniarascia" target="_blank"><i class="fa fa-github"></i> GitHub</a> 
 				<a class="sh" href="https://twitter.com/taniarascia" target="_blank"><i class="fa fa-twitter"></i> Twitter</a> 
-				<a class="button paypal-button" href="https://www.paypal.me/taniarascia" target="_blank">Buy me a Coffee</a>
+				<a class="button paypal-button" href="https://www.paypal.me/taniarascia/5" target="_blank">Buy me a Coffee</a>
 			</p>
 		</div>
 	</div>

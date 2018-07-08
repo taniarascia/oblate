@@ -10,7 +10,7 @@
        <a href="<?php echo site_url(); ?>/contact">Contact</a>
       </p>
     <p>It takes a lot of time, effort, and hard work to write these tutorials. <mark><b>Please help me continue to help you and others like you by making a contribution.</b></mark> Thank you!</p>
-    <p><a class="button paypal-button" href="https://www.paypal.me/taniarascia" target="_blank">Buy me a Coffee</a></p>
+    <p><a class="button paypal-button" href="https://www.paypal.me/taniarascia/5" target="_blank">Buy me a Coffee</a></p>
 		
 	 </div>
 	 <div class="footer-support">

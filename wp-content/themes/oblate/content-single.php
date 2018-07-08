@@ -32,7 +32,7 @@
 					<img src="<?php echo site_url(); ?>/wp-content/uploads/face-300x300.jpg" class="my-avatar">
 					<h3>Tania Rascia</h3>
 					Hi, I'm Tania! I'm a developer, designer, writer, and former chef. I also write straightforward tutorials to help bridge the learing gap for new developers. <mark><strong>Please help me keep this website free and ad-free, so I can continue to help you and others.</strong></mark> Thank you!<br><br>
-					<a class="button" href="https://paypal.me/taniarascia" target="_blank">Buy me a coffee</a>
+					<a class="button" href="https://paypal.me/taniarascia/5" target="_blank">Buy me a coffee</a>
 				</p>
 			</div>
 
