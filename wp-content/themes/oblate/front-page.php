@@ -6,31 +6,17 @@
 	<div class="container">
 		<div class="header-main">
 			<h1>Tania Rascia</h1>
-			<p>I'm a developer, designer, writer, and autodidact. Everything on this website is for you, <span class="green">ad-free</span>.
+			<p class="lead">Hi, I'm Tania! I'm a <strong>developer, designer, writer, and former chef</strong>. I document everything I learn, package it into the easy-to-follow tutorials, and <strong>provide it on my website for <span class="green">free</span></strong>.</p>
+			<p>I've also written for <a href="https://www.digitalocean.com/community/tutorial_series/how-to-code-in-javascript">DigitalOcean</a> and <a href="https://www.sitepoint.com/beginners-guide-javascript-variables-and-datatypes/">SitePoint</a>.</p>
+			<p>I love creating open-source projects from scratch. <a href="https://taniarascia.github.io/primitive/" target="_blank">Primitive</a> is my Sass/CSS framework, <a href="https://github.com/taniarascia/laconia" target="_blank">Laconia</a> is my PHP MVC framework, and <a href="http://taniarascia.github.io/new-moon/" target="_blank">New Moon</a> is my code syntax theme, available on VSCode, Atom, Sublime, Brackets, and Chrome DevTools.</p>
+			<p>Stick around a bit and you'll see I'm not like anyone else you've ever known. Please share my website and support me in any way you can.</p>
 			 <p class="front-page-social">
-				 <a class="sh" href="<?php echo site_url(); ?>/me/"><i class="fa fa-heart"></i> About</a> 
+				 <a class="sh" href="<?php echo site_url(); ?>/me/"><i class="fa fa-heart"></i> About me</a> 
 				<a class="sh" href="https://github.com/taniarascia" target="_blank"><i class="fa fa-github"></i> GitHub</a> 
 				<a class="sh" href="https://twitter.com/taniarascia" target="_blank"><i class="fa fa-twitter"></i> Twitter</a> 
+				<a class="button paypal-button" href="https://www.paypal.me/taniarascia" target="_blank">Buy me a Coffee</a>
 			</p>
 		</div>
-		<div class="header-email">
-			<h2>Mailing list</h2>
-			<p>Get friendly updates, infrequently.</p>
-			<div id="mailchimp">
-				<form action="//taniarascia.us12.list-manage.com/subscribe/post?u=ec794fab6e35a491a001cc25d&amp;id=5276386071" method="post"
-				  id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-					<label for="mce-EMAIL"><span class="screen-reader-text">Email</span></label><input type="email" value="" name="EMAIL"
-					  class="required email" id="mce-EMAIL" placeholder="Email address">
-					<div id="mce-responses" class="clear">
-						<div class="response" id="mce-error-response" style="display:none"></div>
-						<div class="response" id="mce-success-response" style="display:none"></div>
-					</div>
-					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ec794fab6e35a491a001cc25d_5276386071" tabindex="-1" value=""></div>
-					<div class="clear"><button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button></div>
-				</form>
-			</div>
-		</div>
-		
 	</div>
 	
 </header>
@@ -39,8 +25,8 @@
 
 <section class="choose-your-destiny text-center">
 	<div class="container">
-		<h2>Quick! I want an awesome introduction to...</h2>
-		<p>Click to go directly to a straightforward tutorial or resource.</p>
+		<h2>Beginner Resources</h2>
+		<p>Click on a topic to go directly to an awesome introductory resource.</p>
 		<article class="quick quick-header">
 			<a href="<?php echo site_url(); ?>/es6-syntax-and-feature-overview/"><img src="<?php echo site_url(); ?>/wp-content/uploads/js-150x150.png"> JavaScript/ES6</a>
 			<a href="<?php echo site_url(); ?>/developing-a-wordpress-theme-from-scratch/"><img src="<?php echo site_url(); ?>/wp-content/uploads/wp-2-150x150.png"> WordPress</a>
@@ -67,7 +53,6 @@
 
 			<blockquote class="testimonial">"I look forward to anything and everything you put out. You’re like an online programming coach!"
 			<cite>&mdash; <a href="https://twitter.com/jondelbruggemma" target="_blank">Jon Delbrugge</a>, Mixed Martial Arts Fighter</cite></blockquote> 
-
 	</div>
 </section>
 

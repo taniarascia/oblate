@@ -9,13 +9,13 @@
 						<?php the_title(); ?>
 					</h1>
 					<div class="the-time">
-						By <a href="<?php echo site_url(); ?>/me">Tania Rascia</a> &nbsp;/&nbsp;
+						<a href="<?php echo site_url(); ?>/me">Tania Rascia</a> &nbsp;/&nbsp;
 						<?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?>
 						<time datetime="<?php the_time( 'Y-m-d' ); ?>"> &nbsp;/&nbsp;
 						<?php the_time( 'F j, Y' ); ?></time>
 					</div>	
 			<div class="single-social">
-				<a class="button secondary-button" href="https://github.com/taniarascia" target="_blank"><i class="fa fa-github"></i> &nbsp;GitHub</a> <a class="button secondary-button" href="https://twitter.com/intent/tweet?text=<?php echo the_title(); ?>&amp;url=<?php echo the_permalink(); ?>&amp;hashtags=webdev&amp;via=taniarascia" target="_blank"><i class="fa fa-twitter"></i> &nbsp;Twitter</a>
+				<a class="button secondary-button" href="https://twitter.com/intent/tweet?text=<?php echo the_title(); ?>&amp;url=<?php echo the_permalink(); ?>&amp;hashtags=webdev&amp;via=taniarascia" target="_blank"><i class="fa fa-twitter"></i> &nbsp;Share on Twitter</a>
 			</div>
 		</div>
 	</header>
@@ -24,9 +24,21 @@
 		<div class="small-container">
 		<div class="excerpt"><?php the_excerpt(); ?></div>
 			<?php the_content(); ?>
+
+			<div class="donate">
+			
+			<div class="author">
+				<p>
+					<img src="<?php echo site_url(); ?>/wp-content/uploads/face-300x300.jpg" class="my-avatar">
+					<h3>Tania Rascia</h3>
+					Hi, I'm Tania! I'm a developer, designer, writer, and former chef. I also write straightforward tutorials to help bridge the learing gap for new developers. <mark><strong>Please help me keep this website free and ad-free, so I can continue to help you and others.</strong></mark> Thank you!<br><br>
+					<a class="button" href="https://paypal.me/taniarascia" target="_blank">Buy me a coffee</a>
+				</p>
+			</div>
+
 			<div class="article-email">
 			<h3>Email List</h3>
-			<p>Get friendly updates, infrequently.</p>
+			<p>No ads, no bullshit, no sponsored posts. Just <strong>quality content</strong> from yours truly.
 			<div id="mailchimp-article">
 				<form action="//taniarascia.us12.list-manage.com/subscribe/post?u=ec794fab6e35a491a001cc25d&amp;id=5276386071" method="post"
 				  id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -41,15 +53,6 @@
 				</form>
 			</div>
 		</div>
-			<div class="author">
-				<p><img src="<?php echo site_url(); ?>/wp-content/uploads/face-300x300.jpg" class="my-avatar">
-				<h3>Tania Rascia</strong></h3>
-		
-			Hiya. I'm <a href="<?php echo site_url(); ?>/me">Tania</a>, a web developer from Chicago. Hope you enjoyed my ad-free, bullshit-free site. If you liked it, tell someone about it!</p>
-			<a class="button secondary-button" href="https://github.com/taniarascia" target="_blank"><i class="fa fa-github"></i> &nbsp;GitHub</a>
-			<a class="button secondary-button" href="https://twitter.com/taniarascia" target="_blank"><i class="fa fa-twitter"></i> &nbsp;Twitter</a>
-
-			</div>
 		</div>
 
 	</section>

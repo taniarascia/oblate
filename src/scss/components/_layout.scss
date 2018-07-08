@@ -504,11 +504,11 @@ a.current {
 /* Landing */
 
 .header {
-	height: calc(90vh - 80px);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	padding: 30px 0;
 	font-size: 1.1rem;
 	h1 {
 		margin: 0 0 1rem;
@@ -576,12 +576,13 @@ a.current {
 
 @include small-breakpoint {
 	.header {
+		padding: 60px 0;
 		text-align: left;
-		.header-main {
-			max-width: 650px;
+		.lead {
+			font-size: 1.5rem;
 		}
 		p {
-			font-size: 1.5rem;
+			font-size: 1.2rem;
 		}
 		h1 {
 			font-size: 3rem;
@@ -590,10 +591,11 @@ a.current {
 }
 
 @include mid-breakpoint {
-	.header {
+	.header {	
 		.header-main {
-			margin-right: 2rem;
+			max-width: 650px;
 			h1 {
+				text-align: center;
 				font-size: 4rem;
 			}
 		}
@@ -614,22 +616,24 @@ a.current {
 	}
 	.header-email, .article-email {
 		display: block;
-		padding: 2.5rem;
+		padding: 2rem;
 		h3 {
 			color: $heading-color;
-			font-size: 1.5rem;
+			font-size: 1.3rem;
+		}
+		h2 {
+			margin-top: 0;
 		}
 	}
 	.header-email {
-		margin: 2rem;
+		margin: 1.5rem;
 	}
 }
 
 @include large-breakpoint {
 	.header {
-		max-height: 600px;;
 		h1 {
-			font-size: 2.75rem;
+			font-size: 2rem;
 		}
 	}
 }
@@ -858,7 +862,6 @@ a.current {
 }
 
 .cell {
-	text-align: center;
 	transition: all .2s ease;
 	background: white;
 	margin: .5rem;
@@ -868,10 +871,9 @@ a.current {
 	padding: 1.25rem;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 	flex: auto;
-	&:hover {
-		//transform: translate3D(0, -1px, 0);
-		//box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-	}
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	.flex {
 		display: flex;
 		align-items: center;
@@ -883,9 +885,9 @@ a.current {
 		margin-bottom: 0;
 	}
 	h1 {
-		text-align: center;
 		margin-top: 0;
 		width: 100%;
+		margin: 0;
 		font-size: 1.1rem;
 		line-height: 1.3;
 		font-family: $special-heading;
@@ -916,7 +918,7 @@ a.current {
 
 .image-thumbnail {
 	display: block;
-	margin: 0 auto 1rem;
+	margin: 0 1rem 0 0;
 	img {
 		display: block;
 		margin: 0 auto;
@@ -934,6 +936,8 @@ a.current {
 		min-width: 100px;
 	}
 	.cell {
+		display: block;
+		text-align: center;
 		padding: 2rem;
 		flex: 1 1 calc(50% - 1rem);
 		max-width: calc(50% - 1rem);
@@ -1181,12 +1185,12 @@ a.current {
 blockquote {
 	color: $light-color;
 	border-left: 8px solid $background;
-	font-weight: 400;
+	font-weight: 500;
 	margin: 2rem 0;
 	padding-left: 1.5rem;
 	font-size: 1.1rem;
 	line-height: 1.4;
-	font-family: Georgia, serif;
+	font-family: $heading-family;
 	p {
 		padding: 0;
 		&:last-of-type {
@@ -1364,7 +1368,7 @@ blockquote {
 @include mid-breakpoint {
 	.flex-container {
 		flex-direction: row;
-		align-items: center;
+		//align-items: center;
 		justify-content: space-between;
 	}
 	.footer-social {

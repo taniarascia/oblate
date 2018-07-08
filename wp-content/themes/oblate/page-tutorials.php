@@ -13,8 +13,8 @@
 
 <section class="choose-your-destiny text-center">
 	<div class="container">
-	<h2>Quick! I want an awesome introduction to...</h2>
-		<p>Click to go directly to a straightforward tutorial or resource.</p>
+	<h2>Beginner Resources</h2>
+		<p>Click to go directly to an awesome introduction tutorial.</p>
 		<article class="quick quick-header">
 			<a href="<?php echo site_url(); ?>/es6-syntax-and-feature-overview/"><img src="<?php echo site_url(); ?>/wp-content/uploads/js-150x150.png"> JavaScript/ES6</a>
 			<a href="<?php echo site_url(); ?>/developing-a-wordpress-theme-from-scratch/"><img src="<?php echo site_url(); ?>/wp-content/uploads/wp-2-150x150.png"> WordPress</a>

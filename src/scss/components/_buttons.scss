@@ -100,7 +100,8 @@ a.button.paypal-button,
 	&:hover,
 	&:focus,
 	&:active {
-		border: 1px solid lighten($yellow, 30%);
+		background: linear-gradient(62deg, darken(#FBAB7E, 10%) 0%, darken(#F7CE68, 10%) 100%);
+		color: #111;
 	}
 }
 
