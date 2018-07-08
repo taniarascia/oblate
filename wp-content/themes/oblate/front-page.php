@@ -10,7 +10,7 @@
 			<p>I love creating open-source projects from scratch. <a href="https://taniarascia.github.io/primitive/" target="_blank">Primitive</a> is my Sass/CSS framework, <a href="https://github.com/taniarascia/laconia" target="_blank">Laconia</a> is my PHP MVC framework, and <a href="http://taniarascia.github.io/new-moon/" target="_blank">New Moon</a> is my code syntax theme, available on VSCode, Atom, Sublime, Brackets, and Chrome DevTools. I've also written for <a href="https://www.digitalocean.com/community/tutorial_series/how-to-code-in-javascript">DigitalOcean</a> and <a href="https://www.sitepoint.com/beginners-guide-javascript-variables-and-datatypes/">SitePoint</a>.</p>
 			<p>Please share my site and support me in any way you can.</p>
 			 <p class="front-page-social">
-			 	<a class="button paypal-button" href="https://www.paypal.me/taniarascia/5" target="_blank">Buy me a Coffee</a>
+			 	<a class="sh button paypal-button" href="https://www.paypal.me/taniarascia/5" target="_blank">Buy me a Coffee</a>
 				<a class="sh" href="<?php echo site_url(); ?>/me/"><i class="fa fa-heart"></i> About me</a> 
 				<a class="sh" href="https://github.com/taniarascia" target="_blank"><i class="fa fa-github"></i> GitHub</a> 
 				<a class="sh" href="https://twitter.com/taniarascia" target="_blank"><i class="fa fa-twitter"></i> Twitter</a> 
@@ -22,27 +22,6 @@
 </header>
 
 <?php endwhile; endif; ?>
-
-<section class="choose-your-destiny text-center">
-	<div class="container">
-		<h2>Beginner Resources</h2>
-		<p>Click on a topic to go directly to an awesome introductory resource.</p>
-		<article class="quick quick-header">
-			<a href="<?php echo site_url(); ?>/es6-syntax-and-feature-overview/"><img src="<?php echo site_url(); ?>/wp-content/uploads/js-150x150.png"> JavaScript/ES6</a>
-			<a href="<?php echo site_url(); ?>/developing-a-wordpress-theme-from-scratch/"><img src="<?php echo site_url(); ?>/wp-content/uploads/wp-2-150x150.png"> WordPress</a>
-			<a href="<?php echo site_url(); ?>/what-is-bootstrap-and-how-do-i-use-it/"><img src="<?php echo site_url(); ?>/wp-content/uploads/bs-logo-150x150.png"> Bootstrap</a>
-			<a href="<?php echo site_url(); ?>/how-to-use-jquery-a-javascript-library/"><img src="<?php echo site_url(); ?>/wp-content/uploads/jq1-150x150.png"> jQuery</a>
-			<a href="<?php echo site_url(); ?>/learn-sass-now/"><img src="<?php echo site_url(); ?>/wp-content/uploads/sass-150x150.png"> Sass</a>
-			<a href="<?php echo site_url(); ?>/getting-started-with-gulp/"><img src="<?php echo site_url(); ?>/wp-content/uploads/gulp-150x150.png"> Gulp</a>
-			<a href="<?php echo site_url(); ?>/getting-started-with-git/"><img src="<?php echo site_url(); ?>/wp-content/uploads/git-150x150.png"> Git</a>
-			<a href="<?php echo site_url(); ?>/how-to-use-json-data-with-php-or-javascript/"><img src="<?php echo site_url(); ?>/wp-content/uploads/jsonimg-150x150.png"> JSON</a>
-			<a href="<?php echo site_url(); ?>/how-to-use-the-command-line-for-apple-macos-and-linux/"><img src="<?php echo site_url(); ?>/wp-content/uploads/terminal-150x150.png"> Command line</a>
-			<a href="<?php echo site_url(); ?>/create-a-simple-database-app-connecting-to-mysql-with-php/"><img src="<?php echo site_url(); ?>/wp-content/uploads/php-150x150.png"> PHP &amp; MySQL</a>
-			<a href="<?php echo site_url(); ?>/how-to-install-and-use-node-js-and-npm-mac-and-windows/"><img src="<?php echo site_url(); ?>/wp-content/uploads/nodejs-150x150.png"> Node.js</a>
-			<a href="<?php echo site_url(); ?>/design-for-developers/"><img src="<?php echo site_url(); ?>/wp-content/uploads/coloricon-150x150.png"> Design</a>
-		</article>
-	</div>
-</section>
 
 <section class="quote-container">
 	<div class="small-container">
@@ -129,6 +108,27 @@
 			endwhile; endif; wp_reset_postdata(); ?>
 
 		</div>
+</section>
+
+<section class="choose-your-destiny text-center">
+	<div class="container">
+		<h2>Beginner Resources</h2>
+		<p>Click on a topic to go directly to an awesome introductory resource.</p>
+		<article class="quick quick-header">
+			<a href="<?php echo site_url(); ?>/es6-syntax-and-feature-overview/"><img src="<?php echo site_url(); ?>/wp-content/uploads/js-150x150.png"> JavaScript/ES6</a>
+			<a href="<?php echo site_url(); ?>/developing-a-wordpress-theme-from-scratch/"><img src="<?php echo site_url(); ?>/wp-content/uploads/wp-2-150x150.png"> WordPress</a>
+			<a href="<?php echo site_url(); ?>/what-is-bootstrap-and-how-do-i-use-it/"><img src="<?php echo site_url(); ?>/wp-content/uploads/bs-logo-150x150.png"> Bootstrap</a>
+			<a href="<?php echo site_url(); ?>/how-to-use-jquery-a-javascript-library/"><img src="<?php echo site_url(); ?>/wp-content/uploads/jq1-150x150.png"> jQuery</a>
+			<a href="<?php echo site_url(); ?>/learn-sass-now/"><img src="<?php echo site_url(); ?>/wp-content/uploads/sass-150x150.png"> Sass</a>
+			<a href="<?php echo site_url(); ?>/getting-started-with-gulp/"><img src="<?php echo site_url(); ?>/wp-content/uploads/gulp-150x150.png"> Gulp</a>
+			<a href="<?php echo site_url(); ?>/getting-started-with-git/"><img src="<?php echo site_url(); ?>/wp-content/uploads/git-150x150.png"> Git</a>
+			<a href="<?php echo site_url(); ?>/how-to-use-json-data-with-php-or-javascript/"><img src="<?php echo site_url(); ?>/wp-content/uploads/jsonimg-150x150.png"> JSON</a>
+			<a href="<?php echo site_url(); ?>/how-to-use-the-command-line-for-apple-macos-and-linux/"><img src="<?php echo site_url(); ?>/wp-content/uploads/terminal-150x150.png"> Command line</a>
+			<a href="<?php echo site_url(); ?>/create-a-simple-database-app-connecting-to-mysql-with-php/"><img src="<?php echo site_url(); ?>/wp-content/uploads/php-150x150.png"> PHP &amp; MySQL</a>
+			<a href="<?php echo site_url(); ?>/how-to-install-and-use-node-js-and-npm-mac-and-windows/"><img src="<?php echo site_url(); ?>/wp-content/uploads/nodejs-150x150.png"> Node.js</a>
+			<a href="<?php echo site_url(); ?>/design-for-developers/"><img src="<?php echo site_url(); ?>/wp-content/uploads/coloricon-150x150.png"> Design</a>
+		</article>
+	</div>
 </section>
 
 <section class="quote-container">
