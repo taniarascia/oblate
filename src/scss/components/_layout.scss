@@ -546,11 +546,6 @@ a.current {
 	margin: 2rem 0 0;
 }
 
-.front-page-social {
-	display: flex;
-    flex-direction: column;
-}
-
 @include small-breakpoint {
 	.front-page-social {
 		text-align: left;

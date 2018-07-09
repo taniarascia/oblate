@@ -90,7 +90,7 @@ add_action( 'wp_enqueue_scripts', 'starter_scripts' );
 
 function oblate_scripts() {
 	wp_dequeue_style( 'starter-style' );
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css?07-08-2018x4' 
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css?07-09-2018' 
 ); 
 	wp_enqueue_script( 'prism', get_template_directory_uri() . '/js/prism.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js?06-06-2017', array(), '1.0.0', true );
