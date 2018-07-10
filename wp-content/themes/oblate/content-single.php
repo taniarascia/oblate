@@ -26,12 +26,14 @@
 			<?php the_content(); ?>
 
 			<div class="author">
-				<p>
+				<div class="author-avatar">
 					<img src="<?php echo site_url(); ?>/wp-content/uploads/face-300x300.jpg" class="my-avatar">
+				</div>
+				<div class="author-message">
 					<h3>Tania Rascia</h3>
 					<p>I'm <a href="<?php echo site_url(); ?>/me">Tania</a>, a <strong>designer, developer, writer, and former chef</strong> from Chicago. I currently work full-time as a web developer, and sometimes I write for <a href="https://www.digitalocean.com/community/tutorial_series/how-to-code-in-javascript">DigitalOcean</a> and SitePoint. I love to create things for the web. </p>
 					<p>Help me keep this site ad-free and wonderful.<br> <a href="https://www.patreon.com/taniarascia" target="_blank">Be a patron</a> or <a href="https://paypal.me/taniarascia/5">buy me a coffee.</a></p>
-				</p>
+				</div>
 			</div>
 
 			<div class="article-email">

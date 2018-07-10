@@ -1376,7 +1376,16 @@ blockquote {
 }
 
 .author {
-	margin-bottom: 4rem;
+	display: flex;
+	margin-bottom: 2rem;
+	justify-content: center;
+	align-items: center;
+	.author-avatar {
+		flex: 1;
+	}
+	.author-message {
+		flex: 2;
+	}
 	h3 {
 		font-size: 1.5rem;
 		margin-bottom: .5rem;
@@ -1385,11 +1394,8 @@ blockquote {
 }
 
 .my-avatar {
-	float: left;
-	max-width: 20%;
 	border-radius: 50%;
 	margin-right: 2rem;
-	margin-top: 1rem;
 }
 
 /* MailChimp */
