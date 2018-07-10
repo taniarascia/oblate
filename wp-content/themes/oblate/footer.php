@@ -11,6 +11,7 @@
        <a href="<?php echo site_url(); ?>/contact">Contact</a>
       </p>
     <p>I'm <a href="<?php echo site_url(); ?>/me">Tania</a>, a <strong>designer, developer, writer, and former chef</strong> from Chicago. I currently work full-time as a web developer, and sometimes I write for <a href="https://www.digitalocean.com/community/tutorial_series/how-to-code-in-javascript">DigitalOcean</a> and SitePoint. I love to create things for the web.</p>
+    <p>Like what you see on this site? Help me keep it ad-free and wonderful. <a href="https://www.patreon.com/taniarascia" target="_blank">Be a patron</a> or <a href="https://paypal.me/taniarascia/5">buy me a coffee.</p>
 		
 	 </div>
 	 <div class="footer-support">
