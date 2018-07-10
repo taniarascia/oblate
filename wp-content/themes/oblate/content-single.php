@@ -15,9 +15,8 @@
 						<?php the_time( 'F j, Y' ); ?></time>
 					</div>	
 			<div class="single-social">
-				<a class="button secondary-button" href="https://twitter.com/intent/tweet?text=<?php echo the_title(); ?>&amp;url=<?php echo the_permalink(); ?>&amp;hashtags=webdev&amp;via=taniarascia" target="_blank"><i class="fa fa-twitter"></i> &nbsp;Share on Twitter</a>
+			<p>Like what you see on this site?<br> Help me keep it ad-free and wonderful.<br> <a href="https://www.patreon.com/taniarascia" target="_blank">Be a patron</a> or <a href="https://paypal.me/taniarascia/5">buy me a coffee.</a></p>
 			</div>
-			<p>Like what you see on this site? Help me keep it ad-free and wonderful. <a href="https://www.patreon.com/taniarascia" target="_blank">Be a patron</a> or <a href="https://paypal.me/taniarascia/5">buy me a coffee.</p>
 		</div>
 	</header>
 
