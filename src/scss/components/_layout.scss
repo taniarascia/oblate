@@ -1382,6 +1382,7 @@ blockquote {
 	align-items: center;
 	.author-avatar {
 		flex: 1;
+		padding-right: 2rem;
 	}
 	.author-message {
 		flex: 2;
@@ -1395,7 +1396,6 @@ blockquote {
 
 .my-avatar {
 	border-radius: 50%;
-	margin-right: 2rem;
 }
 
 /* MailChimp */
