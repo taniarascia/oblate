@@ -27,7 +27,7 @@
 
 			<div class="author">
 				<h2 class="text-center">Quality and morality on the web</h2>
-				<p>Hi, my name is <strong>Tania Rascia</strong>. I have turned down every advertiser, sponsored post, and affiliate who has come to me. <strong>I give away all my knowledge for free to my <mark>300,000+ monthly readers</mark></strong> and helped thousands of people learn and successfully transition into a design/development career.</p>
+				<p>Hi, my name is <strong>Tania Rascia</strong>. I have turned down every advertiser, sponsored post, and affiliate who has come to me. <strong>I give away all my knowledge for free to <mark>300,000+ monthly readers</mark></strong> and helped thousands of people learn and successfully transition into a design/development career.</p>
 
 				<p><strong>You know what I stand for, and you know my commitment to you - no bullshit, no sponsored posts, no pop-ups, no blocked content, ads, schemes, tactics, or gimmicks. Just free, quality content. <mark>Support me by buying me a coffee</mark></strong>.</p>
 				
