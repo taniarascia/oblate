@@ -1376,16 +1376,16 @@ blockquote {
 }
 
 .author {
-	display: flex;
+	background: #f0f0f0;
 	margin-bottom: 2rem;
-	justify-content: center;
-	align-items: center;
-	.author-avatar {
-		flex: 1;
-		padding-right: 2rem; 
+	border-top: 12px solid $pink;
+	.author-options {
+		display: flex;
+		text-align: center;
+    	justify-content: space-around;
 	}
-	.author-message {
-		flex: 2;
+	h2 {
+		margin: 0 0 1rem;
 	}
 	h3 {
 		font-size: 1.5rem;

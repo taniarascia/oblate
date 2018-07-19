@@ -26,13 +26,30 @@
 			<?php the_content(); ?>
 
 			<div class="author">
-				<div class="author-avatar">
-					<img src="<?php echo site_url(); ?>/wp-content/uploads/face-300x300.jpg" class="my-avatar">
-				</div>
-				<div class="author-message">
-					<h3>Tania Rascia</h3>
-					<p>I'm <a href="<?php echo site_url(); ?>/me">Tania</a>, a <strong>designer, developer, writer, and former chef</strong> from Chicago. I currently work full-time as a web developer, and sometimes I write for <a href="https://www.digitalocean.com/community/tutorial_series/how-to-code-in-javascript">DigitalOcean</a> and SitePoint. I love to create things for the web. </p>
-					<p>Help me keep this site ad-free and wonderful.<br> <a href="https://www.patreon.com/taniarascia" target="_blank">Be a patron</a> or <a href="https://paypal.me/taniarascia/5">buy me a coffee.</a></p>
+				<h3>A note about honesty, quality, morality, and support</h3>
+				<p>Hi, my name is <strong>Tania Rascia</strong>. Every single article on this website was written by me, for you. There's something I would like you to know.</p>
+
+				<ul>
+				<li>I have turned down every individual or company offering to write a <strong>sponsored post</strong> on my website. </li>
+				<li>I have turned down every advertiser offering money in exchange for <strong>displaying their ads</strong> on my website.</li>
+				<li>I have turned down the option of displaying <strong>paid affiliate links</strong> on my website.</li>
+				</ul>
+
+				<p>I don't use pop-ups, sell any products, or block my content. I give away all my knowledge for free to my 300,000+ monthly readers.</p>
+
+				<p>I want to make my website a bastion of knowledge and hope. I want to keep sharing my knowledge and helping thousands of people learn and successfully transition into a design/development career.</p>
+
+				<p><strong>If you support what I do, or if an article I have written has helped guide you in your learning journey, <mark>help me keep this website ad-free, updated, and wonderful</mark>. Support me by being a Patron or buying me a coffee.</strong></p>
+				
+				<div class="author-options">
+					<div>
+						<h3>Be a Patron</h3>
+						<p><a class="button paypal-button" href="https://www.patreon.com/taniarascia" target="_blank">Be a patron</a></p>
+					</div>
+					<div>
+						<h3>Donate</h3>
+						<p><a class="button donate-button" href="https://paypal.me/taniarascia/5">$5</a> <a class="button" href="https://paypal.me/taniarascia/10">$10</a> <a class="button donate-button" href="https://paypal.me/taniarascia/20">$20</a></p>
+					</div>
 				</div>
 			</div>
 
