@@ -646,8 +646,14 @@ a.current {
 		color: white;
 	}
 	a {
+		transition: all .2s ease;
 		color: $keyword;
 		font-weight: 700;
+		&:hover {
+			color: white;
+			border-bottom: 2px solid $keyword;
+			text-decoration: none;
+		}
 	}
 	&.mb {
 		margin-bottom: 3rem;
@@ -1331,10 +1337,11 @@ blockquote {
 		margin-bottom: .5rem;
 	}
 	a {
-		color: $keyword;
+		color: lighten($nav-bg, 70%);
 		font-weight: 700;
 		&:hover {
-			color: darken($keyword, 10%);
+			text-decoration: none;
+			color: $keyword;
 		}
 	}
 }
