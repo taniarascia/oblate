@@ -34,7 +34,7 @@
 				<div class="author-options">
 					<div>
 					<h3>I really appreciate your support!</h3>
-					<p><a class="button paypal-button" href="http://ko-fi.com/taniarascia" target="_blank">Buy me a coffee</a></p>
+					<p><a class="button paypal-button" href="https://ko-fi.com/taniarascia" target="_blank">Buy me a coffee</a> <a class="button paypal-button" href="https://patreon.com/taniarascia" target="_blank">Be a patron</a></p>
 					</div>
 				</div>
 			</div>
