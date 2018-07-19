@@ -26,7 +26,7 @@
 			<?php the_content(); ?>
 
 			<div class="author">
-				<h3>A note about honesty, quality, morality, and support</h3>
+				<h3>Honesty, quality, morality</h3>
 				<p>Hi, my name is <strong>Tania Rascia</strong>. Every single article on this website was written by me, for you. There's something I would like you to know.</p>
 
 				<ul>
