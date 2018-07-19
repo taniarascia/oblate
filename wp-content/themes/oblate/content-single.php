@@ -15,7 +15,7 @@
 						<?php the_time( 'F j, Y' ); ?></time>
 					</div>	
 			<div class="single-social">
-			<p>Liked this article? <a href="https://paypal.me/taniarascia/5">Buy me a coffee</a>.</p>
+			<p>Liked this article? <a href="http://ko-fi.com/taniarascia">Buy me a coffee</a>.</p>
 			</div>
 		</div>
 	</header>
