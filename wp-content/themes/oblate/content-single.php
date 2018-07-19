@@ -41,7 +41,7 @@
 
 			<div class="article-email">
 			<h3>Email List</h3>
-			<p>No ads, no bullshit, no sponsored posts. Just <strong>quality content</strong> from yours truly.
+			<p>Infrequent friendly updates.</p>
 			<div id="mailchimp-article">
 				<form action="//taniarascia.us12.list-manage.com/subscribe/post?u=ec794fab6e35a491a001cc25d&amp;id=5276386071" method="post"
 				  id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
