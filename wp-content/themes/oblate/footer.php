@@ -4,15 +4,16 @@
  <div class="container flex-container">
 	 <div class="footer-social">
      <h3>Tania Rascia</h3>
-     <p>
-       <a href="<?php echo site_url(); ?>/me">About me</a>&nbsp;|&nbsp; 
-       <a href="<?php echo site_url(); ?>/blog">Archive</a>&nbsp;|&nbsp;
-       <a href="https://join.slack.com/t/httpchat/shared_invite/enQtNDAxODEwMTU2ODM0LTljMGRjZDZmZTA1ZDEwNjc5M2QwYjk5ZjViMGUzNDYzZjJhMGM2OTNmNTNkODM1OWYzZWIzYjA2NTU4YTczZWU">HTTPChat Slack</a>&nbsp;|&nbsp;
-       <a href="<?php echo site_url(); ?>/contact">Contact</a>
+     <p class="footer-social-links">
+       <a href="https://github.com/taniarascia"><i class="fa fa-2x fa-github-alt" aria-hidden="true"></i></a>
+       <a href="https://twitter.com/taniarascia"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a>
+       <a href="https://linkedin.com/in/taniarascia"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
+       <a href="https://join.slack.com/t/httpchat/shared_invite/enQtNDAxODEwMTU2ODM0LTljMGRjZDZmZTA1ZDEwNjc5M2QwYjk5ZjViMGUzNDYzZjJhMGM2OTNmNTNkODM1OWYzZWIzYjA2NTU4YTczZWU"><i class="fa fa-2x fa-slack" aria-hidden="true"></i></a>
+       <a href="<?php echo site_url(); ?>/contact"><i class="fa fa-2x fa-envelope-o" aria-hidden="true"></i></a>
       </p>
-    <p>I'm <a href="<?php echo site_url(); ?>/me">Tania</a>, a <strong>designer, developer, writer, and former chef</strong> from Chicago. I love to create things for the web.</p>
-    <p>Like what you see on this site? Help me keep it ad-free and wonderful - <a href="https://paypal.me/taniarascia/5">buy me a coffee.</a></p>
-		
+    <p>I'm <a href="<?php echo site_url(); ?>/me">Tania</a>, a <strong>designer, developer, writer, and former chef</strong> from Chicago. I write the missing instruction manuals of the web.</p>
+    <p>Appreciate what you see on this site? Help me keep it ad-free, and wonderful!</p>
+    <p><a class="button paypal-button" href="https://ko-fi.com/taniarascia">Buy me a coffee</a></p>
 	 </div>
 	 <div class="footer-support">
    <h3>Email List</h3>

@@ -640,8 +640,8 @@ a.current {
 
 .gradient {
 	background: linear-gradient(to bottom right, darken($nav-bg, 10%), lighten($nav-bg, 15%));
-	//background: linear-gradient(to bottom right,#2A55F1, #162d81);
 	color: rgba(255,255,255,.8);
+	text-align: center;
 	h1 {
 		color: white;
 	}
@@ -668,7 +668,7 @@ a.current {
 		margin: 1rem 0;
 		font-family: $font-family;
 	} 
-}
+} 
 
 .top-title {
 	text-align: center;
@@ -1327,6 +1327,12 @@ blockquote {
 		max-width: 425px;
 		margin: 1rem auto;
 	}
+	.footer-social-links {
+		display: flex;
+		a {
+			margin-right: 5px;
+		}
+	}
 	strong {
 		color: #ddd;
 	}
@@ -1337,7 +1343,7 @@ blockquote {
 		margin-bottom: .5rem;
 	}
 	a {
-		color: lighten($nav-bg, 70%);
+		color: lighten($nav-bg, 45%);
 		font-weight: 700;
 		&:hover {
 			text-decoration: none;

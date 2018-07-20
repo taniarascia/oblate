@@ -5,7 +5,7 @@
 <section id="comments" class="comments-area">
 	<div class="small-container">
 
-		<?php	comment_form( array(
+		<?php comment_form( array(
 						'title_reply' => 'Write a response',
 						'comment_notes_after' => '<p>All code will be displayed literally.</p>'
 						)); ?>
@@ -44,7 +44,7 @@
 
 				<?php endif;  //have_comments(); 
 
-		// If comments are closed and there are comments, let's leave a little note, shall we?
+			// If comments are closed and there are comments, let's leave a little note, shall we?
 			if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 
 				<p class="no-comments">
