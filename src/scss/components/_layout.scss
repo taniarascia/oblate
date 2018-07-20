@@ -1330,7 +1330,8 @@ blockquote {
 	.footer-social-links {
 		display: flex;
 		a {
-			margin-right: 5px;
+			margin-right: 1rem;
+			color: lighten($nav-bg, 45%);
 		}
 	}
 	strong {
@@ -1343,7 +1344,7 @@ blockquote {
 		margin-bottom: .5rem;
 	}
 	a {
-		color: lighten($nav-bg, 45%);
+		color: lighten($nav-bg, 75%);
 		font-weight: 700;
 		&:hover {
 			text-decoration: none;
