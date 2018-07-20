@@ -5,10 +5,10 @@
 	 <div class="footer-social">
      <h3>Tania Rascia</h3>
      <p class="footer-social-links">
-       <a href="https://github.com/taniarascia"><i class="fa fa-2x fa-github-alt" aria-hidden="true"></i></a>
-       <a href="https://twitter.com/taniarascia"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a>
-       <a href="https://linkedin.com/in/taniarascia"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
-       <a href="https://join.slack.com/t/httpchat/shared_invite/enQtNDAxODEwMTU2ODM0LTljMGRjZDZmZTA1ZDEwNjc5M2QwYjk5ZjViMGUzNDYzZjJhMGM2OTNmNTNkODM1OWYzZWIzYjA2NTU4YTczZWU"><i class="fa fa-2x fa-slack" aria-hidden="true"></i></a>
+       <a href="https://github.com/taniarascia" target="_blank"><i class="fa fa-2x fa-github-alt" aria-hidden="true"></i></a>
+       <a href="https://twitter.com/taniarascia" target="_blank"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a>
+       <a href="https://linkedin.com/in/taniarascia" target="_blank"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
+       <a href="https://join.slack.com/t/httpchat/shared_invite/enQtNDAxODEwMTU2ODM0LTljMGRjZDZmZTA1ZDEwNjc5M2QwYjk5ZjViMGUzNDYzZjJhMGM2OTNmNTNkODM1OWYzZWIzYjA2NTU4YTczZWU" target="_blank"><i class="fa fa-2x fa-slack" aria-hidden="true"></i></a>
        <a href="<?php echo site_url(); ?>/contact"><i class="fa fa-2x fa-envelope-o" aria-hidden="true"></i></a>
       </p>
     <p>I'm <a href="<?php echo site_url(); ?>/me">Tania</a>, a <strong>designer, developer, writer, and former chef</strong> from Chicago. I write the missing instruction manuals of the web.</p>
