@@ -14,6 +14,6 @@
 	<?php the_content(); ?>
 </section>
 
-<?php endwhile; endif; ?>
+<?php	endwhile; endif; ?>
 
 <?php get_footer();

@@ -1,31 +1,27 @@
 <?php get_header(); ?>
 
-<header class="page-header gradient mb">
-	<div class="small-container">
-		<h1>Posts</h1>
-	</div>
-</header>
+<section class="content">
+    <section class="page-body">
+        <section class="article-preview-section">
 
-<div class="small-container">
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 
-	<?php 
-		
-		if ( have_posts() ) : while ( have_posts() ) : the_post();
-		
-		 get_template_part( 'content-basic', get_post_format() );
-		
-		endwhile; ?>
+			    get_template_part( 'content', get_post_format() );
 
-	<div class="posts-links">
-		<div class="pagination-left">
-			<?php previous_posts_link(); ?>
-		</div>
-		<div class="pagination-right">
-			<?php next_posts_link(); ?>
-		</div>
-	</div>
-</div>
+		    endwhile; endif; ?>
 
-<?php endif; ?>
+        </section>
 
-<?php get_footer(); 
+        <div class="posts-links">
+            <div class="pagination-left">
+                <?php previous_posts_link(); ?>
+            </div>
+            <div class="pagination-right">
+                <?php next_posts_link(); ?>
+            </div>
+        </div>
+
+        </section>
+    </section>
+
+<?php get_footer();

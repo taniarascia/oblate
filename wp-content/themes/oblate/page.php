@@ -1,9 +1,9 @@
-<?php get_header(); 
+<?php get_header(); ?>
 
-if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 
-	get_template_part( 'content-page', get_post_format() );
+		get_template_part( 'content-page', get_post_format() );
 
-endwhile; endif; 
+endwhile; endif; ?>
 
-get_footer(); 
+<?php get_footer(); 

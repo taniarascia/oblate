@@ -7,16 +7,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<?php if ( !is_single() ) { ?>
-	<meta name="description" content="Web developer, designer, autodidact. Tania breaks down complex concepts in a clear, simple way for all skill levels.">
+	<meta name="description" content="Tania Rascia is a designer/developer and writer who breaks down complex concepts for all skill levels.">
 	<?php } ?>
 
-	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-W788DFR');</script>
-	<!-- End Google Tag Manager -->
 
 	<?php if (!isset($_SERVER['HTTP_USER_AGENT']) || stripos($_SERVER['HTTP_USER_AGENT'], 'Speed Insights') === false): ?>
 
@@ -42,33 +40,41 @@
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
+
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W788DFR"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-	<h1 class="screen-reader-text">Tania Rascia Web Design and Development</h1>
+
+	<h1 class="screen-reader-text">Tania Rascia</h1>
 	<a class="screen-reader-text" href="#main-content">Skip Navigation</a>
 
-	<header class="main-nav-outer">
-		<div class="nav-container">
-			<nav class="main-navigation">
-				<a href="<?php echo site_url(); ?>" class="home <?php if ( is_front_page() ) { ?>current<?php } ?>"><i class="fa fa-home" aria-hidden="true"></i> <span>Home</span></a>
-				<a href="<?php echo site_url(); ?>/tutorials/" class="tutorials <?php if ( is_page( 'tutorials' ) ) { ?>current<?php } ?>"><i class="fa fa-map-o" aria-hidden="true"></i> <span>Tutorials</span></a>
-				<a href="<?php echo site_url(); ?>/snippets/" class="snippets <?php if ( is_page( 'snippets' ) ) { ?>current<?php } ?>"><i class="fa fa-scissors" aria-hidden="true"></i> <span>Snippets</span></a>
-				<a href="<?php echo site_url(); ?>/me/" class="tania <?php if ( is_page( 'me' ) ) { ?>current<?php } ?>"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>Tania</span></a>
-				<a href="<?php echo site_url(); ?>/work/" class="portfolio <?php if ( is_page( 'work' ) ) { ?>current<?php } ?>"><i class="fa fa-folder-open-o" aria-hidden="true"></i> <span>Portfolio</span></a>
-				<a href="<?php echo site_url(); ?>/thoughts/" class="thoughts <?php if ( is_page( 'thoughts' ) ) { ?>current<?php } ?>"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>Thoughts</span></a>
-			</nav>
-		<div class="search-div">
-			<form role="search" method="get" class="nav-search" action="<?php echo home_url( '/' ); ?>">
-				<label>
-				<span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span></label>
-				<input type="search" placeholder="<?php echo esc_attr_x( 'Search', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>"
-					name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" class="nav-search-input">
-				<button type="submit" class="nav-search-submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-			</form>
-		</div>
-	</div>
+	 <header class="site-navigation">
+        <div class="nav-container">
+            <div class="site-navigation-grid">
+                <nav class="site-navigation-brand">
+                    <a href="<?php echo site_url(); ?>">
+                        <img src="<?php echo site_url(); ?>/wp-content/uploads/floppy.png" class="brand-icon">
+                        <span>Tania Rascia</span>
+                    </a>
+				</nav>
+				<nav class="site-navigation-links">
+                    <a href="<?php echo site_url(); ?>/me"><span class="nav-icon"><i class="far fa-heart"></i></span><span>About me</span></a>
+                    <a href="<?php echo site_url(); ?>/tutorials"><span class="nav-icon"><i class="far fa-map"></i></span><span>Tutorials</span></a>
+                    <a href="<?php echo site_url(); ?>/contact"><span class="nav-icon"><i class="far fa-comments"></i></span><span>Contact</span></a>
+                    <a href="https://ko-fi.com/taniarascia" target="_blank"><span class="nav-icon"><i class="fas fa-coffee"></i></span> Buy Coffee</a>
+                </nav>
+                <nav class="site-navigation-search">
+				<form role="search" method="get" class="nav-search" action="<?php echo home_url( '/' ); ?>">
+					<span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span>
+					<input type="search" placeholder="<?php echo esc_attr_x( 'Search for...', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>"
+					name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>">
+				</form>
+                </nav>
+            </div>
+        </div>
 	</header>
+	
+	<main id="main-content">
 
-	<main class="main" id="main-content">
+		<div class="container-wrapper">
+			<div class="grid">
+				<section class="main-content">

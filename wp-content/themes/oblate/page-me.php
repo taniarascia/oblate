@@ -1,23 +1,20 @@
 <?php get_header(); ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php if ( have_posts() ) : ?>
 
-<header class="page-header bright-header tania-header">
-	<div class="small-container">
-		<h1>
-			<?php the_title(); ?>
-		</h1>
-		<p>Designer, developer, autodidact.</p>
-	</div>
-</header>
+<?php while ( have_posts() ) : the_post(); ?>
 
-<section class="section-content">
-	<article>
-		<div class="small-container">
-			<?php the_content(); ?>
-		</div>
-	</article>
-</section>
+<article id="<?php the_id(); ?>" class="article">
+
+	<section class="single-body">
+		<header class="page-header">
+			<h1><?php the_title(); ?></h1>
+		</header>
+
+		<?php the_content(); ?>
+	</section>
+
+</article>
 
 <?php endwhile; endif; ?>
 

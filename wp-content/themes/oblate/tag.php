@@ -1,33 +1,25 @@
 <?php get_header(); ?>
 
-<header class="page-header">
-	<div class="small-container">
-		<h1>
-			<?php single_tag_title(); ?>
-		</h1>
-	</div>
-</header>
+<section class="content">
 
-<div class="container">
-	<?php 
+	<section class="page-body">
 		
-		if ( have_posts() ) : while ( have_posts() ) : the_post();
-		
-			get_template_part( 'content-basic', get_post_format() );
-		
-		endwhile; ?>
+		<?php if ( have_posts() ) : ?>
 
-</div>
+		<section class="article-preview-section">
 
-<div class="posts-links">
-	<div class="pagination-left">
-		<?php previous_posts_link(); ?>
-	</div>
-	<div class="pagination-right">
-		<?php next_posts_link(); ?>
-	</div>
-</div>
+        <?php while ( have_posts() ) : the_post(); ?>
 
-<?php endif; ?>
+			<?php get_template_part( 'content', get_post_format() ); ?>
+
+            <?php endwhile; ?>
+            
+        </section>
+
+        <?php endif; wp_reset_postdata(); ?>
+
+    </section>
+
+</section>
 
 <?php get_footer();

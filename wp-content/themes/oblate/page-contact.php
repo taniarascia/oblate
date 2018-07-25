@@ -2,20 +2,17 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<header class="page-header gradient">
-	<div class="small-container">
-		<h1>
-			<?php the_title(); ?>
-		</h1>
-		<p>Hey there! This is your direct line to me. I’d love to hear from you!</p>
-	</div>
-</header>
+<article id="<?php the_id(); ?>" class="article">
 
-<section class="section-content">
-	<div class="small-container">
+	<section class="single-body">
+		<header class="page-header">
+			<h1><?php the_title(); ?></h1>
+		</header>
+		
 		<?php the_content(); ?>
-	</div>
-</section>
+	</section>
+
+</article>
 
 <?php endwhile; endif; ?>
 
