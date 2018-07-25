@@ -37,13 +37,13 @@
                 <i class="fab fa-wordpress"></i> <span>WordPress</span>
             </a>
             <a href="<?php echo site_url(); ?>/category/tutorials/general">
-                <i class="fas fa-cut"></i> <span>General</span>
+                <i class="far fa-save"></i> <span>General</span>
             </a>
             <a href="<?php echo site_url(); ?>/snippets">
                 <i class="fas fa-cut"></i> <span>Snippets</span>
             </a>
             <a href="<?php echo site_url(); ?>/tutorials">
-                <i class="fas fa-map"></i> <span>All Tutorials</span>
+            <i class="far fa-map"></i> <span>All Tutorials</span>
             </a>
         </nav>
     </div>
@@ -60,7 +60,7 @@
     </div>
     <div class="sidebar-section">
         <h2>Help Out</h2>
-        <p>My website has no bullshit, no sponsored posts, no pop-ups, no blocked content, ads, schemes, tactics, or gimmicks. If you enjoy my content, please consider supporting what I do.</p>
+        <p>My website has no bullshit, no sponsored posts, no pop ups, no blocked content, ads, schemes, tactics, or gimmicks. <strong>If you enjoy my content, please consider supporting what I do</strong>.</p>
         </p>
         <p>
             <a class="button yellow-button" href="https://ko-fi.com/taniarascia" target="_blank"><i class="fas fa-coffee"></i> Buy Coffee</a>
