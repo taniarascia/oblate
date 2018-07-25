@@ -441,7 +441,6 @@ img {
             text-decoration: none;
             color: $primary-color;
             background: lighten($primary-color, 46%);
-            border: 1px dashed lighten($primary-color, 20%);
         }
     }
     :not(pre) code {

@@ -1,10 +1,9 @@
 <article id="post-<?php the_ID(); ?>" class="article-preview">
-
-<?php if ( get_post_thumbnail_id() ) : ?>
+	<?php if ( get_post_thumbnail_id() ) : ?>
 	<div class="image-thumbnail">
 		<a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="100" width="100"></a>
 	</div>
-<?php endif; ?>	
+	<?php endif; ?>	
 
 	<div class="preview-title">
 		<h1>
@@ -19,5 +18,4 @@
 	<div class="preview-excerpt">
 		<?php the_excerpt(); ?>
 	</div>
-	
 </article>

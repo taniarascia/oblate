@@ -36,6 +36,9 @@
             <a href="<?php echo site_url(); ?>/category/tutorials/wordpress">
                 <i class="fab fa-wordpress"></i> <span>WordPress</span>
             </a>
+            <a href="<?php echo site_url(); ?>/category/tutorials/general">
+                <i class="fas fa-cut"></i> <span>General</span>
+            </a>
             <a href="<?php echo site_url(); ?>/snippets">
                 <i class="fas fa-cut"></i> <span>Snippets</span>
             </a>
@@ -48,11 +51,11 @@
         <h2>Email List</h2>
         <p>Friendly, infrequent updates straight to your inbox. </p>
         <div>
-          <form id="newsletter-form" action="https://newsletter.taniarascia.com/sendy/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+            <form id="newsletter-form" action="https://newsletter.taniarascia.com/sendy/subscribe" method="POST" accept-charset="utf-8" target="_blank">
                 <input type="email" name="email" required id="email-sidebar" class="email" placeholder="Email" pattern="[a-zA-Z0-9._\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,4}">
                 <input type="hidden" name="list" value="P2bfC2WL3TvnTWEmucMbbg">
                 <input type="submit" name="submit" id="submit-sidebar" value="Submit">
-         </form>
+            </form>
         </div>
     </div>
     <div class="sidebar-section">

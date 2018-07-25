@@ -1,24 +1,23 @@
 <article class="article" id="post-<?php the_ID(); ?>">
 	<section class="single-body">
 		<header class="single-header">
-				<div class="single-header-flex">
-					<div class="header-thumbnail">
-						<?php if ( get_post_thumbnail_id() ) { ?>
-							<img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="150" width="150">
-						<?php } ?>
-						</div>
-						<div class="header-title">
-							<h1><?php the_title(); ?></h1>
-							<div class="article-data">
-								<a href="<?php echo site_url(); ?>/me">Tania Rascia</a> &nbsp;/&nbsp;
-								<?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?>
-								<time datetime="<?php the_time( 'Y-m-d' ); ?>"> &nbsp;/&nbsp;
-									<?php the_time( 'F j, Y' ); ?></time>
-							</div>	
-						</div>
-						
-					</div>
-			</header>
+			<div class="single-header-flex">
+				<div class="header-thumbnail">
+					<?php if ( get_post_thumbnail_id() ) { ?>
+					<img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="150" width="150">
+					<?php } ?>
+				</div>
+				<div class="header-title">
+					<h1><?php the_title(); ?></h1>
+					<div class="article-data">
+						<a href="<?php echo site_url(); ?>/me">Tania Rascia</a> &nbsp;/&nbsp;
+						<?php comments_popup_link( 'Leave a response', '1 response', '% responses' ); ?>
+						<time datetime="<?php the_time( 'Y-m-d' ); ?>"> &nbsp;/&nbsp;
+							<?php the_time( 'F j, Y' ); ?></time>
+					</div>	
+				</div>
+			</div>
+		</header>
 
 		<div class="excerpt"><?php the_excerpt(); ?></div>
 		<?php the_content(); ?>

@@ -18,7 +18,6 @@
 			if ( $work->have_posts() ) :  while ( $work->have_posts() ) : $work->the_post();
 			$url = get_post_meta($post->ID, 'url', true); ?>
 
-
 			<?php get_template_part( 'content-work', get_post_format() ); ?>
 
 			<?php endwhile; endif; wp_reset_postdata(); ?>

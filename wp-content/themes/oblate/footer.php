@@ -42,6 +42,7 @@
                         <a href="<?php echo site_url(); ?>/thoughts">Writing</a>
                         <a href="<?php echo site_url(); ?>/music" target="_blank">Music</a>
                         <a href="<?php echo site_url(); ?>/contact">Contact me</a>
+                        <a href="https://ko-fi.com/taniarascia" target="_blank">Coffee</a>
                         <a href="https://patreon.com/taniarascia" target="_blank">Patreon</a>
                     </nav>
                 </div>
