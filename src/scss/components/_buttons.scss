@@ -1,142 +1,122 @@
 /* Buttons
   =============== */
 
-// Button Extend  
-.buttons {
-	display: inline-block;
-	padding: .75rem 1.25rem;
-	text-align: center;
-	font-size: 1.05rem;
-	text-decoration: none !important;
-	background: $link-color;
-	border: 0;
-	border-radius: $br;
-	cursor: pointer;
-	font-weight: 600;
-	margin: 0;
-	font-family: $button-family;
-	color: white;
-	text-shadow: none;
+// Main button styling
+%buttons {
 	-webkit-appearance: none;
+	display: inline-block;
+	border: $button-border-width $button-border-style $button-border-color;
+	border-radius: $button-border-radius;
+	background: $button-background;
+	color: $button-color;
+	font-weight: $button-font-weight;
+	font-family: $button-font-family;
+	font-size: $button-font-size;
+	text-transform: $button-text-transform;
+	padding: .75rem 1.25rem;
+	margin: 0 0 .5rem 0;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	line-height: 1;
 }
 
-.buttons-hover {
-	background: darken($link-color, 5%);
+// Buttons on hover
+%buttons-hover {
+	border: $button-border-width $button-border-style darken($button-border-color, 10%);
+	background: $button-background-hover;
+	color: $button-color;
 	text-decoration: none;
 }
 
-// Button Output
-[type="submit"],
-[type="reset"],
-[type="button"],
-a.button,
-.button,
-button {
-	@extend .buttons;
-	&:hover,
-	&:focus {
-		outline: 0;
-		color: white;
-		@extend .buttons-hover;
-	}
-	&:active {
-		outline: 0;
-		color: white;
-		transform: scale(.95);
-		border-bottom: 0 !important;
-	}
+// Buttons on focus
+%buttons-focus {
+	border: $button-border-width $button-border-style darken($button-border-color, 10%);
+	background: darken($button-background, 10%);
+	color: $button-color;
+	text-decoration: none;
 }
 
-// Alt button
-a.button.alt-button,
-.button.alt-button {
-	color: white;
-	background: $alt-color;
-	&:hover,
-	&:focus {
-		background: darken($alt-color, 10%);
-		color: white;
+// Apply styles to .button class, button element, and button-based inputs
+#{$buttons} {
+	@extend %buttons;
+	&::-moz-focus-inner {
+		border: 0;
+		padding: 0;
 	}
-	&:active {
-		outline: 0;
-		transform: scale(.95);
-	}
-}
-
-// Ghost button
-a.button.ghost-button,
-.button.ghost-button {
-	color: $link-color;
-	background: transparent;
-	border: 1px solid $link-color;
-	&:hover,
-	&:focus,
-	&:active {
-		color: white;
-		background: $link-color;
-	}
-}
-
-// Other button
-a.button.secondary-button,
-.button.secondary-button {
-	background: #F4F5F6;
-	color: #333;
-	border: 1px solid #E6E7EB;
-	&:hover,
-	&:focus,
-	&:active {
-		border: 1px solid darken(#E6E7EB, 10%);
-	}
-}
-
-// Other button
-a.button.paypal-button,
-.button.paypal-button {
-	background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-	color: #6f1c26;
-	border: 1px solid darken($yellow, 10%);
-	margin-bottom: 1rem;
-	&:hover,
-	&:focus,
-	&:active {
-		background: linear-gradient(62deg, darken(#FBAB7E, 10%) 0%, darken(#F7CE68, 10%) 100%);
-		color: #111;
-	}
-}
-
-// Tag button
-a.tag-button,
-.tag-button {
-	display: inline-block;
-	color: lighten($heading-color, 6%);
-	padding: .75rem 1rem;
-	border-radius: 6px;
-	margin: 0;
-	border: 1px solid $border;
-	background: transparent;
-	font-size: 1rem;
-	&:hover,
-	&:focus,
-	&:active {
-		text-decoration: none;
-		background: white;
-		border: 1px solid darken($border, 8%);
-		color: $heading-color;
-	}
-}
-
-.non-button {
-	font-size: 1rem;
-	color: #666;
-	font-weight: 600;
-	margin-right: .5rem;
-	text-transform: uppercase;
-}
-
-#edd-purchase-button, .edd-submit, input[type=submit].edd-submit {
-	@extend .buttons;
 	&:hover {
-		@extend .buttons-hover;	
+		@extend %buttons-hover;
 	}
+	&:focus,
+	&:active {
+		@extend %buttons-focus;
+	}
+}
+
+// Secondary button color
+.accent-button,
+a.accent-button {
+	color: $accent-button-color;
+	border: 1px solid $accent-button-background;
+	background: $accent-button-background;
+	&:hover,
+	&:focus,
+	&:active {
+		color: $accent-button-color-hover;
+		border: 1px solid darken($accent-button-background, 10%);
+		background: darken($accent-button-background, 10%);
+	}
+}
+
+// Secondary button color
+.yellow-button,
+a.yellow-button {
+	color: $heading-font-color;
+	border: 1px solid $yellow;
+	background: $yellow;
+	&:hover,
+	&:focus,
+	&:active {
+		color: $heading-font-color;
+		border: 1px solid darken($yellow, 10%);
+		background: darken($yellow, 10%);
+	}
+	i {
+		margin-right: 10px;
+	}
+}
+
+// Muted buttons
+.muted-button,
+a.muted-button {
+	background: $muted-background;
+	border: $muted-border;
+	color: $muted-color;
+	&:hover,
+	&:focus,
+	&:active {
+		color: $muted-color-hover;
+		border: $muted-border-hover;
+		background: $muted-background-hover;
+	}
+}
+
+// Round buttons
+.round-button,
+a.round-button {
+	border-radius: $round-buttons;
+}
+
+// Square buttons
+.square-button,
+a.square-button {
+	border-radius: 0;
+}
+
+// Full width buttons (block level)
+.full-button,
+a.full-button {
+	display: block;
+	width: 100%;
 }

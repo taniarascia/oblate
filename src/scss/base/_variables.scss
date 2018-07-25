@@ -1,68 +1,141 @@
 /* Variables
-  =============== */
+ * ===============
+ *
+ * All variables and most of the configuration is defined on this page. */
 
-/* Mobile Breakpoints */
 
-$mobile: 600px;
-$tablet: 900px;
-$nav-breakpoint: 1000px;
-$desktop: 1120px;
+/* Containers */
 
-/* Content Font Styling */ 
- 
+$x-small: 700px;
+$small: 1050px;
+$medium: 1200px;
+$large: 1300px;
+
+/* Breakpoints */
+
+$mobile: $x-small;
+$tablet: $small;
+$desktop: $medium;
+
+/* Colors */
+
+$background: #f0f0f0;
+$primary-color: #1c7ed7;
+$secondary-color: #ff4a6e; 
+$green: #28a745;
+$yellow: #ffb932;
+$accent-color: #cdcdcd;
+$light: #f0f0f0;
+$alternate-background: #f0f0f0;
+$alternate-color: #404040;
+$link-color: $primary-color;
+$link-hover-color: darken($link-color, 15%);
+$highlight: #ffeea8;
+$error: #D33C40;
+$bq-border: 16px solid #f0f0f0;
+$code: Menlo;
+
+/* Typography */
+
+// Body font
+$font-size: 1rem;
+$body-font-size: 1.2rem;
 $font-style: normal;
 $font-variant: normal;
 $font-weight: normal;
 $font-color: #404040;
-$font-size: 1rem;
-$body-size: 1.075rem;
-$nav-bg: #272A34;
-
+$font-family:  'Nunito Sans', -apple-system,  BlinkMacSystemFont, 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
 $line-height: 1.6;
 
-$primary: #3292F6; 
-$secondary: #5EEDA3;
+// Headings
+$heading-font-color: #222;
+$heading-font-weight: 700;
+$heading-font-family:  'Nunito', -apple-system, BlinkMacSystemFont, 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
+$heading-line-height: 1.3;
 
-/* Colors */
+// Mobile heading font size
+$h1-mobile: 1.75rem;
+$h2-mobile: 1.5rem;
+$h3-mobile: 1.25rem;
+$h4-mobile: 1.1rem;
+$h5-mobile: 1rem;
 
-$blue: $primary;
-$pink: #FC5D76;
-$green: $secondary;
-$yellow: #FDB54B;
-$purple: #BD96F6;
-$dark: #181818;
-$light: rgba(255,255,255,.5);
-$light-font: #6d6e70;
-$bg: url("https://www.taniarascia.com/wp-content/uploads/pixels.png");
-$margin: 1.5rem;  
+// Heading font size
+$h1: 2.25rem;
+$h2: 2rem;
+$h3: 1.75rem;
+$h4: 1.5rem;
+$h5: 1.25rem;
 
-$link-color: $primary;
-$alt-color: $secondary;
-$heading-color: #222;
-$light-color: lighten($font-color, 30%);
+/* Padding */
 
-$font-family: 'Nunito Sans', sans-serif;
-$heading-family: 'Nunito Sans', sans-serif;
-$nav-family: 'Nunito Sans', sans-serif;
-$button-family: 'Nunito Sans', sans-serif;
-$special-heading: 'Nunito', sans-serif; //'Nanum Myeongjo', sans-serif;
-$h1: 'Nanum Myeongjo', sans-serif;
-
-$background: #F4F5F6;
-$transition: none;
-$br: 6px;
+$padding: 60px;
+$margins: 2rem;
+$content-padding: 60px 0;
+$content-padding-mobile: 30px 0;
 
 /* Borders */
 
-$border: #f0f0f0;
+$border-width: 1px;
+$border-style: solid;
+$border-color: #eee;
+$border-radius: 0;
+$borders: $border-width $border-style $border-color;
+
+/* Buttons */
+
+$button-background: $primary-color;
+$button-background-hover: darken($button-background, 10%);
+$button-color: #ffffff;
+$button-font-weight: 600;
+$button-font-family: 'Nunito', -apple-system,  BlinkMacSystemFont, 'Nunito Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+$button-font-size: 1rem;
+$button-border-width: 1px;
+$button-border-style: solid;
+$button-border-color: $button-background;
+$button-border-radius: $border-radius;
+$button-text-transform: none;
+
+// Accent buttons
+$accent-button-background: $secondary-color;
+$accent-button-color: #ffffff;
+$accent-button-color-hover: #ffffff;
+
+// Muted Buttons
+$muted-border: 1px solid $accent-color;
+$muted-border-hover: 1px solid darken($accent-color, 30%);
+$muted-background: transparent;
+$muted-background-hover: transparent;
+$muted-color: darken($accent-color, 50%);
+$muted-color-hover: darken($accent-color, 50%);
+
+// Round Buttons
+$round-buttons: 40px;
+
+/* Forms */
+
+$forms: ('[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea');
+$buttons: ('.button, a.button, button, [type=submit], [type=reset], [type=button]');
+$input-background: transparent;
+$placeholder: darken($accent-color, 20%);
+$form-border: 1px solid #cdcdcd;
+$form-border-hover: 1px solid darken(#cdcdcd, 10%);
+$form-border-focus: 1px solid $link-color;
+
+/* Tables */
+
+$stripes: #f8f8f8;
+$caption: #ababab;
 
 /* Code */
 
+$code-color: $font-color;
+$code-size: 14px;
+$code-family: Menlo, monospace;
+$code-background: transparent;
+$code-borders: $borders;
+
 $code: Menlo, 'Roboto Mono', Courier New, monospace;
-
-/* Navigation */
-
-$nav-height: 60px;
 
 /* Variables */
 
@@ -81,3 +154,9 @@ $tag: #78AAD6;
 $selector: #F7931E;
 $deleted: #F6BF26;
 $error: #EB4D5C;
+
+/* Nav */
+
+$nav-height: 90px;
+$nav-color: #262626;
+$sidebar-width: 300px;

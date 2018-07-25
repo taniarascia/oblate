@@ -1,18 +1,22 @@
-/*! taniarascia.com design and developed by, you guessed it, Tania Rascia. */
+/*! Primitive
+  by Tania Rascia */ 
 
-/* Base */
+// Configuration
+@import "base/variables";
+@import "base/mixins";
+@import "base/fonts";
 
-@import 'base/variables';
-@import 'base/mixins';
-@import 'base/reset';
+// Reset
+@import "base/normalize";
+@import "base/reset";
 
-/* Partials */
-
-@import 'components/buttons';
-@import 'components/forms';
-@import 'components/layout';
-@import 'components/code';
-
-/* Pages */
-
-@import 'pages/portfolio';
+// Components
+@import "components/scaffolding"; 
+@import "components/code";
+@import "components/grid";
+@import "components/helpers";
+@import "components/buttons";
+@import "components/forms";
+@import "components/tables";
+@import "components/navigation";
+@import "components/layout";

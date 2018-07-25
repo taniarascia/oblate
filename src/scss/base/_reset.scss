@@ -2,68 +2,17 @@
   =============== */
 
 // Reset box sizing to border box
+html {
+	box-sizing: border-box;
+}
+
 *,
-*:before,
-*:after {
+*::before,
+*::after {
 	box-sizing: border-box;
 }
 
 // Remove figure margin
 figure {
 	margin: 0;
-}
-
-body {
-	margin: 0;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-	display: block;
-}
-
-a:active,
-a:hover {
-	outline-width: 0;
-}
-
-img {
-	border-style: none;
-}
-
-button,
-input {
-	overflow: visible;
-}
-
-button,
-select {
-	text-transform: none;
-}
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-	border-style: none;
-	padding: 0;
-}
-
-textarea {
-	overflow: auto;
-}
-
-::-webkit-input-placeholder {
-	color: inherit;
-	opacity: 0.54;
 }

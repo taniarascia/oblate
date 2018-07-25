@@ -1,104 +1,120 @@
-/* Forms */
+/* Forms
+  =============== */
 
-// Forms Extend
-.forms {
-	padding: 1rem 1.25rem;
-	border-radius: $br;
-	border: 1px solid darken($border, 8%);
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-	max-width: 100%;
+// Display for all input fields (except buttons and checkbox) 
+%forms {
+	display: block;
+	border: $form-border;
+	border-radius: $border-radius;
+	padding: .75rem;
+	outline: none;
+	background: $input-background;
+	margin-bottom: .5rem;
 	font-size: 1rem;
-	background: white;
-	-webkit-appearance: none;
+	width: 100%;
+	max-width: 100%;
+	line-height: 1;
 }
 
-// Forms Output CSS
-textarea,
-select,
-[type="email"],
-[type="number"],
-[type="search"],
-[type="text"],
-[type="tel"],
-[type="url"],
-[type="password"] {
-	@extend .forms;
+// Input fields on hover
+%forms-hover {
+	border: $form-border-hover;
+}
+
+// Input fields on focus 
+%forms-focus {
+	border: $form-border-focus;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1), 0 0 6px lighten($link-color, 30%);
+}
+
+// Variable containing all input fields 
+#{$forms} {
+	@extend %forms;
 	&:hover {
-		border: 1px solid darken($border, 12%);
+		@extend %forms-hover;
 	}
 	&:focus,
 	&:active {
-		border: 1px solid $link-color;
-		outline: 0;
+		@extend %forms-focus;
 	}
 }
 
 textarea {
-	min-height: 100px;
+	overflow: auto;
+	height: auto;
+}
+
+fieldset {
+	border: 1px solid $border-color;
+	border-radius: $border-radius;
+	padding: $padding;
+	margin: $margins 0;
+}
+
+legend {
+	padding: 0 .5rem;
+	font-weight: 600;
+}
+
+// Fix issues with select
+select {
+	color: $font-color;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAvklEQVQoFY2QMQqEMBBFv7ERa/EMXkGw11K8QbDXzuN4BHv7QO6ifUgj7v4UAdlVM8Uwf+b9YZJISnlqrfEUZVlinucnBGKaJgghbiHOyLyFKIoCbdvecpyReYvo/Ma2bajrGtbaC58kCdZ1RZ7nl/4/4d5EsO/7nzl7IUtodBexMMagaRrs+06JLMvcNWmaOv2W/C/TMAyD58dxROgSmvxFFMdxoOs6lliWBXEcuzokXRbRoJRyvqqqQvye+QDMDz1D6yuj9wAAAABJRU5ErkJggg==) right center no-repeat;
+	line-height: 1; // ensures text doesn't get cut off
+	
+}
+select::-ms-expand{
+	display:none; // dropdown icon fix for IE
+}
+
+// Make range full width
+[type=range] {
 	width: 100%;
 }
 
-label,
-legend {
-	display: block;
-	margin: .5rem 0 .25rem;
+// Labels
+label {
 	font-weight: 700;
 	font-size: 1rem;
-	font-family: $heading-family;
-}
-
-label>.label-body {
-	display: inline-block;
-	margin-left: .5rem;
-	font-weight: normal;
-}
-
-.scroll {
-	overflow-x: scroll;
-}
-
-div.wpcf7-mail-sent-ok {
-	border: 1px solid $green;
-	border-radius: $br;
-	padding: 1.5rem;
-	background: lighten($green, 15%);
-	color: darken($green, 25%);
-	font-size: 1rem;
-}
-
-div.wpcf7-validation-errors {
-	border: 1px solid #FFE168;
-	border-radius: $br;
-	padding: 1.5rem;
-	background: #FFF4CA;
-	color: #755D00;
-	font-size: 1rem;
-}
-
-.wpcf7-form br {
-	display: none !important;
-}
-
-span.wpcf7-not-valid-tip {
-	color: $error;
-	font-size: .9rem;
-}
-
-.contact-form {
-	margin-top: 3rem;
-	p {
-		margin: 0;
-	}
+	max-width: 100%;
+	display: block;
+	margin: 1rem 0 .5rem;
 }
 
 @include small-breakpoint {
-	.comment-form-author,
-	.comment-form-email,
-	.comment-form-url {
-		display: block;
+	.split-form {
+		// Split forms have right aligned labels and margins on the column
+		label {
+			text-align: right;
+			padding: 0 .5rem;
+			margin-bottom: 1rem;
+		}
 	}
 }
 
-#edd_checkout_form_wrap input[type=email], #edd_checkout_form_wrap input[type=password], #edd_checkout_form_wrap input[type=tel], #edd_checkout_form_wrap input[type=text], #edd_checkout_form_wrap textarea {
-	padding: 1rem 1.25rem;
+// Errors
+input,
+select,
+textarea {
+	&.has-error {
+		border: 1px solid $error;
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1), 0 0 6px lighten($error, 35%);
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		&.has-error {
+			@extend .has-error;
+		}
+	}
+}
+
+// Placeholder Text 
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-moz-placeholder,
+:-ms-input-placeholder {
+	color: $placeholder;
 }

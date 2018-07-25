@@ -3,14 +3,12 @@
   "version": "2.0.0",
   "description": "Tania Rascia's Web Development Guides and Tutorials",
   "main": "gulpfile.js",
-  "dependencies": {
-    "gulp": "^3.9.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "gulp": "latest",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "latest",
     "gulp-cssnano": "latest",
-    "gulp-sass": "latest",
+    "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "latest"
   },
   "repository": {
