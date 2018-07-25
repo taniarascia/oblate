@@ -80,6 +80,9 @@
         }
     }
     .site-navigation-search {
+        form {
+            background: lighten($nav-color, 15%);
+        }
         flex: 2;
         input {
             background: lighten($nav-color, 15%);
@@ -90,6 +93,7 @@
             width: 100%;
             padding: 0 30px;
             border-radius: 0 !important;
+            -webkit-appearance: none;
             &:hover {
                 background: lighten($nav-color, 18%);
             }

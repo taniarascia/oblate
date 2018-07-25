@@ -1132,7 +1132,11 @@ blockquote {
     display: none;
 }
 
+.wpcf7-form input {
+    width: auto !important;
+}
+
 ::selection {
-    background: rgba(255, 245, 20, .8);
+    background: rgba(255, 245, 30, .9);
     color: #111;
 }
