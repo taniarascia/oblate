@@ -42,6 +42,7 @@
                         <a href="<?php echo site_url(); ?>/thoughts">Writing</a>
                         <a href="<?php echo site_url(); ?>/music" target="_blank">Music</a>
                         <a href="<?php echo site_url(); ?>/contact">Contact me</a>
+                        <a href="https://patreon.com/taniarascia" target="_blank">Patreon</a>
                     </nav>
                 </div>
                 <div>
@@ -62,7 +63,10 @@
                     <nav class="footer-nav">
                         <div><a href="https://laconia.site" target="_blank">Laconia MVC</a> / <a href="https://github.com/taniarascia/laconia" target="_blank">Source</a></div>
                         <div><a href="https://taniarascia.github.io/primitive" target="_blank">Primitive CSS</a> / <a href="https://github.com/taniarascia/primitive" target="_blank">Source</a></div>
-                        <div><a href="https://github.com/taniarascia/new-moon" target="_blank">New Moon Code Theme</a></div>
+                        <div><a href="https://taniarascia.github.io/new-moon" target="_blank">New Moon </a> / <a href="https://github.com/taniarascia/new-moon" target="_blank">Source</a></div>
+                        <div><a href="https://taniarascia.github.io/html5-test/" target="_blank">Test All HTML5 Elements</a></div>
+                        <div><a href="https://github.com/taniarascia/untheme" target="_blank">untheme WordPress Theme</a></div>
+                        <div><a href="https://taniarascia.github.io/coffee/" target="_blank">Chicago Coffee Map</a></div>
                     </nav>
                 </div>
             </div>
