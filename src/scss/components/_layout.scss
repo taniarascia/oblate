@@ -247,7 +247,7 @@ img {
             font-size: 1.4rem;
             color: $heading-font-color;
             line-height: 1.2;
-            font-weight: 800 !important;
+            font-weight: 700 !important;
             &:hover,
             &:active,
             &:focus {
@@ -1089,9 +1089,9 @@ blockquote {
 .author {
     background: #f0f0f0;
     margin-bottom: 2rem;
-    padding: 2.5rem;
+    padding: 1.5rem;
     font-size: 1.1rem;
-    margin: 3rem 0 0;
+    margin: 2rem 0 0;
     .author-options {
         display: flex;
         text-align: center;
@@ -1110,9 +1110,11 @@ blockquote {
     }
 }
 
-.blink {
-    animation: blink-animation 1s steps(5, start) infinite;
-    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+@include small-breakpoint {
+    .author {
+        padding: 2.5rem;
+        margin: 3rem 0 0;
+    }
 }
 
 @keyframes blink-animation {
@@ -1125,6 +1127,11 @@ blockquote {
     to {
         visibility: hidden;
     }
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
 }
 
 .wpcf7-form br {
