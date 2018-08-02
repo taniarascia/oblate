@@ -29,7 +29,7 @@
 			
 			<div class="author-options">
 				<div>
-					<p><a class="button yellow-button" href="https://ko-fi.com/taniarascia" target="_blank"><i class="fas fa-coffee"></i> Buy Coffee</a></p>
+					<p><a class="button yellow-button" href="https://ko-fi.com/taniarascia" target="_blank"><i class="fas fa-coffee"></i> Buy me a coffee</a></p>
 				</div>
 			</div>
 		</div>

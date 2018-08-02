@@ -60,10 +60,10 @@
     </div>
     <div class="sidebar-section">
         <h2>Help Out</h2>
-        <p>My website has no bullshit, no sponsored posts, no pop ups, no blocked content, ads, schemes, tactics, or gimmicks. <strong>If you enjoy my content, please consider supporting what I do</strong>.</p>
+        <p>My website has no bullshit, no sponsored posts, no pop ups, no blocked content, ads, schemes, tactics, or gimmicks. If you enjoy my content, <strong>please consider supporting what I do</strong>.</p>
         </p>
         <p>
-            <a class="button yellow-button" href="https://ko-fi.com/taniarascia" target="_blank"><i class="fas fa-coffee"></i> Buy Coffee</a>
+            <a class="button yellow-button" href="https://ko-fi.com/taniarascia" target="_blank"><i class="fas fa-coffee"></i> Buy me a coffee</a>
         </p>
     </div>
 </aside>

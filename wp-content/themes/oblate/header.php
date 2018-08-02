@@ -60,7 +60,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <a href="<?php echo site_url(); ?>/me"><span class="nav-icon"><i class="far fa-heart"></i></span><span>About me</span></a>
                     <a href="<?php echo site_url(); ?>/tutorials"><span class="nav-icon"><i class="far fa-map"></i></span><span>Tutorials</span></a>
                     <a href="<?php echo site_url(); ?>/contact"><span class="nav-icon"><i class="far fa-comments"></i></span><span>Contact</span></a>
-                    <a href="https://ko-fi.com/taniarascia" target="_blank"><span class="nav-icon"><i class="fas fa-coffee"></i></span> Buy Coffee</a>
+                    <a href="https://ko-fi.com/taniarascia" target="_blank"><span class="nav-icon"><i class="fas fa-coffee"></i></span> Buy me a coffee</a>
                 </nav>
                 <nav class="site-navigation-search">
 				<form role="search" method="get" class="nav-search" action="<?php echo home_url( '/' ); ?>">
