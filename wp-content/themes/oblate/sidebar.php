@@ -65,10 +65,5 @@
         <p>
             <a class="button yellow-button" href="https://ko-fi.com/taniarascia" target="_blank"><i class="fas fa-coffee"></i> Buy me a coffee</a>
         </p>
-        <p style="font-size:10px">
-        <strong>BTC:</strong><br> 3H3w3M3CVqa6y4GiKYRreAS4K6D4sJg9Fg<br>
-        <strong>ETH:</strong><br> 0xaC2822edD0b2294D4Dd1d703a0aD7e04B87CD05a<br>
-        <strong>LTC:</strong><br> MPprHYAXQqxTXQSi9dN9QA11Kx4DqW6urY
-        </p>
     </div>
 </aside>
