@@ -19,13 +19,11 @@
                     <p class="footer-social-links">
                         <a href="https://github.com/taniarascia" target="_blank"><i class="fab fa-2x fa-github-alt" aria-hidden="true"></i></a>
                         <a href="https://twitter.com/taniarascia" target="_blank"><i class="fab fa-2x fa-twitter" aria-hidden="true"></i></a>
-                        <a href="https://linkedin.com/in/taniarascia" target="_blank"><i class="fab fa-2x fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="https://join.slack.com/t/httpchat/shared_invite/enQtNDAxODEwMTU2ODM0LTljMGRjZDZmZTA1ZDEwNjc5M2QwYjk5ZjViMGUzNDYzZjJhMGM2OTNmNTNkODM1OWYzZWIzYjA2NTU4YTczZWU" target="_blank"><i class="fab fa-2x fa-slack" aria-hidden="true"></i></a>
                         <a href="<?php echo site_url(); ?>/contact"><i class="far fa-2x fa-comments" aria-hidden="true"></i></a>
                         </p>
                     <p>
                         <h3>Email List</h3>
-                        <p>Friendly updates straight to your inbox.</p>
+                        <p>Get friendly, infrequent updates when I write.</p>
                         <form id="newsletter-form" action="https://newsletter.taniarascia.com/sendy/subscribe" method="POST" accept-charset="utf-8" target="_blank">
                             <input type="email" name="email" required id="email" class="email" placeholder="Email" pattern="[a-zA-Z0-9._\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,4}">
                             <input type="hidden" name="list" value="P2bfC2WL3TvnTWEmucMbbg">
@@ -37,9 +35,8 @@
                     <h2>About</h2>
                     <nav class="footer-nav">
                         <a href="<?php echo site_url(); ?>/me">About me</a>
-                        <a href="<?php echo site_url(); ?>/tutorials">Tutorials</a>
+                        <a href="<?php echo site_url(); ?>/blog">Articles</a>
                         <a href="<?php echo site_url(); ?>/work">Work</a>
-                        <a href="<?php echo site_url(); ?>/thoughts">Writing</a>
                         <a href="<?php echo site_url(); ?>/music" target="_blank">Music</a>
                         <a href="<?php echo site_url(); ?>/contact">Contact me</a>
                         <a href="https://ko-fi.com/taniarascia" target="_blank">Coffee</a>
@@ -49,6 +46,7 @@
                 <div>
                     <h2>Most Popular</h2>
                     <nav class="footer-nav">
+                        <a href="<?php echo site_url(); ?>/getting-started-with-react">React</a>
                         <a href="<?php echo site_url(); ?>/es6-syntax-and-feature-overview/">JavaScript ES6</a>
                         <a href="<?php echo site_url(); ?>/developing-a-wordpress-theme-from-scratch/">WordPress</a>
                         <a href="<?php echo site_url(); ?>/what-is-bootstrap-and-how-do-i-use-it/">Bootstrap</a>
@@ -163,6 +161,7 @@
     <?php endwhile; endif; ?>
 <?php } ?>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://api.moneybutton.com/moneybutton.js"></script>
 </body>
 
 </html>

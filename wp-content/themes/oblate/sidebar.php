@@ -18,6 +18,9 @@
     <div class="sidebar-section">
         <h2>Topics</h2>
         <nav class="sidebar-navigation">
+            <a href="<?php echo site_url(); ?>/blog">
+                <i class="far fa-map"></i> <span>All Articles</span>
+            </a>
             <a href="<?php echo site_url(); ?>/category/tutorials/front-end">
                 <i class="fas fa-laptop"></i> <span>Front End &amp; Design</span>
             </a>
@@ -36,20 +39,11 @@
             <a href="<?php echo site_url(); ?>/category/tutorials/wordpress">
                 <i class="fab fa-wordpress"></i> <span>WordPress</span>
             </a>
-            <a href="<?php echo site_url(); ?>/category/tutorials/general">
-                <i class="far fa-save"></i> <span>General</span>
-            </a>
-            <a href="<?php echo site_url(); ?>/snippets">
-                <i class="fas fa-cut"></i> <span>Snippets</span>
-            </a>
-            <a href="<?php echo site_url(); ?>/tutorials">
-            <i class="far fa-map"></i> <span>All Tutorials</span>
-            </a>
         </nav>
     </div>
     <div class="sidebar-section">
         <h2>Email List</h2>
-        <p>Friendly, infrequent updates straight to your inbox. </p>
+        <p>Get friendly, infrequent updates when I write something new.</p>
         <div>
             <form id="newsletter-form" action="https://newsletter.taniarascia.com/sendy/subscribe" method="POST" accept-charset="utf-8" target="_blank">
                 <input type="email" name="email" required id="email-sidebar" class="email" placeholder="Email" pattern="[a-zA-Z0-9._\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,4}">
@@ -65,5 +59,15 @@
         <p>
             <a class="button yellow-button" href="https://ko-fi.com/taniarascia" target="_blank"><i class="fas fa-coffee"></i> Buy me a coffee</a>
         </p>
+        <div class="money-button"
+        data-to="qq9jtv5n7mt9uqyudjj6pl7npm0egh9nvy6dnfwlkw"
+        data-amount="0.01"
+        data-currency="BCH"
+        data-label=""
+        data-client-identifier="a65023353f4a69a96a959fe5f909749c"
+        data-button-id="1539142789617"
+        data-button-data="{}"
+        data-type="tip"
+        ></div>
     </div>
 </aside>

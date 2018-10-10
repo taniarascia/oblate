@@ -19,7 +19,6 @@
 			</div>
 		</header>
 
-		<div class="excerpt"><?php the_excerpt(); ?></div>
 		<?php the_content(); ?>
 		<div class="author">
 			<h2 class="text-center">Quality and morality on the web</h2>

@@ -12,7 +12,7 @@ html {
 // Body base
 body {
 	color: $font-color;
-	background: $background;
+	background: linear-gradient(to right, #ffffff 50%, $sidebar-color 50%);
 	font-size: 1rem;
 }
 

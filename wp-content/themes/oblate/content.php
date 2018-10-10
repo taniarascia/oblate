@@ -1,10 +1,9 @@
 <article id="post-<?php the_ID(); ?>" class="article-preview">
+<div class="image-thumbnail">
 	<?php if ( get_post_thumbnail_id() ) : ?>
-	<div class="image-thumbnail">
 		<a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="100" width="100"></a>
+		<?php endif; ?>	
 	</div>
-	<?php endif; ?>	
-
 	<div class="preview-title">
 		<h1>
 			<a href="<?php the_permalink(); ?>">
@@ -18,4 +17,5 @@
 	<div class="preview-excerpt">
 		<?php the_excerpt(); ?>
 	</div>
+
 </article>

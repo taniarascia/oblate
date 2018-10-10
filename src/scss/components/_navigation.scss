@@ -13,6 +13,11 @@
     height: $nav-height;
     background: $nav-color;
     color: #dedede;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
     .site-navigation-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -27,7 +32,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 45px;
+        height: 35px;
         .nav-icon {
             display: none;
             margin-right: 10px;
@@ -66,13 +71,12 @@
         }
     }
     .site-navigation-links {
-        height: 45px;
         flex-wrap: nowrap;
         align-self: flex-start;
         order: 2;
         grid-column-start: 1;
         grid-column-end: span 2;
-        height: 45px;
+        height: 35px;
         text-align: center;
         a {
             justify-content: center;
@@ -119,7 +123,7 @@
         font-weight: 600;
         padding-right: 10px;
         padding-left: 10px;
-        height: 45px;
+        height: 35px;
         background: #333;
         a {
             width: 100%;
