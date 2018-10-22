@@ -364,6 +364,10 @@ blockquote {
   }
 }
 
+.wpcf7 br {
+  display: none !important;
+}
+
 // Comments
 #comments {
   line-height: 1.4; // Comment body
