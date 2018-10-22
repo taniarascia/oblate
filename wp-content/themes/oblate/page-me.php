@@ -1,19 +1,16 @@
-<?php get_header(); ?>
+<?php 
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+get_header();
 
-<article id="<?php the_id(); ?>" class="article">
+    if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<section class="single-body">
-		<header class="page-header">
-			<h1><?php the_title(); ?></h1>
-		</header>
+        <div class="container">
+            <h1><?php the_title(); ?></h1>
 
-		<?php the_content(); ?>
-	</section>
+            <?php the_content(); ?>
+        </div>
 
-</article>
+    <?php 
+    endwhile; endif; 
 
-<?php endwhile; endif; ?>
-
-<?php get_footer();
+get_footer();

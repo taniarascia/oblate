@@ -130,8 +130,8 @@
 }
 
 .yellow {
-	color: $yellow;
-}
+	color: darken($yellow, 10%);
+} 
 
 // Screen reader text for accessibility
 .screen-reader-text {

@@ -47,7 +47,7 @@ pre code {
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
-	line-height: 1.6;
+	line-height: 1.7;
 	font-weight: 400;
 	tab-size: 2;
 	hyphens: none;
@@ -126,6 +126,7 @@ code[class*=language-sass] {
 	font-weight: bold;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px;
+	margin-bottom: -4px;
 }
 
 /* Syntax Highlighting */

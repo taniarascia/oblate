@@ -1,21 +1,30 @@
-<?php get_header(); ?>
+<?php 
 
-<section class="content">
-	<section class="page-body">
-		<header class="page-header">
+get_header(); ?>
+
+	<div class="container">
+        <header class="search-enabled">
 			<h1><?php echo get_search_query(); ?></h1>
+			<form id="search-form" role="search" class="search-form" method="get" action="<?php echo home_url( '/' ); ?>">
+                <span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span>
+				<div class="search-wrapper">
+					<input id="filter" type="search" placeholder="<?php echo esc_attr_x( 'Filter', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>"
+		name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>">
+					<i class="fas fa-search search-icon"></i>
+				</div>
+            </form>
 		</header>
+		
+		<section class="list">
+            <div class="lead" id="none-found">No results found.</div>
+        
+        <?php 
+        if ( have_posts() ) : 
+            while ( have_posts() ) : the_post(); 
+                get_template_part( 'content', get_post_format() ); 
+			endwhile; ?>
 
-			<?php if ( have_posts() ) : ?>
-
-			<section class="article-preview-section">
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'content', get_post_format() ); ?>
-
-			<?php endwhile;  ?>
-			
+			</div>
 		</section>
 
 		<div class="posts-links">
@@ -26,11 +35,10 @@
 				<?php next_posts_link(); ?>
 			</div>
 		</div>
-		<?php else : ?>
-		<h2>Sorry! No results were found for this query.</h2>
-		<?php endif; wp_reset_postdata(); ?>
-
-	</section>
-</section>
+        <?php 
+        else : ?>
+		    <p class="lead">Sorry! No results were found for this query.</p>
+        <?php 
+        endif; wp_reset_postdata(); ?>
 
 <?php get_footer(); 

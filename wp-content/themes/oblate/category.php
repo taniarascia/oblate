@@ -1,25 +1,23 @@
-<?php get_header(); ?>
+<?php 
 
-<section class="content">
-	<section class="page-body">
-		
-        <?php if ( have_posts() ) : ?>
+get_header(); ?>
+
+	<div class="container">
+
+        <?php 
+        if ( have_posts() ) : ?>
         
-        <header class="page-header">
             <h1><?php single_cat_title(); ?></h1>
-		</header>
 
-		<section class="article-preview-section">
-
-        <?php while ( have_posts() ) : the_post(); 
-                    get_template_part( 'content', get_post_format() );
-              endwhile; ?>
+        <?php 
+        while ( have_posts() ) : the_post(); 
+            get_template_part( 'content', get_post_format() );
+        endwhile; ?>
             
-        </section>
-
         <?php endif; wp_reset_postdata(); ?>
         
-    </section>
-</section>
+    </div>
 
-<?php get_footer();
+<?php 
+
+get_footer();

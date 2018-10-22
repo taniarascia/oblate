@@ -1,254 +1,142 @@
-/* Navigation
-  =============== */
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 3;
+  width: 100%;
+  border-bottom: 2px solid #eee;
+  font-size: 1rem;
 
-// Container
-.nav-container {
-    max-width: $large;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
+  .buy {
+    color: #111;
+  }
 
-.site-navigation {
-    height: $nav-height;
-    background: $nav-color;
-    color: #dedede;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 5;
-    width: 100%;
-    .site-navigation-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 0;
-        align-items: center;
-        justify-content: space-between;
+  a {
+    color: #666;
+    padding: 0.5rem .6rem;
+    border-radius: 4px;
+    display: block;
+    margin: 0 0.1rem;
+
+    &.nav-icon {
+      padding: .5rem .4rem;
+
+      &:hover {
+        background: transparent;
+      }
     }
-    .site-navigation-links,
-    .site-navigation-brand,
-    .site-navigation-search {
+
+    &.donate-link {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+    }
+
+    .donate-icon {
+      display: none;
+      max-width: 25px;
+      height: 25px;
+    }
+  }
+
+  .nav-container {
+    max-width: $width;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .brand {
+      font-weight: 600;
+
+      a {
         display: flex;
         align-items: center;
-        justify-content: center;
-        height: 35px;
-        .nav-icon {
-            display: none;
-            margin-right: 10px;
-        }
-        a {
-            display: flex;
-            align-items: center;
-            justify-items: center;
-            height: 100%;
-            color: rgba(255, 255, 255, .7);
-            text-decoration: none;
-            padding: 0 10px;
-            font-size: .9rem;
-            white-space: nowrap;
-            .nav-icon .fa-coffee {
-                color: $yellow;
-            }
-            &:hover,
-            &:active,
-            &:focus {
-                color: white;
-                background: darken($nav-color, 5%);
-                .nav-icon {
-                    color: $primary-color;
-                    .fa-heart {
-                        color: $secondary-color;
-                    }
-                    .fa-comments {
-                        color: $green;
-                    }
-                    .fa-coffee {
-                        color: darken($yellow, 10%);
-                    }
-                }
-            }
-        }
-    }
-    .site-navigation-links {
-        flex-wrap: nowrap;
-        align-self: flex-start;
-        order: 2;
-        grid-column-start: 1;
-        grid-column-end: span 2;
-        height: 35px;
-        text-align: center;
-        a {
-            justify-content: center;
-            flex: 1 1 50%;
-        }
-    }
-    .site-navigation-search {
-        form {
-            background: lighten($nav-color, 15%);
-        }
-        flex: 2;
-        input {
-            background: lighten($nav-color, 15%);
-            margin: 0;
-            border: 0;
-            color: rgba(255, 255, 255, .9);
-            height: 100%;
-            width: 100%;
-            padding: 0 30px;
-            border-radius: 0 !important;
-            -webkit-appearance: none;
-            &:hover {
-                background: lighten($nav-color, 18%);
-            }
-            &:focus,
-            &:active {
-                background: lighten($nav-color, 22%);
-                outline: 0;
-                box-shadow: none;
-            }
-            &::placeholder {
-                /* Chrome, Firefox, Opera, Safari 10.1+ */
-                color: rgba(255, 255, 255, .7);
-                opacity: 1;
-                /* Firefox */
-            }
-        }
-        .nav-search {
-            width: 100%;
-            height: 100%;
-        }
-    }
-    .site-navigation-brand {
-        font-weight: 600;
-        padding-right: 10px;
-        padding-left: 10px;
-        height: 35px;
-        background: #333;
-        a {
-            width: 100%;
-            font-size: 1.1rem;
-            letter-spacing: 0.02rem;
-            line-height: 1.1;
-            font-family: $heading-font-family;
-            padding: 0;
-            &:hover {
-                background: none;
-            }
-        }
-        .brand-icon {
-            height: 20px;
-            width: 20px;
-            margin-right: 15px;
-        }
-    }
-}
+        color: #222;
+        padding: 0;
 
-@include small-breakpoint {
-    .site-navigation {
-        .site-navigation-links,
-        .site-navigation-brand,
-        .site-navigation-search {
-            .nav-icon {
-                display: block;
-            }
-            a {
-                justify-content: center;
-                font-size: 1.05rem;
-            }
+        &:hover {
+          color: #111;
+          background: transparent !important;
         }
-        .site-navigation-brand {
-            a {
-                font-size: 1.2rem;
-                justify-content: flex-start;
-                padding-left: 30px;
-            }
-        }
+      }
+
+      span {
+        margin-left: 0.5rem;
+      }
+
+      .brand-icon {
+        display: block;
+        max-width: 20px;
+        height: 20px;
+      }
     }
+
+    .extra {
+      font-size: .9rem;
+      display: flex;
+    }
+
+    .links {
+      display: flex;
+      width: 100%;
+      order: 2;
+
+      a {
+
+        &:hover {
+          background: #f2f2f2;
+          color: #111;
+        }
+      }
+    }
+  }
 }
 
 @include medium-breakpoint {
-    // Container
-    .nav-container {
-        padding: 0 0 0 $padding;
-    }
-    .site-navigation {
-        .site-navigation-grid {
-            grid-template-columns: auto 2fr 250px;
-            grid-template-rows: unset;
-        }
-        .site-navigation-links,
-        .site-navigation-brand,
-        .site-navigation-search {
-            a {
-                text-align: center;
-                padding: 0 15px;
-                font-size: 1.05rem;
-            }
-        }
-        .site-navigation-links {
-            order: unset;
-            grid-column-start: initial;
-            grid-column-end: initial;
-            align-self: center;
-            flex-wrap: nowrap;
-            align-self: auto;
-            a {
-                height: $nav-height;
-                justify-content: center;
-            }
-        }
-        .site-navigation-brand {
-            margin-right: 15px;
-            height: $nav-height;
-            background: $nav-color;
-            padding-left: 0;
-            a {
-                padding: 0;
-                font-size: 1.2rem;
-            }
-        }
-        .site-navigation-search {
-            height: $nav-height;
-            input {
-                height: $nav-height;
-            }
-        }
-    }
-}
+  .nav {
+    font-size: 1.1rem;
+    height: $nav-height;
 
-@include large-breakpoint {
-    .site-navigation {
-        .site-navigation-grid {
-            grid-template-columns: auto 2fr 300px;
-        }
-        .site-navigation-links,
-        .site-navigation-brand,
-        .site-navigation-search {
-            a {
-                padding: 0 30px;
-                font-size: 1.1rem;
-            }
-        }
-        .site-navigation-links {
-            flex-wrap: nowrap;
-            align-self: auto;
-            a {
-                justify-content: none;
-                flex: auto;
-            }
-        }
-        .site-navigation-brand {
-            margin-right: 30px;
-            a {
-                font-size: 1.3rem;
-                padding: 0;
-            }
-        }
-        .site-navigation-search {
-            input {
-                height: $nav-height;
-            }
-        }
+    .buy {
+      margin-left: .8rem;
     }
+
+    .nav-container .brand {
+      margin-right: .5rem;
+    }
+
+    a {
+      padding: 0.8rem 1.1rem;
+
+      &.nav-icon {
+        padding: 0.8rem 0.6rem;
+      }
+
+      .donate-icon {
+        display: block;
+      }
+
+      &.donate-link {
+        margin-right: .5rem;
+      }
+    }
+
+    .nav-container {
+      height: $nav-height;
+
+      .links {
+        width: auto;
+        order: 0;
+      }
+
+      .extra {
+        font-size: 1.1rem;
+      }
+    }
+  }
 }
