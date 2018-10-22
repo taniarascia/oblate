@@ -7,7 +7,7 @@
   z-index: 3;
   width: 100%;
   border-bottom: 2px solid #eee;
-  font-size: .9rem;
+  font-size: .85rem;
 
   .buy {
     color: #111;
@@ -15,13 +15,13 @@
 
   a {
     color: #666;
-    padding: 0.5rem .6rem;
+    padding: 0.5rem .6rem 0.5rem 0;
     border-radius: 4px;
     display: block;
     margin: 0 0.1rem;
 
     &.nav-icon {
-      padding: .5rem .3rem;
+      padding: .5rem .2rem;
 
       &:hover {
         background: transparent;
@@ -58,6 +58,7 @@
         align-items: center;
         color: #222;
         padding: 0;
+        font-size: .9rem;  
 
         &:hover {
           color: #111;
