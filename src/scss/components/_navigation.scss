@@ -58,7 +58,7 @@
         align-items: center;
         color: #222;
         padding: 0;
-        font-size: .9rem;  
+        font-size: .9rem;
 
         &:hover {
           color: #111;
@@ -70,7 +70,7 @@
         margin-left: 0.5rem;
       }
 
-      .brand-icon {
+      .-icon {
         display: block;
         max-width: 20px;
         height: 20px;
@@ -103,6 +103,7 @@
     font-size: 1.1rem;
     height: $nav-height;
 
+
     .buy {
       margin-left: .8rem;
     }
@@ -113,6 +114,7 @@
 
     a {
       padding: 0.8rem 1.1rem;
+      font-size: 1.1rem;
 
       &.nav-icon {
         padding: 0.8rem 0.6rem;
