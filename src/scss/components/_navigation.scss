@@ -7,7 +7,7 @@
   z-index: 3;
   width: 100%;
   border-bottom: 2px solid #eee;
-  font-size: 1rem;
+  font-size: .9rem;
 
   .buy {
     color: #111;
@@ -21,7 +21,7 @@
     margin: 0 0.1rem;
 
     &.nav-icon {
-      padding: .5rem .4rem;
+      padding: .5rem .3rem;
 
       &:hover {
         background: transparent;
@@ -77,7 +77,7 @@
     }
 
     .extra {
-      font-size: .9rem;
+      font-size: .85rem;
       display: flex;
     }
 
