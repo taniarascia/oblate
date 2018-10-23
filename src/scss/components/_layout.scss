@@ -20,10 +20,6 @@ img {
   h1 {
     text-align: center;
   }
-
-  .single-header h1 {
-    text-align: left;
-  }
 }
 
 
@@ -167,9 +163,16 @@ a.post-title:hover {
 
 .single-header {
   margin-bottom: 60px;
-
+  text-align: center;
   h1 {
     margin: .5rem 0;
+    
+  }
+}
+
+@include small-breakpoint {
+  .single-header {
+    text-align: left;
   }
 }
 

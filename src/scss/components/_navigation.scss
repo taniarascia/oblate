@@ -15,7 +15,7 @@
 
   a {
     color: #666;
-    padding: 0.5rem .6rem 0.5rem 0;
+    padding: 0.5rem .6rem 0.5rem;
     border-radius: 4px;
     display: block;
     margin: 0 0.1rem;
@@ -58,7 +58,7 @@
         align-items: center;
         color: #222;
         padding: 0;
-        font-size: 1rem;
+        font-size: .95rem;
 
         &:hover {
           color: #111;
@@ -86,6 +86,7 @@
       display: flex;
       width: 100%;
       order: 2;
+      justify-content: center;
 
       a {
         font-size: 1rem;
@@ -93,6 +94,44 @@
 
         &:hover {
           color: #111;
+        }
+      }
+    }
+  }
+}
+
+@include small-breakpoint {
+  .nav {
+    a {
+      &.nav-icon {
+        padding: 0.8rem 0.6rem;
+      }
+    }
+
+    .nav-container {
+      .links {
+        justify-content: flex-start;
+        margin: .5rem 0;
+
+        a {
+          font-size: 1.1rem;
+
+          &:hover {
+            background: #f2f2f2;
+          }
+        }
+      }
+
+      .brand a {
+        margin-top: .5rem;
+        font-size: 1.1rem;
+      }
+
+      .extra a {
+        font-size: 1.1rem;
+
+        &:hover {
+          background: #f2f2f2;
         }
       }
     }
@@ -113,6 +152,7 @@
       margin-right: .5rem;
 
       a {
+        margin-top: 0;
         font-size: 1.1rem;
       }
     }
@@ -139,25 +179,17 @@
       .links {
         width: auto;
         order: 0;
+        margin: 0;
 
         a {
           font-size: 1.1rem;
           margin-right: 0.1rem;
-
-          &:hover {
-            background: #f2f2f2;
-          }
         }
       }
 
       .extra {
         font-size: 1.1rem;
 
-        a {
-          &:hover {
-            background: #f2f2f2;
-          }
-        }
       }
     }
   }
