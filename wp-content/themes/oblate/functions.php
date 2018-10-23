@@ -33,9 +33,9 @@ add_action( 'init' , 'add_categories_for_attachments' );
  */  
 function custom_excerpt_length() {
 	if ( is_front_page() ) {
-		return 20;
+		return 300;
 	} else {
-		return 30;
+		return 300;
 	}
 }
 add_filter('excerpt_length', 'custom_excerpt_length');
@@ -105,8 +105,13 @@ function insert_fb_in_head() {
 	$meta = strip_tags($post->post_content);
 	$meta = strip_shortcodes($post->post_content);
 	$meta = str_replace(array("\n", "\r", "\t"), ' ', $meta);
-	$meta = substr($meta, 0, 125);    
-    $meta = strip_tags($meta);
+	$meta = substr($meta, 0, 255);    
+	$meta = strip_tags($meta);
+	if (is_front_page()) {
+		$title = 'Tania Rascia - Web Developer & Designer';
+	} else {
+		$title = htmlspecialchars(get_the_title());
+	}
     
     // basics, same for all    
     echo '<meta property="og:locale" content="en_US">' . "\n";
@@ -116,7 +121,7 @@ function insert_fb_in_head() {
     echo '<meta name="twitter:domain" content="Tania Rascia">' . "\n";
     echo '<meta property="og:site_name" content="Tania Rascia">' . "\n";
     // title, URL, description
-    echo '<meta property="og:title" content="' . htmlspecialchars(get_the_title()) . '">' . "\n";
+    echo '<meta property="og:title" content="' . $title . '">' . "\n";
     echo '<meta property="og:url" content="' . get_permalink() . '">' . "\n";
     echo '<meta property="og:description" content="' . $meta . '">' . "\n";
     echo '<meta name="description" content="' . $meta . '">' . "\n";
