@@ -58,7 +58,7 @@
         align-items: center;
         color: #222;
         padding: 0;
-        font-size: .9rem;
+        font-size: 1rem;
 
         &:hover {
           color: #111;
@@ -88,9 +88,10 @@
       order: 2;
 
       a {
+        font-size: 1rem;
+        margin-right: .8rem;
 
         &:hover {
-          background: #f2f2f2;
           color: #111;
         }
       }
@@ -138,10 +139,25 @@
       .links {
         width: auto;
         order: 0;
+
+        a {
+          font-size: 1.1rem;
+          margin-right: 0.1rem;
+
+          &:hover {
+            background: #f2f2f2;
+          }
+        }
       }
 
       .extra {
         font-size: 1.1rem;
+
+        a {
+          &:hover {
+            background: #f2f2f2;
+          }
+        }
       }
     }
   }

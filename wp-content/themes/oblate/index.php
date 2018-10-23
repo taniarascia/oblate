@@ -26,14 +26,6 @@
             </div>
         </section>
 
-        <div class="posts-links">
-            <div class="pagination-left">
-                <?php previous_posts_link(); ?>
-            </div>
-            <div class="pagination-right">
-                <?php next_posts_link(); ?>
-            </div>
-        </div>
     </div>
 
 <?php get_footer();

@@ -13,9 +13,30 @@ img {
 }
 
 #main-content {
-  margin-top: $nav-height;
-  padding: 80px 0 0;
-  min-height: calc(100vh - 170px)
+  margin-top: 60px;
+  padding: 60px 0 0;
+  min-height: calc(100vh - 210px);
+
+  h1 {
+    text-align: center;
+  }
+
+  .single-header h1 {
+    text-align: left;
+  }
+}
+
+
+
+@include small-breakpoint {
+  #main-content {
+    margin-top: $nav-height;
+    padding: 80px 0 0;
+
+    h1 {
+      text-align: left;
+    }
+  }
 }
 
 .container {
@@ -50,7 +71,7 @@ img {
   justify-content: space-between;
   padding: 1rem;
   border-radius: 4px;
-  border-bottom: 1px solid $light;
+  border-bottom: 2px solid $light;
 
   &:hover {
     background: $light;
@@ -198,12 +219,23 @@ a.post-title:hover {
 
 .search-enabled {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3rem;
 
   h1 {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@include small-breakpoint {
+  .search-enabled {
+    flex-direction: row;
+
+    h1 {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -218,6 +250,7 @@ a.post-title:hover {
   position: relative;
 
   [type="search"] {
+    -webkit-appearance: none;
     padding-right: 2rem;
   }
 }
