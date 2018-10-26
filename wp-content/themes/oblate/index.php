@@ -25,6 +25,7 @@
             <a href="<?php echo site_url(); ?>/category/workflow" class="tab">Workflow</a>
             <a href="<?php echo site_url(); ?>/category/system" class="tab">DevOps</a>
             <a href="<?php echo site_url(); ?>/category/wordpress" class="tab">WordPress</a>
+            <a href="<?php echo site_url(); ?>/category/thoughts" class="tab">Personal</a>
         </div>
         
         <section class="list">
