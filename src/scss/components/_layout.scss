@@ -164,9 +164,10 @@ a.post-title:hover {
 .single-header {
   margin-bottom: 60px;
   text-align: center;
+
   h1 {
     margin: .5rem 0;
-    
+
   }
 }
 
@@ -219,6 +220,31 @@ a.post-title:hover {
     }
   }
 }
+
+.tab-container {
+  margin: 30px 0;
+  display: flex;
+
+  .tab {
+    padding: .4rem .8rem;
+    background: $light;
+    color: $heading-font-color;
+    border-radius: $border-radius;
+    font-size: .8rem;
+    margin-right: .4rem;
+
+    &:hover,
+    &:active {
+      background: darken($light, 5%);
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+
 
 .search-enabled {
   display: flex;

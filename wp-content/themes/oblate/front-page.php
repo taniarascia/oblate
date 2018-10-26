@@ -6,12 +6,19 @@ get_header(); ?>
         <section class="section">
 			<h1>Hi, I'm Tania. </h1>
 			<p class="lead">I'm a <strong>web developer</strong>, <strong>designer</strong>, and <strong>former chef</strong> from Chicago. I build open source projects and write the missing instruction manuals of the web. </p>
-            <p>I created this site to document and share everything I learn, and share a bit of myself with the world. My website has no bullshit, no ads, no sponsored posts, and no paywalls. If you enjoy my content, please consider <a href="https://ko-fi.com/taniarascia" target="_blank">supporting what I do.</a></p>
+            <p class="lead">I created this site to document and share everything I learn, and share a bit of myself with the world. My website has no bullshit, no ads, no sponsored posts, and no paywalls. If you enjoy my content, please consider <a href="https://ko-fi.com/taniarascia" target="_blank">supporting what I do.</a></p>
             <div class="front-page-social">	
 			    <a class="github-button" href="https://github.com/taniarascia" data-size="large" data-text="Follow" data-show-count="true" aria-label="Follow @taniarascia on GitHub">Follow</a>
 				<a href="https://twitter.com/taniarascia?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-size="large">Follow @taniarascia</a>
 				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
+		</section>
+
+		<section class="section">
+			<blockquote>
+			"Tania writes extremely clear, concise tutorials that have the best ratio of learning to bullshit that I've encountered so far. It's no exaggeration to say that I wouldn't currently have a job in development without this site. So thanks for ruining my life, Tania."
+			<cite>&mdash; Craig Lam, Front End C# Developer</cite>
+			</blockquote>
 		</section>
 
 		<section class="section">

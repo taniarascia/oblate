@@ -1,196 +1,184 @@
 .nav {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: white;
-  z-index: 3;
-  width: 100%;
-  border-bottom: 2px solid #eee;
-  font-size: .85rem;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: white;
+	z-index: 3;
+	width: 100%;
+	border-bottom: 2px solid #eee;
+	font-size: .85rem;
 
-  .buy {
-    color: #111;
-  }
+	.buy {
+		display: flex;
+		align-items: center;
+		color: #111;
+	}
 
-  a {
-    color: #666;
-    padding: 0.5rem .6rem 0.5rem;
-    border-radius: 4px;
-    display: block;
-    margin: 0 0.1rem;
+	a {
+		color: #666;
+		padding: 0.5rem .6rem 0.5rem;
+		border-radius: 4px;
+		display: block;
+		margin: 0 0.1rem;
 
-    &.nav-icon {
-      padding: .5rem .2rem;
+		&.nav-icon {
+			cursor: pointer !important;
+			padding: .5rem;
 
-      &:hover {
-        background: transparent;
-      }
-    }
+			&:hover {
+				background: transparent;
+			}
+		}
 
-    &.donate-link {
-      display: flex;
-      align-items: center;
-      font-weight: 600;
-    }
+		&.donate-link {
+			display: flex;
+			align-items: center;
+			font-weight: 600;
+		}
+	}
 
-    .donate-icon {
-      display: none;
-      max-width: 25px;
-      height: 25px;
-    }
-  }
+	.nav-container {
+		max-width: $width;
+		margin: auto;
+		padding: 0 15px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
 
-  .nav-container {
-    max-width: $width;
-    margin: auto;
-    padding: 0 15px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+		.brand {
+			font-weight: 600;
 
-    .brand {
-      font-weight: 600;
+			a {
+				display: flex;
+				align-items: center;
+				color: #222;
+				padding: 0;
+				font-size: .95rem;
 
-      a {
-        display: flex;
-        align-items: center;
-        color: #222;
-        padding: 0;
-        font-size: .95rem;
+				&:hover {
+					color: #111;
+					background: transparent !important;
+				}
+			}
 
-        &:hover {
-          color: #111;
-          background: transparent !important;
-        }
-      }
+			span {
+				margin-left: 0.5rem;
+			}
 
-      span {
-        margin-left: 0.5rem;
-      }
+			.brand-icon {
+				display: block;
+				max-width: 20px;
+				height: 20px;
+			}
+		}
 
-      .brand-icon {
-        display: block;
-        max-width: 20px;
-        height: 20px;
-      }
-    }
+		.extra {
+			font-size: 1rem;
+			display: flex;
+		}
 
-    .extra {
-      font-size: .85rem;
-      display: flex;
-    }
+		.links {
+			display: flex;
+			width: 100%;
+			order: 2;
+			justify-content: center;
 
-    .links {
-      display: flex;
-      width: 100%;
-      order: 2;
-      justify-content: center;
+			a {
+				font-size: 1rem;
+				margin-right: .8rem;
 
-      a {
-        font-size: 1rem;
-        margin-right: .8rem;
-
-        &:hover {
-          color: #111;
-        }
-      }
-    }
-  }
+				&:hover {
+					color: #111;
+				}
+			}
+		}
+	}
 }
 
 @include small-breakpoint {
-  .nav {
-    a {
-      &.nav-icon {
-        padding: 0.8rem 0.6rem;
-      }
-    }
+	.nav {
+		a {
+			&.nav-icon {
+				padding: 0.8rem 0.6rem;
+			}
+		}
 
-    .nav-container {
-      .links {
-        justify-content: flex-start;
-        margin: .5rem 0;
+		.nav-container {
+			.links {
+				justify-content: flex-start;
+				margin: .5rem 0;
 
-        a {
-          font-size: 1.1rem;
+				a {
+					font-size: 1.1rem;
 
-          &:hover {
-            background: #f2f2f2;
-          }
-        }
-      }
+					&:hover {
+						background: #f2f2f2;
+					}
+				}
+			}
 
-      .brand a {
-        margin-top: .5rem;
-        font-size: 1.1rem;
-      }
+			.brand a {
+				margin-top: .5rem;
+				font-size: 1.1rem;
+			}
 
-      .extra a {
-        font-size: 1.1rem;
+			.extra a {
+				font-size: 1.1rem;
 
-        &:hover {
-          background: #f2f2f2;
-        }
-      }
-    }
-  }
+				&:hover {
+					background: #f2f2f2;
+				}
+			}
+		}
+	}
 }
 
 @include medium-breakpoint {
-  .nav {
-    font-size: 1.1rem;
-    height: $nav-height;
+	.nav {
+		font-size: 1.1rem;
+		height: $nav-height;
 
+		.nav-container .brand {
+			margin-right: .5rem;
 
-    .buy {
-      margin-left: .8rem;
-    }
+			a {
+				margin-top: 0;
+				font-size: 1.1rem;
+			}
+		}
 
-    .nav-container .brand {
-      margin-right: .5rem;
+		a {
+			padding: 0.8rem 1.1rem;
 
-      a {
-        margin-top: 0;
-        font-size: 1.1rem;
-      }
-    }
+			&.nav-icon {
+				padding: 0.8rem;
+			}
 
-    a {
-      padding: 0.8rem 1.1rem;
+			.donate-icon {
+				color: $yellow;
+				margin-left: .5rem;
+			}
+		}
 
-      &.nav-icon {
-        padding: 0.8rem 0.6rem;
-      }
+		.nav-container {
+			height: $nav-height;
 
-      .donate-icon {
-        display: block;
-      }
+			.links {
+				width: auto;
+				order: 0;
+				margin: 0;
 
-      &.donate-link {
-        margin-right: .5rem;
-      }
-    }
+				a {
+					font-size: 1.1rem;
+					margin-right: 0.1rem;
+				}
+			}
 
-    .nav-container {
-      height: $nav-height;
-
-      .links {
-        width: auto;
-        order: 0;
-        margin: 0;
-
-        a {
-          font-size: 1.1rem;
-          margin-right: 0.1rem;
-        }
-      }
-
-      .extra {
-        font-size: 1.1rem;
-
-      }
-    }
-  }
+			.extra {
+				font-size: 1.1rem;
+			}
+		}
+	}
 }

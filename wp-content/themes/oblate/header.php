@@ -34,10 +34,10 @@
                 <a href="<?php echo site_url(); ?>/contact">Contact</a>
             </div>
             <div class="extra">  
-                <a href="https://ko-fi.com/taniarascia" class="donate-link" target="_blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/coffee.png" class="donate-icon"><span class="buy">Buy me a <strong class="yellow">coffee</strong></span></a>
-                <a href="#!" class="nav-icon" id="night-mode"><i class="fas fa-moon"></i></a>
+                <a class="nav-icon" id="night-mode"><i class="fas fa-moon"></i></a>
                 <a href="https://twitter.com/taniarascia" class="nav-icon" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://github.com/taniarascia" class="nav-icon" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://ko-fi.com/taniarascia" class="nav-icon" target="_blank"><span class="yellow"><i class="fas fa-coffee"></i></span></a>
             </div>
         </div>
     </nav>

@@ -12,6 +12,20 @@
 				</div>
             </form>
         </header>
+
+        <blockquote>
+        You taught me more than any class could have and it took me a fraction of the time because of how clearly you write and teach.
+        <cite>Evan Whelan</cite>
+        </blockquote>
+
+        <div class="tab-container">
+            <a href="<?php echo site_url(); ?>/category/front-end" class="tab">UI/UX</a>
+            <a href="<?php echo site_url(); ?>/category/back-end" class="tab">Programming</a>
+            <a href="<?php echo site_url(); ?>/category/javascript" class="tab">JavaScript</a>
+            <a href="<?php echo site_url(); ?>/category/workflow" class="tab">Workflow</a>
+            <a href="<?php echo site_url(); ?>/category/system" class="tab">DevOps</a>
+            <a href="<?php echo site_url(); ?>/category/wordpress" class="tab">WordPress</a>
+        </div>
         
         <section class="list">
             <div class="lead" id="none-found">No results found.</div>

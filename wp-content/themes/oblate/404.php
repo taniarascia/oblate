@@ -1,6 +1,16 @@
 <?php 
 
-get_header(); ?>
+get_header(); 
+?>
+<style>
+    @keyframes blink {
+        0% {opacity: 0}
+        49%{opacity: 0}
+        50% {opacity: 1}
+    }
+
+.blink { animation: blink 1s infinite; }
+</style> 
 
     <section class="not-found">
         <div class="container">

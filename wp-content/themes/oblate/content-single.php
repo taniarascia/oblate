@@ -14,11 +14,10 @@
 		<?php the_content(); ?>
 
 		<div class="author">
-			<h2 class="text-center">A Note</h2>
-			<p>Hi, my name is <strong>Tania Rascia</strong>. I've turned down every advertiser, sponsored post, and affiliate who has contacted me. <strong>I write free resources for <mark>300,000+ monthly readers</mark></strong> and helped thousands of successfully transition into a design/development career.</p>
-			<p>You know what I stand for, and you know my commitment to you - <strong>no bullshit, no sponsored posts, no ads, and no paywalls.</p>
-			<p class="text-center"><mark>If you enjoy my content, please consider supporting what I do!</mark></strong></p>
-			<p class="text-center"><a class="button yellow-button" href="https://ko-fi.com/taniarascia" target="_blank"><i class="fas fa-coffee"></i> Buy me a coffee</a></p>
+			<h2 class="text-center">Note</h2>
+			<p>Hi, my name is Tania Rascia. I've turned down every advertiser, sponsored post, and affiliate who has contacted me. I write free resources that have helped thousands of people successfully transition into a web development career.</p>
+			<p>My committment is to no bullshit, no sponsored posts, no ads, and no paywalls. If you enjoy my content, please consider supporting what I do.</p>
+			<p class="text-center"><a class="button yellow-button" href="https://ko-fi.com/taniarascia" target="_blank">Support my work <i class="fas fa-coffee"></i></a></p>
 		</div>
     </div>
 </article>
