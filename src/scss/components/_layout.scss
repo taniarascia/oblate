@@ -224,6 +224,7 @@ a.post-title:hover {
 .tab-container {
   margin: 30px 0;
   display: flex;
+  flex-wrap: wrap;
 
   .tab {
     padding: .4rem .8rem;

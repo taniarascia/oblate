@@ -15,7 +15,7 @@
 
         <blockquote>
         You taught me more than any class could have and it took me a fraction of the time because of how clearly you write and teach.
-        <cite>Evan Whelan</cite>
+        <cite>&mdash; Evan Whelan</cite>
         </blockquote>
 
         <div class="tab-container">
