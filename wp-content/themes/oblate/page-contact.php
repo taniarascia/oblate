@@ -1,26 +1,16 @@
 <?php 
 
-get_header(); ?>
+get_header();
 
-    <div class="container">
-
-    <?php 
     if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        <article id="<?php the_id(); ?>" class="article">
-		    <header class="page-header">
-			    <h1><?php the_title(); ?></h1>
-		    </header>
-		
-		<?php the_content(); ?>
+        <div class="container">
+            <h1><?php the_title(); ?></h1>
 
-        </article>
+            <?php the_content(); ?>
+        </div>
 
     <?php 
-    endwhile; endif; ?>
-
-    </div>
-
-<?php 
+    endwhile; endif; 
 
 get_footer();

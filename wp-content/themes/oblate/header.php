@@ -31,7 +31,7 @@
             <div class="links">
                 <a href="<?php echo site_url(); ?>/me">About me</a>
                 <a href="<?php echo site_url(); ?>/blog">Articles</a>
-                <a href="<?php echo site_url(); ?>/contact">Contact</a>
+                <a href="<?php echo site_url(); ?>/newsletter">Newsletter</a>
             </div>
             <div class="extra">  
                 <a class="nav-icon" id="night-mode"><i class="fas fa-moon"></i></a>
