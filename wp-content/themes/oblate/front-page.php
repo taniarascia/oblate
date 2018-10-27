@@ -17,7 +17,7 @@ get_header(); ?>
 		<section class="section">
 			<blockquote>
 			"Tania writes extremely clear, concise tutorials that have the best ratio of learning to bullshit that I've encountered so far. It's no exaggeration to say that I wouldn't currently have a job in development without this site. So thanks for ruining my life, Tania."
-			<cite>&mdash; Craig Lam, Front End C# Developer</cite>
+			<cite>&mdash; Craig Lam, Web Developer</cite>
 			</blockquote>
 		</section>
 
