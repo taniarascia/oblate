@@ -1,18 +1,24 @@
 <?php 
 
-get_header(); ?>
+get_header(); 
+
+?>
 
     <div class="container">
+
+	<?php while ( have_posts() ) : the_post(); ?>
+
         <section class="section">
-			<h1>Hi, I'm Tania. </h1>
-			<p class="lead">I'm a <strong>web developer</strong>, <strong>designer</strong>, and <strong>former chef</strong> from Chicago. I build open source projects and write the missing instruction manuals of the web. </p>
-            <p class="lead">I created this site to document and share everything I learn, and share a bit of myself with the world. My website has no bullshit, no ads, no sponsored posts, and no paywalls. If you enjoy my content, please consider <a href="https://ko-fi.com/taniarascia" target="_blank">supporting what I do.</a></p>
+			<h1>Hi, I'm Tania</h1>
+			<?php the_content(); ?>
             <div class="front-page-social">	
 			    <a class="github-button" href="https://github.com/taniarascia" data-size="large" data-text="Follow" data-show-count="true" aria-label="Follow @taniarascia on GitHub">Follow</a>
 				<a href="https://twitter.com/taniarascia?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-size="large">Follow @taniarascia</a>
 				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
 		</section>
+
+		<?php endwhile; ?>
 
 		<section class="section">
 			<blockquote>
@@ -139,7 +145,7 @@ get_header(); ?>
 			
 			<div class="newsletter">
 				<h2>Newsletter</h2>
-				<p>Sign up if you'd like to get email updates when I write new articles or other big updates. I typically send something out once a month or so. Never any spam.</p>
+				<p>Sign up for an email when I write a new article. Sent out infrequently. Never any spam.</p>
 				<form id="newsletter-form" class="newsletter-form" action="https://newsletter.taniarascia.com/sendy/subscribe" method="POST" accept-charset="utf-8" target="_blank">
                     <input type="email" name="email" required id="email-sidebar" class="email" placeholder="Email address" pattern="[a-zA-Z0-9._\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,4}">
                     <input type="hidden" name="list" value="P2bfC2WL3TvnTWEmucMbbg">

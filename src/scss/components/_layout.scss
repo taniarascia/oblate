@@ -95,7 +95,7 @@ img {
 .post-description {
   color: #888;
   margin: 0 2rem 0 1rem;
-  flex: 10;
+  flex: 8;
   display: none;
 }
 
@@ -118,6 +118,7 @@ a.post-title:hover {
 
 .post-date {
   color: #888;
+  font-size: .9rem;
   display: none;
 }
 
@@ -195,17 +196,19 @@ a.post-title:hover {
 
 @include small-breakpoint {
   .lead {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
   }
 }
 
 .newsletter-form {
+  display: flex;
 
   [type="text"],
   [type="email"] {
     width: 100%;
     max-width: 400px;
     background: white;
+    margin-right: .5rem;
     border: 0;
     border: 1px solid $light;
 
@@ -318,13 +321,14 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 blockquote {
-  color: $font-color;
-  border-left: 8px solid $background;
+  color: lighten($font-color, 20%);
+  border-left: 12px solid $background;
   font-weight: 400;
   margin: 2rem 0;
-  padding-left: 1.5rem;
+  padding: 2rem;
   font-size: 1.05rem;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-family: Georgia;
 
   p {
     padding: 0;
@@ -340,6 +344,7 @@ blockquote {
     font-size: 1rem;
     text-align: right;
     font-family: $font-family;
+    color: lighten($font-color, 40%);
   }
 
   &.testimonial {
@@ -612,7 +617,7 @@ blockquote {
 .bypostauthor {
   background: #fff6d5;
   border-left: 12px solid #F0D461;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 
 ::selection {

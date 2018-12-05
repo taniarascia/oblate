@@ -6,6 +6,17 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!--
+ _.........._
+| |        | |
+| |        | |
+| |        | |
+| |________| |
+|   ______   |
+|  |    | |  |
+|__|____|_|__|
+-->
+
     <script>(function(){var style=localStorage.getItem('stylesheet');if(style){document.body.style.backgroundColor='#2e323e'}})()</script>
     <?php if ( !is_single() ) { ?>
         <meta name="description" content="Tania Rascia is a web developer, designer, and writer who breaks down complex concepts for all skill levels.">
