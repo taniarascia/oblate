@@ -230,6 +230,13 @@ td {
 	color: #fff;
 }
 
+.newsletter-form [type="text"]:hover,
+.newsletter-form[type="email"]:hover,
+.newsletter-form [type="text"]:focus,
+.newsletter-form[type="email"]:focus  {
+      background: #202020;
+	}
+
 blockquote {
 	border-color:#202020 !important;
 	background: #262626 !important;
