@@ -120,9 +120,9 @@ $forms: ('[type=color], [type=date], [type=datetime], [type=datetime-local], [ty
 $buttons: ('.button, a.button, button, [type=submit], [type=reset], [type=button]');
 $input-background: $light;
 $placeholder: darken($accent-color, 20%);
-$form-border: 1px solid $light;
-$form-border-hover: 1px solid darken($light, 5%);
-$form-border-focus: 1px solid $link-color;
+$form-border: 0px solid $light;
+$form-border-hover: 0px solid darken($light, 5%);
+$form-border-focus: 0px solid $link-color;
 
 /* Tables */
 

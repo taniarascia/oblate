@@ -19,16 +19,58 @@
             <?php $args = array(
               'post_type' => 'publications',
               'order' => 'asc',
+              'category_name' => 'Codrops'
+            ); 
+
+            $codrops = new WP_Query( $args );
+
+            if ( $codrops->have_posts() ) :  ?>
+
+            <h3>Codrops</h3>
+
+            <?php while ( $codrops->have_posts() ) : $codrops->the_post();  ?>
+
+            <a class="post" id="post-<?php the_ID(); ?>" href="<?php echo get_the_content(); ?>" target="_blank">
+            <div class="post-title"><?php the_title(); ?></div>
+                <span class="post-date"><time><?php the_time( 'F j, Y' ); ?></time></span>
+            </a>
+
+            <?php endwhile; endif; wp_reset_postdata(); ?>
+
+            <?php $args = array(
+              'post_type' => 'publications',
+              'order' => 'asc',
+              'category_name' => 'Progress'
+            ); 
+
+            $pr = new WP_Query( $args );
+
+            if ( $pr->have_posts() ) :  ?>
+
+            <h3>Progress</h3>
+
+            <?php while ( $pr->have_posts() ) : $pr->the_post();  ?>
+
+            <a class="post" id="post-<?php the_ID(); ?>" href="<?php echo get_the_content(); ?>" target="_blank">
+            <div class="post-title"><?php the_title(); ?></div>
+                <span class="post-date"><time><?php the_time( 'F j, Y' ); ?></time></span>
+            </a>
+
+            <?php endwhile; endif; wp_reset_postdata(); ?>
+
+            <?php $args = array(
+              'post_type' => 'publications',
+              'order' => 'asc',
               'category_name' => 'Envato'
             ); 
 
-            $sp = new WP_Query( $args );
+            $envato = new WP_Query( $args );
 
-            if ( $sp->have_posts() ) :  ?>
+            if ( $envato->have_posts() ) :  ?>
 
             <h3>Envato Tuts+</h3>
 
-            <?php while ( $sp->have_posts() ) : $sp->the_post();  ?>
+            <?php while ( $envato->have_posts() ) : $envato->the_post();  ?>
 
             <a class="post" id="post-<?php the_ID(); ?>" href="<?php echo get_the_content(); ?>" target="_blank">
             <div class="post-title"><?php the_title(); ?></div>
@@ -64,13 +106,13 @@
               'category_name' => 'Digital Ocean'
             ); 
                 
-            $sp = new WP_Query( $args );
+            $do = new WP_Query( $args );
 
-            if ( $sp->have_posts() ) :  ?>
+            if ( $do->have_posts() ) :  ?>
 
             <h3>DigitalOcean</h3>
             
-            <?php while ( $sp->have_posts() ) : $sp->the_post();  ?>
+            <?php while ( $do->have_posts() ) : $do->the_post();  ?>
           
             <a class="post" id="post-<?php the_ID(); ?>" href="<?php echo get_the_content(); ?>" target="_blank">
               <div class="post-title"><?php the_title(); ?></div>

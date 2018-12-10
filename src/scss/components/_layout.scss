@@ -207,19 +207,17 @@ a.post-title:hover {
   [type="email"] {
     width: 100%;
     max-width: 400px;
-    background: white;
     margin-right: .5rem;
     border: 0;
-    border: 1px solid $light;
 
     &:hover {
-      border: 1px solid darken($light, 5%);
+      background: darken($light, 2%)
     }
 
     &:active,
     &:focus {
       box-shadow: none;
-      border: 1px solid darken($light, 12%);
+      background: darken($light, 5%)
     }
   }
 }
@@ -322,7 +320,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 blockquote {
   color: lighten($font-color, 20%);
-  border-left: 12px solid $background;
+  border-left: 16px solid $background;
   font-weight: 400;
   margin: 2rem 0;
   padding: 2rem;

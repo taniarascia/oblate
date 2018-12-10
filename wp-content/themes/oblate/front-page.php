@@ -143,15 +143,13 @@ get_header();
 
 		<section class="section">
 			
-			<div class="newsletter">
 				<h2>Newsletter</h2>
-				<p>Sign up for an email when I write a new article. Sent out infrequently. Never any spam.</p>
+				<p>New articles on web development every two weeks.</p>
 				<form id="newsletter-form" class="newsletter-form" action="https://newsletter.taniarascia.com/sendy/subscribe" method="POST" accept-charset="utf-8" target="_blank">
                     <input type="email" name="email" required id="email-sidebar" class="email" placeholder="Email address" pattern="[a-zA-Z0-9._\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,4}">
                     <input type="hidden" name="list" value="P2bfC2WL3TvnTWEmucMbbg">
                     <input type="submit" name="submit" id="submit-sidebar" value="Submit">
                 </form>
-            </div>
 		</section>
 	</div>
 
