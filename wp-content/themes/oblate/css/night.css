@@ -35,15 +35,19 @@ a.button:hover,
 	border: 1px solid #486680;
 }
 
-.yellow-button, a.yellow-button {
+.yellow-button,
+a.yellow-button {
 	background: #FFD479;
 	border: 1px solid #FFD479;
 	color: #111 !important;
 }
 
-.yellow-button:hover, a.yellow-button:hover,
-.yellow-button:active, a.yellow-button:active,
-.yellow-button:focus, a.yellow-button:focus {
+.yellow-button:hover,
+a.yellow-button:hover,
+.yellow-button:active,
+a.yellow-button:active,
+.yellow-button:focus,
+a.yellow-button:focus {
 	background: #cca960;
 	border: 1px solid #cca960;
 }
@@ -231,14 +235,14 @@ td {
 }
 
 .newsletter-form [type="text"]:hover,
-.newsletter-form[type="email"]:hover,
+.newsletter-form [type="email"]:hover,
 .newsletter-form [type="text"]:focus,
-.newsletter-form[type="email"]:focus  {
-      background: #202020;
-	}
+.newsletter-form [type="email"]:focus {
+	background: #202020;
+}
 
 blockquote {
-	border-color:#202020 !important;
+	border-color: #202020 !important;
 	background: #262626 !important;
 	color: #8a8a80 !important;
 }
@@ -293,4 +297,9 @@ blockquote {
 
 .tab-container .tab:hover {
 	background: #202020;
+}
+
+::selection {
+  background: #e43557;
+  color: #fff;
 }

@@ -210,7 +210,7 @@ a.post-title:hover {
     margin-right: .5rem;
     border: 0;
 
-    &:hover {
+    &:hover { 
       background: darken($light, 2%)
     }
 
@@ -229,7 +229,7 @@ a.post-title:hover {
   align-items: center;
   justify-content: center;
 
-  .tab {
+  .tab { 
     padding: .4rem .8rem;
     background: $light;
     color: $heading-font-color;
@@ -619,6 +619,6 @@ blockquote {
 }
 
 ::selection {
-  background: rgba(255, 245, 30, .9);
+  background: rgba(255, 245, 20, .9);
   color: #111;
 }
