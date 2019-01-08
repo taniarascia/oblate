@@ -240,8 +240,7 @@ pre[data-line] {
 	padding: inherit 0;
 	margin-top: 1rem; /* Same as .prism’s padding-top */
 
-	background: hsla(24, 20%, 50%,.1);
-	background: linear-gradient(to right, hsla(24, 20%, 50%,.15) 70%, hsla(24, 20%, 50%,0));
+	background: rgba(150, 150, 150, .2);
 
 	pointer-events: none;
 
