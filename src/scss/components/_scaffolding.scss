@@ -64,11 +64,12 @@ h3:not(:first-child) {
 // Heading individual styles
 h1 {
   font-size: $h1-mobile;
+  font-weight: 700;
 }
 
 h2 {
   font-size: $h2-mobile;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h3 {
@@ -128,18 +129,8 @@ mark {
   padding: 0 0.2rem;
 }
 
-// Blockquote
-blockquote {
-  margin: 0 0 $margins 0;
-  border-left: $bq-border;
-  padding: 0 1.5rem;
-  font-size: 1.5rem;
-  cite {
-    display: block;
-    margin-top: $margins;
-    font-size: 1rem;
-    text-align: right;
-  }
+strong, b {
+  font-weight: 600;
 }
 
 // Code block styling
@@ -175,7 +166,7 @@ kbd {
 }
 
 // Inline code styling
-:not(pre)>code {
+:not(pre) > code {
   color: $code-color;
   background: $code-background;
   font-family: $code-family;

@@ -75,7 +75,7 @@ add_action( 'wp_enqueue_scripts', 'starter_scripts' );
  */
 function oblate_scripts() {
 	wp_dequeue_style( 'starter-style' );
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css?12-10' ); 
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/main.css?01-07-2019' ); 
 	wp_enqueue_script( 'prism', get_template_directory_uri() . '/js/prism.js', array(), '1.1.0', true );
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.1.0', true );
 }
@@ -85,7 +85,7 @@ add_action( 'wp_enqueue_scripts', 'oblate_scripts' );
  * Google Fonts
  */
 function load_fonts() {
-	wp_register_style( 'All', '//fonts.googleapis.com/css?family=Roboto+Mono:400' );
+	wp_register_style( 'All', '//fonts.googleapis.com/css?family=Nunito:400,600,700|Roboto+Mono' );
 	wp_register_style('FontAwesome', '//use.fontawesome.com/releases/v5.0.13/css/all.css');
 	wp_enqueue_style( 'All' );
 	wp_enqueue_style( 'FontAwesome' );
@@ -107,6 +107,7 @@ function insert_fb_in_head() {
 	$meta = str_replace(array("\n", "\r", "\t"), ' ', $meta);
 	$meta = substr($meta, 0, 255);    
 	$meta = strip_tags($meta);
+
 	if (is_front_page()) {
 		$title = 'Tania Rascia - Web Developer & Designer';
 	} else {

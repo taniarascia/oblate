@@ -65,7 +65,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: .75rem;
   border-radius: 4px;
   border-bottom: 2px solid $light;
 
@@ -191,7 +191,7 @@ a.post-title:hover {
 }
 
 .lead {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 @include small-breakpoint {
@@ -321,15 +321,15 @@ input[type="search"]::-webkit-search-results-decoration {
 blockquote {
   color: lighten($font-color, 20%);
   border-left: 16px solid $background;
-  font-weight: 400;
+  font-weight: 500;
   margin: 2rem 0;
   padding: 2rem;
-  font-size: 1.05rem;
   line-height: 1.7;
-  font-family: Georgia;
+  font-size: 1.1rem;
 
   p {
     padding: 0;
+    font-size: 1.1rem;
 
     &:last-of-type {
       margin-bottom: 0;
@@ -342,7 +342,7 @@ blockquote {
     font-size: 1rem;
     text-align: right;
     font-family: $font-family;
-    color: lighten($font-color, 40%);
+    color: rgba(0,0,0,.4);
   }
 
   &.testimonial {
@@ -355,35 +355,34 @@ blockquote {
   &.note,
   &.details,
   &.success {
-    font-size: 1.05rem;
     color: $heading-font-color;
     font-family: $heading-font-family;
-    padding: 1.5rem;
+    padding: 2rem;
   }
 
   &.alert {
     background: lighten($secondary-color, 28%);
-    border-left: 12px solid $secondary-color;
+    border-left: 16px solid $secondary-color;
   }
 
   &.info {
     background: #fff6d5;
-    border-left: 12px solid #F0D461;
+    border-left: 16px solid #F0D461;
   }
 
   &.success {
     background: lighten($green, 30%);
-    border-left: 12px solid $green;
+    border-left: 16px solid $green;
   }
 
   &.note {
     background: $background;
-    border-left: 12px solid $border-color;
+    border-left: 16px solid $border-color;
   }
 
   &.details {
     background: lighten($primary-color, 33%);
-    border-left: 12px solid lighten($primary-color, 20%);
+    border-left: 16px solid lighten($primary-color, 20%);
   }
 
   code {
@@ -393,7 +392,7 @@ blockquote {
 
 @include small-breakpoint {
   blockquote {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 1.5;
 
     p {
@@ -522,7 +521,7 @@ blockquote {
   font-size: 1.6rem;
   margin-top: 0;
   margin-bottom: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   color: $heading-font-color;
 }
 
@@ -614,7 +613,7 @@ blockquote {
 
 .bypostauthor {
   background: #fff6d5;
-  border-left: 12px solid #F0D461;
+  border-left: 16px solid #F0D461;
   padding: 0 1.5rem;
 }
 

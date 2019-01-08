@@ -10,7 +10,7 @@ get_header();
 
         <section class="section">
 			<h1>Hi, I'm Tania</h1>
-			<?php the_content(); ?>
+			<div class="lead"><?php the_content(); ?></div>
             <div class="front-page-social">	
 			    <a class="github-button" href="https://github.com/taniarascia" data-size="large" data-text="Follow" data-show-count="true" aria-label="Follow @taniarascia on GitHub">Follow</a>
 				<a href="https://twitter.com/taniarascia?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-size="large">Follow @taniarascia</a>
@@ -21,7 +21,7 @@ get_header();
 		<?php endwhile; ?>
 
 		<section class="section">
-			<blockquote>
+			<blockquote class="details">
 			"Tania writes extremely clear, concise tutorials that have the best ratio of learning to bullshit that I've encountered so far. It's no exaggeration to say that I wouldn't currently have a job in development without this site. So thanks for ruining my life, Tania."
 			<cite>&mdash; Craig Lam, Web Developer</cite>
 			</blockquote>
@@ -142,9 +142,18 @@ get_header();
 		</section>
 
 		<section class="section">
+			<h2>Podcasts</h2>
+			<h5>Egghead.io</h5>
+				<a class="post" href="https://egghead.io/podcasts/switching-careers-and-learning-in-public-with-tania-rascia" target="_blank">
+				<div class="post-title">Switching Careers and Learning in Public</div>
+				<span class="post-date"><time>December 13, 2018</time></span>
+			</a>
+		</section>
+
+		<section class="section">
 			
 				<h2>Newsletter</h2>
-				<p>New articles on web development every two weeks.</p>
+				<p>Get updated when I create new content. Unsubscribe whenever. Never any spam.</p>
 				<form id="newsletter-form" class="newsletter-form" action="https://newsletter.taniarascia.com/sendy/subscribe" method="POST" accept-charset="utf-8" target="_blank">
                     <input type="email" name="email" required id="email-sidebar" class="email" placeholder="Email address" pattern="[a-zA-Z0-9._\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,4}">
                     <input type="hidden" name="list" value="P2bfC2WL3TvnTWEmucMbbg">

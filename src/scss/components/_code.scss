@@ -40,7 +40,7 @@ pre .terminal {
 code[class*="language-"],
 pre[class*="language-"],
 pre code {
-	color: #D5D5D5;
+	color: $code-font-color;
 	font-family: $code;
 	direction: ltr;
 	text-align: left;
@@ -89,18 +89,18 @@ kbd {
 /* Inline code */
 
 :not(pre)>code[class*="language-"] {
-	padding: 2px 4px;
+	padding: 3px 5px;
 	background: #333;
 	border: 1px solid #333;
 }
 
 :not(pre)>code {
-	padding: 2px 4px;
+	padding: 3px 5px;
 	border: none;
 	font-family: $code;
 	font-weight: 400;
 	color: $heading-font-color;
-	border-radius: 0;
+	border-radius: 4px;
 	background: rgba(0, 0, 0, 0.06);
 }
 
