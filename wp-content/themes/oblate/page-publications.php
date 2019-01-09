@@ -19,6 +19,27 @@
             <?php $args = array(
               'post_type' => 'publications',
               'order' => 'asc',
+              'category_name' => 'Log Rocket'
+            ); 
+
+            $logrocket = new WP_Query( $args );
+
+            if ( $logrocket->have_posts() ) :  ?>
+
+            <h3>Logrocket</h3>
+
+            <?php while ( $logrocket->have_posts() ) : $logrocket->the_post();  ?>
+
+            <a class="post" id="post-<?php the_ID(); ?>" href="<?php echo get_the_content(); ?>" target="_blank">
+            <div class="post-title"><?php the_title(); ?></div>
+                <span class="post-date"><time><?php the_time( 'F j, Y' ); ?></time></span>
+            </a>
+
+            <?php endwhile; endif; wp_reset_postdata(); ?>
+
+            <?php $args = array(
+              'post_type' => 'publications',
+              'order' => 'asc',
               'category_name' => 'Codrops'
             ); 
 

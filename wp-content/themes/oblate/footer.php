@@ -10,7 +10,6 @@
     wp_footer(); 
     
     if ( is_front_page() ) : ?>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script type="application/ld+json">
     { 
     "@context": "http://schema.org", 

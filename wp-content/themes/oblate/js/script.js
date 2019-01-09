@@ -1,14 +1,10 @@
-console.log('Hello, fellow developer! Thanks for visiting. :)' +
-	'\n\nThe design this blog is completely custom, based on my own' +
-	'\nCSS framrwork/Sass boilerplate, Primitive. Check it out!' +
+console.log('Hello, fellow developer!' +
+	'\n\nThe design this blog is completely custom, based on my' +
+	'\nCSS framework, Primitive. ' +
 	'\nhttps://taniarascia.github.io/primitive' +
-	'\n\nLike the syntax theme for code you see on my site?' +
-	'\nNew Moon is world\'s best theme for coding. ' +
+	'\n\nNew Moon is world\'s best theme for coding. ' +
 	'\nhttps://taniarascia.github.io/new-moon' + 
-	'\n\nLooking for a good community of web developers?' +
-	'\nCheck out HTTPChat. ' +
-	'\nhttps://join.slack.com/t/httpchat/shared_invite/enQtNDAxODEwMTU2ODM0LTljMGRjZDZmZTA1ZDEwNjc5M2QwYjk5ZjViMGUzNDYzZjJhMGM2OTNmNTNkODM1OWYzZWIzYjA2NTU4YTczZWU' +
-	'\n\n\n\nTry typing ↑ ↑ ↓ ↓ ← → ← → B A.');
+	'\n\nP.S. Try typing ↑ ↑ ↓ ↓ ← → ← → B A');
 
 function filterArticles() {
 	var query;

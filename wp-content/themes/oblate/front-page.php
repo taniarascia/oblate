@@ -4,18 +4,13 @@ get_header();
 
 ?>
 
-    <div class="container">
+    <div id="front-page" class="container">
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
         <section class="section">
 			<h1>Hi, I'm Tania</h1>
 			<div class="lead"><?php the_content(); ?></div>
-            <div class="front-page-social">	
-			    <a class="github-button" href="https://github.com/taniarascia" data-size="large" data-text="Follow" data-show-count="true" aria-label="Follow @taniarascia on GitHub">Follow</a>
-				<a href="https://twitter.com/taniarascia?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-size="large">Follow @taniarascia</a>
-				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-			</div>
 		</section>
 
 		<?php endwhile; ?>
@@ -61,49 +56,37 @@ get_header();
 			
 		</section>
 	
-		<section class="section">
+		<section id="projects" class="section">
 			<h2>Open Source Projects</h2>
-			<div class="post">
+			<a class="post" href="https://taniarascia.github.io/primitive">
 				<div class="post-thumbnail">
 				    <i class="fas fa-fire icon primitive-icon"></i>
 				</div>
-				<a class="post-title" href="https://taniarascia.github.io/primitive">Primitive</a>
-				<div class="post-description">Sass boilerplate that provides helpful, browser-consistent styling for buttons, forms, tables, lists, and typography.</div>
-				<div>
-				    <a class="github-button" href="https://github.com/taniarascia/primitive" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Primitive on GitHub">Star</a>
-				</div>
-			</div>
-			<div class="post">
+				<div class="post-title">Primitive</div>
+				<div class="post-description">CSS framework that provides minimalist, browser-consistent styling for buttons, forms, tables, lists, and fonts.</div>
+			</a>
+			<a class="post" href="https://github.com/taniarascia/laconia">
 				<div class="post-thumbnail">
 					<i class="fas fa-sun icon laconia-icon"></i>
 				</div>
-			    <a class="post-title" href="https://laconia.site" target="_blank">Laconia</a>
-			    <div class="post-description">A modern MVC application written in plain PHP without libraries or frameworks.</div>
-			    <div>
-				    <a class="github-button" href="https://github.com/taniarascia/laconia" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Laconia on GitHub">Star</a>
-			    </div>
-		    </div>
-			<div class="post">
+			    <div class="post-title" target="_blank">Laconia</div>
+			    <div class="post-description">A modern MVC application written from scratch in plain PHP without libraries or frameworks.</div>
+			</a>
+			<a class="post" href="https://taniarascia.github.io/new-moon">
 				<div class="post-thumbnail">
 				    <img src="<?php echo site_url(); ?>/wp-content/uploads/newmoon.png" alt="New Moon Code Theme" height="30" width="30">
 				</div>
-			    <a class="post-title" href="https://taniarascia.github.io/new-moon">New Moon</a>
+			    <div class="post-title">New Moon</div>
 			    <div class="post-description">The undisputed world's best code theme, optimized for front and back end web development.</div>
-			    <div>
-				<a class="github-button" href="https://github.com/taniarascia/new-moon" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star New Moon on GitHub">Star</a>
-		        </div>
-		    </div>
-		    <div class="post">
+			   
+			</a>
+		    <a class="post" href="https://github.com/taniarascia/oblate">
 				<div class="post-thumbnail">
 					<i class="fab fa-wordpress icon"></i>
 				</div>
-                <a class="post-title" href="https://github.com/taniarascia/oblate" target="_blank">Oblate</a>
-                <div class="post-description">The source code of this website.</div>
-                <div>
-                    <a class="github-button" href="https://github.com/taniarascia/oblate" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Oblate on GitHub">Star</a>
-                </div>
-		    </div>
-	
+				<div class="post-title">Oblate</div>
+					<div class="post-description">The source code of this website.</div>
+			</a>
 		</section>
 
 		<section class="section">
@@ -118,14 +101,11 @@ get_header();
             
 			$publications = new WP_Query( $args );
 
-			if ( $publications->have_posts() ) :  while ( $publications->have_posts() ) : $publications->the_post();  ?>
-			
-			<a class="post" id="post-<?php the_ID(); ?>" href="<?php echo get_the_content(); ?>" target="_blank">
-			    <div class="post-title"><?php the_title(); ?></div>
-				<span class="post-date"><time><?php the_time( 'F j, Y' ); ?></time></span>
-		    </a>
+			if ( $publications->have_posts() ) :  while ( $publications->have_posts() ) : $publications->the_post();
 
-			<?php endwhile; endif; wp_reset_postdata(); ?>
+				get_template_part( 'content', get_post_format() );
+
+			endwhile; endif; wp_reset_postdata(); ?>
 			
 		</section>
 
@@ -145,7 +125,10 @@ get_header();
 			<h2>Podcasts</h2>
 			<h5>Egghead.io</h5>
 				<a class="post" href="https://egghead.io/podcasts/switching-careers-and-learning-in-public-with-tania-rascia" target="_blank">
-				<div class="post-title">Switching Careers and Learning in Public</div>
+				<div class="post-thumbnail">
+					<img src="<?php echo site_url(); ?>/wp-content/uploads/egghead-150x150.png" alt="<?php the_title(); ?>" height="30" width="30">
+    			</div>
+				<div class="post-title">Switching Careers and Learning in Public - with Joel Hooks</div>
 				<span class="post-date"><time>December 13, 2018</time></span>
 			</a>
 		</section>
@@ -153,7 +136,7 @@ get_header();
 		<section class="section">
 			
 				<h2>Newsletter</h2>
-				<p>Get updated when I create new content. Unsubscribe whenever. Never any spam.</p>
+				<p>Get updated when I create new content.<br> Unsubscribe whenever. Never any spam.</p>
 				<form id="newsletter-form" class="newsletter-form" action="https://newsletter.taniarascia.com/sendy/subscribe" method="POST" accept-charset="utf-8" target="_blank">
                     <input type="email" name="email" required id="email-sidebar" class="email" placeholder="Email address" pattern="[a-zA-Z0-9._\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,4}">
                     <input type="hidden" name="list" value="P2bfC2WL3TvnTWEmucMbbg">

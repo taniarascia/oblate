@@ -74,10 +74,13 @@ pre {
 .comment-reply-link,
 .token.cdata,
 .token.comment,
-.token.prolog,
-input[type="search"]::-webkit-input-placeholder,
-input[type="search"]::placeholder {
+.token.prolog {
   color: #777c85;
+}
+
+input::-webkit-input-placeholder,
+input::placeholder {
+  color: #474a4f !important;
 }
 
 .post,
@@ -96,8 +99,8 @@ input[type="search"]::placeholder {
 }
 
 .terminal:before {
-  background: #202020;
-  color: #1d1d1d;
+  background: #444444;
+  color: #202020;
 }
 
 .footer strong,
@@ -131,6 +134,9 @@ input[type="search"]::placeholder {
 [type=time],
 [type=url],
 [type=week],
+.newsletter-form [type=email],
+.newsletter-form [type=text],
+.search-form [type="search"],
 select,
 textarea {
   background: #202020;
@@ -152,10 +158,14 @@ textarea {
 [type=time]:hover,
 [type=url]:hover,
 [type=week]:hover,
+.newsletter-form [type=email]:hover,
+.newsletter-form [type=text]:hover,
+.search-form [type="search"]:hover,
 select:hover,
 textarea:hover {
-  background: #242424;
-  border: 1px solid #242424;
+  background: #202020;
+  border: 1px solid #202020;
+  color: #b3b9c5;
 }
 
 [type=color]:focus,
@@ -188,43 +198,17 @@ textarea:focus,
 [type=time]:active,
 [type=url]:active,
 [type=week]:active,
+.newsletter-form [type=email]:focus,
+.newsletter-form [type=text]:focus,
+.search-form [type="search"]:focus,
+.search-form [type="search"]:active,
+.search-form [type="search"]:focus,
 select:active,
 textarea:active {
-  background: #202020;
+  color: #b3b9c5;
+  background: #242424;
   border: 1px solid #1d1d1d;
   box-shadow: none;
-}
-
-.newsletter-form [type=email],
-.newsletter-form [type=text] {
-  background: #343434;
-  border: 1px solid #343434 !important;
-  color: #b3b9c5;
-}
-
-.newsletter-form [type=email]:hover,
-.newsletter-form [type=text]:hover,
-.newsletter-form [type=email]:focus,
-.newsletter-form [type=text]:focus {
-  background: #202020;
-  border: 1px solid #202020 !important;
-  color: #b3b9c5;
-}
-
-.search-form [type="search"] {
-  background: #202020;
-  color: #777c85;
-}
-
-.search-form [type="search"]:hover {
-  background: #202020;
-  color: #b3b9c5;
-}
-
-.search-form [type="search"]:active,
-.search-form [type="search"]:focus {
-  background: #383838;
-  color: #b3b9c5;
 }
 
 tbody tr:nth-child(even) {

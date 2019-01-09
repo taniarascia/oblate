@@ -74,18 +74,20 @@ h2 {
 
 h3 {
   font-size: $h3-mobile;
-  font-weight: 600;
-  color: lighten($heading-font-color, 20%);
+  font-weight: 700;
+  color: lighten($heading-font-color, 25%);
 }
 
 h4 {
   font-size: $h4-mobile;
-  font-weight: 600;
+  font-weight: 700;
+  color: lighten($heading-font-color, 35%);
 }
 
 h5 {
   font-size: $h5-mobile;
-  color: lighten($heading-font-color, 30%);
+  font-weight: 600;
+  color: lighten($heading-font-color, 40%);
 }
 
 @include small-breakpoint {
