@@ -31,8 +31,13 @@
             <?php while ( $logrocket->have_posts() ) : $logrocket->the_post();  ?>
 
             <a class="post" id="post-<?php the_ID(); ?>" href="<?php echo get_the_content(); ?>" target="_blank">
+            <?php if ( get_post_thumbnail_id() ) : ?>
+            <div class="post-thumbnail">
+            <img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="30" width="30">
+            </div>
+            <?php endif; ?>	
             <div class="post-title"><?php the_title(); ?></div>
-                <span class="post-date"><time><?php the_time( 'F j, Y' ); ?></time></span>
+            <span class="post-date"><time><?php the_time( 'F j, Y' ); ?></time></span>
             </a>
 
             <?php endwhile; endif; wp_reset_postdata(); ?>
@@ -52,8 +57,13 @@
             <?php while ( $codrops->have_posts() ) : $codrops->the_post();  ?>
 
             <a class="post" id="post-<?php the_ID(); ?>" href="<?php echo get_the_content(); ?>" target="_blank">
+            <?php if ( get_post_thumbnail_id() ) : ?>
+            <div class="post-thumbnail">
+            <img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="30" width="30">
+            </div>
+            <?php endif; ?>	
             <div class="post-title"><?php the_title(); ?></div>
-                <span class="post-date"><time><?php the_time( 'F j, Y' ); ?></time></span>
+            <span class="post-date"><time><?php the_time( 'F j, Y' ); ?></time></span>
             </a>
 
             <?php endwhile; endif; wp_reset_postdata(); ?>
@@ -73,8 +83,13 @@
             <?php while ( $pr->have_posts() ) : $pr->the_post();  ?>
 
             <a class="post" id="post-<?php the_ID(); ?>" href="<?php echo get_the_content(); ?>" target="_blank">
+            <?php if ( get_post_thumbnail_id() ) : ?>
+            <div class="post-thumbnail">
+            <img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="30" width="30">
+            </div>
+            <?php endif; ?>	
             <div class="post-title"><?php the_title(); ?></div>
-                <span class="post-date"><time><?php the_time( 'F j, Y' ); ?></time></span>
+            <span class="post-date"><time><?php the_time( 'F j, Y' ); ?></time></span>
             </a>
 
             <?php endwhile; endif; wp_reset_postdata(); ?>
@@ -94,8 +109,13 @@
             <?php while ( $envato->have_posts() ) : $envato->the_post();  ?>
 
             <a class="post" id="post-<?php the_ID(); ?>" href="<?php echo get_the_content(); ?>" target="_blank">
+            <?php if ( get_post_thumbnail_id() ) : ?>
+            <div class="post-thumbnail">
+            <img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="30" width="30">
+            </div>
+            <?php endif; ?>	
             <div class="post-title"><?php the_title(); ?></div>
-                <span class="post-date"><time><?php the_time( 'F j, Y' ); ?></time></span>
+            <span class="post-date"><time><?php the_time( 'F j, Y' ); ?></time></span>
             </a>
 
             <?php endwhile; endif; wp_reset_postdata(); ?>
@@ -115,8 +135,13 @@
             <?php while ( $sp->have_posts() ) : $sp->the_post();  ?>
 
             <a class="post" id="post-<?php the_ID(); ?>" href="<?php echo get_the_content(); ?>" target="_blank">
+            <?php if ( get_post_thumbnail_id() ) : ?>
+            <div class="post-thumbnail">
+            <img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="30" width="30">
+            </div>
+            <?php endif; ?>	
             <div class="post-title"><?php the_title(); ?></div>
-                <span class="post-date"><time><?php the_time( 'F j, Y' ); ?></time></span>
+            <span class="post-date"><time><?php the_time( 'F j, Y' ); ?></time></span>
             </a>
 
             <?php endwhile; endif; wp_reset_postdata(); ?>
@@ -136,13 +161,17 @@
             <?php while ( $do->have_posts() ) : $do->the_post();  ?>
           
             <a class="post" id="post-<?php the_ID(); ?>" href="<?php echo get_the_content(); ?>" target="_blank">
+            <?php if ( get_post_thumbnail_id() ) : ?>
+            <div class="post-thumbnail">
+            <img src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>" height="30" width="30">
+            </div>
+            <?php endif; ?>	
               <div class="post-title"><?php the_title(); ?></div>
-                <span class="post-date"><time><?php the_time( 'F j, Y' ); ?></time></span>
+            <span class="post-date"><time><?php the_time( 'F j, Y' ); ?></time></span>
             </a>
 
             <?php endwhile; endif; wp_reset_postdata(); ?>
 
-            
             </div>
         </section>
     </div>
